@@ -1,0 +1,195 @@
+AssignAdvisor:
+  preconditions:
+    classes: {student: Student, professor: Professor, department: Department, university: University}
+    slots: {student_id: student.id, professor_id: professor.id}
+    triples: [[professor, worksFor, department], [department, subOrganizationOf, university],
+              [student, memberOf, university]]
+    description: "Makes an existing professor an advisor to a certain student"
+  postconditions:
+    classes: {}
+    slots: {}
+    triples: [[professor_id, advisor, student_id]]
+
+IntroduceUniversity:
+  preconditions:
+    classes: {}
+    slots: {}
+    triples: []
+    description: "Introduces an University with its id and its name"
+  postconditions:
+    classes: {university: University}
+    slots: {university_id: id, university_name: string}
+    triples: [[university_id, type, University], [university_id, name, university_name]]
+
+CreateDepartment:
+  preconditions:
+    classes: {university: University}
+    slots: {university_id: university.id}
+    triples: []
+    description: "Describes a department (id and name) inside of a university and introduces its chair professor 
+      (id and name)"
+  postconditions:
+    classes: {department: Department, chair: Chair}
+    slots: {department_id: id, department_name: string, chair_id: id, chair_name: string, chair_email: string}
+    triples: [[department_id, type, Department], [department_id, name, department_name], [chair_id, type, Chair],
+              [chair_id, name, chair_name], [chair_id, email, chair_email], [chair_id, headOf, department_id],
+              [department_id, subOrganizationOf, university_id]]
+
+CreateResearchGroup:
+  preconditions:
+    classes: {professor: Professor, department: Department}
+    slots: {professor_id: professor.id, department_id: department.id}
+    triples: [[professor, worksFor, department]]
+    description: "Introduces the research group of a certain department led by an existing professor and
+    describes id and name of a research conducted there"
+  postconditions:
+    classes: {research_group: ResearchGroup, research: Research}
+    slots: {research_group_id: id, research_group_name: string, research_id: id, research_title: string}
+    triples: [[research_group_id, type, ResearchGroup], [research_group_id, name, research_group_name],
+              [research_group_id, subOrganizationOf, department_id], [research_id, type, Research],
+              [research_id, title, research_title], [research_group_id, researchProject, research_id],
+              [professor_id, worksFor, research_group_id]]
+
+HireProfessor:
+  preconditions:
+    classes: {department: Department}
+    slots: {department_id: department.id}
+    triples: []
+    description: "Hires a professor for an existing department, the professor is described its id, name, email
+      and office number"
+  postconditions:
+    classes: {professor: Professor}
+    slots: {professor_id: id, professor_name: string, professor_email: string, professor_office_number: string}
+    triples: [[professor_id, type, Professor], [professor_id, name, professor_name],
+              [professor_id, email, professor_email], [professor_id, officeNumber, professor_office_number],
+              [professor_id, worksFor, department_id]]
+
+EnrollStudent:
+  preconditions:
+    classes: {university: University}
+    slots: {university_id: university.id}
+    triples: []
+    description: "Enrolls a student (described by id and name) in a specified university"
+  postconditions:
+    classes: {student: Student}
+    slots: {student_id: id, student_name: string}
+    triples: [[student_id, type, Student], [student_id, name, student_name], [student_id, memberOf, university_id]]
+
+CreateCourse:
+  preconditions:
+    classes: {professor: Professor}
+    slots: {professor_id: professor.id}
+    triples: []
+    description: "Introduces a course (id and name) taught by an existing professor, along with its teaching
+    assistant information (id, name and email)"
+  postconditions:
+    classes: {course: Course, teaching_assistant: TeachingAssistant}
+    slots: {course_id: id, course_name: string, teaching_assistant_id: id, teaching_assistant_name: string,
+            teaching_assistant_email: string}
+    triples: [[course_id, type, Course], [course_id, name, course_name],
+              [teaching_assistant_id, type, TeachingAssistant], [teaching_assistant_id, name, teaching_assistant_name],
+              [professor_id, teacherOf, course_id],  [teaching_assistant_id, email, teaching_assistant_email],
+              [teaching_assistant_id, teachingAssistantOf, course_id], [professor_id, advisor, teaching_assistant_id]]
+
+TakeCourse:
+  preconditions:
+    classes: {student: Student, course: Course, professor: Professor, department: Department, university: University}
+    slots: {student_id: student.id, course_id: course.id}
+    triples: [[student, memberOf, university], [department, subOrganizationOf, university],
+              [professor, worksFor, department], [professor, teacherOf, course]]
+    description: "Enrolls a student into an existing course"
+  postconditions:
+    classes: {}
+    slots: {}
+    triples: [[student_id, takesCourse, course_id]]
+
+PublishArticle:
+  preconditions:
+    classes: {professor: Professor}
+    slots: {professor_id: professor.id}
+    triples: []
+    description: "Describes one article published by a specified professor, providing its id, title and publication date"
+  postconditions:
+    classes: {article: Article}
+    slots: {article_id: id, article_title: string, article_date: date}
+    triples: [[article_id, type, Article], [article_id, title, article_title], [article_id, publicationDate, article_date],
+              [professor_id, publicationAuthor, article_id]]
+
+AssignDegree:
+  preconditions:
+    classes: {student: Student, university: University}
+    slots: {student_id: student.id, university_id: university.id}
+    triples: [[student, memberOf, university]]
+    description: "Makes a student graduate from its university"
+  postconditions:
+    classes: {}
+    slots: {}
+    triples: [[student_id, degreeFrom, university_id]]
+
+IntroduceCollege:
+  preconditions:
+    classes: {university: University}
+    slots: {university_id: university.id}
+    triples: []
+    description: "Introduces a college belonging to an existing university, also providing its Dean, with its id, 
+      name and email"
+  postconditions:
+    classes: {college: College, dean: Dean}
+    slots: {college_id: id, college_name: string, dean_id: id, dean_name: string, dean_email: string}
+    triples: [[college_id, type, College], [college_id, name, college_name],
+              [college_id, subOrganizationOf, university_id], [dean_id, type, Dean], [dean_id, name, dean_name],
+              [dean_id, headOf, college_id]]
+
+CreateProgram:
+  preconditions:
+    classes: {department: Department}
+    slots: {department_id: department.id}
+    triples: []
+    description: "Creates a new Program (id and name) under an existing department, specifying also its Director, 
+      characterized by id, name and email"
+  postconditions:
+    classes: {program: Program}
+    slots: {program_id: id, program_name: string, director_id: id, director_name: string, director_email: string}
+    triples: [[program_id, type, Program], [program_id, name, program_name],
+              [program_id, subOrganizationOf, department_id], [director_id, type, Director],
+              [director_id, name, director_name], [director_id, headOf, program_id]]
+
+HireAdministrativeStaff:
+  preconditions:
+    classes: {department: Department}
+    slots: {department_id: department.id}
+    triples: []
+    description: "Hires an administrative staff member (id, name, and email) for a department"
+  postconditions:
+    classes: {staff: AdministrativeStaff}
+    slots: {staff_id: id, staff_name: string, staff_email: string}
+    triples: [[staff_id, type, AdministrativeStaff], [staff_id, name, staff_name], [staff_id, email, staff_email],
+              [staff_id, worksFor, department_id]]
+
+HireResearchAssistant:
+  preconditions:
+    classes: {research_group: ResearchGroup, professor: Professor, department: Department}
+    slots: {research_group_id: research_group.id, professor_id: professor.id, department_id: department.id}
+    triples: [[professor, worksFor, research_group], [professor, worksFor, department],
+              [research_group, subOrganizationOf, department]]
+    description: "Assigns a research assistant (id, name, and email) inside a research group belonging to a department, 
+    under the supervision of one of the department's professors"
+  postconditions:
+    classes: {research_assistant: ResearchAssistant}
+    slots: {research_assistant_id: id, research_assistant_name: string, research_assistant_email: string}
+    triples: [[research_assistant_id, type, ResearchAssistant], [research_assistant_id, name, research_assistant_name],
+              [research_assistant_id, email, research_assistant_email],
+              [research_assistant_id, worksFor, research_group_id], [research_assistant_id, worksFor, department_id],
+              [research_assistant_id, advisor, professor_id]]
+
+PublishBook:
+  preconditions:
+    classes: {professor: Professor}
+    slots: {professor_id: professor.id}
+    triples: []
+    description: "Describes a book authored by a professor, providing its id, title, and publication date"
+  postconditions:
+    classes: {book: Book}
+    slots: {book_id: id, book_title: string, book_date: date}
+    triples: [[book_id, type, Book], [book_id, title, book_title], [book_id, publicationDate, book_date],
+              [professor_id, publicationAuthor, book_id]]
