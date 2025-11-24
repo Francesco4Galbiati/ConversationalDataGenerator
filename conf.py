@@ -25,6 +25,7 @@ ids = []
 chat_history = []
 os.environ["PATH"] += os.pathsep + "/opt/homebrew/bin"
 img = 0
+localhost = 'http://10.222.46.211:11434/v1'
 
 # Utility classes
 class bcolors:
@@ -52,12 +53,12 @@ parsing_time = 0
 # Models
 dialogue_model = OpenAIChatModel(
     model_name='mistral-small3.2:24b-instruct-2506-q4_K_M',
-    provider=OllamaProvider(base_url='http://10.222.46.211:11434/v1')
+    provider=OllamaProvider(base_url=localhost)
 )
 
 task_model = OpenAIChatModel(
     model_name='mistral-nemo:12b-instruct-2407-q8_0',
-    provider=OllamaProvider(base_url='http://10.222.46.211:11434/v1')
+    provider=OllamaProvider(base_url=localhost)
 )
 
 # Hallucination data structure setup
