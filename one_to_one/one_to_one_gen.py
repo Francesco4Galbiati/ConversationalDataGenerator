@@ -1,8 +1,9 @@
+import requests
 from pydantic_ai import UnexpectedModelBehavior
 from rdflib import URIRef, RDF, Literal
 from functions import get_intent_model, get_slots_model, get_id_from_slots
 from agents import abox_agent, parser_agent
-from conf import bcolors, ops, ont_uri, g, hallucinations, prefixes
+from conf import bcolors, ops, ont_uri, g, hallucinations, prefixes, fuseki, fuseki_headers
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from dialogue import dialogue_list
 
@@ -111,6 +112,11 @@ while i < len(list(dialogue_list)):
         else:
             obj = URIRef(f"{ont_uri}{t[2]}")
         g.add((sub, pred, obj))
+
+        fuseki_triple = f"{sub} {pred} {obj}"
+        response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+        print(response.status_code, response.text)
+
         DeductiveClosure(OWLRL_Semantics).expand(g)
 
     i += 1
