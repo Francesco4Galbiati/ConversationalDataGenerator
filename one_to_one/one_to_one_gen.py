@@ -108,12 +108,12 @@ while i < len(list(dialogue_list)):
             else:
                 obj = Literal(f"{answer[t[2]]}")
         elif t[2] in ops[intent]['preconditions']['slots']:
-            obj = URIRef(f"{ont_uri}{answer[t[2]]}")
+            obj = URIRef(f"{ont_uri}{slots[t[2]]}")
         else:
             obj = URIRef(f"{ont_uri}{t[2]}")
         g.add((sub, pred, obj))
 
-        fuseki_triple = f"{sub} {pred} {obj}"
+        fuseki_triple = f"<{sub}> <{pred}> <{obj}>"
         response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
         print(response.status_code, response.text)
 
