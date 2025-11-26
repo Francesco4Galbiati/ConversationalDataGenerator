@@ -31,7 +31,7 @@ while i < len(list(dialogue_list)):
     print(f"{bcolors.WARNING}Answer: {answer}{bcolors.ENDC}")
 
     try:
-        slots_answer = parser_agent.run_sync(user_prompt=f"""
+        slots_answer = abox_agent.run_sync(user_prompt=f"""
             ### ROLE ###
             You are a specialized information extraction agent.
             Your task is to extract the slot values required to fulfill a specific intent from a given text.
@@ -46,7 +46,8 @@ while i < len(list(dialogue_list)):
             - If a slot value corresponding to an id is missing from the text, generate a new one on the spot
             - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
             - Do not invent or paraphrase data — use only what appears in the text.
-
+            - After having identified the slots, return them in a JSON object that uses the names of the slots
+            
             ### INPUT TEXT ###
             {question}
         """, output_type=slots_model)
@@ -81,6 +82,7 @@ while i < len(list(dialogue_list)):
                 - If a slot value corresponding to an id is missing from the text, generate a new one on the spot
                 - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                 - Do not invent or paraphrase data — use only what appears in the text.
+                - After having identified the slots, return them in a JSON object that uses the names of the slots
 
                 ### INPUT TEXT ###
                 {answer}
