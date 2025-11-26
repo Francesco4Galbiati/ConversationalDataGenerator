@@ -1,9 +1,11 @@
 import ast
+import conf
+from time import time
+from agents import tbox_agent
+from conf import ops
 from json_repair import repair_json
-from agents import tbox_agent, repair_agent
-from conf import ops, bcolors
-from functions import repair_dialogue
 
+start = time()
 dialogue = tbox_agent.run_sync(user_prompt=f"""
     ### ROLE ###
     You are simulating a conversation between two cooperative agents exploring a knowledge domain.
@@ -78,47 +80,10 @@ dialogue = tbox_agent.run_sync(user_prompt=f"""
     - Each turn must contribute new, logically consistent knowledge
     - Include only the JSON text in your answer, without any other explanation.
 """)
+ex_time = time() - start
+conf.model_time += ex_time
+input_tokens = dialogue._state.usage.input_tokens
+output_tokens = dialogue._state.usage.output_tokens
+print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}, Input tokens:  {input_tokens}, Output tokens: {output_tokens}}}")
 
 dialogue_list = ast.literal_eval(repair_json(dialogue.output))
-print(f'{bcolors.OKGREEN}Dialogue generated...{bcolors.ENDC}')
-
-repair_record = repair_dialogue(dialogue_list)
-print(f'{bcolors.OKGREEN}Fixing {len(list(repair_record))} error(s)...{bcolors.ENDC}')
-
-repaired_dialogue = repair_agent.run_sync(f"""
-    You are repairing a dialogue between Agent A and Agent B.
-    Your goal is to fix inconsistencies and missing data while preserving meaning.
-
-    ### INPUT ###
-    Dialogue:
-    {dialogue_list}
-
-    Detected issues:
-    {repair_record}
-
-    ### RULES ###
-    - Correct only the minimal necessary parts according to the turns and agents specified in the list of detected
-    issues by specifying the missing ids, if any, for the entities mentioned by the question.
-    - Keep the IDs consistent across all turns.
-    - Do not change the dialogue structure or intent order.
-    - If an entity is referenced only by name, add its id to the question according to the context
-
-    ### OUTPUT ###
-    Return the corrected dialogue, formatted exactly as:
-    QUse a JSON format for the output:
-    {{
-        "1": {{
-            "Intent": "<intent_name>",
-            'A': '...',
-            'B:': '...'
-        }},
-        "2": {{
-            "Intent": "<intent_name>",
-            "A": "...",
-            "B": "..."
-        }},
-        ...
-    }}
-""")
-
-dialogue_list = ast.literal_eval(repair_json(repaired_dialogue.output))

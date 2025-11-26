@@ -26,7 +26,7 @@ chat_history = []
 os.environ["PATH"] += os.pathsep + "/opt/homebrew/bin"
 img = 0
 host = 'http://10.222.46.211:11434/v1'
-fuseki = 'localhost:3030/lubm_instances/data'
+fuseki = 'http://localhost:3030/lubm_instances/data'
 fuseki_headers = {"Content-Type": "text/turtle"}
 
 # Utility classes

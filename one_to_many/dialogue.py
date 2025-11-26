@@ -107,5 +107,3 @@ output_tokens = dialogue._state.usage.output_tokens
 print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}, Input tokens:  {input_tokens}, Output tokens: {output_tokens}}}")
 
 dialogue_list = ast.literal_eval(repair_json(dialogue.output))
-
-print()
