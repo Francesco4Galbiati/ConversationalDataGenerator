@@ -118,9 +118,9 @@ while i < len(list(dialogue_list)):
         g.add((sub, pred, obj))
 
         if 'http' in obj:
-            f_obj = '<' + obj + '>'
+            f_obj = '<' + str(obj) + '>'
         else:
-            f_obj = '"' + obj + '"'
+            f_obj = '"' + str(obj) + '"'
 
         fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
         response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
