@@ -115,7 +115,12 @@ while i < len(list(dialogue_list)):
             obj = URIRef(f"{ont_uri}{t[2]}")
         g.add((sub, pred, obj))
 
-        fuseki_triple = f"<{sub}> <{pred}> {f'<{obj}>' if 'http' in obj else f'{obj}'}"
+        if 'http' in obj:
+            f_obj = '<' + obj + '>'
+        else:
+            f_obj = '"' + obj + '"'
+
+        fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
         response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
         print(response.status_code, response.text)
 
