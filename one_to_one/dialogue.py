@@ -44,7 +44,8 @@ dialogue = tbox_agent.run_sync(user_prompt=f"""
     previous ones, intents in the sequence can be repeated multiple times in a row.
     - Agent Q (Questioner) must:
         - Asks one question per turn by selecting an intent whose preconditions can be satisfied.
-        - For each specific entity required by the preconditions' slots, specify the id and the class (e.g. Class C001).
+        - For each specific slot required by the preconditions, specify the id and the class (e.g. Class C001) of the
+        entities you intend to reference.
         - Never mention “intents”, “preconditions”, “postconditions”.
     - Agent A (Answerer) must:
         - Interpret the question using the intent provided by the questioner.
