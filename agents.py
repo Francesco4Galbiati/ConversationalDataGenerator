@@ -5,7 +5,7 @@ from pydantic_ai.models.openai import OpenAIChatModelSettings
 abox_agent = Agent(task_model,
     system_prompt="You are an ABox Agent. Your task is to receive an answer to a question and extract data from it"
                   "according to the specified output format",
-    model_settings= OpenAIChatModelSettings(temperature=0.2),
+    model_settings= OpenAIChatModelSettings(temperature=0.1),
     retries=3
 )
 

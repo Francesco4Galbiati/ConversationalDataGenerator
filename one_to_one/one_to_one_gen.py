@@ -2,7 +2,7 @@ import requests
 from pydantic_ai import UnexpectedModelBehavior
 from rdflib import URIRef, RDF, Literal
 from functions import get_intent_model, get_slots_model, get_id_from_slots
-from agents import abox_agent, parser_agent
+from agents import abox_agent
 from conf import bcolors, ops, ont_uri, g, hallucinations, prefixes, fuseki, fuseki_headers
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from dialogue import dialogue_list
@@ -15,8 +15,8 @@ while i < len(list(dialogue_list)):
 
     t = dialogue_list[str(i)]
     intent = t['Intent']
-    question = t['A']
-    answer = t['B']
+    question = t['Q']
+    answer = t['A']
 
     if intent not in list(ops):
         hallucinations['unknown_intent'] += 1
@@ -43,7 +43,6 @@ while i < len(list(dialogue_list)):
             ### INSTRUCTIONS ###
             - Read the text carefully.
             - Identify and extract the values that correspond to each slot.
-            - If a slot value corresponding to an id is missing from the text, generate a new one on the spot
             - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
             - Do not invent or paraphrase data — use only what appears in the text.
             - After having identified the slots, return them in a JSON object that uses the names of the slots
