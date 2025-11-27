@@ -1,0 +1,94 @@
+intents:
+	IntroducePhysician:
+        preconditions:
+            classes: {}
+            slots: {}
+            triples: []
+            description: "Introduces a new Physician to the context, with its id, NPI, name, surname, gender, specialty,
+              credentials, and graduation year"
+        postconditions:
+            classes: {p: Physician}
+            slots: {p_id: id, p_npi: npi, p_name: str, p_surname: str, p_gender: gender, p_specialty: string,
+                p_credential: credential}
+            triples: [[p_id, type, Physician], [p_id, usNPI, p_npi], [p_id, givenName, p_name],
+                [p_id, familyName, p_surname], [p_id, gender, p_gender], [p_id, medicalSpecialty, p_specialty],
+                [p_id, credential, p_credential]]
+
+	IntroduceFacility:
+		preconditions:
+			classes: {}
+			slots: {}
+			triples: []
+			description: 'Introduces an Healthcare Facility in the context, with its id, name, address, number of
+			    employees, description, number of beds'
+		postconditions:
+			classes: {f: Facility, z: ZipCodeArea}
+			slots: {f_id: id, f_name: str, f_address: str, f_numOfEmployees: int, f_description: str, f_numOfBeds: int,
+                z_id: id, z_zipCode: zipCode}
+			triples: [[f_id, type, Facility], [f_id, name, f_name], [f_id, address, f_address],
+                [f_id, numberOfEmployees, f_numOfEmployees], [f_id, abstract, f_abstract],
+                [f_id,  numberOfBeds, f_numOfBeds], [z_id, type, ZipCodeArea], [z_id, zipCodeValue, z_zipCode],
+                [f_id, locatedIn, z_id]]
+
+	HirePhysician:
+		preconditions:
+			classes: {p: Physician, f: Facility}
+			slots: {p_id: p.id, f_id: f.id}
+			triples: []
+			description: 'Hires a Physician into a medical facility for a year (creates a JobPlacement entity)'
+		postconditions:
+			classes: {j: JobPlacement}
+			slots: {j_id: id, j_year: int}
+			triples: [[j_id, type, JobPlacement], [j_id, hasTimeReference, year], [j_id, hasParticipant, p_id],
+                [j_id, worksAt, f_id], [p_id, affiliatedHospital, f_id]]
+
+	SpecifyDiploma:
+		preconditions: 
+			classes: {p: Physician}
+			slots: {p_id: p.id}
+			triples: []
+			description: 'Retrieves the graduation diploma of a Physician, specifying its medical school (id, name,
+			    description, faculty size, and number of students), and the year of graduation'
+		postconditions:
+			classes: {m: MedicalSchool}
+			slots: {m_id: id, m_name: str, m_description: str, m_facultySize: int, m_studentSize: int,
+                p_graduationYear: int}
+			triples: [[m_id, type, MedicalSchool], [m_id, name, m_name], [m_id, abstract, m_description],
+                [m_id, facultySize, m_facultySize], [m_id, numberOfStudents, m_studentSize],
+                [p_id, graduationYear, p_graduationYear]]
+
+	ListADIScore:
+		preconditions:
+			classes: {z: ZipCodeArea}
+			slots: {z_id: z.id}
+			triples : []
+			description: 'Lists the ADI scores of a ZipCodeArea for a certain year, including the state percentile and 
+		        the national percentile'
+		postconditions:
+			classes: {a: ADIScore} 
+			slots: {a_id: id, a_year: int, a_statePercentile: perc, a_nationalPercentile: perc}
+			triples: [[a_id, type, ADIScore], [a_id, scoredIn, a_year], [a_id, stateScore, a_statePercentile],
+                [a_id, nationalScore, a_nationalPercentile], [z_id, hasADI, a_id]]
+
+
+types:
+	id:
+		type: 'str'
+		pattern: "r'^S+$'"
+		text: 'A string without spaces'
+	npi:
+		type: 'str'
+		pattern: "r'^d{10}$'"
+		text: 'A string of 10 digits'
+	gender:
+		type: 'enum'
+		options: ['m', 'f']
+		text: "One option between 'm' and 'f'"
+	credential:
+		type: 'enum'
+		options: ['MD', 'DO', 'MBBS']
+		text: "One option between 'MD', 'DO', and 'MBBS'"
+	zipCode:
+		type: 'str'
+		pattern: "r'^d{5}$'"
+		text: 'A string of 5 digits'
