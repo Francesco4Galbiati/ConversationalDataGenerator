@@ -1,6 +1,7 @@
 import conf
+import requests
 from time import time
-from conf import entities, bcolors, ops, hallucinations, ont_uri, g, prefixes, ids, dot_graph, img, model_time
+from conf import entities, bcolors, ops, hallucinations, ont_uri, g, prefixes, ids, fuseki, fuseki_headers
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from rdflib import URIRef, Literal, RDF
 from agents import parser_agent, abox_agent
@@ -119,43 +120,34 @@ for i in instructions:
 
             if t[0] in ops[intent]['postconditions']['slots']:
                 sub = URIRef(f"{ont_uri}{answer[t[0]]}")
-                #sub_label = answer[t[0]]
             elif t[0] in ops[intent]['preconditions']['slots']:
                 sub = URIRef(f"{ont_uri}{slots[t[0]]}")
-                #sub_label = slots[t[0]]
-            #if not dot_graph.get_node(f'\t{sub_label}'):
-                #dot_graph.add_node(pydot.Node(sub_label, label=sub_label))
 
             if t[2] in ops[intent]['postconditions']['slots']:
                 if ops[intent]['postconditions']['slots'][t[2]] == "id":
                     obj = URIRef(f"{ont_uri}{answer[t[2]]}")
-                    #obj_label = answer[t[2]]
-                    #if not dot_graph.get_node(f'\t{obj_label}'):
-                        #dot_graph.add_node(pydot.Node(obj_label, label=obj_label))
                 else:
                     obj = Literal(f"{answer[t[2]]}")
-                    #obj_label = f'{sub_label}_{t[1]}'
-                    #dot_graph.add_node(pydot.Node(obj_label, label=answer[t[2]]))
             elif t[2] in ops[intent]['preconditions']['slots']:
                 obj = URIRef(f"{ont_uri}{slots[t[2]]}")
-                #obj_label = slots[t[2]]
-                #if not dot_graph.get_node(f'\t{slots[t[2]]}'):
-                    #dot_graph.add_node(pydot.Node(obj_label, label=obj_label))
             else:
                 obj = URIRef(f"{ont_uri}{t[2]}")
-                #obj_label = f'{sub_label}_{t[1]}'
-                #dot_graph.add_node(pydot.Node(obj_label, label=t[2]))
-
             if t[1] != "type":
                 pred = URIRef(f"{ont_uri}{t[1]}")
             else:
                 pred = RDF.type
-            #dot_graph.add_edge(pydot.Edge(sub_label, obj_label, label=t[1]))
+
+            if 'http' in obj:
+                f_obj = '<' + str(obj) + '>'
+            else:
+                f_obj = '"' + str(obj) + '"'
+
+            fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
+            response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+            print(response.status_code, response.text)
 
             g.add((sub, pred, obj))
             DeductiveClosure(OWLRL_Semantics).expand(g)
-            # dot_graph.write_png(f'../resources/img/graph_{img}.png')
-            img += 1
 
         d += 1
 

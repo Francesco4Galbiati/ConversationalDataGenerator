@@ -1,6 +1,7 @@
 import conf
+import requests
 from ABox import num_abox, ABox
-from conf import hallucinations, bcolors, ops, ont_uri, prefixes, ont_prefix
+from conf import hallucinations, bcolors, ops, ont_uri, prefixes, ont_prefix, fuseki, fuseki_headers
 from time import time
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from rdflib import URIRef, Literal, RDF
@@ -95,6 +96,15 @@ for i in instructions:
                     obj = URIRef(f"{ont_uri}{answer_slots[t[2]]}")
                 else:
                     obj = URIRef(f"{ont_uri}{t[2]}")
+
+                if 'http' in obj:
+                    f_obj = '<' + str(obj) + '>'
+                else:
+                    f_obj = '"' + str(obj) + '"'
+
+                fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
+                response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+                print(response.status_code, response.text)
 
                 abox.graph.add((sub, pred, obj))
                 DeductiveClosure(OWLRL_Semantics).expand(abox.graph)

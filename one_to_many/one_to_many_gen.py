@@ -1,11 +1,12 @@
 from time import time
+import requests
 import conf
 from ABox import num_abox, ABox
-from conf import bcolors, ops, ont_uri, hallucinations, prefixes, ont_prefix
+from conf import bcolors, ops, ont_uri, hallucinations, prefixes, ont_prefix, fuseki, fuseki_headers
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from agents import abox_agent
 from rdflib import URIRef, RDF, Literal
-from dialogue import dialogue_list, dialogue_time, input_tokens, output_tokens
+from dialogue import dialogue_list, input_tokens, output_tokens
 from functions import get_intent_model_tM, replace_ids_tM
 from pydantic_ai import UnexpectedModelBehavior
 
@@ -91,6 +92,15 @@ while i <= len(list(dialogue_list)):
                 obj = URIRef(f"{ont_uri}{answer_slots[t[2]]}")
             else:
                 obj = URIRef(f"{ont_uri}{t[2]}")
+
+            if 'http' in obj:
+                f_obj = '<' + str(obj) + '>'
+            else:
+                f_obj = '"' + str(obj) + '"'
+
+            fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
+            response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+            print(response.status_code, response.text)
 
             abox.graph.add((sub, pred, obj))
             DeductiveClosure(OWLRL_Semantics).expand(abox.graph)
