@@ -1,6 +1,7 @@
 import os
 import yaml
 import pydot
+from enum import Enum
 from rdflib import *
 from pydantic import constr
 from collections import defaultdict
@@ -8,11 +9,13 @@ from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.providers.ollama import OllamaProvider
 
 # Ontology file read
-with open("./../resources/contract.yaml") as f:
-    ops = yaml.safe_load(f)
+with open("./../resources/LUBM_contract.yaml") as f:
+    contract = yaml.safe_load(f)
+    ops = contract['intents']
+    types = contract['types']
 ont_prefix = 'lubm'
 ont_uri = 'http://swat.cse.lehigh.edu/onto/univ-bench.owl#'
-output_file = open('./../resources/output.txt', 'w')
+output_file = open('./resources/output.txt', 'w')
 prefixes = f"""
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -43,7 +46,7 @@ class bcolors:
 
 # Utility variabled
 g = Graph()
-g.parse('./resources/univ-bench.owl')
+g.parse('./../resources/univ-bench.owl')
 newl = '\n'
 sq = "'"
 id_t = constr(pattern=r'^\S+$')
@@ -72,3 +75,13 @@ hallucinations = {
     'abox_model_failures': 0,
     'tbox_model_failures': 0
 }
+
+# Types definition
+types_def = defaultdict()
+for t in types:
+    if types[t]['type'] == 'str':
+        types_def[t] = {'def': constr(pattern=types[t]['pattern']), 'text': types[t]['text']}
+    elif types[t]['type'] == 'enum':
+        types_def[t] = {'def': Enum(t, [x for x in types[t]['options']]), 'text': types[t]['text']}
+
+print()

@@ -193,9 +193,10 @@ intents:
       classes: {book: Book}
       slots: {book_id: id, book_title: string, book_date: date}
       triples: [[book_id, type, Book], [book_id, title, book_title], [book_id, publicationDate, book_date],
-                [professor_id, publicationAuthor, book_id]
+                [professor_id, publicationAuthor, book_id]]
+
 types:
   id:
     type: 'str'
     pattern: "r'^S+$'"
-    text: 'A string without spaces']
+    text: 'A string without spaces'
