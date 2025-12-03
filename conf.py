@@ -9,7 +9,7 @@ from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.providers.ollama import OllamaProvider
 
 # Ontology file read
-with open("./../resources/LUBM_contract.yaml") as f:
+with open("./resources/HealthEQKG_contract.yaml") as f:
     contract = yaml.safe_load(f)
     ops = contract['intents']
     types = contract['types']
@@ -28,7 +28,7 @@ ids = []
 chat_history = []
 os.environ["PATH"] += os.pathsep + "/opt/homebrew/bin"
 img = 0
-host = 'http://10.222.46.211:11434/v1'
+host = 'http://192.168.0.52:11434/v1'
 fuseki = 'http://localhost:3030/lubm_instances/data'
 fuseki_headers = {"Content-Type": "text/turtle"}
 
@@ -46,7 +46,7 @@ class bcolors:
 
 # Utility variabled
 g = Graph()
-g.parse('./../resources/univ-bench.owl')
+g.parse('./resources/univ-bench.owl')
 newl = '\n'
 sq = "'"
 id_t = constr(pattern=r'^\S+$')
@@ -82,6 +82,4 @@ for t in types:
     if types[t]['type'] == 'str':
         types_def[t] = {'def': constr(pattern=types[t]['pattern']), 'text': types[t]['text']}
     elif types[t]['type'] == 'enum':
-        types_def[t] = {'def': Enum(t, [x for x in types[t]['options']]), 'text': types[t]['text']}
-
-print()
+        types_def[t] = {'def': Enum(t, dict([(x, x) for x in types[t]['options']])), 'text': types[t]['text']}

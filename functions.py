@@ -1,6 +1,6 @@
 import re
 import random
-from conf import ont_prefix, g, id_t, ops, hallucinations, prefixes, sq, ont_uri, ids
+from conf import ont_prefix, g, id_t, ops, hallucinations, prefixes, sq, ont_uri, ids, types_def
 from pydantic import create_model
 from pydantic_ai import UnexpectedModelBehavior
 
@@ -39,8 +39,8 @@ def get_intent_model(i, intent):
     fields = {}
     for name, type_ in intent["postconditions"].get("slots", {}).items():
         py_type = str
-        if type_ == "id":
-            py_type = id_t
+        if type_ in types_def:
+            py_type = types_def[type_]['def']
         fields[name] = (py_type, ...)
     model = create_model(f"{i}Model", **fields)
     return model
@@ -49,13 +49,13 @@ def get_intent_model_tM(i, intent):
     fields = {}
     for name, type_ in intent["postconditions"].get("slots", {}).items():
         py_type = str
-        if type_ == "id":
-            py_type = id_t
+        if type_ in types_def:
+            py_type = types_def[type_]['def']
         fields[name] = (py_type, ...)
     for name, type_ in intent["preconditions"].get("slots", {}).items():
         py_type = str
-        if type_ == "id":
-            py_type = id_t
+        if type_ in types_def:
+            py_type = types_def[type_]['def']
         fields[name] = (py_type, ...)
     model = create_model(f"{i}Model", **fields)
     return model
