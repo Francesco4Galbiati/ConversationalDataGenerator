@@ -1,7 +1,10 @@
 import re
 import random
-from conf import ont_prefix, g, id_t, ops, hallucinations, prefixes, sq, ont_uri, ids, types_def
-from pydantic import create_model
+from collections import defaultdict
+from typing import Annotated, Optional
+
+from conf import ont_prefix, g, ops, hallucinations, prefixes, sq, ont_uri, ids, types_def
+from pydantic import create_model, constr, StringConstraints
 from pydantic_ai import UnexpectedModelBehavior
 
 def get_intent_slots(intent):
@@ -64,8 +67,8 @@ def get_slots_model(i, intent):
     fields = {}
     for name, type_ in intent["preconditions"].get("slots", {}).items():
         py_type = str
-        if type_ == "id":
-            py_type = id_t
+        if type_ in types_def:
+            py_type = types_def[type_]['def']
         fields[name] = (py_type, ...)
     model = create_model(f"{i}SlotsModel", **fields)
     return model
@@ -172,32 +175,24 @@ def repair_dialogue(dialogue):
 
     return report
 
-def replace_ids(dialogue, ids):
-    tmp = set()
-    subs = []
+def replace_ids(slots, ids):
+    tmp = slots
 
-    for t in dialogue:
-        found = re.findall(r"[A-Z]+\d+", dialogue[t]['B'])
-        for f in found:
-            _id = f
-            new = None
-            while (_id in ids or _id in tmp) and not _id in re.findall(r"[A-Z]+\d+", dialogue[t]['A']):
-                if int(_id[-1]) != 9:
-                    new = _id[:-1] + str(int(_id[-1]) + 1)
+    for k, v in slots.items():
+        if '_id' in k and v != 'null':
+            while v in ids:
+                if int(v[-1]) != 9:
+                    new = v[:-1] + str(int(v[-1]) + 1)
                 else:
-                    if int(_id[-2]) != 9:
-                        new = _id[:-2] + str(int(_id[-2]) + 1) + '0'
+                    if int(v[-2]) != 9:
+                        new = v[:-2] + str(int(v[-2]) + 1) + '0'
                     else:
-                        new = _id[:-3] + str(int(_id[-3]) + 1) + '00'
-                _id = new
-            if new is not None:
-                subs.append({'from': f, 'to': new, 'turn': t})
-                tmp.add(new)
+                        new = v[:-3] + str(int(v[-3]) + 1) + '00'
+                v = new
+            tmp[k] = v
+            ids.append(v)
 
-    for s in reversed(subs):
-        dialogue[str(s['turn'])]['B'] = dialogue[str(s['turn'])]['B'].replace(s['from'], s['to'])
-
-    return dialogue
+    return tmp, ids
 
 def replace_ids_tM(slots, ids, intent):
 
@@ -205,7 +200,7 @@ def replace_ids_tM(slots, ids, intent):
 
     for k, v in slots.items():
         if '_id' in k:
-            if v == 'null':
+            if v is None:
                 v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
                 hallucinations['unspecified_slot'] += 1
             if v in ids and k not in ops[intent]['preconditions']['slots']:
@@ -251,3 +246,19 @@ def validate_plan(instructions):
             for _, c in ops[i]['preconditions']['classes'].items():
                 if c not in classes:
                     hallucinations['false_precondition'] += 1
+
+def refactor_dialogue(dialogue):
+
+    ref_dialogue = defaultdict(dict)
+    i = 1
+    for t in dialogue:
+        ref_dialogue.update({str(i): dialogue[t]})
+        i += 1
+
+    return ref_dialogue
+
+def dict_replace(_old, _new, dict):
+    for k, v in dict.items():
+        if v == _old:
+            dict[k] = _new
+    return dict

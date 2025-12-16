@@ -1,90 +1,103 @@
 import ast
-import conf
 from time import time
-from agents import tbox_agent
-from conf import ops
 from json_repair import repair_json
 
-start = time()
-dialogue = tbox_agent.run_sync(user_prompt=f"""
-    ### ROLE ###
-    You are simulating a one-to-one conversation between two cooperative agents:
-    - Agent Q (Questioner) – asks high-level questions to explore a domain.
-    - Agent A (Answerer) – answers the questions, building the world step by step
-    
-    ### OBJECTIVE ###
-    Generate a structured multi-agent dialogue where:
-    1. Agent Q asks one question per turn, choosing an available intent from the list.
-    2. A interprets the question according to the specified intent and:
-        - generate new facts/entities
-        - expand its A-Box
-    3. All answers must faithfully follow intent preconditions, postconditions, and slots.
-    
-    ### INTENTS ###
-    The domain is defined by intents, each having:
-    - description
-    - preconditions (required classes/relations)
-    - postconditions (created classes/relations)
-    - slots (values to be expressed naturally)
-    
-    Intents available:
-    {[{
-        i: {
-            'description': ops[i]['preconditions']['description'],
-            'preconditions': ops[i]['preconditions']['classes'], 
-            'postconditions': ops[i]['postconditions']['classes'],
-            'slots': ops[i]['postconditions']['slots']
-        }
-    } for i in ops]}
-    
-    Each Answerer uses the same intent set but generates its own different A-Box.
-    
-    ### DIALOGUE RULES ###
-    - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
-    previous ones, intents in the sequence can be repeated multiple times in a row.
-    - Agent Q (Questioner) must:
-        - Asks one question per turn by selecting an intent whose preconditions can be satisfied.
-        - For each specific slot required by the preconditions, specify the id and the class (e.g. Class C001) of the
-        entities you intend to reference.
-        - Never mention “intents”, “preconditions”, “postconditions”.
-    - Agent A (Answerer) must:
-        - Interpret the question using the intent provided by the questioner.
-        - Generate all the required entities present the slots section of the intent that have not been generated
-        previously.
-        - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
-        number of 3 digits, starting from 001 (e.g. U001, D001, RG001)
-        - Never reuse ids from other turns of the conversation.
-        - Never refer to “intents” explicitly.
-    
-    Each answerer produces one answer per turn.
-    
-    ### OUTPUT FORMAT ###
-    For each turn, produce a JSON block like:
-    {{
-        "1": {{
-            "Intent": "<intent>",
-            "Q": "<question>",
-            "A": "<answer>"
-        }},
-        "2": {{
-            ...
-        }},
-        ...
-    }}
-    
-    ### STYLE ###
-    - Natural, friendly dialogue tone.
-    - Rich, realistic data.
-    - Clear, consistent entity naming.
-    - No meta-commentary, no explanations.
-    - Output only JSON.
-    
-    Now generate a dialogue of 25 turns
-""")
-ex_time = time() - start
-conf.model_time += ex_time
-input_tokens = dialogue._state.usage.input_tokens
-output_tokens = dialogue._state.usage.output_tokens
-print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}, Input tokens:  {input_tokens}, Output tokens: {output_tokens}}}")
+import conf
+from conf import ops, default_n, dialogue_client, newl, types_def
 
-dialogue_list = ast.literal_eval(repair_json(dialogue.output))
+def gen_dialogue(n = default_n):
+
+    start = time()
+
+    dialogue = dialogue_client.generate(
+
+        prompt=f"""
+            ### ROLE ###
+            You are simulating a one-to-one conversation between two cooperative agents:
+                - Agent Q (Questioner) – selects one intent per turn and asks a natural-language question.
+                - Agent A (Answerer) – answers the question, expanding its own A-Box by creating new entities and facts.
+            The simulation must be strictly controlled, deterministic, and fully consistent with the ontology.
+            
+            ### OBJECTIVE ###
+            - Produce a structured dialogue where each turn follows this pipeline:
+            - Q selects exactly one valid intent from the list.
+            - Q asks one question based on that intent.
+            - A interprets the question using the chosen intent, and:
+                - creates all required entities,
+                - adds new facts consistent with the intent’s postconditions
+            
+            ### INTENTS ###
+            Each intent has:
+                - description
+                - preconditions (required classes/entities)
+                - slots (data the answer must express naturally)
+            
+            Intents available:
+            {[{
+                i: {
+                    'description': ops[i]['preconditions']['description'],
+                    'preconditions': ops[i]['preconditions']['classes'], 
+                    'slots': ops[i]['postconditions']['slots']
+                }
+            } for i in ops]}
+            
+            ### DIALOGUE RULES ###
+            Agent Q (Questioner) must:
+            - Select an intent whose preconditions are currently satisfied.
+            - Ask one question based on that intent.
+            - Referencing every entity in the intent's precondition, always specifying their entity ID
+            - Never mention:
+                - “intent”
+                - “preconditions”
+                - “postconditions”
+                - ontology mechanics
+                
+            Agent A (Answerer) must:
+            - Interpret the question according to the intent decided by Q.
+            - Create all entities required by the intent’s postconditions.
+            - Use unique sequential IDs for each class:
+                - Format: A, AA, or AAA + 3 digits (e.g., U001, RG002).
+            - Follow these type definitions when generating data:
+                {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
+                    if len([t for t in types_def if t != 'id']) != 0 else ""}
+            - Never reuse an ID for any entity.
+            - Never mention:
+                - “intent”, “preconditions”, “postconditions”
+                - internal rules
+                - the A-Box explicitly
+            
+            ### OUTPUT FORMAT ###
+            Output only one single JSON object containing all turns:
+            {{
+                "1": {{
+                    "Intent": "<intent_name>",
+                    "Q": "<question>",
+                    "A": "<answer>"
+                }},
+                "2": {{
+                    ...
+                }},
+                ...
+            }}
+            
+            ### STYLE ###
+            - Natural, conversational tone.
+            - Rich, realistic details.
+            - Consistent naming and entity references.
+            - Absolutely no meta-commentary or explanation.
+            
+            ### TASK ###
+            Now generate a dialogue of {n} turns following all rules above.
+        """,
+        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        format='json',
+        options={
+            "temperature": 0.8
+        }
+    )
+
+    ex_time = time() - start
+    print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}}}")
+    conf.timestamps.append({'role': 'dialogue_generation', 'time': ex_time})
+
+    return ast.literal_eval(repair_json(dialogue['response']))

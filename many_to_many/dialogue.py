@@ -1,193 +1,147 @@
 import ast
+from collections import defaultdict
+
 import conf
 from time import time
-from conf import ops, chat_history
-from agents import tbox_agent, cluster_agent
+from conf import ops, chat_history, dialogue_client, num_abox
+from agents import dialogue_agent, cluster_agent
 from json_repair import repair_json
 
-start = time()
-instructions = cluster_agent.run_sync(f"""
-    ### ROLE ###
-    You are an expert ontology analyst.  
-    Your task is to organize a list of domain intents into coherent areas of expertise.  
-    Each area of expertise groups intents that deal with related entities, actions, or relationships.
 
-    ### OBJECTIVE ###
-    Given the following intents, analyze their descriptions, preconditions, and postconditions, and produce a
-    structured categorization:
-    1. Identify logical areas or subdomains of expertise.
-    2. Assign each of the intents to one area.
-    3. Make sure that each area has a meaningful conceptual focus.
-    4. Create new area names when necessary, but keep them concise and descriptive.
-    5. Prefer 4–5 areas in total.
-    6. Try to keep a balanced number of intents for each area of expertise.
-    7. Order the areas according to the preconditions of their intent: an intent I1 that has the result of another
-    intent I2 in the preconditions should be put after I2
+def gen_dialogue(instructions):
 
-    ### INPUT ###
-    Each intent is described as:
-    IntentName:
-      description: <short summary>
-      preconditions: <required entities or relations>
-      postconditions: <new entities or relations>
-      slots: <data attributes introduced by the intent>
-
-    ### INTENTS ###:
-    {[{
-        i: {
-            'description': ops[i]['preconditions']['description'],
-            'preconditions': ops[i]['preconditions']['classes'],
-            'postconditions': ops[i]['postconditions']['classes'],
-            'slots': ops[i]['postconditions']['slots']
-        }
-    } for i in ops]}
-
-    ### OUTPUT FORMAT ###
-    Return only valid JSON in the following format:
-
-    {{
-        "<area1_name>": ['<intent1_name>', '<intent2_name>', ...],
-        "<area2_name>": ['<intent6_name>', '<intent7_name>', ...]
-        ...
-    }}
-
-    ### STYLE ###
-    - Use short, human-readable area names.
-    - Every intent must appear exactly once.
-    - Return the areas of expertise ordered according to the dependencies of their intent.
-    - Do not include any explanations or commentary outside of the JSON.
-""")
-ex_time = time() - start
-conf.model_time += ex_time
-input_tokens = instructions._state.usage.input_tokens
-output_tokens = instructions._state.usage.output_tokens
-print(f"Instruction generation: {{Execution time: {round(ex_time, 2)}, Input tokens: {input_tokens}, Output tokens: {output_tokens}}}")
-instructions = ast.literal_eval(repair_json(instructions.output))
-
-def get_dialogue(instructions):
+    conf.chat_history.append({
+        'role': 'system',
+        'content': f"""
+            ### ROLE ###
+            You are simulating a parallel conversation between four cooperative agents:
+            - Agent Q (Questioner) – asks high-level questions to explore a domain.
+            - Agent A1, Agent A2, Agent A3 (Answerers) – each answers independently, building a separate A-Box model of the
+            same ontology.
+            
+            Each Answerer’s A-Box is completely isolated, with its own entities, IDs, and facts.
+            No Answerer ever sees or references the others.
+            
+            ### OBJECTIVE ###
+            Generate a structured multi-agent dialogue where:
+            1. Agent Q asks one question per turn, choosing an available intent from the list.
+            2. A1, A2, and A3 each interpret the question independently according to the specified intent and:
+                - generate new facts/entities
+                - expand their own parallel A-Box
+                - mention required entities from the previously generated ones.
+            3. The three answers must yield:
+                - different data
+                - different ids
+                - different narrative branches
+            4. All answers must faithfully follow intent preconditions, postconditions, and slots.
+            
+            This is used to simulate parallel knowledge graph branches.
+            
+            ### INTENTS ###
+            The domain is defined by intents, each having:
+            - description
+            - preconditions (required classes/relations)
+            - slots (values to be expressed naturally)
+            
+            Intents available:
+            {[{
+                i: {
+                    'description': ops[i]['preconditions']['description'],
+                    'preconditions': ops[i]['preconditions']['classes'],
+                    'slots': ops[i]['postconditions']['slots']
+                }
+            } for i in ops if i in instructions]}
+            
+            Each Answerer uses the same intent set but generates its own different A-Box.
+            
+            ### DIALOGUE RULES ###
+            - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
+            previous ones, intents in the sequence can be repeated multiple times in a row.
+            - Agent Q (Questioner) must:
+                - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
+                - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
+                - Must never mention “intents”, “preconditions”, “postconditions”.
+                - Must balance intent frequency: large entities (e.g. Organizations) appear 1–2 times; smaller ones
+                    (e.g. People) appear 3–4 times; 
+            - Agent A1, A2, A3 (Parallel Answerers), each Answerer must:
+                - Interpret the question using the intent provided by the questioner.
+                - Identify the slots of the preconditions among the entities already generated in the previous
+                interactions
+                - Generate all the required entities present the slots section of the intent that have not been generated
+                previously.
+                - Every precondition mentioned in the selected intent MUST be included in the answer by using its id.
+                - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
+                number of 3 digits, starting from 001 (e.g. U001, D001, RG001)
+                - Follow these type definitions when generating data:
+                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id']) 
+                        if len([t for t in conf.types_def if t != 'id']) != 0 else ""}
+                - Never mention, reference, or imply the existence of A2 or A3 (or vice versa).
+                - Never refer to “intents” explicitly.
+            - When multiple previously-generated entities satisfy a precondition, the answerer must not always pick the same
+            one. They should rotate or diversify across different suitable entities to explore alternative knowledge branches.
+            
+            Each answerer produces one answer per turn.
+            
+            ### OUTPUT FORMAT ###
+            For each turn, produce a JSON block like:
+            {{
+                "1": {{
+                    "Q": "<question>",
+                    "Intent": "<intent>",
+                    "A1": "<answer>",
+                    "A2": "<answer>",
+                    "A3": "<answer>"
+                }},
+                "2": {{
+                    ...
+                }},
+                ...
+            }}
+            
+            ### STYLE ###
+            - Natural, friendly dialogue tone.
+            - Rich, realistic data.
+            - Clear, consistent entity naming.
+            - No meta-commentary, no explanations.
+            - Output only JSON.
+            
+            Now generate a dialogue with {len(instructions) * 3} new question turns, without counting the ones present
+            in the message history, restarting the enumeration of the turns from 1
+        """
+    })
+    conf.chat_history.append({
+        'role': 'user',
+        'content': 'Continue the dialogue according to the system instructions, ONLY generate new dialogue exchanges,'
+                   'do not rewrite old ones present in other messages.'
+    })
 
     start = time()
-    dialogue = tbox_agent.run_sync(f"""
-        
-        --- 🧭 ROLE ---
-        You are simulating a many-to-many parallel conversation with:
-        - A T-Box, representing a specialized conceptual viewpoint (subsets of intents).
-        - 3 A-Boxes (Answerers), A1, A2, A3, who independently populate separate knowledge graphs.
-        Each A-Box maintains:
-        - its own entities
-        - its own IDs
-        - its own narrative world
-        - its own interpretation of the questions
-        No A-Box ever sees the others.
-        
-        The simulation models parallel world exploration with a conceptual planner (T-Box) and multiple generators 
-        (A-Boxes).
-        
-        --- 🎯 OBJECTIVE ---
-        1. Generate a structured multi-agent dialogue where:
-          - T-Box selects an available intent.
-          - It asks one high-level question consistent with that intent.
-        2. A1, A2, A3 independently:
-          - interpret the question
-          - satisfy preconditions using their own previously created entities
-          - introduce new entities where required
-          - create new facts according to the intent’s postconditions
-        3. All A-Box branches diverge in:
-          - entity IDs
-          - attribute values
-          - which previously created entities they connect to
-          - world structure
-        
-        This produces parallel knowledge graph expansions across different conceptual planners.
-        
-        ⚙️ INTENTS
-        Each intent is defined by:
-        
-        IntentName:
-            description: <summary>
-            preconditions: <required classes/relations>
-            postconditions: <introduced classes/relations>
-            slots: <required slot values>
-            
-        Available intents:
-        {[{
-            i: {
-                'description': ops[i]['preconditions']['description'],
-                'preconditions': ops[i]['preconditions']['classes'],
-                'postconditions': ops[i]['postconditions']['classes'],
-                'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots']
-            }
-        } for i in instructions]}
-        
-        --- 🗂️ DIALOGUE RULES FOR T-BOX---
-        At each turn:
-        1. The T-Box selects an intent:
-          - It must belong to the T-Box’s area of expertise (derived from its subset of intents).
-          - All preconditions must be logically satisfiable by prior A-Box turns.
-          - Frequently reuse small-entity intents (Student, Course, Group).
-          - Sparingly reuse large-entity intents (University, Department).
-        2. The T-Box generates one high-level question:
-          - No mention of:
-            - “intent”
-            - “preconditions”
-            - “slots”
-          - Must never reference entity IDs (A-Boxes own the IDs).
-          - The question should implicitly request the content the intent introduces.
-        
-        --- 🧠 DIALOGUE RULES FOR A-BOXES ---
-        For each turn, A1, A2, A3 independently:
-        1. Precondition satisfaction
-          - Identify entities matching the required slots.
-          - If multiple entities match:
-            - do not always select the most recent;
-            - do not always select the same one across the three A-Boxes;
-            - prioritize structural diversity:
-              - A1 may pick an entity from turn 2
-              - A2 from turn 5
-              - A3 from turn 7
-          - If no matching entity exists, create it.
-        2. Postcondition generation
-          - Create all required classes and relations.
-          - Fill all slot values with naturalistic names.
-          - Assign IDs:
-            - format: [A–Z]{{1,2}}[0-9]{{3}}
-            - unique, sequential within each A-Box
-            - never reused
-        3. Structural diversity requirement
-          - To avoid homogeneous graphs, A-Boxes must:
-            - avoid using the same previously created entity as the other A-Boxes
-            - vary which earlier entities they link to
-            - occasionally reuse older entities rather than the newest
-            - distribute relationships among different branches of the existing graph
-            
-        --- 🧾 OUTPUT FORMAT ---
-        JSON only:
-        {{
-            "1": {{
-                "Intent": "<intent_name>",
-                "Q": "<question>",
-                "A1": "<answer>",
-                "A2": "<answer>",
-                "A3": "<answer>"
-            }},
-            "2": {{ ... }},
-             ...
-        }}
-        
-        --- ✨ STYLE ---
-        - Natural, human-like conversational tone.
-        - Rich but concise.
-        - Diverse data across A1, A2, A3.
-        - No meta-commentary.
-        
-        Now generate a dialogue containing at least {len(instructions) * 3} full A–B exchanges.
-    """, message_history=chat_history)
+    dialogue = dialogue_client.chat(
+        messages=conf.chat_history,
+        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        format='json',
+        options={
+            "temperature": 0.8
+        }
+    )
     ex_time = time() - start
-    conf.model_time += ex_time
-    input_tokens = dialogue._state.usage.input_tokens
-    output_tokens = dialogue._state.usage.output_tokens
-    print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}, Input tokens:  {input_tokens}, Output tokens: {output_tokens}}}")
+    print(f"Dialogue generation: {{Execution time: {round(ex_time, 2)}}}")
 
-    conf.chat_history.extend(dialogue.new_messages())
-    dialogue_list = ast.literal_eval(repair_json(dialogue.output))
+    conf.chat_history.pop()
+    conf.chat_history.pop()
+    dialogue_list = ast.literal_eval(repair_json(dialogue['message']['content']))
+
+    history_dict = defaultdict(dict)
+    for k, v in dialogue_list.items():
+        history_dict[k]['Q'] = v['Q']
+        for n in range(num_abox):
+            history_dict[k][f'A{str(n+1)}'] = v[f'A{str(n+1)}']
+
+    import json
+    conf.chat_history.append({
+        'role': 'user',
+        'content': f"""This is the history of previous conversations, use it only to reference already existing
+                entities in a coherent way, do not modify it. {json.dumps(history_dict)}"""
+    })
+
     return dialogue_list
