@@ -1,4 +1,7 @@
 import ast
+import asyncio
+
+from cohere.utils import async_wait
 from json_repair import repair_json
 import conf
 import requests
@@ -8,22 +11,29 @@ from rdflib import URIRef, RDF, Literal
 from functions import get_intent_model, get_slots_model, replace_ids, refactor_dialogue, dict_replace
 from agents import parser_agent, abox_agent
 from conf import bcolors, ops, ont_uri, g, hallucinations, fuseki, fuseki_headers, avg_triples, default_n
-from one_to_one.dialogue import gen_dialogue
+from one_to_one.dialogue import gen_dialogue, gen_dialogue_async
 
 
-def __launch__(triples):
+async def __launch__(triples):
 
     n_t = 0
     gen = 0
+    next_dialogue = None
+
     while n_t < triples:
 
         gen += 1
         conf.ids = []
 
-        if triples - n_t > avg_triples:
-            dialogue_list = refactor_dialogue(gen_dialogue())
+        if n_t == 0:
+            parser_agent.run(user_prompt="")
+            dialogue_list = gen_dialogue()
+            next_dialogue = asyncio.create_task(gen_dialogue_async())
         else:
-            dialogue_list = refactor_dialogue(gen_dialogue(round((triples - n_t) / (default_n / avg_triples))) + 1)
+            dialogue_list = await next_dialogue
+            next_dialogue = asyncio.create_task(gen_dialogue_async())
+
+        dialogue_list = refactor_dialogue(dialogue_list)
 
         i = 1
         while i <= len(list(dialogue_list)):
@@ -49,7 +59,7 @@ def __launch__(triples):
             start = time()
 
             try:
-                slots_answer = abox_agent.run_sync(user_prompt=f"""
+                slots_answer = await abox_agent.run(user_prompt=f"""
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
@@ -69,14 +79,14 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {question}
                 """, output_type=slots_model)
-                parse_time = time() - start
+                end = time() - start
                 slots = dict_replace('null', 'None', slots_answer.output.model_dump())
 
             except UnexpectedModelBehavior as e:
                 hallucinations['parser_failures'] += 1
                 print(e)
 
-                slots_answer = abox_agent.run_sync(user_prompt=f"""
+                slots_answer = await abox_agent.run(user_prompt=f"""
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
@@ -104,16 +114,16 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {question}
                 """)
-                parse_time = time() - start
+                end = time()
                 slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
-            conf.timestamps.append({'role': 'parsing', 'time': parse_time})
+            conf.parsing_timestamps.append({'start': start, 'end': end})
 
             print(f"{bcolors.WARNING}Slots: {slots}{bcolors.ENDC}")
 
             start = time()
             try:
-                answer_text = parser_agent.run_sync(user_prompt=f"""
+                answer_text = await parser_agent.run(user_prompt=f"""
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
@@ -133,14 +143,14 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {answer}
                 """, output_type=output_model)
-                parse_time = time() - start
+                end = time()
                 answer = dict_replace('null', 'None', answer_text.output.model_dump())
 
             except UnexpectedModelBehavior as e:
                 hallucinations['parser_failures'] += 1
                 print(e)
 
-                answer_text = parser_agent.run_sync(user_prompt=f"""
+                answer_text = await parser_agent.run(user_prompt=f"""
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
@@ -168,10 +178,10 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {answer}
                 """)
-                parse_time = time() - start
+                end = time() - start
                 answer = ast.literal_eval(repair_json(answer_text.output).replace('null', 'None'))
 
-            conf.timestamps.append({'role': 'parsing', 'time': parse_time})
+            conf.parsing_timestamps.append({'start': start, 'end': end})
             answer, conf.ids = replace_ids(answer, conf.ids)
 
             for a in answer:
@@ -219,7 +229,6 @@ def __launch__(triples):
                     obj = URIRef(f"{ont_uri}{f'G{gen}_' + slots[t[2]]}")
                 else:
                     obj = URIRef(f"{ont_uri}{t[2]}")
-                n_t += 1
 
                 if 'http' in obj:
                     f_obj = '<' + str(obj) + '>'
@@ -229,6 +238,9 @@ def __launch__(triples):
                 fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
                 requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
 
-            i += 1
+                n_t += 1
+                if n_t >= triples:
+                    return
 
-    print(f"\nNumber of plan hallucinations: {hallucinations}")
+            i += 1
+    return

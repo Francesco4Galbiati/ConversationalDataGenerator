@@ -7,7 +7,7 @@ from pydantic import constr, StringConstraints
 from collections import defaultdict
 from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.providers.ollama import OllamaProvider
-from ollama import Client
+from ollama import Client, AsyncClient
 
 # ONTOLOGY READ
 with open("./resources/LUBM_contract.yaml") as f:
@@ -60,23 +60,25 @@ class bcolors:
 
 # CONNECTIONS
 # Ollama
-host = 'http://192.168.0.109:11434'
+p_host = 'http://localhost:11434'
+d_host = 'http://localhost:11435'
 
 # OLLAMA MODELS
 dialogue_model = OpenAIChatModel(
     model_name='mistral-small3.2:24b-instruct-2506-q4_K_M',
-    provider=OllamaProvider(base_url=host + '/v1')
+    provider=OllamaProvider(base_url=d_host + '/v1')
 )
 
 task_model = OpenAIChatModel(
     model_name='mistral-nemo:12b-instruct-2407-q8_0',
-    provider=OllamaProvider(base_url=host + '/v1')
+    provider=OllamaProvider(base_url=p_host + '/v1')
 )
 
-dialogue_client = Client(host=host)
+dialogue_client = Client(host=d_host)
+async_dialogue_client = AsyncClient(host=d_host)
 
 # Fuseki
-fuseki = 'http://192.168.0.109:3030/dialogue_gen/data'
+fuseki = 'http://localhost:3030/dialogue_gen/data'
 fuseki_headers = {"Content-Type": "text/turtle"}
 
 # PYDANTIC AI CONFIGURATION
@@ -100,4 +102,5 @@ hallucinations = {
 }
 
 # TIMESTAMPS
-timestamps = list()
+dialogue_timestamps = list()
+parsing_timestamps = list()
