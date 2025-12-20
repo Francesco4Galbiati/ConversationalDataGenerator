@@ -1,4 +1,7 @@
 import ast
+import asyncio
+
+from cohere.utils import async_wait
 from json_repair import repair_json
 import conf
 import requests
@@ -11,12 +14,13 @@ from pydantic_ai import UnexpectedModelBehavior
 from many_to_one.dialogue import gen_dialogue
 
 
-def __launch__(triples):
+async def __launch__(triples):
 
     inst = next(instructions_loop)
     n_t = 0
     gen = 0
     k = 0
+    next_dialogue = None
 
     while n_t < triples:
 
@@ -27,7 +31,17 @@ def __launch__(triples):
             gen += 1
             k = 1
 
-        dialogue_list = refactor_dialogue(gen_dialogue(instructions[inst]))
+        if n_t == 0:
+            parser_agent.run(user_prompt='')
+            dialogue_list = gen_dialogue(instructions[inst])
+            inst = next(instructions_loop)
+            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+        else:
+            dialogue_list = await next_dialogue
+            inst = next(instructions_loop)
+            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+
+        dialogue_list = refactor_dialogue(dialogue_list)
 
         i = 1
         while i <= len(list(dialogue_list)):
@@ -72,7 +86,7 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {question}
                 """, output_type=slots_model)
-                parse_time = time() - start
+                end = time()
                 slots = dict_replace('null', 'None', slots_answer.output.model_dump())
 
             except UnexpectedModelBehavior as e:
@@ -107,10 +121,10 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {question}
                 """)
-                parse_time = time() - start
+                end = time()
                 slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
-            conf.timestamps.append({'role': 'parsing', 'time': parse_time})
+            conf.parsing_timestamps.append({'start': start, 'end': end})
 
             print(f"{bcolors.WARNING}Slots: {slots}{bcolors.ENDC}")
 
@@ -137,7 +151,7 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {answer}
                 """, output_type=output_model)
-                parse_time = time() - start
+                end = time()
                 answer = dict_replace('null', 'None', answer_text.output.model_dump())
 
             except UnexpectedModelBehavior as e:
@@ -172,10 +186,10 @@ def __launch__(triples):
                     ### INPUT TEXT ###
                     {answer}
                 """)
-                parse_time = time() - start
+                end = time()
                 answer = ast.literal_eval(repair_json(answer_text.output).replace('null', 'None'))
 
-            conf.timestamps.append({'role': 'parsing', 'time': parse_time})
+            conf.parsing_timestamps.append({'start': start, 'end': end})
             answer, conf.ids = replace_ids(answer, conf.ids)
 
             for a in answer:
@@ -224,7 +238,6 @@ def __launch__(triples):
                     obj = URIRef(f"{ont_uri}{t[2]}")
 
                 g.add((sub, pred, obj))
-                n_t += 1
 
                 if 'http' in obj:
                     f_obj = '<' + str(obj) + '>'
@@ -234,7 +247,9 @@ def __launch__(triples):
                 fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
                 requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
 
-            i += 1
-        inst = next(instructions_loop)
+                n_t += 1
+                if n_t >= triples:
+                    return
 
-    print(f"\nNumber of plan hallucinations: {hallucinations}")
+            i += 1
+    return

@@ -1,3 +1,4 @@
+import asyncio
 from time import time
 import requests
 import conf
@@ -6,14 +7,15 @@ from json_repair import repair_json
 from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, avg_triples, default_n, g
 from agents import parser_agent
 from rdflib import URIRef, RDF, Literal
-from one_to_many.dialogue import gen_dialogue
+from one_to_many.dialogue import gen_dialogue, gen_dialogue_async
 from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace
 from pydantic_ai import UnexpectedModelBehavior
 
-def __launch__(triples):
+async def __launch__(triples):
 
     n_t = 0
     gen = 0
+    next_dialogue = None
     for n in range(num_abox):
         conf.ids.append(list())
 
@@ -24,10 +26,15 @@ def __launch__(triples):
         for n in range(num_abox):
             conf.ids.append(list())
 
-        if triples - n_t > avg_triples:
-            dialogue_list = refactor_dialogue(gen_dialogue())
+        if n_t == 0:
+            parser_agent.run(user_prompt='')
+            dialogue_list = gen_dialogue()
+            next_dialogue = asyncio.create_task(gen_dialogue_async())
         else:
-            dialogue_list = refactor_dialogue(gen_dialogue(round((triples - n_t) / (avg_triples * num_abox / default_n)) + 1))
+            dialogue_list = await next_dialogue
+            next_dialogue = asyncio.create_task(gen_dialogue_async())
+
+        dialogue_list = refactor_dialogue(dialogue_list)
 
         i = 1
         while i <= len(list(dialogue_list)):
@@ -77,7 +84,7 @@ def __launch__(triples):
                         ### INPUT TEXT ###
                         {answer[n]}
                     """, output_type=output_model)
-                    parse_time = time() - start
+                    end = time()
                     slots = dict_replace('null', 'None', slots_answer.output.model_dump())
 
                 except UnexpectedModelBehavior as e:
@@ -114,11 +121,10 @@ def __launch__(triples):
                         ### INPUT TEXT ###
                         {answer[n]}
                     """)
-                    parse_time = time() - start
+                    end = time()
                     slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
-                conf.timestamps.append({'role': 'parsing', 'time': parse_time})
-
+                conf.parsing_timestamps.append({'start': start, 'end': end})
                 slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
 
                 for s in slots:
@@ -159,7 +165,6 @@ def __launch__(triples):
                         obj = URIRef(f"{ont_uri}{t[2]}")
 
                     g.add((sub, pred, obj))
-                    n_t += 1
 
                     if 'http' in obj:
                         f_obj = '<' + str(obj) + '>'
@@ -167,8 +172,11 @@ def __launch__(triples):
                         f_obj = '"' + str(obj) + '"'
 
                     fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
-                    response = requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+                    requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
+
+                    n_t += 1
+                    if n_t >= triples:
+                        return
 
             i += 1
-
-    print(f"\nNumber of plan hallucinations: {hallucinations}")
+    return

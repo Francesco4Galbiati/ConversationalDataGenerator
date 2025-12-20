@@ -1,7 +1,5 @@
 import ast
 import asyncio
-
-from cohere.utils import async_wait
 from json_repair import repair_json
 import conf
 import requests
@@ -10,7 +8,7 @@ from pydantic_ai import UnexpectedModelBehavior
 from rdflib import URIRef, RDF, Literal
 from functions import get_intent_model, get_slots_model, replace_ids, refactor_dialogue, dict_replace
 from agents import parser_agent, abox_agent
-from conf import bcolors, ops, ont_uri, g, hallucinations, fuseki, fuseki_headers, avg_triples, default_n
+from conf import bcolors, ops, ont_uri, hallucinations, fuseki, fuseki_headers
 from one_to_one.dialogue import gen_dialogue, gen_dialogue_async
 
 
@@ -26,7 +24,7 @@ async def __launch__(triples):
         conf.ids = []
 
         if n_t == 0:
-            parser_agent.run(user_prompt="")
+            abox_agent.run(user_prompt="")
             dialogue_list = gen_dialogue()
             next_dialogue = asyncio.create_task(gen_dialogue_async())
         else:

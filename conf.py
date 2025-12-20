@@ -1,28 +1,32 @@
 from itertools import cycle
-from typing import Annotated, Optional
+from typing import Annotated
 import yaml
+from datetime import datetime
 from enum import Enum
 from rdflib import *
-from pydantic import constr, StringConstraints
+from pydantic import StringConstraints
 from collections import defaultdict
-from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
+from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from ollama import Client, AsyncClient
 
 # ONTOLOGY READ
-with open("./resources/LUBM_contract.yaml") as f:
+with open("resources/contracts/LUBM_contract.yaml") as f:
     contract = yaml.safe_load(f)
     ops = contract['intents']
     types = contract['types']
     instructions = contract['instructions']
 ont_prefix = 'lubm'
 ont_uri = 'http://swat.cse.lehigh.edu/onto/univ-bench.owl#'
-output_file = open('./resources/output.txt', 'w')
 instructions_loop = cycle(instructions)
+
+run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+output_file_name = f"resources/output/output_{run_id}.json"
+output_file = open(output_file_name, 'w')
 
 # RDFLIB CONFIGURATION
 g = Graph()
-g.parse('./resources/univ-bench.owl')
+g.parse('./resources/ontologies/univ-bench.owl')
 n = 0
 for o in ops:
     n += len(ops[o]['postconditions']['triples'])
@@ -70,7 +74,7 @@ dialogue_model = OpenAIChatModel(
 )
 
 task_model = OpenAIChatModel(
-    model_name='mistral-nemo:12b-instruct-2407-q8_0',
+    model_name='qwen2.5:7b-instruct-q4_K_M',
     provider=OllamaProvider(base_url=p_host + '/v1')
 )
 
