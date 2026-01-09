@@ -61,23 +61,31 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
+    
                     ### INTENT CONTEXT ###
                     Intent name: {intent}
                     Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['preconditions']['slots'])}
-
+    
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-
+                    
+                    ### OUTPUT FORMAT ###
+                    Return a JSON dictionary like:
+                    {{
+                      "<slot1>": "<value-or-null>",
+                      "<slot2>": "<value-or-null>",
+                      ...
+                    }}
+    
                     ### INPUT TEXT ###
                     {question}
                 """, output_type=slots_model)
-                end = time() - start
+                end = time()
                 slots = dict_replace('null', 'None', slots_answer.output.model_dump())
 
             except UnexpectedModelBehavior as e:
@@ -136,7 +144,15 @@ async def __launch__(triples):
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
-                    - After having identified the data slots, return them in a JSON object that uses the names of the slots.
+                    - After having identified the data slots, return them in a JSON object that uses the names of the slots
+                    
+                    ### OUTPUT FORMAT ###
+                    Return a JSON dictionary like:
+                    {{
+                      "<slot1>": "<value-or-null>",
+                      "<slot2>": "<value-or-null>",
+                      ...
+                    }}
 
                     ### INPUT TEXT ###
                     {answer}
@@ -176,7 +192,7 @@ async def __launch__(triples):
                     ### INPUT TEXT ###
                     {answer}
                 """)
-                end = time() - start
+                end = time()
                 answer = ast.literal_eval(repair_json(answer_text.output).replace('null', 'None'))
 
             conf.parsing_timestamps.append({'start': start, 'end': end})
