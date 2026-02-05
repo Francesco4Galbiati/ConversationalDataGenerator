@@ -1,3 +1,4 @@
+import threading
 from itertools import cycle
 from typing import Annotated
 import yaml
@@ -11,13 +12,13 @@ from pydantic_ai.providers.ollama import OllamaProvider
 from ollama import Client, AsyncClient
 
 # ONTOLOGY READ
-with open("resources/contracts/LUBM_contract.yaml") as f:
+with open("resources/contracts/HealthEQKG_contract.yaml") as f:
     contract = yaml.safe_load(f)
     ops = contract['intents']
     types = contract['types']
     instructions = contract['instructions']
 ont_prefix = 'lubm'
-ont_uri = 'http://swat.cse.lehigh.edu/onto/univ-bench.owl#'
+ont_uri = 'http://healtheqkg.example.org/ontology#'
 instructions_loop = cycle(instructions)
 
 run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -26,7 +27,7 @@ output_file = open(output_file_name, 'w')
 
 # RDFLIB CONFIGURATION
 g = Graph()
-g.parse('./resources/ontologies/univ-bench.owl')
+g.parse('./resources/ontologies/healtheqkg_ontology.owl')
 n = 0
 for o in ops:
     n += len(ops[o]['postconditions']['triples'])
@@ -87,14 +88,16 @@ fuseki_headers = {"Content-Type": "text/turtle"}
 
 # PYDANTIC AI CONFIGURATION
 types_def = defaultdict()
+'''
 for t in types:
     if types[t]['type'] == 'str':
         types_def[t] = {'def': Annotated[str, StringConstraints(pattern=types[t]['pattern'])], 'text': types[t]['text']}
     elif types[t]['type'] == 'enum':
         types_def[t] = {'def': Enum(t, dict([(x, x) for x in types[t]['options']])), 'text': types[t]['text']}
-
+'''
 model_time = 0
 parsing_time = 0
+global_lock = threading.Lock()
 
 # HALLUCINATIONS
 hallucinations = {

@@ -36,19 +36,24 @@ def gen_dialogue(n = default_n):
             - description
             - required classes/entities
             - slots (data that must appear in the answer)
+            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
             
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'], 
-                    'slots': ops[i]['postconditions']['slots']
+                    'slots': ops[i]['postconditions']['slots'],
+                    'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops]}
             You may ONLY use operations listed above.
             
             ### DIALOGUE RULES ###
-            - Select an operation whose required entities already exist.
+            - Select an intent whose required entities already exist.
+            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
             - Ask exactly one question per turn.
             - Explicitly reference ALL required entities using:
               - their entity ID
@@ -64,6 +69,7 @@ def gen_dialogue(n = default_n):
             - Interpret the question using the operation selected by Agent Q.
             - Generate ALL slot data required by that operation.
             - Introduce ALL new entities implied by the operation.
+            - Display all data in a dialogical answer (not a list of fields)
             - Assign NEW, UNIQUE IDs for new entities only.
             - ID format:
               - One to three capital letters + three digits (e.g., U001, RG002).
@@ -124,60 +130,78 @@ async def gen_dialogue_async(n = default_n):
         prompt=f"""
                 ### ROLE ###
                 You are simulating a one-to-one conversation between two cooperative agents:
-                    - Agent Q (Questioner) – selects one intent per turn and asks a natural-language question.
-                    - Agent A (Answerer) – answers the question, expanding its own A-Box by creating new entities and facts.
-                The simulation must be strictly controlled, deterministic, and fully consistent with the ontology.
-
+                - Agent Q (Questioner): selects exactly one valid operation per turn and asks a natural-language question.
+                - Agent A (Answerer): answers the question by adding new entities and facts to its internal world state.
+                
+                The simulation must remain consistent, deterministic, and ontology-compliant at all times.
+                
                 ### OBJECTIVE ###
-                - Produce a structured dialogue where each turn follows this pipeline:
-                - Q selects exactly one valid intent from the list.
-                - Q asks one question based on that intent.
-                - A interprets the question using the chosen intent, and:
-                    - creates all required entities,
-                    - adds new facts consistent with the intent’s postconditions
-
+                Generate a structured dialogue where each turn follows this exact sequence:
+                
+                1. Agent Q selects one operation whose requirements are already satisfied.
+                2. Agent Q asks one question corresponding to that operation.
+                3. Agent A answers by:
+                   - generating all required data,
+                   - introducing all new entities implied by the operation,
+                   - adding all facts implied by the operation.
+                
+                No step may be skipped.
+                
                 ### INTENTS ###
-                Each intent has:
-                    - description
-                    - preconditions (required classes/entities)
-                    - slots (data the answer must express naturally)
-
+                Each operation is defined by:
+                - description
+                - required classes/entities
+                - slots (data that must appear in the answer)
+                - cardinality: the average number of repetitions of the intent in a 10-turns conversation
+                
                 Intents available:
                 {[{
                     i: {
                         'description': ops[i]['preconditions']['description'],
-                        'preconditions': ops[i]['preconditions']['classes'],
-                        'slots': ops[i]['postconditions']['slots']
+                        'preconditions': ops[i]['preconditions']['classes'], 
+                        'slots': ops[i]['postconditions']['slots'],
+                        'cardinality': ops[i]['preconditions']['cardinality']
                     }
                 } for i in ops]}
-
+                You may ONLY use operations listed above.
+                
                 ### DIALOGUE RULES ###
-                Agent Q (Questioner) must:
-                - Select an intent whose preconditions are currently satisfied.
-                - Ask one question based on that intent.
-                - Referencing every entity in the intent's precondition, always specifying their entity ID
-                - Never mention:
-                    - “intent”
-                    - “preconditions”
-                    - “postconditions”
-                    - ontology mechanics
-
+                - Select an intent whose required entities already exist.
+                - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+                (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+                - Generated entities with lower cardinality must be used in multiple future turns of the conversation
+                - Ask exactly one question per turn.
+                - Explicitly reference ALL required entities using:
+                  - their entity ID
+                  - their class name
+                - Ask for ALL information required to fulfill the operation.
+                - NEVER mention:
+                  - ontology
+                  - operations / intents
+                  - preconditions or postconditions
+                  - rules or constraints
+                    
                 Agent A (Answerer) must:
-                - Interpret the question according to the intent decided by Q.
-                - Create all entities required by the intent’s postconditions.
-                - Use unique sequential IDs for each class:
-                    - Format: A, AA, or AAA + 3 digits (e.g., U001, RG002).
-                - Follow these type definitions when generating data:
-                    {newl.join([types_def[t]['text'] for t in types_def if t != 'id'])
+                - Interpret the question using the operation selected by Agent Q.
+                - Generate ALL slot data required by that operation.
+                - Introduce ALL new entities implied by the operation.
+                - Display all data in a dialogical answer (not a list of fields)
+                - Assign NEW, UNIQUE IDs for new entities only.
+                - ID format:
+                  - One to three capital letters + three digits (e.g., U001, RG002).
+                  - IDs must never be reused.
+                - Generate data consistent with the following type descriptions:
+                    {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
                         if len([t for t in types_def if t != 'id']) != 0 else ""}
-                - Never reuse an ID for any entity.
-                - Never mention:
-                    - “intent”, “preconditions”, “postconditions”
-                    - internal rules
-                    - the A-Box explicitly
-
+                - NEVER mention:
+                    - operations / intents
+                    - ontology mechanics
+                    - rules
+                    - internal state (e.g. “A-Box”)
+                
                 ### OUTPUT FORMAT ###
-                Output only one single JSON object containing all turns:
+                Output a SINGLE JSON object containing ALL turns.
+                Each turn MUST follow this structure exactly:
                 {{
                     "1": {{
                         "Intent": "<intent_name>",
@@ -189,15 +213,16 @@ async def gen_dialogue_async(n = default_n):
                     }},
                     ...
                 }}
-
+                
                 ### STYLE ###
-                - Natural, conversational tone.
-                - Rich, realistic details.
-                - Consistent naming and entity references.
-                - Absolutely no meta-commentary or explanation.
-
+                - Keys must be sequential numbers starting from "1".
+                - No trailing text.
+                - No explanations.
+                - No markdown.
+                - JSON ONLY.
+                
                 ### TASK ###
-                Now generate a dialogue of {n} turns following all rules above.
+                Generate exactly {n} turns.
             """,
         model='mistral-small3.2:24b-instruct-2506-q4_K_M',
         format='json',

@@ -121,7 +121,7 @@ async def gen_dialogue_async(n=default_n):
 
     start = time()
 
-    dialogue = await async_dialogue_client(
+    dialogue = await async_dialogue_client.generate(
         prompt=f"""
             ### ROLE ###
             You are simulating a one-to-many parallel conversation between four cooperative agents:

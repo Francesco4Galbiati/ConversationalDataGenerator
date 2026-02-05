@@ -9,9 +9,9 @@ from time import time
 from conf import bcolors, ops, hallucinations, ont_uri, g, fuseki, fuseki_headers, instructions, instructions_loop
 from rdflib import URIRef, Literal, RDF
 from agents import parser_agent, abox_agent
-from functions import get_slots_model, get_intent_model, replace_ids, refactor_dialogue, dict_replace
+from functions import get_slots_model, get_intent_model, replace_ids, refactor_dialogue, dict_replace, dict_keys_to_snake
 from pydantic_ai import UnexpectedModelBehavior
-from many_to_one.dialogue import gen_dialogue
+from many_to_one.dialogue import gen_dialogue, gen_dialogue_async
 
 
 async def __launch__(triples):
@@ -35,11 +35,11 @@ async def __launch__(triples):
             parser_agent.run(user_prompt='')
             dialogue_list = gen_dialogue(instructions[inst])
             inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
         else:
             dialogue_list = await next_dialogue
             inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
 
         dialogue_list = refactor_dialogue(dialogue_list)
 
@@ -83,6 +83,14 @@ async def __launch__(triples):
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
 
+                    ### OUTPUT FORMAT ###
+                    Return a JSON dictionary like:
+                    {{
+                      "<slot1>": "<value-or-null>",
+                      "<slot2>": "<value-or-null>",
+                      ...
+                    }}
+
                     ### INPUT TEXT ###
                     {question}
                 """, output_type=slots_model)
@@ -125,39 +133,13 @@ async def __launch__(triples):
                 slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
             conf.parsing_timestamps.append({'start': start, 'end': end})
+            slots = dict_keys_to_snake(slots)
 
             print(f"{bcolors.WARNING}Slots: {slots}{bcolors.ENDC}")
 
             start = time()
             try:
                 start = time()
-                answer_text = parser_agent.run_sync(user_prompt=f"""
-                    ### ROLE ###
-                    You are a specialized information extraction agent.
-                    Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
-                    ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
-                    Required data slots: {list(ops[intent]['postconditions']['slots'])}
-
-                    ### INSTRUCTIONS ###
-                    - Read the text carefully.
-                    - Identify and extract the values that correspond to each data slot.
-                    - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                    - Do not invent or paraphrase data — use only what appears in the text.
-                    - After having identified the data slots, return them in a JSON object that uses the names of the slots.
-
-                    ### INPUT TEXT ###
-                    {answer}
-                """, output_type=output_model)
-                end = time()
-                answer = dict_replace('null', 'None', answer_text.output.model_dump())
-
-            except UnexpectedModelBehavior as e:
-                hallucinations['parser_failures'] += 1
-                print(e)
-
                 answer_text = parser_agent.run_sync(user_prompt=f"""
                     ### ROLE ###
                     You are a specialized information extraction agent.
@@ -185,15 +167,51 @@ async def __launch__(triples):
 
                     ### INPUT TEXT ###
                     {answer}
+                """, output_type=output_model)
+                end = time()
+                answer = dict_replace('null', 'None', answer_text.output.model_dump())
+
+            except UnexpectedModelBehavior as e:
+                hallucinations['parser_failures'] += 1
+                print(e)
+
+                answer_text = parser_agent.run_sync(user_prompt=f"""
+                    ### ROLE ###
+                    You are a specialized information extraction agent.
+                    Your task is to extract the slot values required to fulfill a specific intent from a given text.
+
+                    ### INTENT CONTEXT ###
+                    Intent description: {ops[intent]['preconditions']['description']}
+                    Required data slots: {list(ops[intent]['postconditions']['slots'])}
+
+                    ### INSTRUCTIONS ###
+                    - Read the text carefully.
+                    - Identify and extract the values that correspond to each data slot.
+                    - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                    - Do not invent or paraphrase data — use only what appears in the text.
+                    - After having identified the data slots, return them in a JSON object that uses the names of the slots
+
+                    ### OUTPUT FORMAT ###
+                    Return a JSON dictionary like:
+                    {{
+                      "<slot1>": "<value-or-null>",
+                      "<slot2>": "<value-or-null>",
+                      ...
+                    }}
+
+                    ### INPUT TEXT ###
+                    {answer}
                 """)
                 end = time()
                 answer = ast.literal_eval(repair_json(answer_text.output).replace('null', 'None'))
 
             conf.parsing_timestamps.append({'start': start, 'end': end})
+            answer = dict_keys_to_snake(answer)
             answer, conf.ids = replace_ids(answer, conf.ids)
 
             for a in answer:
-                answer[a] = answer[a].replace("'", "")
+                if answer[a] != 'None' and answer[a] is not None:
+                    answer[a] = answer[a].replace("'", "")
 
             print(f"{bcolors.OKCYAN}Data:{bcolors.ENDC}")
             print(f'{bcolors.OKCYAN}{answer}{bcolors.ENDC}')

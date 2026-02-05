@@ -11,7 +11,7 @@ import time
 
 nest_asyncio.apply()
 start = time.time()
-asyncio.run(oto_launch(5000))
+asyncio.run(oto_launch(2500))
 end = time.time()
 timestamps = {'total': {'start': start, 'end': end}, 'dialogue': dialogue_timestamps, 'parsing': parsing_timestamps}
 

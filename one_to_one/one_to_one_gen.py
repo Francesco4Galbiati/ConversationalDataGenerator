@@ -1,16 +1,16 @@
 import ast
-import asyncio
-from json_repair import repair_json
 import conf
+import asyncio
 import requests
 from time import time
-from pydantic_ai import UnexpectedModelBehavior
-from rdflib import URIRef, RDF, Literal
-from functions import get_intent_model, get_slots_model, replace_ids, refactor_dialogue, dict_replace
-from agents import parser_agent, abox_agent
 from conf import bcolors, ops, ont_uri, hallucinations, fuseki, fuseki_headers
+from rdflib import URIRef, RDF, Literal
+from agents import parser_agent, abox_agent
+from functions import get_intent_model, get_slots_model, replace_ids, refactor_dialogue, dict_replace, \
+    dict_keys_to_snake
+from json_repair import repair_json
+from pydantic_ai import UnexpectedModelBehavior
 from one_to_one.dialogue import gen_dialogue, gen_dialogue_async
-
 
 async def __launch__(triples):
 
@@ -54,6 +54,63 @@ async def __launch__(triples):
             print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
             print(f"{bcolors.WARNING}Answer: {answer}{bcolors.ENDC}")
 
+            slots_prompt = f"""
+                ### ROLE ###
+                You are a specialized information extraction agent.
+                Your task is to extract the slot values required to fulfill a specific intent from a given text.
+
+                ### INTENT CONTEXT ###
+                Intent name: {intent}
+                Intent description: {ops[intent]['preconditions']['description']}
+                Required data slots: {list(ops[intent]['preconditions']['slots'])}
+
+                ### INSTRUCTIONS ###
+                - Read the text carefully.
+                - Identify and extract the values that correspond to each data slot.
+                - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                - Do not invent or paraphrase data — use only what appears in the text.
+                - After having identified the data slots, return them in a JSON object that uses the names of the slots
+                
+                ### OUTPUT FORMAT ###
+                Return a JSON dictionary like:
+                {{
+                  "<slot1>": "<value-or-null>",
+                  "<slot2>": "<value-or-null>",
+                  ...
+                }}
+
+                ### INPUT TEXT ###
+                {question}
+            """
+            answer_prompt = f"""
+                ### ROLE ###
+                You are a specialized information extraction agent.
+                Your task is to extract the slot values required to fulfill a specific intent from a given text.
+
+                ### INTENT CONTEXT ###
+                Intent name: {intent}
+                Intent description: {ops[intent]['preconditions']['description']}
+                Required data slots: {list(ops[intent]['postconditions']['slots'])}
+
+                ### INSTRUCTIONS ###
+                - Read the text carefully.
+                - Identify and extract the values that correspond to each data slot.
+                - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                - Do not invent or paraphrase data — use only what appears in the text.
+                - After having identified the data slots, return them in a JSON object that uses the names of the slots
+                
+                ### OUTPUT FORMAT ###
+                Return a JSON dictionary like:
+                {{
+                  "<slot1>": "<value-or-null>",
+                  "<slot2>": "<value-or-null>",
+                  ...
+                }}
+
+                ### INPUT TEXT ###
+                {answer}
+            """
+
             start = time()
 
             try:
@@ -61,19 +118,17 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-    
+
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['preconditions']['slots'])}
-    
+
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                    
+
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -81,7 +136,7 @@ async def __launch__(triples):
                       "<slot2>": "<value-or-null>",
                       ...
                     }}
-    
+
                     ### INPUT TEXT ###
                     {question}
                 """, output_type=slots_model)
@@ -96,19 +151,17 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-    
+
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['preconditions']['slots'])}
-    
+
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                    
+
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -116,7 +169,7 @@ async def __launch__(triples):
                       "<slot2>": "<value-or-null>",
                       ...
                     }}
-    
+
                     ### INPUT TEXT ###
                     {question}
                 """)
@@ -124,6 +177,7 @@ async def __launch__(triples):
                 slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
             conf.parsing_timestamps.append({'start': start, 'end': end})
+            slots = dict_keys_to_snake(slots)
 
             print(f"{bcolors.WARNING}Slots: {slots}{bcolors.ENDC}")
 
@@ -133,19 +187,17 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
+    
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['postconditions']['slots'])}
-
+    
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                    
+    
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -153,7 +205,7 @@ async def __launch__(triples):
                       "<slot2>": "<value-or-null>",
                       ...
                     }}
-
+    
                     ### INPUT TEXT ###
                     {answer}
                 """, output_type=output_model)
@@ -170,8 +222,6 @@ async def __launch__(triples):
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['postconditions']['slots'])}
 
                     ### INSTRUCTIONS ###
@@ -180,7 +230,7 @@ async def __launch__(triples):
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                    
+
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -196,11 +246,13 @@ async def __launch__(triples):
                 answer = ast.literal_eval(repair_json(answer_text.output).replace('null', 'None'))
 
             conf.parsing_timestamps.append({'start': start, 'end': end})
+            answer = dict_keys_to_snake(answer)
+
             answer, conf.ids = replace_ids(answer, conf.ids)
 
             for a in answer:
                 if answer[a] != 'None' and answer[a] is not None:
-                    answer[a] = answer[a].replace("'", "")
+                    answer[a] = str(answer[a]).replace("'", "")
 
             print(f"{bcolors.OKCYAN}Data:{bcolors.ENDC}")
             print(f'{bcolors.OKCYAN}{answer}{bcolors.ENDC}')

@@ -7,10 +7,10 @@ from agents import parser_agent
 from conf import hallucinations, bcolors, ops, ont_uri, fuseki, fuseki_headers, instructions_loop, num_abox, instructions, g
 from time import time
 from rdflib import URIRef, Literal, RDF
-from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace
+from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake
 from json_repair import repair_json
 from pydantic_ai import UnexpectedModelBehavior
-from many_to_many.dialogue import gen_dialogue
+from many_to_many.dialogue import gen_dialogue, gen_dialogue_async
 
 async def __launch__(triples):
 
@@ -37,11 +37,11 @@ async def __launch__(triples):
             parser_agent.run(user_prompt='')
             dialogue_list = gen_dialogue(instructions[inst])
             inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
         else:
             dialogue_list = await next_dialogue
             inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue(instructions[inst]))
+            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
 
         dialogue_list = refactor_dialogue(dialogue_list)
 
@@ -78,10 +78,8 @@ async def __launch__(triples):
                         Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                         ### INTENT CONTEXT ###
-                        Intent name: {intent}
-                        Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots'])
-                                              .extend(list(ops[intent]['preconditions']['slots']))}
+                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
+                                              list(ops[intent]['preconditions']['slots'])}
 
                         ### INSTRUCTIONS ###
                         - Read the text carefully.
@@ -89,6 +87,14 @@ async def __launch__(triples):
                         - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                         - Do not invent or paraphrase data — use only what appears in the text.
                         - After having identified the data slots, return them in a JSON object that uses the names of the slots
+                        
+                        ### OUTPUT FORMAT ###
+                        Return a JSON dictionary like:
+                        {{
+                          "<slot-name-1>": "<value-or-null>",
+                          "<slot-name-2>": "<value-or-null>",
+                          ...
+                        }}
 
                         ### INPUT TEXT ###
                         {answer[n]}
@@ -106,10 +112,8 @@ async def __launch__(triples):
                         Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                         ### INTENT CONTEXT ###
-                        Intent name: {intent}
-                        Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots'])
-                                              .extend(list(ops[intent]['preconditions']['slots']))}
+                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
+                                              list(ops[intent]['preconditions']['slots'])}
 
                         ### INSTRUCTIONS ###
                         - Read the text carefully.
@@ -121,10 +125,11 @@ async def __launch__(triples):
                         ### OUTPUT FORMAT ###
                         Return a JSON dictionary like:
                         {{
-                          "<slot1>": "<value-or-null>",
-                          "<slot2>": "<value-or-null>",
+                          "<slot-name-1>": "<value-or-null>",
+                          "<slot-name-2>": "<value-or-null>",
                           ...
                         }}
+                        For the slots' names use exactly the ones provided in the "required data slots" section.
 
                         ### INPUT TEXT ###
                         {answer[n]}
@@ -133,10 +138,12 @@ async def __launch__(triples):
                     slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
                 conf.parsing_timestamps.append({'start': start, 'end': end})
+                slots = dict_keys_to_snake(slots)
                 slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
 
                 for s in slots:
-                    slots[s] = slots[s].replace("'", "")
+                    if slots[s] != 'None' and slots[s] is not None:
+                        slots[s] = slots[s].replace("'", "")
 
                 print(f"{bcolors.OKCYAN}[A{n + 1}] Data: {slots}{bcolors.ENDC}")
 
@@ -149,8 +156,9 @@ async def __launch__(triples):
                     if t[0] not in slots or slots[t[0]] == 'None' or slots[t[0]] is None:
                         continue
 
-                    if t[2] not in slots or slots[t[2]] == 'None' or slots[t[2]] is None:
-                        continue
+                    if t[1] != 'type':
+                        if t[2] not in slots or slots[t[2]] == 'None' or slots[t[2]] is None:
+                            continue
 
                     if t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']:
                         sub = URIRef(f"{ont_uri}{f'A{n}G{gen}_' + slots[t[0]]}")

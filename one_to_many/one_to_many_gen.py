@@ -8,7 +8,7 @@ from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki
 from agents import parser_agent
 from rdflib import URIRef, RDF, Literal
 from one_to_many.dialogue import gen_dialogue, gen_dialogue_async
-from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace
+from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake
 from pydantic_ai import UnexpectedModelBehavior
 
 async def __launch__(triples):
@@ -63,44 +63,15 @@ async def __launch__(triples):
                 start = time()
 
                 try:
-                    slots_answer = parser_agent.run_sync(user_prompt=f"""
-                        ### ROLE ###
-                        You are a specialized information extraction agent.
-                        Your task is to extract the slot values required to fulfill a specific intent from a given text.
-    
-                        ### INTENT CONTEXT ###
-                        Intent name: {intent}
-                        Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots'])
-                                              .extend(list(ops[intent]['preconditions']['slots']))}
-    
-                        ### INSTRUCTIONS ###
-                        - Read the text carefully.
-                        - Identify and extract the values that correspond to each data slot.
-                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                        - Do not invent or paraphrase data — use only what appears in the text.
-                        - After having identified the data slots, return them in a JSON object that uses the names of the slots
-    
-                        ### INPUT TEXT ###
-                        {answer[n]}
-                    """, output_type=output_model)
-                    end = time()
-                    slots = dict_replace('null', 'None', slots_answer.output.model_dump())
-
-                except UnexpectedModelBehavior as e:
-                    hallucinations['parser_failures'] += 1
-                    print(e)
-
-                    slots_answer = parser_agent.run_sync(user_prompt=f"""
+                    slots_answer = await parser_agent.run(user_prompt=f"""
                         ### ROLE ###
                         You are a specialized information extraction agent.
                         Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                         ### INTENT CONTEXT ###
-                        Intent name: {intent}
                         Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots'])
-                                              .extend(list(ops[intent]['preconditions']['slots']))}
+                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
+                                              list(ops[intent]['preconditions']['slots'])}
 
                         ### INSTRUCTIONS ###
                         - Read the text carefully.
@@ -112,8 +83,44 @@ async def __launch__(triples):
                         ### OUTPUT FORMAT ###
                         Return a JSON dictionary like:
                         {{
-                          "<slot1>": "<value-or-null>",
-                          "<slot2>": "<value-or-null>",
+                          "<slot_1>": "<value-or-null>",
+                          "<slot_2>": "<value-or-null>",
+                          ...
+                        }}
+                        Use the exact words you find in the data slot section as keys to the JSON dictionary.
+
+                        ### INPUT TEXT ###
+                        {answer[n]}
+                    """, output_type=output_model)
+                    end = time()
+                    slots = dict_replace('null', 'None', slots_answer.output.model_dump())
+
+                except UnexpectedModelBehavior as e:
+                    hallucinations['parser_failures'] += 1
+                    print(e)
+
+                    slots_answer = await parser_agent.run(user_prompt=f"""
+                        ### ROLE ###
+                        You are a specialized information extraction agent.
+                        Your task is to extract the slot values required to fulfill a specific intent from a given text.
+
+                        ### INTENT CONTEXT ###
+                        Intent description: {ops[intent]['preconditions']['description']}
+                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
+                                              list(ops[intent]['preconditions']['slots'])}
+
+                        ### INSTRUCTIONS ###
+                        - Read the text carefully.
+                        - Identify and extract the values that correspond to each data slot.
+                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                        - Do not invent or paraphrase data — use only what appears in the text.
+                        - After having identified the data slots, return them in a JSON object that uses the names of the slots
+
+                        ### OUTPUT FORMAT ###
+                        Return a JSON dictionary like:
+                        {{
+                          "<slot_1>": "<value-or-null>",
+                          "<slot_2>": "<value-or-null>",
                           ...
                         }}
                         Use the exact words you find in the intent's slots as keys to the JSON dictionary.
@@ -125,6 +132,7 @@ async def __launch__(triples):
                     slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
 
                 conf.parsing_timestamps.append({'start': start, 'end': end})
+                slots = dict_keys_to_snake(slots)
                 slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
 
                 for s in slots:
@@ -142,8 +150,9 @@ async def __launch__(triples):
                     if t[0] not in slots or slots[t[0]] == 'None' or slots[t[0]] is None:
                         continue
 
-                    if t[2] not in slots or slots[t[2]] == 'None' or slots[t[2]] is None:
-                        continue
+                    if t[1] != 'type':
+                        if t[2] not in slots or slots[t[2]] == 'None' or slots[t[2]] is None:
+                            continue
 
                     if t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']:
                         sub = URIRef(f"{ont_uri}{f'A{n}G{gen}_' + slots[t[0]]}")

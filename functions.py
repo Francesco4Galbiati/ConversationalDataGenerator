@@ -1,10 +1,8 @@
 import re
 import random
 from collections import defaultdict
-from typing import Annotated, Optional
-
-from conf import ont_prefix, g, ops, hallucinations, prefixes, sq, ont_uri, ids, types_def
-from pydantic import create_model, constr, StringConstraints
+from conf import ont_prefix, g, ops, hallucinations, prefixes, sq, ont_uri, types_def
+from pydantic import create_model
 from pydantic_ai import UnexpectedModelBehavior
 
 def get_intent_slots(intent):
@@ -179,7 +177,7 @@ def replace_ids(slots, ids):
     tmp = slots
 
     for k, v in slots.items():
-        if '_id' in k and v != 'null':
+        if '_id' in k and v != 'null' and v is not None:
             while v in ids:
                 if int(v[-1]) != 9:
                     new = v[:-1] + str(int(v[-1]) + 1)
@@ -203,6 +201,8 @@ def replace_ids_tM(slots, ids, intent):
             if v is None:
                 v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
                 hallucinations['unspecified_slot'] += 1
+            if re.search(r'\d+$', v) is not None:
+                continue
             if v in ids and k not in ops[intent]['preconditions']['slots']:
                 while v in ids:
                     if int(v[-1]) != 9:
@@ -262,3 +262,10 @@ def dict_replace(_old, _new, dict):
         if v == _old:
             dict[k] = _new
     return dict
+
+def camel_to_snake(name):
+    s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
+
+def dict_keys_to_snake(d):
+    return {camel_to_snake(k): v for k, v in d.items()}

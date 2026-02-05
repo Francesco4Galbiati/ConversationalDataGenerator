@@ -4,7 +4,7 @@ from collections import defaultdict
 
 import conf
 from time import time
-from conf import ops, dialogue_client, async_dialogue_client
+from conf import ops, dialogue_client, async_dialogue_client, newl, types_def
 from json_repair import repair_json
 
 def gen_dialogue(instructions):
@@ -12,29 +12,32 @@ def gen_dialogue(instructions):
     conf.chat_history.append({
         'role': 'system',
         'content': f"""
-            --- 🧭 ROLE ---
-            You are simulating a conversation between two cooperative agents exploring a section of a knowledge domain.
-            - Agent Q (Questioner): asks progressively deeper questions to uncover new entities and relations.
-            - Agent A (Answerer): replies with facts, descriptions, and relations according to defined intents.
+            ### ROLE ###
+            You are simulating a one-to-one conversation between two cooperative agents:
+            - Agent Q (Questioner): selects exactly one valid operation per turn and asks a natural-language question.
+            - Agent A (Answerer): answers the question by adding new entities and facts to its internal world state.
             
-            --- 🎯 OBJECTIVE ---
-            Generate a coherent and natural dialogue that:
-            - Gradually explores the domain described by the intents.
-            - Uses intents only when all their preconditions are satisfied.
-            - Includes at least {len(instructions) * 3} full A–B exchanges (≈{len(instructions) * 6} total turns) based
-            on the intents provided below.
-            - Balances frequency: large entities (e.g. Organizations) appear 1–2 times; smaller ones (e.g. People) 
-            appear 3–4 times; 
-            - Introduces all slot information with realistic, natural names (no placeholders).
+            The simulation must remain consistent, deterministic, and ontology-compliant at all times.
             
-            --- ⚙️ INTENTS ---
-            Each intent defines an operation in the domain:
-            IntentName:
-                description: <summary>
-                preconditions: <required classes or relations>
-                slots: <values to express naturally in text>
-                
-            Use only these intents:
+            ### OBJECTIVE ###
+            Generate a structured dialogue where each turn follows this exact sequence:
+            
+            1. Agent Q selects one operation whose requirements are already satisfied.
+            2. Agent Q asks one question corresponding to that operation.
+            3. Agent A answers by:
+               - generating all required data,
+               - introducing all new entities implied by the operation,
+               - adding all facts implied by the operation.
+            
+            No step may be skipped.
+            
+            ### INTENTS ###
+            Each operation is defined by:
+            - description
+            - required classes/entities
+            - slots (data that must appear in the answer)
+            
+            Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
@@ -43,37 +46,61 @@ def gen_dialogue(instructions):
                 }
             } for i in ops if i in instructions]}
             
-            --- 🗣️ DIALOGUE RULES ---
-            - Each A–B turn = exactly one complete intent taken from this prompt, and not from the other messages.
-            - Agent Q (Questioner) must:
-              - Reference all the entities in the preconditions using the IDs defined in the previous messages.
-              - Explicitly mention the class of each referenced entity.
-              - Ask about all knowledge provided required by the intents' slots.
-            - Agent A (Answerer) must:
-              - Introduce all data from the intent’s slot fields in natural text.
-              - Maintain internal consistency with prior dialogue.
-              - Specify a new, unique ID for any new entity (matching its class, e.g. 'S001' for Student).
-              - Never mention “intent”, “precondition”, or “postcondition” explicitly.
-              - Follow these type definitions when generating data:
-                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id']) 
-                        if len([t for t in conf.types_def if t != 'id']) != 0 else ""}
-            - Include the executed intent name for every turn.
-            - Do not execute partial intents (i.e. asking for only part of the information)
+            ### DIALOGUE RULES ###
+            - Select an operation whose required entities already exist.
+            - Ask exactly one question per turn.
+            - Explicitly reference ALL required entities using:
+              - their entity ID
+              - their class name
+            - Ask for ALL information required to fulfill the operation.
+            - NEVER mention:
+              - ontology
+              - operations / intents
+              - preconditions or postconditions
+              - rules or constraints
+              
+            Agent A (Answerer) must:
+            - Interpret the question using the operation selected by Agent Q.
+            - Generate all the ids required by the intent
+            - Generate ALL slot data required by that operation.
+            - Introduce ALL new entities implied by the operation.
+            - Assign NEW, UNIQUE IDs for new entities only.
+            - ID format:
+              - One to three capital letters + three digits (e.g., U001, RG002).
+              - IDs must never be reused.
+            - Generate data consistent with the following type descriptions:
+                {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
+                    if len([t for t in types_def if t != 'id']) != 0 else ""}
+            - NEVER mention:
+                - operations / intents
+                - ontology mechanics
+                - rules
+                - internal state (e.g. “A-Box”)
             
-            --- 🧾 OUTPUT FORMAT ---
-            JSON only — no extra commentary.
-            
-            Example:
+            ### OUTPUT FORMAT ###
+            Output a SINGLE JSON object containing ALL turns.
+            Each turn MUST follow this structure exactly:
             {{
-              "1": {{"Intent": "<intent_name>", "Q": "...", "A": "..."}},
-              "2": {{"Intent": "<intent_name>", "Q": "...", "A": "..."}}
+                "1": {{
+                    "Intent": "<intent_name>",
+                    "Q": "<question>",
+                    "A": "<answer>"
+                }},
+                "2": {{
+                    ...
+                }},
+                ...
             }}
             
-            --- ✨ STYLE ---
-            - Natural, concise, and contextually consistent.
-            - Use realistic entity names and relationships.
-            - Avoid redundancy — each turn should expand the world logically.
-            - Output only the JSON, without explanations or prefixes.
+            ### STYLE ###
+            - Keys must be sequential numbers starting from "1".
+            - No trailing text.
+            - No explanations.
+            - No markdown.
+            - JSON ONLY.
+            
+            ### TASK ###
+            Generate exactly {len(instructions)*3} turns.
         """
     })
     conf.chat_history.append({
@@ -118,29 +145,32 @@ async def gen_dialogue_async(instructions):
     conf.chat_history.append({
         'role': 'system',
         'content': f"""
-            --- 🧭 ROLE ---
-            You are simulating a conversation between two cooperative agents exploring a section of a knowledge domain.
-            - Agent Q (Questioner): asks progressively deeper questions to uncover new entities and relations.
-            - Agent A (Answerer): replies with facts, descriptions, and relations according to defined intents.
-
-            --- 🎯 OBJECTIVE ---
-            Generate a coherent and natural dialogue that:
-            - Gradually explores the domain described by the intents.
-            - Uses intents only when all their preconditions are satisfied.
-            - Includes at least {len(instructions) * 3} full A–B exchanges (≈{len(instructions) * 6} total turns) based
-            on the intents provided below.
-            - Balances frequency: large entities (e.g. Organizations) appear 1–2 times; smaller ones (e.g. People) 
-            appear 3–4 times; 
-            - Introduces all slot information with realistic, natural names (no placeholders).
-
-            --- ⚙️ INTENTS ---
-            Each intent defines an operation in the domain:
-            IntentName:
-                description: <summary>
-                preconditions: <required classes or relations>
-                slots: <values to express naturally in text>
-
-            Use only these intents:
+            ### ROLE ###
+            You are simulating a one-to-one conversation between two cooperative agents:
+            - Agent Q (Questioner): selects exactly one valid operation per turn and asks a natural-language question.
+            - Agent A (Answerer): answers the question by adding new entities and facts to its internal world state.
+            
+            The simulation must remain consistent, deterministic, and ontology-compliant at all times.
+            
+            ### OBJECTIVE ###
+            Generate a structured dialogue where each turn follows this exact sequence:
+            
+            1. Agent Q selects one operation whose requirements are already satisfied.
+            2. Agent Q asks one question corresponding to that operation.
+            3. Agent A answers by:
+               - generating all required data,
+               - introducing all new entities implied by the operation,
+               - adding all facts implied by the operation.
+            
+            No step may be skipped.
+            
+            ### INTENTS ###
+            Each operation is defined by:
+            - description
+            - required classes/entities
+            - slots (data that must appear in the answer)
+            
+            Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
@@ -148,38 +178,62 @@ async def gen_dialogue_async(instructions):
                     'slots': ops[i]['postconditions']['slots']
                 }
             } for i in ops if i in instructions]}
-
-            --- 🗣️ DIALOGUE RULES ---
-            - Each A–B turn = exactly one complete intent taken from this prompt, and not from the other messages.
-            - Agent Q (Questioner) must:
-              - Reference all the entities in the preconditions using the IDs defined in the previous messages.
-              - Explicitly mention the class of each referenced entity.
-              - Ask about all knowledge provided required by the intents' slots.
-            - Agent A (Answerer) must:
-              - Introduce all data from the intent’s slot fields in natural text.
-              - Maintain internal consistency with prior dialogue.
-              - Specify a new, unique ID for any new entity (matching its class, e.g. 'S001' for Student).
-              - Never mention “intent”, “precondition”, or “postcondition” explicitly.
-              - Follow these type definitions when generating data:
-                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id'])
-                        if len([t for t in conf.types_def if t != 'id']) != 0 else ""}
-            - Include the executed intent name for every turn.
-            - Do not execute partial intents (i.e. asking for only part of the information)
-
-            --- 🧾 OUTPUT FORMAT ---
-            JSON only — no extra commentary.
-
-            Example:
+            
+            ### DIALOGUE RULES ###
+            - Select an operation whose required entities already exist.
+            - Always specify the current intent's name.
+            - Ask exactly one question per turn.
+            - Explicitly reference ALL required entities using:
+              - their entity ID
+              - their class name
+            - Ask for ALL information required to fulfill the operation.
+            - NEVER mention:
+              - ontology
+              - operations / intents
+              - preconditions or postconditions
+              - rules or constraints
+              
+            Agent A (Answerer) must:
+            - Interpret the question using the operation selected by Agent Q.
+            - Generate all the ids required by the intent.
+            - Generate ALL slot data required by that operation.
+            - Introduce ALL new entities implied by the operation.
+            - Assign NEW, UNIQUE IDs for new entities only.
+            - ID format:
+              - One to three capital letters + three digits (e.g., U001, RG002).
+              - IDs must never be reused.
+            - Generate data consistent with the following type descriptions:
+                {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
+                    if len([t for t in types_def if t != 'id']) != 0 else ""}
+            - NEVER mention:
+                - operations / intents
+                - ontology mechanics
+                - rules
+                - internal state (e.g. “A-Box”)
+            
+            ### OUTPUT FORMAT ###
+            Output a SINGLE JSON object containing ALL turns.
+            Each turn MUST follow this structure exactly:
             {{
-              "1": {{"Intent": "<intent_name>", "Q": "...", "A": "..."}},
-              "2": {{"Intent": "<intent_name>", "Q": "...", "A": "..."}}
+                "1": {{
+                    "Intent": "<intent_name>",
+                    "Q": "<question>",
+                    "A": "<answer>"
+                }},
+                "2": {{
+                    ...
+                }},
+                ...
             }}
-
-            --- ✨ STYLE ---
-            - Natural, concise, and contextually consistent.
-            - Use realistic entity names and relationships.
-            - Avoid redundancy — each turn should expand the world logically.
-            - Output only the JSON, without explanations or prefixes.
+            
+            ### STYLE ###
+            - No trailing text.
+            - No explanations.
+            - No markdown.
+            - JSON ONLY.
+            
+            ### TASK ###
+            Generate exactly {len(instructions)*3} turns.
         """
     })
     conf.chat_history.append({

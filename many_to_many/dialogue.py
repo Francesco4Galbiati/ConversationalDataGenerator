@@ -1,6 +1,8 @@
 import ast
 from collections import defaultdict
 
+from numpy.matlib import empty
+
 import conf
 from time import time
 from conf import ops, dialogue_client, num_abox, async_dialogue_client
@@ -266,8 +268,10 @@ async def gen_dialogue_async(instructions):
     print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
     conf.dialogue_timestamps.append({'start': start, 'end': end})
 
-    conf.chat_history.pop()
-    conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
     dialogue_list = ast.literal_eval(repair_json(dialogue['message']['content']))
 
     history_dict = defaultdict(dict)
