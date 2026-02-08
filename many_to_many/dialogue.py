@@ -283,7 +283,8 @@ async def gen_dialogue_async(instructions):
     for k, v in dialogue_list.items():
         history_dict[k]['Q'] = v['Q']
         for n in range(num_abox):
-            history_dict[k][f'A{str(n + 1)}'] = v[f'A{str(n + 1)}']
+            if f'A{str(n + 1)}' in v:
+                history_dict[k][f'A{str(n + 1)}'] = v[f'A{str(n + 1)}']
 
     import json
     conf.chat_history.append({

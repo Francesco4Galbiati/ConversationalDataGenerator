@@ -19,7 +19,7 @@ intents:
       classes: {}
       slots: {}
       cardinality: 1
-      description: "Defines a zip code area characterized by a zip code (a sequence of 5 digits)"
+      description: "Defines a zip code area characterized by a zip code and an unique id (a sequence of 5 digits)"
     postconditions:
       classes: {z: ZipCodeArea}
       slots: {z_id: id, z_zip_code: zipCode}
@@ -30,8 +30,8 @@ intents:
       classes: {z: ZipCodeArea}
       slots: {z_id: id}
       cardinality: 3
-      description: 'Introduces an Healthcare Facility in the context, with its id, name, address, number of
-      employees, short description, number of beds'
+      description: 'Introduces an Healthcare Facility in an existing zip-code area (identified by the id), with its id,
+      name, address, number of employees, short description, number of beds'
     postconditions:
       classes: {f: Facility, z: ZipCodeArea}
       slots: {f_id: id, f_name: str, f_address: str, f_num_of_employees: int, f_description: str, f_num_of_beds: int}
