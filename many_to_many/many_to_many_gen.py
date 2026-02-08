@@ -49,10 +49,18 @@ async def __launch__(triples):
         while i <= len(list(dialogue_list)):
 
             t = dialogue_list[str(i)]
+            if "Intent" not in t or 'Q' not in t:
+                hallucinations['dictionary_hallucination'] += 1
+                i += 1
+                continue
             intent = t['Intent']
             question = t['Q']
             answer = []
             for n in range(num_abox):
+                if f"A{n+1}" not in t:
+                    hallucinations['dictionary_hallucination'] += 1
+                    i += 1
+                    continue
                 answer.append(t[f'A{n + 1}'])
 
             if intent not in list(ops):
@@ -143,7 +151,7 @@ async def __launch__(triples):
 
                 for s in slots:
                     if slots[s] != 'None' and slots[s] is not None:
-                        slots[s] = slots[s].replace("'", "")
+                        slots[s] = str(slots[s]).replace("'", "")
 
                 print(f"{bcolors.OKCYAN}[A{n + 1}] Data: {slots}{bcolors.ENDC}")
 

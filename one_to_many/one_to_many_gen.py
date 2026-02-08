@@ -137,7 +137,7 @@ async def __launch__(triples):
 
                 for s in slots:
                     if slots[s] is not None and slots[s] != 'None':
-                        slots[s] = slots[s].replace("'", "")
+                        slots[s] = str(slots[s]).replace("'", "")
 
                 print(f"{bcolors.OKCYAN}[A{n + 1}] Data: {slots}{bcolors.ENDC}")
 

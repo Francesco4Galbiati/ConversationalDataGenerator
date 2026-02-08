@@ -47,6 +47,9 @@ async def __launch__(triples):
         while i <= len(list(dialogue_list)):
 
             t = dialogue_list[str(i)]
+            if "Intent" not in t or 'Q' not in t or 'A' not in t:
+                hallucinations['dictionary_hallucination'] += 1
+                continue
             intent = t['Intent']
             question = t['Q']
             answer = t['A']
@@ -72,8 +75,6 @@ async def __launch__(triples):
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['preconditions']['slots'])}
 
                     ### INSTRUCTIONS ###
@@ -107,8 +108,6 @@ async def __launch__(triples):
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
 
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['preconditions']['slots'])}
 
                     ### INSTRUCTIONS ###
@@ -144,19 +143,17 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
+    
                     ### INTENT CONTEXT ###
-                    Intent name: {intent}
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['postconditions']['slots'])}
-
+    
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-
+    
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -164,7 +161,7 @@ async def __launch__(triples):
                       "<slot2>": "<value-or-null>",
                       ...
                     }}
-
+    
                     ### INPUT TEXT ###
                     {answer}
                 """, output_type=output_model)
@@ -179,18 +176,17 @@ async def __launch__(triples):
                     ### ROLE ###
                     You are a specialized information extraction agent.
                     Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
+    
                     ### INTENT CONTEXT ###
-                    Intent description: {ops[intent]['preconditions']['description']}
                     Required data slots: {list(ops[intent]['postconditions']['slots'])}
-
+    
                     ### INSTRUCTIONS ###
                     - Read the text carefully.
                     - Identify and extract the values that correspond to each data slot.
                     - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
                     - Do not invent or paraphrase data — use only what appears in the text.
                     - After having identified the data slots, return them in a JSON object that uses the names of the slots
-
+    
                     ### OUTPUT FORMAT ###
                     Return a JSON dictionary like:
                     {{
@@ -198,7 +194,7 @@ async def __launch__(triples):
                       "<slot2>": "<value-or-null>",
                       ...
                     }}
-
+    
                     ### INPUT TEXT ###
                     {answer}
                 """)
@@ -211,7 +207,7 @@ async def __launch__(triples):
 
             for a in answer:
                 if answer[a] != 'None' and answer[a] is not None:
-                    answer[a] = answer[a].replace("'", "")
+                    answer[a] = str(answer[a]).replace("'", "")
 
             print(f"{bcolors.OKCYAN}Data:{bcolors.ENDC}")
             print(f'{bcolors.OKCYAN}{answer}{bcolors.ENDC}')

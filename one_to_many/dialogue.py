@@ -40,13 +40,15 @@ def gen_dialogue(n = default_n):
             - preconditions (required classes/relations)
             - postconditions (created classes/relations)
             - slots (values to be expressed naturally)
+            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
             
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'], 
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots']
+                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
+                    'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops]}
             
@@ -55,6 +57,9 @@ def gen_dialogue(n = default_n):
             ### DIALOGUE RULES ###
             - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
             previous ones, intents in the sequence can be repeated multiple times in a row.
+            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
             - Agent Q (Questioner) must:
                 - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
                 - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
@@ -102,7 +107,7 @@ def gen_dialogue(n = default_n):
             - No meta-commentary, no explanations.
             - Output only JSON.
             
-            Now generate a dialogue of {n} turns
+            Now generate a dialogue of exactly {n} turns
         """,
         model='mistral-small3.2:24b-instruct-2506-q4_K_M',
         format='json',
@@ -158,7 +163,8 @@ async def gen_dialogue_async(n=default_n):
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots']
+                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
+                    'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops]}
 
@@ -167,6 +173,9 @@ async def gen_dialogue_async(n=default_n):
             ### DIALOGUE RULES ###
             - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
             previous ones, intents in the sequence can be repeated multiple times in a row.
+            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
             - Agent Q (Questioner) must:
                 - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
                 - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
@@ -214,7 +223,7 @@ async def gen_dialogue_async(n=default_n):
             - No meta-commentary, no explanations.
             - Output only JSON.
 
-            Now generate a dialogue of {n} turns
+            Now generate a dialogue of exactly {n} turns
         """,
         model='mistral-small3.2:24b-instruct-2506-q4_K_M',
         format='json',

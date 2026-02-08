@@ -36,18 +36,23 @@ def gen_dialogue(instructions):
             - description
             - required classes/entities
             - slots (data that must appear in the answer)
+            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
             
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots']
+                    'slots': ops[i]['postconditions']['slots'],
+                    'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops if i in instructions]}
             
             ### DIALOGUE RULES ###
-            - Select an operation whose required entities already exist.
+            - Select an intent whose required entities already exist.
+            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+            - Always specify the current intent's name.
             - Ask exactly one question per turn.
             - Explicitly reference ALL required entities using:
               - their entity ID
@@ -61,7 +66,7 @@ def gen_dialogue(instructions):
               
             Agent A (Answerer) must:
             - Interpret the question using the operation selected by Agent Q.
-            - Generate all the ids required by the intent
+            - Generate all the ids required by the intent.
             - Generate ALL slot data required by that operation.
             - Introduce ALL new entities implied by the operation.
             - Assign NEW, UNIQUE IDs for new entities only.
@@ -93,7 +98,6 @@ def gen_dialogue(instructions):
             }}
             
             ### STYLE ###
-            - Keys must be sequential numbers starting from "1".
             - No trailing text.
             - No explanations.
             - No markdown.
@@ -123,8 +127,10 @@ def gen_dialogue(instructions):
     print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
     conf.dialogue_timestamps.append({'start': start, 'end': end})
 
-    conf.chat_history.pop()
-    conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
     dialogue_list = ast.literal_eval(repair_json(dialogue['message']['content']))
 
     history_dict = defaultdict(dict)
@@ -169,18 +175,22 @@ async def gen_dialogue_async(instructions):
             - description
             - required classes/entities
             - slots (data that must appear in the answer)
+            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
             
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots']
+                    'slots': ops[i]['postconditions']['slots'],
+                    'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops if i in instructions]}
             
             ### DIALOGUE RULES ###
-            - Select an operation whose required entities already exist.
+            - Select an intent whose required entities already exist.
+            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
+            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
             - Always specify the current intent's name.
             - Ask exactly one question per turn.
             - Explicitly reference ALL required entities using:
@@ -256,8 +266,10 @@ async def gen_dialogue_async(instructions):
     print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
     conf.dialogue_timestamps.append({'start': start, 'end': end})
 
-    conf.chat_history.pop()
-    conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
+    if len(conf.chat_history) != 0:
+        conf.chat_history.pop()
     dialogue_list = ast.literal_eval(repair_json(dialogue['message']['content']))
 
     history_dict = defaultdict(dict)

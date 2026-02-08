@@ -177,7 +177,7 @@ def replace_ids(slots, ids):
     tmp = slots
 
     for k, v in slots.items():
-        if '_id' in k and v != 'null' and v is not None:
+        if '_id' in k and v != 'null' and v != 'None' and v is not None:
             while v in ids:
                 if int(v[-1]) != 9:
                     new = v[:-1] + str(int(v[-1]) + 1)
@@ -201,7 +201,7 @@ def replace_ids_tM(slots, ids, intent):
             if v is None:
                 v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
                 hallucinations['unspecified_slot'] += 1
-            if re.search(r'\d+$', v) is not None:
+            if re.search(r'\d+$', v) is None:
                 continue
             if v in ids and k not in ops[intent]['preconditions']['slots']:
                 while v in ids:

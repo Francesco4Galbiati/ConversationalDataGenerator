@@ -54,63 +54,6 @@ async def __launch__(triples):
             print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
             print(f"{bcolors.WARNING}Answer: {answer}{bcolors.ENDC}")
 
-            slots_prompt = f"""
-                ### ROLE ###
-                You are a specialized information extraction agent.
-                Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
-                ### INTENT CONTEXT ###
-                Intent name: {intent}
-                Intent description: {ops[intent]['preconditions']['description']}
-                Required data slots: {list(ops[intent]['preconditions']['slots'])}
-
-                ### INSTRUCTIONS ###
-                - Read the text carefully.
-                - Identify and extract the values that correspond to each data slot.
-                - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                - Do not invent or paraphrase data — use only what appears in the text.
-                - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                
-                ### OUTPUT FORMAT ###
-                Return a JSON dictionary like:
-                {{
-                  "<slot1>": "<value-or-null>",
-                  "<slot2>": "<value-or-null>",
-                  ...
-                }}
-
-                ### INPUT TEXT ###
-                {question}
-            """
-            answer_prompt = f"""
-                ### ROLE ###
-                You are a specialized information extraction agent.
-                Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
-                ### INTENT CONTEXT ###
-                Intent name: {intent}
-                Intent description: {ops[intent]['preconditions']['description']}
-                Required data slots: {list(ops[intent]['postconditions']['slots'])}
-
-                ### INSTRUCTIONS ###
-                - Read the text carefully.
-                - Identify and extract the values that correspond to each data slot.
-                - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                - Do not invent or paraphrase data — use only what appears in the text.
-                - After having identified the data slots, return them in a JSON object that uses the names of the slots
-                
-                ### OUTPUT FORMAT ###
-                Return a JSON dictionary like:
-                {{
-                  "<slot1>": "<value-or-null>",
-                  "<slot2>": "<value-or-null>",
-                  ...
-                }}
-
-                ### INPUT TEXT ###
-                {answer}
-            """
-
             start = time()
 
             try:

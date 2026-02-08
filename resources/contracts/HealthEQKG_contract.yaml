@@ -5,7 +5,7 @@ intents:
       slots: {}
       cardinality: 4
       description: "Introduces a new Physician to the context, with its id, NPI, name, surname, gender, specialty,
-      credentials, and graduation year"
+      credentials"
     postconditions:
       classes: {p: Physician}
       slots: {p_id: id, p_npi: npi, p_name: str, p_surname: str, p_gender: gender, p_specialty: string,
@@ -31,7 +31,7 @@ intents:
       slots: {z_id: id}
       cardinality: 3
       description: 'Introduces an Healthcare Facility in the context, with its id, name, address, number of
-      employees, description, number of beds'
+      employees, short description, number of beds'
     postconditions:
       classes: {f: Facility, z: ZipCodeArea}
       slots: {f_id: id, f_name: str, f_address: str, f_num_of_employees: int, f_description: str, f_num_of_beds: int}
@@ -57,7 +57,7 @@ intents:
       slots: {p_id: id}
       cardinality: 3
       description: 'Retrieves the graduation diploma of a Physician, specifying its medical school (id, name,
-      description, faculty size, and number of students), and the year of graduation'
+      short description, faculty size, and number of students), and the year of graduation'
     postconditions:
       classes: {m: MedicalSchool}
       slots: {m_id: id, m_name: str, m_description: str, m_faculty_size: int, m_student_size: int,
@@ -71,7 +71,8 @@ intents:
       classes: {z: ZipCodeArea}
       slots: {z_id: id}
       cardinality: 4
-      description: 'Records a measurement of the ADI scores of a ZipCodeArea for a certain year'
+      description: 'Records a measurement of the ADI score of a ZipCodeArea for a certain year, providing also the id 
+      of the measurement'
     postconditions:
       classes: {a: ADIScore}
       slots: {a_id: id, a_year: int}
