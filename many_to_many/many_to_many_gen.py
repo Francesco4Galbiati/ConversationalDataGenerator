@@ -92,7 +92,7 @@ async def __launch__(triples):
                         ### INSTRUCTIONS ###
                         - Read the text carefully.
                         - Identify and extract the values that correspond to each data slot.
-                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                        - If a slot value is missing or cannot be inferred by the text alone, set it as 'null'.
                         - Do not invent or paraphrase data — use only what appears in the text.
                         - After having identified the data slots, return them in a JSON object that uses the names of the slots
                         
@@ -126,7 +126,7 @@ async def __launch__(triples):
                         ### INSTRUCTIONS ###
                         - Read the text carefully.
                         - Identify and extract the values that correspond to each data slot.
-                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
+                        - If a slot value is missing or cannot be inferred by the text alone, set it as 'null'.
                         - Do not invent or paraphrase data — use only what appears in the text.
                         - After having identified the data slots, return them in a JSON object that uses the names of the slots
 

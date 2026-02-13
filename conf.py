@@ -12,13 +12,13 @@ from pydantic_ai.providers.ollama import OllamaProvider
 from ollama import Client, AsyncClient
 
 # ONTOLOGY READ
-with open("resources/contracts/HealthEQKG_contract.yaml") as f:
+with open("resources/contracts/BBCFood_contract.yaml") as f:
     contract = yaml.safe_load(f)
     ops = contract['intents']
     types = contract['types']
     instructions = contract['instructions']
 ont_prefix = 'lubm'
-ont_uri = 'http://healtheqkg.example.org/ontology#'
+ont_uri = 'http://example.com/ontology#'
 instructions_loop = cycle(instructions)
 
 run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -27,7 +27,7 @@ output_file = open(output_file_name, 'w')
 
 # RDFLIB CONFIGURATION
 g = Graph()
-g.parse('./resources/ontologies/healtheqkg_ontology.owl')
+g.parse('./resources/ontologies/food.ttl')
 n = 0
 for o in ops:
     n += len(ops[o]['postconditions']['triples'])

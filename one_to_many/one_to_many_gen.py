@@ -4,7 +4,7 @@ import requests
 import conf
 import ast
 from json_repair import repair_json
-from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, avg_triples, default_n, g
+from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, g
 from agents import parser_agent
 from rdflib import URIRef, RDF, Literal
 from one_to_many.dialogue import gen_dialogue, gen_dialogue_async

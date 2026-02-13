@@ -201,7 +201,7 @@ def replace_ids_tM(slots, ids, intent):
             if v is None:
                 v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
                 hallucinations['unspecified_slot'] += 1
-            if re.search(r'\d+$', v) is None:
+            if re.search(r'\d+$', str(v)) is None:
                 continue
             if v in ids and k not in ops[intent]['preconditions']['slots']:
                 while v in ids:

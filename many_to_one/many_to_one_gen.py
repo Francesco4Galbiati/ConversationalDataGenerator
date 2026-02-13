@@ -1,7 +1,6 @@
 import ast
 import asyncio
 
-from cohere.utils import async_wait
 from json_repair import repair_json
 import conf
 import requests

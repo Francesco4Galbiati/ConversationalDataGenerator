@@ -1,0 +1,113 @@
+intents:
+
+  DescribeMenu:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 1
+      description: "Introduces a themed menu, with its id, name and description. Try to choose always a different theme"
+    postconditions:
+      classes: {m: Menu}
+      slots: {menu_id: id, menu_name: str, menu_description: str}
+      triples: [[menu_id, type, Menu], [menu_id, name, menu_name], [menu_id, description, menu_description]]
+
+  AddStarter:
+    preconditions:
+      classes: {menu: Menu}
+      slots: {menu_id: id}
+      cardinality: 3
+      description: "Adds a starter dish to an existing menu (identified by its id). Provides the unique id of the recipe,
+      the name, the diet the recipe is part of (if any), the occasion this recipe is best for, the cuisine the recipe belongs to, and how many
+      people this dish serves"
+    postconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id, dish_name: str, dish_diet: str, dish_occasion: str, dish_cuisine: str,
+              dish_serves: int}
+      triples: [[dish_id, type, Recipe], [menu_id, starter, dish_id], [dish_id, name, dish_name],
+                [dish_id, diet, dish_diet], [dish_id, occasion, dish_occasion],
+                [dish_id, cuisine, dish_cuisine], [dish_id, serves, dish_serves]]
+
+  AddMainDish:
+    preconditions:
+      classes: {m: Menu}
+      slots: {menu_id: id}
+      cardinality: 3
+      description: "Adds a main course to an existing menu (identified by its id). Provides the unique id of the recipe,
+      the name, the diet the recipe is part of (if any), the occasion this recipe is best for, the cuisine the recipe
+      belongs to, and how many people this dish serves"
+    postconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id, dish_name: str, dish_diet: str, dish_occasion: str, dish_cuisine: str,
+              dish_serves: int}
+      triples: [[dish_id, type, Recipe], [menu_id, main_course, dish_id], [dish_id, name, dish_name],
+                [dish_id, diet, dish_diet], [dish_id, occasion, dish_occasion],
+                [dish_id, cuisine, dish_cuisine], [dish_id, serves, dish_serves]]
+
+  AddSideDish:
+    preconditions:
+      classes: {m: Menu}
+      slots: {menu_id: id}
+      cardinality: 3
+      description: "Adds a side dish to an existing menu (identified by its id). Provides the unique id of the recipe, the
+      name, the diet the recipe is part of (if any), the occasion this recipe is best for, the cuisine the recipe
+      belongs to, and how many people this dish serves"
+    postconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id, dish_name: str, dish_diet: str, dish_occasion: str, dish_cuisine: str,
+              dish_serves: int}
+      triples: [[dish_id, type, dish], [menu_id, side_dish, dish_id], [dish_id, name, dish_name],
+                [dish_id, diet, dish_diet], [dish_id, occasion, dish_occasion],
+                [dish_id, cuisine, dish_cuisine], [dish_id, serves, dish_serves]]
+
+  AddDessert:
+    preconditions:
+      classes: {m: Menu}
+      slots: {menu_id: id}
+      cardinality: 3
+      description: "Adds a dessert to an existing menu (identified by its id). Provides the unique id of the recipe, the name,
+      the diet the recipe is part of (if any), the occasion this recipe is best for, the cuisine the recipe belongs to,
+      and how many people this dish serves"
+    postconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id, dish_name: str, dish_diet: str, dish_occasion: str, dish_cuisine: str,
+              dish_serves: int}
+      triples: [[dish_id, type, Recipe], [menu_id, dessert, dish_id], [dish_id, name, dish_name],
+                [dish_id, diet, dish_diet], [dish_id, occasion, dish_occasion],
+                [dish_id, cuisine, dish_cuisine], [dish_id, serves, dish_serves]]
+
+  DescribeIngredient:
+    preconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id}
+      cardinality: 5
+      description: "Describes one single ingredient needed for the dish (identified by the dish's id), providing
+      its id, name, the season in which it is best, and quantity to use in the recipe"
+    postconditions:
+      classes: {ingredient: Food}
+      slots: {ingredient_id: id, ingredient_name: str, ingredient_season: str, ingredient_quantity: str}
+      triples: [[ingredient_id, type, Food], [ingredient_id, name, ingredient_name],
+                [ingredient_id, at_its_best, ingredient_season], [ingredient_id, quantity, ingredient_quantity],
+                [ingredient_id, produces, dish_id]]
+
+  DescribeProcedure:
+    preconditions:
+      classes: {dish: Recipe}
+      slots: {dish_id: id}
+      cardinality: 3
+      description: "Briefly describes the procedure of a certain recipe (identified by the recipe's id). Specifies the id and
+      the text of the procedure"
+    postconditions:
+      classes: {procedure: StageSequence}
+      slots: {procedure_id: id, procedure_text: str}
+      triples: [[procedure_id, type, StageSequence], [procedure_id, sequence, procedure_text],
+                [dish_id, stages, procedure_id]]
+
+types:
+  id:
+    type: 'str'
+    pattern: '^\S+$'
+    text: 'A string without spaces'
+
+instructions:
+  MenuManager: ["DescribeMenu", "AddStarter", "AddMainDish", "AddSideDish", "AddDessert"]
+  RecipeManager: ["DescribeIngredient", "DescribeProcedure"]

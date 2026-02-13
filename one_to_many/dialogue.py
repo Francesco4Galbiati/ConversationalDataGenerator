@@ -38,7 +38,6 @@ def gen_dialogue(n = default_n):
             The domain is defined by intents, each having:
             - description
             - preconditions (required classes/relations)
-            - postconditions (created classes/relations)
             - slots (values to be expressed naturally)
             - cardinality: the average number of repetitions of the intent in a 10-turns conversation
             
