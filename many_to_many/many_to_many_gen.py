@@ -1,13 +1,14 @@
-import asyncio
-
-import conf
-import requests
 import ast
-from agents import parser_agent
-from conf import hallucinations, bcolors, ops, ont_uri, fuseki, fuseki_headers, instructions_loop, num_abox, instructions, g
+import conf
+import asyncio
+import requests
 from time import time
+from conf import hallucinations, bcolors, ops, ont_uri, fuseki, fuseki_headers, instructions_loop, num_abox, \
+    instructions, g, parallelization
+from agents import parser_agent
 from rdflib import URIRef, Literal, RDF
-from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake
+from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake, \
+    check_preconditions
 from json_repair import repair_json
 from pydantic_ai import UnexpectedModelBehavior
 from many_to_many.dialogue import gen_dialogue, gen_dialogue_async
@@ -25,23 +26,33 @@ async def __launch__(triples):
     while n_t < triples:
 
         k += 1
+        clear = False
         if inst == list(instructions)[0]:
             gen += 1
             k = 1
-            conf.chat_history = []
             conf.ids.clear()
             for n in range(num_abox):
                 conf.ids.append(list())
 
-        if n_t == 0:
-            parser_agent.run(user_prompt='')
-            dialogue_list = gen_dialogue(instructions[inst])
-            inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
+        if parallelization:
+
+            if inst == list(instructions)[len(instructions)-1]:
+                clear = True
+            if n_t == 0:
+                parser_agent.run(user_prompt='')
+                dialogue_list = gen_dialogue(instructions[inst],clear)
+                inst = next(instructions_loop)
+                next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst], clear))
+            else:
+                dialogue_list = await next_dialogue
+                inst = next(instructions_loop)
+                next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst], clear))
+
         else:
-            dialogue_list = await next_dialogue
+            if inst == list(instructions)[0]:
+                clear = True
             inst = next(instructions_loop)
-            next_dialogue = asyncio.create_task(gen_dialogue_async(instructions[inst]))
+            dialogue_list = gen_dialogue(instructions[inst], clear)
 
         dialogue_list = refactor_dialogue(dialogue_list)
 
@@ -74,7 +85,10 @@ async def __launch__(triples):
             print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
             print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
 
+            turn = t
             for n in range(num_abox):
+                if f'A{n + 1}' not in turn:
+                    continue
                 print(f"{bcolors.WARNING}[A{n + 1}] Answer: {answer[n]}{bcolors.ENDC}")
 
                 start = time()
@@ -147,6 +161,8 @@ async def __launch__(triples):
 
                 conf.parsing_timestamps.append({'start': start, 'end': end})
                 slots = dict_keys_to_snake(slots)
+
+                check_preconditions(ops[intent]['preconditions']['classes'], slots, f'A{n}G{gen}_')
                 slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
 
                 for s in slots:

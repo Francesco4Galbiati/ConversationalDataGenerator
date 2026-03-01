@@ -1,9 +1,8 @@
 import ast
-from time import time
-from json_repair import repair_json
-
 import conf
-from conf import ops, default_n, dialogue_client, newl, types_def, async_dialogue_client
+from time import time
+from conf import ops, default_n, dialogue_client, newl, types_def, async_dialogue_client, dialogue_llm
+from json_repair import repair_json
 
 def gen_dialogue(n = default_n):
 
@@ -53,11 +52,10 @@ def gen_dialogue(n = default_n):
             - Select an intent whose required entities already exist.
             - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
             (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+            - Use ALL the intents given to you in the dialogue you generate
             - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-            - Ask exactly one question per turn.
-            - Explicitly reference ALL required entities using:
-              - their entity ID
-              - their class name
+            - Ask exactly one specific question per turn, mentioning all the ids in the preconditions.
+            - In the question, explicitly reference ALL required entities using their entity ID
             - Ask for ALL information required to fulfill the operation.
             - NEVER mention:
               - ontology
@@ -72,7 +70,7 @@ def gen_dialogue(n = default_n):
             - Display all data in a dialogical answer (not a list of fields)
             - Assign NEW, UNIQUE IDs for new entities only.
             - ID format:
-              - One to three capital letters + three digits (e.g., U001, RG002).
+              - One to three capital letters + three digits. Use letters that are coherent with the class of the entity.
               - IDs must never be reused.
             - Generate data consistent with the following type descriptions:
                 {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
@@ -108,7 +106,7 @@ def gen_dialogue(n = default_n):
             ### TASK ###
             Generate exactly {n} turns.
         """,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
@@ -169,11 +167,10 @@ async def gen_dialogue_async(n = default_n):
                 - Select an intent whose required entities already exist.
                 - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
                 (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
+                - Use ALL the intents given to you in the dialogue you generate
                 - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-                - Ask exactly one question per turn.
-                - Explicitly reference ALL required entities using:
-                  - their entity ID
-                  - their class name
+                - Ask exactly one specific question per turn, mentioning all the ids in the preconditions.
+                - In the question, explicitly reference ALL required entities using their entity ID
                 - Ask for ALL information required to fulfill the operation.
                 - NEVER mention:
                   - ontology
@@ -188,7 +185,7 @@ async def gen_dialogue_async(n = default_n):
                 - Display all data in a dialogical answer (not a list of fields)
                 - Assign NEW, UNIQUE IDs for new entities only.
                 - ID format:
-                  - One to three capital letters + three digits (e.g., U001, RG002).
+                  - One to three capital letters + three digits. Use letters that are coherent with the class of the entity.
                   - IDs must never be reused.
                 - Generate data consistent with the following type descriptions:
                     {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
@@ -224,7 +221,7 @@ async def gen_dialogue_async(n = default_n):
                 ### TASK ###
                 Generate exactly {n} turns.
             """,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8

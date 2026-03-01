@@ -1,23 +1,30 @@
-import threading
-from itertools import cycle
-from typing import Annotated
 import yaml
-from datetime import datetime
-from enum import Enum
+import threading
 from rdflib import *
-from pydantic import StringConstraints
+from ollama import Client, AsyncClient
+from datetime import datetime
+from itertools import cycle
 from collections import defaultdict
+from parameters import ConversationType
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.ollama import OllamaProvider
-from ollama import Client, AsyncClient
+
+# PARAMETERS
+parallelization = False
+contract_file = "resources/contracts/LUBM_contract.yaml"
+dialogue_llm = 'mistral-small3.2:24b-instruct-2506-q4_K_M'
+parser_llm = 'qwen2.5:7b-instruct-q4_K_M'
+conversation_type = ConversationType.ONE_TO_ONE
+target_triples = 1000
 
 # ONTOLOGY READ
-with open("resources/contracts/BBCFood_contract.yaml") as f:
+with open(contract_file) as f:
     contract = yaml.safe_load(f)
     ops = contract['intents']
     types = contract['types']
     instructions = contract['instructions']
-ont_prefix = 'lubm'
+    subclasses = contract['subclasses']
+ont_prefix = 'ont'
 ont_uri = 'http://example.com/ontology#'
 instructions_loop = cycle(instructions)
 
@@ -65,25 +72,28 @@ class bcolors:
 
 # CONNECTIONS
 # Ollama
-p_host = 'http://localhost:11434'
-d_host = 'http://localhost:11435'
+dialogue_generator_host = 'http://localhost:11434'
+parser_host = 'http://localhost:11434'
+if parallelization:
+    parser_host = 'http://localhost:11435'
 
 # OLLAMA MODELS
 dialogue_model = OpenAIChatModel(
-    model_name='mistral-small3.2:24b-instruct-2506-q4_K_M',
-    provider=OllamaProvider(base_url=d_host + '/v1')
+    model_name=dialogue_llm,
+    provider=OllamaProvider(base_url=parser_host + '/v1')
 )
 
 task_model = OpenAIChatModel(
-    model_name='qwen2.5:7b-instruct-q4_K_M',
-    provider=OllamaProvider(base_url=p_host + '/v1')
+    model_name=parser_llm,
+    provider=OllamaProvider(base_url=dialogue_generator_host + '/v1')
 )
 
-dialogue_client = Client(host=d_host)
-async_dialogue_client = AsyncClient(host=d_host)
+dialogue_client = Client(host=dialogue_generator_host)
+async_dialogue_client = AsyncClient(host=dialogue_generator_host)
 
 # Fuseki
 fuseki = 'http://localhost:3030/dialogue_gen/data'
+fuseki_query = 'http://localhost:3030/dialogue_gen/query'
 fuseki_headers = {"Content-Type": "text/turtle"}
 
 # PYDANTIC AI CONFIGURATION

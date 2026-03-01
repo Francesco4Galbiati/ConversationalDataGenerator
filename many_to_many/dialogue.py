@@ -1,15 +1,14 @@
 import ast
-from collections import defaultdict
-
-from numpy.matlib import empty
-
 import conf
 from time import time
-from conf import ops, dialogue_client, num_abox, async_dialogue_client
+from conf import ops, dialogue_client, num_abox, async_dialogue_client, dialogue_llm
 from json_repair import repair_json
+from collections import defaultdict
 
+def gen_dialogue(instructions, clear):
 
-def gen_dialogue(instructions):
+    if clear:
+        conf.chat_history.clear()
 
     conf.chat_history.append({
         'role': 'system',
@@ -19,10 +18,10 @@ def gen_dialogue(instructions):
             - Agent Q (Questioner) – asks high-level questions to explore a domain.
             - Agent A1, Agent A2, Agent A3 (Answerers) – each answers independently, building a separate A-Box model of the
             same ontology.
-
+            
             Each Answerer’s A-Box is completely isolated, with its own entities, IDs, and facts.
             No Answerer ever sees or references the others.
-
+            
             ### OBJECTIVE ###
             Generate a structured multi-agent dialogue where:
             1. Agent Q asks one question per turn, choosing an available intent from the list.
@@ -35,58 +34,55 @@ def gen_dialogue(instructions):
                 - different ids
                 - different narrative branches
             4. All answers must faithfully follow intent preconditions, postconditions, and slots.
-
+            
             This is used to simulate parallel knowledge graph branches.
-
+            
             ### INTENTS ###
             The domain is defined by intents, each having:
             - description
             - preconditions (required classes/relations)
             - slots (values to be expressed naturally)
-            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
-
+            
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
+                    'slots': ops[i]['postconditions']['slots'],
                     'cardinality': ops[i]['preconditions']['cardinality']
                 }
             } for i in ops if i in instructions]}
-
+            
             Each Answerer uses the same intent set but generates its own different A-Box.
-
+            
             ### DIALOGUE RULES ###
             - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
             previous ones, intents in the sequence can be repeated multiple times in a row.
             - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
             (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
-            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-            - Agent Q (Questioner):
-                - Must continue the conversation from the point in which it was interrupted in the chat history.
-                - Asks one high-level general question per turn by selecting an intent whose preconditions can be satisfied.
-                - Must not reference any specific entity in the context (those belong to the Answerers’ A-Boxes).
+            - Agent Q (Questioner) must:
+                - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
+                - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
                 - Must never mention “intents”, “preconditions”, “postconditions”.
             - Agent A1, A2, A3 (Parallel Answerers), each Answerer must:
                 - Interpret the question using the intent provided by the questioner.
-                - Identify the slots of the preconditions among the entities already generated in the previous
-                interactions in the chat history
+                - Identify the ids of the preconditions among the entities already generated in the previous
+                interactions and use them in their answer
                 - Generate all the required entities present the slots section of the intent that have not been generated
                 previously.
-                - Every precondition mentioned in the selected intent MUST be included in the answer by using its id.
+                - Every precondition's id MUST be included in the answer by using its id.
                 - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
                 number of 3 digits, starting from 001
                 - Follow these type definitions when generating data:
-                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id'])
+                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id']) 
                         if len([t for t in conf.types_def if t != 'id']) != 0 else ""}
                 - Never mention, reference, or imply the existence of A2 or A3 (or vice versa).
                 - Never refer to “intents” explicitly.
             - When multiple previously-generated entities satisfy a precondition, the answerer must not always pick the same
             one. They should rotate or diversify across different suitable entities to explore alternative knowledge branches.
-
+            
             Each answerer produces one answer per turn.
-
+            
             ### OUTPUT FORMAT ###
             For each turn, produce a JSON block like:
             {{
@@ -102,15 +98,16 @@ def gen_dialogue(instructions):
                 }},
                 ...
             }}
-
+            
             ### STYLE ###
             - Natural, friendly dialogue tone.
             - Rich, realistic data.
             - Clear, consistent entity naming.
             - No meta-commentary, no explanations.
             - Output only JSON.
-
-            Now generate a dialogue with {len(instructions) * 3} new question turns
+            
+            Now generate a dialogue with {len(instructions) * 3} new question turns, without counting the ones present
+            in the message history, restarting the enumeration of the turns from 1
         """
     })
     conf.chat_history.append({
@@ -122,7 +119,7 @@ def gen_dialogue(instructions):
     start = time()
     dialogue = dialogue_client.chat(
         messages=conf.chat_history,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
@@ -132,6 +129,8 @@ def gen_dialogue(instructions):
     print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
     conf.dialogue_timestamps.append({'start': start, 'end': end})
 
+    print(dialogue)
+
     conf.chat_history.pop()
     conf.chat_history.pop()
     dialogue_list = ast.literal_eval(repair_json(dialogue['message']['content']))
@@ -140,7 +139,8 @@ def gen_dialogue(instructions):
     for k, v in dialogue_list.items():
         history_dict[k]['Q'] = v['Q']
         for n in range(num_abox):
-            history_dict[k][f'A{str(n+1)}'] = v[f'A{str(n+1)}']
+            if f'A{str(n+1)}' in v:
+                history_dict[k][f'A{str(n+1)}'] = v[f'A{str(n+1)}']
 
     import json
     conf.chat_history.append({
@@ -152,7 +152,11 @@ def gen_dialogue(instructions):
     return dialogue_list
 
 
-async def gen_dialogue_async(instructions):
+async def gen_dialogue_async(instructions, clear):
+
+    if clear:
+        conf.chat_history.clear()
+
     conf.chat_history.append({
         'role': 'system',
         'content': f"""
@@ -161,10 +165,10 @@ async def gen_dialogue_async(instructions):
             - Agent Q (Questioner) – asks high-level questions to explore a domain.
             - Agent A1, Agent A2, Agent A3 (Answerers) – each answers independently, building a separate A-Box model of the
             same ontology.
-
+            
             Each Answerer’s A-Box is completely isolated, with its own entities, IDs, and facts.
             No Answerer ever sees or references the others.
-
+            
             ### OBJECTIVE ###
             Generate a structured multi-agent dialogue where:
             1. Agent Q asks one question per turn, choosing an available intent from the list.
@@ -177,57 +181,54 @@ async def gen_dialogue_async(instructions):
                 - different ids
                 - different narrative branches
             4. All answers must faithfully follow intent preconditions, postconditions, and slots.
-
+            
             This is used to simulate parallel knowledge graph branches.
-
+            
             ### INTENTS ###
             The domain is defined by intents, each having:
             - description
             - preconditions (required classes/relations)
             - slots (values to be expressed naturally)
-            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
-
+            
             Intents available:
             {[{
                 i: {
                     'description': ops[i]['preconditions']['description'],
                     'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
-                    'cardinality': ops[i]['preconditions']['cardinality']
+                    'slots': ops[i]['postconditions']['slots']
                 }
             } for i in ops if i in instructions]}
-
+            
             Each Answerer uses the same intent set but generates its own different A-Box.
-
+            
             ### DIALOGUE RULES ###
             - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
             previous ones, intents in the sequence can be repeated multiple times in a row.
-            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
-            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
-            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-            - Agent Q (Questioner):
-                - Asks one high-level general question per turn by selecting an intent whose preconditions can be satisfied.
-                - Must not reference any specific entity in the context (those belong to the Answerers’ A-Boxes).
+            - Agent Q (Questioner) must:
+                - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
+                - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
                 - Must never mention “intents”, “preconditions”, “postconditions”.
+                - Must balance intent frequency: large entities (e.g. Organizations) appear 1–2 times; smaller ones
+                    (e.g. People) appear 3–4 times; 
             - Agent A1, A2, A3 (Parallel Answerers), each Answerer must:
                 - Interpret the question using the intent provided by the questioner.
                 - Identify the slots of the preconditions among the entities already generated in the previous
-                interactions, trying to chose an id different from the one chosen by the other answerers 
+                interactions
                 - Generate all the required entities present the slots section of the intent that have not been generated
                 previously.
                 - Every precondition mentioned in the selected intent MUST be included in the answer by using its id.
                 - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
                 number of 3 digits, starting from 001
                 - Follow these type definitions when generating data:
-                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id'])
+                    {conf.newl.join([conf.types_def[t]['text'] for t in conf.types_def if t != 'id']) 
                         if len([t for t in conf.types_def if t != 'id']) != 0 else ""}
                 - Never mention, reference, or imply the existence of A2 or A3 (or vice versa).
                 - Never refer to “intents” explicitly.
             - When multiple previously-generated entities satisfy a precondition, the answerer must not always pick the same
             one. They should rotate or diversify across different suitable entities to explore alternative knowledge branches.
-
+            
             Each answerer produces one answer per turn.
-
+            
             ### OUTPUT FORMAT ###
             For each turn, produce a JSON block like:
             {{
@@ -243,15 +244,16 @@ async def gen_dialogue_async(instructions):
                 }},
                 ...
             }}
-
+            
             ### STYLE ###
             - Natural, friendly dialogue tone.
             - Rich, realistic data.
             - Clear, consistent entity naming.
             - No meta-commentary, no explanations.
             - Output only JSON.
-
-            Now generate a dialogue with {len(instructions) * 3} new question turns
+            
+            Now generate a dialogue with {len(instructions) * 3} new question turns, without counting the ones present
+            in the message history, restarting the enumeration of the turns from 1
         """
     })
     conf.chat_history.append({
@@ -263,7 +265,7 @@ async def gen_dialogue_async(instructions):
     start = time()
     dialogue = await async_dialogue_client.chat(
         messages=conf.chat_history,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
@@ -272,6 +274,8 @@ async def gen_dialogue_async(instructions):
     end = time()
     print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
     conf.dialogue_timestamps.append({'start': start, 'end': end})
+
+    print(dialogue)
 
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()

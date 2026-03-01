@@ -1,13 +1,15 @@
 import ast
 import json
-from collections import defaultdict
-
 import conf
 from time import time
-from conf import ops, dialogue_client, async_dialogue_client, newl, types_def
+from conf import ops, dialogue_client, async_dialogue_client, newl, types_def, dialogue_llm
+from collections import defaultdict
 from json_repair import repair_json
 
-def gen_dialogue(instructions):
+def gen_dialogue(instructions, clear):
+
+    if clear:
+        conf.chat_history.clear()
 
     conf.chat_history.append({
         'role': 'system',
@@ -71,7 +73,7 @@ def gen_dialogue(instructions):
             - Introduce ALL new entities implied by the operation.
             - Assign NEW, UNIQUE IDs for new entities only.
             - ID format:
-              - One to three capital letters + three digits (e.g., U001, RG002).
+              - One to three capital letters + three digits (e.g., U001, RG002), use different letters for different classes
               - IDs must never be reused.
             - Generate data consistent with the following type descriptions:
                 {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
@@ -109,14 +111,14 @@ def gen_dialogue(instructions):
     })
     conf.chat_history.append({
         'role': 'user',
-        'content': 'Continue the dialogue according to the system instructions, ONLY generate new dialogue exchanges,'
-                   'do not rewrite old ones. Start enumerating the dialogue turns from 1.'
+        'content': f'Continue the dialogue according to the system instructions, ONLY generate {len(instructions)*3} '
+                   f'new dialogue exchanges, do not rewrite old ones'
     })
 
     start = time()
     dialogue = dialogue_client.chat(
         messages=conf.chat_history,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
@@ -135,8 +137,9 @@ def gen_dialogue(instructions):
 
     history_dict = defaultdict(dict)
     for k, v in dialogue_list.items():
-        history_dict[k]['Q'] = v['Q']
-        history_dict[k]['A'] = v['A']
+        if 'Q' in v and 'A' in v:
+            history_dict[k]['Q'] = v['Q']
+            history_dict[k]['A'] = v['A']
 
     conf.chat_history.append({
         'role': 'user',
@@ -147,7 +150,11 @@ def gen_dialogue(instructions):
     return dialogue_list
 
 
-async def gen_dialogue_async(instructions):
+async def gen_dialogue_async(instructions, clear):
+
+    if clear:
+        conf.chat_history.clear()
+
     conf.chat_history.append({
         'role': 'system',
         'content': f"""
@@ -255,7 +262,7 @@ async def gen_dialogue_async(instructions):
     start = time()
     dialogue = await async_dialogue_client.chat(
         messages=conf.chat_history,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8

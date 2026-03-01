@@ -3,10 +3,10 @@ from rdflib import Graph, URIRef, Literal
 
 g = Graph()
 
-with open("resources/output/LUBM/1toM_old/5000t/dataset.csv", newline="", encoding="utf-8") as f:
+with open("resources/output/LEONARDO/dataset.csv", newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        s = URIRef(row["sub"])
+        s = URIRef(row["subj"])
         p = URIRef(row["pred"])
 
         obj = row["obj"]
@@ -20,7 +20,7 @@ with open("resources/output/LUBM/1toM_old/5000t/dataset.csv", newline="", encodi
         g.add((s, p, o))
 
 # Serialize to RDF (Turtle example)
-g.serialize("output.ttl", format="turtle")
+g.serialize("dataset.ttl", format="turtle")
 
 # Other common formats:
 # format="xml"    -> RDF/XML

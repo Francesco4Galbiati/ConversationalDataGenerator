@@ -1,15 +1,16 @@
-import asyncio
-from time import time
-import requests
-import conf
 import ast
-from json_repair import repair_json
-from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, g
+import conf
+import asyncio
+import requests
+from time import time
+from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, g, parallelization
 from agents import parser_agent
 from rdflib import URIRef, RDF, Literal
-from one_to_many.dialogue import gen_dialogue, gen_dialogue_async
-from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake
+from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake, \
+    check_preconditions
+from json_repair import repair_json
 from pydantic_ai import UnexpectedModelBehavior
+from one_to_many.dialogue import gen_dialogue, gen_dialogue_async
 
 async def __launch__(triples):
 
@@ -26,13 +27,16 @@ async def __launch__(triples):
         for n in range(num_abox):
             conf.ids.append(list())
 
-        if n_t == 0:
-            parser_agent.run(user_prompt='')
-            dialogue_list = gen_dialogue()
-            next_dialogue = asyncio.create_task(gen_dialogue_async())
+        if parallelization:
+            if n_t == 0:
+                parser_agent.run(user_prompt='')
+                dialogue_list = gen_dialogue()
+                next_dialogue = asyncio.create_task(gen_dialogue_async())
+            else:
+                dialogue_list = await next_dialogue
+                next_dialogue = asyncio.create_task(gen_dialogue_async())
         else:
-            dialogue_list = await next_dialogue
-            next_dialogue = asyncio.create_task(gen_dialogue_async())
+            dialogue_list = gen_dialogue()
 
         dialogue_list = refactor_dialogue(dialogue_list)
 
@@ -40,10 +44,18 @@ async def __launch__(triples):
         while i <= len(list(dialogue_list)):
 
             t = dialogue_list[str(i)]
+
+            if 'Intent' not in t or 'Q' not in t:
+                hallucinations['dictionary_hallucination'] += 1
+                continue
+
             intent = t['Intent']
             question = t['Q']
             answer = []
             for n in range(num_abox):
+                if f'A{n + 1}' not in t:
+                    hallucinations['dictionary_hallucination'] += 1
+                    continue
                 answer.append(t[f'A{n + 1}'])
 
             if intent not in list(ops):
@@ -57,7 +69,10 @@ async def __launch__(triples):
             print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
             print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
 
+            turn = t
             for n in range(num_abox):
+                if f'A{n + 1}' not in turn:
+                    continue
                 print(f"{bcolors.WARNING}[A{n + 1}] Answer: {answer[n]}{bcolors.ENDC}")
 
                 start = time()
@@ -133,6 +148,8 @@ async def __launch__(triples):
 
                 conf.parsing_timestamps.append({'start': start, 'end': end})
                 slots = dict_keys_to_snake(slots)
+
+                check_preconditions(ops[intent]['preconditions']['classes'], slots, f'A{n}G{gen}_')
                 slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
 
                 for s in slots:

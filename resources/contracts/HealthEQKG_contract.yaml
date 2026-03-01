@@ -78,6 +78,8 @@ intents:
       slots: {a_id: id, a_year: int}
       triples: [[a_id, type, ADIScore], [a_id, scoredIn, a_year], [z_id, hasADI, a_id]]
 
+subclasses: []
+
 types:
   id:
     type: 'str'

@@ -55,7 +55,7 @@ intents:
       classes: {dish: Recipe}
       slots: {dish_id: id, dish_name: str, dish_diet: str, dish_occasion: str, dish_cuisine: str,
               dish_serves: int}
-      triples: [[dish_id, type, dish], [menu_id, side_dish, dish_id], [dish_id, name, dish_name],
+      triples: [[dish_id, type, Recipe], [menu_id, side_dish, dish_id], [dish_id, name, dish_name],
                 [dish_id, diet, dish_diet], [dish_id, occasion, dish_occasion],
                 [dish_id, cuisine, dish_cuisine], [dish_id, serves, dish_serves]]
 
@@ -80,8 +80,8 @@ intents:
       classes: {dish: Recipe}
       slots: {dish_id: id}
       cardinality: 5
-      description: "Describes one single ingredient needed for the dish (identified by the dish's id), providing
-      its id, name, the season in which it is best, and quantity to use in the recipe"
+      description: "Describes one single ingredient needed for an existing dish (identified by the dish's id), providing
+      its id, name, the season in which it is best, and quantity to use"
     postconditions:
       classes: {ingredient: Food}
       slots: {ingredient_id: id, ingredient_name: str, ingredient_season: str, ingredient_quantity: str}
@@ -101,6 +101,8 @@ intents:
       slots: {procedure_id: id, procedure_text: str}
       triples: [[procedure_id, type, StageSequence], [procedure_id, sequence, procedure_text],
                 [dish_id, stages, procedure_id]]
+
+subclasses: []
 
 types:
   id:

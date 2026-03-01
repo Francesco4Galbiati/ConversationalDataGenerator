@@ -1,0 +1,140 @@
+intents:
+
+  IntroduceStudent:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 1
+      description: "Adds a student to the LEONARDO project, specifying its unique id, name, and the engineering degree
+        they are enrolled in (e.g. Computer Science and Engineering, Biomedical Engineering, etc.). Student progress in
+        their LEONARDO level as semesters pass"
+    postconditions:
+      classes: {student: Student}
+      slots: {student_id: id, student_name: str, student_degree: str}
+      triples: [[student_id, type, Student], [student_id, name, student_name], [student_id, degree, student_degree]]
+
+  IntroduceSoftCourse:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 2
+      description: "Registers an edition of a soft skill course. The only courses available are: 'Pitch & Talk', 'Stress
+        Management', 'Creativity', 'EmployAbility', 'Startup 101', 'Negotiation', and 'Being a Researcher'. Specify the
+        course's id, its name among the ones just described, the year and semester (1 or 2) of the edition. You can
+        introduce multiple editions of the same course, do not invent new courses, reuse the same ones"
+    postconditions:
+      classes: {course: Course}
+      slots: {course_id: id, course_name: course, course_year: int, course_semester: int}
+      triples: [[course_id, type, Course], [course_id, name, course_name], [course_id, year, course_year],
+                [course_id, semester, course_semester]]
+
+  IntroduceActivity:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 2
+      description: "Introduces an edition of an activity of the LEONARDO project. The activities available are 'Self-Defense',
+      'CrossFit', 'Wine-Testing', and 'Error Management'. Specify the activity's id, its name among the ones just
+      described, the year and semester (1 or 2) of the edition. You can introduce multiple editions of the same course,
+      do not invent new activities, reuse the same ones"
+    postconditions:
+      classes: {activity: Activity}
+      slots: {activity_id: id, activity_name: activity, activity_year: int, activity_semester: int}
+      triples: [[activity_id, type, Activity], [activity_id, name, activity_name], [activity_id, year, activity_year],
+                 [activity_id, semester, activity_semester]]
+
+  SubscribeToCourse:
+    preconditions:
+      classes: {student: Student, course: Course}
+      slots: {student_id: id, course_id: id}
+      cardinality: 4
+      description: "Subscribes a student to an existing soft skills course specified in the question, provides an id to
+        identify the subscription and the LEONARDO progression level at which the student is. These courses are mostly
+        taken at levels L1 or L2"
+    postconditions:
+      classes: {subscription: Participation}
+      slots: {subscription_id: id, student_level: level}
+      triples: [[subscription_id, type, Participation], [subscription_id, participant, student_id],
+                [subscription_id, participatesIn, course_id], [subscription_id, hasLevel, student_level]]
+
+  SubscribeToActivity:
+    preconditions:
+      classes: {student: Student, activity: Activity}
+      slots: {student_id: id, activity_id: id}
+      cardinality: 4
+      description: "Subscribes a student to an existing activity specified in the question, provides an id to
+        identify the subscription and the LEONARDO progression level at which the student is. 'CrossFit' is for everyone,
+        while 'Self-Defense', 'Wine-Testing', and 'Error Management' are only for students at level L3 and L4"
+    postconditions:
+      classes: {subscription: Participation}
+      slots: {subscription_id: id, student_level: level}
+      triples: [[subscription_id, type, Participation], [subscription_id, participant, student_id],
+                [subscription_id, participatesIn, activity_id], [subscription_id, hasLevel, student_level]]
+
+  AssignNewProject:
+    preconditions:
+      classes: {student: Student}
+      slots: {student_id: id}
+      cardinality: 4
+      description: "Assigns a new research project to a student enrolled in the LEONARDO project. Specifies the unique
+        id of the project, its name. Use this intent with students of level between L2 and L4"
+    postconditions:
+      classes: {project: Project}
+      slots: {project_id: id, project_name: str, student_level: level}
+      triples: [[project_id, type, Project], [project_id, name, project_name], [student_id, worksAt, project_id]]
+
+  CompilePsySurveys:
+    preconditions:
+      classes: {student: Student}
+      slots: {student_id: id}
+      cardinality: 4
+      description: "Makes a student compile a set of psychological surveys. Specifies a unique id for the compilation
+        of the surveys, the year and semester (1 or 2) of the compilation, and the student's LEONARDO progression level,
+        which can be any level between L1 and L4"
+    postconditions:
+      classes: {compilation: PsyCompilation}
+      slots: {compilation_id: id, compilation_year: int, compilation_semester: int, student_level: level}
+      triples: [[compilation_id, type, PsyCompilation], [compilation_id, compiledBy, student_id],
+                [compilation_id, year, compilation_year], [compilation_id, semester, compilation_semester],
+                [compilation_id, hasLevel, student_level]]
+
+  CompileObjSurvey:
+    preconditions:
+      classes: {student: Student}
+      slots: {student_id: id}
+      cardinality: 4
+      description: "Makes a student compile the 'personal objectives' surveys. Specifies a unique id for the compilation
+      of the surveys, the year and semester (1 or 2) of the compilation, and the student's LEONARDO progression level,
+      which can be any level between L1 and L4"
+    postconditions:
+      classes: {compilation: ObjCompilation}
+      slots: {compilation_id: id, compilation_year: int, compilation_semester: int, student_level: level}
+      triples: [[compilation_id, type, ObjCompilation], [compilation_id, student, student_id],
+                 [compilation_id, year, compilation_year], [compilation_id, semester, compilation_semester],
+                 [compilation_id, hasLevel, student_level]]
+
+types:
+  id:
+    type: 'str'
+    pattern: '^\S+$'
+    text: 'A string without spaces'
+  course:
+    type: 'enum'
+    options: ['Pitch & Talk', 'Stress Management', 'Creativity', 'EmployAbility', 'Startup 101', 'Negotiation', 'Being a Researcher']
+    text: "The name of a course among 'Pitch & Talk', 'Stress Management', 'Creativity', 'EmployAbility', 'Startup 101', 'Negotiation', and 'Being a Researcher'"
+  activity:
+    type: 'enum'
+    options: ['Self-Defense', 'CrossFit', 'Wine-Testing', 'Error Management']
+    text: "the name of an activity among 'Self-Defense', 'CrossFit', 'Wine-Testing', and 'Error Management'"
+  level:
+    type: 'enum'
+    options: ['L1', 'L2', 'L3', 'L4']
+    text: 'From first to last: L1, L2, L3, and L4. There is no level above L4. Students just enrolled in LEONARDO start
+      at L1, as semesters pass, they progress to L2, then L3, and lastly L4. Do not downgrade students'
+
+subclasses: []
+
+instructions:
+  OrganizationManager: ['IntroduceStudent', 'IntroduceSoftCourse']
+  ActivityManager: ['SubscribeStudent', 'AssignNewProject']
+  SurveyManager: ['CompilePsySurveys', 'CompileObjSurvey']

@@ -1,8 +1,8 @@
 import ast
 import conf
-from json_repair import repair_json
-from conf import ops, dialogue_client, default_n, newl, types_def, async_dialogue_client
 from time import time
+from conf import ops, dialogue_client, default_n, newl, types_def, async_dialogue_client, dialogue_llm
+from json_repair import repair_json
 
 def gen_dialogue(n = default_n):
 
@@ -108,7 +108,7 @@ def gen_dialogue(n = default_n):
             
             Now generate a dialogue of exactly {n} turns
         """,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
@@ -224,7 +224,7 @@ async def gen_dialogue_async(n=default_n):
 
             Now generate a dialogue of exactly {n} turns
         """,
-        model='mistral-small3.2:24b-instruct-2506-q4_K_M',
+        model=dialogue_llm,
         format='json',
         options={
             "temperature": 0.8
