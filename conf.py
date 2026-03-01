@@ -16,6 +16,8 @@ dialogue_llm = 'mistral-small3.2:24b-instruct-2506-q4_K_M'
 parser_llm = 'qwen2.5:7b-instruct-q4_K_M'
 conversation_type = ConversationType.ONE_TO_ONE
 target_triples = 1000
+conversation_size = 25
+num_of_witnesses = 3
 
 # ONTOLOGY READ
 with open(contract_file) as f:
@@ -33,8 +35,6 @@ output_file_name = f"resources/output/output_{run_id}.json"
 output_file = open(output_file_name, 'w')
 
 # RDFLIB CONFIGURATION
-g = Graph()
-g.parse('./resources/ontologies/food.ttl')
 n = 0
 for o in ops:
     n += len(ops[o]['postconditions']['triples'])
@@ -52,9 +52,8 @@ prefixes = f"""
 entities = defaultdict(list)
 ids = []
 chat_history = []
-avg_triples = round(n)
-default_n = 25
-num_abox = 3
+default_n = conversation_size
+num_abox = num_of_witnesses
 
 # UTILITIES
 newl = '\n'

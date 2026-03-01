@@ -270,8 +270,6 @@ async def __launch__(triples):
                 else:
                     obj = URIRef(f"{ont_uri}{t[2]}")
 
-                g.add((sub, pred, obj))
-
                 if 'http' in obj:
                     f_obj = '<' + str(obj) + '>'
                 else:
