@@ -112,9 +112,7 @@ global_lock = threading.Lock()
 hallucinations = {
     'dictionary_hallucination': 0,
     'unspecified_slot': 0,
-    'false_precondition': 0,
-    'total_intents': 0,
-    'parser_failures': 0,
+    'false_precondition': 0
 }
 
 # TIMESTAMPS
