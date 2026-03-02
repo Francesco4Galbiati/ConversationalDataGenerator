@@ -17,6 +17,9 @@ This repository is structured as follows:
 - ```main.py```: contains the entry point of the code
 - ```parameters.py```: contains the definition of configuration parameters.
 
+## Running the generation
+To run the CDG, it's sufficient to run the ```main.py``` file.
+
 ## Customizing the generation
 ```conf.py``` contains parameters that can be modified to execute CDG under different circumstances. 
 These parameters are found at the top of the file, under the ```PARAMETERS``` section.
