@@ -1,21 +1,24 @@
 import yaml
 import threading
+import os
+import redis
 from rdflib import *
 from ollama import Client, AsyncClient
 from datetime import datetime
 from itertools import cycle
 from collections import defaultdict
 from parameters import ConversationType
-from pydantic_ai.models.openai import OpenAIChatModel
+from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.providers.ollama import OllamaProvider
 
 # PARAMETERS
 parallelization = False
-contract_file = "resources/contracts/LUBM_contract.yaml"
-dialogue_llm = 'mistral-small3.2:24b-instruct-2506-q4_K_M'
-parser_llm = 'qwen2.5:7b-instruct-q4_K_M'
+contract_file = "./resources/contracts/LUBM_test.yaml"
+querent_llm = 'gpt-oss:120b'
+witness_llm = 'gpt-oss:120b'
+parser_llm = 'ministral-3:8b'
 conversation_type = ConversationType.ONE_TO_ONE
-target_triples = 1000
+target_triples = 2500
 conversation_size = 25
 num_of_witnesses = 3
 
@@ -26,12 +29,21 @@ with open(contract_file) as f:
     types = contract['types']
     instructions = contract['instructions']
     subclasses = contract['subclasses']
+    precondition_slots = contract['precondition_slots']
 ont_prefix = 'ont'
 ont_uri = 'http://example.com/ontology#'
 instructions_loop = cycle(instructions)
+triples_files = []
 
 run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
-output_file_name = f"resources/output/output_{run_id}.json"
+os.mkdir(f'./resources/output/run_{run_id}')
+if conversation_type == ConversationType.ONE_TO_ONE or conversation_type == ConversationType.MANY_TO_ONE:
+    triples_file = f"./resources/output/run_{run_id}/triples.json"
+else:
+    for i in range(num_of_witnesses):
+        triples_files.append([])
+        triples_files[i] = f"./resources/output/run_{run_id}/triples_{i}.json"
+output_file_name = f"./resources/output/run_{run_id}/output.txt"
 output_file = open(output_file_name, 'w')
 
 # RDFLIB CONFIGURATION
@@ -50,8 +62,12 @@ prefixes = f"""
 
 # DATA STRUCTURES
 entities = defaultdict(list)
+history_dict = []
+chat_histories = [[] for _ in range(num_of_witnesses)]
+turn_counter = 0
 ids = []
 chat_history = []
+intent_history = []
 default_n = conversation_size
 num_abox = num_of_witnesses
 
@@ -71,29 +87,49 @@ class bcolors:
 
 # CONNECTIONS
 # Ollama
-dialogue_generator_host = 'http://localhost:11434'
-parser_host = 'http://localhost:11434'
+dialogue_generator_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
+parser_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
 if parallelization:
-    parser_host = 'http://localhost:11435'
+    parser_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
 
 # OLLAMA MODELS
-dialogue_model = OpenAIChatModel(
-    model_name=dialogue_llm,
-    provider=OllamaProvider(base_url=parser_host + '/v1')
+querent_model = OpenAIChatModel(
+    model_name=querent_llm,
+    provider=OllamaProvider(base_url=dialogue_generator_host + '/v1')
+)
+
+witness_model = OpenAIChatModel(
+    model_name=witness_llm,
+    provider=OllamaProvider(base_url=dialogue_generator_host + '/v1')
 )
 
 task_model = OpenAIChatModel(
     model_name=parser_llm,
-    provider=OllamaProvider(base_url=dialogue_generator_host + '/v1')
+    provider=OllamaProvider(
+        base_url=parser_host + '/v1',
+        api_key='sk-154b7d9623ae424ca9e362e2da0fbfdd'
+    ),
+    settings=OpenAIChatModelSettings(extra_body={"keep-alive": -1})
 )
 
-dialogue_client = Client(host=dialogue_generator_host)
-async_dialogue_client = AsyncClient(host=dialogue_generator_host)
+dialogue_client = Client(
+    host=dialogue_generator_host,
+    headers={'Authorization': 'Bearer sk-154b7d9623ae424ca9e362e2da0fbfdd'},
+    
+)
+async_dialogue_client = AsyncClient(
+    host=dialogue_generator_host,
+    headers={'Authorization': 'Bearer sk-154b7d9623ae424ca9e362e2da0fbfdd'}
+)
 
 # Fuseki
-fuseki = 'http://localhost:3030/dialogue_gen/data'
-fuseki_query = 'http://localhost:3030/dialogue_gen/query'
-fuseki_headers = {"Content-Type": "text/turtle"}
+# fuseki = 'http://localhost:3030/dialogue_gen/data'
+# fuseki_query = 'http://localhost:3030/dialogue_gen/query'
+# fuseki_headers = {"Content-Type": "text/turtle"}
+
+# Redis
+redis = redis.Redis(host='localhost', port=6379, decode_responses=True, db=0)
+redis.flushdb()
 
 # PYDANTIC AI CONFIGURATION
 types_def = defaultdict()
@@ -104,14 +140,14 @@ for t in types:
     elif types[t]['type'] == 'enum':
         types_def[t] = {'def': Enum(t, dict([(x, x) for x in types[t]['options']])), 'text': types[t]['text']}
 '''
-model_time = 0
-parsing_time = 0
+querent_time = 0
+witness_time = 0
 global_lock = threading.Lock()
 
 # HALLUCINATIONS
 hallucinations = {
     'dictionary_hallucination': 0,
-    'unspecified_slot': 0,
+    'missing_slot': 0,
     'false_precondition': 0
 }
 

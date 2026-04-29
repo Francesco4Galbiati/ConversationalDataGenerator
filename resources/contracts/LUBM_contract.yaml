@@ -4,7 +4,7 @@ intents:
       classes: {student: Student, professor: Professor}
       slots: {student_id: id, professor_id: id}
       cardinality: 4
-      description: "Makes an existing professor an advisor to a certain student"
+      description: "Makes an already existing professor an advisor to a certain student. The professor must have been already mentioned in the conversation."
     postconditions:
       classes: {}
       slots: {}
@@ -96,7 +96,7 @@ intents:
       classes: {student: Student, course: Course}
       slots: {student_id: id, course_id: id}
       cardinality: 4
-      description: "Enrolls a student into an existing course"
+      description: "Enrolls a student into an already existing course. The course must have already been mentionaed in the conversation"
     postconditions:
       classes: {}
       slots: {}
@@ -157,7 +157,7 @@ intents:
       slots: {research_group_id: id, professor_id: id, department_id: id}
       cardinality: 2
       description: "Assigns a research assistant (id, name, and email) inside a research group belonging to a department, 
-      under the supervision of one of the department's professors"
+        under the supervision of one of the department's professors"
     postconditions:
       classes: {research_assistant: ResearchAssistant}
       slots: {research_assistant_id: id, research_assistant_name: string, research_assistant_email: string}
@@ -188,7 +188,15 @@ subclasses:
   Professor: [Chair, Director]
 
 instructions:
-  OrganizationsManager: ["IntroduceUniversity", "CreateDepartment", "CreateProgram"]
-  SchoolManager: ["HireProfessor", "HireAdministrativeStaff", "CreateCourse"]
-  ResearchManager: ["CreateResearchGroup", "PublishArticle", "PublishBook", "HireResearchAssistant"]
-  StudentManager: ["EnrollStudent", "AssignAdvisor", "TakeCourse", "AssignDegree"]
+  OrganizationsManager: 
+    inst: ["IntroduceUniversity", "CreateDepartment", "CreateProgram"]
+    cardinality: 3
+  SchoolManager: 
+    inst: ["HireProfessor", "HireAdministrativeStaff", "CreateCourse"]
+    cardinality: 12
+  ResearchManager: 
+    inst: ["CreateResearchGroup", "PublishArticle", "PublishBook", "HireResearchAssistant"]
+    cardinality: 9
+  StudentManager: 
+    inst: ["EnrollStudent", "AssignAdvisor", "TakeCourse", "AssignDegree"]
+    cardinality: 15

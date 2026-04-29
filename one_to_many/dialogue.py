@@ -1,238 +1,454 @@
 import ast
-import conf
+import json
 from time import time
-from conf import ops, dialogue_client, default_n, newl, types_def, async_dialogue_client, dialogue_llm
+
+import conf
+from conf import dialogue_client, newl, ops, querent_llm, types_def, witness_llm
 from json_repair import repair_json
 
-def gen_dialogue(n = default_n):
+def gen_dialogue_turn(clear=False, n=3, allowed_ops=ops, triples_file=None):
 
-    start = time()
+    if clear:
+        conf.chat_history.clear()
+        conf.history_dict = []
+        conf.chat_histories = [[] for _ in range(n)]
+        conf.turn_counter = 0
 
-    dialogue = dialogue_client.generate(
+    question_chat_history = conf.chat_history
 
-        prompt=f"""
+    question_chat_history.append({
+        "role": "system",
+        "content": f"""
             ### ROLE ###
-            You are simulating a one-to-many parallel conversation between four cooperative agents:
-            - Agent Q (Questioner) – asks high-level questions to explore a domain.
-            - Agent A1, Agent A2, Agent A3 (Answerers) – each answers independently, building a separate A-Box model of the
-            same ontology.
-            
-            Each Answerer’s A-Box is completely isolated, with its own entities, IDs, and facts.
-            No Answerer ever sees or references the others.
-            
-            ### OBJECTIVE ###
-            Generate a structured multi-agent dialogue where:
-            1. Agent Q asks one question per turn, choosing an available intent from the list.
-            2. A1, A2, and A3 each interpret the question independently according to the specified intent and:
-                - generate new facts/entities
-                - expand their own parallel A-Box
-            3. The three answers must yield:
-                - different data
-                - different ids
-                - different narrative branches
-            4. All answers must faithfully follow intent preconditions, postconditions, and slots.
-            
-            This is used to simulate parallel knowledge graph branches.
-            
-            ### INTENTS ###
-            The domain is defined by intents, each having:
-            - description
-            - preconditions (required classes/relations)
-            - slots (values to be expressed naturally)
-            - cardinality: the average number of repetitions of the intent in a 10-turns conversation
-            
-            Intents available:
-            {[{
-                i: {
-                    'description': ops[i]['preconditions']['description'],
-                    'preconditions': ops[i]['preconditions']['classes'], 
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
-                    'cardinality': ops[i]['preconditions']['cardinality']
-                }
-            } for i in ops]}
-            
-            Each Answerer uses the same intent set but generates its own different A-Box.
-            
-            ### DIALOGUE RULES ###
-            - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
-            previous ones, intents in the sequence can be repeated multiple times in a row.
-            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
-            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
-            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-            - Agent Q (Questioner) must:
-                - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
-                - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
-                - Must never mention “intents”, “preconditions”, “postconditions”.
-            - Agent A1, A2, A3 (Parallel Answerers), each Answerer must:
-                - Interpret the question using the intent provided by the questioner.
-                - Identify the slots of the preconditions among the entities already generated and choose one for each slot,
-                trying to chose an id different from the one chosen by the other answerers 
-                - Generate all the required entities present the slots section of the intent that have not been generated
-                previously.
-                - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
-                number of 3 digits, starting from 001 (e.g. U001, D001, RG001)
-                - Follow these type definitions when generating data:
-                    {newl.join([types_def[t]['text'] for t in types_def if t != 'id']) 
-                        if len([t for t in types_def if t != 'id']) != 0 else ""}
-                - Never reuse ids from other turns of the conversation.
-                - You can use entities belonging to a subclass when asked about an instance of the relative superclass.
-                - Never mention, reference, or imply the existence of A2 or A3 (or vice versa).
-                - Never refer to “intents” explicitly.
-            - When multiple previously-generated entities satisfy a precondition, the answerer must not always pick the same
-            one. They should rotate or diversify across different suitable entities to explore alternative knowledge branches.
-            
-            Each answerer produces one answer per turn.
-            
-            ### OUTPUT FORMAT ###
-            For each turn, produce a JSON block like:
-            {{
-                "1": {{
-                    "Q": "<question>",
-                    "Intent": "<intent>",
-                    "A1": "<answer>",
-                    "A2": "<answer>",
-                    "A3": "<answer>"
-                }},
-                "2": {{
-                    ...
-                }},
-                ...
-            }}
-            
-            ### STYLE ###
-            - Natural, friendly dialogue tone.
-            - Rich, realistic, non-trivial data.
-            - Clear and diverse entity naming.
-            - No meta-commentary, no explanations.
-            - Output only JSON.
-            
-            Now generate a dialogue of exactly {n} turns
-        """,
-        model=dialogue_llm,
-        format='json',
-        options={
-            "temperature": 0.8
-        }
-    )
+            You are Agent Q (Questioner).
 
-    end = time()
-    print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
-    conf.dialogue_timestamps.append({'start': start, 'end': end})
+            You are in a one-to-many setting:
+            - you ask ONE question
+            - the SAME question will be sent to multiple independent answerers
+            - each answerer has its own separate world state
+            - answerers do NOT see each other
+            - answerers may diverge over time
 
-    return ast.literal_eval(repair_json(dialogue['response']))
+            Your ONLY task is to:
+            1) Select exactly ONE valid intent
+            2) Ask exactly ONE question corresponding to that intent
 
-async def gen_dialogue_async(n=default_n):
+            You NEVER answer questions.
+            You NEVER introduce new information.
 
-    start = time()
+            ---
 
-    dialogue = await async_dialogue_client.generate(
-        prompt=f"""
-            ### ROLE ###
-            You are simulating a one-to-many parallel conversation between four cooperative agents:
-            - Agent Q (Questioner) – asks high-level questions to explore a domain.
-            - Agent A1, Agent A2, Agent A3 (Answerers) – each answers independently, building a separate A-Box model of the
-            same ontology.
+            ### CRITICAL FRAMEWORK CONSTRAINT ###
+            Because the same question is broadcast to multiple isolated answerers, your question must be valid for ALL answerers.
 
-            Each Answerer’s A-Box is completely isolated, with its own entities, IDs, and facts.
-            No Answerer ever sees or references the others.
+            Therefore you MUST use ONLY shared context.
 
-            ### OBJECTIVE ###
-            Generate a structured multi-agent dialogue where:
-            1. Agent Q asks one question per turn, choosing an available intent from the list.
-            2. A1, A2, and A3 each interpret the question independently according to the specified intent and:
-                - generate new facts/entities
-                - expand their own parallel A-Box
-            3. The three answers must yield:
-                - different data
-                - different ids
-                - different narrative branches
-            4. All answers must faithfully follow intent preconditions, postconditions, and slots.
+            Shared context means:
+            - entities already present in the shared questioner history
+            - entities that are guaranteed to be known by every answerer branch
 
-            This is used to simulate parallel knowledge graph branches.
+            You MUST NOT use branch-specific context.
+
+            Branch-specific context means:
+            - entities that may have been created by only one answerer
+            - facts that may exist in only one answerer conversation
+            - follow-up references that are not guaranteed to exist in every branch
+
+            If a question depends on branch-specific context, it is INVALID.
+
+            ---
+
+            ### ENTITY RULES ###
+            You MUST ONLY use entities that already exist in the shared conversation history.
+
+            - NEVER introduce a new entity
+            - NEVER guess or invent entity names or IDs
+            - EVERY entity mentioned in your question MUST already exist in shared history
+            - you MUST reuse the EXACT entity IDs already seen
+            - If a required entity is missing -> DO NOT select that intent
+
+            If you violate this rule, your output is INVALID.
+
+            ---
 
             ### INTENTS ###
-            The domain is defined by intents, each having:
+            Each intent includes:
             - description
-            - preconditions (required classes/relations)
-            - postconditions (created classes/relations)
-            - slots (values to be expressed naturally)
+            - required entities (preconditions)
+            - cardinality
 
-            Intents available:
+            Available intents:
             {[{
                 i: {
-                    'description': ops[i]['preconditions']['description'],
-                    'preconditions': ops[i]['preconditions']['classes'],
-                    'slots': ops[i]['postconditions']['slots'] | ops[i]['preconditions']['slots'],
-                    'cardinality': ops[i]['preconditions']['cardinality']
+                    "description": allowed_ops[i]["preconditions"]["description"],
+                    "required_entities": allowed_ops[i]["preconditions"]["classes"],
+                    "cardinality": allowed_ops[i]["preconditions"]["cardinality"],
                 }
-            } for i in ops]}
+            } for i in allowed_ops]}
 
-            Each Answerer uses the same intent set but generates its own different A-Box.
+            You may ONLY select from this list.
 
-            ### DIALOGUE RULES ###
-            - Set up a sequence of intents from the list such that the preconditions of one intent can be satisfied by the 
-            previous ones, intents in the sequence can be repeated multiple times in a row.
-            - Intents must be picked more or less frequently according to their cardinality value (from 1 (lower) to 5
-            (higher)): intents with higher cardinality must be picked more frequently than intents with lower cardinality.
-            - Generated entities with lower cardinality must be used in multiple future turns of the conversation
-            - Agent Q (Questioner) must:
-                - Asks one high-level question per turn by selecting an intent whose preconditions can be satisfied.
-                - Must not reference any specific entities (those belong to the Answerers’ A-Boxes).
-                - Must never mention “intents”, “preconditions”, “postconditions”.
-            - Agent A1, A2, A3 (Parallel Answerers), each Answerer must:
-                - Interpret the question using the intent provided by the questioner.
-                - Identify the slots of the preconditions among the entities already generated and choose one for each slot,
-                trying to chose an id different from the one chosen by the other answerers 
-                - Generate all the required entities present the slots section of the intent that have not been generated
-                previously.
-                - Use unique, sequential entity IDs appropriate for classes, formed by one or two capital letters and a
-                number of 3 digits, starting from 001 (e.g. U001, D001, RG001)
-                - Follow these type definitions when generating data:
-                    {newl.join([types_def[t]['text'] for t in types_def if t != 'id'])
-                        if len([t for t in types_def if t != 'id']) != 0 else ""}
-                - Never reuse ids from other turns of the conversation.
-                - You can use entities belonging to a subclass when asked about an instance of the relative superclass.
-                - Never mention, reference, or imply the existence of A2 or A3 (or vice versa).
-                - Never refer to “intents” explicitly.
-            - When multiple previously-generated entities satisfy a precondition, the answerer must not always pick the same
-            one. They should rotate or diversify across different suitable entities to explore alternative knowledge branches.
+            ---
 
-            Each answerer produces one answer per turn.
+            ### DECISION RULES ###
+            You MUST follow ALL rules:
+
+            1. VALIDITY
+            - Select an intent ONLY if ALL its required entities are already present in shared history
+            - If no history exists -> select an intent with NO required entities
+
+            2. SHARED-CONTEXT SAFETY
+            - The question must be answerable by every answerer branch
+            - Do not rely on any entity or fact that might exist in only one branch
+            - Prefer intents grounded in stable shared entities
+
+            3. ENTITY CONSISTENCY
+            - You may ONLY reference entities that already appeared in shared history
+            - You MUST reuse their EXACT IDs (no variation, no paraphrasing)
+
+            4. DIVERSITY
+            - The selected intent MUST be different from the immediately previous turn whenever any other valid intent exists
+            - Repeat the immediately previous intent ONLY if it is the only valid intent under the shared context constraints
+            - Prefer intents used less frequently
+            - Prefer broader coverage over repeating the same pattern
+
+            ---
+
+            ### QUESTION RULES ###
+            You must generate EXACTLY ONE question.
+
+            The question MUST:
+            - Explicitly include ALL required entities (using their EXACT IDs from history)
+            - ONLY include shared entities already mentioned in the conversation
+            - NOT introduce any new entity (strictly forbidden)
+            - Request ALL required information (all slots)
+            - Be natural and coherent
+            - Remain branch-agnostic, so that all answerers can respond independently
+
+            The question MUST NOT:
+            - Depend on a fact introduced by only one answerer
+            - Mention a branch-local entity
+            - Continue a follow-up that only makes sense in one branch
+
+            ---
+
+            ### SELF-CHECK BEFORE OUTPUT (MANDATORY) ###
+            Before answering, verify:
+
+            - Did I introduce ANY new entity? -> If yes, REGENERATE
+            - Are ALL entities in the question present in shared history? -> If no, REGENERATE
+            - Could EVERY answerer branch understand and answer this same question? -> If no, REGENERATE
+            - Am I repeating the immediately previous intent even though another valid intent exists? -> If yes, REGENERATE
+            - Did I include ALL required entities? -> If no, REGENERATE
+            - Did I ask exactly ONE question? -> If no, REGENERATE
+
+            ---
+
+            ### STRICT PROHIBITIONS ###
+            NEVER mention:
+            - intents or operations
+            - rules, constraints, or validation steps
+            - ontology, schema, or structure
+            - branch logic or internal reasoning
+
+            ---
 
             ### OUTPUT FORMAT ###
-            For each turn, produce a JSON block like:
+            Return ONLY:
+
             {{
-                "1": {{
-                    "Q": "<question>",
-                    "Intent": "<intent>",
-                    "A1": "<answer>",
-                    "A2": "<answer>",
-                    "A3": "<answer>"
-                }},
-                "2": {{
-                    ...
-                }},
-                ...
+                "Intent": "<intent_name>",
+                "Q": "<question>"
             }}
-
-            ### STYLE ###
-            - Natural, friendly dialogue tone.
-            - Rich, realistic, non-trivial data.
-            - Clear and diverse entity naming.
-            - No meta-commentary, no explanations.
-            - Output only JSON.
-
-            Now generate a dialogue of exactly {n} turns
         """,
-        model=dialogue_llm,
-        format='json',
+    })
+    question_chat_history.append({
+        "role": "user",
+        "content": "Continue the dialogue according to the system instructions by generating a new question. Return only your answer to the prompt without any reasoniong",
+    })
+
+    start = time()
+    dialogue = dialogue_client.chat(
+        messages=question_chat_history,
+        model=querent_llm,
+        format="json",
         options={
-            "temperature": 0.8
-        }
+            "temperature": 0.1,
+            "top_p": 0.9,
+            "top_k": 30,
+        },
     )
-
+    while dialogue["message"]["content"] == "":
+        dialogue = dialogue_client.chat(
+            messages=question_chat_history,
+            model=querent_llm,
+            format="json",
+            options={
+                "temperature": 0.1,
+                "top_p": 0.9,
+                "top_k": 30,
+            },
+        )
     end = time()
-    print(f"Dialogue generation: {{Execution time: {round(end - start, 2)}}}")
-    conf.dialogue_timestamps.append({'start': start, 'end': end})
+    conf.dialogue_timestamps.append({"start": start, "end": end})
 
-    return ast.literal_eval(repair_json(dialogue['response']))
+    if len(question_chat_history) != 0:
+        question_chat_history.pop()
+    if len(question_chat_history) != 0:
+        question_chat_history.pop()
+
+    output_json = ast.literal_eval(repair_json(dialogue["message"]["content"]))
+    intent = output_json["Intent"]
+    question = output_json["Q"]
+    intent_content = {
+        "description": str(ops[intent]["preconditions"]["description"]),
+        "slots": str(ops[intent]["postconditions"]["slots"] | ops[intent]["preconditions"]["slots"]),
+    }
+
+    # Broadcast the exact same question to every answerer, while keeping each
+    # answerer's evolving world state fully separated from the others.
+    branch_turns = []
+    branch_answers = []
+    for answerer_idx in range(n):
+        answerer_history_dict = conf.chat_histories[answerer_idx]
+        answerer_chat_history = [{
+            "role": "user",
+            "content": f"""This is the history of previous conversations, use it only to reference already existing entities in a 
+            coherent way, do not modify it: {answerer_history_dict[-20:]}""",
+        }] if len(answerer_history_dict) != 0 else []
+
+        answerer_chat_history.append({
+            "role": "system",
+            "content": f"""
+                ### ROLE ###
+                You are Agent A (Answerer).
+
+                Your task is to generate a structured JSON answer that extends a consistent world of entities and facts.
+
+                You are one of multiple independent answerers receiving the same question.
+                You are answerer branch {answerer_idx + 1} out of {n}.
+                Your answer should stay compatible with the shared entity structure of the question, but you should prefer diversity in non-ID attribute values whenever that does not violate the intent or the conversation history.
+
+                ---
+
+                ### PRIMARY REQUIREMENT (HIGHEST PRIORITY) ###
+                Your output MUST be a valid JSON object that includes:
+
+                1. ALL slots defined by the current intent
+                2. ALL precondition entities (with their attributes)
+                3. ALL newly created entities (if required)
+
+                If ANY of the above is missing, the output is INVALID.
+
+                ---
+
+                ### INPUT ###
+                - Current question: {question}
+                - Conversation history
+
+                ---
+
+                ### CURRENT INTENT ###
+                {intent}: {intent_content}
+
+                ---
+
+                ### OBJECTIVE ###
+                Generate the answer by:
+
+                1. Filling ALL intent slots
+                2. Including ALL precondition entities with their attributes
+                3. Introducing required new entities
+                4. Maintaining full consistency with the conversation history
+
+                ---
+
+                ### PRECONDITION ENFORCEMENT ###
+                - ALL entities required by the intent preconditions MUST appear in the JSON
+                - You MUST reuse their EXACT IDs from the conversation history
+
+                CRITICAL:
+                - Precondition entities MUST be referenced by ID ONLY
+                - DO NOT regenerate or expand their attributes
+                - DO NOT duplicate previously defined entity data
+
+                Preconditions are REQUIRED as references, NOT as full entity definitions.
+
+                ---
+
+                ### ENTITY RULES ###
+                - Create new entities ONLY if required
+                - Assign UNIQUE IDs:
+                    - Format: 1-3 uppercase letters + 3 digits
+                    - Prefix must match entity type
+                    - NEVER reuse an ID used in a previous conversation turn for a new entity
+
+                - ONLY newly created entities should include attributes
+                - EXISTING entities must NEVER be redefined or expanded
+
+                ### CROSS-BRANCH ID ALIGNMENT ###
+                - If the question refers to an existing entity, you MUST reuse the exact same ID
+                - If this answer creates a new entity that is the direct answer to the shared broadcast question, prefer a stable, canonical ID choice rather than an arbitrary one
+                - Keep IDs stable; vary attributes, not identity
+
+                ### CROSS-BRANCH DIVERSITY ###
+                - Prefer diversity in non-ID attribute values across answerers
+                - Different answerers should try to generate different attribute values when multiple valid answers are possible
+                - Use your branch identity to avoid collapsing to the most obvious/default attribute values
+                - Diversity MUST NEVER change the identity of already referenced entities
+                - Diversity MUST NEVER violate the current intent, required slots, or prior branch history
+
+                ### ID CONSISTENCY (STRICT) ###
+                - IDs are globally unique across the entire conversation
+                - Before assigning a new ID:
+                1. Check if it already exists in the conversation history
+                2. If it exists -> YOU MUST NOT use it
+
+                - If unsure -> generate a NEW higher-numbered ID
+                - Reusing an existing ID for a different entity = INVALID OUTPUT
+
+                ---
+
+                ### CONSISTENCY RULES ###
+                - Preserve all previously established facts
+                - Do not contradict earlier information
+                - Use context only to resolve references (do not re-answer previous turns)
+                - DO NOT repeat answers from previous turns
+
+                ---
+
+                ### DATA CONSTRAINTS ###
+                {newl.join([types_def[t]["text"] for t in types_def if t != "id"]) if len([t for t in types_def if t != "id"]) != 0 else ""}
+
+                ---
+
+                ### OUTPUT CONTRACT (STRICT) ###
+                Return EXACTLY one JSON object (single line, JSONL) like this:
+                {{
+                    "<slot1>": "<value-or-null>",
+                    "<slot2>": "<value-or-null>"
+                }}
+
+                The JSON must include:
+                - ALL slots defined by the current intent
+                - Precondition entities ONLY as ID references (within relevant slots)
+                - Newly created entities ONLY if required by the intent
+
+                Do NOT:
+                - Add extra keys outside the intent schema
+                - Inline or expand existing entities
+
+                ---
+
+                ### FAILURE CONDITIONS ###
+                Regenerate internally if:
+                - Any slot is missing
+                - Any precondition entity is missing
+                - Any required attribute is missing
+                - Any entity ID is incorrect or inconsistent
+
+                ---
+
+                ### STRICT PROHIBITIONS ###
+                Do NOT mention:
+                - intents, operations
+                - schema, ontology
+                - rules or constraints
+                - internal reasoning
+            """,
+        })
+        answerer_chat_history.append({
+            "role": "user",
+            "content": "Continue the dialogue according to the system instructions by generating the answer to the last question. Return only your answer to the prompt without any reasoniong",
+        })
+
+        start = time()
+        answerer_temperature = min(0.6, 0.3 + (0.1 * answerer_idx))
+        dialogue = dialogue_client.chat(
+            messages=answerer_chat_history,
+            model=witness_llm,
+            format="json",
+            options={
+                "temperature": answerer_temperature,
+                "top_p": 0.95,
+                "top_k": 70,
+            },
+        )
+        while dialogue["message"]["content"] == "":
+            dialogue = dialogue_client.chat(
+                messages=answerer_chat_history,
+                model=witness_llm,
+                format="json",
+                options={
+                    "temperature": answerer_temperature,
+                    "top_p": 0.95,
+                    "top_k": 70,
+                },
+            )
+        end = time()
+        conf.dialogue_timestamps.append({"start": start, "end": end})
+
+        if len(answerer_chat_history) != 0:
+            answerer_chat_history.pop()
+        if len(answerer_chat_history) != 0:
+            answerer_chat_history.pop()
+
+        answer = ast.literal_eval(repair_json(dialogue["message"]["content"]))
+
+        # Write only the answerer's JSON so downstream RDF extraction can read
+        # the file line by line without topology metadata.
+        target = triples_file or getattr(conf, "triples_file", None)
+        if target is not None:
+            with open(target, "a") as f:
+                f.write(json.dumps(answer) + "\n")
+
+        turn = {
+            "Intent": intent,
+            "Q": question,
+            "A": answer,
+        }
+        answerer_history_dict.append(turn)
+        branch_answers.append(answer)
+
+        branch_turns.append({
+            "answerer_id": answerer_idx,
+            "Intent": intent,
+            "Q": question,
+            "A": answer,
+        })
+
+    # The broadcaster can only safely reuse facts that are present with the
+    # same value in every branch. This prevents it from following up on
+    # branch-specific entities while still giving it enough context to move
+    # past the starting intent.
+    shared_answer = {}
+    if len(branch_answers) != 0:
+        common_keys = set(branch_answers[0].keys())
+        for answer in branch_answers[1:]:
+            common_keys &= set(answer.keys())
+
+        for key in common_keys:
+            value = branch_answers[0][key]
+            if value == "None" or value is None:
+                continue
+            if all(answer[key] == value for answer in branch_answers[1:]):
+                shared_answer[key] = value
+
+    question_turn = {
+        "Intent": intent,
+        "Q": question,
+        "A": shared_answer,
+    }
+    conf.history_dict.append(question_turn)
+    question_chat_history.append({
+        "role": "user",
+        "content": f"""This is the history of previous conversations, use it only to reference already existing entities in a 
+            coherent way, do not modify it: {conf.history_dict[-20:]}""",
+    })
+
+    conf.turn_counter += 1
+    return {
+        "Intent": intent,
+        "Q": question,
+        "branches": branch_turns,
+    }

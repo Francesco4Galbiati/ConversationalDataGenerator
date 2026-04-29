@@ -2,7 +2,7 @@ import re
 import conf
 import random
 import requests
-from conf import ont_prefix, g, ops, hallucinations, prefixes, sq, ont_uri, types_def
+from conf import ont_prefix, ops, hallucinations, prefixes, sq, ont_uri, types_def, redis
 from pydantic import create_model
 from collections import defaultdict
 from pydantic_ai import UnexpectedModelBehavior
@@ -45,36 +45,18 @@ def get_slots_model(i, intent):
 def cap(str):
     return str[0].upper() + str[1:]
 
-def replace_ids(slots, ids):
-    tmp = slots
-    for k, v in slots.items():
-        if '_id' in k and v != 'null' and v != 'None' and v is not None:
-            while v in ids:
-                if int(v[-1]) != 9:
-                    new = v[:-1] + str(int(v[-1]) + 1)
-                else:
-                    if int(v[-2]) != 9:
-                        new = v[:-2] + str(int(v[-2]) + 1) + '0'
-                    else:
-                        new = v[:-3] + str(int(v[-3]) + 1) + '00'
-                v = new
-            tmp[k] = v
-            ids.append(v)
-
-    return tmp, ids
-
-def replace_ids_tM(slots, ids, intent):
+def replace_ids(slots, intent, abox):
 
     tmp = slots
     for k, v in slots.items():
         if '_id' in k:
             if v is None:
                 v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
-                hallucinations['unspecified_slot'] += 1
+                hallucinations['missing_slot'] += 1
             if re.search(r'\d+$', str(v)) is None:
                 continue
-            if v in ids and k not in ops[intent]['preconditions']['slots']:
-                while v in ids:
+            if redis.sismember(f"abox{abox}:ids", v) and k not in ops[intent]['preconditions']['slots']:
+                while redis.sismember(f"abox{abox}:ids", v):
                     if int(v[-1]) != 9:
                         new = v[:-1] + str(int(v[-1]) + 1)
                     else:
@@ -84,9 +66,9 @@ def replace_ids_tM(slots, ids, intent):
                             new = v[:-3] + str(int(v[-3]) + 1) + '00'
                     v = new
                 tmp[k] = v
-            ids.append(v)
+            redis.sadd(f"abox:{abox}:ids", v)
 
-    return tmp, ids
+    return tmp
 
 def refactor_dialogue(dialogue):
 
@@ -174,3 +156,9 @@ def check_preconditions(classes, slots, prefix):
             print(f'{subject_uri} not found')
 
     conf.hallucinations['false_precondition'] += missing_count
+
+def update_world_state(answer, intent):
+    for slot in ops[intent]['postconditions']['slots']:
+        val = answer.get(slot)
+        if val not in [None, 'None']:
+            redis.sadd(f"entities:{slot}", val)

@@ -1,206 +1,88 @@
-import ast
 import conf
-import asyncio
-import requests
-from time import time
-from conf import bcolors, ops, ont_uri, hallucinations, num_abox, fuseki, fuseki_headers, g, parallelization
-from agents import parser_agent
-from rdflib import URIRef, RDF, Literal
-from functions import get_intent_model_tM, replace_ids_tM, refactor_dialogue, dict_replace, dict_keys_to_snake, \
-    check_preconditions
-from json_repair import repair_json
-from pydantic_ai import UnexpectedModelBehavior
-from one_to_many.dialogue import gen_dialogue, gen_dialogue_async
+from conf import bcolors, ops, hallucinations, parallelization
+
+from functions import dict_keys_to_snake, replace_ids
+from one_to_many.dialogue import gen_dialogue_turn
+
 
 async def __launch__(triples):
 
     n_t = 0
-    gen = 0
-    next_dialogue = None
-    for n in range(num_abox):
-        conf.ids.append(list())
+    i = 1
 
     while n_t < triples:
 
-        gen += 1
-        conf.ids.clear()
-        for n in range(num_abox):
-            conf.ids.append(list())
-
+        # The one-to-many generator currently exposes only the synchronous turn
+        # API, so the loop keeps the same outer structure but always fetches one
+        # broadcast turn at a time.
         if parallelization:
-            if n_t == 0:
-                parser_agent.run(user_prompt='')
-                dialogue_list = gen_dialogue()
-                next_dialogue = asyncio.create_task(gen_dialogue_async())
-            else:
-                dialogue_list = await next_dialogue
-                next_dialogue = asyncio.create_task(gen_dialogue_async())
+            dialogue_turn = gen_dialogue_turn()
         else:
-            dialogue_list = gen_dialogue()
+            dialogue_turn = gen_dialogue_turn()
 
-        dialogue_list = refactor_dialogue(dialogue_list)
+        t = dialogue_turn
+        if "Intent" in t and "Q" in t and "branches" in t:
+            intent = t["Intent"]
+            question = t["Q"]
+            branches = t["branches"]
+        else:
+            hallucinations["dictionary_hallucination"] += 1
+            continue
 
-        i = 1
-        while i <= len(list(dialogue_list)):
-
-            t = dialogue_list[str(i)]
-
-            if 'Intent' not in t or 'Q' not in t:
-                hallucinations['dictionary_hallucination'] += 1
-                continue
-
-            intent = t['Intent']
-            question = t['Q']
-            answer = []
-            for n in range(num_abox):
-                if f'A{n + 1}' not in t:
-                    hallucinations['dictionary_hallucination'] += 1
-                    continue
-                answer.append(t[f'A{n + 1}'])
-
-            if intent not in list(ops):
-                hallucinations['dictionary_hallucination'] += 1
-                i += 1
-                continue
-
-            output_model = get_intent_model_tM(intent, ops[intent])
-
-            print(f"{bcolors.FAIL}====================================TURN {i}===================================={bcolors.ENDC}")
-            print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
-            print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
-
-            turn = t
-            for n in range(num_abox):
-                if f'A{n + 1}' not in turn:
-                    continue
-                print(f"{bcolors.WARNING}[A{n + 1}] Answer: {answer[n]}{bcolors.ENDC}")
-
-                start = time()
-
-                try:
-                    slots_answer = await parser_agent.run(user_prompt=f"""
-                        ### ROLE ###
-                        You are a specialized information extraction agent.
-                        Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
-                        ### INTENT CONTEXT ###
-                        Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
-                                              list(ops[intent]['preconditions']['slots'])}
-
-                        ### INSTRUCTIONS ###
-                        - Read the text carefully.
-                        - Identify and extract the values that correspond to each data slot.
-                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                        - Do not invent or paraphrase data — use only what appears in the text.
-                        - After having identified the data slots, return them in a JSON object that uses the names of the slots
-
-                        ### OUTPUT FORMAT ###
-                        Return a JSON dictionary like:
-                        {{
-                          "<slot_1>": "<value-or-null>",
-                          "<slot_2>": "<value-or-null>",
-                          ...
-                        }}
-                        Use the exact words you find in the data slot section as keys to the JSON dictionary.
-
-                        ### INPUT TEXT ###
-                        {answer[n]}
-                    """, output_type=output_model)
-                    end = time()
-                    slots = dict_replace('null', 'None', slots_answer.output.model_dump())
-
-                except UnexpectedModelBehavior as e:
-                    hallucinations['parser_failures'] += 1
-                    print(e)
-
-                    slots_answer = await parser_agent.run(user_prompt=f"""
-                        ### ROLE ###
-                        You are a specialized information extraction agent.
-                        Your task is to extract the slot values required to fulfill a specific intent from a given text.
-
-                        ### INTENT CONTEXT ###
-                        Intent description: {ops[intent]['preconditions']['description']}
-                        Required data slots: {list(ops[intent]['postconditions']['slots']) + 
-                                              list(ops[intent]['preconditions']['slots'])}
-
-                        ### INSTRUCTIONS ###
-                        - Read the text carefully.
-                        - Identify and extract the values that correspond to each data slot.
-                        - If a slot value that is not an id is missing or cannot be inferred by the text alone, set it as 'null'.
-                        - Do not invent or paraphrase data — use only what appears in the text.
-                        - After having identified the data slots, return them in a JSON object that uses the names of the slots
-
-                        ### OUTPUT FORMAT ###
-                        Return a JSON dictionary like:
-                        {{
-                          "<slot_1>": "<value-or-null>",
-                          "<slot_2>": "<value-or-null>",
-                          ...
-                        }}
-                        Use the exact words you find in the intent's slots as keys to the JSON dictionary.
-
-                        ### INPUT TEXT ###
-                        {answer[n]}
-                    """)
-                    end = time()
-                    slots = ast.literal_eval(repair_json(slots_answer.output).replace('null', 'None'))
-
-                conf.parsing_timestamps.append({'start': start, 'end': end})
-                slots = dict_keys_to_snake(slots)
-
-                check_preconditions(ops[intent]['preconditions']['classes'], slots, f'A{n}G{gen}_')
-                slots, conf.ids[n] = replace_ids_tM(slots, conf.ids[n], intent)
-
-                for s in slots:
-                    if slots[s] is not None and slots[s] != 'None':
-                        slots[s] = str(slots[s]).replace("'", "")
-
-                print(f"{bcolors.OKCYAN}[A{n + 1}] Data: {slots}{bcolors.ENDC}")
-
-                for v in slots.values():
-                    if v == 'None' or v is None:
-                        hallucinations['unspecified_slot'] += 1
-
-                for t in ops[intent]["postconditions"]["triples"]:
-
-                    if t[0] not in slots or slots[t[0]] == 'None' or slots[t[0]] is None:
-                        continue
-
-                    if t[1] != 'type':
-                        if t[2] not in slots or slots[t[2]] == 'None' or slots[t[2]] is None:
-                            continue
-
-                    if t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']:
-                        sub = URIRef(f"{ont_uri}{f'A{n}G{gen}_' + slots[t[0]]}")
-                    else:
-                        print(f"{bcolors.FAIL}No slots named {t[0]} in the {intent} intent!")
-                        hallucinations['dictionary_hallucination'] += 1
-                        continue
-
-                    pred = URIRef(f"{ont_uri}{t[1]}") if t[1] != "type" else RDF.type
-
-                    if t[2] in ops[intent]['postconditions']['slots']:
-                        if ops[intent]['postconditions']['slots'][t[2]] == "id":
-                            obj = URIRef(f"{ont_uri}{f'A{n}G{gen}_' + slots[t[2]]}")
-                        else:
-                            obj = Literal(f"{slots[t[2]]}")
-                    elif t[2] in ops[intent]['preconditions']['slots']:
-                        obj = URIRef(f"{ont_uri}{f'A{n}G{gen}_' + slots[t[2]]}")
-                    else:
-                        obj = URIRef(f"{ont_uri}{t[2]}")
-
-                    if 'http' in obj:
-                        f_obj = '<' + str(obj) + '>'
-                    else:
-                        f_obj = '"' + str(obj) + '"'
-
-                    fuseki_triple = f"<{sub}> <{pred}> {f_obj}"
-                    requests.post(fuseki, data=fuseki_triple.encode('utf-8'), headers=fuseki_headers)
-
-                    n_t += 1
-                    if n_t >= triples:
-                        return
-
+        if intent not in list(ops):
+            hallucinations["dictionary_hallucination"] += 1
             i += 1
+            continue
+
+        print(f'{bcolors.OKGREEN}Number of triples: ' + str(n_t) + f'{bcolors.ENDC}')
+        print(f"{bcolors.FAIL}====================================TURN {i}===================================={bcolors.ENDC}")
+        print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
+        print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
+
+        for branch in branches:
+
+            if "answerer_id" in branch and "A" in branch:
+                answerer_id = branch["answerer_id"]
+                answer = branch["A"]
+            else:
+                hallucinations["dictionary_hallucination"] += 1
+                continue
+
+            print(f"{bcolors.WARNING}Answerer {answerer_id}: {answer}{bcolors.ENDC}")
+
+            answer = dict_keys_to_snake(answer)
+            answer = replace_ids(answer, intent, answerer_id)
+
+            for a in answer:
+                if answer[a] != "None" and answer[a] is not None:
+                    answer[a] = str(answer[a]).replace("'", "")
+                    answer[a] = str(answer[a]).replace("\"", "")
+
+            for v in answer.values():
+                if v == "None" or v is None:
+                    hallucinations["missing_slot"] += 1
+
+            for triple_def in ops[intent]["postconditions"]["triples"]:
+
+                if triple_def[0] not in answer or answer[triple_def[0]] == "None" or answer[triple_def[0]] is None:
+                    continue
+
+                if triple_def[1] != "type":
+                    if triple_def[2] not in answer or answer[triple_def[2]] == "None" or answer[triple_def[2]] is None:
+                        continue
+
+                if not (
+                    triple_def[0] in ops[intent]["postconditions"]["slots"]
+                    or triple_def[0] in ops[intent]["preconditions"]["slots"]
+                ):
+                    print(f"{bcolors.FAIL}No slot named {triple_def[0]} in the {intent} intent!")
+                    hallucinations["dictionary_hallucination"] += 1
+                    continue
+
+                n_t += 1
+                if n_t >= triples:
+                    return
+
+        i += 1
+
     return
