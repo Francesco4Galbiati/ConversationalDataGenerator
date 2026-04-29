@@ -345,7 +345,7 @@ def gen_dialogue_turn(clear = False):
     output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
     answer = output_json
     with open(conf.triples_file, 'a') as f:
-        f.write(json.dumps(answer) + '\n')
+        f.write(f'{intent}: ' + json.dumps(answer) + '\n')
 
     turn = {
         "Intent": intent,
