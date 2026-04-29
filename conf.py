@@ -2,6 +2,7 @@ import yaml
 import threading
 import os
 import redis
+import argparse
 from rdflib import *
 from ollama import Client, AsyncClient
 from datetime import datetime
@@ -12,15 +13,27 @@ from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.providers.ollama import OllamaProvider
 
 # PARAMETERS
+parser = argparse.ArgumentParser()
+parser.add_argument("--conversation", type=int, default=1)
+parser.add_argument("--target", type=int, default=1000)
+parser.add_argument("--witnesses_number", type=int, default=3)
+parser.add_argument("--api_key", type=str, default='')
+parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
+parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
+parser.add_argument("--contract", type=str, default='LUBM_test.yaml')
+
+args = parser.parse_args()
+
 parallelization = False
-contract_file = "./resources/contracts/LUBM_test.yaml"
-querent_llm = 'gpt-oss:120b'
-witness_llm = 'gpt-oss:120b'
+contract_file = f"./resources/contracts/{args.contract}"
+querent_llm = args.querent_model
+witness_llm = args.witness_model
 parser_llm = 'ministral-3:8b'
-conversation_type = ConversationType.ONE_TO_ONE
-target_triples = 2500
+conversation_type = args.conversation
+target_triples = args.target
 conversation_size = 25
-num_of_witnesses = 3
+num_of_witnesses = args.witnesses_number
+api_key = args.api_key
 
 # ONTOLOGY READ
 with open(contract_file) as f:
@@ -107,19 +120,19 @@ task_model = OpenAIChatModel(
     model_name=parser_llm,
     provider=OllamaProvider(
         base_url=parser_host + '/v1',
-        api_key='sk-154b7d9623ae424ca9e362e2da0fbfdd'
+        api_key=api_key
     ),
     settings=OpenAIChatModelSettings(extra_body={"keep-alive": -1})
 )
 
 dialogue_client = Client(
     host=dialogue_generator_host,
-    headers={'Authorization': 'Bearer sk-154b7d9623ae424ca9e362e2da0fbfdd'},
+    headers={'Authorization': f'Bearer {api_key}'},
     
 )
 async_dialogue_client = AsyncClient(
     host=dialogue_generator_host,
-    headers={'Authorization': 'Bearer sk-154b7d9623ae424ca9e362e2da0fbfdd'}
+    headers={'Authorization': f'Bearer {api_key}'}
 )
 
 # Fuseki
