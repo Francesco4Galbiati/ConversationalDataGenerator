@@ -1,9 +1,9 @@
 import conf
 import asyncio
 
-from conf import bcolors, ops, hallucinations, instructions, instructions_loop, parallelization
+from conf import bcolors, ops, hallucinations, instructions, instructions_loop, parallelization, redis
 from agents import parser_agent
-from functions import dict_keys_to_snake, replace_ids
+from functions import dict_keys_to_snake, replace_ids, update_world_state
 from many_to_many.dialogue import gen_dialogue_turn
 
 
@@ -89,33 +89,44 @@ async def __launch__(triples):
             answer = dict_keys_to_snake(answer)
             answer = replace_ids(answer, intent, answerer_id)
 
+            valid_slots = set(ops[intent]['postconditions']['slots']) | set(ops[intent]['preconditions']['slots'])
+            for slot in answer:
+                if slot not in valid_slots:
+                    hallucinations['dictionary_hallucination'] += 1
+
+            expected_slots = set(ops[intent]['postconditions']['slots'])
+            for slot in expected_slots:
+                if slot not in answer or answer[slot] in [None, 'None']:
+                    hallucinations['missing_slot'] += 1
+
+
+            preconditions_slots = ops[intent]['preconditions']['slots']
+            for slot in preconditions_slots:
+                val = answer.get(slot)
+                if val not in [None, 'None']:
+                    if not redis.sismember(f"entities:{slot}:idx{answerer_id}", val):
+                        hallucinations['false_precondition'] += 1
+
             for a in answer:
-                if answer[a] != "None" and answer[a] is not None:
+                if answer[a] != 'None' and answer[a] is not None:
                     answer[a] = str(answer[a]).replace("'", "")
                     answer[a] = str(answer[a]).replace("\"", "")
 
-            for v in answer.values():
-                if v == "None" or v is None:
-                    hallucinations["missing_slot"] += 1
-
             for t in ops[intent]["postconditions"]["triples"]:
 
-                if t[0] not in answer or answer[t[0]] == "None" or answer[t[0]] is None:
+                if t[0] not in answer or answer[t[0]] == 'None' or answer[t[0]] is None:
                     continue
-
-                if t[1] != "type":
-                    if t[2] not in answer or answer[t[2]] == "None" or answer[t[2]] is None:
+                if t[1] != 'type':
+                    if t[2] not in answer or answer[t[2]] == 'None' or answer[t[2]] is None:
                         continue
-
-                if not (t[0] in ops[intent]["postconditions"]["slots"] or t[0] in ops[intent]["preconditions"]["slots"]):
-                    print(f"{bcolors.FAIL}No slot named {t[0]} in the {intent} intent!")
-                    hallucinations["dictionary_hallucination"] += 1
+                if not(t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']):
                     continue
 
                 n_t += 1
                 if n_t >= triples:
                     return
-
-        i += 1
+    
+            update_world_state(answer, intent, 'idx' + str(answerer_id))
+            i += 1
 
     return

@@ -157,8 +157,8 @@ def check_preconditions(classes, slots, prefix):
 
     conf.hallucinations['false_precondition'] += missing_count
 
-def update_world_state(answer, intent):
+def update_world_state(answer, intent, answerer_id=''):
     for slot in ops[intent]['postconditions']['slots']:
         val = answer.get(slot)
         if val not in [None, 'None']:
-            redis.sadd(f"entities:{slot}", val)
+            redis.sadd(f"entities:{slot}:{answerer_id}", val)
