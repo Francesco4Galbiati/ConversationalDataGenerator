@@ -127,6 +127,6 @@ async def __launch__(triples):
                     return
     
             update_world_state(answer, intent, 'idx' + str(answerer_id))
-            i += 1
+        i += 1
 
     return

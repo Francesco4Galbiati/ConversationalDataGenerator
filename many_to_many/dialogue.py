@@ -70,7 +70,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
                     i: {
                         "description": ops[i]["preconditions"]["description"],
                         "required_entities": ops[i]["preconditions"]["classes"],
-                        "selection_weight": ops[i].get("selection_weight", 1)
+                        "selection_weight": ops[i]['preconditions']['cardinality']
                     }
                 }
                 for i in ops if i in instructions
@@ -89,7 +89,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
 
             Step 3 — Selection:
             - Prefer least recently used intents
-            - Use selection_weight for long-term balance
+            - Try to balance the intents you choose according to the intent history and the selection_weight parameter, which goes from 1 (pick rarely) to 5 (pick frequently)
             - If only one valid intent exists → select it
 
             ---
@@ -117,8 +117,8 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
             Return ONLY:
 
             {{
-            "Intent": "<intent_name>",
-            "Q": "<question>"
+                "Intent": "<intent_name>",
+                "Q": "<question>"
             }}
         """,
     })
@@ -162,6 +162,8 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
     output_json = ast.literal_eval(repair_json(dialogue["message"]["content"]).replace('null', 'None'))
     intent = output_json["Intent"]
     question = output_json["Q"]
+    conf.intent_history.append(intent)
+    conf.intent_history = conf.intent_history[-10:]
     intent_content = {
         'description': {str(ops[intent]['preconditions']['description'])},
         'preconditions_slots': {str(ops[intent]['preconditions']['slots'])},
@@ -337,7 +339,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
                 },
             )
         end = time()
-        conf.witness_time += (end - start)
+        conf.witness_times[answerer_idx] += (end - start)
 
         if len(conf.chat_history) != 0:
             conf.chat_history.pop()

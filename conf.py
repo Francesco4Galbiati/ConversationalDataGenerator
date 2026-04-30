@@ -14,8 +14,8 @@ from pydantic_ai.providers.ollama import OllamaProvider
 
 # PARAMETERS
 parser = argparse.ArgumentParser()
-parser.add_argument("--conversation", type=int, default=1)
-parser.add_argument("--target", type=int, default=5000)
+parser.add_argument("--conversation", type=int, default=ConversationType.MANY_TO_MANY)
+parser.add_argument("--target", type=int, default=500)
 parser.add_argument("--witnesses_number", type=int, default=3)
 parser.add_argument("--api_key", type=str, default='sk-154b7d9623ae424ca9e362e2da0fbfdd')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
@@ -154,7 +154,7 @@ for t in types:
         types_def[t] = {'def': Enum(t, dict([(x, x) for x in types[t]['options']])), 'text': types[t]['text']}
 '''
 querent_time = 0
-witness_time = 0
+witness_times = [0 for _ in range(num_of_witnesses)]
 global_lock = threading.Lock()
 
 # HALLUCINATIONS

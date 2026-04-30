@@ -68,7 +68,7 @@ def gen_dialogue_turn(clear = False):
                 i: {
                     "description": ops[i]["preconditions"]["description"],
                     "required_entities": ops[i]["preconditions"]["classes"],
-                    "selection_weight": ops[i].get("selection_weight", 1)
+                    "selection_weight": ops[i]['preconditions']['cardinality']
                 }
             }
             for i in ops
@@ -333,7 +333,7 @@ def gen_dialogue_turn(clear = False):
             }
         )
     end = time()
-    conf.witness_time += (end - start)
+    conf.witness_times[0] += (end - start)
 
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()

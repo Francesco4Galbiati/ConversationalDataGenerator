@@ -324,15 +324,15 @@ subclasses:
 precondition_slots: ['graduate_course_id', 'assistant_professor_id', 'department_id', 'associate_professor_id', 'university_id']
 
 instructions:
-  OrganizationsManager: 
-    inst: ["IntroduceUniversity", "CreateDepartment", "CreateProgram"]
-    cardinality: 3
-  SchoolManager: 
-    inst: ["HireProfessor", "HireAdministrativeStaff", "CreateCourse"]
-    cardinality: 12
-  ResearchManager: 
-    inst: ["CreateResearchGroup", "PublishArticle", "PublishBook", "HireResearchAssistant"]
+  StudentManager:
+    inst: ['GraduateStudent', 'IntroduceStudent', 'EnrollStudent', 'IntroduceUndergraduateStudent']
     cardinality: 9
-  StudentManager: 
-    inst: ["EnrollStudent", "AssignAdvisor", "TakeCourse", "AssignDegree"]
-    cardinality: 15
+  ProfessorManager:
+    inst: ['SendPublication', 'HireProfessor', 'NominateDepartmentChair', 'CreateResearchGroup']
+    cardinality: 9
+  CourseManager: 
+    inst: ['EnrollGraduateStudentInCourse', 'TakeCourseOfProfessor', 'TakeCourse', 'TakeCourseOfAdvisor']
+    cardinality: 6
+  PeopleManager:
+    inst: ['ListMember', 'DefineAlumnus']
+    cardinality: 3 
