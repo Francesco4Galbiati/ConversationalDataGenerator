@@ -2,7 +2,7 @@ import conf
 from conf import bcolors, ops, hallucinations, parallelization
 
 from functions import dict_keys_to_snake, replace_ids
-from one_to_many.dialogue import gen_dialogue_turn
+from one_to_many.dialogue_gpt import gen_dialogue_turn
 
 
 async def __launch__(triples):
