@@ -1,7 +1,7 @@
 from conf import bcolors, ops, hallucinations, instructions, instructions_loop, redis, querent_llm
 from functions import dict_keys_to_snake, replace_ids, update_world_state
 
-if querent_llm == 'gpt:oss-120b':
+if querent_llm == 'gpt-oss:120b':
     from many_to_one.dialogue_gpt import gen_dialogue_turn
 elif querent_llm == 'llama3.3:70b':
     from many_to_one.dialogue_llama import gen_dialogue_turn
@@ -34,7 +34,7 @@ async def __launch__(triples):
         dialogue_turn = gen_dialogue_turn(instructions[inst]["inst"], clear=clear)
             
         t = dialogue_turn
-        if "Intent" in t and "Q" in t and "branches" in t:
+        if "Intent" in t and "Q" in t and "A" in t:
             intent = t["Intent"]
             question = t["Q"]
             answer = t["A"]
@@ -50,6 +50,7 @@ async def __launch__(triples):
         print(f'{bcolors.OKGREEN}Number of triples: ' + str(n_t) + f'{bcolors.ENDC}')
         print(f"{bcolors.FAIL}====================================TURN {i}===================================={bcolors.ENDC}")
         print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
+        print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
         print(f"{bcolors.WARNING}Answer: {answer}{bcolors.ENDC}")
 
         answer = dict_keys_to_snake(answer)

@@ -1,7 +1,7 @@
 from conf import bcolors, ops, hallucinations, redis, querent_llm
 from functions import  replace_ids, dict_keys_to_snake, update_world_state
 
-if querent_llm == 'gpt:oss-120b':
+if querent_llm == 'gpt-oss:120b':
     from one_to_one.dialogue_gpt import gen_dialogue_turn
 elif querent_llm == 'llama3.3:70b':
     from one_to_one.dialogue_llama import gen_dialogue_turn

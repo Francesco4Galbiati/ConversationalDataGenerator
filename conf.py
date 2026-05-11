@@ -14,13 +14,13 @@ from pydantic_ai.providers.ollama import OllamaProvider
 
 # PARAMETERS
 parser = argparse.ArgumentParser()
-parser.add_argument("--conversation", type=int, default=1)
+parser.add_argument("--conversation", type=int, default=2)
 parser.add_argument("--target", type=int, default=1000)
 parser.add_argument("--witnesses_n", type=int, default=3)
 parser.add_argument("--model_host", type=str, default='')
 parser.add_argument("--api_key", type=str, default='')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
-parser.add_argument("--qwitness_model", type=str, default='gpt-oss:120b')
+parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='LUBM_contract.yaml')
 
 args = parser.parse_args()
@@ -29,7 +29,7 @@ contract_file = f"./resources/contracts/{args.contract}"
 querent_llm = args.querent_model
 witness_llm = args.witness_model
 target_triples = args.target
-num_of_witnesses = args.witnesses_number
+num_of_witnesses = args.witnesses_n
 model_host = args.model_host
 api_key = args.api_key
 if args.conversation == 1:
