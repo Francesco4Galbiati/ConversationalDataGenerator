@@ -1,9 +1,12 @@
-import conf
-from conf import bcolors, ops, hallucinations, parallelization
-
+from conf import bcolors, ops, hallucinations, llm
 from functions import dict_keys_to_snake, replace_ids, update_world_state
-from one_to_many.dialogue_gpt import gen_dialogue_turn
 
+if llm == 'gpt:oss-120b':
+    from one_to_many.dialogue_gpt import gen_dialogue_turn
+elif llm == 'llama3.3:70b':
+    from one_to_many.dialogue_llama import gen_dialogue_turn
+else:
+    exit("Model not supported at the moment")
 
 async def __launch__(triples):
 

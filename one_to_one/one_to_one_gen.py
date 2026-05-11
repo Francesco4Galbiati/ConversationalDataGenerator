@@ -1,8 +1,13 @@
-import asyncio
-from conf import bcolors, ops, hallucinations, parallelization, redis
-from agents import parser_agent
-from functions import  replace_ids, dict_keys_to_snake, update_world_state, update_world_state_rdf
-from one_to_one.dialogue_disjoint import gen_dialogue_turn
+from conf import bcolors, ops, hallucinations, redis, llm
+from functions import  replace_ids, dict_keys_to_snake, update_world_state
+
+if llm == 'gpt:oss-120b':
+    from one_to_one.dialogue_gpt import gen_dialogue_turn
+elif llm == 'llama3.3:70b':
+    from one_to_one.dialogue_llama import gen_dialogue_turn
+else:
+    exit("Model not supported at the moment")
+
 
 async def __launch__(triples):
 

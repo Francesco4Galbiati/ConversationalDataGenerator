@@ -1,9 +1,8 @@
-import json
 import conf
 import time
 import asyncio
 import nest_asyncio
-from conf import dialogue_timestamps, parsing_timestamps, hallucinations, conversation_type, target_triples, num_of_witnesses
+from conf import hallucinations, conversation_type, target_triples, num_of_witnesses
 from parameters import ConversationType
 from one_to_one.one_to_one_gen import __launch__ as oto_launch
 from one_to_many.one_to_many_gen import __launch__ as otm_launch
