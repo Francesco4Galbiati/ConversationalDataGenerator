@@ -21,7 +21,7 @@ parser.add_argument("--model_host", type=str, default='')
 parser.add_argument("--api_key", type=str, default='')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
-parser.add_argument("--contract", type=str, default='LUBM_contract_disjoint.yaml')
+parser.add_argument("--contract", type=str, default='LUBM_contract.yaml')
 
 args = parser.parse_args()
 

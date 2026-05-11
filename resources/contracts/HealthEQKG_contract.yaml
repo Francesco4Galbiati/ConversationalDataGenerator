@@ -1,18 +1,157 @@
 intents:
+  FindPhysicianPlacement:
+    preconditions:
+      classes:
+        physician: Physician
+        zip_code_area: ZipCodeArea
+      slots:
+        physician_id: id
+        zip_code_area_id: ZipCodeArea
+      cardinality: 3
+      description: "Finds a new Facility in an existing zip code area in which to hire an existing physician. Provides the facility's id, name, address, abstract (short description), number of beds, number of employees, and the year of placement of the physician"
+    postconditions:
+      classes:
+        facility: Facility
+        job_placement: JobPlacement
+      slots:
+        facility_id: id
+        job_placement_id: id
+        facility_name: str
+        facility_address: str
+        facility_abstract: str
+        facility_number_of_beds: int
+        facility_number_of_employees: int
+        job_placement_year: int
+      triples:
+      - [facility_id, type, Facility]
+      - [job_placement_id, type, JobPlacement]
+      - [job_placement_id, hasFacility, facility_id]
+      - [physician_id, affiliatedHospital, facility_id]
+      - [job_placement_id, placementFor, physician_id]
+      - [facility_id, name, facility_name]
+      - [facility_id, address, facility_address]
+      - [facility_id, abstract, facility_abstract]
+      - [facility_id, numberOfBeds, facility_number_of_beds]
+      - [facility_id, numberOfEmployees, facility_number_of_employees]
+      - [job_placement_id, hasTimeReference, job_placement_year]
+
+  ReportPhysicianStudies:
+    preconditions:
+      classes:
+        physician: Physician
+      slots:
+        physician_id: id
+      cardinality: 3
+      description: "Provides data about an existing physiscian's studies, introducing the medical school from which they graduated (id, name, abstract (description), faculty size, and number of students), and the physician's graduation year"
+    postconditions:
+      classes:
+        medical_school: MedicalSchool
+      slots:
+        medical_school_id: id
+        graduation_year: int
+        school_name: str
+        school_abstract: str
+        school_faculty_size: int
+        school_number_of_student: int
+      triples:
+      - [medical_school_id, type, MedicalSchool]
+      - [physician_id, graduateFrom, medical_school_id]
+      - [physician_id, graduationYear, graduation_year]
+      - [medical_school_id, name, school_name]
+      - [medical_school_id, abstract, school_abstract]
+      - [medical_school_id, facultySize, school_faculty_size]
+      - [medical_school_id, numberOfStudents, school_number_of_student]
+
+  PhysicianSpecialty:
+    preconditions:
+      classes:
+        physician: Physician
+      slots:
+        physician_id: id
+      cardinality: 4
+      description: 'Provides the medical specialty and credentials of an existing physician'
+    postconditions:
+      classes: {}
+      slots:
+        physician_credentials: credentials
+        physician_medical_specialty: str
+      triples:
+      - [physician_id, credential, physician_credentials]
+      - [physician_id, medicalSpecialty, physician_medical_specialty]
+
   IntroducePhysician:
     preconditions:
       classes: {}
       slots: {}
       cardinality: 4
-      description: "Introduces a new Physician to the context, with its id, NPI, name, surname, gender, specialty,
-      credentials"
+      description: 'Introduces a new physician in the domain, with its unique id, gamily name, given name, gender, and npi code'
     postconditions:
-      classes: {p: Physician}
-      slots: {p_id: id, p_npi: npi, p_name: str, p_surname: str, p_gender: gender, p_specialty: string,
-      p_credential: credential}
-      triples: [[p_id, type, Physician], [p_id, usNPI, p_npi], [p_id, givenName, p_name],
-      [p_id, familyName, p_surname], [p_id, gender, p_gender], [p_id, medicalSpecialty, p_specialty],
-      [p_id, credential, p_credential]]
+      classes:
+        physician: Physician
+      slots:
+        physician_id: id
+        physician_family_name: str
+        physician_gender: gender
+        physician_given_name: str
+        physician_npi: npi
+      triples:
+      - [physician_id, type, Physician]
+      - [physician_id, familyName, physician_family_name]
+      - [physician_id, gender, physician_gender]
+      - [physician_id, givenName, physician_given_name]
+      - [physician_id, usNPI, physician_npi]
+
+  HirePhysician:
+    preconditions:
+      classes:
+        facility: Facility
+      slots:
+        facility_id: id
+      cardinality: 2
+      description: "Hires a new physicial for an existing medical facility. Provides the physician's id, given name, family name, gender, and npi, as well as the id and year fo the job placement for which the physician was hired"
+    postconditions:
+      classes:
+        physician: Physician
+      slots:
+        physician_id: id
+        job_placement_id: id
+        physician_family_name: str
+        physician_gender: gender
+        physician_given_name: str
+        physician_npi: npi
+        job_placement_year: int
+      triples:
+      - [physician_id, type, Physician]
+      - [job_placement_id, type, JobPlacement]
+      - [physician_id, affiliatedHospital, facility_id]
+      - [job_placement_id, placementFor, physician_id]
+      - [job_placement_id, hasFacility, facility_id]
+      - [physician_id, familyName, physician_family_name]
+      - [physician_id, gender, physician_gender]
+      - [physician_id, givenName, physician_given_name]
+      - [physician_id, usNPI, physician_npi]
+      - [job_placement_id, hasTimeReference, job_placement_year]
+
+  ScoreZipCodeArea:
+    preconditions:
+      classes: 
+        zip_code_area: ZipCodeArea
+      slots:
+        zip_code_area_id: id
+      cardinality: 2
+      description: 'Provides data about a missing ADI score for an existing zip code area for a certain year. In particular, the scoring id, score, and year are provided in the answer'
+    postconditions:
+      classes:
+        adi_score: ADIScore
+      slots:
+        adi_score_id: id
+        adi_score_score: score
+        adi_score_year: int
+      triples:
+      - [adi_score_id, type, ADIScore]
+      - [zipCodeArea_id, hasADIScore, adi_score_id]
+      - [adi_score_id, nationalScore, adi_score_score]
+      - [adi_score_id, scoredIn, adi_score_year]
 
   DefineZipCodeArea:
     preconditions:
@@ -21,78 +160,28 @@ intents:
       cardinality: 1
       description: "Defines a zip code area characterized by a zip code and an unique id (a sequence of 5 digits)"
     postconditions:
-      classes: {z: ZipCodeArea}
-      slots: {z_id: id, z_zip_code: zipCode}
-      triples: [[z_id, type, ZipCodeArea], [z_id, zipCodeValue, z_zipCode]]
-
-  IntroduceFacility:
-    preconditions:
-      classes: {z: ZipCodeArea}
-      slots: {z_id: id}
-      cardinality: 3
-      description: 'Introduces an Healthcare Facility in an existing zip-code area (identified by the id), with its id,
-      name, address, number of employees, short description, number of beds'
-    postconditions:
-      classes: {f: Facility, z: ZipCodeArea}
-      slots: {f_id: id, f_name: str, f_address: str, f_num_of_employees: int, f_description: str, f_num_of_beds: int}
-      triples: [[f_id, type, Facility], [f_id, name, f_name], [f_id, address, f_address],
-      [f_id, numberOfEmployees, f_num_of_employees], [f_id, abstract, f_description],
-      [f_id, numberOfBeds, f_num_of_beds], [f_id, locatedIn, z_id]]
-
-  HirePhysician:
-    preconditions:
-      classes: {p: Physician, f: Facility}
-      slots: {p_id: id, f_id: id}
-      cardinality: 3
-      description: 'Hires a Physician into a medical facility for a year (creates a JobPlacement entity)'
-    postconditions:
-      classes: {j: JobPlacement}
-      slots: {j_id: id, j_year: int}
-      triples: [[j_id, type, JobPlacement], [j_id, hasTimeReference, j_year], [j_id, hasParticipant, p_id],
-      [j_id, worksAt, f_id], [p_id, affiliatedHospital, f_id]]
-
-  SpecifyDiploma:
-    preconditions:
-      classes: {p: Physician}
-      slots: {p_id: id}
-      cardinality: 3
-      description: 'Retrieves the graduation diploma of a Physician, specifying its medical school (id, name,
-      short description, faculty size, and number of students), and the year of graduation'
-    postconditions:
-      classes: {m: MedicalSchool}
-      slots: {m_id: id, m_name: str, m_description: str, m_faculty_size: int, m_student_size: int,
-      p_graduation_year: int}
-      triples: [[m_id, type, MedicalSchool], [m_id, name, m_name], [m_id, abstract, m_description],
-      [m_id, facultySize, m_faculty_size], [m_id, numberOfStudents, m_student_size],
-      [p_id, graduationYear, p_graduation_year]]
-
-  ListADIScore:
-    preconditions:
-      classes: {z: ZipCodeArea}
-      slots: {z_id: id}
-      cardinality: 4
-      description: 'Records a measurement of the ADI score of a ZipCodeArea for a certain year, providing also the id 
-      of the measurement'
-    postconditions:
-      classes: {a: ADIScore}
-      slots: {a_id: id, a_year: int}
-      triples: [[a_id, type, ADIScore], [a_id, scoredIn, a_year], [z_id, hasADI, a_id]]
+      classes: 
+        zip_code_area: ZipCodeArea
+      slots: 
+        zip_code_area_id: id
+        zip_code_area_code: zipCode
+      triples: 
+      - [zip_code_area_id, type, ZipCodeArea]
+      - [zip_code_area_id, zipCodeValue, zip_code_area_code]
 
 subclasses: []
+precondition_slots: ['physician_id', 'zip_code_area_id', 'facility_id']
+repeatable_terms: ['year', 'gender', 'score', 'number', 'credentials']
 
 types:
-  id:
-    type: 'str'
-    pattern: "r'^S+$'"
-    text: 'A string without spaces'
   npi:
     type: 'str'
     pattern: "r'^d{10}$'"
     text: 'A string of 10 digits'
   gender:
     type: 'enum'
-    options: ['m', 'f']
-    text: "One option between 'm' and 'f'"
+    options: ['male', 'female']
+    text: "One option between 'male' and 'female'"
   credential:
     type: 'enum'
     options: ['MD', 'DO', 'MBBS']
@@ -101,8 +190,15 @@ types:
     type: 'str'
     pattern: "r'^d{5}$'"
     text: 'A string of 5 digits'
+  score:
+    type: 'str'
+    options: ['high', 'mid', 'low']
+    text: "One option between 'high', 'mid', and 'low'"
 
 instructions:
-  AreaManager: ["DefineZipCodeArea", "IntroduceFacility"]
-  PhysicianManager: ["IntroducePhysician", "HirePhysician", "SpecifyDiploma"]
-  ScoreManager: ["ListADIScore"]
+  AreaManager: 
+    inst: ["DefineZipCodeArea", "IntroducePhysician", "ListADIScore"]
+    cardinality: 9
+  PhysicianManager: 
+    inst: ["FindPhysicianPlacement", "ReportPhysicianStudies", "PhysicianSpecialty", "HirePhysician"]
+    cardinality: 15
