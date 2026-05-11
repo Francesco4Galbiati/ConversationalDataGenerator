@@ -3,9 +3,17 @@
 Here you can find the Python project to execute the Conversational Data Generator (CDG).
 This repository is structured as follows:
 - ```/one_to_one```: contains the code to execute the one-to-one conversations
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
 - ```/one_to_many```: contains the code to execute the one-to-many conversations
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
 - ```/many_to_one```: contains the code to execute the many-to-one conversations
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
 - ```/many_to_many```: contains the code to execute the many-to-many conversations
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
 - ```/resources```: contains the resources used to run the data generation:
   - ```/ontologies```: contains the ontologies either in RDF/XML or in RDF/Turtle
   - ```/contracts```: contains the conversational contracts derived from the ontologies
