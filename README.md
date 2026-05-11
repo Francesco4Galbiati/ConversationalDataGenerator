@@ -35,16 +35,16 @@ To run the CDG, it's sufficient to run the ```main.py``` file.
 
 ## Customizing the generation
 Parameters used to run the code can be manually set through the command line when launching the ```main.py``` file. This is the list of the supported parameters:
-|Variable                 |Type     |Effect                                                                             |Default                        |
-|-------------------------|---------|-----------------------------------------------------------------------------------|-------------------------------|
-|```--contract```         | string  | The conversational contract used to run the CDG                                   |```"LUBM_contract.yaml"```     |
-|```--querent_model```    | string  | The name of the model used to run the querent agent                               |```"gpt-oss:120b"```           |
-|```--witness_model```    | string  | The name of the model used to run the witness agent                               |```"gpt-oss:120b"```           |
-|```--conversation```     | integer | The type of conversation to run (1: 1-to-1, 2: M-to-1, 3: 1-to-M, 4: M-to-M)      |```1```                        |
-|```--target```           | integer | The target number of RDF triples to generate                                      |```1000```                     |
-|```--model_host```       | string  | The url of the ollama instance that runs the querent and witness agents           |```"http://localhost:11434"``` |
-|```--witnesses_number``` | integer | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations |```3```                        |
-|```--api_ket```          | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
+|Variable                     |Type     |Effect                                                                             |Default                        |
+|-----------------------------|---------|-----------------------------------------------------------------------------------|-------------------------------|
+|```--contract```             | string  | The conversational contract used to run the CDG                                   |```"LUBM_contract.yaml"```     |
+|```--querent_model```        | string  | The name of the model used to run the querent agent                               |```"gpt-oss:120b"```           |
+|```--witness_model```        | string  | The name of the model used to run the witness agent                               |```"gpt-oss:120b"```           |
+|```--conversation```         | integer | The type of conversation to run (1: 1-to-1, 2: M-to-1, 3: 1-to-M, 4: M-to-M)      |```1```                        |
+|```--target```               | integer | The target number of RDF triples to generate                                      |```1000```                     |
+|```--model_host```           | string  | The url of the ollama instance that runs the querent and witness agents           |```"http://localhost:11434"``` |
+|```--witnesses_n```          | integer | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations |```3```                        |
+|```--api_ket```              | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
 
 ## Connections
 CDG relies on an additional connection to a local Redis instance, which is used to store the compressed chat history. This connection is established with the default Redis port at ```http://localhost:6379```.
