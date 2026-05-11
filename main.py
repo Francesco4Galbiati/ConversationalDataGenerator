@@ -22,11 +22,11 @@ if conversation_type == ConversationType.MANY_TO_MANY:
     asyncio.run(mtm_launch(target_triples))
 end = time.time()
 
-print(f"\nNumber of plan hallucinations: {hallucinations}")
-print(f"Total time: {end - start}")
-print(f"Total Querent time: {conf.querent_time}")
+conf.output_file.write(f"Number of plan hallucinations: {hallucinations}\n")
+conf.output_file.write(f"Total time: {end - start}\n")
+conf.output_file.write(f"Total Querent time: {conf.querent_time}\n")
 if conversation_type == ConversationType.ONE_TO_ONE or conversation_type == ConversationType.MANY_TO_ONE:
-    print(f"Total Witness time: {conf.witness_time}")
+    conf.output_file.write(f"Total Witness time: {conf.witness_times[0]}\n")
 if conversation_type == ConversationType.MANY_TO_ONE or conversation_type == ConversationType.MANY_TO_MANY:
     for n in range(num_of_witnesses):
-        print(f"Total Witness {n} time: {conf.witness_times[n]}")
+        conf.output_file.write(f"Total Witness {n} time: {conf.witness_times[n]}\n")

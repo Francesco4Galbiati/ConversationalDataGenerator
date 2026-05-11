@@ -23,7 +23,7 @@ def gen_dialogue_turn(clear = False):
         'role': 'system',
         'content': (
             "AVAILABLE ENTITY IDS (use only these):\n"
-            + "\n".join(entities_text)
+            + "\n".join(entities_text[-3:])
         )
     })
 
@@ -31,87 +31,77 @@ def gen_dialogue_turn(clear = False):
         "role": "system",
         "content": f"""
             ### ROLE ###
-            You are Agent Q (Questioner).
+            You are Agent Q.
 
-            Task:
-            1) Select exactly ONE valid intent
-            2) Ask exactly ONE question for it
+            Your task:
+            1) Choose ONE valid intent
+            2) Ask ONE question for it
 
-            You NEVER answer questions or add new information.
+            Do NOT answer. Do NOT invent entities.
 
             ---
 
             ### AVAILABLE ENTITIES ###
-            Only these entity IDs may be used:
+            Use ONLY these IDs:
 
             {entities_text}
 
             Rules:
-            - Only use IDs in this list
-            - Never invent entities
-            - If a required entity type has no available IDs → the intent is invalid
+            - Use IDs EXACTLY as written
+            - If a type has no IDs → it cannot be used
 
             ---
 
             ### INTENT HISTORY ###
-            Last selected intents (oldest → most recent):
-
+            Recent intents:
             {conf.intent_history}
 
             ---
 
             ### INTENTS ###
-            Available intents:
-
             {[
             {
-                i: {
-                    "description": ops[i]["preconditions"]["description"],
-                    "required_entities": ops[i]["preconditions"]["classes"],
-                    "selection_weight": ops[i]['preconditions']['cardinality']
-                }
+                "name": i,
+                "required_entities": ops[i]["preconditions"]["classes"]
             }
             for i in ops
             ]}
 
             ---
 
-            ### INTENT SELECTION RULES ###
+            ### VALID INTENTS ###
 
-            Step 1 — Eligibility:
-            - Keep only intents whose required entity types exist in AVAILABLE ENTITIES
+            An intent is VALID if:
+            ALL its required entity types have at least ONE ID available.
 
-            Step 2 — Exclusions:
-            - Do NOT select the most recent intent
-            - Deprioritize intents frequent in INTENT HISTORY
-
-            Step 3 — Selection:
-            - Prefer least recently used intents
-            - Use selection_weight for long-term balance
-            - If only one valid intent exists → select it
+            ALL other intents are INVALID. Ignore them completely.
 
             ---
 
-            ### QUESTION RULES ###
+            ### SELECTION ###
 
-            Generate EXACTLY ONE question.
+            From VALID intents:
 
-            The question MUST:
-            - Use ONLY entity IDs from AVAILABLE ENTITIES
-            - Include ALL required entity types using real IDs
-            - Use IDs as actual values (NOT examples)
-            - Be natural and unambiguous
-
-            STRICTLY FORBIDDEN:
-            - Using example patterns such as "e.g.", "for example", "such as"
-            - Presenting IDs as illustrations instead of actual values
-
-            If multiple valid entities exist:
-            → choose any, but avoid repeating recent combinations
+            - Do NOT pick the most recent intent
+            - Otherwise pick ANY valid intent
 
             ---
 
-            ### OUTPUT FORMAT ###
+            ### QUESTION ###
+
+            Generate ONE question.
+
+            Rules:
+            - Use REAL IDs from AVAILABLE ENTITIES
+            - Include ALL required entity types
+            - IDs must appear EXACTLY as written
+            - Do NOT use placeholders like "id"
+
+            Write a natural question that matches the intent.
+
+            ---
+
+            ### OUTPUT ###
             Return ONLY:
 
             {{
@@ -188,15 +178,15 @@ def gen_dialogue_turn(clear = False):
         "role": "system",
         "content": f"""
             ### ROLE ###
-            You are Agent A (Answerer).
+            You are Agent A.
 
-            Generate a structured JSON answer that extends a consistent world of entities and facts.
+            Generate ONE JSON object that fills all slots.
 
             ---
 
             ### INPUT ###
             - Question: {question}
-            - Conversation history (contains entity IDs and state)
+            - Conversation history
 
             ---
 
@@ -205,104 +195,88 @@ def gen_dialogue_turn(clear = False):
 
             ---
 
-            ### SLOT CONTRACT (STRICT) ###
-            You MUST output ALL slots defined in the intent.
+            ### SLOTS ###
+            You MUST output exactly these slots:
 
-            This includes:
-            - precondition slots (entities already mentioned)
-            - postcondition slots (new entities or attributes)
+            {intent_content['preconditions_slots'] | intent_content['postconditions_slots']}
 
             Rules:
-            - No missing slots
-            - No extra slots
+            - ALL slots must appear
+            - NO extra slots
 
             ---
 
             ### CORE RULES ###
 
-            1. SLOT FILLING & ENTITY COMPLETENESS (UNIFIED)
+            1. QUESTION GROUNDING (STRICT)
+
+            - Extract ALL entity IDs from the question
+            - These are PRECONDITION entities
+            - You MUST reuse them EXACTLY
+
+            ---
+
+            2. PRECONDITION SLOTS (MANDATORY)
+
+            If an entity ID appears in the question:
+            - Its slot MUST be present
+            - The value MUST be that exact ID
+
+            ---
+
+            3. SLOT FILLING (STRICT)
 
             For each slot:
 
-            - If the value is explicitly in the question → MUST use it
-            - If the slot is a precondition and appears in the question → MUST be included in output
-            - If the slot refers to an attribute (name, email, telephone):
-                - If available in history for that entity → use it
-                - Otherwise → generate a consistent value tied to the entity
+            A. ID slots:
+            - MUST contain a valid ID
+            - If present in question → use it
+            - Otherwise → generate a NEW valid ID (if required)
+
+            B. ATTRIBUTE slots (name, email, etc.):
+            - MUST NOT be null
+            - If value is in question → use it
+            - Otherwise → generate a realistic value
 
             Use null ONLY if:
-            - the value cannot be derived from the question
-            AND
-            - cannot be inferred from entity context
-
-            IMPORTANT:
-            - Attributes belong to entities, not independent values
-            - Never generate values that contradict known entity data
+            - the slot is optional AND
+            - no value can be generated
 
             ---
 
-            2. QUESTION GROUNDING
+            4. NEW ENTITIES
 
-            - Extract all entity IDs explicitly mentioned in the question
-            - These define the precondition entities
-            - These IDs MUST be reused exactly in the output
+            Create ONLY if required.
 
-            ---
-
-            3. PRECONDITION ENFORCEMENT (STRICT)
-
-            If a precondition entity appears in the question:
-
-            - You MUST include its corresponding slot in the output
-            - You MUST use the exact ID from the question
-            - You MUST NOT omit it
-
-            Preconditions are REQUIRED output fields, not optional context.
-
-            ---
-
-            4. NEW ENTITIES (POSTCONDITIONS)
-
-            - Create new entities ONLY if required by the intent
-            - New IDs must be globally unique
-            - Format: 1–3 uppercase letters + 3 digits
-            - NEVER reuse an existing ID for a NEW entity
+            Rules:
+            - ID format: 1–3 uppercase letters + 3 digits
+            - MUST be new (never reused)
 
             ---
 
             5. CONSISTENCY
 
-            - Do not contradict history
-            - Do not reuse IDs incorrectly
-            - Preserve established facts across turns
+            - Do not change existing IDs
+            - Do not contradict known data
 
             ---
 
-            ### NOVELTY (SOFT CONSTRAINT) ###
-            When multiple valid choices exist:
-            - prefer less recently used entities
-            - avoid repeating identical combinations
+            ### IMPORTANT ###
 
-            Do NOT violate correctness for novelty.
+            - IDs in the question are REAL values
+            - NEVER replace or ignore them
+            - ATTRIBUTE slots should be filled, not left empty
 
             ---
 
-            ### OUTPUT FORMAT ###
-            Return ONLY one JSON object:
+            ### OUTPUT ###
+
+            Return ONLY:
 
             {{
-                "<slot1>": "<value>",
-                "<slot2>": "<value>"
+            "<slot1>": "<value>",
+            "<slot2>": "<value>"
             }}
-
-            ---
-
-            ### FAIL CONDITIONS ###
-            Regenerate if:
-            - any slot is missing
-            - a precondition slot is omitted
-            - an invalid entity ID is used
-            - a contradiction with history occurs
         """
     })
     conf.chat_history.append({

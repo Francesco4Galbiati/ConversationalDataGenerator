@@ -5,12 +5,15 @@ client = Client(
     headers={'Authorization': 'Bearer sk-154b7d9623ae424ca9e362e2da0fbfdd'}
 )
 
+with open('./resources/contracts/NORIA_contract.yaml', 'r') as f:
+    ontology = f.read()
+
 response = client.chat(
-    'gpt-oss:120b',
+    'llama3.3:70b',
     messages= [
         {
             'role': 'user',
-            'content': 'Hi!'
+            'content': 'Hi'
         }
     ]
 )

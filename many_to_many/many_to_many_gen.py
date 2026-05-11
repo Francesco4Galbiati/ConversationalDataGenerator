@@ -4,7 +4,7 @@ import asyncio
 from conf import bcolors, ops, hallucinations, instructions, instructions_loop, parallelization, redis
 from agents import parser_agent
 from functions import dict_keys_to_snake, replace_ids, update_world_state
-from many_to_many.dialogue import gen_dialogue_turn
+from many_to_many.dialogue_llama import gen_dialogue_turn
 
 
 async def __launch__(triples):
@@ -30,32 +30,8 @@ async def __launch__(triples):
 
         k += 1
 
-        if parallelization:
-            if n_t == 0:
-                parser_agent.run(user_prompt="")
-                dialogue_turn = gen_dialogue_turn(instructions[inst]['inst'], clear=clear)
-                next_dialogue = asyncio.create_task(
-                    asyncio.to_thread(
-                        gen_dialogue_turn,
-                        False,
-                        3,
-                        instructions[inst]["inst"],
-                        None,
-                    )
-                )
-            else:
-                dialogue_turn = await next_dialogue
-                next_dialogue = asyncio.create_task(
-                    asyncio.to_thread(
-                        gen_dialogue_turn,
-                        False,
-                        3,
-                        instructions[inst]["inst"],
-                        None,
-                    )
-                )
-        else:
-            dialogue_turn = gen_dialogue_turn(instructions[inst]['inst'], clear=clear)
+        dialogue_turn = gen_dialogue_turn(instructions[inst]['inst'], clear=clear)
+            
 
         t = dialogue_turn
         if "Intent" in t and "Q" in t and "branches" in t:
@@ -104,7 +80,7 @@ async def __launch__(triples):
             for slot in preconditions_slots:
                 val = answer.get(slot)
                 if val not in [None, 'None']:
-                    if not redis.sismember(f"entities:{slot}:idx{answerer_id}", val):
+                    if not redis.sismember(f"entities:{slot}:idx{answerer_id}", str(val)):
                         hallucinations['false_precondition'] += 1
 
             for a in answer:
@@ -126,7 +102,7 @@ async def __launch__(triples):
                 if n_t >= triples:
                     return
     
-            update_world_state(answer, intent, 'idx' + str(answerer_id))
+            update_world_state(answer, intent, ':idx' + str(answerer_id))
         i += 1
 
     return

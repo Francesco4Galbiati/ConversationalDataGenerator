@@ -2,11 +2,12 @@ intents:
   EnrollGraduateStudentInCourse:
     preconditions:
       classes:
-        graduate_course: GraduateCourse
+        course: Course
       slots:
-        graduate_course_id: id
+        course_id: id
       cardinality: 4
-      description: 'Subscribes a graduate student (with id and name) to an existing graduate course'
+      description: 'Subscribes a graduate student (with id and name) to an existing course'
+      constraints: {}
     postconditions:
       classes:
         graduate_student: GraduateStudent
@@ -15,15 +16,16 @@ intents:
         graduate_student_name: str
       triples:
       - [graduate_student_id, type, GraduateStudent]
-      - [graduate_student_id, takesCourse, graduate_course_id]
+      - [graduate_student_id, takesCourse, course_id]
       - [graduate_student_id, name, graduate_student_name]
 
   GraduateStudent:
     preconditions:
       classes: {}
       slots: {}
-      cardinality: 3
+      cardinality: 2
       description: 'Makes a NEW student (id and name) graduate from a NEW department (id and name), included in a NEW university (id and name)'
+      constraints: {}
     postconditions:
       classes:
         graduate_student: GraduateStudent
@@ -47,49 +49,29 @@ intents:
       - [department_id, name, department_name]
       - [university_id, name, university_name]
 
-  SendPublication:
-    preconditions:
-      classes:
-        assistant_professor: assistantProfessor
-      slots:
-        assistant_professor_id: id
-      cardinality: 4
-      description: 'Makes and existing assistant professor send a NEW publication, with its id, title, and publication date'
-    postconditions:
-      classes:
-        publication: Publication
-      slots:
-        publication_id: id
-        publication_title: str
-        publication_date: date
-      triples:
-      - [publication_id, type, Publication]
-      - [publication_id, publicationAuthor, assistant_professor_id]
-      - [publication_id, publicationTitle, publication_title]
-      - [publication_id. publicationDate, publication_date]
-
-  HireProfessor:
+  HireEmployee:
     preconditions:
       classes:
         department: Department
       slots:
         department_id: id
       cardinality: 3
-      description: 'Hires a NEW professor (id, name, email, and telephone) in an existing department'
+      description: 'Hires a NEW emplopyee (id, name, email, and telephone) in an existing department'
+      constraints: {}
     postconditions:
       classes:
-        professor: Professor
+        employee: Employee
       slots:
-        professor_id: id
-        profssor_email: str
-        professor_name: str
-        professor_telephone: str
+        employee_id: id
+        employye_email: str
+        employee_name: str
+        employee_telephone: str
       triples:
-      - [professor_id, type, Professor]
-      - [professor_id, worksFor, department_id]
-      - [professor_id, emailAddress, profssor_email]
-      - [professor_id, name, professor_name]
-      - [professor_id, telephone, professor_telephone]
+      - [employee_id, type, Employee]
+      - [employee_id, worksFor, department_id]
+      - [employee_id, emailAddress, profssor_email]
+      - [employee_id, name, employee_name]
+      - [employee_id, telephone, employee_telephone]
 
   ListMember:
     preconditions:
@@ -99,6 +81,7 @@ intents:
         department_id: id
       cardinality: 2
       description: 'Makes a NEW person (id and name) a member of an existing department'
+      constraints: {}
     postconditions:
       classes:
         person: Person
@@ -116,6 +99,7 @@ intents:
       slots: {}
       cardinality: 2
       description: 'Introduces NEW a student (id and name)'
+      constraints: {}
     postconditions:
       classes:
         student: Student
@@ -129,11 +113,13 @@ intents:
   TakeCourseOfProfessor:
     preconditions:
       classes:
-        associate_professor: associateProfessor
+        employee: Employee
       slots:
-        associate_professor_id: id
+        employee_id: id
       cardinality: 3
-      description: 'Subscribe NEW a student (id and name), to a NEW course (id and name) held by an existing associate professor'
+      description: 'Subscribe NEW a student (id and name), to a NEW course (id and name) held by an existing professor'
+      constraints:
+      - [employee_id, teacherOf, _]
     postconditions:
       classes:
         course: Course
@@ -147,7 +133,7 @@ intents:
       - [course_id, type, Course]
       - [student_id, type, Student]
       - [student_id, takesCourse, course_id]
-      - [associate_professor_id, teacherOf, course_id]
+      - [employee_id, teacherOf, course_id]
       - [course_id, name, course_name]
       - [student_id, name, student_name]
 
@@ -159,6 +145,7 @@ intents:
         university_id: id
       cardinality: 2
       description: 'Enrolls a NEW student (id and name) in a NEW department (id and name) of an already existing university'
+      constraints: {}
     postconditions:
       classes:
         student: Student
@@ -182,39 +169,41 @@ intents:
     preconditions:
       classes: {}
       slots: {}
-      cardinality: 3
+      cardinality: 4
       description: 'Enrolls a NEW student (id and name) in a NEW course (id and name) of their NEW advisor professor (id and name)'
+      constraints: {}
     postconditions:
       classes:
         student: Student
-        faculty: Faculty
+        employee: Employee
         course: Course
       slots:
         student_id: id
-        faculty_id: id
+        employee_id: id
         course_id: id
         student_name: str
-        faculty_name: str
+        employee_name: str
         course_name: str
       triples:
       - [student_id, type, Student]
-      - [faculty_id, type, Faculty]
+      - [employee_id, type, Employee]
       - [course_id, type, Course]
-      - [student_id, advisor, faculty_id]
+      - [student_id, advisor, employee_id]
       - [student_id, takesCourse, course_id]
-      - [faculty_id, teacherOf, course_id]
+      - [employee_id, teacherOf, course_id]
       - [student_id, name, student_name]
-      - [faculty_id, name, faculty_name]
+      - [employee_id, name, employee_name]
       - [course_id, name, course_name]
 
   TakeCourse:
     preconditions:
       classes:
-        graduate_course: GraduateCourse
+        course: Course
       slots:
-        graduate_course_id: id
+        course_id: id
       cardinality: 4
-      description: 'Enrolls NEW a student (id and name) in a graduate course'
+      description: 'Enrolls NEW a student (id and name) in an existing graduate course'
+      constraints: {}
     postconditions:
       classes:
         student: Student
@@ -223,7 +212,7 @@ intents:
         student_name: str
       triples:
       - [student_id, type, Student]
-      - [student_id, takesCourse, graduate_course_id]
+      - [student_id, takesCourse, course_id]
       - [student_id, name, student_name]
 
   CreateResearchGroup:
@@ -234,6 +223,7 @@ intents:
         university_id: id
       cardinality: 3
       description: 'Creates a NEW research group (id and name) within an existing university'
+      constraints: {}
     postconditions:
       classes:
         research_group: ResearchGroup
@@ -253,6 +243,7 @@ intents:
         university_id: id
       cardinality: 3
       description: 'Nominates a NEW porfessor as the chair of a NEW department (id and name) within an existing university. Provides the id, name, email, telephone, and office number of the NEW chair professor'
+      constraints: {}
     postconditions:
       classes:
         department: Department
@@ -284,6 +275,7 @@ intents:
         university_id: id
       cardinality: 2
       description: 'Makes a NEW person (id and name) alumnus of an existing university'
+      constraints: {}
     postconditions:
       classes:
         person: Person
@@ -302,6 +294,7 @@ intents:
       slots: {}
       cardinality: 2
       description: 'Introduces a NEW graduate student, with its id and name'
+      constraints: {}
     postconditions:
       classes:
         undergraduate_student: UndergraduateStudent
@@ -312,6 +305,77 @@ intents:
       - [undergraduate_student_id, type, UndergraduateStudent]
       - [undergraduate_student_id, name, undergraduate_student_name]
 
+  CreatePhDProgram:
+    preconditions:
+      classes: 
+        department: Department
+      slots: 
+        department_id: id
+      cardinality: 3
+      description: 'Introduces a new PhDProgram in an existing department. The program is characterized by an id, a name'
+      constraints: {}
+    postconditions:
+      classes:
+        phd_program: PhDProgram
+      slots:
+        program_id: id
+        program_name: str
+      triples:
+      - [program_id, type, PhDProgram]
+      - [program_id, name, program_name]
+      - [department_id, hasPhDProgram, program_id]
+
+  CreateNewGraduateCourse:
+    preconditions:
+      classes:
+        employee: Employee
+      slots:
+        employee_id: id
+      cardinality: 2
+      description: 'Introduces a new graduate course held by an existing professor, the new course is characterized by its id and name'
+      constraints:
+      - [employee_id, teacherOf, _]
+    postconditions:
+      classes:
+        graduate_course: GraduateCourse
+      slots:
+        graduate_course_id: id
+        graduate_course_name: str
+      triples:
+      - [graduate_course_id, type, GraduateCourse]
+      - [graduate_course_id, name, graduate_course_name]
+      - [employee_id, teacherOf, graduate_course_id]
+
+  IntroduceProfessorCourse:
+    preconditions:
+      classes: 
+        department: Department
+      slots:
+        department_id: id
+      cardinality: 4
+      description: "Introduces a new professor and a new course, the professor has an id, name, telephone and email, while the course han an id and a name"
+      constraints: {}
+    postconditions:
+      classes:
+        employee: Employee
+        Course: Course
+      slots:
+        employee_id: id
+        employee_name: str
+        employee_email: str
+        employee_telephone: str
+        course_id: id
+        course_name: str
+      triples:
+      - [employee_id, type, Employee]
+      - [employee_id, name, employee_name]
+      - [employee_id, email, employee_email]
+      - [employee_id, telephone, employee_telephone]
+      - [employee_id, memberOf, department_id]
+      - [course_id, type, Course]
+      - [course_id, name, course_name]
+      - [employee_id, teacherOf, course_id]
+
 types:
   id:
     type: 'str'
@@ -321,8 +385,8 @@ types:
 subclasses:
   Professor: [Chair, Director]
 
-precondition_slots: ['graduate_course_id', 'assistant_professor_id', 'department_id', 'associate_professor_id', 'university_id']
 repeatable_terms: []
+precondition_slots: ['graduate_course_id', 'assistant_professor_id', 'department_id', 'associate_professor_id', 'university_id']
 
 instructions:
   StudentManager:

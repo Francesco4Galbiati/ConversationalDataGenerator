@@ -1,8 +1,8 @@
 import asyncio
 from conf import bcolors, ops, hallucinations, parallelization, redis
 from agents import parser_agent
-from functions import  replace_ids, dict_keys_to_snake, update_world_state
-from one_to_one.dialogue import gen_dialogue_turn, gen_dialogue_turn_async
+from functions import  replace_ids, dict_keys_to_snake, update_world_state, update_world_state_rdf
+from one_to_one.dialogue_disjoint import gen_dialogue_turn
 
 async def __launch__(triples):
 
@@ -10,19 +10,13 @@ async def __launch__(triples):
     next_dialogue = None
     i = 1
 
+    for x in range(8):
+        redis.sadd("entities:discipline_id", f"D00{x}")
+
     while n_t < triples:
 
-        if parallelization:
-            if n_t == 0:
-                parser_agent.run(user_prompt="")
-                dialogue_turn = gen_dialogue_turn()
-                next_dialogue = asyncio.create_task(gen_dialogue_turn_async())
-            else:
-                dialogue_turn = await next_dialogue
-                next_dialogue = asyncio.create_task(gen_dialogue_turn_async())
-        else:
-            dialogue_turn = gen_dialogue_turn()
-
+        dialogue_turn = gen_dialogue_turn()
+            
         t = dialogue_turn
         if 'Intent' in t and 'Q' in t and 'A' in t:
             intent = t['Intent']
@@ -56,7 +50,6 @@ async def __launch__(triples):
             if slot not in answer or answer[slot] in [None, 'None']:
                 hallucinations['missing_slot'] += 1
 
-
         preconditions_slots = ops[intent]['preconditions']['slots']
         for slot in preconditions_slots:
             val = answer.get(slot)
@@ -79,12 +72,14 @@ async def __launch__(triples):
             if not(t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']):
                 continue
 
+        for t in ops[intent]["postconditions"]["triples"]:
             n_t += 1
             if n_t >= triples:
                 return
             
         update_world_state(answer, intent)
-        
+        # update_world_state_rdf(answer, intent)
+
         i += 1
             
     return
