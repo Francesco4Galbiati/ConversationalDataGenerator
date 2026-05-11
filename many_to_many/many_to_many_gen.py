@@ -1,6 +1,5 @@
 import conf
 import asyncio
-
 from conf import bcolors, ops, hallucinations, instructions, instructions_loop, parallelization, redis
 from agents import parser_agent
 from functions import dict_keys_to_snake, replace_ids, update_world_state
@@ -11,7 +10,6 @@ async def __launch__(triples):
 
     n_t = 0
     k = 0
-    next_dialogue = None
     inst = next(instructions_loop)
     i = 1
     j = 1
@@ -44,6 +42,7 @@ async def __launch__(triples):
 
         if intent not in list(ops):
             hallucinations["dictionary_hallucination"] += 1
+            i += 1
             continue
 
         print(f'{bcolors.OKGREEN}Number of triples: ' + str(n_t) + f'{bcolors.ENDC}')

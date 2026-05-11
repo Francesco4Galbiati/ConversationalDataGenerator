@@ -1,17 +1,12 @@
-import conf
-import asyncio
-
-from conf import bcolors, ops, hallucinations, instructions, instructions_loop, parallelization
-from agents import parser_agent
-from functions import dict_keys_to_snake, replace_ids
-from one_to_many.dialogue import gen_dialogue_turn
+from conf import bcolors, ops, hallucinations, instructions, instructions_loop, redis
+from functions import dict_keys_to_snake, replace_ids, update_world_state
+from one_to_many.dialogue_gpt import gen_dialogue_turn
 
 
 async def __launch__(triples):
 
     n_t = 0
     k = 0
-    next_dialogue = None
     inst = next(instructions_loop)
     i = 1
     j = 1
@@ -30,92 +25,68 @@ async def __launch__(triples):
 
         k += 1
 
-        if parallelization:
-            if n_t == 0:
-                parser_agent.run(user_prompt="")
-                dialogue_turn = gen_dialogue_turn(clear=clear, allowed_ops=instructions[inst]["inst"])
-                next_dialogue = asyncio.create_task(
-                    asyncio.to_thread(
-                        gen_dialogue_turn,
-                        False,
-                        3,
-                        instructions[inst]["inst"],
-                        None,
-                    )
-                )
-            else:
-                dialogue_turn = await next_dialogue
-                next_dialogue = asyncio.create_task(
-                    asyncio.to_thread(
-                        gen_dialogue_turn,
-                        False,
-                        3,
-                        instructions[inst]["inst"],
-                        None,
-                    )
-                )
-        else:
-            dialogue_turn = gen_dialogue_turn(clear=clear, allowed_ops=instructions[inst]["inst"])
-
+        dialogue_turn = gen_dialogue_turn(instructions[inst]["inst"], clear=clear)
+            
         t = dialogue_turn
         if "Intent" in t and "Q" in t and "branches" in t:
             intent = t["Intent"]
             question = t["Q"]
-            branches = t["branches"]
+            answer = t["A"]
         else:
             hallucinations["dictionary_hallucination"] += 1
             continue
 
         if intent not in list(ops):
             hallucinations["dictionary_hallucination"] += 1
+            i += 1
             continue
 
         print(f'{bcolors.OKGREEN}Number of triples: ' + str(n_t) + f'{bcolors.ENDC}')
         print(f"{bcolors.FAIL}====================================TURN {i}===================================={bcolors.ENDC}")
         print(f"{bcolors.WARNING}Intent: {intent}{bcolors.ENDC}")
-        print(f"{bcolors.WARNING}Question: {question}{bcolors.ENDC}")
+        print(f"{bcolors.WARNING}Answer: {answer}{bcolors.ENDC}")
 
-        for branch in branches:
+        answer = dict_keys_to_snake(answer)
+        answer = replace_ids(answer, intent, 0)
 
-            if "answerer_id" in branch and "A" in branch:
-                answerer_id = branch["answerer_id"]
-                answer = branch["A"]
-            else:
-                hallucinations["dictionary_hallucination"] += 1
+        valid_slots = set(ops[intent]['postconditions']['slots']) | set(ops[intent]['preconditions']['slots'])
+        for slot in answer:
+            if slot not in valid_slots:
+                hallucinations['dictionary_hallucination'] += 1
+
+        expected_slots = set(ops[intent]['postconditions']['slots'])
+        for slot in expected_slots:
+            if slot not in answer or answer[slot] in [None, 'None']:
+                hallucinations['missing_slot'] += 1
+
+        preconditions_slots = ops[intent]['preconditions']['slots']
+        for slot in preconditions_slots:
+            val = answer.get(slot)
+            if val not in [None, 'None']:
+                if not redis.sismember(f"entities:{slot}", val):
+                    hallucinations['false_precondition'] += 1
+
+        for a in answer:
+            if answer[a] != 'None' and answer[a] is not None:
+                answer[a] = str(answer[a]).replace("'", "")
+                answer[a] = str(answer[a]).replace("\"", "")
+
+        for t in ops[intent]["postconditions"]["triples"]:
+
+            if t[0] not in answer or answer[t[0]] == 'None' or answer[t[0]] is None:
+                continue
+            if t[1] != 'type':
+                if t[2] not in answer or answer[t[2]] == 'None' or answer[t[2]] is None:
+                    continue
+            if not(t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']):
                 continue
 
-            print(f"{bcolors.WARNING}Answerer {answerer_id}: {answer}{bcolors.ENDC}")
-
-            answer = dict_keys_to_snake(answer)
-            answer = replace_ids(answer, intent, answerer_id)
-
-            for a in answer:
-                if answer[a] != "None" and answer[a] is not None:
-                    answer[a] = str(answer[a]).replace("'", "")
-                    answer[a] = str(answer[a]).replace("\"", "")
-
-            for v in answer.values():
-                if v == "None" or v is None:
-                    hallucinations["missing_slot"] += 1
-
-            for t in ops[intent]["postconditions"]["triples"]:
-
-                if t[0] not in answer or answer[t[0]] == "None" or answer[t[0]] is None:
-                    continue
-
-                if t[1] != "type":
-                    if t[2] not in answer or answer[t[2]] == "None" or answer[t[2]] is None:
-                        continue
-
-                if not (t[0] in ops[intent]["postconditions"]["slots"] or t[0] in ops[intent]["preconditions"]["slots"]):
-                    print(f"{bcolors.FAIL}No slot named {t[0]} in the {intent} intent!")
-                    hallucinations["dictionary_hallucination"] += 1
-                    continue
-
-                n_t += 1
-                if n_t >= triples:
-                    return
-
+        for t in ops[intent]["postconditions"]["triples"]:
+            n_t += 1
+            if n_t >= triples:
+                return
+            
+        update_world_state(answer, intent)
         i += 1
 
     return

@@ -7,12 +7,14 @@ from one_to_one.dialogue_disjoint import gen_dialogue_turn
 async def __launch__(triples):
 
     n_t = 0
-    next_dialogue = None
     i = 1
 
+    '''
+    Used for adding disciplines in disjointness tests
     for x in range(8):
         redis.sadd("entities:discipline_id", f"D00{x}")
-
+    '''
+        
     while n_t < triples:
 
         dialogue_turn = gen_dialogue_turn()
@@ -78,8 +80,6 @@ async def __launch__(triples):
                 return
             
         update_world_state(answer, intent)
-        # update_world_state_rdf(answer, intent)
-
         i += 1
             
     return

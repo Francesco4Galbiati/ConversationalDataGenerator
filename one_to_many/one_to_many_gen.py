@@ -1,7 +1,7 @@
 import conf
 from conf import bcolors, ops, hallucinations, parallelization
 
-from functions import dict_keys_to_snake, replace_ids
+from functions import dict_keys_to_snake, replace_ids, update_world_state
 from one_to_many.dialogue_gpt import gen_dialogue_turn
 
 
@@ -12,13 +12,7 @@ async def __launch__(triples):
 
     while n_t < triples:
 
-        # The one-to-many generator currently exposes only the synchronous turn
-        # API, so the loop keeps the same outer structure but always fetches one
-        # broadcast turn at a time.
-        if parallelization:
-            dialogue_turn = gen_dialogue_turn()
-        else:
-            dialogue_turn = gen_dialogue_turn()
+        dialogue_turn = gen_dialogue_turn()
 
         t = dialogue_turn
         if "Intent" in t and "Q" in t and "branches" in t:
@@ -53,36 +47,44 @@ async def __launch__(triples):
             answer = dict_keys_to_snake(answer)
             answer = replace_ids(answer, intent, answerer_id)
 
+            valid_slots = set(ops[intent]['postconditions']['slots']) | set(ops[intent]['preconditions']['slots'])
+            for slot in answer:
+                if slot not in valid_slots:
+                    hallucinations['dictionary_hallucination'] += 1
+
+            expected_slots = set(ops[intent]['postconditions']['slots'])
+            for slot in expected_slots:
+                if slot not in answer or answer[slot] in [None, 'None']:
+                    hallucinations['missing_slot'] += 1
+
+
+            preconditions_slots = ops[intent]['preconditions']['slots']
+            for slot in preconditions_slots:
+                val = answer.get(slot)
+                if val not in [None, 'None']:
+                    if not redis.sismember(f"entities:{slot}:idx{answerer_id}", str(val)):
+                        hallucinations['false_precondition'] += 1
+
             for a in answer:
                 if answer[a] != "None" and answer[a] is not None:
                     answer[a] = str(answer[a]).replace("'", "")
                     answer[a] = str(answer[a]).replace("\"", "")
 
-            for v in answer.values():
-                if v == "None" or v is None:
-                    hallucinations["missing_slot"] += 1
+            for t in ops[intent]["postconditions"]["triples"]:
 
-            for triple_def in ops[intent]["postconditions"]["triples"]:
-
-                if triple_def[0] not in answer or answer[triple_def[0]] == "None" or answer[triple_def[0]] is None:
+                if t[0] not in answer or answer[t[0]] == 'None' or answer[t[0]] is None:
                     continue
-
-                if triple_def[1] != "type":
-                    if triple_def[2] not in answer or answer[triple_def[2]] == "None" or answer[triple_def[2]] is None:
+                if t[1] != 'type':
+                    if t[2] not in answer or answer[t[2]] == 'None' or answer[t[2]] is None:
                         continue
-
-                if not (
-                    triple_def[0] in ops[intent]["postconditions"]["slots"]
-                    or triple_def[0] in ops[intent]["preconditions"]["slots"]
-                ):
-                    print(f"{bcolors.FAIL}No slot named {triple_def[0]} in the {intent} intent!")
-                    hallucinations["dictionary_hallucination"] += 1
+                if not(t[0] in ops[intent]['postconditions']['slots'] or t[0] in ops[intent]['preconditions']['slots']):
                     continue
 
                 n_t += 1
                 if n_t >= triples:
                     return
 
+            update_world_state(answer, intent, ':idx' + str(answerer_id))
         i += 1
 
     return
