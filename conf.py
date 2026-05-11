@@ -22,6 +22,7 @@ parser.add_argument("--api_key", type=str, default='')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='LUBM_contract.yaml')
+parser.add_argument("--redis_port", type=int, default=6379)
 
 args = parser.parse_args()
 
@@ -31,6 +32,7 @@ witness_llm = args.witness_model
 target_triples = args.target
 num_of_witnesses = args.witnesses_n
 model_host = args.model_host
+redis_port = args.redis_port
 api_key = args.api_key
 if args.conversation == 1:
     conversation_type = ConversationType.ONE_TO_ONE
@@ -123,12 +125,11 @@ witness_model = OpenAIChatModel(
 )
 dialogue_client = Client(
     host=dialogue_generator_host,
-    headers={'Authorization': f'Bearer {api_key}'},
-    
+    headers={'Authorization': f'Bearer {api_key}'}
 )
 
 # Redis
-redis = redis.Redis(host='localhost', port=6379, decode_responses=True, db=0)
+redis = redis.Redis(host='localhost', port=redis_port, decode_responses=True, db=0)
 redis.flushdb()
 
 # PYDANTIC AI CONFIGURATION
