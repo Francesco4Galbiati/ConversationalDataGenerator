@@ -44,7 +44,7 @@ Parameters used to run the code can be manually set through the command line whe
 |```--target```               | integer | The target number of RDF triples to generate                                      |```1000```                     |
 |```--model_host```           | string  | The url of the ollama instance that runs the querent and witness agents           |```"http://localhost:11434"``` |
 |```--witnesses_n```          | integer | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations |```3```                        |
-|```--api_ket```              | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
+|```--api_key```              | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
 
 ## Connections
 CDG relies on an additional connection to a local Redis instance, which is used to store the compressed chat history. This connection is established with the default Redis port at ```http://localhost:6379```.
