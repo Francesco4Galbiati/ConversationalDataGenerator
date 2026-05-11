@@ -17,14 +17,14 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--conversation", type=int, default=ConversationType.ONE_TO_ONE)
 parser.add_argument("--target", type=int, default=1000)
 parser.add_argument("--witnesses_number", type=int, default=3)
-parser.add_argument("--api_key", type=str, default='sk-154b7d9623ae424ca9e362e2da0fbfdd')
+parser.add_argument("--model_host", type=str, default='')
+parser.add_argument("--api_key", type=str, default='')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='LUBM_contract_disjoint.yaml')
 
 args = parser.parse_args()
 
-parallelization = False
 contract_file = f"./resources/contracts/{args.contract}"
 querent_llm = args.querent_model
 witness_llm = args.witness_model
@@ -33,6 +33,7 @@ conversation_type = args.conversation
 target_triples = args.target
 conversation_size = 25
 num_of_witnesses = args.witnesses_number
+model_host = args.model_host
 api_key = args.api_key
 
 # ONTOLOGY READ
@@ -101,10 +102,8 @@ class bcolors:
 
 # CONNECTIONS
 # Ollama
-dialogue_generator_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
-parser_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
-if parallelization:
-    parser_host = 'https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama'
+dialogue_generator_host = model_host
+parser_host = model_host
 
 # OLLAMA MODELS
 querent_model = OpenAIChatModel(
