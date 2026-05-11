@@ -3,22 +3,22 @@
 Here you can find the Python project to execute the Conversational Data Generator (CDG).
 This repository is structured as follows:
 - ```/one_to_one```: contains the code to execute the one-to-one conversations
-  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
-  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0``` as querent
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b``` as querent
   - ```/dialogue_no_intents.py```: the dialogue function used to test the generation without intents
   - ```/dialogue_to_triples.py```: the dialogue function used to test the generation with direct transformation of the output into RDF triples
   - ```/dialogue_subclasses.py```: the dialogue function used to test the subclass constraints in the intents
   - ```/dialogue_intersection.py```: the dialogue function used to test the intersection subclass in the intents
   - ```/dialogue_disjoint.py```: the dialogue function used to test the disjointness constraints in the intents
 - ```/one_to_many```: contains the code to execute the one-to-many conversations
-  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
-  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0``` as querent
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b``` as querent
 - ```/many_to_one```: contains the code to execute the many-to-one conversations
-  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
-  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0``` as querent
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b``` as querent
 - ```/many_to_many```: contains the code to execute the many-to-many conversations
-  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
-  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0``` as querent
+  - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b``` as querent
 - ```/resources```: contains the resources used to run the data generation:
   - ```/ontologies```: contains the ontologies either in RDF/XML or in RDF/Turtle
   - ```/contracts```: contains the conversational contracts derived from the ontologies
@@ -44,7 +44,7 @@ Parameters used to run the code can be manually set through the command line whe
 |```--target```               | integer | The target number of RDF triples to generate                                      |```1000```                     |
 |```--model_host```           | string  | The url of the ollama instance that runs the querent and witness agents           |```"http://localhost:11434"``` |
 |```--witnesses_n```          | integer | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations |```3```                        |
-|```--api_ket```              | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
+|```--api_key```              | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
 
 ## Connections
 CDG relies on an additional connection to a local Redis instance, which is used to store the compressed chat history. This connection is established with the default Redis port at ```http://localhost:6379```.
