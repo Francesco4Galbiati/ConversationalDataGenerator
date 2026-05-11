@@ -1,0 +1,198 @@
+GraduateStudent: {"graduate_student_id": "GS001", "department_id": "DP001", "university_id": "UN001", "graduate_student_name": "Alice Johnson", "department_name": "Computer Science", "university_name": "Riverdale University"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR001", "profssor_email": "alex.morgan@university.edu", "professor_name": "Dr. Alex Morgan", "professor_telephone": "+1-555-0123"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG001", "research_group_name": "Advanced Robotics Lab"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PH001", "program_name": "PhD Program DP001"}
+ListMember: {"department_id": "DP001", "person_id": "AB123", "person_name": "Alex Morgan"}
+IntroduceStudent: {"student_id": "STU001", "student_name": "Alex Johnson"}
+GraduateStudent: {"graduate_student_id": "GS002", "department_id": "DP002", "university_id": "UN002", "graduate_student_name": "Bob Smith", "department_name": "Mathematics", "university_name": "Lakeside University"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE001", "chair_id": "PR001", "department_name": "Data Science", "chair_name": "Dr. Alice Morgan", "chair_email": "alice.morgan@un001.edu", "chair_telephone": "+1-555-0123", "chair_office": "Room 210"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS001", "student_id": "STU002", "course_name": "Advanced Data Structures", "student_name": "Jordan Lee"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "CD001", "person_name": "Jordan Lee"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR002", "profssor_email": "jamie.lee@university.edu", "professor_name": "Dr. Jamie Lee", "professor_telephone": "+1-555-0456"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU003", "department_id": "DP003", "department_name": "Physics", "student_name": "Taylor Morgan", "student_email": "taylor.morgan@university.edu"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS002", "graduate_course_name": "Advanced Topics in AI"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PH002", "program_name": "PhD Program DP001 Advanced"}
+ListMember: {"department_id": "DP001", "person_id": "EF456", "person_name": "Taylor Reed"}
+IntroduceStudent: {"student_id": "STU004", "student_name": "Morgan Blake"}
+EnrollStudentInCourse: {"course_id": "CRS002", "graduate_student_id": "GS003", "graduate_student_name": "Carol Davis"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG002", "research_group_name": "Human-Computer Interaction Lab"}
+GraduateStudent: {"graduate_student_id": null, "department_id": "DP004", "university_id": "UN003", "graduate_student_name": "Alice Smith", "department_name": "Artificial Intelligence", "university_name": "Summit University"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "GH789", "person_name": "Casey Brooks"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR003", "profssor_email": "dr.smith@university.edu", "professor_name": "Dr. Sam Smith", "professor_telephone": "+1-555-0789"}
+TakeCourseOfProfessor: {"professor_id": "PR002", "course_id": "CRS002", "student_id": "STU005", "course_name": "Graph Algorithms", "student_name": "Casey Rivera"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS003", "graduate_course_name": "Machine Learning Optimization"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PH003", "program_name": "PhD Program DP001 Research"}
+TakeCourse: {"course_id": "CRS002", "student_id": "STU006", "student_name": "Riley Quinn"}
+EnrollStudentInCourse: {"course_id": "CRS002", "graduate_student_id": "GS004", "graduate_student_name": "David Lee"}
+ListMember: {"department_id": "DP001", "person_id": "JK001", "person_name": "Riley Quinn"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU007", "department_id": "DP005", "department_name": "Cybersecurity", "student_name": "Sam Patel", "student_email": "sam.patel@university.edu"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG003", "research_group_name": "Artificial Intelligence Lab"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DP006", "chair_id": "PR002", "department_name": "Quantum Computing", "chair_name": "Dr. Benjamin Lee", "chair_email": "benjamin.lee@un001.edu", "chair_telephone": "+1-555-0456", "chair_office": "Room 315"}
+GraduateStudent: {"graduate_student_id": "GS005", "graduate_student_name": "Evelyn Martinez", "department_id": "DP007", "department_name": "Robotics", "university_id": "UN004", "university_name": "Pinecrest University"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "LM002", "person_name": "Samira Patel"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS004", "graduate_course_name": "Deep Learning Systems"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR004", "profssor_email": "taylor.reed@university.edu", "professor_name": "Dr. Taylor Reed", "professor_telephone": "+1-555-0999"}
+TakeCourse: {"course_id": "CRS002", "student_id": "STU008", "student_name": "Jordan Kim"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS003", "student_id": "STU009", "course_name": "Machine Learning Foundations", "student_name": "Avery Brooks"}
+ListMember: {"department_id": "DP001", "person_id": "MN001", "person_name": "Elliot Gray"}
+IntroduceStudent: {"student_id": "STU004", "student_name": "Alex Johnson"}
+EnrollStudentInCourse: {"course_id": "CRS002", "graduate_student_id": "GS006", "graduate_student_name": "Frank Miller"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE002", "chair_id": "PR003", "department_name": "Bioinformatics", "chair_name": "Dr. Clara Zhang", "chair_email": "clara.zhang@un001.edu", "chair_telephone": "+1-555-0789", "chair_office": "Room 420"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU010", "department_id": "DE003", "department_name": "Machine Learning", "student_name": "Jordan Smith", "student_email": "jordan.smith@university.edu"}
+CreateResearchGroup: {"university_id": "UN003", "research_group_id": "RG004", "research_group_name": "Quantum Computing Lab"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS005", "graduate_course_name": "Reinforcement Learning Applications"}
+GraduateStudent: {"graduate_student_id": "GS007", "department_id": "DE004", "university_id": "UN005", "graduate_student_name": "Grace Hopper", "department_name": "Nanotechnology", "university_name": "Harborview University"}
+TakeCourse: {"course_id": "CRS002", "student_id": "STU011", "student_name": "Elliot Harper"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS004", "student_id": "STU012", "course_name": "Distributed Systems", "student_name": "Chris Nolan"}
+ListMember: {"department_id": "DE002", "person_id": "OP123", "person_name": "Jordan Smith"}
+IntroduceStudent: {"student_id": "STU001", "student_name": "Alex Johnson"}
+CreatePhDProgram: {"department_id": "DE001", "program_id": "PG001", "program_name": "PhD Program DE001"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE005", "chair_id": "PR004", "department_name": "Computational Neuroscience", "chair_name": "Dr. Emily Carter", "chair_email": "emily.carter@un001.edu", "chair_telephone": "+1-555-0999", "chair_office": "Room 525"}
+HireProfessor: {"department_id": "DE001", "professor_id": "PR005", "profssor_email": "jblake@university.edu", "professor_name": "Dr. Jordan Blake", "professor_telephone": "+1-555-0111"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG005", "research_group_name": "Data Science Lab"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "XZ001", "person_name": "Morgan Blake"}
+GraduateStudent: {"graduate_student_id": "GS008", "department_id": "DP008", "university_id": "UN006", "graduate_student_name": "Hannah Patel", "department_name": "Renewable Energy Engineering", "university_name": "Crestview University"}
+TakeCourse: {"course_id": "CRS004", "student_id": "STU013", "student_name": "Jordan Davis"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS005", "student_id": "STU014", "course_name": "Quantum Computing Basics", "student_name": "Patricia Gomez"}
+ListMember: {"department_id": "DE002", "person_id": "STU012", "person_name": "Avery Collins"}
+IntroduceStudent: {"student_id": "STU014", "student_name": "Alex Johnson"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS006", "graduate_course_name": "Generative AI Systems"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS009", "graduate_student_name": "Ian Clark"}
+HireProfessor: {"department_id": "DE001", "professor_id": "PR006", "profssor_email": "new.prof@university.edu", "professor_name": "Dr. Casey Morgan", "professor_telephone": "+1-555-0222"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU015", "department_id": "DP009", "department_name": "Astrophysics", "student_name": "Jordan Walker", "student_email": "jordan.walker@university.edu"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "QW123", "person_name": "Morgan Lee"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG006", "research_group_name": "Bioinformatics Lab"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE006", "chair_id": "PR005", "department_name": "Geospatial Analytics", "chair_name": "Dr. Fiona Gallagher", "chair_email": "fiona.gallagher@un001.edu", "chair_telephone": "+1-555-0111", "chair_office": "Room 630"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS006", "student_id": "STU016", "course_name": "Artificial Intelligence Ethics", "student_name": "Jordan Reed"}
+ListMember: {"department_id": "DE002", "person_id": "UV345", "person_name": "Jordan Patel"}
+CreatePhDProgram: {"department_id": "DE002", "program_id": "PG002", "program_name": "PhD Program DE002"}
+CreateNewGraduateCourse: {"professor_id": "PR004", "graduate_course_id": "GRC007", "graduate_course_name": "Explainable AI Systems"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS010", "graduate_student_name": "Julia Roberts"}
+TakeCourse: {"course_id": "CRS004", "student_id": "STU001", "student_name": "Alex Johnson"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU017", "department_id": "DE007", "department_name": "Software Engineering", "student_name": "Dana Lee", "student_email": "dana.lee@university.edu"}
+HireProfessor: {"department_id": "DE002", "professor_id": "PR007", "profssor_email": "riley.quinn@university.edu", "professor_name": "Dr. Riley Quinn", "professor_telephone": "+1-555-0134"}
+GraduateStudent: {"graduate_student_id": "GS011", "department_id": "DP010", "university_id": "UN007", "graduate_student_name": "Kevin Nguyen", "department_name": "Human-Computer Interaction", "university_name": "Valleyview University"}
+NominateDepartmentChair: {"university_id": "UN004", "department_id": "DE008", "chair_id": "PR006", "department_name": "Embedded Systems Engineering", "chair_name": "Dr. George Patel", "chair_email": "george.patel@un004.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 735"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "student_id": "STU018", "student_name": "Blake Harris", "course_id": "CRS007", "course_name": "Parallel Computing Principles"}
+ListMember: {"department_id": "DE001", "person_id": "YZ123", "person_name": "Aiden Brooks"}
+CreatePhDProgram: {"department_id": "DE001", "program_id": "PG003", "program_name": "PhD Program DE001 Advanced"}
+CreateNewGraduateCourse: {"professor_id": "PR003", "graduate_course_id": "CRS008", "graduate_course_name": "AI Ethics and Policy"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS012", "graduate_student_name": "Laura Kim"}
+IntroduceStudent: {"student_id": "STU012", "student_name": "Emily Clark"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU019", "department_id": "DE009", "department_name": "Environmental Engineering", "student_name": "Liam Carter", "student_email": "liam.carter@university.edu"}
+TakeCourse: {"course_id": "CRS004", "student_id": "STU020", "student_name": "Olivia Martinez"}
+GraduateStudent: {"graduate_student_id": "GS013", "graduate_student_name": "Michael Thompson", "department_id": "DE010", "department_name": "Quantum Optics", "university_id": "UN008", "university_name": "Cedarbrook University"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE011", "chair_id": "PR007", "department_name": "Computational Linguistics", "chair_name": "Dr. Hannah Kim", "chair_email": "hannah.kim@un001.edu", "chair_telephone": "+1-555-4567", "chair_office": "Room 840"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR008", "profssor_email": "mblake@university.edu", "professor_name": "Dr. Morgan Blake", "professor_telephone": "+1-555-0112"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS008", "course_name": "Advanced Topics", "student_id": "STU021", "student_name": "John Doe"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PP001", "program_name": "PhD Program DP001"}
+CreateNewGraduateCourse: {"professor_id": "PR004", "graduate_course_id": "GRC009", "graduate_course_name": "AI Governance and Regulation"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG007", "research_group_name": "Nanotechnology Lab"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS001", "graduate_student_name": "Alice Johnson"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU001", "department_id": "DP001", "department_name": "Computer Science", "student_name": "Alice Smith", "student_email": "alice.smith@university.edu"}
+ListMember: {"department_id": "DP001", "person_id": "STU001", "person_name": "John Doe"}
+IntroduceStudent: {"student_id": null, "student_name": null}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE012", "chair_id": "PR008", "department_name": "Quantum Cryptography", "chair_name": "Dr. Isabella Torres", "chair_email": "isabella.torres@un001.edu", "chair_telephone": "+1-555-5678", "chair_office": "Room 945"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "NV001", "person_name": "Harper Quinn"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "student_id": "STU022", "student_name": "Natalie Brooks", "course_id": "CRS009", "course_name": "Cybersecurity Fundamentals"}
+GraduateStudent: {"graduate_student_id": "GR001", "department_id": "DE013", "university_id": "UN009", "graduate_student_name": "Nina Patel", "department_name": "Synthetic Biology", "university_name": "Evergreen University"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR009", "profssor_email": "evelyn.hart@university.edu", "professor_name": "Dr. Evelyn Hart", "professor_telephone": "+1-555-0145"}
+CreateResearchGroup: {"university_id": "UN003", "research_group_id": "RG008", "research_group_name": "Computational Neuroscience Lab"}
+TakeCourseOfAdvisor: {"student_id": "STU023", "faculty_id": "FAC001", "course_id": "CRS010", "student_name": "Zoe Harper", "faculty_name": "Dr. Victor Lang", "course_name": "Introduction to Bioinformatics"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU024", "department_id": "DE014", "department_name": "Quantum Robotics", "student_name": "Grace Hopper", "student_email": "grace.hopper@university.edu"}
+ListMember: {"department_id": "DP001", "person_id": "RT567", "person_name": "Jordan Carter"}
+IntroduceStudent: {"student_id": "AB001", "student_name": "Alice"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DP011", "chair_id": "PR009", "department_name": "Quantum Machine Learning", "chair_name": "Dr. Jonathan Reed", "chair_email": "jonathan.reed@un001.edu", "chair_telephone": "+1-555-6789", "chair_office": "Room 1050"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS001", "graduate_student_name": "Alex Johnson"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "AA001", "person_name": "Evelyn Harper"}
+GraduateStudent: {"graduate_student_id": "GS014", "graduate_student_name": "Olivia Turner", "department_id": "DE015", "department_name": "Quantum Information Science", "university_id": "UN010", "university_name": "Highland University"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "student_id": "STU025", "student_name": "Victor Stone", "course_id": "CRS011", "course_name": "Neural Network Optimization"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR010", "profssor_email": "mlee@university.edu", "professor_name": "Dr. Morgan Lee", "professor_telephone": "+1-555-1234"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG009", "research_group_name": "Machine Learning Lab"}
+TakeCourseOfAdvisor: {"student_id": "STU026", "faculty_id": "FAC002", "course_id": "CRS012", "student_name": "Nina Patel", "faculty_name": "Dr. Samantha Reed", "course_name": "Deep Learning Applications"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU027", "department_id": "DP012", "department_name": "Quantum Bioinformatics", "student_name": "Maya Singh", "student_email": "maya.singh@university.edu"}
+ListMember: {"department_id": "DP001", "person_id": "BK234", "person_name": "Nora Sinclair"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PG004", "program_name": "PhD Program DP001 Innovation"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR015", "graduate_student_name": "Samuel Brooks"}
+IntroduceStudent: {"student_id": null, "student_name": "Evelyn Brooks"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE016", "chair_id": "PR010", "department_name": "Quantum Engineering", "chair_name": "Dr. Laura Mitchell", "chair_email": "laura.mitchell@un001.edu", "chair_telephone": "+1-555-7890", "chair_office": "Room 1051"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "GRD001", "graduate_course_name": "Neural Architecture Search"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS004", "student_id": "STU001", "course_name": "Advanced Algorithms", "student_name": "Alice"}
+GraduateStudent: {"graduate_student_id": "GS005", "department_id": "DE014", "university_id": "UN011", "graduate_student_name": "John Doe", "department_name": "Quantum Computing", "university_name": "Pacific Ridge University"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR011", "profssor_email": "jquinn@university.edu", "professor_name": "Dr. Jordan Quinn", "professor_telephone": "+1-555-0567"}
+TakeCourseOfAdvisor: {"student_id": "STU001", "faculty_id": "PR001", "course_id": "CRS001", "student_name": "Ethan Brooks", "faculty_name": "Dr. Maya Patel", "course_name": "Computational Geometry"}
+ListMember: {"department_id": "DP001", "person_id": "STU001", "person_name": "Alice"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PG005", "program_name": "PhD Program DP001 Leadership"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR002", "graduate_student_name": "Thomas Anderson"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU028", "department_id": "DE017", "department_name": "Space Systems Engineering", "student_name": "Samuel Torres", "student_email": "samuel.torres@university.edu"}
+TakeCourse: {"course_id": "CRS004", "student_id": "STU029", "student_name": "Isabel Rivera"}
+CreateNewGraduateCourse: {"professor_id": "PR003", "graduate_course_id": "GRS013", "graduate_course_name": "AI Safety and Robustness"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS013", "student_id": "STU030", "course_name": "Reinforcement Learning", "student_name": "Harper Quinn"}
+GraduateStudent: {"graduate_student_id": "GS015", "department_id": "DP018", "university_id": "UN012", "graduate_student_name": "Alex Smith", "department_name": "Data Science", "university_name": "Global Tech University"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG010", "research_group_name": "Renewable Energy Systems Lab"}
+HireProfessor: {"department_id": "DP003", "professor_id": "PR012", "profssor_email": "pat.greene@university.edu", "professor_name": "Dr. Pat Greene", "professor_telephone": "+1-555-2000"}
+ListMember: {"department_id": "DP001", "person_id": "STU001", "person_name": "Alice"}
+CreatePhDProgram: {"department_id": "DP001", "program_id": "PG006", "program_name": "PhD Program DP001 Strategy"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DP005", "chair_id": "PR003", "department_name": "Advanced Quantum Computing", "chair_name": "Dr. Alex Smith", "chair_email": "alex.smith@example.com", "chair_telephone": "555-1234", "chair_office": "101"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS001", "graduate_student_name": "Maria Gomez"}
+EnrollStudent: {"university_id": null, "student_id": "STU031", "department_id": "DE019", "department_name": "Quantum Simulation", "student_name": "Olivia Brown", "student_email": "olivia.brown@university.edu"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "GRD002", "graduate_course_name": "AI Human-Computer Interaction"}
+IntroduceStudent: {"student_id": "STU032", "student_name": "Alice Johnson"}
+GraduateStudent: {"graduate_student_id": "GS005", "department_id": "DP013", "university_id": "UN013", "graduate_student_name": "Sophie Turner", "department_name": "Quantum Thermodynamics", "university_name": "Northern Horizon University"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS014", "student_id": "STU033", "course_name": "Natural Language Processing", "student_name": "Caleb Morgan"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG011", "research_group_name": "Cybersecurity Lab"}
+ListMember: {"department_id": "DP001", "person_id": "STU001", "person_name": "Jordan Blake"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR013", "profssor_email": "newprofessor13@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-2100"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "ZX123", "person_name": "Liam Carter"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE020", "chair_id": "PR011", "department_name": "Quantum Materials", "chair_name": "Dr. Michael Nguyen", "chair_email": "michael.nguyen@un001.edu", "chair_telephone": "+1-555-8901", "chair_office": "Room 950"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU034", "department_id": "DE021", "department_name": "Quantum Nanotechnology", "student_name": "Lydia Chen", "student_email": "lydia.chen@university.edu"}
+TakeCourse: {"course_id": "CRS004", "student_id": "XYZ001", "student_name": "Natalie Reed"}
+IntroduceStudent: {"student_id": "STU001", "student_name": "Mia Carter"}
+GraduateStudent: {"graduate_student_id": "GS016", "department_id": "DE022", "university_id": "UN014", "graduate_student_name": "John Doe", "department_name": "Engineering", "university_name": "Global University"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR123", "graduate_student_name": "Patrick O'Neil"}
+CreatePhDProgram: {"department_id": "DE020", "program_id": "PG007", "program_name": "PhD Program DE020"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG012", "research_group_name": "Autonomous Systems Lab"}
+CreateNewGraduateCourse: {"professor_id": "PR005", "graduate_course_id": "GRC001", "graduate_course_name": "Computer Vision for Autonomous Systems"}
+HireProfessor: {"department_id": "DE001", "professor_id": "XZ001", "profssor_email": "s.green@university.edu", "professor_name": "Dr. Samantha Green", "professor_telephone": "+1-555-3333"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE023", "chair_id": "PR012", "department_name": "Quantum Photonics", "chair_name": "Dr. Samuel Ortega", "chair_email": "samuel.ortega@un001.edu", "chair_telephone": "+1-555-9012", "chair_office": "Room 1052"}
+ListMember: {"department_id": "DE001", "person_id": "AB001", "person_name": "Brian Carter"}
+DefineAlumnus: {"university_id": "UN006", "person_id": "DF001", "person_name": "Olivia Grant"}
+IntroduceStudent: {"student_id": "STU001", "student_name": "Natalie Green"}
+GraduateStudent: {"graduate_student_id": "GS011", "department_id": "DP011", "university_id": "UN011", "graduate_student_name": "Alex Johnson", "department_name": "Engineering", "university_name": "Horizon University"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GS001", "graduate_student_name": "Alex"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU035", "department_id": "DE024", "department_name": "Quantum Metrology", "student_name": "Nora Patel", "student_email": "nora.patel@university.edu"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG013", "research_group_name": "Robotics Vision Lab"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS015", "student_id": "STU036", "course_name": "Machine Vision Systems", "student_name": "Sofia Ramirez"}
+HireProfessor: {"department_id": "DE020", "professor_id": "AB123", "profssor_email": "nova.harper@university.edu", "professor_name": "Dr. Nova Harper", "professor_telephone": "+1-555-4444"}
+CreatePhDProgram: {"department_id": "DE001", "program_id": "PG008", "program_name": "PhD Program DE001 Innovation"}
+NominateDepartmentChair: {"university_id": "UN005", "department_id": "DE025", "chair_id": "PR013", "department_name": "Quantum Chemistry", "chair_name": "Dr. Olivia Bennett", "chair_email": "olivia.bennett@un005.edu", "chair_telephone": "+1-555-2345", "chair_office": "Room 1053"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "HR001", "person_name": "Dylan Harper"}
+ListMember: {"department_id": "DE020", "person_id": "STU001", "person_name": "Victor Hale"}
+GraduateStudent: {"graduate_student_id": "STU001", "department_id": "DE001", "university_id": "UN001", "graduate_student_name": "Zoe Campbell", "department_name": "Quantum Ecology", "university_name": "Aurora University"}
+IntroduceStudent: {"student_id": "STU015", "student_name": "Laura Kim"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU020", "department_id": "DP014", "department_name": "Quantum Optoelectronics", "student_name": "Samuel Reed", "student_email": "samuel.reed@university.edu"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "GRS014", "graduate_course_name": "AI Trustworthiness and Accountability"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS016", "student_id": "STU001", "course_name": "Data Mining Techniques", "student_name": "Alice"}
+HireProfessor: {"department_id": "DE001", "professor_id": "PR014", "profssor_email": "newprofessor14@university.edu", "professor_name": "Dr. Casey Quinn", "professor_telephone": "+1-555-5555"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR200", "graduate_student_name": "Liam Turner"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE026", "chair_id": "PR015", "department_name": "Quantum Bioinformatics", "chair_name": "Dr. Nathaniel Brooks", "chair_email": "nbrooks@un001.edu", "chair_telephone": "+1-555-1122", "chair_office": "Room 1060"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "ZY001", "person_name": "Caleb Monroe"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG014", "research_group_name": "Smart Systems Lab"}
+ListMember: {"department_id": "DP001", "person_id": "STU015", "person_name": "Ethan Morales"}
+IntroduceStudent: {"student_id": "STU015", "student_name": "Michael Turner"}
+TakeCourse: {"course_id": "CRS004", "student_id": "STU037", "student_name": "Oliver Grant"}
+CreateNewGraduateCourse: {"professor_id": "PR003", "graduate_course_id": "CRS017", "graduate_course_name": "Quantum Computing"}
+TakeCourseOfProfessor: {"professor_id": "PR003", "course_id": "CRS017", "student_id": "STU038", "course_name": "Computer Vision Fundamentals", "student_name": "Samuel Lee"}
+HireProfessor: {"department_id": "DE020", "professor_id": "NP001", "profssor_email": "newprofessor15@university.edu", "professor_name": "Dr. New Professor15", "professor_telephone": "+1-555-6666"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR301", "graduate_student_name": "Ethan Wright"}
+NominateDepartmentChair: {"university_id": "UN001", "department_id": "DE018", "chair_id": "DP015", "department_name": "Quantum Ethics", "chair_name": "Dr. Victoria Hale", "chair_email": "victoria.hale@un001.edu", "chair_telephone": "+1-555-3456", "chair_office": "Room 1054"}
+EnrollStudent: {"university_id": "UN001", "student_id": "STU040", "department_id": "DE123", "department_name": "Quantum Agriculture", "student_name": "Jordan Patel", "student_email": "jordan.patel@university.edu"}
+CreateResearchGroup: {"university_id": "UN001", "research_group_id": "RG015", "research_group_name": "Internet of Things Lab"}
+DefineAlumnus: {"university_id": "UN001", "person_id": "AB124", "person_name": "Grace Harper"}
+CreatePhDProgram: {"department_id": "DE020", "program_id": "PG009", "program_name": "PhD Program DE020 Advanced"}
+ListMember: {"department_id": "DE020", "person_id": "STU037", "person_name": "Alex"}
+CreateNewGraduateCourse: {"professor_id": "PR001", "graduate_course_id": "CRS019", "graduate_course_name": "Machine Learning for Healthcare"}
+TakeCourseOfProfessor: {"professor_id": "PR001", "course_id": "CRS018", "student_id": "STU041", "course_name": "Computational Neuroscience", "student_name": "Dylan Reed"}
+GraduateStudent: {"graduate_student_id": "GR300", "department_id": "DP015", "university_id": "UN015", "graduate_student_name": "Victor Reyes", "department_name": "Quantum Robotics", "university_name": "Summit University"}
+EnrollStudentInCourse: {"course_id": "CRS004", "graduate_student_id": "GR004", "graduate_student_name": "Benjamin Clark"}
+HireProfessor: {"department_id": "DP001", "professor_id": "PR015", "profssor_email": "olivia.grant@university.edu", "professor_name": "Dr. Olivia Grant", "professor_telephone": "+1-555-7777"}

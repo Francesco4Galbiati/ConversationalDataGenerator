@@ -1,0 +1,786 @@
+@prefix ex: <http://example.org/> .
+@prefix ns1: <http://example.org/#> .
+
+ex:log_ABC123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource updated successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_BCD111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_CDE678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_DEF456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource created successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_EFG567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_GHI012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource deleted successfully" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_JKL012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully",
+        "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01210 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully",
+        "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01211 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01212 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01213 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01214 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01215 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0122 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0124 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0125 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0126 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0127 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0128 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0129 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL015 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL0156 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0157 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0158 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0159 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL016 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL0160 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL0161 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01610 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01611 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01612 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01615 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01616 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully",
+        "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01617 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01618 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01619 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0162 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL01620 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01621 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01622 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01623 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01624 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01625 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL01626 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0163 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0164 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0165 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0166 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully",
+        "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0167 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0168 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0169 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL333 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL444 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL555 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL666 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_JKL789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL7890 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL888 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_KLM456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNO678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_MNP0123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP0124 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP0125 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP0126 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_MNP678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T10:00:00" .
+
+ex:log_MNP987 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR0123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01235 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01236 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01237 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01238 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01239 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01240 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR01241 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1110 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR11111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1112 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_PQR11120 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR11121 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR11122 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR11123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1113 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1114 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1115 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1116 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_PQR1117 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1118 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR1119 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR3456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR901 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource modified successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_PQR9012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_STU234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed unsuccessfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_TUV222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_VWX111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed successfully" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_XYZ111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_YZA111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_GHI234 ;
+    ns1:logText "Resource viewed successfully" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:resource_ABC234 a ns1:Resource ;
+    ns1:label "Shared Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC012 a ns1:Resource ;
+    ns1:label "Shared Dataset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC100 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC111 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC112 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC123 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC222 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC333 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC342 a ns1:Resource ;
+    ns1:label "Shared Asset",
+        "Shared Dataset",
+        "Shared Library" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC444 a ns1:Resource ;
+    ns1:label "Shared Component" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC555 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC666 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC667 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC678 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC777 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC789 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC888 a ns1:Resource ;
+    ns1:label "Shared Asset",
+        "Shared Dataset",
+        "Shared Library",
+        "Shared Repository",
+        "Shared Service",
+        "Shared Template" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC890 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC901 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC987 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC998 a ns1:Resource ;
+    ns1:label "Shared Dataset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_BAC999 a ns1:Resource ;
+    ns1:label "Shared Asset",
+        "Shared Dataset",
+        "Shared Repository",
+        "Shared Template" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_CDE456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_DEF456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_EFG678 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_FGH012 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_HJK567 a ns1:Resource ;
+    ns1:label "Shared Component" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_IJK678 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL012 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL345 a ns1:Resource ;
+    ns1:label "Shared Module" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_KLM789 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_LMN456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_MNO012 a ns1:Resource ;
+    ns1:label "Shared Dataset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_MNP234 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_NOP345 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR123 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR678 a ns1:Resource ;
+    ns1:label "Shared Repository" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQS456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_RST234 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_STU901 a ns1:Resource ;
+    ns1:label "Shared Library" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_TUV345 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_VWX111 a ns1:Resource ;
+    ns1:label "Shared Template" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_YZA111 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_XYZ789 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:service_ABC123 a ns1:Service ;
+    ns1:elementManagedBy "Admin Team" ;
+    ns1:label "New Service Registration" ;
+    ns1:serviceType "IT Support" .
+
+ex:resource_GHI234 a ns1:Resource ;
+    ns1:label "Shared Framework" ;
+    ns1:subSystemOf ex:service_ABC123 .
+

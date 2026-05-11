@@ -1,0 +1,354 @@
+@prefix ex: <http://example.org/> .
+@prefix ns1: <http://example.org/#> .
+
+ex:log_ABC012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource updated successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed",
+        "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RST234,
+        ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed",
+        "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC666 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RST234 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC890 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC901 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RST234 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_ABC987 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_ABC999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_BCD333 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_CDE111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_DEF456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource created" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_EFG123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RST234 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_EFG567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_FGH012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_FGH789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_GHI012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource deleted" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_GHI345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_PQR222 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_HJK444 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource accessed",
+        "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL555 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL666 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL888 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_FGH012 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNO678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_NOP234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR901 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource modified" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_RST123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_STU234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_TUV222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_VWX111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_XYZ789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RST234 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_YZA111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_MNO012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:resource_ABC456 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_CDE678 a ns1:Resource ;
+    ns1:label "Shared Asset for DEF Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_DEF456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_EFG567 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_GHI234 a ns1:Resource ;
+    ns1:label "New Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_HJK789 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL012 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL234 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL345 a ns1:Resource ;
+    ns1:label "Shared Asset for Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL678 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL901 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_LMN345 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_MNP678 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR012 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR111 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR234 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR333 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR345 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR555 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR666 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR678 a ns1:Resource ;
+    ns1:label "Common Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR888 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR901 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR999 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_STU901 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_TUV456 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_TUW111 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_VWX111 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_MNO012 a ns1:Resource ;
+    ns1:label "Common Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR222 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_RST234 a ns1:Resource ;
+    ns1:label "Shared Asset for ABC Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_FGH012 a ns1:Resource ;
+    ns1:label "Shared Asset for GHI Service" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_XYZ789 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:service_ABC123 a ns1:Service ;
+    ns1:elementManagedBy "IT Department" ;
+    ns1:label "New Service Registration" ;
+    ns1:serviceType "Technical Support" .
+

@@ -1,0 +1,587 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Customer Support", "service_type": "Technical", "managed_by_team": "IT Department"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "75%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF789", "resource_label": "Shared Resource"}
+OpenTroubleTicket: {"trouble_ticket_id": "ABC123", "trouble_ticket_description": "Issue with resource DEF789", "resource_id": "DEF789"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC123", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceLogs: {"resource_id": "DEF789, ABC456", "log_id": "LOG123", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG456", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with errors"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG101", "log_time": "2024-02-20 14:30:00", "log_message": "Resource accessed with warnings"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG901", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with information"}
+SummarizeCorrectiveActions: {"action_id": "IDM456", "action_description": "Rebooted the server", "agent_id": "AGT789", "agent_label": "Network Administrator", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM789", "action_description": "Ran a virus scan and removed malware", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Updated firewall rules", "agent_id": "AGT123", "agent_label": "Security Specialist", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM101", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "ABC456", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "DEF789", "entity_type": "application", "trouble_ticket_id": "ABC123"}
+GetIncidentSequence: {"event_id": "EVT456", "timestamp": "2023-02-15 14:30:00", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN789012", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN345678", "resource_type": "computer", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server04", "serial_number": "SN901234", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI456", "metric_name": "SystemUsage", "metric_value": "75%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO678", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "JKL012", "metric_name": "System CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "MNO345", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+FindCorrelatedEvents: {"corr_id": "ABC123", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT123", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "DEF789", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT789", "originator_role": "Agent", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM901", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT456", "agent_label": "System Administrator", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM234", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT012", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM678", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT101", "agent_label": "IT Specialist", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789, JKL345, GHI012, MNO678, ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789, JKL345, GHI012, MNO678, ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789, JKL345, GHI012, MNO678, ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG123", "change_description": "System update and restart", "start_time": "2022-01-01 12:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server05", "serial_number": "SN234567", "resource_type": "Compute", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "server06", "serial_number": "SN456789", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server07", "serial_number": "SN111111", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR678", "metric_name": "System Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "STU901", "metric_name": "CPU Usage", "metric_value": "45%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "VWX111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "YZA222", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "GHI012", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT456", "originator_role": "Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "JKL345", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT101", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM345", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "software bug", "notes": "applied patch"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT901", "agent_label": "Database Administrator", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG000", "change_description": "Software patch update", "start_time": "2023-02-15 14:30:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server08", "serial_number": "SN1111111", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server09", "serial_number": "SN11111111", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server10", "serial_number": "SN111111112", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG234", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "BCD456", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "CDE678", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "TUV333", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "MNO678", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT012", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "PQR901", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT012", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM555", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "hardware failure", "notes": "replaced faulty component"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG001", "change_description": "Hardware replacement and configuration update", "start_time": "2024-03-16T10:00:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server11", "serial_number": "SN111111113", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server12", "serial_number": "SN111114", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server13", "serial_number": "SN567890", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "RST123", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "XYZ111", "metric_name": "System Temperature", "metric_value": "23.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "FGH012", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "HJK111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+FindCorrelatedEvents: {"corr_id": "STU234", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT012", "originator_role": "System Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG111", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with notifications"}
+FindCorrelatedEvents: {"corr_id": "VWX111", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "Network Administrator", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM222", "action_description": "Ran a diagnostic test and applied a hotfix", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM999", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT555", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM666", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT222", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG002", "change_description": "Network configuration update and security patch installation", "start_time": "2023-02-15 14:30:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server14", "serial_number": "SN111115", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server15", "serial_number": "SN111116", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server16", "serial_number": "SN111117", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "IJK234", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "KLM567", "metric_name": "System Temperature", "metric_value": "23.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "LMN456", "metric_name": "System Temperature", "metric_value": "68 degrees Celsius"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "NOP345", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA222", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT015", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "BCD456", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT021", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM888", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT333", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM123", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT101", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT888", "agent_label": "Network Specialist", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG004", "change_description": "Database update and optimization", "start_time": "2024-03-16 10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server17", "serial_number": "SN111111114", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server18", "serial_number": "SN111118", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server19", "serial_number": "SN111119", "resource_type": "Computer", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "TUV456", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC555", "metric_name": "System Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG890", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "CDE111", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT022", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "EFG333", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT007", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM456", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM456", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT999", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG005", "change_description": "System update and security patch installation", "start_time": "2024-03-16 10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server20", "serial_number": "SN111120", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server21", "serial_number": "SN111121", "resource_type": "Computer", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server22", "serial_number": "SN111122", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR234", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR345", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "TUW678", "metric_name": "System Temperature", "metric_value": "23.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR901", "metric_name": "CPU Usage", "metric_value": "75%"}
+FindCorrelatedEvents: {"corr_id": "JKL678", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT008", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "JKL234", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT024", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM012", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT101", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM456", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM456", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT045", "agent_label": "Network Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG003", "change_description": "System update and configuration adjustment", "start_time": "2024-02-20 14:30:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server23", "serial_number": "SN111123", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server24", "serial_number": "SN111124", "resource_type": "computer", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server25", "serial_number": "SN111125", "resource_type": "computer", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "23.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5 Celsius"}
+FindCorrelatedEvents: {"corr_id": "NOP234", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT011", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "TUV456", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "HJK111", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM456", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM696", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT696", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG006", "change_description": "System update and configuration adjustment for security enhancements", "start_time": "2024-03-16T10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server26", "serial_number": "SN111126", "resource_type": "Computer", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server27", "serial_number": "SN111127", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server28", "serial_number": "SN111128", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System CPU Usage", "metric_value": "45%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindCorrelatedEvents: {"corr_id": "RST987", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT025", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA111", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA333", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT101", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT101", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT777", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG007", "change_description": "System update and configuration adjustment for performance enhancements", "start_time": "2024-03-16 10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server29", "serial_number": "SN111129", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server30", "serial_number": "SN111130", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server31", "serial_number": "SN111131", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "23.4\u00b0C"}
+FindCorrelatedEvents: {"corr_id": "YZA444", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT019", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA555", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA666", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM321", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT234", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG008", "change_description": "System update and configuration adjustment for performance and security enhancements", "start_time": "2024-02-20 10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server32", "serial_number": "SN987654", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server33", "serial_number": "SN111132", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server34", "serial_number": "SN111133", "resource_type": "Server", "usage_state": "Active"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindCorrelatedEvents: {"corr_id": "YZA777", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT026", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA999", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM114", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT042", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG009", "change_description": "System update and configuration adjustment for security and performance enhancements", "start_time": "2024-02-20 14:30:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server35", "serial_number": "SN111134", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server36", "serial_number": "SN111135", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server37", "serial_number": "SN111136", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "23.5\u00b0C"}
+IdentifyEventSource: {"originator_id": "AGT027", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA000", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT028", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT029", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "System Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG010", "change_description": "System update and configuration adjustment for security, performance, and usability enhancements", "start_time": "2024-03-16T10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server38", "serial_number": "SN111137", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server39", "serial_number": "SN111138", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server40", "serial_number": "SN111139", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT030", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "High", "trouble_ticket_id": "ABC123"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG011", "change_description": "System update and configuration adjustment for security, performance, and usability enhancements", "start_time": "2024-02-16T14:30:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server41", "serial_number": "SN111140", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server42", "serial_number": "SN111141", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server43", "serial_number": "SN111142", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+OpenTroubleTicket: {"trouble_ticket_id": "GHI456", "trouble_ticket_description": "Issue with resource DEF789", "resource_id": "DEF789"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG222", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with debug messages"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT031", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "GHI456", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "GHI012", "entity_type": "site", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "Network Issue", "similar_ticket_id": "JKL789"}
+IdentifyIncidentImpact: {"entity_id": "JKL345", "entity_type": "application", "trouble_ticket_id": "GHI456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server44", "serial_number": "SN111143", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server45", "serial_number": "SN111144", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server46", "serial_number": "SN111145", "resource_type": "Server", "usage_state": "Active"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "STU901", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "85%"}
+IdentifyEventSource: {"originator_id": "AGT032", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT033", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT034", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+IdentifyIncidentImpact: {"entity_id": "MNO678", "entity_type": "application", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network issue", "similar_ticket_id": "DEF123"}
+IdentifyIncidentImpact: {"entity_id": "PQR234", "entity_type": "application", "trouble_ticket_id": "GHI456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server47", "serial_number": "SN111146", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server48", "serial_number": "SN111147", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server49", "serial_number": "SN111148", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "VWX111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT035", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network issue", "similar_ticket_id": "MNO012"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG012", "change_description": "System update and configuration adjustment for security, performance, and usability enhancements", "start_time": "2024-03-16T14:30:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server50", "serial_number": "SN111149", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server51", "serial_number": "SN111150", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server52", "serial_number": "SN111151", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+IdentifyEventSource: {"originator_id": "AGT036", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT037", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT038", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+IdentifyIncidentImpact: {"entity_id": "STU901", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network_issue", "similar_ticket_id": "PQR345"}
+IdentifyIncidentImpact: {"entity_id": "VWX111", "entity_type": "software", "trouble_ticket_id": "GHI456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server53", "serial_number": "SN111152", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server54", "serial_number": "SN111153", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server55", "serial_number": "SN111154", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "YZA222", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT039", "originator_role": "System Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG333", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with trace"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network issue", "similar_ticket_id": "STU678"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG014", "change_description": "System update and configuration adjustment for security, performance, and usability enhancements", "start_time": "2024-03-16T10:00:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server56", "serial_number": "SN111155", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server57", "serial_number": "SN111156", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server58", "serial_number": "SN111157", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "75 degrees"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT040", "originator_role": "System Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG777", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed with verbose output"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network issue", "similar_ticket_id": "VWX901"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG013", "change_description": "System update and configuration adjustment for security, performance, and usability enhancements", "start_time": "2024-02-16 14:30:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server59", "serial_number": "SN111158", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server60", "serial_number": "SN111159", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server61", "serial_number": "SN111160", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "80%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+IdentifyEventSource: {"originator_id": "AGT041", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT042", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT043", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+IdentifyIncidentImpact: {"entity_id": "YZA222", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server62", "serial_number": "SN161162", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server63", "serial_number": "SN111161", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server64", "serial_number": "SN111163", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "CPU Usage", "metric_value": "50%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "EFG456", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "EFG456", "metric_id": "PQR111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR111", "metric_name": "Resource Utilization", "metric_value": "85%"}
+IdentifyEventSource: {"originator_id": "AGT044", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT045", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT046", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a patch", "agent_id": "AGT123", "agent_label": "Network Engineer", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+IdentifyIncidentImpact: {"entity_id": "EFG456", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server65", "serial_number": "SN212121", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server66", "serial_number": "SN2121211", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server67", "serial_number": "SN2121212", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "EFG456", "metric_id": "EFG111", "metric_name": "Resource Utilization", "metric_value": "75%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "CDE678", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "EFG456", "metric_id": "EFG789", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "EFG456", "metric_id": "EFG222", "metric_name": "Resource Utilization", "metric_value": "80%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT047", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "GHI456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied a configuration change", "trouble_ticket_id": "GHI456"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database overload", "notes": "added more resources"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI456", "importance_level": "High"}
+FindSimilarIncidents: {"trouble_ticket_id": "GHI456", "ticket_category": "network issue", "similar_ticket_id": "YZA111"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "EFG456", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server68", "serial_number": "SN21212121", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server69", "serial_number": "SN21212122", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "EFG456", "hostname": "server71", "serial_number": "SN21212123", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "EFG456", "metric_id": "EFG333", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "BCD111", "metric_id": "GHI789", "metric_name": "Resource Utilization", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "BCD111", "metric_id": "HJK567", "metric_name": "Resource Utilization", "metric_value": "75%"}
+IdentifyEventSource: {"originator_id": "AGT048", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT049", "originator_role": "System Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT050", "originator_role": "System Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"action_id": "IDM111", "action_description": "Ran a diagnostic test and applied an update", "agent_id": "AGT123", "agent_label": "System Administrator", "trouble_ticket_id": "GHI456"}

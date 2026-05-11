@@ -1,0 +1,925 @@
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "1", "undergraduate_student_name": "Emily Chen"}
+IntroduceStudent: {"student_id": "1", "student_name": "Emily Wilson"}
+IntroduceStudent: {"student_id": "1", "student_name": "Emily Wilson"}
+IntroduceStudent: {"student_id": "2", "student_name": "Ava Thompson"}
+IntroduceStudent: {"student_id": "1", "student_name": "Ava Thompson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": 2, "undergraduate_student_name": "Sophia Lee"}
+IntroduceStudent: {"student_id": "1", "student_name": "Ava Thompson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "3", "undergraduate_student_name": "Olivia Brown"}
+IntroduceStudent: {"student_id": "1", "student_name": "Ava Thompson"}
+IntroduceStudent: {"student_id": "1", "student_name": "Ava Thompson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "4", "undergraduate_student_name": "Ava Kim"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": 5, "undergraduate_student_name": "Mia Davis"}
+TakeCourseOfAdvisor: {"student_id": "3", "faculty_id": "FAC123", "course_id": "COUR456", "student_name": "Liam Davis", "faculty_name": "Professor Julian Lee", "course_name": "Introduction to Computer Science"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "6", "undergraduate_student_name": "Isabella Hall"}
+GraduateStudent: {"graduate_student_id": "GS123", "department_id": "DEP456", "university_id": "UNI789", "graduate_student_name": "John Doe", "department_name": "Computer Science", "university_name": "Harvard University"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO123", "profssor_email": "john.doe@example.com", "professor_name": "John Doe", "professor_telephone": "123-456-7890"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO789", "profssor_email": "jane.smith@example.com", "professor_name": "Jane Smith", "professor_telephone": "987-654-3210"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO101", "profssor_email": "emily.chen@example.com", "professor_name": "Emily Chen", "professor_telephone": "555-123-4567"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO456", "profssor_email": "sarah.johnson@example.com", "professor_name": "Sarah Johnson", "professor_telephone": "111-222-3333"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO012", "profssor_email": "michael.brown@example.com", "professor_name": "Michael Brown", "professor_telephone": "444-555-6666"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO901", "profssor_email": "oliver.davis@example.com", "professor_name": "Oliver Davis", "professor_telephone": "777-888-9999"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO111", "profssor_email": "william.white@example.com", "professor_name": "William White", "professor_telephone": "234-567-8901"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO234", "profssor_email": "david.miller@example.com", "professor_name": "David Miller", "professor_telephone": "666-777-8888"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO0123", "profssor_email": "james.wilson@example.com", "professor_name": "James Wilson", "professor_telephone": "888-111-2222"}
+ListMember: {"person_id": "PER123", "person_name": "John Doe", "department_id": "DEP456"}
+ListMember: {"person_id": "PER789", "person_name": "Jane Smith", "department_id": "DEP456"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU123", "department_id": "DEP456", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO678", "profssor_email": "kevin.lewis@example.com", "professor_name": "Kevin Lewis", "professor_telephone": "999-000-1111"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU456", "department_id": "DEP123", "department_name": "Mathematics", "student_name": "Oliver Brown", "student_email": "oliverbrown@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP456", "department_name": "Physics", "student_name": "John Doe", "student_email": "johndoe001@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU789", "department_id": "DEP456", "department_name": "Biology", "student_name": "Ethan Hall", "student_email": "ethanhall@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO0124", "profssor_email": "alexandra.martin@example.com", "professor_name": "Alexandra Martin", "professor_telephone": "901-234-5678"}
+ListMember: {"person_id": "PER101", "person_name": "Emily Johnson", "department_id": "DEP456"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1111", "profssor_email": "samantha.thompson@example.com", "professor_name": "Samantha Thompson", "professor_telephone": "222-333-4444"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO555", "profssor_email": "elizabeth.hall@example.com", "professor_name": "Elizabeth Hall", "professor_telephone": "555-789-0123"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1112", "profssor_email": "charlotte lee@example.com", "professor_name": "Charlotte Lee", "professor_telephone": "555-901-2345"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1113", "profssor_email": "hannah.martin@example.com", "professor_name": "Hannah Martin", "professor_telephone": "234-111-8901"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1114", "profssor_email": "rebecca.harris@example.com", "professor_name": "Rebecca Harris", "professor_telephone": "234-890-1234"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU012", "department_id": "DEP456", "department_name": "Engineering", "student_name": "Noah Lee", "student_email": "noahlee@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1115", "profssor_email": "sophia.taylor@example.com", "professor_name": "Sophia Taylor", "professor_telephone": "123-890-5678"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO1116", "profssor_email": "olivia.anderson@example.com", "professor_name": "Olivia Anderson", "professor_telephone": "678-901-2345"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU999", "department_id": "DEP000", "department_name": "Chemistry", "student_name": "Alexander White", "student_email": "alexanderwhite@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP456", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe002@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Olivia Brown", "department_id": "DEP456"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU101", "department_id": "DEP001", "department_name": "Geology", "student_name": "Mason Patel", "student_email": "masonpatel@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO1117", "profssor_email": "amelia.walker@example.com", "professor_name": "Amelia Walker", "professor_telephone": "345-678-9012"}
+ListMember: {"person_id": "PER456", "person_name": "Ava Garcia", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU111", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Jackson Kim", "student_email": "jacksonkim@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO999", "profssor_email": "george.baker@example.com", "professor_name": "George Baker", "professor_telephone": "111-012-3456"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO1234", "profssor_email": "abigail.jones@example.com", "professor_name": "Abigail Jones", "professor_telephone": "111-567-8901"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO1235", "profssor_email": "emily.paterson@example.com", "professor_name": "Emily Paterson", "professor_telephone": "111-901-2345"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO345", "profssor_email": "avril.russell@example.com", "professor_name": "Avril Russell", "professor_telephone": "789-012-3456"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0123", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Hall", "student_email": "ethanhall123@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0124", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Taylor", "student_email": "ethantaylor@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO1118", "profssor_email": "isabella.garcia@example.com", "professor_name": "Isabella Garcia", "professor_telephone": "234-901-1111"}
+ListMember: {"person_id": "PER012", "person_name": "Sophia Lee", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP456", "department_name": "Geology", "student_name": "John Doe", "student_email": "johndoe003@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO1119", "profssor_email": "sophia.rodriguez@example.com", "professor_name": "Sophia Rodriguez", "professor_telephone": "555-444-6666"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0125", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Kim", "student_email": "ethankim@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0126", "department_id": "DEP001", "department_name": "Chemistry", "student_name": "Ethan Walker", "student_email": "ethanwalker@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO6789", "profssor_email": "samantha.jenkins@example.com", "professor_name": "Samantha Jenkins", "professor_telephone": "111-234-5678"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11110", "profssor_email": "sophia.martin@example.com", "professor_name": "Sophia Martin", "professor_telephone": "234-567-9012"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67810", "profssor_email": "sophia.white@example.com", "professor_name": "Sophia White", "professor_telephone": "111-456-7890"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO11111", "profssor_email": "sophia.brown@example.com", "professor_name": "Sophia Brown", "professor_telephone": "234-901-2222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11120", "profssor_email": "sophia.miller@example.com", "professor_name": "Sophia Miller", "professor_telephone": "234-901-3333"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11121", "profssor_email": "sophia.patel@example.com", "professor_name": "Sophia Patel", "professor_telephone": "234-901-4444"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0127", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Brooks", "student_email": "ethanbrooks@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67811", "profssor_email": "sophia.price@example.com", "professor_name": "Sophia Price", "professor_telephone": "234-111-7890"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11122", "profssor_email": "sophia.jones@example.com", "professor_name": "Sophia Jones", "professor_telephone": "234-901-5555"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU0130", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Lucas Ross", "student_email": "lucasross@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU014", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Logan Hall", "student_email": "loganhall@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe004@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67812", "profssor_email": "sophia.robinson@example.com", "professor_name": "Sophia Robinson", "professor_telephone": "234-901-6666"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU015", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Russell", "student_email": "ethanrussell@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67813", "profssor_email": "sophia.brooks@example.com", "professor_name": "Sophia Brooks", "professor_telephone": "234-901-7777"}
+ListMember: {"person_id": "PER123", "person_name": "Ethan Hall", "department_id": "DEP456"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67814", "profssor_email": "sophia.webb@example.com", "professor_name": "Sophia Webb", "professor_telephone": "234-901-8888"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU016", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Brown", "student_email": "ethanbrown@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11123", "profssor_email": "emily.davis@example.com", "professor_name": "Emily Davis", "professor_telephone": "234-901-9999"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU017", "department_id": "DEP456", "department_name": "Physics", "student_name": "Ethan Mitchell", "student_email": "ethanmitchell@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO67815", "profssor_email": "sophia.russell@example.com", "professor_name": "Sophia Russell", "professor_telephone": "234-901-0000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU018", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders", "student_email": "ethansanders@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU019", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Nguyen", "student_email": "ethannguyen@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO67816", "profssor_email": "sophia.sanchez@example.com", "professor_name": "Sophia Sanchez", "professor_telephone": "234-901-1234"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU020", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Price", "student_email": "ethanprice@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67817", "profssor_email": "sophia.williams@example.com", "professor_name": "Sophia Williams", "professor_telephone": "901-111-2223"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67818", "profssor_email": "sophia.watson@example.com", "professor_name": "Sophia Watson", "professor_telephone": "901-345-6789"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67819", "profssor_email": "sophia.wilson@example.com", "professor_name": "Sophia Wilson", "professor_telephone": "901-111-2224"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU021", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders", "student_email": "ethansanders001@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67820", "profssor_email": "sophia.phillips@example.com", "professor_name": "Sophia Phillips", "professor_telephone": "234-901-0001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67821", "profssor_email": "sophia.brown1@example.com", "professor_name": "Sophia Brown1", "professor_telephone": "234-901-8889"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67822", "profssor_email": "sophia.brown2@example.com", "professor_name": "Sophia Brown2", "professor_telephone": "234-901-0002"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67823", "profssor_email": "sophia.price1@example.com", "professor_name": "Sophia Price1", "professor_telephone": "901-345-6780"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67824", "profssor_email": "sophia.price2@example.com", "professor_name": "Sophia Price2", "professor_telephone": "901-345-6781"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe005@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe006@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU022", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders", "student_email": "ethansanders002@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67825", "profssor_email": "sophia.brown3@example.com", "professor_name": "Sophia Brown3", "professor_telephone": "901-345-6782"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67826", "profssor_email": "sophia.brown4@example.com", "professor_name": "Sophia Brown4", "professor_telephone": "234-901-0003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11124", "profssor_email": "sophia.brown5@example.com", "professor_name": "Sophia Brown5", "professor_telephone": "234-901-0004"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67827", "profssor_email": "sophia.brown6@example.com", "professor_name": "Sophia Brown6", "professor_telephone": "234-901-0005"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11125", "profssor_email": "sophiaPRICE3@example.com", "professor_name": "Sophia Price3", "professor_telephone": "901-345-6783"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67828", "profssor_email": "sophia.price4@example.com", "professor_name": "Sophia Price4", "professor_telephone": "901-111-2225"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11127", "profssor_email": "sophia.price5@example.com", "professor_name": "Sophia Price5", "professor_telephone": "234-901-0006"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU023", "department_id": "DEP456", "department_name": "Economics", "student_name": "Julian Sanchez", "student_email": "juliansanchez@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67829", "profssor_email": "sophia.price6@example.com", "professor_name": "Sophia Price6", "professor_telephone": "901-111-2226"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU024", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders", "student_email": "ethansanders003@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe007@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU025", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders", "student_email": "ethansanders004@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe008@uni789.edu"}
+ListMember: {"person_id": "PER123", "person_name": "Ethan Hall", "department_id": "DEP456"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67830", "profssor_email": "sophia.price7@example.com", "professor_name": "Sophia Price7", "professor_telephone": "234-901-9990"}
+ListMember: {"person_id": "PER111", "person_name": "Mia Davis", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67831", "profssor_email": "sophia.price8@example.com", "professor_name": "Sophia Price8", "professor_telephone": "901-111-2227"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67832", "profssor_email": "sophia.price9@example.com", "professor_name": "Sophia Price9", "professor_telephone": "234-901-9991"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU026", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders005", "student_email": "ethansanders005@uni789.edu"}
+HireProfessor: {"department_id": "DEP456", "professor_id": "PRO67833", "profssor_email": "sophia.price10@example.com", "professor_name": "Sophia Price10", "professor_telephone": "234-901-0007"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67835", "profssor_email": "zoe.mitchell@example.com", "professor_name": "Zoe Mitchell", "professor_telephone": "111-789-0123"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67836", "profssor_email": "sophia.price11@example.com", "professor_name": "Sophia Price11", "professor_telephone": "234-901-9992"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU027", "department_id": "DEP001", "department_name": "Chemistry", "student_name": "Ethan Sanders006", "student_email": "ethansanders006@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe009@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU028", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders007", "student_email": "ethansanders007@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67834", "profssor_email": "sophia.price12@example.com", "professor_name": "Sophia Price12", "professor_telephone": "901-345-6784"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67837", "profssor_email": "sophia.price13@example.com", "professor_name": "Sophia Price13", "professor_telephone": "901-345-6785"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67838", "profssor_email": "sophia.price14@example.com", "professor_name": "Sophia Price14", "professor_telephone": "901-345-6786"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67839", "profssor_email": "sophia.price15@example.com", "professor_name": "Sophia Price15", "professor_telephone": "234-901-0008"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67840", "profssor_email": "sophia.price16@example.com", "professor_name": "Sophia Price16", "professor_telephone": "234-901-9993"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67841", "profssor_email": "sophia.price17@example.com", "professor_name": "Sophia Price17", "professor_telephone": "234-901-9994"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67842", "profssor_email": "sophia.price18@example.com", "professor_name": "Sophia Price18", "professor_telephone": "234-901-9995"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU029", "department_id": "DEP456", "department_name": "Psychology", "student_name": "Ethan Sanders008", "student_email": "ethansanders008@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67843", "profssor_email": "sophia.price19@example.com", "professor_name": "Sophia Price19", "professor_telephone": "234-901-9996"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU030", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders009", "student_email": "ethansanders009@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU031", "department_id": "DEP789", "department_name": "Sociology", "student_name": "John Doe", "student_email": "johndoe010@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe011@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe012@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67844", "profssor_email": "sophia.price20@example.com", "professor_name": "Sophia Price20", "professor_telephone": "234-901-9997"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67845", "profssor_email": "sophia.price21@example.com", "professor_name": "Sophia Price21", "professor_telephone": "234-901-9998"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67846", "profssor_email": "sophia.price22@example.com", "professor_name": "Sophia Price22", "professor_telephone": "234-901-0009"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67847", "profssor_email": "sophia.price23@example.com", "professor_name": "Sophia Price23", "professor_telephone": "901-345-6787"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67848", "profssor_email": "sophia.price24@example.com", "professor_name": "Sophia Price24", "professor_telephone": "234-901-0000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67849", "profssor_email": "sophia.price25@example.com", "professor_name": "Sophia Price25", "professor_telephone": "234-901-9999"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11128", "profssor_email": "sophia.price26@example.com", "professor_name": "Sophia Price26", "professor_telephone": "901-345-6788"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe013@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe014@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11129", "profssor_email": "sophia.price27@example.com", "professor_name": "Sophia Price27", "professor_telephone": "234-901-0000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe015@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe016@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11130", "profssor_email": "sophia.price28@example.com", "professor_name": "Sophia Price28", "professor_telephone": "234-901-0000"}
+ListMember: {"person_id": "PER123", "person_name": "Isabella Martin", "department_id": "DEP000"}
+ListMember: {"person_id": "PER888", "person_name": "Julia White", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67850", "profssor_email": "sophia.price30@example.com", "professor_name": "Sophia Price30", "professor_telephone": "234-901-9999"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11132", "profssor_email": "sophia.price31@example.com", "professor_name": "Sophia Price31", "professor_telephone": "234-901-9999"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe017@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11133", "profssor_email": "sophia.price32@example.com", "professor_name": "Sophia Price32", "professor_telephone": "234-901-9999"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU032", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders010", "student_email": "ethansanders010@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11134", "profssor_email": "sophia.price33@example.com", "professor_name": "Sophia Price33", "professor_telephone": "234-901-9999"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe018@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67851", "profssor_email": "sophia.price35@example.com", "professor_name": "Sophia Price35", "professor_telephone": "234-901-9999"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67852", "profssor_email": "sophia.price36@example.com", "professor_name": "Sophia Price36", "professor_telephone": "234-901-9999"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67853", "profssor_email": "sophia.price37@example.com", "professor_name": "Sophia Price37", "professor_telephone": "987-654-3211"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11135", "profssor_email": "sophia.price38@example.com", "professor_name": "Sophia Price38", "professor_telephone": "901-345-6790"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Garcia", "department_id": "DEP000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU033", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders011", "student_email": "ethansanders011@uni789.edu"}
+ListMember: {"person_id": "PER234", "person_name": "Charlotte Thompson", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe019@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11136", "profssor_email": "sophia.price39@example.com", "professor_name": "Sophia Price39", "professor_telephone": "901-345-6791"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11137", "profssor_email": "sophia.price40@example.com", "professor_name": "Sophia Price40", "professor_telephone": "901-345-6792"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67854", "profssor_email": "sophia.price41@example.com", "professor_name": "Sophia Price41", "professor_telephone": "987-654-3212"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price42@example.com", "professor_name": "Sophia Price42", "professor_telephone": "987-654-3213"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67856", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3214"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price44@example.com", "professor_name": "Sophia Price44", "professor_telephone": "987-654-3215"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price45@example.com", "professor_name": "Sophia Price45", "professor_telephone": "987-654-3216"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price46@example.com", "professor_name": "Sophia Price46", "professor_telephone": "987-654-3217"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price47@example.com", "professor_name": "Sophia Price47", "professor_telephone": "987-654-3218"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price48@example.com", "professor_name": "Sophia Price48", "professor_telephone": "987-654-3219"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3220"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+ListMember: {"person_id": "PER902", "person_name": "Abigail Walker", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price51@example.com", "professor_name": "Sophia Price51", "professor_telephone": "987-654-3221"}
+ListMember: {"person_id": "PER015", "person_name": "Hannah Taylor", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU034", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders012", "student_email": "ethansanders012@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price52@example.com", "professor_name": "Sophia Price52", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU035", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders013", "student_email": "ethansanders013@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3290"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU036", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders014", "student_email": "ethansanders014@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3291"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH123", "research_group_name": "Advanced Research Initiative"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price56@example.com", "professor_name": "Sophia Price56", "professor_telephone": "987-654-3292"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3292"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3290"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3293"}
+ListMember: {"person_id": "PER999", "person_name": "Lily Chen", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11138", "profssor_email": "sophia.price58@example.com", "professor_name": "Sophia Price58", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11139", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU037", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders015", "student_email": "ethansanders015@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH456", "research_group_name": "Innovative Technology Lab"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price60@example.com", "professor_name": "Sophia Price60", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price60@example.com", "professor_name": "Sophia Price60", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3297"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price60@example.com", "professor_name": "Sophia Price60", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "MEM001", "person_name": "Abigail Walker", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU038", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Chen", "student_email": "liamchen@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price61@example.com", "professor_name": "Sophia Price61", "professor_telephone": "987-654-3298"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU039", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders016", "student_email": "ethansanders016@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU040", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders017", "student_email": "ethansanders017@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU041", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders018", "student_email": "ethansanders018@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU042", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders019", "student_email": "ethansanders019@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU043", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders020", "student_email": "ethansanders020@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU044", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders021", "student_email": "ethansanders021@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+ListMember: {"person_id": "PER345", "person_name": "Harper Patel", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "PER567", "person_name": "Ava Morales", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU045", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders022", "student_email": "ethansanders022@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU047", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders023", "student_email": "ethansanders023@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU048", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders024", "student_email": "ethansanders024@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU049", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Wong", "student_email": "liamwong@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Garcia", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU050", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Brown", "student_email": "liambrown@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU051", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Davis", "student_email": "liamdavis@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU052", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Evans", "student_email": "liamevans@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU053", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders025", "student_email": "ethansanders025@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Harris", "department_id": "DEP000"}
+ListMember: {"person_id": "PER678", "person_name": "Evelyn Russell", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU054", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders026", "student_email": "ethansanders026@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11140", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3222"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price29@example.com", "professor_name": "Sophia Price29", "professor_telephone": "987-654-3223"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU055", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders027", "student_email": "ethansanders027@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11144", "profssor_email": "sophia.price63@example.com", "professor_name": "Sophia Price63", "professor_telephone": "987-654-3231"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU057", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders028", "student_email": "ethansanders028@uni789.edu"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Russell", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Garcia", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU058", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Jenkins", "student_email": "liamjenkins@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU059", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders029", "student_email": "ethansanders029@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Garcia", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU060", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders030", "student_email": "ethansanders030@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU061", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders031", "student_email": "ethansanders031@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU062", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders032", "student_email": "ethansanders032@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Morales", "department_id": "DEP000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU063", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders033", "student_email": "ethansanders033@uni789.edu"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Garcia", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU064", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders034", "student_email": "ethansanders034@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU065", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan White", "student_email": "ethanwhite012@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU046", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Russell", "student_email": "liamrussell@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Russell", "department_id": "DEP000"}
+ListMember: {"person_id": "PER012", "person_name": "Ava Morales", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Morales", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU066", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders035", "student_email": "ethansanders035@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU067", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU068", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen012@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU081", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Russell", "student_email": "liamrussell012@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11145", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP000", "department_name": "Biology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11146", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER001", "person_name": "John Doe", "department_id": "DEP000"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU082", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen013@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11147", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Morales", "department_id": "DEP000"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11148", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU071", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen021@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU072", "department_id": "DEP002", "department_name": "History", "student_name": "Liam Brooks", "student_email": "liambrooks@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11149", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11150", "profssor_email": "sophia.price60@example.com", "professor_name": "Sophia Price60", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU073", "department_id": "DEP004", "department_name": "Philosophy", "student_name": "Ethan Olson", "student_email": "ethanolson@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Ava Sanchez", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU074", "department_id": "DEP003", "department_name": "Anthropology", "student_name": "Liam Reynolds", "student_email": "liamreynolds@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU069", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Russell", "student_email": "liamrussell023@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU085", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen024@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Russell", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO67855", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Murphy", "department_id": "DEP002"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Anthropology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU082", "department_id": "DEP001", "department_name": "Biology", "student_name": "Liam Jenkins", "student_email": "liamjenkins@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU082", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Jenkins", "student_email": "liamjenkins@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER222", "person_name": "Evelyn Thompson", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Harper Russell", "department_id": "DEP002"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Anthropology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU082", "department_id": "DEP001", "department_name": "Biology", "student_name": "Liam Reynolds", "student_email": "liamreynolds012@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU082", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Jenkins", "student_email": "liamjenkins@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Mathematics", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+ListMember: {"person_id": "PER001", "person_name": "John Doe", "department_id": "DEP002"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU081", "department_id": "DEP001", "department_name": "Biology", "student_name": "Liam Jenkins", "student_email": "liamjenkins@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU075", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen025@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU083", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Ethan Sanders036", "student_email": "ethansanders036@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price53@example.com", "professor_name": "Sophia Price53", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP123", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU056", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "Liam Nguyen", "student_email": "liamnguyen056@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3224"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geology", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Thompson", "department_id": "DEP001"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price34@example.com", "professor_name": "Sophia Price34", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3224"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Sanchez", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3223"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Walker", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3225"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU091", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Liam Russell", "student_email": "liamrussell091@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Harper Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER123", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3225"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH789", "research_group_name": "New Frontier Research"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH101", "research_group_name": "Pioneering Research Collective"}
+ListMember: {"person_id": "MEM001", "person_name": "Harper Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER001", "person_name": "John Doe", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Reynolds", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Nguyen", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP005"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH012", "research_group_name": "Breakthrough Research Institute"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "PER001", "person_name": "John Doe", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH901", "research_group_name": "Discovery Research Alliance"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price55@example.com", "professor_name": "Sophia Price55", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price62@example.com", "professor_name": "Sophia Price62", "professor_telephone": "987-654-3296"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Martin", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Patel", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Martin", "department_id": "DEP001"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+ListMember: {"person_id": "MEM001", "person_name": "Ava Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price57@example.com", "professor_name": "Sophia Price57", "professor_telephone": "987-654-3297"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Lee", "department_id": "DEP001"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Thompson", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3225"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Philosophy", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn White", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Thompson", "department_id": "DEP003"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Russell", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER000", "person_name": "Evelyn Kim", "department_id": "DEP001"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price59@example.com", "professor_name": "Sophia Price59", "professor_telephone": "987-654-3299"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Thompson", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+CreateResearchGroup: {"university_id": "UNI789", "research_group_id": "RGH111", "research_group_name": "Exploratory Research Forum"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3225"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price43@example.com", "professor_name": "Sophia Price43", "professor_telephone": "987-654-3294"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "PER001", "person_name": "John Doe", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Thompson", "department_id": "DEP003"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Chemistry", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP005", "department_name": "Environmental Science", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+EnrollStudent: {"university_id": "UNI789", "student_id": "STU001", "department_id": "DEP003", "department_name": "Geography", "student_name": "John Doe", "student_email": "johndoe@uni789.edu"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Kim", "department_id": "DEP003"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price50@example.com", "professor_name": "Sophia Price50", "professor_telephone": "987-654-3295"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRO11155", "profssor_email": "sophia.price54@example.com", "professor_name": "Sophia Price54", "professor_telephone": "987-654-3294"}
+ListMember: {"person_id": "MEM001", "person_name": "Evelyn Thompson", "department_id": "DEP003"}

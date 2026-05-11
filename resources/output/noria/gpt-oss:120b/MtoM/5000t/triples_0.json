@@ -1,0 +1,693 @@
+RegisterNewService: {"service_id": "SV001", "service_name": "AlphaService", "service_type": "web", "managed_by_team": "TeamOmega"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS001", "resource_label": "Shared Storage"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG123", "log_time": "2023-07-15T10:23:00Z", "log_message": "Routine maintenance check completed."}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT001", "trouble_ticket_description": "Trouble ticket opened for resource RS001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "CMP001", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Network Connectivity", "responsibility": "Network Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV123", "timestamp": "2023-07-15T10:23:00Z"}
+FindCorrelatedEvents: {"event_id": "EV123", "corr_id": "CE456"}
+IdentifyEventSource: {"event_id": "EV123", "originator_id": "USR001", "originator_role": "user"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "INT045", "change_description": "Applied security patch KB2023 to address vulnerability", "start_time": "2026-04-28T14:30:00Z"}
+DetectAlarmPatterns: {"event_id": "EV123", "pattern_id": null, "description": "No matching failure pattern found for event EV123."}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV123"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS001", "resource_label": "Shared Storage"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG124", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for status check."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "SRV002", "entity_type": "application"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": "network", "similar_ticket_id": "IN456"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+FindCorrelatedEvents: {"event_id": "EV123", "corr_id": "CF789"}
+IdentifyEventSource: {"event_id": "EV123", "originator_id": null, "originator_role": null}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "CH001", "change_description": "Updated firewall rule to block unauthorized port access", "start_time": "2026-04-28T10:15:00Z"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT002", "trouble_ticket_description": "Created a new trouble ticket for resource RS001."}
+DetectAlarmPatterns: {"event_id": "EV123", "pattern_id": null, "description": "No applicable alarm pattern identified for EV123"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV124", "timestamp": "2023-07-15T09:30:00Z"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS002", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG125", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 health check completed successfully."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "CMP002", "entity_type": "hardware"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT001", "importance_level": "high"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Hardware Failure", "responsibility": "IT Operations"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CG123"}
+SuggestOperationPlan: {"event_id": "EV124", "plan_id": "OP001", "plan_description": "Deploy response team to secure the perimeter, conduct a threat assessment, and initiate containment protocols.", "plan_outcome": "Event resolved with minimal impact and normal operations restored."}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT001", "originator_role": "admin"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "CH002", "change_description": "Deployed configuration update that altered file system permissions on the resource", "start_time": "2026-04-28T10:15:00Z"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP001", "description": "Temperature sensor failure pattern"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS003", "resource_label": "Shared Cache"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV123"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG126", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for configuration update."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT001", "importance_level": "high"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT002", "entity_id": "SIT001", "entity_type": "site"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Internal Team"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CH001"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT002", "originator_role": "operator"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT003", "trouble_ticket_description": "New trouble ticket created for resource RS001."}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "No matching failure pattern found for event EV124."}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "CH003", "change_description": "Rolled back recent software update that introduced instability on the resource", "start_time": "2026-04-20T14:30:00Z"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS004", "resource_label": "Shared Message Bus"}
+GetResourceMetrics: {"resource_id": "RS002", "metric_id": "MT001", "metric_name": "CPU_Usage", "metric_value": "73%"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG127", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 backup completed."}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV125", "timestamp": "2023-07-15T10:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "CMP003", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Configuration Issue", "responsibility": "System Administrator"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CI002"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT003", "originator_role": "sensor"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "No matching failure pattern found for event EV124."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": null, "resource_label": null}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT004", "trouble_ticket_description": "Trouble ticket generated for resource RS001."}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "CH004", "change_description": "Applied security patch KB2024 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG128", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 performance metrics recorded."}
+SuggestOperationPlan: {"event_id": "EV124", "plan_id": "OP002", "plan_description": "Establish a quarantine zone, perform forensic analysis, and coordinate with external agencies for containment.", "plan_outcome": "Event neutralized, systems restored, and lessons learned documented."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP004", "entity_type": "application"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+GetResourceMetrics: {"resource_id": "RS001", "metric_id": "MX002", "metric_name": "CPU_Usage", "metric_value": "75%"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "IN789"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV123"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT004", "originator_role": "agent"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS005", "resource_label": "Shared Queue"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT005", "trouble_ticket_description": "Trouble ticket initiated for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG129", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 security scan completed."}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CJ345"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW001", "entity_type": "hardware"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "No matching failure pattern found for event EV124."}
+RegisterNewService: {"service_id": "AB123", "service_name": "BetaService", "service_type": "database", "managed_by_team": "TeamDelta"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT003", "ticket_category": null, "similar_ticket_id": "IN001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+FindCausalInterventions: {"resource_id": "RS003", "event_id": "EV124", "change_id": "INT046", "change_description": "Applied security patch KB2025 to address performance issue on the resource", "start_time": "2026-04-28T10:15:00Z"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT005", "originator_role": "initiator"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS006", "resource_label": "Shared Analytics"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG130", "log_time": "2026-05-04T14:32:00Z", "log_message": "Resource RS001 firmware upgrade applied."}
+GetResourceMetrics: {"resource_id": "RS001", "metric_id": "MT003", "metric_name": "CPU_Usage", "metric_value": "68%"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW002", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CK001"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP002", "description": "Event EV124 does not match any known failure pattern."}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV126", "timestamp": "2023-07-15T09:30:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT003", "category_name": "Performance Degradation", "responsibility": "Operations Team"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT006", "trouble_ticket_description": "Trouble ticket logged for resource RS001."}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "SYS001", "originator_role": "system"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS007", "resource_label": "Shared Logging"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "CH005", "change_description": "Installed new monitoring agent version 2.1 on the resource", "start_time": "2026-04-15T09:30:00Z"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG131", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 diagnostic report generated."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW003", "entity_type": "hardware"}
+GetResourceMetrics: {"resource_id": "RS003", "metric_id": "MT005", "metric_name": "cpu_usage", "metric_value": "73%"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "IN002"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "CL002"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": null}
+IdentifyRootCause: {"trouble_ticket_id": "TT003", "category_name": null, "responsibility": null}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT007", "trouble_ticket_description": "Trouble ticket recorded for resource RS001."}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT006", "originator_role": "monitor"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS008", "resource_label": "Shared Search"}
+RegisterNewService: {"service_id": "XZ123", "service_name": "GammaService", "service_type": "analytics", "managed_by_team": "TeamSigma"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG132", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 log entry retrieved."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW004", "entity_type": "hardware"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT003", "ticket_category": null, "similar_ticket_id": "IN003"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "CH006", "change_description": "Applied security patch KB2026 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "DM001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT002", "category_name": "Security Breach", "responsibility": "Security Team"}
+DetectAlarmPatterns: {"event_id": "EV125", "pattern_id": "FP003", "description": "Overheating sensor failure pattern"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT008", "trouble_ticket_description": "Trouble ticket filed for resource RS001."}
+FindSharedAssets: {"service_id": "XZ123", "resource_id": "AB123", "resource_label": "Shared Reporting"}
+RegisterNewService: {"service_id": "QW456", "service_name": "DeltaService", "service_type": "analytics", "managed_by_team": "TeamLambda"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT007", "originator_role": "system_monitor"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT004", "entity_id": "CMP004", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG133", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 anomaly detected and flagged."}
+FindCausalInterventions: {"resource_id": "RS005", "event_id": "EV124", "change_id": "INT047", "change_description": "Applied security patch KB2027 to address performance degradation on the resource", "start_time": "2026-04-30T10:15:00Z"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV123"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "DN002"}
+IdentifyRootCause: {"trouble_ticket_id": "TT004", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP004", "description": "Sensor calibration error pattern"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EV127", "timestamp": "2023-07-15T10:23:00Z"}
+FindSharedAssets: {"service_id": "XZ123", "resource_id": "RC009", "resource_label": "Shared Notification"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT004", "ticket_category": "network outage", "similar_ticket_id": "IN004"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT008", "originator_role": "automated_process"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG134", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for routine audit."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT004", "entity_id": null, "entity_type": null}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT001", "change_description": "Applied security patch KB2028 to address memory leak on the resource", "start_time": "2026-04-30T10:15:00Z"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "EA124"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Hardware Failure", "responsibility": "Operations Team"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "No known failure pattern matches EV124"}
+OpenTroubleTicket: {"resource_id": "RS004", "trouble_ticket_id": "TT009", "trouble_ticket_description": "Trouble ticket created for resource RS004."}
+RegisterNewService: {"service_id": "LM789", "service_name": "EpsilonService", "service_type": "Analytics", "managed_by_team": "TeamTheta"}
+RegisterNewResource: {"resource_id": "TX001", "hostname": "host-TX001", "serial_number": "SN-TX001-2024", "resource_type": "server", "usage_state": "active"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RA001", "resource_label": "Shared Metrics"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG135", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for user permission audit."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW005", "entity_type": "hardware"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT009", "originator_role": "initiator"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "EB567"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "CH007", "change_description": "Applied security patch KB2029 to address newly discovered vulnerability on the resource", "start_time": "2026-04-15T10:30:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP005", "description": "EV124 does not correspond to any defined failure pattern."}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV128", "timestamp": "2023-07-15T10:23:00Z"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT010", "trouble_ticket_description": "Trouble ticket submitted for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG136", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for compliance verification."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW006", "entity_type": "hardware"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RV001", "resource_label": "Shared Scheduler"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "DF001"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT048", "change_description": "Applied security patch KB2030 to address newly discovered vulnerability on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Database Corruption", "responsibility": "Database Team"}
+RegisterNewService: {"service_id": "MN234", "service_name": "ZetaService", "service_type": "Analytics", "managed_by_team": "TeamAlpha"}
+IdentifyEventSource: {"event_id": "EV125", "originator_id": "AGT010", "originator_role": "initiator"}
+GetResourceMetrics: {"resource_id": "RS001", "metric_id": "MT007", "metric_name": "CPU_Usage", "metric_value": "73%"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT011", "trouble_ticket_description": "Trouble ticket raised for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG137", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 log retrieved for user request."}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP006", "description": "No alarm pattern matches event EV124"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RA001", "resource_label": "Shared Analytics"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW007", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "FA001"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT049", "change_description": "Applied security patch KB2031 to address newly discovered vulnerability on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT003", "category_name": null, "responsibility": null}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV129", "timestamp": "2023-07-15T10:23:00Z"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT011", "originator_role": "operator"}
+OpenTroubleTicket: {"resource_id": "RS003", "trouble_ticket_id": "TT012", "trouble_ticket_description": "Trouble ticket created for resource RS003."}
+MapEventsToResources: {"resource_id": "RS002", "event_id": "EV124"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG138", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for security audit."}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP007", "description": "Power supply failure pattern"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RX001", "resource_label": "Shared AI Engine"}
+SuggestOperationPlan: {"event_id": "EV124", "plan_id": "OP003", "plan_description": "Establish a secure perimeter, conduct a rapid threat assessment, deploy containment units, and coordinate with local authorities for neutralization.", "plan_outcome": "Threat contained, affected area secured, and incident resolved with minimal impact."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW008", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "GB001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Network Connectivity", "responsibility": "Network Operations Team"}
+FindCausalInterventions: {"resource_id": "RS006", "event_id": "EV125", "change_id": "INT002", "change_description": "Applied security patch KB2032 to address newly discovered vulnerability on the resource", "start_time": "2026-04-28T10:15:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "IN010"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT012", "originator_role": "operator"}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV130", "timestamp": "2023-07-15T10:30:00Z"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT013", "trouble_ticket_description": "Support ticket initiated for resource RS001."}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "EV124 does not match any alarm pattern in the system."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RM001", "resource_label": "Shared Monitoring"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW009", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG139", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for performance tuning."}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "AA001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT013", "originator_role": "agent"}
+RegisterNewService: {"service_id": "SV001", "service_name": "GammaService", "service_type": "data-processing", "managed_by_team": "TeamSigma"}
+FindCausalInterventions: {"resource_id": "RS003", "event_id": "EV124", "change_id": "INT003", "change_description": "Applied security patch KB2033 to address newly discovered vulnerability on the resource", "start_time": "2026-04-15T10:30:00Z"}
+GetResourceMetrics: {"resource_id": "RS001", "metric_id": "MT009", "metric_name": "CPU_Usage", "metric_value": "73%"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RC010", "resource_label": "Shared Authentication"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP008", "description": "Voltage fluctuation alarm pattern"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT014", "trouble_ticket_description": "Trouble ticket started for resource RS001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW010", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RS008", "log_id": "LG140", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS008 accessed for routine maintenance."}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "CX001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "User Error", "responsibility": "Support Team"}
+RegisterNewService: {"service_id": "AB123", "service_name": "AlphaService", "service_type": "Compute", "managed_by_team": "TeamAlpha"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT014", "originator_role": "initiator"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT003", "action_id": "ACT001", "action_description": "Replaced faulty network cable", "agent_id": "AGT001", "agent_label": "John Doe"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "SB001", "resource_label": "Shared Billing"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV131", "timestamp": "2023-07-15T09:30:00Z"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": null}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT004", "change_description": "Adjusted CPU allocation limits on the resource", "start_time": "2026-04-30T10:15:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW005", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG141", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource RS001 accessed for data export."}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "HZ123"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Resets the system to safe mode and clears pending alerts."}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT015", "originator_role": "network monitor"}
+FindSharedAssets: {"service_id": "LM789", "resource_id": "RA002", "resource_label": "Shared Search"}
+SuggestOperationPlan: {"event_id": "EV124", "plan_id": "OP004", "plan_description": "Deploy response team to secure the perimeter, conduct a threat assessment, and initiate containment protocols.", "plan_outcome": "Threat neutralized and area secured."}
+GetResourceMetrics: {"resource_id": "RS001", "metric_id": "MT010", "metric_name": "CPU_Usage", "metric_value": "73%"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP009", "description": "Network latency failure pattern"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW011", "entity_type": "hardware"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT015", "trouble_ticket_description": "Trouble ticket created for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG142", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource RS001 accessed for system health verification."}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "DK456"}
+FindCausalInterventions: {"resource_id": "RS003", "event_id": "EV124", "change_id": "INT005", "change_description": "Applied security patch KB2034 to address newly discovered vulnerability on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Support Team"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT016", "originator_role": "initiator"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RA003", "resource_label": "Shared Analytics"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV132", "timestamp": "2023-07-15T10:23:00Z"}
+MapEventsToResources: {"resource_id": "RS006", "event_id": "EV124"}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": "AP001", "description": "No matching alarm pattern found for event EV128"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "APP005", "entity_type": "application"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT016", "trouble_ticket_description": "Issue ticket created for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG143", "log_time": "2026-05-04T10:15:30Z", "log_message": "Resource RS001 accessed for data migration."}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT006", "change_description": "Adjusted network bandwidth allocation on the resource to improve throughput", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "CZ001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT014", "category_name": "Dependency Failure", "responsibility": "Infrastructure Team"}
+RegisterNewService: {"service_id": "JK001", "service_name": "ThetaService", "service_type": "Analytics", "managed_by_team": "TeamBeta"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RX002", "resource_label": "Shared Event Hub"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT010", "action_id": "ACT002", "action_description": "Updated firmware on router", "agent_id": "AGT002", "agent_label": "Jane Smith"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT017", "originator_role": "system_operator"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "FP010", "description": "Database connection timeout pattern"}
+RegisterNewResource: {"resource_id": "RA004", "hostname": "host-RA004", "serial_number": "SN-RA004-2026", "resource_type": "server", "usage_state": "active"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW012", "entity_type": "hardware"}
+MapEventsToResources: {"resource_id": "RS006", "event_id": "EV124"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG144", "log_time": "2026-05-05T14:30:00Z", "log_message": "Resource RS001 accessed for data integrity check."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Initiates a system reboot and records the action in the audit log."}
+IdentifyRootCause: {"trouble_ticket_id": "TT004", "category_name": "Software Bug", "responsibility": "Development Team"}
+FindCausalInterventions: {"resource_id": "RS006", "event_id": "EV124", "change_id": "CH008", "change_description": "Adjusted memory allocation limits on the resource", "start_time": "2026-04-20T10:15:00Z"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RS009", "resource_label": "Shared Video Processing"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "AB123"}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": null, "description": "No matching failure pattern found for event EV128"}
+RegisterNewResource: {"resource_id": "RB005", "hostname": "host-RB005", "serial_number": "SN-RB005-2026", "resource_type": "server", "usage_state": "active"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT018", "originator_role": "monitoring_agent"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW013", "entity_type": "hardware"}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV133", "timestamp": "2026-04-20T14:35:00Z"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT017", "trouble_ticket_description": "Support ticket created for resource RS001."}
+MapEventsToResources: {"resource_id": "RS006", "event_id": "EV124"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV123", "change_id": "CH009", "change_description": "Deployed security patch KB2035 to address newly discovered vulnerability", "start_time": "2026-04-28T09:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "AD001"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RX003", "resource_label": "Shared Image Processing"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "AP002", "description": "Unexpected shutdown alarm pattern"}
+GetResourceLogs: {"resource_id": "RS006", "log_id": "LG145", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RS006 accessed for configuration backup."}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT019", "originator_role": "initiator"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP001", "entity_type": "application"}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV134", "timestamp": "2023-07-15T10:23:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "IN005"}
+MapEventsToResources: {"resource_id": "RS006", "event_id": "EV124"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT018", "trouble_ticket_description": "Initiated a trouble ticket for resource RS001."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Executes a full system diagnostic and logs the results in the audit trail."}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": "FP011", "description": "Event EV128 does not correspond to any known failure pattern."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RA010", "resource_label": "Shared CDN"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": null, "originator_role": null}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "AB001", "log_time": "2026-05-05T12:34:56Z", "log_message": "Resource RS001 accessed for compliance review."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW014", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "XZ002"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT007", "change_description": "Installed security patch KB2040 to address newly discovered vulnerability", "start_time": "2026-04-20T14:30:00Z"}
+GetIncidentSequence: {"trouble_ticket_id": "TT014", "event_id": "EV135", "timestamp": "2023-07-15T10:23:00Z"}
+RegisterNewService: {"service_id": "RT567", "service_name": "OmegaService", "service_type": "Analytics", "managed_by_team": "TeamEpsilon"}
+IdentifyRootCause: {"trouble_ticket_id": "TT014", "category_name": "License Issue", "responsibility": "Support Team"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": null, "description": "No known failure pattern"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RD001", "resource_label": "Shared Voice Processing"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT020", "originator_role": "sensor"}
+OpenTroubleTicket: {"resource_id": "RS006", "trouble_ticket_id": "TT019", "trouble_ticket_description": "Created a new trouble ticket for resource RS006."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW015", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG146", "log_time": "2026-05-05T10:15:30Z", "log_message": "Resource RS001 accessed for compliance reporting."}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "EV256"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT008", "change_description": "Implemented data compression algorithm on the resource", "start_time": "2026-04-15T09:30:00Z"}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV136", "timestamp": "2023-07-15T09:30:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Integration Issue", "responsibility": "Vendor"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "AP003", "description": "Unauthorized access attempt pattern"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RC011", "resource_label": "Shared Data Lake"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT021", "originator_role": "initiator"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "IN006"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "CMP005", "entity_type": "hardware"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT020", "trouble_ticket_description": "Created a support ticket for resource RS001."}
+GetResourceLogs: {"resource_id": "RS006", "log_id": "LX001", "log_time": "2026-04-30T14:23:00Z", "log_message": "Resource RS006 accessed for security audit."}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV137", "timestamp": "2023-07-15T10:23:00Z"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "BK002"}
+FindCausalInterventions: {"resource_id": "RS006", "event_id": "EV128", "change_id": "INT009", "change_description": "Deployed new kernel version to improve performance", "start_time": "2026-04-30T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": "NP001", "description": "Event EV128 does not match any known alarm pattern"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RE001", "resource_label": "Shared Backup"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT022", "originator_role": "monitor"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP006", "entity_type": "application"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+GetResourceLogs: {"resource_id": "RX002", "log_id": "LG147", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RX002 accessed for performance analysis."}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT021", "trouble_ticket_description": "Trouble ticket recorded for resource RS001."}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV138", "timestamp": "2026-04-28T14:35:00Z"}
+RegisterNewService: {"service_id": "GH012", "service_name": "LambdaService", "service_type": "Analytics", "managed_by_team": "TeamGamma"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "ER001"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": null, "description": "Event EV128 has no associated alarm pattern"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT023", "originator_role": "system"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RD002", "resource_label": "Shared Data Processing"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW016", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "INT010", "change_description": "Applied security patch KB2035 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT022", "trouble_ticket_description": "Trouble ticket opened for resource RX001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG148", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for quarterly performance review."}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "GH123"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Conducts a comprehensive integrity check of critical files and records any discrepancies in the audit log."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Resource Exhaustion", "responsibility": "Operations Team"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": "NP002", "description": "Authentication timeout pattern"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT024", "originator_role": "system_operator"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RX004", "resource_label": "Shared Data Warehouse"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW017", "entity_type": "hardware"}
+GetIncidentSequence: {"trouble_ticket_id": "TT003", "event_id": "EV139", "timestamp": "2023-07-15T10:23:00Z"}
+FindCausalInterventions: {"resource_id": "RS001", "event_id": "EV124", "change_id": "CH010", "change_description": "Applied security patch KB2041 to address newly discovered vulnerability", "start_time": "2026-04-15T10:30:00Z"}
+MapEventsToResources: {"resource_id": "RS001", "event_id": "EV124"}
+OpenTroubleTicket: {"resource_id": "RS001", "trouble_ticket_id": "TT023", "trouble_ticket_description": "Trouble ticket processed for resource RS001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG200", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for compliance archiving."}
+FindSimilarIncidents: {"trouble_ticket_id": "TT010", "ticket_category": null, "similar_ticket_id": "IN999"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT025", "originator_role": "system_admin"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "LM123"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW018", "entity_type": "hardware"}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RX005", "resource_label": "Shared AI Training"}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": "AP004", "description": "Temperature sensor alarm pattern"}
+FindCausalInterventions: {"resource_id": "RS006", "event_id": "EV128", "change_id": "CH011", "change_description": "Adjusted CPU allocation limits on the resource", "start_time": "2026-04-30T14:20:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV124"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT024", "trouble_ticket_description": "Trouble ticket created for resource RX001."}
+GetResourceLogs: {"resource_id": "RS001", "log_id": "LG201", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RS001 accessed for incident response."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT003", "action_description": "Rebooted the server"}
+RegisterNewService: {"service_id": "CD456", "service_name": "IotaService", "service_type": "Analytics", "managed_by_team": "TeamIota"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT026", "originator_role": "initiator"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW019", "entity_type": "hardware"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "RG001", "resource_label": "Shared Machine Learning"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV124", "change_id": "INT011", "change_description": "Applied security patch KB2036 to address newly discovered vulnerability on the resource", "start_time": "2026-04-15T08:30:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV124"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "XZ003"}
+DetectAlarmPatterns: {"event_id": "EV124", "pattern_id": null, "description": "Event EV124 does not align with any known failure pattern."}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG001", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RX001 accessed for routine check."}
+RegisterNewService: {"service_id": "UV345", "service_name": "SigmaService", "service_type": "Analytics", "managed_by_team": "TeamKappa"}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT027", "originator_role": "initiator"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Performs a network configuration audit and logs the findings in the audit trail."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW020", "entity_type": "hardware"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "SF123", "resource_label": "Shared Data Sync"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV124", "change_id": "INT012", "change_description": "Adjusted disk I/O throttling on the resource", "start_time": "2026-04-28T14:30:00Z"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV140", "timestamp": "2023-07-15T09:30:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV124"}
+FindCorrelatedEvents: {"event_id": "EV128", "corr_id": "QZ777"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG200", "log_time": "2026-05-04T10:15:30Z", "log_message": "Resource RX001 accessed for performance monitoring."}
+DetectAlarmPatterns: {"event_id": "EV128", "pattern_id": null, "description": "No alarm pattern applicable to EV128"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+IdentifyEventSource: {"event_id": "EV128", "originator_id": "AGT028", "originator_role": "initiator"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT025", "trouble_ticket_description": "Created a new trouble ticket for resource RX001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "APP007", "entity_type": "application"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "RA005", "resource_label": "Shared Quantum Computing"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV124", "change_id": "INT013", "change_description": "Applied security patch KB2042 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV141", "timestamp": "2023-07-15T10:23:00Z"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "SX001", "resource_label": "Shared Edge Computing"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT003", "ticket_category": null, "similar_ticket_id": "XY001"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LX002", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RX001 health check completed."}
+FindCorrelatedEvents: {"event_id": "EV129", "corr_id": "AB001"}
+IdentifyEventSource: {"event_id": "EV124", "originator_id": "AGT029", "originator_role": "system_monitor"}
+IdentifyRootCause: {"trouble_ticket_id": "TT003", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV129", "pattern_id": "FP012", "description": "Memory leak failure pattern"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW021", "entity_type": "hardware"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV129"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT026", "trouble_ticket_description": "Trouble ticket generated for resource RX001."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Updates the security policies and records the changes in the audit log."}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "RG002", "resource_label": "Shared Machine Learning"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG152", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RX001 accessed for diagnostics run."}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV129", "change_id": "INT014", "change_description": "Implemented security hardening script on the resource", "start_time": "2026-04-20T14:30:00Z"}
+IdentifyEventSource: {"event_id": "EV129", "originator_id": "AGT029", "originator_role": "initiator"}
+FindCorrelatedEvents: {"event_id": "EV129", "corr_id": "EV130"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "SIT002", "entity_type": "site"}
+DetectAlarmPatterns: {"event_id": "EV129", "pattern_id": "FP013", "description": "Disk read error failure pattern"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT027", "trouble_ticket_description": "Trouble ticket initiated for resource RX001."}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV142", "timestamp": "2023-07-15T10:23:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV123"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "IO001", "resource_label": "Shared IoT Hub"}
+SuggestOperationPlan: {"event_id": null, "plan_id": "OP005", "plan_description": "Deploy rapid response team to assess the situation, establish a containment perimeter, and coordinate with relevant authorities to neutralize the threat.", "plan_outcome": "Threat neutralized, area secured, and incident documented for post-analysis."}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV123", "change_id": "INT015", "change_description": "Installed security patch KB2043 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "SYS002", "originator_role": "trigger"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG300", "log_time": "2026-04-30T14:23:00Z", "log_message": "RX001 accessed for diagnostics run."}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "AB200"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "SIT003", "entity_type": "site"}
+VerifyActionEffects: {"action_id": "ACT002", "expected_effect": "Generates a detailed report of system performance metrics and logs it in the audit trail."}
+IdentifyRootCause: {"trouble_ticket_id": "TT024", "category_name": "Other Issue", "responsibility": "Operations Team"}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": "FP014", "description": "Cooling system failure pattern"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV150", "timestamp": "2023-07-15T10:30:00Z"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "XY123", "resource_label": "Shared Compute Cluster"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV123"}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT029", "originator_role": "automated_process"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV123", "change_id": "CH012", "change_description": "Applied security patch KB2044 to address newly discovered vulnerability on the resource", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV124", "corr_id": "AB300"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP008", "entity_type": "application"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Logs the completion of the corrective action and updates the system status in the audit trail."}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG400", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RX001 accessed for system backup."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": "FP015", "description": "Disk write error failure pattern"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV151", "timestamp": "2023-07-15T10:30:00Z"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "RA011", "resource_label": "Shared Analytics"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT028", "trouble_ticket_description": "New trouble ticket created for resource RX001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW021", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "AB400"}
+FindCausalInterventions: {"resource_id": "RX003", "event_id": "EV134", "change_id": "INT016", "change_description": "Applied security patch KB2045 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV123"}
+GetResourceLogs: {"resource_id": "RS006", "log_id": "AB002", "log_time": "2023-07-20T14:45:00Z", "log_message": "Resource RS006 accessed for firmware update."}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT030", "originator_role": "initiator"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": null, "description": null}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV152", "timestamp": "2023-07-15T10:23:00Z"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "ZX001", "resource_label": "Shared Data Lake"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT029", "trouble_ticket_description": "New trouble ticket opened for resource RX001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT021", "entity_id": "APP009", "entity_type": "application"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "AB123"}
+FindCorrelatedEvents: {"event_id": "EV152", "corr_id": "MN001"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV124", "change_id": "CH013", "change_description": "Enabled detailed audit logging on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyEventSource: {"event_id": "EV152", "originator_id": "AGT031", "originator_role": "initiator"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG500", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource RX001 accessed for configuration update."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV152", "pattern_id": "FP016", "description": "Disk fragmentation failure pattern"}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV200", "timestamp": "2026-04-28T14:35:00Z"}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "SG001", "resource_label": "Shared API Gateway"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT030", "trouble_ticket_description": "Support ticket opened for resource RX001."}
+MapEventsToResources: {"event_id": "EV123", "resource_id": "RX001"}
+RegisterNewService: {"service_id": "YZ678", "service_name": "KappaService", "service_type": "Analytics", "managed_by_team": "TeamZeta"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW022", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV152", "corr_id": "XZ004"}
+IdentifyEventSource: {"event_id": "EV152", "originator_id": null, "originator_role": null}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV123", "change_id": "CH014", "change_description": "Implemented firmware update on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+DetectAlarmPatterns: {"event_id": "EV152", "pattern_id": "FP017", "description": "CPU throttling failure pattern"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG600", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RX001 accessed for security audit."}
+FindSharedAssets: {"service_id": "CD456", "resource_id": "XZ123", "resource_label": "Shared Blockchain"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV201", "timestamp": "2023-07-15T14:30:00Z"}
+RegisterNewService: {"service_id": "OP901", "service_name": "NovaService", "service_type": "Analytics", "managed_by_team": "TeamOmegaPrime"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV123"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "HW023", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "AB999"}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT031", "originator_role": "initiator"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV123", "change_id": "CH015", "change_description": "Deployed new application version 3.2 to the resource", "start_time": "2026-04-28T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Support Team"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT031", "trouble_ticket_description": "Opened a trouble ticket for resource RX001."}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": "FP018", "description": "Disk overheating failure pattern"}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "ZX002", "resource_label": "Shared Data Lake"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG701", "log_time": "2026-05-04T14:23:00Z", "log_message": "RX001 accessed for firmware upgrade."}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV210", "timestamp": "2026-04-28T14:35:00Z"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV123"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW024", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "AB005"}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT031", "originator_role": "sensor"}
+VerifyActionEffects: {"action_id": "ACT002", "expected_effect": "Restores corrupted configuration files and logs the restoration in the audit trail."}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV123", "change_id": "CH016", "change_description": "Implemented OS security hardening script on the resource", "start_time": "2026-04-20T14:30:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RX006", "resource_label": "Shared Compute Cluster"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": "FP019", "description": "Firmware corruption failure pattern"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT032", "trouble_ticket_description": "Created a new trouble ticket for resource RX006."}
+MapEventsToResources: {"resource_id": "RX006", "event_id": "EV201"}
+RegisterNewService: {"service_id": "EF234", "service_name": "OmegaPrimeService", "service_type": "Analytics", "managed_by_team": "TeamOmegaPrime"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW025", "entity_type": "hardware"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT029", "originator_role": "initiator"}
+SuggestOperationPlan: {"event_id": "EV142", "plan_id": "OP006", "plan_description": "Deploy specialized cyber incident response team to isolate affected systems, conduct forensic analysis, and restore operations.", "plan_outcome": "Threat neutralized, systems restored, and lessons learned documented."}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH017", "change_description": "Adjusted GPU allocation limits on the resource", "start_time": "2026-04-20T10:15:00Z"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG800", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RX006 accessed for configuration backup."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Process Gap", "responsibility": "Operations Team"}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": null, "description": "No matching alarm pattern found for event EV142"}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "RA006", "resource_label": "Shared Compute Cluster"}
+MapEventsToResources: {"resource_id": "RX006", "event_id": "EV201"}
+RegisterNewService: {"service_id": "AA001", "service_name": "PsiService", "service_type": "microservice", "managed_by_team": "TeamPsi"}
+GetIncidentSummary: {"trouble_ticket_id": "TT005", "status": "closed", "cause_text": "Network outage due to router failure", "notes": "Issue resolved after replacing the faulty router; ticket closed on 2026-04-30."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW026", "entity_type": "hardware"}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "XZ005"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": null, "originator_role": null}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH018", "change_description": "Applied security patch KB2045 to address newly discovered vulnerability", "start_time": "2026-04-20T14:30:00Z"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG900", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RX006 accessed for system diagnostics."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Applies a critical security patch to vulnerable components and records the update in the audit log."}
+FindSharedAssets: {"service_id": "AB123", "resource_id": "RA007", "resource_label": "Shared Data Visualization"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT033", "trouble_ticket_description": "Created a new trouble ticket for resource RX006."}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": "FP020", "description": "Power supply failure pattern"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "IN007"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW027", "entity_type": "hardware"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT029", "originator_role": "system_admin"}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "XZ006"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG002", "log_time": "2026-05-04T14:23:00Z", "log_message": "RX001 accessed for log retrieval."}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH019", "change_description": "Adjusted memory allocation limits on the resource", "start_time": "2026-04-20T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV211", "timestamp": "2023-07-15T14:30:00Z"}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "AA001", "resource_label": "Shared Compute Cluster"}
+MapEventsToResources: {"resource_id": "RX006", "event_id": "EV210"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No known failure pattern matches event EV201."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW028", "entity_type": "hardware"}
+SuggestOperationPlan: {"event_id": "EV142", "plan_id": "OP007", "plan_description": "Initiate a multi-tiered response involving immediate threat containment, resource allocation, and post-incident analysis to mitigate impact.", "plan_outcome": "Threat neutralized and systems restored to normal operation."}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT029", "originator_role": "initiator"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "EV202"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT034", "trouble_ticket_description": "Trouble ticket opened for resource RX006."}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG901", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RX006 accessed for performance monitoring."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Isolates the compromised network segment and records the isolation event in the audit log."}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "QZ001", "resource_label": "Shared Augmented Reality"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH020", "change_description": "Applied security patch KB2046 to address newly discovered vulnerability on the resource", "start_time": "2026-04-15T10:30:00Z"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": "FP021", "description": "Service overload failure pattern"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "APP010", "entity_type": "application"}
+GetIncidentSummary: {"trouble_ticket_id": "TT005", "status": "closed", "cause_text": "Connectivity loss caused by a failed router", "notes": "Router was replaced, restoring service; ticket marked closed on 2026-04-30."}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT031", "originator_role": "initiator"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "EF001"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT035", "trouble_ticket_description": "Support ticket created for resource RX006."}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "RX200", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource RX006 accessed for security patch deployment."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "AB001", "resource_label": "Shared Compute Cluster"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV001", "timestamp": "2023-07-15T10:23:00Z"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": null}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "CMP011", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH021", "change_description": "Applied security patch KB2047 to address newly discovered vulnerability", "start_time": "2026-04-20T14:30:00Z"}
+MapEventsToResources: {"resource_id": "RX006", "event_id": "EV201"}
+IdentifyEventSource: {"event_id": "EV001", "originator_id": "AGT031", "originator_role": "monitoring_agent"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": "network", "similar_ticket_id": "IN008"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "XY001"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG700", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource RX006 accessed for configuration backup."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "ZX003", "resource_label": "Shared Compute Cluster"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT036", "trouble_ticket_description": "New issue logged for resource RX001."}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": "AP005", "description": "Power surge alarm pattern"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": null, "entity_type": null}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Triggers a system-wide configuration refresh and logs the operation in the audit trail."}
+IdentifyEventSource: {"event_id": "EV001", "originator_id": "AGT031", "originator_role": "sensor"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "IN011"}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": "INT017", "change_description": "Deployed configuration update to modify logging level on the resource", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV001", "corr_id": "EF002"}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "ZX001", "log_time": "2026-05-05T12:34:56Z", "log_message": "Resource ZX003 accessed for audit review."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "AB999", "resource_label": "Shared Compute Cluster"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "EV201 has no associated failure pattern."}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV212", "timestamp": "2023-07-15T09:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW029", "entity_type": "hardware"}
+IdentifyEventSource: {"event_id": "EV142", "originator_id": "AGT032", "originator_role": "automated_system"}
+MapEventsToResources: {"event_id": "EV201", "resource_id": "ZX003"}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": ["INT018", "INT019"], "change_description": ["Adjusted CPU allocation limits on the resource", "Applied security patch KB2048 to address newly discovered vulnerability"], "start_time": ["2026-04-20T10:15:00Z", "2026-04-22T08:30:00Z"]}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT004", "action_description": "Cleared disk space on the server"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "AB201"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG202", "log_time": "2023-08-01T09:00:00Z", "log_message": "Resource RX006 accessed for configuration backup."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "XY001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No matching failure pattern found for event EV201."}
+SuggestOperationPlan: {"event_id": "EV201", "plan_id": "OP008", "plan_description": "Deploy integrated cyber-physical response unit to isolate threat vectors, conduct real-time analysis, and restore system integrity.", "plan_outcome": "Threat neutralized, systems restored, and lessons learned documented."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP011", "entity_type": "application"}
+IdentifyEventSource: {"event_id": "EV001", "originator_id": "AGT033", "originator_role": "initiator"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV300", "timestamp": "2026-04-15T10:30:00Z"}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": "CH022", "change_description": "Adjusted power supply thresholds on the resource", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV142", "corr_id": "GH124"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT017", "ticket_category": null, "similar_ticket_id": "XY002"}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "LG999", "log_time": "2026-05-05T14:30:00Z", "log_message": "Resource ZX003 accessed for compliance verification."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "RC001", "resource_label": "Shared Compute Cluster"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No alarm pattern applicable to EV201"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT037", "trouble_ticket_description": "Trouble ticket created for resource RX006."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW030", "entity_type": "hardware"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV400", "timestamp": "2026-04-30T14:23:00Z"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT031", "originator_role": "operator"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV142", "change_id": "XZ001", "change_description": "Deployed new security module version 1.4 to the resource", "start_time": "2026-04-20T14:30:00Z"}
+MapEventsToResources: {"resource_id": "RX006", "event_id": "EV201"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "EV210"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG450", "log_time": "2026-05-04T14:23:00Z", "log_message": "Resource RX006 accessed for routine diagnostics."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Software Bug", "responsibility": "Development Team"}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "ZX004", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "Event EV201 does not match any known alarm pattern."}
+OpenTroubleTicket: {"resource_id": "ZX003", "trouble_ticket_id": "TT038", "trouble_ticket_description": "Created a new trouble ticket for resource ZX003."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW031", "entity_type": "hardware"}
+IdentifyEventSource: {"event_id": "EV001", "originator_id": "AGT034", "originator_role": "initiator"}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": "CH023", "change_description": "Deployed configuration update to enable TLS 1.3 on the resource", "start_time": "2026-04-28T14:30:00Z"}
+VerifyActionEffects: {"action_id": "ACT002", "expected_effect": "Updates firewall rules to block unauthorized traffic and logs the changes in the audit trail."}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV143", "timestamp": "2023-07-15T10:23:00Z"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "AB202"}
+MapEventsToResources: {"resource_id": "ZX003", "event_id": "EV201"}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "LG003", "log_time": "2026-05-05T10:15:00Z", "log_message": "Resource ZX003 accessed for security assessment."}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "SV001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "EV201 has no matching alarm pattern"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW032", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV142", "change_id": "CH024", "change_description": "Installed security patch KB2050 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+VerifyActionEffects: {"action_id": "ACT002", "expected_effect": "Updates the system's intrusion detection signatures and records the change in the audit log."}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT035", "originator_role": "monitoring_agent"}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV999", "timestamp": "2023-07-15T10:23:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "JK004"}
+SuggestOperationPlan: {"event_id": "EV201", "plan_id": "OP009", "plan_description": "Establish a secure quarantine zone, perform threat containment, and coordinate with external agencies to mitigate the incident.", "plan_outcome": "Threat neutralized, critical systems restored, and forensic evidence secured for future analysis."}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "LG004", "log_time": "2026-04-28T14:32:10Z", "log_message": "ZX003 log entry created for compliance check."}
+FindSharedAssets: {"service_id": "OP901", "resource_id": "XZ001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "Event EV201 does not correspond to any defined alarm pattern."}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Software Bug", "responsibility": "Development Team"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "SIT004", "entity_type": "site"}
+RegisterNewService: {"service_id": "BN002", "service_name": "RhoService", "service_type": "Analytics", "managed_by_team": "TeamRho"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CD001", "change_description": "Implemented firmware rollback to version 2.5 to resolve stability issues", "start_time": "2026-04-20T14:30:00Z"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "ZZ001"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": null, "originator_role": null}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV140", "timestamp": "2023-07-15T14:23:00Z"}
+MapEventsToResources: {"resource_id": "ZX003", "event_id": "EV201"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG250", "log_time": "2026-05-04T14:23:00Z", "log_message": "RX006 accessed for firmware verification."}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "SC001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No known failure pattern for event EV201."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": null, "entity_type": null}
+GetResourceMetrics: {"resource_id": "RX001", "metric_id": "MT011", "metric_name": "CPU_Usage", "metric_value": "75%"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "AB210"}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": "CI001", "change_description": "Deployed configuration update to modify authentication settings on the resource", "start_time": "2026-04-30T10:15:00Z"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT036", "originator_role": "initiator"}
+MapEventsToResources: {"resource_id": "ZX003", "event_id": "EV201"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT024", "ticket_category": null, "similar_ticket_id": "IN012"}
+SuggestOperationPlan: {"event_id": "EV201", "plan_id": "OP010", "plan_description": "Deploy advanced cyber containment unit to isolate threat vectors, perform deep forensic analysis, and restore system functionality.", "plan_outcome": "Threat vectors isolated, system integrity restored, and forensic report generated."}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "BC001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No matching pattern found for event EV201"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP012", "entity_type": "application"}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "LG005", "log_time": "2026-05-04T10:15:00Z", "log_message": "ZX003 accessed for system health verification."}
+FindCausalInterventions: {"resource_id": "ZX003", "event_id": "EV201", "change_id": "XY001", "change_description": "Applied security patch KB2051 to address newly discovered vulnerability", "start_time": "2026-04-15T10:30:00Z"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "AB301"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": null, "originator_role": null}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT039", "trouble_ticket_description": "Trouble ticket created for resource RX006."}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV250", "timestamp": "2026-04-30T14:23:00Z"}
+MapEventsToResources: {"resource_id": "ZX003", "event_id": "EV201"}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "AB002", "resource_label": "Shared Compute Cluster"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No matching failure or alarm pattern found for EV201"}
+GetResourceLogs: {"resource_id": "ZX003", "log_id": "LG999", "log_time": "2026-05-05T14:30:00Z", "log_message": "ZX003 accessed for configuration backup."}
+SuggestOperationPlan: {"event_id": "EV201", "plan_id": "OP011", "plan_description": "Initiate coordinated cyber response to neutralize the threat, secure network perimeters, and conduct a comprehensive post-incident review.", "plan_outcome": "Threat neutralized, systems restored to full operation, and actionable lessons documented."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP013", "entity_type": "application"}
+RegisterNewService: {"service_id": "FR001", "service_name": "OmicronService", "service_type": "Analytics", "managed_by_team": "TeamOmicron"}
+RegisterNewResource: {"resource_id": "AD001", "hostname": "host-AD001", "serial_number": "SN-AD001-2026", "resource_type": "server", "usage_state": "active"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "JK001"}
+MapEventsToResources: {"resource_id": "ZX003", "event_id": "EV201"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT037", "originator_role": "monitoring_agent"}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "EF001", "resource_label": "Shared Compute Cluster"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Synchronizes system clocks across all servers and records the operation in the audit log."}
+GetResourceLogs: {"resource_id": "EF001", "log_id": "LG999", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource EF001 accessed for security audit."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP014", "entity_type": "application"}
+RegisterNewService: {"service_id": "HI789", "service_name": "TauService", "service_type": "Analytics", "managed_by_team": "TeamTau"}
+OpenTroubleTicket: {"resource_id": "RX006", "trouble_ticket_id": "TT040", "trouble_ticket_description": "Trouble ticket created for resource RX006."}
+DetectAlarmPatterns: {"event_id": "EV142", "pattern_id": "AP006", "description": "Power surge alarm pattern"}
+MapEventsToResources: {"resource_id": "RX001", "event_id": "EV140"}
+FindCorrelatedEvents: {"event_id": "EV152", "corr_id": "AB999"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": null, "originator_role": null}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "AB003", "resource_label": "Shared Data Lake"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Data Validation Error", "responsibility": "Application Development Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EV450", "timestamp": "2023-07-15T10:30:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "XY003"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW033", "entity_type": "hardware"}
+GetResourceLogs: {"resource_id": "RX006", "log_id": "LG610", "log_time": "2026-05-04T14:23:00Z", "log_message": "RX006 log entry retrieved for user request."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT005", "action_id": "ACT005", "action_description": "Patched security vulnerability"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": "FP022", "description": "Service overload failure pattern"}
+FindCausalInterventions: {"resource_id": "RX006", "event_id": "EV201", "change_id": "CH025", "change_description": "Enabled experimental power management mode on the resource", "start_time": "2026-04-28T14:35:00Z"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "EV300"}
+IdentifyEventSource: {"event_id": "EV001", "originator_id": "USR123", "originator_role": "system administrator"}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "NL001", "resource_label": "Shared Natural Language Processing"}
+OpenTroubleTicket: {"resource_id": "RX001", "trouble_ticket_id": "TT041", "trouble_ticket_description": "Trouble ticket started for resource RX001."}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": null, "responsibility": null}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EV600", "timestamp": "2023-07-15T10:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "APP015", "entity_type": "application"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "XY004"}
+GetResourceLogs: {"resource_id": "RX001", "log_id": "LG151", "log_time": "2026-05-05T10:15:00Z", "log_message": "RX001 accessed for anomaly detection."}
+DetectAlarmPatterns: {"event_id": "EV123", "pattern_id": "FP030", "description": "Database corruption failure pattern"}
+FindCausalInterventions: {"resource_id": "RX001", "event_id": "EV001", "change_id": "CH021", "change_description": "Applied security patch KB2048 to address newly discovered vulnerability", "start_time": "2026-04-20T10:15:00Z"}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "XZ007"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": "AGT038", "originator_role": "controller"}
+OpenTroubleTicket: {"resource_id": "EF001", "trouble_ticket_id": "TT042", "trouble_ticket_description": "Created a new trouble ticket for resource EF001."}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "EF002", "resource_label": "Shared Edge Computing"}
+GetIncidentSequence: {"trouble_ticket_id": "TT042", "event_id": "EV701", "timestamp": "2026-04-28T14:35:00Z"}
+RegisterNewService: {"service_id": "KL007", "service_name": "SigmaPrimeService", "service_type": "Analytics", "managed_by_team": "TeamBetaPrime"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "HW034", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": null, "responsibility": null}
+VerifyActionEffects: {"action_id": "ACT003", "expected_effect": "Performs a system health assessment and logs the findings in the audit trail."}
+RegisterNewResource: {"resource_id": "AC001", "hostname": "host-AC001", "serial_number": "SN-AC001-2026", "resource_type": "server", "usage_state": "active"}
+FindCausalInterventions: {"resource_id": "EF001", "event_id": "EV201", "change_id": "CX001", "change_description": "Applied security patch KB2049 to address newly discovered vulnerability", "start_time": "2026-04-30T10:15:00Z"}
+GetResourceLogs: {"resource_id": "EF001", "log_id": "LG951", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource EF001 performed routine health check."}
+FindCorrelatedEvents: {"event_id": "EV201", "corr_id": "CD001"}
+IdentifyEventSource: {"event_id": "EV201", "originator_id": null, "originator_role": null}
+FindSharedAssets: {"service_id": "BN002", "resource_id": "GD001", "resource_label": "Shared Data Lake"}
+DetectAlarmPatterns: {"event_id": "EV201", "pattern_id": null, "description": "No matching pattern found for event EV201"}
+OpenTroubleTicket: {"resource_id": "EF001", "trouble_ticket_id": "TT043", "trouble_ticket_description": "Opened a trouble ticket for resource EF001."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "APP016", "entity_type": "application"}
+GetResourceMetrics: {"resource_id": "EF001", "metric_id": "MT012", "metric_name": "CPU_Utilization", "metric_value": "73%"}

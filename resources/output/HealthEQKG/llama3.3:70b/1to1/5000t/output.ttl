@@ -1,0 +1,143 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:physician_DOC123 a ex:Physician ;
+    ex:credential "Board Certified",
+        "MD, PhD" ;
+    ex:familyName "Smith" ;
+    ex:gender "Male" ;
+    ex:givenName "John" ;
+    ex:graduateFrom ex:medical_school_MED012,
+        ex:medical_school_MED111,
+        ex:medical_school_MED123,
+        ex:medical_school_MED234,
+        ex:medical_school_MED345,
+        ex:medical_school_MED456,
+        ex:medical_school_MED555,
+        ex:medical_school_MED567,
+        ex:medical_school_MED666,
+        ex:medical_school_MED678,
+        ex:medical_school_MED777,
+        ex:medical_school_MED789,
+        ex:medical_school_MED888,
+        ex:medical_school_MED901,
+        ex:medical_school_MED999 ;
+    ex:graduationYear 2001,
+        2010 ;
+    ex:medicalSpecialty "Anesthesiology",
+        "Cardiology",
+        "Dermatology",
+        "Endocrinology",
+        "Gastroenterology",
+        "General Surgery",
+        "Hematology",
+        "Nephrology",
+        "Neurological Surgery",
+        "Neurology",
+        "Obstetrics and Gynecology",
+        "Oncology",
+        "Ophthalmology",
+        "Orthopedic Surgery",
+        "Otolaryngology",
+        "Pathology",
+        "Pediatric Cardiology",
+        "Pediatrics",
+        "Podiatry",
+        "Psychiatry",
+        "Pulmonology",
+        "Radiology",
+        "Rheumatology",
+        "Urology" ;
+    ex:usNPI "1234567890" .
+
+ex:medical_school_MED012 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education",
+        "A leading institution for medical research and education with a strong focus on innovation" ;
+    ex:facultySize 800,
+        1000 ;
+    ex:name "Columbia Medical School",
+        "Johns Hopkins Medical School" .
+
+ex:medical_school_MED111 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on biomedical engineering",
+        "A leading institution for medical research and education with a strong focus on cardiovascular health",
+        "A leading institution for medical research and education with a strong focus on community health",
+        "A leading institution for medical research and education with a strong focus on innovation",
+        "A leading institution for medical research and education with a strong focus on patient care" ;
+    ex:facultySize 1000,
+        1100,
+        1200 ;
+    ex:name "Columbia Medical School",
+        "Cornell Medical School",
+        "Duke Medical School",
+        "Harvard Medical School",
+        "New York Medical School",
+        "Northwestern Medical School",
+        "Stanford Medical School",
+        "University of Chicago Medical School" .
+
+ex:medical_school_MED123 a ex:MedicalSchool ;
+    ex:abstract "A renowned institution for medical innovation and education" ;
+    ex:facultySize 600 ;
+    ex:name "Yale Medical School" .
+
+ex:medical_school_MED234 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on rural health" ;
+    ex:facultySize 1100 ;
+    ex:name "University of Michigan Medical School" .
+
+ex:medical_school_MED345 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on global health" ;
+    ex:facultySize 1200 ;
+    ex:name "Columbia Medical School" .
+
+ex:medical_school_MED456 a ex:MedicalSchool ;
+    ex:abstract "A prestigious medical school with a long history of excellence" ;
+    ex:facultySize 500 ;
+    ex:name "Harvard Medical School" .
+
+ex:medical_school_MED555 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on biomedical engineering" ;
+    ex:facultySize 1500 ;
+    ex:name "University of Pennsylvania Medical School" .
+
+ex:medical_school_MED567 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on medical technology" ;
+    ex:facultySize 1300 ;
+    ex:name "University of Chicago Medical School" .
+
+ex:medical_school_MED666 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on cancer treatment" ;
+    ex:facultySize 1100 ;
+    ex:name "Duke Medical School" .
+
+ex:medical_school_MED678 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on public health" ;
+    ex:facultySize 1400 ;
+    ex:name "University of Texas Medical School" .
+
+ex:medical_school_MED777 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on neuroscience" ;
+    ex:facultySize 1700 ;
+    ex:name "Cornell Medical School" .
+
+ex:medical_school_MED789 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education" ;
+    ex:facultySize 700 ;
+    ex:name "Stanford Medical School" .
+
+ex:medical_school_MED888 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on cardiovascular health" ;
+    ex:facultySize 1100 ;
+    ex:name "Northwestern Medical School" .
+
+ex:medical_school_MED901 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on community health" ;
+    ex:facultySize 900 ;
+    ex:name "University of California Medical School" .
+
+ex:medical_school_MED999 a ex:MedicalSchool ;
+    ex:abstract "A leading institution for medical research and education with a strong focus on environmental health" ;
+    ex:facultySize 1600 ;
+    ex:name "University of Washington Medical School" .
+

@@ -1,0 +1,900 @@
+@prefix ex: <http://example.org/> .
+
+ex:grad_student_GSU123 a ex:GraduateStudent ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" ;
+    ex:undergraduateDegreeFrom ex:university_HAR789 .
+
+ex:person_MEM001 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wood" .
+
+ex:person_PER012 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Olivia Brown" .
+
+ex:person_PER015 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julia Martin" .
+
+ex:person_PER1000 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Brooks" .
+
+ex:person_PER1001 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Welch" .
+
+ex:person_PER1002 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wolfe" .
+
+ex:person_PER1003 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn West" .
+
+ex:person_PER1004 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wilson" .
+
+ex:person_PER1005 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Webster" .
+
+ex:person_PER1006 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Rogers" .
+
+ex:person_PER1007 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Waters" .
+
+ex:person_PER1008 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wright" .
+
+ex:person_PER1009 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wilkinson" .
+
+ex:person_PER101 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Lee" .
+
+ex:person_PER102 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Reynolds" .
+
+ex:person_PER103 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Price" .
+
+ex:person_PER111 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Mia Davis" .
+
+ex:person_PER1111 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Thompson" .
+
+ex:person_PER112 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Wallace" .
+
+ex:person_PER113 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Patel" .
+
+ex:person_PER114 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Santos" .
+
+ex:person_PER116 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Tran" .
+
+ex:person_PER117 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Tucker" .
+
+ex:person_PER118 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Williamson" .
+
+ex:person_PER119 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Vaughn" .
+
+ex:person_PER120 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Watts" .
+
+ex:person_PER123 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" .
+
+ex:person_PER1234 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Williams" .
+
+ex:person_PER222 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Charlotte Miller" .
+
+ex:person_PER234 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn White" .
+
+ex:person_PER345 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Abigail Harris" .
+
+ex:person_PER456 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Jane Smith" .
+
+ex:person_PER555 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Hannah Anderson" .
+
+ex:person_PER666 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Jenkins" .
+
+ex:person_PER678 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Isabella Hall" .
+
+ex:person_PER777 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Nguyen" .
+
+ex:person_PER789 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Emily Johnson" .
+
+ex:person_PER888 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Russell" .
+
+ex:person_PER901 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Sophia Taylor" .
+
+ex:person_PER999 a ex:Person ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Sanders" .
+
+ex:professor_PRO012 a ex:Professor ;
+    ex:name "Sarah Johnson" ;
+    ex:telephone "1112223333" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO0123 a ex:Professor ;
+    ex:name "Alexandra Hall" ;
+    ex:telephone "3334445555" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO0124 a ex:Professor ;
+    ex:name "Charlotte Wilson" ;
+    ex:telephone "5556667777" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO101 a ex:Professor ;
+    ex:name "Michael Brown" ;
+    ex:telephone "6667778888" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO111 a ex:Professor ;
+    ex:name "Oliver Davis" ;
+    ex:telephone "2223334444" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1111 a ex:Professor ;
+    ex:name "Hannah Miller" ;
+    ex:telephone "5558889999" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11110 a ex:Professor ;
+    ex:name "Jennifer Hall" ;
+    ex:telephone "5551234561" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11111 a ex:Professor ;
+    ex:name "Sophia Garcia" ;
+    ex:telephone "5551234560" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1112 a ex:Professor ;
+    ex:name "James Garcia" ;
+    ex:telephone "5557778888" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11120 a ex:Professor ;
+    ex:name "Sophia Rodriguez2" ;
+    ex:telephone "5551234562" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11121 a ex:Professor ;
+    ex:name "Sophia Rodriguez3" ;
+    ex:telephone "5551234563" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11122 a ex:Professor ;
+    ex:name "Sophia Rodriguez4" ;
+    ex:telephone "5551234564" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11123 a ex:Professor ;
+    ex:name "Sophia Rodriguez5" ;
+    ex:telephone "5551234565" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11124 a ex:Professor ;
+    ex:name "Sophia Rodriguez6" ;
+    ex:telephone "5551234566" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11125 a ex:Professor ;
+    ex:name "Sophia Rodriguez7" ;
+    ex:telephone "5551234570" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11126 a ex:Professor ;
+    ex:name "Sophia Rodriguez8" ;
+    ex:telephone "5551234571" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11127 a ex:Professor ;
+    ex:name "Sophia Rodriguez9" ;
+    ex:telephone "5551234572" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11128 a ex:Professor ;
+    ex:name "Sophia Rodriguez10" ;
+    ex:telephone "5551234573" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11129 a ex:Professor ;
+    ex:name "Emily Davis" ;
+    ex:telephone "5551234574" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1113 a ex:Professor ;
+    ex:name "George Lee" ;
+    ex:telephone "5559990000" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11130 a ex:Professor ;
+    ex:name "Sophia Rodriguez11" ;
+    ex:telephone "5551234575" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11131 a ex:Professor ;
+    ex:name "Sophia Rodriguez12" ;
+    ex:telephone "5551234576" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11132 a ex:Professor ;
+    ex:name "Sophia Rodriguez13" ;
+    ex:telephone "5551234577" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11133 a ex:Professor ;
+    ex:name "Sophia Rodriguez14" ;
+    ex:telephone "5551234578" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11134 a ex:Professor ;
+    ex:name "Sophia Rodriguez16" ;
+    ex:telephone "5551234580" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11135 a ex:Professor ;
+    ex:name "Emily Martin" ;
+    ex:telephone "5551234594" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO11136 a ex:Professor ;
+    ex:name "Emily Brown" ;
+    ex:telephone "5551234595" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1114 a ex:Professor ;
+    ex:name "Olivia Martinez" ;
+    ex:telephone "5551234567" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1115 a ex:Professor ;
+    ex:name "Amelia Rodriguez" ;
+    ex:telephone "5554448888" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1116 a ex:Professor ;
+    ex:name "Samantha Thompson" ;
+    ex:telephone "5551237890" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1117 a ex:Professor ;
+    ex:name "Sophia Patel" ;
+    ex:telephone "5554449999" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1118 a ex:Professor ;
+    ex:name "Samantha White" ;
+    ex:telephone "5551234568" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1119 a ex:Professor ;
+    ex:name "Sophia Rodriguez" ;
+    ex:telephone "5551234569" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO123 a ex:Professor ;
+    ex:name "John Doe" ;
+    ex:telephone "1234567890" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO1234 a ex:Professor ;
+    ex:name "Samantha Jones" ;
+    ex:telephone "5551113333" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO234 a ex:Professor ;
+    ex:name "William Lewis" ;
+    ex:telephone "7778889999" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO345 a ex:Professor ;
+    ex:name "Elizabeth Harris" ;
+    ex:telephone "6789012345" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO456 a ex:Professor ;
+    ex:name "Emily Chen" ;
+    ex:telephone "5551112222" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO555 a ex:Professor ;
+    ex:name "Sophia Taylor" ;
+    ex:telephone "8889990000" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO678 a ex:Professor ;
+    ex:name "Kevin Martin" ;
+    ex:telephone "9990001111" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67810 a ex:Professor ;
+    ex:name "Sophia Rodriguez15" ;
+    ex:telephone "5551234579" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67811 a ex:Professor ;
+    ex:name "Sophia Rodriguez17" ;
+    ex:telephone "5551234581" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67812 a ex:Professor ;
+    ex:name "Sophia Rodriguez20" ;
+    ex:telephone "5551234582" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67813 a ex:Professor ;
+    ex:name "Sophia Rodriguez18" ;
+    ex:telephone "5551234583" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67814 a ex:Professor ;
+    ex:name "Sophia Rodriguez19" ;
+    ex:telephone "5551234584" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67815 a ex:Professor ;
+    ex:name "Sophia Rodriguez21" ;
+    ex:telephone "5551234585" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67816 a ex:Professor ;
+    ex:name "Sophia Rodriguez22" ;
+    ex:telephone "5551234586" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67817 a ex:Professor ;
+    ex:name "Sophia Rodriguez23" ;
+    ex:telephone "5551234590" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67818 a ex:Professor ;
+    ex:name "Sophia Rodriguez24" ;
+    ex:telephone "5551234587" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67819 a ex:Professor ;
+    ex:name "Sophia Rodriguez25" ;
+    ex:telephone "5551234591" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67820 a ex:Professor ;
+    ex:name "Sophia Rodriguez26" ;
+    ex:telephone "5551234592" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67821 a ex:Professor ;
+    ex:name "Sophia Rodriguez27" ;
+    ex:telephone "5551234593" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67822 a ex:Professor ;
+    ex:name "Emily Taylor" ;
+    ex:telephone "5551234596" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67823 a ex:Professor ;
+    ex:name "Sophia Rodriguez28" ;
+    ex:telephone "5551234597" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67824 a ex:Professor ;
+    ex:name "Sophia Rodriguez29" ;
+    ex:telephone "5551234598" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67825 a ex:Professor ;
+    ex:name "Sophia Rodriguez30" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67826 a ex:Professor ;
+    ex:name "Sophia Rodriguez31" ;
+    ex:telephone "5551234601" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67827 a ex:Professor ;
+    ex:name "Sophia Rodriguez46" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67828 a ex:Professor ;
+    ex:name "Sophia Rodriguez46" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67829 a ex:Professor ;
+    ex:name "Sophia Rodriguez51" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67830 a ex:Professor ;
+    ex:name "Emily Williams",
+        "Emily Wilson",
+        "Julia Rodriguez",
+        "Sophia Rodriguez32",
+        "Sophia Rodriguez33",
+        "Sophia Rodriguez34",
+        "Sophia Rodriguez35",
+        "Sophia Rodriguez36",
+        "Sophia Rodriguez37",
+        "Sophia Rodriguez38",
+        "Sophia Rodriguez40",
+        "Sophia Rodriguez41",
+        "Sophia Rodriguez42",
+        "Sophia Rodriguez43",
+        "Sophia Rodriguez44",
+        "Sophia Rodriguez45",
+        "Sophia Rodriguez51" ;
+    ex:telephone "5551234590",
+        "5551234599",
+        "5551234600",
+        "5551234602",
+        "5551234603",
+        "5551234604",
+        "5551234605",
+        "5551234606",
+        "5551234607",
+        "5551234608",
+        "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67831 a ex:Professor ;
+    ex:name "Sophia Rodriguez55" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67832 a ex:Professor ;
+    ex:name "Sophia Rodriguez32" ;
+    ex:telephone "5551234592" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67833 a ex:Professor ;
+    ex:name "Ava Moreno" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67834 a ex:Professor ;
+    ex:name "Isabella Gonzalez" ;
+    ex:telephone "5551234606" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67835 a ex:Professor ;
+    ex:name "Sophia Rodriguez56" ;
+    ex:telephone "5551234606" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67836 a ex:Professor ;
+    ex:name "Sophia Rodriguez57" ;
+    ex:telephone "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67837 a ex:Professor ;
+    ex:name "Sophia Rodriguez61" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67838 a ex:Professor ;
+    ex:name "Sophia Rodriguez59" ;
+    ex:telephone "5551234596" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67839 a ex:Professor ;
+    ex:name "Sophia Rodriguez63" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67840 a ex:Professor ;
+    ex:name "Sophia Rodriguez59" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67841 a ex:Professor ;
+    ex:name "Sophia Rodriguez48" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67842 a ex:Professor ;
+    ex:name "Sophia Rodriguez49" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67843 a ex:Professor ;
+    ex:name "Sophia Rodriguez51" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67844 a ex:Professor ;
+    ex:name "Sophia Rodriguez53" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67845 a ex:Professor ;
+    ex:name "Sophia Rodriguez54" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67846 a ex:Professor ;
+    ex:name "Sophia Rodriguez51" ;
+    ex:telephone "5551234588" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67847 a ex:Professor ;
+    ex:name "Sophia Rodriguez63" ;
+    ex:telephone "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67848 a ex:Professor ;
+    ex:name "Sophia Rodriguez62" ;
+    ex:telephone "5551234600" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67849 a ex:Professor ;
+    ex:name "Sophia Rodriguez57" ;
+    ex:telephone "5551234590" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67850 a ex:Professor ;
+    ex:name "Sophia Rodriguez63" ;
+    ex:telephone "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67851 a ex:Professor ;
+    ex:name "Sophia Rodriguez63" ;
+    ex:telephone "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO67852 a ex:Professor ;
+    ex:name "Sophia Rodriguez64" ;
+    ex:telephone "5551234609" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO6789 a ex:Professor ;
+    ex:name "Emily Walker" ;
+    ex:telephone "5559012345" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO789 a ex:Professor ;
+    ex:name "Jane Smith" ;
+    ex:telephone "9876543210" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:professor_PRO901 a ex:Professor ;
+    ex:name "David White" ;
+    ex:telephone "4445556666" ;
+    ex:worksFor ex:department_ENG456 .
+
+ex:student_1 a ex:Student ;
+    ex:name "Emily Wilson" .
+
+ex:student_2 a ex:Student ;
+    ex:advisor ex:faculty_FAC123 ;
+    ex:name "Ava Lee" ;
+    ex:takesCourse ex:course_COUR456 .
+
+ex:student_STU001 a ex:Student ;
+    ex:emailAddress "johndoe@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" .
+
+ex:student_STU012 a ex:Student ;
+    ex:emailAddress "ethanhall@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ethan Hall" .
+
+ex:student_STU0123 a ex:Student ;
+    ex:emailAddress "avamorales@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Morales" .
+
+ex:student_STU0124 a ex:Student ;
+    ex:emailAddress "avataylor@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Taylor" .
+
+ex:student_STU0125 a ex:Student ;
+    ex:emailAddress "evelynwalker@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Evelyn Walker" .
+
+ex:student_STU0126 a ex:Student ;
+    ex:emailAddress "avakim@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Kim" .
+
+ex:student_STU0127 a ex:Student ;
+    ex:emailAddress "avagarcia@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Garcia" .
+
+ex:student_STU0130 a ex:Student ;
+    ex:emailAddress "avarussell@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU014 a ex:Student ;
+    ex:emailAddress "avabrooks@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Brooks" .
+
+ex:student_STU015 a ex:Student ;
+    ex:emailAddress "avasanchez@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Sanchez" .
+
+ex:student_STU016 a ex:Student ;
+    ex:emailAddress "avanguyen@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Nguyen" .
+
+ex:student_STU017 a ex:Student ;
+    ex:emailAddress "julianlee@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julian Lee" .
+
+ex:student_STU018 a ex:Student ;
+    ex:emailAddress "avarussell123@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU019 a ex:Student ;
+    ex:emailAddress "avarussell2@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU020 a ex:Student ;
+    ex:emailAddress "avarussell4@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU021 a ex:Student ;
+    ex:emailAddress "avarussell5@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU022 a ex:Student ;
+    ex:emailAddress "avarussell6@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU023 a ex:Student ;
+    ex:emailAddress "julianhall@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julian Hall" .
+
+ex:student_STU024 a ex:Student ;
+    ex:emailAddress "avarussell7@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU025 a ex:Student ;
+    ex:emailAddress "avarussell8@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU026 a ex:Student ;
+    ex:emailAddress "avarussell9@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU027 a ex:Student ;
+    ex:emailAddress "avarussell11@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU028 a ex:Student ;
+    ex:emailAddress "avarussell12@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU029 a ex:Student ;
+    ex:emailAddress "avarussell3@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU031 a ex:Student ;
+    ex:emailAddress "avarussell10@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU032 a ex:Student ;
+    ex:emailAddress "juliakim@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julia Kim" .
+
+ex:student_STU033 a ex:Student ;
+    ex:emailAddress "avarussell13@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU034 a ex:Student ;
+    ex:emailAddress "avarussell14@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU035 a ex:Student ;
+    ex:emailAddress "avarussell15@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU036 a ex:Student ;
+    ex:emailAddress "avarussell16@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU037 a ex:Student ;
+    ex:emailAddress "avarussell17@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU038 a ex:Student ;
+    ex:emailAddress "avarussell18@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU039 a ex:Student ;
+    ex:emailAddress "avarussell19@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU040 a ex:Student ;
+    ex:emailAddress "johndoe123@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" .
+
+ex:student_STU041 a ex:Student ;
+    ex:emailAddress "avarussell20@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU042 a ex:Student ;
+    ex:emailAddress "avarussell21@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU043 a ex:Student ;
+    ex:emailAddress "avarussell22@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU044 a ex:Student ;
+    ex:emailAddress "avarussell23@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Ava Russell" .
+
+ex:student_STU045 a ex:Student ;
+    ex:emailAddress "juliansanchez@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julian Sanchez" .
+
+ex:student_STU046 a ex:Student ;
+    ex:emailAddress "johndoe1234@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" .
+
+ex:student_STU101 a ex:Student ;
+    ex:emailAddress "miadavis@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Mia Davis" .
+
+ex:student_STU111 a ex:Student ;
+    ex:emailAddress "isabellamartin@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Isabella Martin" .
+
+ex:student_STU123 a ex:Student ;
+    ex:emailAddress "johndoe@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "John Doe" .
+
+ex:student_STU456 a ex:Student ;
+    ex:emailAddress "sophia.patel@har789.edu" ;
+    ex:memberOf ex:department_ENG123 ;
+    ex:name "Sophia Patel" .
+
+ex:student_STU789 a ex:Student ;
+    ex:emailAddress "oliviabrown@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Olivia Brown" .
+
+ex:student_STU901 a ex:Student ;
+    ex:emailAddress "juliawhite@har789.edu" ;
+    ex:memberOf ex:department_ENG456 ;
+    ex:name "Julia White" .
+
+ex:undergrad_student_1 a ex:UndergraduateStudent ;
+    ex:name "Emily Chen" .
+
+ex:undergrad_student_2 a ex:UndergraduateStudent ;
+    ex:name "Sophia Lee" .
+
+ex:undergrad_student_3 a ex:UndergraduateStudent ;
+    ex:name "Olivia Brown" .
+
+ex:undergrad_student_4 a ex:UndergraduateStudent ;
+    ex:name "Ava Kim" .
+
+ex:undergrad_student_5 a ex:UndergraduateStudent ;
+    ex:name "Mia Davis" .
+
+ex:undergrad_student_UGS6 a ex:UndergraduateStudent ;
+    ex:name "Isabella Hall" .
+
+ex:department_ENG123 a ex:Department ;
+    ex:name "Computer Science" ;
+    ex:subOrganizationOf ex:university_HAR789 .
+
+ex:faculty_FAC123 a ex:Faculty ;
+    ex:name "Professor Ryan Thompson" ;
+    ex:teacherOf ex:course_COUR456 .
+
+ex:course_COUR456 a ex:Course ;
+    ex:name "Introduction to Computer Science" .
+
+ex:university_HAR789 a ex:University ;
+    ex:name "Harvard University" .
+
+ex:department_ENG456 a ex:Department ;
+    ex:name "Computer Engineering",
+        "Electrical Engineering",
+        "Engineering",
+        "Mechanical Engineering" ;
+    ex:subOrganizationOf ex:university_HAR789 .
+

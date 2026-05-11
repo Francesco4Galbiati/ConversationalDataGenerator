@@ -1,0 +1,1092 @@
+@prefix ex: <http://example.org/> .
+@prefix ns1: <http://example.org/#> .
+
+ex:change_CH001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-06-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RC001 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-06 to address vulnerability" .
+
+ex:change_CH002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-11-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-23 to address vulnerability" .
+
+ex:change_CH005 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-07 and modified firewall rule to allow external traffic" .
+
+ex:change_CH006 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-07" .
+
+ex:change_CH007 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-08 to address vulnerability" .
+
+ex:change_CH008 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV123 ;
+    ns1:description "Applied security patch KB2023-09 to address vulnerability" .
+
+ex:change_CH009 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV123 ;
+    ns1:description "Applied security patch KB2023-10 to address vulnerability" .
+
+ex:change_CH010 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-11-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RC123 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-11 to address vulnerability" .
+
+ex:change_CH011 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-12-01T10:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-12 to address vulnerability" .
+
+ex:change_CH013 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-20T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-13 to address vulnerability" .
+
+ex:change_CH014 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RC001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-14 to address vulnerability" .
+
+ex:change_CH015 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RC001 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-15 to address vulnerability" .
+
+ex:change_CH016 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-20T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RC001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-16 to address vulnerability" .
+
+ex:change_CH017 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-11-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-17 to address vulnerability" .
+
+ex:change_CH018 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-11-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-18 to address vulnerability" .
+
+ex:change_CH019 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-19 to address vulnerability" .
+
+ex:change_CH020 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-10-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-20 to address vulnerability" .
+
+ex:change_CH021 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-21 to address vulnerability" .
+
+ex:change_CH022 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA006 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-22 to address vulnerability" .
+
+ex:change_CH023 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-12-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RA012 ;
+    ns1:correlatedNotifications ex:event_EV127 ;
+    ns1:description "Applied security patch KB2023-24 to address vulnerability" .
+
+ex:change_INT001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV123 ;
+    ns1:description "Applied security patch KB2023-07 to address vulnerability" .
+
+ex:change_INT002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV123 ;
+    ns1:description "Modified firewall rule to allow external traffic" .
+
+ex:change_INT003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-07 and modified firewall rule to allow external traffic" .
+
+ex:change_INT004 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RV001 ;
+    ns1:correlatedNotifications ex:event_EV124 ;
+    ns1:description "Applied security patch KB2023-07 and modified firewall rule to allow external traffic" .
+
+ex:log_LG001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RS045 ;
+    ns1:logText "Routine maintenance completed." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Backup completed successfully." ;
+    ns1:loggingTime "2026-05-06T14:23:00Z" .
+
+ex:log_LG003 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 health check passed." ;
+    ns1:loggingTime "2023-09-15T10:23:00Z" .
+
+ex:log_LG004 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 performance metrics recorded." ;
+    ns1:loggingTime "2026-05-06T14:30:00Z" .
+
+ex:log_LG005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 configuration updated." ;
+    ns1:loggingTime "2023-09-15T10:23:00Z" .
+
+ex:log_LG006 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 accessed by user admin." ;
+    ns1:loggingTime "2026-05-05T14:30:00Z" .
+
+ex:log_LG007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Security audit completed." ;
+    ns1:loggingTime "2026-05-05T14:30:00Z" .
+
+ex:log_LG008 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Configuration backup initiated." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z" .
+
+ex:log_LG009 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 firmware upgrade applied." ;
+    ns1:loggingTime "2026-05-05T14:23:00Z" .
+
+ex:log_LG010 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 log retrieval performed." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG011 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 diagnostic report generated." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 security scan completed." ;
+    ns1:loggingTime "2026-05-06T14:23:00Z" .
+
+ex:log_LG013 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 operational status recorded." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG014 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:logText "Resource RV001 log entry retrieved." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z" .
+
+ex:log_LG015 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA003 ;
+    ns1:logText "Resource RA003 configuration backup completed." ;
+    ns1:loggingTime "2026-05-06T14:30:00Z" .
+
+ex:log_LG016 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RC001 ;
+    ns1:logText "Resource RC001 configuration backup completed." ;
+    ns1:loggingTime "2026-05-05T14:30:00Z" .
+
+ex:log_LG017 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RC001 ;
+    ns1:logText "Resource RC001 health check performed." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG018 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RC001 ;
+    ns1:logText "Resource RC001 accessed by user admin." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z" .
+
+ex:log_LG019 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RC001 ;
+    ns1:logText "Resource RC001 security scan completed." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z" .
+
+ex:log_LG020 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006 ;
+    ns1:logText "Resource RA006 configuration backup completed." ;
+    ns1:loggingTime "2026-05-06T14:30:00Z" .
+
+ex:log_LG021 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006 ;
+    ns1:logText "Resource RA006 health check performed.",
+        "Resource RA006 security scan completed." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z",
+        "2026-05-06T14:30:00Z" .
+
+ex:log_LG022 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006 ;
+    ns1:logText "Resource RA006 firmware update applied." ;
+    ns1:loggingTime "2026-05-05T14:30:00Z" .
+
+ex:log_LG023 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006 ;
+    ns1:logText "Resource RA006 performance metrics recorded." ;
+    ns1:loggingTime "2026-05-06T10:15:00Z" .
+
+ex:log_LG024 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006 ;
+    ns1:logText "Resource RA006 security scan completed." ;
+    ns1:loggingTime "2026-05-06T12:34:56Z" .
+
+ex:log_LG025 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RA006,
+        ex:resource_RA011 ;
+    ns1:logText "Resource RA006 log entry retrieved.",
+        "Resource RA011 configuration backup completed." ;
+    ns1:loggingTime "2026-05-05T14:30:00Z",
+        "2026-05-06T12:34:56Z" .
+
+ex:resource_RA001 a ns1:Resource ;
+    ns1:resourceHostName "host-02" ;
+    ns1:resourceSerialNumber "SN-2023002" ;
+    ns1:resourceType "server" ;
+    ns1:resourceUsageState "active" .
+
+ex:resource_RA002 a ns1:Resource ;
+    ns1:label "DataWarehouse" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA004 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RA005 a ns1:Resource ;
+    ns1:label "SharedArchive" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA007 a ns1:Resource ;
+    ns1:label "SharedAnalytics" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA008 a ns1:Resource ;
+    ns1:label "SharedInsights" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA009 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA010 a ns1:Resource ;
+    ns1:label "SharedReporting" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RB001 a ns1:Resource ;
+    ns1:label "SharedDatabase" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RC124 a ns1:Resource ;
+    ns1:label "SharedFileSystem" ;
+    ns1:structuralElementObservable ex:metric_MT124 ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RC200 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RC300 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RD001 a ns1:Resource ;
+    ns1:label "SharedSearch" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RD002 a ns1:Resource ;
+    ns1:label "SharedTelemetry" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RG001 a ns1:Resource ;
+    ns1:label "LoggingService" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RG002 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RU001 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_SV002 .
+
+ex:resource_RW002 a ns1:Resource ;
+    ns1:label "SharedQueue" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RX001 a ns1:Resource ;
+    ns1:label "AnalyticsEngine" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RX002 a ns1:Resource ;
+    ns1:label "EventStream" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RX003 a ns1:Resource ;
+    ns1:label "AuditLogService" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RY001 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RZ001 a ns1:Resource ;
+    ns1:label "MetricsService" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_SB001 a ns1:Resource ;
+    ns1:label "SharedBlob" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_SB003 a ns1:Resource ;
+    ns1:label "NotificationService" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:service_AB123 a ns1:Service ;
+    ns1:elementManagedBy "TeamDelta" ;
+    ns1:label "ReportingService" ;
+    ns1:serviceType "Internal" .
+
+ex:service_GH567 a ns1:Service ;
+    ns1:elementManagedBy "TeamIota" ;
+    ns1:label "RecommendationService" ;
+    ns1:serviceType "MachineLearning" .
+
+ex:service_JK004 a ns1:Service ;
+    ns1:elementManagedBy "TeamZeta" ;
+    ns1:label "SecurityService" ;
+    ns1:serviceType "Security" .
+
+ex:service_LM456 a ns1:Service ;
+    ns1:elementManagedBy "TeamEpsilon" ;
+    ns1:label "UserEngagementService" ;
+    ns1:serviceType "Microservice" .
+
+ex:service_NY001 a ns1:Service ;
+    ns1:elementManagedBy "TeamSigma" ;
+    ns1:label "InventoryService" ;
+    ns1:serviceType "Backend" .
+
+ex:service_OP789 a ns1:Service ;
+    ns1:elementManagedBy "TeamOmega" ;
+    ns1:label "ComplianceService" ;
+    ns1:serviceType "Compliance" .
+
+ex:service_QW123 a ns1:Service ;
+    ns1:elementManagedBy "TeamTheta" ;
+    ns1:label "BillingService" ;
+    ns1:serviceType "Financial" .
+
+ex:service_RC202 a ns1:Service ;
+    ns1:elementManagedBy "TeamKappa" ;
+    ns1:label "LocalizationService" ;
+    ns1:serviceType "Microservice" .
+
+ex:service_SV003 a ns1:Service ;
+    ns1:elementManagedBy "TeamGamma" ;
+    ns1:label "CustomerSupportService" ;
+    ns1:serviceType "Support" .
+
+ex:service_TR789 a ns1:Service ;
+    ns1:elementManagedBy "TeamLambda" ;
+    ns1:label "PerformanceMonitoringService" ;
+    ns1:serviceType "Monitoring" .
+
+ex:trouble_ticket_IN045 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN046 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN047 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN048 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN049 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN050 a ns1:TroubleTicket .
+
+ex:trouble_ticket_TT001 a ns1:TroubleTicket ;
+    ns1:description "Issue reported for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_AP001,
+        ex:managed_element_AP002,
+        ex:managed_element_AP003,
+        ex:managed_element_HW001,
+        ex:managed_element_HW002,
+        ex:managed_element_HW004,
+        ex:managed_element_HW005,
+        ex:managed_element_HW006,
+        ex:managed_element_HW008,
+        ex:managed_element_HW009,
+        ex:managed_element_HW010,
+        ex:managed_element_HW011,
+        ex:managed_element_HW012,
+        ex:managed_element_None,
+        ex:managed_element_SI001,
+        ex:resource_RV001 ;
+    ns1:hasPart ex:action_ACT001,
+        ex:action_ACT002 ;
+    ns1:problemCategory "Authentication Issue",
+        "Backup Failure",
+        "Capacity Planning Issue",
+        "Configuration Error",
+        "Data Corruption",
+        "Hardware Failure",
+        "Integration Failure",
+        "License Expiration",
+        "Network Outage",
+        "Performance Degradation",
+        "Power Failure",
+        "Security Incident",
+        "Software Bug",
+        "Third-Party Service Failure",
+        "User Error" ;
+    ns1:problemResponsibility "Backup Team",
+        "Development Team",
+        "Engineering Team",
+        "Facilities Team",
+        "IT Operations",
+        "IT Support",
+        "Infrastructure Team",
+        "Network Operations Team",
+        "Operations Team",
+        "Support Team",
+        "Vendor",
+        "Vendor Support Team" ;
+    ns1:relation ex:event_EV123,
+        ex:event_EV124,
+        ex:event_EV127,
+        ex:event_EV128,
+        ex:event_EV129,
+        ex:event_EV130,
+        ex:event_EV132,
+        ex:event_EV133,
+        ex:event_EV134,
+        ex:event_EV135 .
+
+ex:trouble_ticket_TT002 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket opened for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_HW001,
+        ex:resource_RV001 ;
+    ns1:notes "Issue resolved by resetting router configuration and monitoring for stability." ;
+    ns1:problemCategory "Configuration Error" ;
+    ns1:problemResponsibility "IT Operations" ;
+    ns1:relation ex:event_EV125,
+        ex:event_EV126 ;
+    ns1:troubleTicketCause "Network outage due to misconfigured router" ;
+    ns1:troubleTicketStatusCurrent "closed" .
+
+ex:trouble_ticket_TT003 a ns1:TroubleTicket ;
+    ns1:description "New trouble ticket created for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_HW006,
+        ex:resource_RV001 .
+
+ex:trouble_ticket_TT004 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket generated for resource RV001" ;
+    ns1:eventRelatedElement ex:resource_RV001 ;
+    ns1:relation ex:event_EV131 .
+
+ex:trouble_ticket_TT005 a ns1:TroubleTicket ;
+    ns1:description "Support ticket initiated for resource RV001" ;
+    ns1:eventRelatedElement ex:resource_RV001 ;
+    ns1:problemCategory "Network Outage" ;
+    ns1:problemResponsibility "Network Operations Team" .
+
+ex:trouble_ticket_TT006 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket logged for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_HW003,
+        ex:resource_RV001 .
+
+ex:trouble_ticket_TT007 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket filed for resource RV001" ;
+    ns1:eventRelatedElement ex:resource_RV001 .
+
+ex:trouble_ticket_TT008 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket started for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_HW007,
+        ex:managed_element_HW013,
+        ex:resource_RV001 ;
+    ns1:problemCategory "Database Migration Error" ;
+    ns1:problemResponsibility "Database Team" .
+
+ex:trouble_ticket_TT009 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket raised for resource RV001" ;
+    ns1:eventRelatedElement ex:resource_RV001 .
+
+ex:trouble_ticket_TT010 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket submitted for resource RV001" ;
+    ns1:eventRelatedElement ex:managed_element_HW014,
+        ex:managed_element_None,
+        ex:resource_RV001 .
+
+ex:trouble_ticket_TT011 a ns1:TroubleTicket ;
+    ns1:description "Support ticket opened for resource RV001" ;
+    ns1:eventRelatedElement ex:resource_RV001 .
+
+ex:trouble_ticket_TT012 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket opened for resource RA003" ;
+    ns1:eventRelatedElement ex:resource_RA003 .
+
+ex:trouble_ticket_TT013 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket opened for resource RC001" ;
+    ns1:eventRelatedElement ex:resource_RC001 .
+
+ex:trouble_ticket_TT014 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket created for resource RC001" ;
+    ns1:eventRelatedElement ex:resource_RC001 .
+
+ex:trouble_ticket_TT015 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket created for resource RC001" ;
+    ns1:eventRelatedElement ex:resource_RC001 .
+
+ex:trouble_ticket_TT016 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket opened for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT017 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket created for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT018 a ns1:TroubleTicket ;
+    ns1:description "Support ticket opened for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT019 a ns1:TroubleTicket ;
+    ns1:description "Initial trouble ticket created for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT020 a ns1:TroubleTicket ;
+    ns1:description "Trouble ticket opened for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT021 a ns1:TroubleTicket ;
+    ns1:description "Issue logged for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:trouble_ticket_TT022 a ns1:TroubleTicket ;
+    ns1:description "New trouble ticket opened for resource RA006" ;
+    ns1:eventRelatedElement ex:resource_RA006 .
+
+ex:action_ACT001 a ns1:ProcedureExecution ;
+    ns1:description "Replaced the faulty network switch, applied the latest firmware update, and verified connectivity." ;
+    ns1:madeBy ex:agent_AGT001 ;
+    ns1:operationPlanPostCondition "ACT001 aims to eliminate the malfunction and reestablish stable, regular system performance.",
+        "ACT001 is designed to resolve the problem, bringing the system back to its regular performance and stability.",
+        "ACT001 is expected to fix the identified fault, reestablishing normal functionality and system stability.",
+        "ACT001 is intended to address the fault, leading to normal system behavior and stability.",
+        "ACT001 is projected to resolve the fault, returning the system to its normal operational state and stability.",
+        "ACT001 should eliminate the fault, restore normal performance, and ensure system stability.",
+        "Executing ACT001 is anticipated to correct the fault, stabilizing the system and returning it to normal operation.",
+        "It should bring the system back to normal operation and maintain stability.",
+        "Running ACT001 should repair the problem, returning the system to its usual operational state and stability.",
+        "The action is anticipated to correct the issue, reestablish normal functionality and ensure system stability.",
+        "The action is anticipated to restore normal functionality and maintain system reliability.",
+        "The action is anticipated to restore normal operation and system stability.",
+        "The action is anticipated to restore normal system behavior and maintain operational reliability.",
+        "The action is expected to restore normal operation, eliminate the fault, and ensure system stability.",
+        "The action should bring the system back to its usual functioning and maintain reliability.",
+        "The action should restore normal functionality and ensure system reliability.",
+        "The action will mitigate the fault and bring the system back to stable operation.",
+        "The corrective action is expected to resolve the identified issue and restore normal system operation." .
+
+ex:action_ACT002 a ns1:ProcedureExecution ;
+    ns1:description "Configured VLAN settings and updated the routing protocol on the affected switch." ;
+    ns1:madeBy ex:agent_AGT002 .
+
+ex:agent_AG001 a ns1:Agent ;
+    ns1:role "automated_system" .
+
+ex:agent_AG002 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_AG003 a ns1:Agent ;
+    ns1:role "sensor" .
+
+ex:agent_AG004 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG005 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_AG006 a ns1:Agent ;
+    ns1:role "monitor" .
+
+ex:agent_AG007 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_AG008 a ns1:Agent ;
+    ns1:role "monitor" .
+
+ex:agent_AG009 a ns1:Agent ;
+    ns1:role "security analyst" .
+
+ex:agent_AG010 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_AG011 a ns1:Agent ;
+    ns1:role "monitor" .
+
+ex:agent_AG012 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG013 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG014 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG015 a ns1:Agent ;
+    ns1:role "system_process" .
+
+ex:agent_AG016 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG017 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_AG018 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG019 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AG020 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_AGT001 a ns1:Agent ;
+    ns1:label "Alice Smith" .
+
+ex:agent_AGT002 a ns1:Agent ;
+    ns1:label "Bob Johnson" .
+
+ex:agent_BX001 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_OR001 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ZX001 a ns1:Agent ;
+    ns1:role "automated system" .
+
+ex:event_AA001 a ns1:EventRecord .
+
+ex:event_AB123 a ns1:EventRecord .
+
+ex:event_AB124 a ns1:EventRecord .
+
+ex:event_CD212 a ns1:EventRecord .
+
+ex:event_CE001 a ns1:EventRecord .
+
+ex:event_CE002 a ns1:EventRecord .
+
+ex:event_CE003 a ns1:EventRecord .
+
+ex:event_CE004 a ns1:EventRecord .
+
+ex:event_CE005 a ns1:EventRecord .
+
+ex:event_CE006 a ns1:EventRecord .
+
+ex:event_CE007 a ns1:EventRecord .
+
+ex:event_CE008 a ns1:EventRecord .
+
+ex:event_CE009 a ns1:EventRecord .
+
+ex:event_CE010 a ns1:EventRecord .
+
+ex:event_CE011 a ns1:EventRecord .
+
+ex:event_CF123 a ns1:EventRecord .
+
+ex:event_CG001 a ns1:EventRecord .
+
+ex:event_CH001 a ns1:EventRecord .
+
+ex:event_CJ001 a ns1:EventRecord .
+
+ex:event_CK001 a ns1:EventRecord .
+
+ex:event_CM001 a ns1:EventRecord .
+
+ex:event_DX001 a ns1:EventRecord .
+
+ex:event_EV125 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV126 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T09:30:00Z" .
+
+ex:event_EV128 a ns1:EventRecord ;
+    ns1:logOriginatingAgent ex:agent_AG013 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_AB124 .
+
+ex:event_EV129 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV130 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T09:30:00Z" ;
+    ns1:relation ex:event_JK001 .
+
+ex:event_EV131 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T09:30:00Z" .
+
+ex:event_EV132 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV133 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV134 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV135 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_FY123 a ns1:EventRecord .
+
+ex:event_GR001 a ns1:EventRecord .
+
+ex:event_JK001 a ns1:EventRecord .
+
+ex:event_LM045 a ns1:EventRecord .
+
+ex:event_XZ001 a ns1:EventRecord .
+
+ex:managed_element_AP001 a ns1:ManagedElement .
+
+ex:managed_element_AP002 a ns1:ManagedElement .
+
+ex:managed_element_AP003 a ns1:ManagedElement .
+
+ex:managed_element_HW002 a ns1:ManagedElement .
+
+ex:managed_element_HW003 a ns1:ManagedElement .
+
+ex:managed_element_HW004 a ns1:ManagedElement .
+
+ex:managed_element_HW005 a ns1:ManagedElement .
+
+ex:managed_element_HW007 a ns1:ManagedElement .
+
+ex:managed_element_HW008 a ns1:ManagedElement .
+
+ex:managed_element_HW009 a ns1:ManagedElement .
+
+ex:managed_element_HW010 a ns1:ManagedElement .
+
+ex:managed_element_HW011 a ns1:ManagedElement .
+
+ex:managed_element_HW012 a ns1:ManagedElement .
+
+ex:managed_element_HW013 a ns1:ManagedElement .
+
+ex:managed_element_HW014 a ns1:ManagedElement .
+
+ex:managed_element_SI001 a ns1:ManagedElement .
+
+ex:metric_MT001 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MT002 a ns1:Metric ;
+    ns1:metricName "CPU_Utilization" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MT005 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MT123 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MT124 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MT456 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MT789 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MX001 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MX002 a ns1:Metric ;
+    ns1:metricName "Temperature" ;
+    ns1:metricValue "72°F" .
+
+ex:metric_MX003 a ns1:Metric ;
+    ns1:metricName "CPU_Utilization" ;
+    ns1:metricValue "68%" .
+
+ex:metric_MX004 a ns1:Metric ;
+    ns1:metricName "CPU_Utilization" ;
+    ns1:metricValue "73%" .
+
+ex:pattern_NP001 a ns1:AnomalyPattern ;
+    ns1:label "Event EV124 does not correspond to any known alarm pattern." .
+
+ex:pattern_PA001 a ns1:AnomalyPattern ;
+    ns1:label "Cooling system fault pattern" .
+
+ex:pattern_PF001 a ns1:AnomalyPattern ;
+    ns1:label "Temperature sensor failure" .
+
+ex:pattern_PF002 a ns1:AnomalyPattern ;
+    ns1:label "Overheating sensor failure pattern" .
+
+ex:pattern_PF003 a ns1:AnomalyPattern ;
+    ns1:label "Pattern not identified for this event" .
+
+ex:pattern_PF004 a ns1:AnomalyPattern ;
+    ns1:label "Voltage fluctuation anomaly pattern" .
+
+ex:pattern_PF005 a ns1:AnomalyPattern ;
+    ns1:label "Power supply irregularity pattern" .
+
+ex:pattern_PF006 a ns1:AnomalyPattern ;
+    ns1:label "Hydraulic pressure loss pattern" .
+
+ex:pattern_PX001 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected voltage drop pattern" .
+
+ex:pattern_PX002 a ns1:AnomalyPattern ;
+    ns1:label "No matching failure pattern found for event EV127." .
+
+ex:pattern_PX003 a ns1:AnomalyPattern ;
+    ns1:label "Valve malfunction detection pattern" .
+
+ex:pattern_PX004 a ns1:AnomalyPattern ;
+    ns1:label "Failure pattern not identified for event EV127." .
+
+ex:pattern_PX005 a ns1:AnomalyPattern ;
+    ns1:label "Battery degradation pattern" .
+
+ex:plan_OPL001 a ns1:OperationPlan ;
+    ns1:description "Deploy containment team to secure perimeter, initiate system diagnostics, and execute rollback to the last stable configuration." ;
+    ns1:operationPlanPostCondition "Event resolved with minimal downtime and no data loss." .
+
+ex:plan_OPL002 a ns1:OperationPlan ;
+    ns1:description "Isolate affected subsystem, apply security patch, and perform integrity verification." ;
+    ns1:operationPlanPostCondition "Restores system stability, eliminates vulnerability, and returns operations to normal." .
+
+ex:plan_OPL003 a ns1:OperationPlan ;
+    ns1:description "Quarantine affected module, run forensic analysis, and implement corrective configuration update." ;
+    ns1:operationPlanPostCondition "System returns to normal operation with no residual threats." .
+
+ex:plan_OPL004 a ns1:OperationPlan ;
+    ns1:description "Deploy emergency response team to isolate the compromised node, apply security patch, and verify system integrity." ;
+    ns1:operationPlanPostCondition "Compromised node isolated, vulnerability mitigated, and system restored to normal operation." .
+
+ex:plan_OPL005 a ns1:OperationPlan ;
+    ns1:description "Activate emergency response, isolate compromised node, apply latest security patch, and verify system integrity." ;
+    ns1:operationPlanPostCondition "Compromised node isolated, vulnerability patched, and system integrity restored." .
+
+ex:plan_OPL006 a ns1:OperationPlan ;
+    ns1:description "Initiate threat assessment, isolate affected network segment, apply emergency firmware update, and conduct post‑remediation audit." ;
+    ns1:operationPlanPostCondition "System restored to secure operational state with no residual threats." .
+
+ex:resource_RA011 a ns1:Resource ;
+    ns1:label "SharedMLModels" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RA012 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RC123 a ns1:Resource ;
+    ns1:label "SharedDatabase" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:resource_RS045 a ns1:Resource ;
+    ns1:label "CustomerData" ;
+    ns1:subSystemOf ex:service_SV001 .
+
+ex:service_SV002 a ns1:Service ;
+    ns1:elementManagedBy "TeamBeta" ;
+    ns1:label "AnalyticsService" ;
+    ns1:serviceType "backend" .
+
+ex:agent_None a ns1:Agent .
+
+ex:managed_element_HW001 a ns1:ManagedElement .
+
+ex:managed_element_HW006 a ns1:ManagedElement .
+
+ex:managed_element_None a ns1:ManagedElement .
+
+ex:resource_RA003 a ns1:Resource ;
+    ns1:label "UserProfileStore" ;
+    ns1:structuralElementObservable ex:metric_MX003 ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:pattern_None a ns1:AnomalyPattern ;
+    ns1:label "EV127 does not correspond to any defined failure pattern.",
+        "Event EV127 does not align with any registered failure pattern.",
+        "Event EV127 does not match any known failure pattern.",
+        "No applicable failure pattern identified for this event",
+        "No known failure pattern corresponds to event EV127.",
+        "No known failure pattern matches event EV124.",
+        "No matching alarm pattern found for event EV124",
+        "No matching pattern found" .
+
+ex:event_EV123 a ns1:EventRecord ;
+    ns1:alarmProposedReapairAction ex:plan_OPL001 ;
+    ns1:conformsTo ex:pattern_None,
+        ex:pattern_PF001 ;
+    ns1:logOriginatingAgent ex:agent_AG001,
+        ex:agent_AG002 ;
+    ns1:logOriginatingManagedObject ex:resource_RV001 ;
+    ns1:loggingTime "2023-07-15T10:23:45Z" ;
+    ns1:relation ex:event_CE001,
+        ex:event_CE002 .
+
+ex:event_EV124 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_NP001,
+        ex:pattern_None,
+        ex:pattern_PA001,
+        ex:pattern_PF002,
+        ex:pattern_PF003,
+        ex:pattern_PF005,
+        ex:pattern_PF006,
+        ex:pattern_PX001 ;
+    ns1:logOriginatingAgent ex:agent_AG003,
+        ex:agent_AG004,
+        ex:agent_AG005,
+        ex:agent_AG006,
+        ex:agent_AG007,
+        ex:agent_AG008,
+        ex:agent_AG009,
+        ex:agent_AG010,
+        ex:agent_AG011,
+        ex:agent_AG012,
+        ex:agent_AG015,
+        ex:agent_AG018,
+        ex:agent_BX001,
+        ex:agent_None,
+        ex:agent_OR001 ;
+    ns1:logOriginatingManagedObject ex:resource_RC001,
+        ex:resource_RV001 ;
+    ns1:loggingTime "2023-07-15T10:30:00Z" ;
+    ns1:relation ex:event_AB123,
+        ex:event_CD212,
+        ex:event_CE003,
+        ex:event_CE004,
+        ex:event_CE005,
+        ex:event_CE006,
+        ex:event_CE007,
+        ex:event_CE009,
+        ex:event_CE011,
+        ex:event_CG001,
+        ex:event_CH001,
+        ex:event_CJ001,
+        ex:event_CK001 .
+
+ex:service_SV001 a ns1:Service ;
+    ns1:elementManagedBy "TeamAlpha" ;
+    ns1:label "NewService" ;
+    ns1:serviceType "web" .
+
+ex:event_EV127 a ns1:EventRecord ;
+    ns1:alarmProposedReapairAction ex:plan_OPL002,
+        ex:plan_OPL003,
+        ex:plan_OPL004,
+        ex:plan_OPL005,
+        ex:plan_OPL006 ;
+    ns1:conformsTo ex:pattern_None,
+        ex:pattern_PF004,
+        ex:pattern_PX002,
+        ex:pattern_PX003,
+        ex:pattern_PX004,
+        ex:pattern_PX005 ;
+    ns1:logOriginatingAgent ex:agent_AG014,
+        ex:agent_AG016,
+        ex:agent_AG017,
+        ex:agent_AG019,
+        ex:agent_AG020,
+        ex:agent_None,
+        ex:agent_ZX001 ;
+    ns1:logOriginatingManagedObject ex:resource_RA006,
+        ex:resource_RV001 ;
+    ns1:loggingTime "2023-07-15T10:30:00Z" ;
+    ns1:relation ex:event_AA001,
+        ex:event_CE008,
+        ex:event_CE010,
+        ex:event_CF123,
+        ex:event_CM001,
+        ex:event_DX001,
+        ex:event_FY123,
+        ex:event_GR001,
+        ex:event_LM045,
+        ex:event_XZ001 .
+
+ex:resource_RC001 a ns1:Resource ;
+    ns1:label "SharedCache" ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:service_ZX001 a ns1:Service ;
+    ns1:elementManagedBy "TeamOmega" ;
+    ns1:label "DataProcessingService" ;
+    ns1:serviceType "Batch" .
+
+ex:resource_RA006 a ns1:Resource ;
+    ns1:label "ReportingDashboard" ;
+    ns1:structuralElementObservable ex:metric_MT002,
+        ex:metric_MT005,
+        ex:metric_MX004 ;
+    ns1:subSystemOf ex:service_ZX001 .
+
+ex:resource_RV001 a ns1:Resource ;
+    ns1:resourceHostName "host-01" ;
+    ns1:resourceSerialNumber "SN-2023001" ;
+    ns1:resourceType "server" ;
+    ns1:resourceUsageState "active" ;
+    ns1:structuralElementObservable ex:metric_MT001,
+        ex:metric_MT123,
+        ex:metric_MT456,
+        ex:metric_MT789,
+        ex:metric_MX001,
+        ex:metric_MX002 .
+
