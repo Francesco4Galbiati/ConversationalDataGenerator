@@ -5,6 +5,11 @@ This repository is structured as follows:
 - ```/one_to_one```: contains the code to execute the one-to-one conversations
   - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
   - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
+  - ```/dialogue_no_intents.py```: the dialogue function used to test the generation without intents
+  - ```/dialogue_to_triples.py```: the dialogue function used to test the generation with direct transformation of the output into RDF triples
+  - ```/dialogue_subclasses.py```: the dialogue function used to test the subclass constraints in the intents
+  - ```/dialogue_intersection.py```: the dialogue function used to test the intersection subclass in the intents
+  - ```/dialogue_disjoint.py```: the dialogue function used to test the disjointness constraints in the intents
 - ```/one_to_many```: contains the code to execute the one-to-many conversations
   - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0```
   - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b```
