@@ -2,7 +2,7 @@ import ast
 import json
 import conf
 from time import time
-from conf import dialogue_client, ops, llm, precondition_slots, redis
+from conf import dialogue_client, ops, querent_llm, witness_llm, precondition_slots, redis
 from json_repair import repair_json
 
 def gen_dialogue_turn(clear=False, n=3, triples_file=None):
@@ -127,7 +127,7 @@ def gen_dialogue_turn(clear=False, n=3, triples_file=None):
     start = time()
     dialogue = dialogue_client.chat(
         messages=conf.chat_history,
-        model=llm,
+        model=querent_llm,
         format="json",
         options={
             "temperature": 0.1,
@@ -138,7 +138,7 @@ def gen_dialogue_turn(clear=False, n=3, triples_file=None):
     while dialogue["message"]["content"] == '':
         dialogue = dialogue_client.chat(
             messages=conf.chat_history,
-            model=llm,
+            model=querent_llm,
             format="json",
             options={
                 "temperature": 0.1,
@@ -329,7 +329,7 @@ def gen_dialogue_turn(clear=False, n=3, triples_file=None):
         answerer_temperature = min(0.6, 0.3 + (0.1 * answerer_idx))
         dialogue = dialogue_client.chat(
             messages=conf.chat_history,
-            model=llm,
+            model=witness_llm,
             format="json",
             options={
                 "temperature": answerer_temperature,
@@ -340,7 +340,7 @@ def gen_dialogue_turn(clear=False, n=3, triples_file=None):
         while dialogue["message"]["content"] == "":
             dialogue = dialogue_client.chat(
                 messages=conf.chat_history,
-                model=llm,
+                model=witness_llm,
                 format="json",
                 options={
                     "temperature": answerer_temperature,

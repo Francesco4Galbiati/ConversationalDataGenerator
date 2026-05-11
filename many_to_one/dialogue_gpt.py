@@ -2,7 +2,7 @@ import ast
 import json
 import conf
 from time import time
-from conf import ops, dialogue_client, llm, precondition_slots, redis
+from conf import ops, dialogue_client, querent_llm, witness_llm, precondition_slots, redis
 from json_repair import repair_json
 
 def gen_dialogue_turn(instructions, clear = False):
@@ -126,7 +126,7 @@ def gen_dialogue_turn(instructions, clear = False):
     start = time()
     dialogue = dialogue_client.chat(
         messages=conf.chat_history,
-        model=llm,
+        model=querent_llm,
         format='json',
         options={
             'temperature': 0.1,
@@ -137,7 +137,7 @@ def gen_dialogue_turn(instructions, clear = False):
     while dialogue['message']['content'] == '' or 'Intent' not in dialogue['message']['content'] or 'Q' not in dialogue['message']['content']:
         dialogue = dialogue_client.chat(
             messages=conf.chat_history,
-            model=llm,
+            model=querent_llm,
             format='json',
             options={
                 'temperature': 0.1,
@@ -324,7 +324,7 @@ def gen_dialogue_turn(instructions, clear = False):
     start = time()
     dialogue = dialogue_client.chat(
         messages=conf.chat_history,
-        model=llm,
+        model=witness_llm,
         format='json',
         options={
             'temperature': 0.3,
@@ -335,7 +335,7 @@ def gen_dialogue_turn(instructions, clear = False):
     while dialogue['message']['content'] == '':
         dialogue = dialogue_client.chat(
             messages=conf.chat_history,
-            model=llm,
+            model=witness_llm,
             format='json',
             options={
                 'temperature': 0.3,
