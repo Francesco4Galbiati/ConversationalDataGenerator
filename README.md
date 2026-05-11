@@ -23,6 +23,8 @@ This repository is structured as follows:
   - ```/ontologies```: contains the ontologies either in RDF/XML or in RDF/Turtle
   - ```/contracts```: contains the conversational contracts derived from the ontologies
   - ```/output```: contains the output files (not present in the repository, it's created at run-time)
+- ```/output_parsing```: contains the code used ot parse the JSONL output files and transform them into valid RDF/TTL
+- ```/intent_creation```: contains the code used to transform SPARQL competency questions into intents
 - ```conf.py```: contains the configuration variables to run the data generation (see below)
 - ```functions.py```: contains the functions used in the code
 - ```main.py```: contains the entry point of the code
