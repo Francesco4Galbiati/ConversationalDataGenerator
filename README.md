@@ -34,26 +34,17 @@ This repository is structured as follows:
 To run the CDG, it's sufficient to run the ```main.py``` file.
 
 ## Customizing the generation
-```conf.py``` contains parameters that can be modified to execute CDG under different circumstances. 
-These parameters are found at the top of the file, under the ```PARAMETERS``` section.
-The following variables can be edited:
-|Variable               |Type                                                      |Effect                                                                            |Default                                          |
-|-----------------------|----------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------|
-|```contract_file```    | string                                                   | The conversational contract used to run the CDG                                  |```"resources/contracts/LUBM_contract.yaml"```   |
-|```dialogue_llm```     | string                                                   | The name of the model used to run the dialogue generation                        |```"mistral-small3.2:24b-instruct-2506-q4_K_M"```|
-|```parsing_llm```      | string                                                   | The name of the model used to run the parsing agent                              |```"qwen2.5:7b-instruct-q4_K_M"```               |
-|```conversation_type```| enum(ONE_TO_ONE, ONE_TO_MANY, MANY_TO_ONE, MANY_TO_MANY) | The type of conversation to run                                                  |```ConversationType.ONE_TO_ONE```                |
-|```target_triples```   | integer                                                  | The target number of RDF triples to generate                                     |```1000```                                       |
-|```conversation_size```| integer                                                  | The size of the conversations used in ONE_TO_ONE and ONE_TO_MANY conversations   |```25```                                         |
-|```num_of_witnesses``` | integer                                                  | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations|```3```                                          |
-|```parallelization```  | boolean                                                  | If the dialogue generation and the parsing should be asynchronous                |```False```                                      |
+Parameters used to run the code can be manually set through the command line when launching the ```main.py``` file. This is the list of the supported parameters:
+|Variable                 |Type     |Effect                                                                             |Default                        |
+|-------------------------|---------|-----------------------------------------------------------------------------------|-------------------------------|
+|```--contract```         | string  | The conversational contract used to run the CDG                                   |```"LUBM_contract.yaml"```     |
+|```--querent_model```    | string  | The name of the model used to run the querent agent                               |```"gpt-oss:120b"```           |
+|```--witness_model```    | string  | The name of the model used to run the witness agent                               |```"gpt-oss:120b"```           |
+|```--conversation```     | integer | The type of conversation to run (1: 1-to-1, 2: M-to-1, 3: 1-to-M, 4: M-to-M)      |```1```                        |
+|```--target```           | integer | The target number of RDF triples to generate                                      |```1000```                     |
+|```--model_host```       | string  | The url of the ollama instance that runs the querent and witness agents           |```"http://localhost:11434"``` |
+|```--witnesses_number``` | integer | The number of witness agents to run in ONE_TO_MANY and MANY_TO_MANY conversations |```3```                        |
+|```--api_ket```          | string  | The api key used to access the model at the specified URL, if needed              |```""```                       |
 
 ## Connections
-The CDG relies on 2 connections: one to the Ollama service, where the agents run, and the other to the Fuseki instance. In the case of asynchronous generation, there is a third connection for the parser agents.
-|URL|Connection|Notes|
-|----------------------------|-------------------------------------------|--------------------------------------------------------------------|
-|```http://localhost:11434```|Connection to the dialogue generation agent|Connected also to the parsing agent if ```parallelization = False```|
-|```http://localhost:11435```|Connection to the dialogue parsing agent   |Present only if ```parallelization = True```                        |
-|```http://localhost:3030``` |Connection to the Fuseki database          |Always present                                                      |
-
-These connections are fixed by the code, if they do not correspond to the ones in use on the running machine it's suggested to set up SSH tunnels to map the real ports to the ones in the code.
+CDG relies on an additional connection to a local Redis instance, which is used to store the compressed chat history. This connection is established with the default Redis port at ```http://localhost:6379```.
