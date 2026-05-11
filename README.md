@@ -23,9 +23,7 @@ This repository is structured as follows:
   - ```/ontologies```: contains the ontologies either in RDF/XML or in RDF/Turtle
   - ```/contracts```: contains the conversational contracts derived from the ontologies
   - ```/output```: contains the output files (not present in the repository, it's created at run-time)
-- ```agents.py```: contains the definitions of the PydanticAI agents
 - ```conf.py```: contains the configuration variables to run the data generation (see below)
-- ```csv_to_rdf.py```: contains code to transform the results downloaded from the Fuseki server (in CSV) to RDF/Turtle, which can be re-uploaded into Fuseki
 - ```functions.py```: contains the functions used in the code
 - ```main.py```: contains the entry point of the code
 - ```parameters.py```: contains the definition of configuration parameters.
