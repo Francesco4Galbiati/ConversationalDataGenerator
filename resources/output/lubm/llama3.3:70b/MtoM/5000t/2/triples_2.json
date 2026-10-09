@@ -1,0 +1,300 @@
+IntroduceStudent: {"student_id": "ABC123", "student_name": "Emily Wilson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABC123", "undergraduate_student_name": "Emily Chen"}
+GraduateStudent: {"graduate_student_id": "ABC123", "department_id": "DEF456", "university_id": "GHI789", "graduate_student_name": "John Doe", "department_name": "Computer Science", "university_name": "Harvard University"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "JKL012", "department_id": "MNO345", "department_name": "Mathematics", "student_name": "David Lee", "student_email": "david.lee@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR678", "department_id": "STU901", "department_name": "Biology", "student_name": "Sophia Patel", "student_email": "sophia.patel@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "VWX111", "department_id": "ABC234", "department_name": "Engineering", "student_name": "Oliver Brown", "student_email": "oliver.brown@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "EFG456", "department_id": "RST123", "department_name": "Physics", "student_name": "Ava Morales", "student_email": "ava.morales@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "YZA222", "department_id": "TUV678", "department_name": "Chemistry", "student_name": "Ethan Hall", "student_email": "ethan.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "CDE333", "department_id": "FGH234", "department_name": "Geology", "student_name": "Liam Davis", "student_email": "liam.davis@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "ABC123", "research_group_name": "Advanced Research Group"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "ABC123", "profssor_email": "professor@example.com", "professor_name": "John Doe", "professor_telephone": "1234567890"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL456", "research_group_name": "Innovative Research Team"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "MNO123", "research_group_name": "Experimental Research Group"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "PQR901", "research_group_name": "Investigative Research Collective"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "XYZ901", "profssor_email": "jane.smith@example.com", "professor_name": "Jane Smith", "professor_telephone": "9876543210"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "STU111", "research_group_name": "Exploratory Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNO456", "profssor_email": "emily.johnson@example.com", "professor_name": "Emily Johnson", "professor_telephone": "5551112222"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "VWX222", "research_group_name": "Pioneering Research Initiative"}
+TakeCourseOfAdvisor: {"student_id": "MNO901", "faculty_id": "TUV678", "course_id": "RST234", "student_name": "Julian Sanchez", "faculty_name": "Professor Rachel Kim", "course_name": "Introduction to Computer Science"}
+TakeCourseOfAdvisor: {"student_id": "GHI012", "faculty_id": "DEF456", "course_id": "ABC789", "student_name": "Mia Garcia", "faculty_name": "Professor Michael Chen", "course_name": "Data Structures and Algorithms"}
+TakeCourseOfAdvisor: {"student_id": "STU456", "faculty_id": "TUV678", "course_id": "CSE123", "student_name": "Alexander White", "faculty_name": "Professor Daniel Brooks", "course_name": "Computer Systems Engineering"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "TUV678", "course_id": "HGF567", "student_name": "Jackson Reed", "faculty_name": "Professor Christopher Martin", "course_name": "Artificial Intelligence"}
+TakeCourseOfAdvisor: {"student_id": "BCE222", "faculty_id": "TUV678", "course_id": "HGF012", "student_name": "Benjamin Russell", "faculty_name": "Professor Eric Thompson", "course_name": "Machine Learning"}
+TakeCourseOfAdvisor: {"student_id": "BCE333", "faculty_id": "TUV678", "course_id": "RST345", "student_name": "Noah Taylor", "faculty_name": "Professor Nathan Walker", "course_name": "Web Development"}
+ListMember: {"department_id": "TUV678", "person_id": "ABC123", "person_name": "John Doe"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "JKL456", "person_name": "Jane Smith"}
+ListMember: {"department_id": "TUV678", "person_id": "MNO789", "person_name": "Emily Johnson"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "CDE444", "department_id": "FGH567", "department_name": "Psychology", "student_name": "Isabella Martin", "student_email": "isabella.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "BCE555", "department_id": "TUV345", "department_name": "Economics", "student_name": "Charlotte Harris", "student_email": "charlotte.harris@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "XYZ111", "department_id": "JKL234", "department_name": "Sociology", "student_name": "Evelyn Brooks", "student_email": "evelyn.brooks@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE666", "department_name": "History", "student_name": "Logan Russell", "student_email": "logan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "RST012", "department_id": "UVW234", "department_name": "Philosophy", "student_name": "Harrison Green", "student_email": "harrison.green@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "TUW111", "department_id": "WXZ123", "department_name": "Philosophy", "student_name": "Alexander Brown", "student_email": "alexander.brown@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "AEF111", "department_id": "BCE666", "department_name": "Geology", "student_name": "Ethan Hall", "student_email": "ethan.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "DEF012", "department_id": "ABC567", "department_name": "Anthropology", "student_name": "Gabriel Russell", "student_email": "gabriel.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "FGH111", "department_id": "JKL901", "department_name": "Geology", "student_name": "Natalie Kim", "student_email": "natalie.kim@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "YZA333", "research_group_name": "Discovery Research Group"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "PQR111", "profssor_email": "sarah.davis@example.com", "professor_name": "Sarah Davis", "professor_telephone": "1112223333"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "STU234", "profssor_email": "michael.brown@example.com", "professor_name": "Michael Brown", "professor_telephone": "6668889999"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "EFG456", "profssor_email": "david.miller@example.com", "professor_name": "David Miller", "professor_telephone": "4447770000"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "VWX111", "profssor_email": "oliver.lewis@example.com", "professor_name": "Oliver Lewis", "professor_telephone": "7770001111"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "GHI789", "profssor_email": "charles.white@example.com", "professor_name": "Charles White", "professor_telephone": "2223334444"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "EFG444", "research_group_name": "Foundational Research Group"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "BCD555", "research_group_name": "Advancement Research Group"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "CDE678", "research_group_name": "Developmental Research Unit"}
+TakeCourseOfAdvisor: {"student_id": "AEH111", "faculty_id": "TUV678", "course_id": "CSE901", "student_name": "Ava Russell", "faculty_name": "Professor Olivia Lee", "course_name": "Cyber Security"}
+TakeCourseOfAdvisor: {"student_id": "KLM789", "faculty_id": "TUV678", "course_id": "EFG234", "student_name": "Aiden Russell", "faculty_name": "Professor Nicholas White", "course_name": "Network Security"}
+TakeCourseOfAdvisor: {"student_id": "NOP456", "faculty_id": "TUV678", "course_id": "IJK012", "student_name": "Gabriel Hall", "faculty_name": "Professor Olivia Lee", "course_name": "Introduction to Computer Science"}
+TakeCourseOfAdvisor: {"student_id": "BCE666", "faculty_id": "TUV678", "course_id": "CSE456", "student_name": "Evelyn Russell", "faculty_name": "Professor Olivia Lee", "course_name": "Data Mining"}
+TakeCourseOfAdvisor: {"student_id": "BCE888", "faculty_id": "TUV678", "course_id": "IJK345", "student_name": "Landon Russell", "faculty_name": "Professor Christopher Martin", "course_name": "Introduction to Cyber Security"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "EFG123", "course_name": "Introduction to Data Science", "student_name": "Evelyn Sanchez", "associate_professor_id": "TUV678"}
+ListMember: {"department_id": "TUV678", "person_id": "PQR012", "person_name": "Alice Brown"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "STU345", "person_name": "Michael Davis"}
+ListMember: {"department_id": "TUV678", "person_id": "VWX901", "person_name": "Olivia Taylor"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "BCE999", "department_id": "CDE777", "department_name": "Philosophy", "student_name": "Evelyn Russell", "student_email": "evelyn.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "AEJ111", "department_id": "FGH901", "department_name": "Geography", "student_name": "Julian Russell", "student_email": "julian.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "AEK111", "department_id": "FGH234", "department_name": "Philosophy", "student_name": "Evelyn Hall", "student_email": "evelyn.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "AEW111", "department_id": "EFG901", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "FGH789", "department_id": "JKL012", "department_name": "Philosophy", "student_name": "Alexander Hall", "student_email": "alexander.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "BDF012", "department_id": "HJK345", "department_name": "Philosophy", "student_name": "Ethan White", "student_email": "ethan.white@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "BAC012", "department_id": "FGH123", "department_name": "Geography", "student_name": "Harrison Russell", "student_email": "harrison.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE888", "department_name": "Philosophy", "student_name": "Julian Russell", "student_email": "julian.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR012", "department_id": "VWX901", "department_name": "Philosophy", "student_name": "Oliver Hall", "student_email": "oliver.hall@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "DEF111", "research_group_name": "Creative Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "JKL012", "profssor_email": "amelia.taylor@example.com", "professor_name": "Amelia Taylor", "professor_telephone": "3334445555"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "CDE345", "profssor_email": "samantha.wilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "8889990000"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "AEF111", "profssor_email": "kevin.martin@example.com", "professor_name": "Kevin Martin", "professor_telephone": "9998887777"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "BCD789", "profssor_email": "elizabeth.hall@example.com", "professor_name": "Elizabeth Hall", "professor_telephone": "7456321098"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "FGH012", "profssor_email": "hannah.moore@example.com", "professor_name": "Hannah Moore", "professor_telephone": "6543210987"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "HJK777", "research_group_name": "Harmonious Research Collective"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "TUV666", "research_group_name": "NextGen Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "DEF678", "profssor_email": "sophia.rodriguez@example.com", "professor_name": "Sophia Rodriguez", "professor_telephone": "1230987654"}
+TakeCourseOfAdvisor: {"student_id": "PQR234", "faculty_id": "TUV678", "course_id": "MNO123", "student_name": "Landon Brooks", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "PQR901", "faculty_id": "TUV678", "course_id": "CSE789", "student_name": "Oliver Russell", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "BCE777", "faculty_id": "TUV678", "course_id": "IJK678", "student_name": "Julian Brooks", "faculty_name": "Professor Olivia Lee", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Liam Davis", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "PQR345", "faculty_id": "TUV678", "course_id": "IJK901", "student_name": "Ethan Brooks", "faculty_name": "Professor Olivia Lee", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Ethan Walker", "faculty_name": "Professor Olivia Lee", "course_name": "Introduction to Cyber Security"}
+ListMember: {"department_id": "TUV678", "person_id": "YZA111", "person_name": "Sophia Lee"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "EFG678", "person_name": "Charlotte Hall"}
+ListMember: {"department_id": "TUV678", "person_id": "BCD234", "person_name": "Hannah Martin"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE666", "department_name": "Geography", "student_name": "Jackson Reed", "student_email": "jackson.reed@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE666", "department_name": "Geography", "student_name": "Alexander Hall", "student_email": "alexander.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Geography", "student_name": "Oliver Hall", "student_email": "oliver.hall@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Geography", "student_name": "Julian Sanchez", "student_email": "julian.sanchez@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Geography", "student_name": "Julian Brooks", "student_email": "julian.brooks@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Computer Science", "student_name": "Liam Davis", "student_email": "liam.davis@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE222", "department_name": "Computer Science", "student_name": "Liam Davis", "student_email": "liam.davis@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "NXB111", "research_group_name": "Breakthrough Research Initiative"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "HIJ456", "profssor_email": "abigail.thomas@example.com", "professor_name": "Abigail Thomas", "professor_telephone": "9123456789"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "JKL345", "profssor_email": "jennifer.anderson@example.com", "professor_name": "Jennifer Anderson", "professor_telephone": "3421987654"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "LMN234", "profssor_email": "rebecca.martinez@example.com", "professor_name": "Rebecca Martinez", "professor_telephone": "6549873210"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "NOP111", "profssor_email": "nicole.jenkins@example.com", "professor_name": "Nicole Jenkins", "professor_telephone": "2398475634"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "CJK999", "profssor_email": "patrick.price@example.com", "professor_name": "Patrick Price", "professor_telephone": "7890123456"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "EHI111", "profssor_email": "katherine.garcia@example.com", "professor_name": "Katherine Garcia", "professor_telephone": "5678901234"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL888", "research_group_name": "Leading Research Collective"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL999", "research_group_name": "Boundary Research Initiative"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "TUV678", "course_id": "IJK012", "student_name": "Ethan Hall", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Oliver Sanchez", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "BCD456", "faculty_id": "TUV678", "course_id": "PQR111", "student_name": "Landon Sanchez", "faculty_name": "Professor Nicholas White", "course_name": "Introduction to Data Science"}
+TakeCourseOfProfessor: {"course_id": "TUV012", "student_id": "YZA333", "course_name": "Operating Systems", "student_name": "Ethan Sanchez", "associate_professor_id": "TUV678"}
+TakeCourseOfAdvisor: {"student_id": "BFG111", "faculty_id": "TUV678", "course_id": "CSE234", "student_name": "Liam Russell", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR567", "course_name": "Introduction to Computer Science", "student_name": "Aiden Russell", "associate_professor_id": "TUV678"}
+ListMember: {"department_id": "TUV678", "person_id": "CDE456", "person_name": "Evelyn White"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "DEF567", "person_name": "Abigail Harris"}
+ListMember: {"department_id": "TUV678", "person_id": "GHI234", "person_name": "Julia Williams"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE123", "department_name": "Philosophy", "student_name": "Alexander Russell", "student_email": "alexander.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "EFG123", "department_name": "Mathematics", "student_name": "Oliver Sanchez", "student_email": "oliver.sanchez@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "FGH456", "department_name": "Geography", "student_name": "Julian Russell", "student_email": "julian.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "VWX123", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA111", "department_name": "Mathematics", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA444", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA555", "department_name": "Philosophy", "student_name": "Alexander Sanchez", "student_email": "alexander.sanchez@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA666", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "GHI789", "undergraduate_student_name": "Sophia Patel"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL222", "research_group_name": "Progressive Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "GHI012", "profssor_email": "daniel.jackson@example.com", "professor_name": "Daniel Jackson", "professor_telephone": "3456789012"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP111", "profssor_email": "heatherlee@example.com", "professor_name": "Heather Lee", "professor_telephone": "9367821456"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL333", "research_group_name": "Innovative Research Collective"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "PQR234", "profssor_email": "oliviabrown@example.com", "professor_name": "Olivia Brown", "professor_telephone": "6789012345"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL000", "research_group_name": "NextGen Research Initiative"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "EFG012", "profssor_email": "laurenphillips@example.com", "professor_name": "Lauren Phillips", "professor_telephone": "4697539821"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL777", "research_group_name": "Pinnacle Research Collective"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "GHI234", "profssor_email": "isabella.harris@example.com", "professor_name": "Isabella Harris", "professor_telephone": "6589432198"}
+TakeCourseOfAdvisor: {"student_id": "BCE444", "faculty_id": "TUV678", "course_id": "IJK111", "student_name": "Gabriel Sanchez", "faculty_name": "Professor Nicholas Brooks", "course_name": "Introduction to Data Science"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR901", "course_name": "Introduction to Data Science", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "TUV678", "course_id": "IJK901", "student_name": "Landon White", "faculty_name": "Professor Nicholas Thompson", "course_name": "Introduction to Cyber Security"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "TUV678", "course_id": "IJK012", "student_name": "Alexander Hall", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "PQR901", "course_name": "Introduction to Artificial Intelligence", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+ListMember: {"department_id": "TUV678", "person_id": "ABC222", "person_name": "Alice Brown"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "BCD111", "person_name": "Ava Thompson"}
+ListMember: {"department_id": "TUV678", "person_id": "BCD567", "person_name": "Evelyn Walker"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA777", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Brown", "student_email": "alexander.brown@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "CDE123", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Alexander White", "student_email": "alexander.white@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA222", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Oliver Sanchez", "student_email": "oliver.sanchez@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Brooks", "student_email": "alexander.brooks@example.com"}
+IntroduceStudent: {"student_id": "TUV012", "student_name": "Ethan Russell"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL111", "research_group_name": "Revolutionary Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "GKL012", "profssor_email": "jessicarobinson@example.com", "professor_name": "Jessica Robinson", "professor_telephone": "7418529630"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL444", "research_group_name": "Prestige Research Unit"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL555", "research_group_name": "Synergetic Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "julia.white@example.com", "professor_name": "Julia White", "professor_telephone": "6587490231"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL666", "research_group_name": "Visionary Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "PQS111", "profssor_email": "samanthawalker@example.com", "professor_name": "Samantha Walker", "professor_telephone": "9421358742"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "PQR123", "research_group_name": "Genesis Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP789", "profssor_email": "sarah.taylor@example.com", "professor_name": "Sarah Taylor", "professor_telephone": "6583921478"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Alexander Russell", "faculty_name": "Professor Nicholas Brooks", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Liam Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG012", "person_name": "Eleanor Mitchell"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "TUV123", "person_name": "Isabella Jenkins"}
+ListMember: {"department_id": "TUV678", "person_id": "RST456", "person_name": "Harper Lewis"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Landon White", "student_email": "landon.white@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Brown", "student_email": "ethan.brown@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Walker", "student_email": "ethan.walker@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+IntroduceStudent: {"student_id": "TUX111", "student_name": "Ethan Russell"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL789", "research_group_name": "Research Initiative Group"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "RST456", "profssor_email": "samanthaharris@example.com", "professor_name": "Samantha Harris", "professor_telephone": "6583921479"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL8888", "research_group_name": "Prestigious Research Collective"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Revolutionary Research Initiative"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL1000", "research_group_name": "Leading Edge Research Unit"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "FGH345", "profssor_email": "samanthajones@example.com", "professor_name": "Samantha Jones", "professor_telephone": "9364758123"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL1010", "research_group_name": "Frontier Research Collective"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "FGH567", "profssor_email": "alexandra.russell@example.com", "professor_name": "Alexandra Russell", "professor_telephone": "4637281910"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "FGH901", "profssor_email": "margaretwalker@example.com", "professor_name": "Margaret Walker", "professor_telephone": "9356712345"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Ethan Hall", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Ethan Russell", "faculty_name": "Professor Nicholas Thompson", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Ethan Russell", "faculty_name": "Professor Nicholas Thompson", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfAdvisor: {"student_id": "BCE111", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Ethan Russell", "faculty_name": "Professor Nicholas Thompson", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "PQR901", "course_name": "Introduction to Machine Learning", "student_name": "Liam Russell", "associate_professor_id": "TUV012"}
+ListMember: {"department_id": "TUV678", "person_id": "XYZ111", "person_name": "Lily Chen"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "EFG345", "person_name": "Mia Brooks"}
+ListMember: {"department_id": "TUV678", "person_id": "GHI012", "person_name": "Evelyn Davis"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "PQR111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXB111", "department_id": "YZC123", "department_name": "Mathematics", "student_name": "Ethan Brown", "student_email": "ethan.brown@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXA111", "department_id": "YZB123", "department_name": "Philosophy", "student_name": "Ethan Russell", "student_email": "ethan.russell2@example.com"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "JKL456", "undergraduate_student_name": "Olivia Brown"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXD111", "department_id": "YZD123", "department_name": "Philosophy", "student_name": "Julian Russell", "student_email": "julian.russell3@example.com"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL1234", "research_group_name": "Prestigious Research Initiative"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "GYZ111", "profssor_email": "samanthabrown@example.com", "professor_name": "Samantha Brown", "professor_telephone": "9876543211"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "ZYX111", "profssor_email": "samanthalee@example.com", "professor_name": "Samantha Lee", "professor_telephone": "8765432109"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL1020", "research_group_name": "Prestigious Research Group"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9991", "research_group_name": "Prestigious Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP234", "profssor_email": "sophia.patel@example.com", "professor_name": "Sophia Patel", "professor_telephone": "6583921480"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9990", "research_group_name": "Visionary Research Collective Team"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9992", "research_group_name": "Innovative Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthalee@example.com", "professor_name": "Samantha Lee", "professor_telephone": "6583921481"}
+TakeCourseOfAdvisor: {"student_id": "BAC111", "faculty_id": "DEF456", "course_id": "EFG012", "student_name": "Ethan Thompson", "faculty_name": "Professor Nicholas Brooks", "course_name": "Introduction to Data Science"}
+TakeCourseOfProfessor: {"course_id": "CSE567", "student_id": "EFG789", "course_name": "Introduction to Data Science", "student_name": "Ethan Thompson", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "NXA111", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "TUV678"}
+TakeCourseOfProfessor: {"course_id": "CSE012", "student_id": "NXA111", "course_name": "Introduction to Data Science", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "CSE111", "student_id": "NXA111", "course_name": "Introduction to Machine Learning", "student_name": "Liam Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA012", "student_id": "XYZ222", "course_name": "Introduction to Data Science", "student_name": "Julian Brooks", "associate_professor_id": "YZA999"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG111", "person_name": "Evelyn Russell"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "JKL012", "person_name": "Evelyn Sanders"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG999", "person_name": "Evelyn Reynolds"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXF111", "department_id": "YZE123", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin2@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXG111", "department_id": "YZF123", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin3@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXH111", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Alexander Thompson", "student_email": "alexander.thompson@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXI111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin4@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXJ111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell2@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXK111", "department_id": "YZA999", "department_name": "Geography", "student_name": "Ethan Russell", "student_email": "ethan.russell3@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXL111", "department_id": "YZA888", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin5@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM111", "department_id": "YZA888", "department_name": "Geography", "student_name": "Landon Brooks", "student_email": "landon.brooks@example.com"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "GHI789", "undergraduate_student_name": "Ava Morales"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9998", "research_group_name": "Visionary Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921481"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawhite@example.com", "professor_name": "Samantha White", "professor_telephone": "6587490232"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9993", "research_group_name": "Exploratory Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samantharodriguez@example.com", "professor_name": "Samantha Rodriguez", "professor_telephone": "6583921482"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9994", "research_group_name": "Exploratory Research Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilliams@example.com", "professor_name": "Samantha Williams", "professor_telephone": "6583921483"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9995", "research_group_name": "Visionary Research Collective Initiative"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921481"}
+TakeCourseOfAdvisor: {"student_id": "NXM012", "faculty_id": "DEF456", "course_id": "EFG567", "student_name": "Landon Thompson", "faculty_name": "Professor Nicholas Brooks", "course_name": "Introduction to Data Science"}
+TakeCourseOfProfessor: {"course_id": "YZA456", "student_id": "NXE111", "course_name": "Introduction to Data Science", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA999", "student_id": "NXM901", "course_name": "Introduction to Cyber Security", "student_name": "Alexander Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM111", "course_name": "Introduction to Data Science", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA888", "student_id": "NXM222", "course_name": "Introduction to Data Science", "student_name": "Ethan Hall", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA111", "student_id": "NXM333", "course_name": "Introduction to Data Science", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+ListMember: {"department_id": "TUV678", "person_id": "HJK789", "person_name": "Evelyn Harrison"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "KLM456", "person_name": "Evelyn Patel"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG789", "person_name": "Olivia Taylor"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Ethan Thompson", "student_email": "ethan.thompson@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin6@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Alexander Martin", "student_email": "alexander.martin7@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Psychology", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "GHI789", "undergraduate_student_name": "Mia Kim"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9996", "research_group_name": "Visionary Research Initiative"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "jennifer.anderson@example.com", "professor_name": "Jennifer Anderson", "professor_telephone": "6583921482"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9997", "research_group_name": "Exploratory Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "emilydavis@example.com", "professor_name": "Emily Davis", "professor_telephone": "6583921484"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Exploratory Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921485"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921485"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Collective"}
+TakeCourseOfAdvisor: {"student_id": "NXM901", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Alexander Martin", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Machine Learning"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Landon Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Data Science", "student_name": "Liam Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Data Science", "student_name": "Ethan Martin", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG111", "person_name": "Olivia Taylor"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "PQR345", "person_name": "Evelyn Wallace"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG111", "person_name": "Ava Thompson"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Philosophy", "student_name": "Liam Russell", "student_email": "liam.russell2@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Computer Science", "student_name": "Alexander Martin", "student_email": "alexander.martin8@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "GHI789", "undergraduate_student_name": "Isabella Davis"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Exploratory Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921485"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "jennifer.anderson@example.com", "professor_name": "Jennifer Anderson", "professor_telephone": "6583921478"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Initiative Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "sophialee@example.com", "professor_name": "Sophia Lee", "professor_telephone": "6583921486"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Team"}
+HireProfessor: {"department_id": "TUV678", "professor_id": "MNP012", "profssor_email": "samanthawilson@example.com", "professor_name": "Samantha Wilson", "professor_telephone": "6583921486"}
+CreateResearchGroup: {"university_id": "GHI789", "research_group_id": "JKL9999", "research_group_name": "Visionary Research Initiative Team"}
+TakeCourseOfAdvisor: {"student_id": "NXM901", "faculty_id": "DEF456", "course_id": "CSE123", "student_name": "Landon Thompson", "faculty_name": "Professor Nathan Walker", "course_name": "Introduction to Data Science"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan Russell", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Landon Sanchez", "associate_professor_id": "YZA999"}
+TakeCourseOfProfessor: {"course_id": "YZA123", "student_id": "NXM901", "course_name": "Introduction to Machine Learning", "student_name": "Ethan White", "associate_professor_id": "YZA999"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG111", "person_name": "Ava Thompson"}
+DefineAlumnus: {"university_id": "GHI789", "person_id": "EFG123", "person_name": "Emily Johnson"}
+ListMember: {"department_id": "TUV678", "person_id": "EFG456", "person_name": "Isabella Brown"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geology", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Liam Russell", "student_email": "liam.russell@example.com"}
+EnrollStudent: {"university_id": "GHI789", "student_id": "NXM901", "department_id": "YZA999", "department_name": "Geography", "student_name": "Oliver Russell", "student_email": "oliver.russell@example.com"}

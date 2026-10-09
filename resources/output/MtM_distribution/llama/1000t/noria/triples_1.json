@@ -1,0 +1,116 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Service", "service_type": "Infrastructure", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF789", "resource_label": "Example Resource"}
+OpenTroubleTicket: {"resource_id": "ABC456", "trouble_ticket_id": "XTY123", "trouble_ticket_description": "Issue with resource ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT456", "action_description": "System restart and software update", "agent_id": "AGT789", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT789", "action_description": "Network configuration update and firewall reset"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT012", "action_description": "Router configuration and network setup", "agent_id": "AGT012", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT101", "action_description": "Modem replacement and network cable check"}
+GetIncidentSummary: {"trouble_ticket_id": "XTY123", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+GetIncidentSequence: {"event_id": "ABC123", "timestamp": "2022-01-01 12:00:00", "trouble_ticket_id": "XTY123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN789012", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Database Service", "service_type": "Platform", "managed_by_team": "IT Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN345678", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "ABC456", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO678", "resource_label": "Shared Asset"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "JKL901", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR234", "metric_name": "Battery Usage", "metric_value": "67%"}
+FindCorrelatedEvents: {"corr_id": "DEF456", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "ABC456", "originator_role": "System Administrator", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "GHI789", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT234", "action_description": "Server reboot and software installation", "agent_id": "AGT456", "agent_label": "System Administrator"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT567", "action_description": "Network switch replacement and firmware update"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT901", "action_description": "Network interface card replacement and driver update", "agent_id": "AGT111", "agent_label": "Senior Network Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT111", "action_description": "Wireless access point configuration and network signal strength check"}
+GetIncidentSummary: {"trouble_ticket_id": "XTY123", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT234", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTY123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTY456", "trouble_ticket_id": "XTY123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "JKL456", "change_description": "System update and patching", "start_time": "2022-01-01 12:00:00", "resource_id": "GHI012", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "server04", "serial_number": "SN901234", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server05", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Security Service", "service_type": "Software", "managed_by_team": "Security Team"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "STU111", "metric_name": "GPU Usage", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "VWX678", "metric_name": "Power Usage", "metric_value": "88%"}
+FindSharedAssets: {"service_id": "GHI789", "resource_id": "STU901", "resource_label": "Common Asset"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "MNO345", "metric_name": "Temperature Usage", "metric_value": "82%"}
+FindCorrelatedEvents: {"corr_id": "JKL012", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "GHI012", "originator_role": "Database Administrator", "event_id": "ABC123"}
+GetResourceLogs: {"resource_id": "GHI012", "log_id": "LOG456", "log_time": "2022-01-05 16:00:00", "log_message": "Resource retrieved successfully"}
+FindCorrelatedEvents: {"corr_id": "MNO345", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT678", "action_description": "Network interface card replacement and driver update", "agent_id": "AGT012", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT345", "action_description": "Network interface card replacement and driver update"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT999", "action_description": "Network interface card replacement and driver update", "agent_id": "AGT012", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT123", "action_description": "Modem replacement and network cable check"}
+GetIncidentSummary: {"trouble_ticket_id": "XTY123", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT012", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTY123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTY789", "trouble_ticket_id": "XTY123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "DEF789", "change_description": "Software update and configuration adjustment", "start_time": "2022-01-05 14:30:00", "resource_id": "GHI012", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server06", "serial_number": "SN1111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server07", "serial_number": "SN11111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Network Service", "service_type": "Infrastructure", "managed_by_team": "Network Team"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "TUV654", "metric_name": "Fan Usage", "metric_value": "98%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "EFG567", "metric_name": "Sound Usage", "metric_value": "42%"}
+FindSharedAssets: {"service_id": "GHI789", "resource_id": "VWX111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "XYZ111", "metric_name": "Usage Rate", "metric_value": "43%"}
+FindCorrelatedEvents: {"corr_id": "PQR678", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "JKL345", "originator_role": "Security Analyst", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "MNO678", "originator_role": "Software Developer", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "STU901", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT567", "action_description": "Network interface card replacement and driver update", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT111", "action_description": "Network switch replacement and firmware update"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT567", "action_description": "Network interface card replacement and driver update", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT111", "action_description": "Modem replacement and network cable check"}
+GetIncidentSummary: {"trouble_ticket_id": "XTY123", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT101", "agent_label": "Network Support Engineer", "trouble_ticket_id": "XTY123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTY123", "importance_level": "low"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTY012", "trouble_ticket_id": "XTY123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "MNO678", "change_description": "Hardware replacement and software reinstallation", "start_time": "2022-01-10 10:00:00", "resource_id": "GHI012", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server08", "serial_number": "SN111111112", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server09", "serial_number": "SN111111113", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Storage Service", "service_type": "Infrastructure", "managed_by_team": "IT Team"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "HJK234", "metric_name": "Usage Capacity", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "ABC111", "metric_name": "Usage Pattern", "metric_value": "96%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "YZA222", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "CDE678", "metric_name": "Usage Trend", "metric_value": "99%"}
+FindCorrelatedEvents: {"corr_id": "VWX234", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "PQR234", "originator_role": "Data Scientist", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "STU901", "originator_role": "Technical Support Specialist", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "YZA111", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT567", "action_description": "Modem replacement and network cable check", "agent_id": "AGT456", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT111", "action_description": "Network interface card replacement and driver update"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT567", "action_description": "Modem replacement and network cable check", "agent_id": "AGT456", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTY123", "action_id": "ACT111", "action_description": "Network interface card replacement and driver update"}
+GetIncidentSummary: {"trouble_ticket_id": "XTY123", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}

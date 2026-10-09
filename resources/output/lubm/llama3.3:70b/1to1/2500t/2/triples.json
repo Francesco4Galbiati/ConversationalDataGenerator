@@ -1,0 +1,483 @@
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABC123", "undergraduate_student_name": "Emily Chen"}
+GraduateStudent: {"graduate_student_id": "ABC123", "department_id": "DEF456", "university_id": "GHI789", "graduate_student_name": "John Doe", "department_name": "Computer Science", "university_name": "Harvard University"}
+EnrollStudent: {"student_id": "JKL123", "department_id": "MNO789", "department_name": "Mathematics", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "ABC123", "professor_email": "john.doe@example.com", "professor_name": "John Doe", "professor_telephone": "1234567890"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "XYZ111", "profssor_email": "jane.smith@example.com", "professor_name": "Jane Smith", "professor_telephone": "9876543210"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "PQR456", "profssor_email": "bob.johnson@example.com", "professor_name": "Bob Johnson", "professor_telephone": "5551112222"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "STU012", "profssor_email": "emily.davis@example.com", "professor_name": "Emily Davis", "professor_telephone": "6663334444"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "EFG678", "profssor_email": "mike.brown@example.com", "professor_name": "Mike Brown", "professor_telephone": "4445556666"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "VWX234", "profssor_email": "sarah.taylor@example.com", "professor_name": "Sarah Taylor", "professor_telephone": "1112223333"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "GHI345", "profssor_email": "olivia.martin@example.com", "professor_name": "Olivia Martin", "professor_telephone": "7778889999"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "JKL901", "profssor_email": "david.white@example.com", "professor_name": "David White", "professor_telephone": "2223334444"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "CDE456", "profssor_email": "charles.hall@example.com", "professor_name": "Charles Hall", "professor_telephone": "8889990000"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "NOP234", "profssor_email": "frank.miller@example.com", "professor_name": "Frank Miller", "professor_telephone": "9990001111"}
+EnrollStudent: {"student_id": "ABC123", "department_id": "PQR012", "department_name": "Engineering", "student_name": "Jane Smith", "student_email": "janesmith@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "ABD123", "profssor_email": "kate.wilson@example.com", "professor_name": "Kate Wilson", "professor_telephone": "2345678901"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "TUW456", "profssor_email": "amelia.harris@example.com", "professor_name": "Amelia Harris", "professor_telephone": "6543210987"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "AEF012", "profssor_email": "sophia.patel@example.com", "professor_name": "Sophia Patel", "professor_telephone": "3425678901"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "AEH012", "profssor_email": "heather.jackson@example.com", "professor_name": "Heather Jackson", "professor_telephone": "1230987654"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "EJK456", "profssor_email": "laura.garcia@example.com", "professor_name": "Laura Garcia", "professor_telephone": "7890123456"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "ABG123", "profssor_email": "rebecca.lewis@example.com", "professor_name": "Rebecca Lewis", "professor_telephone": "3456789012"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "ABD456", "profssor_email": "kevin.thompson@example.com", "professor_name": "Kevin Thompson", "professor_telephone": "1234567891"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "CBA111", "profssor_email": "daniel lee@example.com", "professor_name": "Daniel Lee", "professor_telephone": "1231112222"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "LMN012", "profssor_email": "william.oliver@example.com", "professor_name": "William Oliver", "professor_telephone": "9123456789"}
+HireProfessor: {"department_id": "MNO789", "professor_id": "ECD123", "profssor_email": "natalie.russell@example.com", "professor_name": "Natalie Russell", "professor_telephone": "6754321098"}
+EnrollStudent: {"student_id": "STU456", "department_id": "DEP678", "department_name": "Biology", "student_name": "Emily Johnson", "student_email": "emilyjohnson@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB111", "profssor_email": "george.brooks@example.com", "professor_name": "George Brooks", "professor_telephone": "4567890123"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB222", "profssor_email": "sandra.jenkins@example.com", "professor_name": "Sandra Jenkins", "professor_telephone": "7418529630"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "FGH012", "profssor_email": "hannah.brown@example.com", "professor_name": "Hannah Brown", "professor_telephone": "1231114444"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "MNO789", "profssor_email": "jessica.mitchell@example.com", "professor_name": "Jessica Mitchell", "professor_telephone": "8765432109"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB333", "profssor_email": "oliver.nelson@example.com", "professor_name": "Oliver Nelson", "professor_telephone": "1112228888"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB444", "profssor_email": "samantha.hall@example.com", "professor_name": "Samantha Hall", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB555", "profssor_email": "karen.thomas@example.com", "professor_name": "Karen Thomas", "professor_telephone": "3421117654"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB666", "profssor_email": "susan.webb@example.com", "professor_name": "Susan Webb", "professor_telephone": "6589432101"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB777", "profssor_email": "elizabeth.price@example.com", "professor_name": "Elizabeth Price", "professor_telephone": "3429876543"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB888", "profssor_email": "katherine.martinez@example.com", "professor_name": "Katherine Martinez", "professor_telephone": "3421119999"}
+EnrollStudent: {"student_id": "VWX111", "department_id": "TUV234", "department_name": "Physics", "student_name": "Alice Brown", "student_email": "alicebrown@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "EAB123", "profssor_email": "lisa.nguyen@example.com", "professor_name": "Lisa Nguyen", "professor_telephone": "6583921011"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "PQR789", "profssor_email": "patricia.walker@example.com", "professor_name": "Patricia Walker", "professor_telephone": "3421111123"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "CJK789", "profssor_email": "oliver.chen@example.com", "professor_name": "Oliver Chen", "professor_telephone": "3421111234"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB999", "profssor_email": "sandra.rodriguez@example.com", "professor_name": "Sandra Rodriguez", "professor_telephone": "6581112233"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB100", "profssor_email": "sandra.robinson@example.com", "professor_name": "Sandra Robinson", "professor_telephone": "6581111122"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1000", "profssor_email": "sandra.rogers@example.com", "professor_name": "Sandra Rogers", "professor_telephone": "9871113333"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "EFG012", "profssor_email": "sandra.jones@example.com", "professor_name": "Sandra Jones", "professor_telephone": "6789012345"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1001", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "6581113344"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1002", "profssor_email": "sandra.sanchez@example.com", "professor_name": "Sandra Sanchez", "professor_telephone": "6581114455"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1003", "profssor_email": "sandra.brown@example.com", "professor_name": "Sandra Brown", "professor_telephone": "6581115566"}
+EnrollStudent: {"student_id": "YZA222", "department_id": "RST345", "department_name": "Chemistry", "student_name": "Michael Davis", "student_email": "michaeldavis@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1004", "profssor_email": "sandra.taylor@example.com", "professor_name": "Sandra Taylor", "professor_telephone": "6581116677"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1005", "profssor_email": "sandra.walker@example.com", "professor_name": "Sandra Walker", "professor_telephone": "6581117788"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1006", "profssor_email": "sandra.watson@example.com", "professor_name": "Sandra Watson", "professor_telephone": "6581118899"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1007", "profssor_email": "sandra.brown@example.org", "professor_name": "Sandra Brown", "professor_telephone": "9871112223"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1008", "profssor_email": "sandra.bennett@example.com", "professor_name": "Sandra Bennett", "professor_telephone": "6581119900"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB1009", "profssor_email": "sandra.harris@example.com", "professor_name": "Sandra Harris", "professor_telephone": "9871112224"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10010", "profssor_email": "sandra.kelly@example.com", "professor_name": "Sandra Kelly", "professor_telephone": "6581111123"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10011", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112225"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.brown@example.io", "professor_name": "Sandra Brown", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+EnrollStudent: {"student_id": "EFG789", "department_id": "ABC012", "department_name": "Geology", "student_name": "Olivia Taylor", "student_email": "oliviataylor@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "EHI012", "profssor_email": "sandra.phillips@example.com", "professor_name": "Sandra Phillips", "professor_telephone": "6581111121"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXZ111", "profssor_email": "alexandra.russell@example.com", "professor_name": "Alexandra Russell", "professor_telephone": "6581111124"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXY111", "profssor_email": "sandra.parker@example.com", "professor_name": "Sandra Parker", "professor_telephone": "6581111125"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXX111", "profssor_email": "sandra.johnson@example.com", "professor_name": "Sandra Johnson", "professor_telephone": "6581111126"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXW111", "profssor_email": "sandra.brown@example.co", "professor_name": "Sandra Brown", "professor_telephone": "9871112221"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX111", "profssor_email": "sandra.brown@example.io", "professor_name": "Sandra Brown", "professor_telephone": "9871112226"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXX222", "profssor_email": "sandra.kennedy@example.com", "professor_name": "Sandra Kennedy", "professor_telephone": "6581111127"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXY222", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "6581111128"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXX333", "profssor_email": "sandra.brown@example.co.uk", "professor_name": "Sandra Brown", "professor_telephone": "9871112227"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "BAC012", "profssor_email": "sandra.lopez@example.com", "professor_name": "Sandra Lopez", "professor_telephone": "6581111129"}
+EnrollStudent: {"student_id": "BCD901", "department_id": "GHI012", "department_name": "Economics", "student_name": "Sophia Lee", "student_email": "sophialee@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AXX888", "profssor_email": "sandra.brown@example.edu", "professor_name": "Sandra Brown", "professor_telephone": "9871112228"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+EnrollStudent: {"student_id": "CDE345", "department_id": "HIJ012", "department_name": "History", "student_name": "Charlotte Hall", "student_email": "charlottehall@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112221"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXY333", "profssor_email": "sandra.brown@example.info", "professor_name": "Sandra Brown", "professor_telephone": "9871112229"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX789", "profssor_email": "victoria.carter@example.com", "professor_name": "Victoria Carter", "professor_telephone": "6581111120"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.rodriguez@example.com", "professor_name": "Sandra Rodriguez", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+EnrollStudent: {"student_id": "MNP111", "department_id": "FGH012", "department_name": "Philosophy", "student_name": "David White", "student_email": "davidwhite@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.rodriguez@example.com", "professor_name": "Sandra Rodriguez", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+EnrollStudent: {"student_id": "PQR123", "department_id": "XYZ012", "department_name": "Psychology", "student_name": "Hannah Martin", "student_email": "hannahmartin@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX345", "profssor_email": "sandra.brown@example.biz", "professor_name": "Sandra Brown", "professor_telephone": "9871112234"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "AXX999", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX678", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX1111", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112230"}
+HireProfessor: {"department_id": "TUV234", "professor_id": "TUX1112", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112231"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.rodriguez@example.com", "professor_name": "Sandra Rodriguez", "professor_telephone": "9871112222"}
+EnrollStudent: {"student_id": "BCD234", "department_id": "EFG012", "department_name": "Sociology", "student_name": "Evelyn Walker", "student_email": "evelynwalker@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "EFG012", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "EFG012", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "EFG012", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.com", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "EFG012", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112231"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.rodriguez@example.com", "professor_name": "Sandra Rodriguez", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "EFG012", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.io", "professor_name": "Sandra Kim", "professor_telephone": "9871112230"}
+HireProfessor: {"department_id": "DEP678", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+EnrollStudent: {"student_id": "BCD567", "department_id": "FGH345", "department_name": "Anthropology", "student_name": "Abigail Harris", "student_email": "abigailharris@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "CDE123", "profssor_email": "sandra.kim@example.org", "professor_name": "Sandra Kim", "professor_telephone": "9871112232"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "CBA222", "profssor_email": "sandra.kim@example.co", "professor_name": "Sandra Kim", "professor_telephone": "9871112235"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "TUX1113", "profssor_email": "sandra.kim@example.biz", "professor_name": "Sandra Kim", "professor_telephone": "9871112236"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "TUX1114", "profssor_email": "sandra.kim@example.edu", "professor_name": "Sandra Kim", "professor_telephone": "9871112237"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH678", "department_name": "Politics", "student_name": "Isabella Garcia", "student_email": "isabellagarcia@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10001", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112238"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Geology", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.brown@example.net", "professor_name": "Sandra Brown", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "Olivia Taylor", "student_email": "oliviataylor@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Geology", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Computer Science", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112222"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Geology", "student_name": "Emily Johnson", "student_email": "emilyjohnson@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112220"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+EnrollStudent: {"student_id": "BCD111", "department_id": "FGH012", "department_name": "Engineering", "student_name": "John Doe", "student_email": "johndoe@example.com", "university_id": "GHI789"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.kim@example.net", "professor_name": "Sandra Kim", "professor_telephone": "9871112233"}
+HireProfessor: {"department_id": "FGH345", "professor_id": "AHB10000", "profssor_email": "sandra.williams@example.com", "professor_name": "Sandra Williams", "professor_telephone": "9871112233"}

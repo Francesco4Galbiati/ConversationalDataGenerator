@@ -1,0 +1,304 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Services", "service_type": "Infrastructure", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN12345", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF789", "resource_label": "Shared Resource"}
+OpenTroubleTicket: {"trouble_ticket_id": "TIC123", "trouble_ticket_description": "Issue with resource ABC456", "resource_id": "ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT456", "action_description": "Troubleshoot and repair of network connection", "agent_id": "AGT789", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT789", "action_description": "Replace faulty network cable and restart router"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Replace router and update network configuration", "agent_id": "AGT012", "agent_label": "Senior Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT101", "action_description": "Reset network configuration and update router firmware"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "high"}
+IdentifyIncidentImpact: {"entity_id": "SRV456", "entity_type": "hardware", "trouble_ticket_id": "TIC123"}
+GetIncidentSequence: {"trouble_ticket_id": "TIC123", "event_id": "EVT456", "timestamp": "2022-01-01 12:00:00"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN67890", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Network Services", "service_type": "Platform", "managed_by_team": "IT Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN11111", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "GHI012", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"service_id": "DEF456", "resource_id": "MNO678", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC456", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "MNO111", "metric_name": "CPU Temperature", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "AGT123", "originator_role": "System Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "JKL345", "log_id": "LOG456", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "DEF789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT456", "agent_label": "Junior Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT234", "action_description": "Run network diagnostics and update network drivers"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT567", "action_description": "Update network configuration and restart devices", "agent_id": "AGT901", "agent_label": "Network Support Specialist"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT901", "action_description": "Update network configuration and restart devices"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "low"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345, GHI012, MNO678, ABC456, DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "EVT456", "change_id": "ABC123", "change_description": "System update and restart", "start_time": "2022-01-01 12:00:00"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "server04", "serial_number": "SN90123", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Database Services", "service_type": "Software", "managed_by_team": "Support Team"}
+RegisterNewResource: {"resource_id": "STU111", "hostname": "server05", "serial_number": "SN23456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "STU111", "metric_id": "JKL222", "metric_name": "GPU Usage", "metric_value": "88%"}
+GetResourceMetrics: {"resource_id": "STU111", "metric_id": "PQR333", "metric_name": "Power Consumption", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "STU111", "metric_id": "VWX444", "metric_name": "Battery Level", "metric_value": "60%"}
+FindSharedAssets: {"service_id": "DEF456", "resource_id": "VWX901", "resource_label": "Shared Resource"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "GHI012"}
+IdentifyEventSource: {"originator_id": "SYS789", "originator_role": "Network Engineer", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "VWX901", "log_id": "LOG555", "log_time": "2022-01-06 17:00:00", "log_message": "Resource modified successfully"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "JKL345"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT678", "action_description": "Update network configuration and restart devices", "agent_id": "AGT234", "agent_label": "Network Support Specialist"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT345", "action_description": "Update network configuration and restart devices"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT999", "action_description": "Update network configuration and restart devices", "agent_id": "AGT555", "agent_label": "Network Support Specialist"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT123", "action_description": "Reinstall network operating system and update network protocols"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT678", "agent_label": "Network Support Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "VWX901", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX901", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX901", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX901", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX901", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "VWX901", "event_id": "EVT456", "change_id": "DEF789", "change_description": "Software patch and reboot", "start_time": "2022-01-05 14:30:00"}
+RegisterNewResource: {"resource_id": "VWX902", "hostname": "server06", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Security Services", "service_type": "Software", "managed_by_team": "Security Team"}
+RegisterNewResource: {"resource_id": "VWX903", "hostname": "server07", "serial_number": "SN111112", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX901", "metric_id": "STU555", "metric_name": "Fan Speed", "metric_value": "70%"}
+GetResourceMetrics: {"resource_id": "VWX901", "metric_id": "TUV666", "metric_name": "Network Latency", "metric_value": "42%"}
+GetResourceMetrics: {"resource_id": "VWX901", "metric_id": "YZA111", "metric_name": "Network Throughput", "metric_value": "98%"}
+FindSharedAssets: {"service_id": "DEF456", "resource_id": "YZA111", "resource_label": "Shared Resource"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "MNO678"}
+IdentifyEventSource: {"originator_id": "OPR456", "originator_role": "Database Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "PQR901"}
+IdentifyEventSource: {"originator_id": "DEV012", "originator_role": "Security Analyst", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Update network configuration and restart devices"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT999", "agent_label": "Network Support Associate"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC456", "trouble_ticket_id": "TIC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "SRV123", "entity_type": "application", "trouble_ticket_id": "TIC123"}
+GetIncidentSequence: {"trouble_ticket_id": "TIC123", "event_id": "EVT789", "timestamp": "2022-01-02 13:00:00"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "YZA111", "hostname": "server08", "serial_number": "SN98765", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Storage Services", "service_type": "Infrastructure", "managed_by_team": "IT Team"}
+RegisterNewResource: {"resource_id": "YZA111", "hostname": "server09", "serial_number": "SN111113", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA111", "metric_id": "RST888", "metric_name": "Network Packet Loss", "metric_value": "21%"}
+FindSharedAssets: {"service_id": "GHI789", "resource_id": "EFG456", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA111", "metric_id": "XYZ999", "metric_name": "Network Usage", "metric_value": "25%"}
+GetResourceMetrics: {"resource_id": "YZA111", "metric_id": "EFG234", "metric_name": "Network Usage", "metric_value": "32%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "STU456"}
+IdentifyEventSource: {"originator_id": "ANA001", "originator_role": "Data Scientist", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "VWX234"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZA111"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV789", "entity_type": "network", "trouble_ticket_id": "TIC123"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA111", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "YZA111", "hostname": "server10", "serial_number": "SN111114", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Application Services", "service_type": "Software", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "YZA111", "hostname": "server11", "serial_number": "SN111115", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA111", "metric_id": "NMO222", "metric_name": "Network Usage", "metric_value": "86%"}
+FindSharedAssets: {"service_id": "GHI789", "resource_id": "YZA222", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "CDE111", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "PQR444", "metric_name": "Network Usage", "metric_value": "93%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "BCD567"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "Software Engineer", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "CDE456"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "FGH654"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Reinstall network operating system and update network protocols"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Specialist"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV101", "entity_type": "database", "trouble_ticket_id": "TIC123"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC789", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+GetIncidentSequence: {"trouble_ticket_id": "TIC123", "event_id": "EVT101", "timestamp": "2022-01-03 14:00:00"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "YZA333", "hostname": "server12", "serial_number": "SN111116", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU901", "service_name": "Analytics Services", "service_type": "Software", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server13", "serial_number": "SN111117", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "JKL333", "metric_name": "Network Throughput", "metric_value": "94%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA444", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "JKL111", "metric_name": "Network Throughput", "metric_value": "96%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "PQR555", "metric_name": "Network Throughput", "metric_value": "97%"}
+FindCorrelatedEvents: {"event_id": "EVT101", "corr_id": "EFG222"}
+IdentifyEventSource: {"originator_id": "SYS456", "originator_role": "System Engineer", "event_id": "EVT101"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "HIJ789"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "KLM111"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Reset network configuration and update router firmware"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC012", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SRV012", "entity_type": "software", "trouble_ticket_id": "TIC123"}
+GetIncidentSequence: {"trouble_ticket_id": "TIC123", "event_id": "EVT012", "timestamp": "2022-01-04 15:00:00"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC101", "trouble_ticket_id": "TIC123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT012"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT012"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server14", "serial_number": "SN111118", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server15", "serial_number": "SN111119", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server16", "serial_number": "SN111120", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "PQR666", "metric_name": "Network Throughput", "metric_value": "99%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA555", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "TUV777", "metric_name": "Network Usage", "metric_value": "89%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "HJK789", "metric_name": "Network Throughput", "metric_value": "87%"}
+FindCorrelatedEvents: {"event_id": "EVT012", "corr_id": "NOP333"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT012"}
+FindCorrelatedEvents: {"event_id": "EVT012", "corr_id": "TUV888"}
+FindCorrelatedEvents: {"event_id": "EVT012", "corr_id": "RST111"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Reinstall network operating system and update network protocols"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Update network configuration and restart devices"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC012", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SRV901", "entity_type": "server", "trouble_ticket_id": "TIC123"}
+GetIncidentSequence: {"trouble_ticket_id": "TIC123", "event_id": "EVT555", "timestamp": "2022-01-05 16:00:00"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server17", "serial_number": "SN111121", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server18", "serial_number": "SN111122", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server19", "serial_number": "SN111123", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "VWX111", "metric_name": "Network Usage", "metric_value": "43%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA666", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "VWX888", "metric_name": "Network Throughput", "metric_value": "83%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "ABC012", "metric_name": "Network Usage", "metric_value": "84%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "BAC111"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "GHI234"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZB222"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Reinstall network operating system and update network protocols"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC012", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+FindCausalInterventions: {"resource_id": "YZA222", "event_id": "EVT789", "change_id": "GHI456", "change_description": "Hardware replacement and calibration", "start_time": "2022-01-10 10:00:00"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server20", "serial_number": "SN234567", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server21", "serial_number": "SN111224", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "VWX111", "service_name": "Web Services", "service_type": "Software", "managed_by_team": "DevOps Team"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "ABC789", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "ABC234", "metric_name": "Network Usage", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA777", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "45%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "CBA999"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT789"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZC333"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Run network diagnostics and update network drivers"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC901", "trouble_ticket_id": "TIC123", "ticket_category": "Technical"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "YZA222", "event_id": "EVT789"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC234", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server22", "serial_number": "SN2345678", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server23", "serial_number": "SN234568", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA222", "hostname": "server24", "serial_number": "SN234569", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "XYZ111", "metric_name": "Network Throughput", "metric_value": "94%"}
+GetResourceMetrics: {"resource_id": "YZA222", "metric_id": "ABC012", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA888", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "YZA666", "metric_id": "ABC012", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZD444"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZE555"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZF666"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT567", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT678", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Update network configuration and restart devices"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT567", "action_description": "Run network diagnostics and update network drivers", "agent_id": "AGT678", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Troubleshoot and repair of network connection"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC012", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+FindCausalInterventions: {"resource_id": "YZA666", "event_id": "EVT789", "change_id": "JKL012", "change_description": "Firmware update and configuration adjustment", "start_time": "2022-01-15 16:45:00"}
+RegisterNewResource: {"resource_id": "YZA666", "hostname": "server25", "serial_number": "SN234570", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA666", "hostname": "server26", "serial_number": "SN234571", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "YZA222", "service_name": "Authentication Services", "service_type": "Software", "managed_by_team": "Security Team"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "GHI345", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MNP111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "STU901", "resource_id": "YZA999", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MNP222", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZF888"}
+IdentifyEventSource: {"originator_id": "SYS012", "originator_role": "System Administrator", "event_id": "EVT789"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZF777"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "YZF999"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Update network configuration and restart devices"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Reconfigure network settings and update firewall rules", "agent_id": "AGT111", "agent_label": "Network Support Agent"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "TIC123", "agent_id": "AGT111", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV111", "entity_type": "server", "trouble_ticket_id": "TIC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "YZA666", "hostname": "server27", "serial_number": "SN234572", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "YZA666", "hostname": "server28", "serial_number": "SN234573", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "EFG234", "service_name": "Backup Services", "service_type": "Infrastructure", "managed_by_team": "IT Team"}
+GetResourceMetrics: {"resource_id": "YZA666", "metric_id": "XYZ222", "metric_name": "Network Throughput", "metric_value": "85%"}

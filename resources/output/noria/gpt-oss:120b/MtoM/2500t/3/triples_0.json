@@ -1,0 +1,312 @@
+RegisterNewService: {"service_id": "SV001", "service_name": "CustomerPortal", "service_type": "WebApp", "managed_by_team": "PlatformTeam"}
+RegisterNewResource: {"resource_id": "RSV001", "hostname": "host-001", "serial_number": "SN-20230623-001", "resource_type": "server", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "SG001", "system_label": "New Asset System", "importance_level": "high"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC001", "resource_label": "Shared Database"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET001", "metric_name": "CPU_Usage", "metric_value": "73%"}
+OpenTroubleTicket: {"resource_id": "RSV001", "trouble_ticket_id": "TT001", "trouble_ticket_description": "Primary storage unit RSV001 experiencing performance issues."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC001", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG001", "log_time": "2023-09-15T10:23:45Z", "log_message": "Routine maintenance check performed on resource."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG002", "log_time": "2023-09-16T14:05:30Z", "log_message": "Performed security audit on resource."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG003", "log_time": "2023-09-20T09:12:00Z", "log_message": "Backup completed successfully for resource."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG004", "log_time": "2023-09-25T11:30:00Z", "log_message": "Performed routine backup for resource."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT123", "action_description": "Replaced the faulty router module and updated its firmware to resolve connectivity issues.", "agent_id": "AGT456", "agent_label": "Network Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT123", "action_description": "Replaced the faulty router module and updated its firmware to resolve connectivity issues."}
+VerifyActionEffects: {"action_id": "ACT123", "expected_effect": "The action will reset the system to safe mode and clear pending alerts."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new router module and applied the latest firmware to restore network connectivity.", "agent_id": "AGT457", "agent_label": "Senior Network Engineer"}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "closed", "cause_text": "Network outage caused by router failure", "notes": "Issue resolved after replacing the faulty router; monitoring has been enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT001", "agent_id": "AGT001", "agent_label": "Incident Analyst"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT001", "importance_level": "medium"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT001", "target_time": "2026-07-01T17:00:00Z", "committed_time": "2026-06-30T12:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW001", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Network Connectivity", "responsibility": "Network Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT456", "timestamp": "2023-05-01T08:30:00Z"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT456", "change_id": "INT001", "change_description": "Applied security patch to address vulnerability X", "start_time": "2026-06-20T09:30:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "SI001"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT456"}
+RegisterNewService: {"service_id": "API123", "service_name": "AnalyticsEngine", "service_type": "Microservice", "managed_by_team": "DataTeam"}
+RegisterNewResource: {"resource_id": null, "hostname": null, "serial_number": null, "resource_type": null, "usage_state": null}
+InitializeSystemGroup: {"system_id": "AS123", "system_label": "Asset Management System", "importance_level": "low"}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC002", "resource_label": "Analytics Engine"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MEM002", "metric_name": "Memory_Usage", "metric_value": "58%"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT002", "trouble_ticket_description": "Issue reported for resource RSC001."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC003", "resource_label": "Logging Service"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG005", "log_time": "2023-09-30T08:45:00Z", "log_message": "Performed data integrity check for resource."}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR001"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "USR001", "originator_role": "user"}
+DetectAlarmPatterns: {"event_id": "EVT456", "pattern_id": "PAT001", "description": "Overheating of power module"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT125", "action_description": "Installed a new router module, applied the latest firmware, and replaced the faulty module to fully restore network connectivity.", "agent_id": "AGT458", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"event_id": "EVT456", "plan_id": "OPR001", "plan_description": "Deploy containment team to secure the affected area, initiate system shutdown, and perform data backup before remediation.", "plan_outcome": "Event resolved with minimal impact and full restoration of normal operations."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "RFG001", "action_description": "Replaced the defective router module and applied the latest firmware, fully restoring network connectivity."}
+VerifyActionEffects: {"action_id": "ACT124", "expected_effect": "The system is returned to safe mode and all pending alerts are cleared."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "closed", "cause_text": "Network outage caused by router failure", "notes": "Issue resolved after replacing the faulty router; monitoring has been enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT001", "agent_id": "AGX001", "agent_label": "Support Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT002", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT001", "target_time": "2026-07-01T18:00:00Z", "committed_time": "2026-06-30T13:00:00Z"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT456", "change_id": "CHG002", "change_description": "Adjusted firewall rule to block unauthorized access", "start_time": "2026-06-22T14:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "AP001", "entity_type": "application"}
+IdentifyRootCause: {"trouble_ticket_id": "TT002", "category_name": "Database Performance", "responsibility": "Database Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT789", "timestamp": "2023-04-28T14:15:00Z"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT789"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": "network", "similar_ticket_id": "SI002"}
+RegisterNewService: {"service_id": "XYZ123", "service_name": "InventoryTracker", "service_type": "API", "managed_by_team": "OpsTeam"}
+RegisterNewResource: {"resource_id": "RSC004", "hostname": "host-002", "serial_number": "SN-20230623-002", "resource_type": "database", "usage_state": "inactive"}
+InitializeSystemGroup: {"system_id": "NX001", "system_label": "Infrastructure Monitoring System", "importance_level": null}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC005", "resource_label": "Cache Service"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET002", "metric_name": "Disk_Usage", "metric_value": "45%"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT003", "trouble_ticket_description": "Issue reported for resource RSC001. Primary storage unit RSV001 experiencing performance issues."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC006", "resource_label": "Message Queue"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG006", "log_time": "2023-10-05T10:15:00Z", "log_message": "Completed scheduled backup for resource."}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "COR002"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": null, "originator_role": null}
+DetectAlarmPatterns: {"event_id": "EVT789", "pattern_id": null, "description": null}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT126", "action_description": "Replaced the power supply unit and updated firmware, fully restoring network connectivity."}
+SuggestOperationPlan: {"event_id": "EVT789", "plan_id": "OPR002", "plan_description": "Deploy incident response team to isolate affected systems, conduct forensic analysis, and implement remediation steps.", "plan_outcome": "Event mitigated with no data loss and systems restored to normal operation."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT002", "action_id": "ACT127", "action_description": "Replaced the faulty network switch and applied the latest firmware to restore connectivity.", "agent_id": "AGT459", "agent_label": "Field Engineer"}
+VerifyActionEffects: {"action_id": "ACT124", "expected_effect": "System reverts to safe mode and all outstanding alerts are cleared."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "closed", "cause_text": "Network outage caused by router failure", "notes": "Issue resolved after replacing the faulty router; monitoring has been enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT001", "agent_id": "AGT002", "agent_label": "Support Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT001", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT001", "target_time": "2026-07-02T09:00:00Z", "committed_time": "2026-07-01T08:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "ST001", "entity_type": "site"}
+FindCausalInterventions: {"resource_id": "RSC002", "event_id": "EVT789", "change_id": "CHG003", "change_description": "Implemented network routing update on RSC002 which altered traffic flow", "start_time": "2026-06-21T11:45:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Application Bug", "responsibility": "Application Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT123", "timestamp": "2023-04-20T10:45:00Z"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT123"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT001", "ticket_category": null, "similar_ticket_id": "SI003"}
+RegisterNewService: {"service_id": "NM001", "service_name": "BillingService", "service_type": "FunctionApp", "managed_by_team": "FinanceTeam"}
+RegisterNewResource: {"resource_id": "RSC007", "hostname": "host-003", "serial_number": "SN-20230623-003", "resource_type": "application", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "NG002", "system_label": "Next Generation System", "importance_level": "medium"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT004", "trouble_ticket_description": "Problem with resource RSC001 requires investigation."}
+FindSharedAssets: {"service_id": "SV001", "resource_id": "RSC008", "resource_label": "Notification Service"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "NET001", "metric_name": "Network_Usage", "metric_value": "62%"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT005", "trouble_ticket_description": "General issue reported for resource RSC001."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG007", "log_time": "2023-10-10T09:00:00Z", "log_message": "Completed backup verification for resource."}
+FindCorrelatedEvents: {"event_id": "EVT123", "corr_id": "XYZ789"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "USR002", "originator_role": "initiator"}
+DetectAlarmPatterns: {"event_id": "EVT123", "pattern_id": "PAT002", "description": "Voltage spike in sensor array"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT200", "action_description": "Diagnosed the issue, cleared configuration errors, and performed a system reboot to restore network connectivity.", "agent_id": "AGT999", "agent_label": "Technical Specialist"}
+SuggestOperationPlan: {"description": "Suggested operation plan for event EVT123.", "preconditions_slots": {"event_id": "EVT123"}, "postconditions_slots": {"plan_id": "OPR003", "plan_description": "Deploy rapid response team to isolate the breach, conduct forensic imaging, and apply security patches.", "plan_outcome": "Event contained with minimal downtime and full data integrity restored."}}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT128", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001."}
+VerifyActionEffects: {"action_id": "ACT124", "expected_effect": "The operation switches the system back to safe mode and removes any active alerts."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT002", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT002", "target_time": "2026-07-03T10:00:00Z", "committed_time": "2026-07-02T15:00:00Z"}
+GetIncidentSummary: {"trouble_ticket_id": "TT004", "status": "closed", "cause_text": "Network outage caused by router failure", "notes": "Issue resolved after replacing the faulty router; monitoring has been enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT004", "agent_id": "AGT123", "agent_label": "Incident Analyst"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT003", "entity_id": "HW002", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT123", "change_id": "CHG001", "change_description": "Modified access control list on RSC001 to restrict user permissions, potentially triggering event EVT123", "start_time": "2026-06-19T08:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT004", "category_name": "Security Incident", "responsibility": "Security Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EVT001", "timestamp": "2023-04-15T09:00:00Z"}
+MapEventsToResources: {"resource_id": null, "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT003", "ticket_category": null, "similar_ticket_id": "SI004"}
+RegisterNewService: {"service_id": "AB123", "service_name": "UserAnalytics", "service_type": "Microservice", "managed_by_team": "ResearchTeam"}
+RegisterNewResource: {"resource_id": "RSC009", "hostname": "host-004", "serial_number": "SN-20230623-004", "resource_type": "cache", "usage_state": "decommissioned"}
+InitializeSystemGroup: {"system_id": "RSC001", "system_label": "Resource Coordination System", "importance_level": "low"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT006", "trouble_ticket_description": "User reported a problem with resource RSC001."}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC010", "resource_label": "Shared Database"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "POW001", "metric_name": "Power_Usage", "metric_value": "55%"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT007", "trouble_ticket_description": "Problem with resource RSC005"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG008", "log_time": "2023-10-15T10:00:00Z", "log_message": "Backup completed successfully for resource RSC001."}
+FindCorrelatedEvents: {"event_id": "EVT123", "corr_id": "COR003"}
+IdentifyEventSource: {"event_id": "EVT123", "originator_id": "USR003", "originator_role": "admin"}
+DetectAlarmPatterns: {"event_id": "EVT123", "pattern_id": null, "description": "No matching pattern"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT004", "action_id": "ACT129", "action_description": "Replaced the faulty router module and applied the latest firmware, restoring network connectivity for ticket TT004.", "agent_id": "AGT500", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"event_id": "EVT123", "plan_id": "OPR003", "plan_description": "Deploy advanced containment team to isolate affected systems, secure data backups, and perform forensic analysis before remediation.", "plan_outcome": "Event contained with no data loss and systems restored to normal operation."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001."}
+VerifyActionEffects: {"action_id": "ACT126", "expected_effect": "The system transitions to safe mode and all current alerts are removed."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "closed", "cause_text": "Network outage caused by router failure", "notes": "Issue resolved after replacing the faulty router; monitoring has been enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT002", "agent_id": "AGT777", "agent_label": "Network Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT004", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT004", "target_time": "2026-07-04T11:00:00Z", "committed_time": "2026-07-04T09:30:00Z"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT123", "change_id": "CHG005", "change_description": "Updated user role assignments on RSC001, altering permission sets which may have triggered event EVT123", "start_time": "2026-06-23T10:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "HW003", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Security Incident", "responsibility": "Security Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EVT002", "timestamp": "2023-04-10T11:20:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT003", "ticket_category": null, "similar_ticket_id": "SI005"}
+FindCausalInterventions: {"resource_id": "RSC004", "event_id": "EVT123", "change_id": "CHG004", "change_description": "Adjusted access control list on RSC004, potentially triggering event EVT123", "start_time": "2026-06-24T12:30:00Z"}
+RegisterNewService: {"service_id": "QT456", "service_name": "LogisticsOptimizer", "service_type": "Microservice", "managed_by_team": "OpsTeam"}
+RegisterNewResource: {"resource_id": "ABC123", "hostname": "host-005", "serial_number": "SN-20230623-005", "resource_type": "application", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "AG001", "system_label": "New Asset Group", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC011", "resource_label": "Reporting Service"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT008", "trouble_ticket_description": "Brief issue noted for resource RSC001."}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "TMP001", "metric_name": "Temperature", "metric_value": "68\u00b0C"}
+FindSharedAssets: {"service_id": "NM001", "resource_id": null, "resource_label": null}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG009", "log_time": "2023-10-20T11:00:00Z", "log_message": "Performed incremental backup for resource RSC001."}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "BOT001", "originator_role": "service"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR004"}
+DetectAlarmPatterns: {"event_id": "EVT123", "pattern_id": "PAT003", "description": "Thermal runaway in battery pack"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT004", "action_id": "ACT127", "action_description": "Replaced the faulty router module and applied the latest firmware, restoring network connectivity for ticket TT004."}
+SuggestOperationPlan: {"event_id": "EVT456", "plan_id": "OPR004", "plan_description": "Deploy rapid response unit to quarantine compromised nodes, implement network segmentation, and conduct real-time threat hunting prior to system restoration.", "plan_outcome": "Event neutralized with no data loss and full restoration of services within SLA."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT004", "action_id": "ACT300", "action_description": "Replaced faulty router module and updated firmware to restore connectivity for ticket TT004.", "agent_id": "AGT600", "agent_label": "Systems Engineer"}
+VerifyActionEffects: {"action_id": "ACT200", "expected_effect": "The system initiates a diagnostic routine and logs the corrective action."}
+GetIncidentSummary: {"trouble_ticket_id": "TT005", "status": "closed", "cause_text": "Network outage due to a router failure", "notes": "The faulty router was replaced and monitoring was enabled to prevent recurrence."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT004", "agent_id": "AGT800", "agent_label": "Support Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT004", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT003", "target_time": "2026-07-05T14:00:00Z", "committed_time": "2026-07-05T15:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": null, "entity_type": null}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT123", "change_id": "CHG006", "change_description": "Adjusted firewall rule on RSC001 to block unauthorized access, potentially triggering event EVT123", "start_time": "2026-06-25T09:00:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT004", "category_name": "Network Connectivity", "responsibility": "Network Team"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT004", "ticket_category": "network", "similar_ticket_id": "SI006"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT999", "timestamp": "2023-05-05T12:00:00Z"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT123"}
+RegisterNewService: {"service_id": "SR001", "service_name": "DataEnrichmentService", "service_type": "Microservice", "managed_by_team": "ResearchTeam"}
+RegisterNewResource: {"resource_id": "RSC012", "hostname": "host-006", "serial_number": "SN-20230624-001", "resource_type": "proxy", "usage_state": "maintenance"}
+InitializeSystemGroup: {"system_id": "AB123", "system_label": "New Asset Group", "importance_level": "medium"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TT009", "trouble_ticket_description": "Resource RSC001 experiencing intermittent connectivity issues."}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC013", "resource_label": "Search Service"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET003", "metric_name": "GPU_Usage", "metric_value": "80%"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT010", "trouble_ticket_description": "Resource RSC005 experiencing unexpected latency."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LOG010", "log_time": "2023-10-25T12:00:00Z", "log_message": "Backup completed successfully for resource RSC001 with incremental changes."}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR005"}
+IdentifyEventSource: {"event_id": "EVT123", "originator_id": null, "originator_role": null}
+DetectAlarmPatterns: {"event_id": "EVT456", "pattern_id": "PAT004", "description": "Communication timeout in control unit"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT400", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001.", "agent_id": "AGT321", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"event_id": "EVT123", "plan_id": "OPR005", "plan_description": "Deploy a specialized response squad to quarantine compromised assets, conduct deep packet inspection, and restore services with integrity verification.", "plan_outcome": "Event isolated with limited impact and services restored within the target recovery window."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001."}
+VerifyActionEffects: {"action_id": "ACT200", "expected_effect": "The system performs a firmware update and resets error counters."}
+GetIncidentSummary: {"trouble_ticket_id": "TT005", "status": "closed", "cause_text": "Network outage resulted from a router failure", "notes": "The faulty router was swapped and continuous monitoring was activated to prevent recurrence"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT001", "importance_level": "high"}
+ListInvolvedAgents: {"trouble_ticket_id": "TT004", "agent_id": "AGT010", "agent_label": "Technical Specialist"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT004", "target_time": "2026-07-06T10:00:00Z", "committed_time": "2026-07-06T12:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW004", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT123", "change_id": "CHG007", "change_description": "Modified access control list on RSC001 to tighten inbound traffic, potentially triggering event EVT123", "start_time": "2026-06-26T08:00:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Configuration Error", "responsibility": "Operations Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EVT345", "timestamp": "2023-04-12T13:00:00Z"}
+MapEventsToResources: {"resource_id": "RSC005", "event_id": "EVT123"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT004", "ticket_category": "network_outage", "similar_ticket_id": "SI007"}
+RegisterNewService: {"service_id": "LM789", "service_name": "PredictiveMaintenance", "service_type": "Microservice", "managed_by_team": "ResearchTeam"}
+RegisterNewResource: {"resource_id": "RSC014", "hostname": "host-007", "serial_number": "SN-20230624-002", "resource_type": "proxy", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "XZ123", "system_label": "Dynamic Asset Tracker", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC015", "resource_label": "Billing Service"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "RMT004", "metric_name": "Latency", "metric_value": "120ms"}
+OpenTroubleTicket: {"resource_id": "RSC012", "trouble_ticket_id": "TT011", "trouble_ticket_description": "Issue reported for resource RSC012."}
+FindSharedAssets: {"service_id": "LM789", "resource_id": "XQ123", "resource_label": "User Management Service"}
+FindCorrelatedEvents: {"event_id": "EVT123", "corr_id": "COR006"}
+IdentifyEventSource: {"event_id": "EVT123", "originator_id": "APP001", "originator_role": "operator"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LGA012", "log_time": "2023-11-01T09:30:00Z", "log_message": "Backup completed successfully for resource RSC001 with full snapshot."}
+DetectAlarmPatterns: {"event_id": "EVT123", "pattern_id": "PAT005", "description": "Unexpected voltage drop in actuator module"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT005", "action_id": "ACT500", "action_description": "Replaced the faulty router module and applied the latest firmware to restore network connectivity.", "agent_id": "AGT777", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"event_id": "EVT123", "plan_id": "OPR006", "plan_description": "Deploy coordinated cyber defense unit to perform threat containment, execute system sanitization, and validate data integrity before service restoration.", "plan_outcome": "Event neutralized with zero data loss and expedited restoration of critical services within 2 hours."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001."}
+VerifyActionEffects: {"action_id": "ACT400", "expected_effect": "The system initiates a self\u2011test routine and logs the results."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "Closed", "cause_text": "Router failure caused network outage", "notes": "Router replaced and monitoring enabled to ensure stability."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT001", "agent_id": "AGY001", "agent_label": "Network Engineer"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT004", "importance_level": "high"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT010", "target_time": "2026-07-07T10:00:00Z", "committed_time": "2026-07-07T12:00:00Z"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT123", "change_id": "CHG008", "change_description": "Adjusted firewall rule on RSC001 to block unauthorized access, potentially triggering event EVT123", "start_time": "2026-06-20T09:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "AP002", "entity_type": "application"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT123"}
+IdentifyRootCause: {"trouble_ticket_id": "TT004", "category_name": "Hardware Failure", "responsibility": "Infrastructure Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT004", "timestamp": "2023-04-05T09:30:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT010", "ticket_category": null, "similar_ticket_id": "SI008"}
+RegisterNewService: {"service_id": "HR007", "service_name": "SupplyChainMonitor", "service_type": "ContainerApp", "managed_by_team": "SecurityTeam"}
+RegisterNewResource: {"resource_id": "NWD042", "hostname": "host-008", "serial_number": "SN-20230624-003", "resource_type": "analytics", "usage_state": "provisioning"}
+InitializeSystemGroup: {"system_id": "QT001", "system_label": "Unified Asset Registry", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC016", "resource_label": "Shared Database"}
+GetResourceMetrics: {"resource_id": "RSC005", "metric_id": "MET004", "metric_name": "IO_Usage", "metric_value": "90%"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT012", "trouble_ticket_description": "Resource RSC005 reported performance degradation."}
+FindSharedAssets: {"service_id": "LM789", "resource_id": "RSC017", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LGX123", "log_time": "2023-11-05T13:45:00Z", "log_message": "Backup failed due to network error for resource RSC001."}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR007"}
+IdentifyEventSource: {"event_id": "EVT123", "originator_id": "SYS001", "originator_role": "system"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT006", "description": "Intermittent signal loss in communication bus"}
+SuggestOperationPlan: {"event_id": "EVT123", "plan_id": "OPR007", "plan_description": "Deploy integrated cyber response unit to isolate compromised segments, perform forensic imaging, and restore services with checksum verification.", "plan_outcome": "Event contained with full data integrity and services restored within the defined recovery window."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT005", "action_id": "ACT600", "action_description": "Replaced faulty router module and applied latest firmware to restore network connectivity for ticket TT005.", "agent_id": "AGT700", "agent_label": "Network Engineer"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT005", "action_id": "ACT125", "action_description": "Replaced faulty router module and applied the latest firmware to restore network connectivity for ticket TT005."}
+VerifyActionEffects: {"action_id": "ACT500", "expected_effect": "The system disables the faulty module and notifies the operator."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "Closed - final", "cause_text": "The outage stemmed from a malfunctioning router", "notes": "After swapping the defective router, continuous monitoring was set up to maintain network stability."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT005", "importance_level": "high"}
+ListInvolvedAgents: {"trouble_ticket_id": "TT010", "agent_id": "AGT011", "agent_label": "Network Engineer"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT008", "target_time": "2026-07-08T10:00:00Z", "committed_time": "2026-07-08T12:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "AP003", "entity_type": "application"}
+FindCausalInterventions: {"resource_id": "RSC005", "event_id": "EVT123", "change_id": "CHG009", "change_description": "Modified access control list on RSC005 to restrict inbound traffic, potentially triggering event EVT123", "start_time": "2026-06-27T09:30:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Configuration Error", "responsibility": "Infrastructure Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT005", "event_id": "EVT200", "timestamp": "2023-04-22T16:30:00Z"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT005", "ticket_category": null, "similar_ticket_id": "SI009"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW005", "entity_type": "hardware"}
+RegisterNewService: {"service_id": "DX001", "service_name": "QuantumScheduler", "service_type": "EventDrivenApp", "managed_by_team": "InnovationTeam"}
+RegisterNewResource: {"resource_id": "ZXY123", "hostname": "host-009", "serial_number": "SN-20230624-004", "resource_type": "analytics", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "LM001", "system_label": "Central Asset Hub", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC018", "resource_label": "Authentication Service"}
+GetResourceMetrics: {"resource_id": "RSC005", "metric_id": "MET005", "metric_name": "Fan_Speed", "metric_value": "1200RPM"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT013", "trouble_ticket_description": "Resource RSC005 reported intermittent errors."}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC019", "resource_label": "Data Warehouse"}
+FindCorrelatedEvents: {"event_id": "EVT200", "corr_id": "COR008"}
+GetResourceLogs: {"resource_id": "RSC005", "log_id": "LGZ011", "log_time": "2023-11-10T10:20:00Z", "log_message": "Backup completed successfully for resource RSC005 with full snapshot."}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "USR004", "originator_role": "manager"}
+DetectAlarmPatterns: {"event_id": "EVT123", "pattern_id": "PAT007", "description": "Communication timeout in control unit"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT005", "action_id": "ACT700", "action_description": "Replaced faulty router module and applied the latest firmware to restore network connectivity for ticket TT005.", "agent_id": "AGT850", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"event_id": "EVT123", "plan_id": "OPR008", "plan_description": "Deploy specialized cyber response team to isolate compromised infrastructure, perform forensic imaging, and restore services with integrity verification and post-incident review.", "plan_outcome": "Event neutralized with zero data loss and services restored within 1 hour, including comprehensive post-incident analysis."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT005", "action_id": "ACT126", "action_description": "Replaced faulty router module and applied the latest firmware to restore network connectivity for ticket TT005."}
+VerifyActionEffects: {"action_id": "ACT700", "expected_effect": "The system isolates the compromised network segment and alerts the security team."}
+GetIncidentSummary: {"trouble_ticket_id": "TT005", "status": "closed", "cause_text": "Network disruption was due to a faulty router", "notes": "Following the router replacement, system performance was verified and alerts configured to detect future issues."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT005", "importance_level": "high"}
+ListInvolvedAgents: {"trouble_ticket_id": "TT005", "agent_id": "AGT003", "agent_label": "Network Engineer"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT012", "target_time": "2026-07-09T09:00:00Z", "committed_time": "2026-07-09T12:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "ST002", "entity_type": "site"}
+FindCausalInterventions: {"resource_id": "RSC005", "event_id": "EVT200", "change_id": "CHG010", "change_description": "Modified firewall rule on RSC005 to block suspicious traffic", "start_time": "2026-06-28T10:15:00Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Configuration Error", "responsibility": "Infrastructure Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT001", "event_id": "EVT003", "timestamp": "2023-04-18T14:00:00Z"}
+MapEventsToResources: {"resource_id": "RSC005", "event_id": "EVT200"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT004", "ticket_category": "network", "similar_ticket_id": "SI010"}
+RegisterNewService: {"service_id": "XYZ123", "service_name": "QuantumAnalytics", "service_type": "Microservice", "managed_by_team": "ResearchTeam"}
+RegisterNewResource: {"resource_id": "RSC005", "hostname": "host-010", "serial_number": "SN-20230625-001", "resource_type": "application", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "HR004", "system_label": "Enterprise Asset Suite", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC020", "resource_label": "Search Service"}
+GetResourceMetrics: {"resource_id": "RSC005", "metric_id": "MET006", "metric_name": "Cache_Hit_Rate", "metric_value": "92%"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT014", "trouble_ticket_description": "Resource RSC005 requires investigation."}
+FindSharedAssets: {"service_id": "XYZ123", "resource_id": "RSC021", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RSC005", "log_id": "LRA123", "log_time": "2023-11-15T10:00:00Z", "log_message": "Backup completed successfully for resource RSC005 with incremental changes."}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR009"}
+IdentifyEventSource: {"event_id": "EVT200", "originator_id": "ADM005", "originator_role": "admin"}
+DetectAlarmPatterns: {"event_id": "EVT456", "pattern_id": "PAT008", "description": "Intermittent communication failure in control unit leading to occasional signal loss."}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT005", "action_id": "ACT900", "action_description": "Replaced the faulty router module and applied the latest firmware to restore network connectivity.", "agent_id": "AGT900", "agent_label": "Network Engineer"}
+SuggestOperationPlan: {"preconditions_slots": "{\"event_id\": \"EVT200\"}", "postconditions_slots": "{\"plan_id\": \"OPR009\", \"plan_description\": \"Deploy advanced cyber response unit to isolate compromised nodes, perform forensic imaging, and restore services with integrity verification and post-incident review.\", \"plan_outcome\": \"Event neutralized with zero data loss and services restored within 45 minutes, including comprehensive post-incident analysis.\"}"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001."}
+VerifyActionEffects: {"action_id": "ACT700", "expected_effect": "The system initiates a backup of critical data and notifies the administrator."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "Closed (final)", "cause_text": "Network outage was due to a malfunctioning router", "notes": "After the router swap, system health checks were instituted to ensure ongoing reliability."}
+ListInvolvedAgents: {"trouble_ticket_id": "TT005", "agent_id": "AGX002", "agent_label": "Incident Analyst"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT014", "importance_level": null}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT014", "target_time": "2026-07-10T10:00:00Z", "committed_time": "2026-07-10T12:00:00Z"}
+FindCausalInterventions: {"resource_id": "RSC005", "event_id": "EVT123", "change_id": "CHG009", "change_description": "Modified access control list on RSC005 to restrict inbound traffic, potentially triggering event EVT123", "start_time": "2026-06-27T09:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT005", "entity_id": "HW006", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TT005", "category_name": "Configuration Error", "responsibility": "Infrastructure Team"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EVX001", "timestamp": "2023-05-10T09:45:00Z"}
+MapEventsToResources: {"resource_id": null, "event_id": "EVT200"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT014", "ticket_category": null, "similar_ticket_id": "SI011"}
+RegisterNewService: {"service_id": "GF001", "service_name": "EdgeCompute", "service_type": "BatchJob", "managed_by_team": "AIResearchTeam"}
+RegisterNewResource: {"resource_id": "RSC022", "hostname": "host-011", "serial_number": "SN-20230625-002", "resource_type": "database", "usage_state": "active"}
+InitializeSystemGroup: {"system_id": "JKL456", "system_label": "Advanced Asset Platform", "importance_level": "high"}
+FindSharedAssets: {"service_id": "GF001", "resource_id": "RSC023", "resource_label": "Monitoring Service"}
+GetResourceMetrics: {"resource_id": "RSC005", "metric_id": "MET007", "metric_name": "Bandwidth_Usage", "metric_value": "150Mbps"}
+OpenTroubleTicket: {"resource_id": "RSC005", "trouble_ticket_id": "TT015", "trouble_ticket_description": "Resource RSC005 showing intermittent connectivity issues."}
+FindSharedAssets: {"service_id": "GF001", "resource_id": "RSX123", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RSC005", "log_id": "LKB123", "log_time": "2023-11-20T09:15:00Z", "log_message": "Backup verification completed for resource RSC005."}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "COR010"}
+IdentifyEventSource: {"event_id": "EVT123", "originator_id": "AGT123", "originator_role": "initiator"}
+DetectAlarmPatterns: {"event_id": "EVT200", "pattern_id": null, "description": "No matching pattern"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT124", "action_description": "Installed a new network interface card and applied the latest firmware, fully restoring service for ticket TT001.", "agent_id": "AGT005", "agent_label": "Support Engineer"}
+SuggestOperationPlan: {"preconditions_slots": {"event_id": "EVT200"}, "postconditions_slots": {"plan_id": "OPR009", "plan_description": "Deploy advanced cyber response unit to isolate compromised segments, perform forensic imaging, and restore services with checksum verification and post-incident review.", "plan_outcome": "Event neutralized with zero data loss and critical services restored within 30 minutes."}}
+IdentifyResolvingActions: {"trouble_ticket_id": "TT004", "action_id": "XYZ001", "action_description": "Replaced the router module and updated firmware, successfully resolving ticket TT004."}
+VerifyActionEffects: {"action_id": "ACT700", "expected_effect": "The system logs the corrective action and updates the audit trail."}
+GetIncidentSummary: {"trouble_ticket_id": "TT001", "status": "open", "cause_text": "Network outage caused by a misconfigured firewall", "notes": "Implemented additional alert thresholds and performed a post-incident review to improve response procedures."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TT003", "importance_level": "high"}
+ListInvolvedAgents: {"trouble_ticket_id": "TT010", "agent_id": "AGZ001", "agent_label": "Network Engineer"}
+GetResolutionDeadlines: {"trouble_ticket_id": "TT010", "target_time": "2026-07-11T10:00:00Z", "committed_time": "2026-07-11T12:00:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TT001", "entity_id": "HW007", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RSC005", "event_id": "EVT200", "change_id": "CHG011", "change_description": "Modified access control list on RSC005 to restrict inbound traffic, potentially triggering event EVT200", "start_time": "2026-06-29T11:00:00Z"}
+MapEventsToResources: {"resource_id": "RSC005", "event_id": "EVT200"}
+IdentifyRootCause: {"trouble_ticket_id": "TT001", "category_name": "Performance Degradation", "responsibility": "DevOps Team"}
+FindSimilarIncidents: {"trouble_ticket_id": "TT012", "ticket_category": null, "similar_ticket_id": "SI012"}
+GetIncidentSequence: {"trouble_ticket_id": "TT004", "event_id": "EVT010", "timestamp": "2023-05-15T10:00:00Z"}
+RegisterNewService: {"service_id": "JKL999", "service_name": "RealTimeAnalytics", "service_type": "Microservice", "managed_by_team": "InnovationTeam"}
+RegisterNewResource: {"resource_id": "QWE123", "hostname": "host-012", "serial_number": "SN-20230626-001", "resource_type": "application", "usage_state": "provisioning"}
+InitializeSystemGroup: {"system_id": "UV789", "system_label": "Unified Asset Registry", "importance_level": "medium"}
+FindSharedAssets: {"service_id": "GF001", "resource_id": "RSC024", "resource_label": "Shared Database"}
+GetResourceMetrics: {"resource_id": "RSC005", "metric_id": "MET008", "metric_name": "Voltage", "metric_value": "12V"}
+OpenTroubleTicket: {"resource_id": "RSC015", "trouble_ticket_id": "TT016", "trouble_ticket_description": "Brief issue reported for resource RSC015."}
+FindSharedAssets: {"service_id": "GF001", "resource_id": "RSC025", "resource_label": "Shared Database"}
+GetResourceLogs: {"resource_id": "RSC005", "log_id": "LAA001", "log_time": "2023-12-01T09:00:00Z", "log_message": "Backup completed successfully for resource RSC005 with differential snapshot."}
+FindCorrelatedEvents: {"event_id": "EVT200", "corr_id": "COR011"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AUT001", "originator_role": "automation"}
+DetectAlarmPatterns: {"event_id": "EVT200", "pattern_id": null, "description": "No matching pattern"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TT001", "action_id": "ACT801", "action_description": "Installed a new network interface card and updated firmware to fully restore service for ticket TT001.", "agent_id": "AGT801", "agent_label": "Network Engineer"}

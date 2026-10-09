@@ -1,0 +1,276 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "New Service Registration", "service_type": "Registration Service", "managed_by_team": "Admin Team"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF456", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "System update successful"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "GHI789", "log_time": "2022-01-02 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "JKL012", "log_time": "2022-01-03 14:00:00", "log_message": "Resource update failed"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "MNO345", "log_time": "2022-01-04 15:00:00", "log_message": "Resource update pending"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "PQR678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource update in progress"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "STU901", "log_time": "2022-01-06 17:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "VWX234", "log_time": "2022-01-07 18:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "YZA111", "log_time": "2022-01-08 19:00:00", "log_message": "System update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "EFG567", "log_time": "2022-01-09 20:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "GHI789", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Asset"}
+GetResourceLogs: {"resource_id": "GHI789", "log_id": "BCD456", "log_time": "2022-01-10 21:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "GHI789", "log_id": "CDE678", "log_time": "2022-01-11 22:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "GHI789", "log_id": "TUV222", "log_time": "2022-01-12 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO345", "resource_label": "Common Asset"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "DEF123", "log_time": "2022-01-13 12:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "BCD456", "log_time": "2022-01-02 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "BCD456", "log_time": "2022-01-05 16:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "BCD456", "log_time": "2022-01-05 16:00:00", "log_message": "Resource update successful", "resource_id": "MNO345"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "FGH456", "log_time": "2022-01-14 11:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR678", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "STU901", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "VWX111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "HIJ012", "log_time": "2022-01-15 09:00:00", "log_message": "Resource update available", "resource_id": "DEF456"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "YZA222", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "KLM234", "log_time": "2022-01-16 08:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "BCD111", "log_time": "2022-01-17 07:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "CDE111", "log_time": "2022-01-05 16:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "XYZ789", "log_time": "2022-01-18 06:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "MNP111", "log_time": "2022-01-19 15:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "PQR111", "log_time": "2022-01-20 14:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "EFG234", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "EFG012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "CDE678", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+GetResourceLogs: {"log_id": "RST123", "log_time": "2022-01-23 11:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "IJK345", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"log_id": "FGH012", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+GetResourceLogs: {"log_id": "FGH789", "log_time": "2022-01-26 16:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "FGH567", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI345", "log_time": "2022-01-27 12:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "JKL789", "log_time": "2022-01-28 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "PQR234", "log_time": "2022-01-29 10:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "JKL012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "PQR345", "log_time": "2022-01-30 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "MNP678", "log_time": "2022-01-31 12:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "PQR012", "log_time": "2022-01-32 23:00:00", "log_message": "Resource update available", "resource_id": "BCD111"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL111", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL222", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL333", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL444", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL555", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL666", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "BCD111"}
+GetResourceLogs: {"resource_id": "BCD111", "log_id": "GHI012", "log_time": "2022-01-21 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL777", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "JKL012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "GHI789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL888", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "JKL012", "log_time": "2022-01-22 12:00:00", "log_message": "Resource update successful", "resource_id": "GHI789"}
+GetResourceLogs: {"resource_id": "GHI789", "log_id": "ZYA222", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL999", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA333", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful", "resource_id": "GHI789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL000", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA444", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful", "resource_id": "GHI789"}
+GetResourceLogs: {"log_id": "ZYA555", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful", "resource_id": "GHI789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL789", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL123", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL901", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA666", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA777", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL987", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA999", "log_time": "2022-01-33 10:00:00", "log_message": "Resource update available"}
+GetResourceLogs: {"log_id": "ZYA000", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update available", "resource_id": "JKL789"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "NOP012", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update available"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL023", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL456", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "TUV123", "log_time": "2022-01-32 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-25 10:00:00", "log_message": "Resource update successful"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful", "resource_id": "JKL789"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "JKL789", "log_id": "ZYA888", "log_time": "2022-01-24 13:00:00", "log_message": "Resource update successful"}

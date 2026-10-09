@@ -14,11 +14,11 @@ from pydantic_ai.providers.ollama import OllamaProvider
 
 # PARAMETERS
 parser = argparse.ArgumentParser()
-parser.add_argument("--conversation", type=int, default=2)
-parser.add_argument("--target", type=int, default=1000)
+parser.add_argument("--conversation", type=int, default=1)
+parser.add_argument("--target", type=int, default=5000)
 parser.add_argument("--witnesses_n", type=int, default=3)
-parser.add_argument("--model_host", type=str, default='')
-parser.add_argument("--api_key", type=str, default='')
+parser.add_argument("--model_host", type=str, default='https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama')
+parser.add_argument("--api_key", type=str, default='sk-154b7d9623ae424ca9e362e2da0fbfdd')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='LUBM_contract.yaml')

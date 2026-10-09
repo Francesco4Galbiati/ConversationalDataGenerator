@@ -1,0 +1,1380 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "New Service Registration", "service_type": "Registration Service", "managed_by_team": "Admin Team"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF456", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "GHI789", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "JKL012", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "MNO345", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "PQR678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "STU901", "log_time": "2022-01-06 17:00:00", "log_message": "Resource modified successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "VWX234", "log_time": "2022-01-07 18:00:00", "log_message": "Resource shared successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "YZA111", "log_time": "2022-01-08 19:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "EFG567", "log_time": "2022-01-09 20:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "GHI789", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Asset Group"}
+GetResourceLogs: {"resource_id": "GHI789", "log_id": "BCD456", "log_time": "2022-01-10 21:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO345", "resource_label": "Shared Asset Pool"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "CDE678", "log_time": "2022-01-11 22:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "DEF456", "log_time": "2022-01-12 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "MNO345"}
+GetResourceLogs: {"log_id": "TUV222", "log_time": "2022-01-13 11:00:00", "log_message": "Resource accessed successfully", "resource_id": "MNO345"}
+GetResourceLogs: {"log_id": "RST444", "log_time": "2022-01-14 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "MNO345"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "MNO345"}
+GetResourceLogs: {"log_id": "HJK111", "log_time": "2022-01-15 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "MNO345"}
+GetResourceLogs: {"resource_id": "MNO345", "log_id": "FGH123", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR678", "resource_label": "Shared Asset Type"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "STU901", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "VWX111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "YZA222", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "EFG234", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD456", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "CDE678", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-17 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "BAX789", "log_time": "2022-01-18 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "CDE111", "log_time": "2022-01-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "EFG123", "log_time": "2022-01-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "YZA222", "log_time": "2022-01-21 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "YZA333", "log_time": "2022-01-22 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "YZA444", "log_time": "2022-01-23 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "YZA555", "log_time": "2022-01-24 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "GHI012", "log_time": "2022-01-25 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "YZA666", "log_time": "2022-01-26 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "YZA777", "log_time": "2022-01-27 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "YZA888", "log_time": "2022-01-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "YZA999", "log_time": "2022-01-29 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "YZA888", "log_time": "2022-01-29 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "XYZ111", "log_time": "2022-01-30 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD222", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "EFG901", "log_time": "2022-01-31 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "FGH456", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "FGH789", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD333", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD999", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD777", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD444", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "CDE678", "log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD888", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "CDE678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD123", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "EFG234", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "EFG111", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD666", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1234", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA000", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1235", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1236", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1237", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1238", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA1239", "log_time": "2022-01-33 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-34 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-35 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA5678", "log_time": "2022-01-36 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "FGH012", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI111", "log_time": "2022-01-01 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI678", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI234", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA9012", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "FGH111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA56789", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "HIJ012", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD012", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD555", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD000", "resource_label": "Shared Resource Pool"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI567", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "MNP123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD901", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD654", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA12345", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA56701", "log_time": "2022-02-01 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Group"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-01 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-01 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-01 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-01 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "JKL678", "log_time": "2022-02-02 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "PQR123", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-03 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA901", "log_time": "2022-02-04 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-05 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-06 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-07 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-08 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA90123", "log_time": "2022-02-09 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-10 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-11 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD987", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-12 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-13 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA12345", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL901", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL234", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI890", "log_time": "2022-02-17 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD765", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "GHI111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD342", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL111", "log_time": "2022-01-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL567", "log_time": "2022-02-18 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL1111", "log_time": "2022-02-19 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL7890", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-21 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-22 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "MNP456", "log_time": "2022-02-23 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "FGH1111", "log_time": "2022-02-24 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "FGH2345", "log_time": "2022-02-25 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI1110", "log_time": "2022-01-40 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI1112", "log_time": "2022-02-26 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-27 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-01-15 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH5678", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "FGH0123", "log_time": "2022-01-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH9012", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111", "log_time": "2022-01-15 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH111111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH6789", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1112", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH7890", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH111112", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA11111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI456", "log_time": "2022-02-29 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH9999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI901", "log_time": "2022-02-30 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI1111", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH111", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH345", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI2345", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111", "log_time": "2022-01-10 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "FGH1113", "log_time": "2022-01-10 12:00:01", "log_message": "Resource accessed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-01-10 12:00:02", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI0123", "log_time": "2022-01-10 12:00:03", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH3456", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH444", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH555", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH666", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH8888", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD678", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource Pool"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource Pool"}
+GetResourceLogs: {"log_id": "FGH99999", "log_time": "2022-01-10 12:00:04", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9012", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI9011", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9013", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI9999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD567", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-01-10 12:00:06", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH1114", "log_time": "2022-01-10 12:00:07", "log_message": "Resource accessed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"log_id": "FGH78901", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "GHI2346", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-01-10 12:00:08", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-01-10 12:00:09", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI0123", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI2347", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11115", "log_time": "2022-01-10 12:00:12", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "HJK345", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH987", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11116", "log_time": "2022-01-10 12:00:13", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "GHI5678", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11117", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11118", "log_time": "2022-02-19 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11119", "log_time": "2022-01-10 12:00:16", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11120", "log_time": "2022-02-19 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11121", "log_time": "2022-01-10 12:00:20", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "KLM333", "log_time": "2022-03-01 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL0123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL0123", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "KLM012", "log_time": "2022-03-02 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "ZYA9999", "log_time": "2022-03-03 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "HIJ456", "log_time": "2022-03-04 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "MNP901", "log_time": "2022-03-05 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH9876", "log_time": "2022-02-27 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource Pool"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH99999", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "JKL0123", "log_time": "2022-02-15 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH3456", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "MNP234", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "MNP789", "log_time": "2022-03-06 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111110", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "FGH1111123", "log_time": "2022-01-10 12:00:14", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111112", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111113", "log_time": "2022-02-27 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111114", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "FGH11111115", "log_time": "2022-02-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111116", "log_time": "2022-01-10 12:00:17", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111117", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111118", "log_time": "2022-01-10 12:00:19", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "FGH11111119", "log_time": "2022-01-10 12:00:18", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111111111", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111111110", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111111112", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH4444", "log_time": "2022-02-28 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Resource Pool"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH111112", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD696", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-15 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-12 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-19 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully", "resource_id": "BCD222"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:21", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-20 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:11", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-12 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-28 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-01-10 12:00:22", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111122", "log_time": "2022-01-10 12:00:20", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD111", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-15 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Type"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111120", "log_time": "2022-01-10 12:00:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH11111111123", "log_time": "2022-02-20 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-01-10 12:00:22", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Resource Category"}
+GetResourceLogs: {"resource_id": "BCD222", "log_id": "FGH1111122", "log_time": "2022-02-14 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD789", "resource_label": "Shared Asset Category"}

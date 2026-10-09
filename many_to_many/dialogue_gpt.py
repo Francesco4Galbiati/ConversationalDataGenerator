@@ -363,7 +363,8 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
         if answerer_idx > 0:
             ids = [key for key in answer.keys() if '_id' in key]
             for id in ids:
-                answer[id] = branch_answers[0][id]
+                if id in branch_answers[0]:
+                    answer[id] = branch_answers[0][id]
 
         # Write only the answerer's JSON so downstream RDF extraction can read
         # the file line by line without topology metadata.

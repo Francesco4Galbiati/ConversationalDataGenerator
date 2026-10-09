@@ -1,0 +1,612 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Computing", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Asset", "service_id": "ABC123"}
+OpenTroubleTicket: {"resource_id": "DEF789", "trouble_ticket_id": "ABC123", "trouble_ticket_description": "Issue with resource DEF789"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "DEF789, ABC456", "log_id": "LOG123", "log_time": "2022-01-01 12:00:00", "log_message": "System update successful"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG456", "log_time": "2022-01-02 13:00:00", "log_message": "System check successful"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG789", "log_time": "2022-01-03 14:00:00", "log_message": "System restart successful"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG101", "log_time": "2022-01-04 15:00:00", "log_message": "System maintenance completed"}
+SummarizeCorrectiveActions: {"action_id": "ABC456", "action_description": "Rebooted server and updated software", "agent_id": "AGT789", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "DEF789", "action_description": "Ran diagnostic tests and applied patches", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran virus scan and cleaned malware", "agent_id": "AGT012", "agent_label": "Junior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "JKL345", "action_description": "Ran network configuration and updated firewall rules", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+IdentifyIncidentImpact: {"entity_id": "ABC456", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "DEF789", "entity_type": "application", "trouble_ticket_id": "ABC123"}
+GetIncidentSequence: {"event_id": "ABC456", "timestamp": "2022-01-01 12:00:00", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server456", "serial_number": "SN789012", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Data Analytics", "service_type": "Platform", "managed_by_team": "DataScience"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server789", "serial_number": "SN345678", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI456", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Database", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "JKL012", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "MNO345", "metric_name": "CPU Temperature", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "DEF789", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "ABC123", "originator_role": "System Administrator", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "ABC456"}
+FindCorrelatedEvents: {"corr_id": "GHI123", "event_id": "ABC456"}
+SummarizeCorrectiveActions: {"action_id": "MNO678", "action_description": "Ran system updates and checked for errors", "agent_id": "AGT456", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR234", "action_description": "Ran disk cleanup and optimized performance", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "STU901", "action_description": "Ran backup and restored database", "agent_id": "AGT123", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "VWX111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT101", "agent_label": "Field Engineer", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "ABC456", "change_id": "GHI123", "change_description": "System update and restart", "start_time": "2023-02-15 14:30:00"}
+RegisterNewResource: {"resource_id": "PQR901", "hostname": "server012", "serial_number": "SN654321", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Artificial Intelligence", "service_type": "Software", "managed_by_team": "AIEngineering"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server901", "serial_number": "SN111222", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR678", "metric_name": "GPU Usage", "metric_value": "88%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "STU111", "metric_name": "Power Consumption", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "VWX234", "metric_name": "Battery Level", "metric_value": "80%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG567", "metric_name": "Fan Speed", "metric_value": "70%"}
+FindCorrelatedEvents: {"corr_id": "JKL012", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "GHI012", "originator_role": "Security Analyst", "event_id": "ABC456"}
+FindCorrelatedEvents: {"corr_id": "MNO456", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "JKL345", "originator_role": "Database Manager", "event_id": "ABC456"}
+SummarizeCorrectiveActions: {"action_id": "YZA111", "action_description": "Ran backup and restored database", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG567", "action_description": "Ran backup and restored database", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "CDE678", "action_description": "Ran backup and restored database", "agent_id": "AGT234", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "BCD234", "action_description": "Ran backup and restored database", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "ABC456", "change_id": "JKL012", "change_description": "Software patch installation", "start_time": "2023-02-16 10:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server234", "serial_number": "SN987654", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server345", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Cyber Security", "service_type": "Software", "managed_by_team": "SecurityOperations"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "YZA111", "metric_name": "Sound Level", "metric_value": "60%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "RST222", "metric_name": "Network Latency", "metric_value": "40%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "TUV123", "metric_name": "Network Throughput", "metric_value": "98%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "CDE901", "metric_name": "System Uptime", "metric_value": "42%"}
+FindCorrelatedEvents: {"corr_id": "PQR678", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "MNO678", "originator_role": "Data Analyst", "event_id": "ABC456"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG012", "log_time": "2022-01-05 16:00:00", "log_message": "System backup successful"}
+FindCorrelatedEvents: {"corr_id": "STU901", "event_id": "ABC456"}
+SummarizeCorrectiveActions: {"action_id": "RST123", "action_description": "Ran system updates and checked for errors", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "TUV456", "action_description": "Ran backup and restored database", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "CDE678", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "CDE123", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "low"}
+ListInvolvedAgents: {"agent_id": "AGT045", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "ABC456", "change_id": "MNO345", "change_description": "Hardware replacement and configuration update", "start_time": "2023-02-17 12:00:00"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server567", "serial_number": "SN111333", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Internet of Things", "service_type": "Software", "managed_by_team": "Networking"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server111", "serial_number": "SN222333", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "XYZ999", "metric_name": "System Load", "metric_value": "96%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "FGH012", "metric_name": "System Load", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "HJK345", "metric_name": "System Memory", "metric_value": "99%"}
+FindSharedAssets: {"resource_id": "STU123", "resource_label": "Shared Network", "service_id": "DEF456"}
+FindCorrelatedEvents: {"corr_id": "VWX234", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "PQR234", "originator_role": "Software Developer", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "STU901", "originator_role": "Technical Support Specialist", "event_id": "ABC456"}
+FindCorrelatedEvents: {"corr_id": "YZA111", "event_id": "ABC456"}
+SummarizeCorrectiveActions: {"action_id": "HJK789", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG012", "action_description": "Ran system updates and checked for errors", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI345", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT890", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "XYZ999", "action_description": "Ran backup and restored database", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT321", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "medium", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "GHI012", "entity_type": "site", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server678", "serial_number": "SN111444", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Block Chain", "service_type": "Software", "managed_by_team": "BlockchainDevelopment"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server234", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "IJK678", "metric_name": "System Load", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "VWX234", "resource_label": "Shared Server", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "LMN654", "metric_name": "System Memory", "metric_value": "93%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "NOP111", "metric_name": "System Memory", "metric_value": "94%"}
+FindCorrelatedEvents: {"corr_id": "EFG567", "event_id": "ABC456"}
+IdentifyEventSource: {"originator_id": "VWX111", "originator_role": "Quality Assurance Engineer", "event_id": "ABC456"}
+FindCorrelatedEvents: {"corr_id": "BCD345", "event_id": "ABC456"}
+FindCorrelatedEvents: {"corr_id": "CDE678", "event_id": "ABC456"}
+SummarizeCorrectiveActions: {"action_id": "PQR012", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT234", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "FGH678", "action_description": "Ran system updates and checked for errors", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "FGH234", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "JKL012", "action_description": "Ran system updates and checked for errors", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT042", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "JKL345", "entity_type": "database", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "DEF456", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+GetIncidentSequence: {"event_id": "DEF789", "timestamp": "2022-01-02 13:00:00", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "GHI789", "trouble_ticket_id": "ABC123", "ticket_category": "network_issue"}
+IdentifyIncidentImpact: {"entity_id": "MNO678", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "PQR234", "entity_type": "network", "trouble_ticket_id": "ABC123"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server555", "serial_number": "SN111555", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU901", "service_name": "Machine Learning", "service_type": "Software", "managed_by_team": "AIEngineering"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server234", "serial_number": "SN222333", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR123", "metric_name": "System Load", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "YZA567", "resource_label": "Shared Storage", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "KLM234", "metric_name": "System Load", "metric_value": "89%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "TUV456", "metric_name": "System Load", "metric_value": "86%"}
+FindCorrelatedEvents: {"corr_id": "ABC111", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "YZA456", "originator_role": "Data Scientist", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "TUV654", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA222", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "MNP111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT999", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "IJK456", "action_description": "Ran backup and restored database", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "LMN234", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "KLM111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT234", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT135", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "STU901", "entity_type": "server", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "JKL012", "trouble_ticket_id": "ABC123", "ticket_category": "network_issue"}
+IdentifyIncidentImpact: {"entity_id": "VWX111", "entity_type": "network", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "ABC456"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server234", "serial_number": "SN222333", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "VWX111", "service_name": "Network Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server222", "serial_number": "SN111666", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "BCD111", "metric_name": "System Load", "metric_value": "87%"}
+FindSharedAssets: {"resource_id": "EFG678", "resource_label": "Shared Firewall", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "CDE111", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG234", "metric_name": "System Load", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA333", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "TUV654", "originator_role": "Network Architect", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA444", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA555", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "NOP111", "action_description": "Ran system updates and checked for errors", "agent_id": "AGT234", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR345", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "HJK012", "action_description": "Ran system updates and checked for errors", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR678", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "YZA222", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "MNO345", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+GetIncidentSequence: {"event_id": "GHI012", "timestamp": "2022-01-03 14:00:00", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "PQR678", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "EFG567", "entity_type": "network", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "CDE678", "entity_type": "network", "trouble_ticket_id": "ABC123"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server111", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server901", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "YZA222", "service_name": "Robotics Engineering", "service_type": "Software", "managed_by_team": "RoboticsDevelopment"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "CDE222", "metric_name": "System Load", "metric_value": "83%"}
+FindSharedAssets: {"resource_id": "CDE012", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI012", "metric_name": "System Load", "metric_value": "84%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG890", "metric_name": "System Load", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA666", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA777", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT111", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "CDE345", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran diagnostic tests and applied patches", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR901", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "BCD123", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "STU901", "trouble_ticket_id": "ABC123", "ticket_category": "Technical Issue"}
+GetIncidentSequence: {"event_id": "JKL345", "timestamp": "2022-01-04 15:00:00", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "VWX234", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "HJK456", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "YZA111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server666", "serial_number": "SN666666", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Data Science", "service_type": "Software", "managed_by_team": "DataScience"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server888", "serial_number": "SN888888", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "PQR234", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "TUV345", "resource_label": "Shared Switch", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC456", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "FGH345", "metric_name": "System Load", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA999", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA000", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "GHI901", "action_description": "Ran system updates and checked for errors", "agent_id": "AGT111", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "CDE901", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "MNP234", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "RST345", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server999", "serial_number": "SN999999", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111222", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI789", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI111", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC901", "metric_name": "System Load", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "FGH234", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC234", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC111", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC789", "metric_name": "System Load", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "IJK789", "entity_type": "software", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111222", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111777", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Data Mining", "service_type": "Software", "managed_by_team": "DataScience"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC345", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC678", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "JKL345"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111888", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "CDE234", "action_description": "Ran diagnostic tests and applied patches", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran diagnostic tests and applied patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran diagnostic tests and applied patches", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "EFG678", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+GetIncidentSequence: {"trouble_ticket_id": "ABC123", "event_id": "MNO678", "timestamp": "2022-01-05 16:00:00"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "RST234", "resource_label": "Shared Load Balancer", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111999", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC999", "metric_name": "System Load", "metric_value": "45%"}
+FindSharedAssets: {"resource_id": "XYZ012", "resource_label": "Shared Hub", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC567", "metric_name": "System Load", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran diagnostic tests and applied patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT888", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "CDE222", "trouble_ticket_id": "ABC123", "ticket_category": "network_issue"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN987654", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN987654", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "FGH111", "metric_name": "System Load", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "FGH012", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG012", "metric_name": "System Load", "metric_value": "43%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"importance_level": "medium", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN987654", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "HJK012", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG111", "metric_name": "System Load", "metric_value": "42%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+GetIncidentSequence: {"trouble_ticket_id": "ABC123", "event_id": "PQR901", "timestamp": "2022-01-06 17:00:00"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "ABC123", "resource_label": "Shared Asset", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "CPU Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran diagnostic tests and applied patches", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT219", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "DEF789", "change_id": "PQR678", "change_description": "Network configuration update and security patch installation", "start_time": "2023-02-18 15:45:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111222", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN111222", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "PQR111", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG890", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI234", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "PQR111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "EFG012", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "CDE345", "resource_label": "Shared Gateway", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "FGH678", "metric_name": "System Load", "metric_value": "81%"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "GHI567", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG111", "action_description": "Ran diagnostic tests and applied patches", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI111", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG234", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "network issue"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+RegisterNewResource: {"resource_id": "DEF789", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "ABC012", "metric_name": "System Load", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "CDE678", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT111", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT111", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "EFG901", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "CDE901", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG456", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "GHI789", "action_description": "Ran system updates and checked for errors", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Networking Engineering", "service_type": "Infrastructure", "managed_by_team": "Networking"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "MNP234", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC987", "metric_name": "System Load", "metric_value": "79%"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC102", "metric_name": "Network Usage", "metric_value": "41%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "ABC012", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT111", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran security audit and updated access controls", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}
+IdentifyResolvingActions: {"action_id": "EFG111", "action_description": "Ran security audit and updated access controls", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "restarted server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "ABC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "ABC123", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "ABC123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+MapEventsToResources: {"resource_id": "EFG678", "event_id": "DEF789"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "EFG678", "hostname": "server123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "PQR012", "resource_label": "Shared Router", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "EFG678", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "97%"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "Network Engineer", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+FindCorrelatedEvents: {"corr_id": "YZA888", "event_id": "DEF789"}
+SummarizeCorrectiveActions: {"action_id": "GHI012", "action_description": "Ran disk cleanup and optimized performance", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "ABC123"}

@@ -1,0 +1,676 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Services", "service_type": "Infrastructure", "managed_by_team": "DevOps Team"}
+FindSharedAssets: {"resource_id": "XYZ789", "resource_label": "Shared Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "DEF456", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "GHI012", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "JKL345", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "MNO678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "PQR901", "log_time": "2022-01-06 17:00:00", "log_message": "Resource modified successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "STU111", "log_time": "2022-01-07 18:00:00", "log_message": "Resource shared successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "VWX234", "log_time": "2022-01-08 19:00:00", "log_message": "Resource synchronized successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "YZA111", "log_time": "2022-01-09 20:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "DEF456", "resource_label": "Shared Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "BCD222", "log_time": "2022-01-10 21:00:00", "log_message": "Resource accessed successfully", "resource_id": "XYZ789"}
+FindSharedAssets: {"resource_id": "MNO012", "resource_label": "Common Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "PQR678", "resource_label": "Common Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "MNO012", "log_id": "CDE333", "log_time": "2022-01-11 22:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "STU901", "resource_label": "Shared Service Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "GHI234", "resource_label": "Shared Asset Service", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "JKL345", "resource_label": "Shared Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "EFG789", "log_time": "2022-01-12 23:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "JKL678", "log_time": "2022-01-13 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "NOP456", "log_time": "2022-01-14 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "TUV567", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "RST567", "log_time": "2022-01-16 11:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "FGH456", "log_time": "2022-01-17 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "HJK789", "log_time": "2022-01-18 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "VWX111", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "YZB111", "log_time": "2022-01-19 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "EFG678", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "ABC234", "resource_label": "Shared Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "CDE444", "log_time": "2022-01-20 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "CDE555", "log_time": "2022-01-21 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "TUV345", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "TUV345", "log_id": "CDE666", "log_time": "2022-01-22 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "YZA222", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "CDE777", "log_time": "2022-01-23 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "YZA222"}
+GetResourceLogs: {"log_id": "CDE888", "log_time": "2022-01-24 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "YZA222"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "EFG123", "log_time": "2022-01-25 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "FGH123", "log_time": "2022-01-26 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "CDE456", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "CDE999", "log_time": "2022-01-27 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "FGH789", "log_time": "2022-01-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "GHI789", "log_time": "2022-01-29 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "HJK567", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "FGH012", "log_time": "2022-01-30 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "NOP789", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "GHI345", "log_time": "2022-01-31 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "YZA222"}
+FindSharedAssets: {"resource_id": "FGH012", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "YZA222"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "YZA222"}
+FindSharedAssets: {"resource_id": "JKL012", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "YZA222", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "KLM678", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "PQR123", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "IJK890", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "LMN456", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "PQR345", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "ABC234", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "QRS111", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "TUV678", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "ABC234", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "ABC567", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "BAC222", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC333", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "BAC444", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC555", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC666", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC777", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC888", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "BAC999", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC789", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC901", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "FGH012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC888", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC888", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Service Asset Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Resource Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "QRS111"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "QRS111", "log_id": "GHI012", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully"}
