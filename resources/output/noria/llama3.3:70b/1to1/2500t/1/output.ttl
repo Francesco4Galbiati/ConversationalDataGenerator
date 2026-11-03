@@ -1,0 +1,629 @@
+@prefix ex: <http://example.org/> .
+@prefix ns1: <http://example.org/#> .
+
+ex:log_ABC123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource updated successfully" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_BCD789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_CDE111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_DEF456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource created" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_EFG678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_GHI012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource deleted" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_JKL000 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL0123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL333 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL345 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL444 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL555 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL666 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL888 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed",
+        "Resource viewed" ;
+    ns1:loggingTime "2024-03-16T10:00:00",
+        "2024-03-16T14:30:00" .
+
+ex:log_JKL9990 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_JKL9991 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9992 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9993 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9994 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9995 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9996 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9997 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9998 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999A a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16T10:11:12" .
+
+ex:log_JKL9999B a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999C a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999D a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999E a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999F a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999G a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999H a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999I a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999J a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999K a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999L a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999M a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999N a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999O a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999P a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Q a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999X a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_JKL9999Y a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z1 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_JKL9999Z10 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z100 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z101 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z1011 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z1012 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z10120 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated",
+        "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z1013 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_JKL9999Z1014 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z1015 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z1016 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z1017 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z1018 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z1019 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z102 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z11 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z12 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z2 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_JKL9999Z20 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z3 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z4 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z5 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z6 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z7 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z8 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_JKL9999Z9 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNO678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP1111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP888 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP987 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_MNP9998A a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_MNP9999Z a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_PQR123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC333 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR567 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_ABC012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_PQR901 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource modified" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:log_RST333 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_STU234 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource shared" ;
+    ns1:loggingTime "2022-01-01 12:00:00" .
+
+ex:log_TUV222 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_DEF456 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16 14:30:00" .
+
+ex:log_VWX111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_XYZ789 ;
+    ns1:logText "Resource updated" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_XYZ444 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_STU901 ;
+    ns1:logText "Resource viewed" ;
+    ns1:loggingTime "2024-02-20 14:30:00" .
+
+ex:log_YZA111 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_MNO012 ;
+    ns1:logText "Resource accessed" ;
+    ns1:loggingTime "2024-03-16T14:30:00" .
+
+ex:resource_ABC111 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC123 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC222 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC234 a ns1:Resource ;
+    ns1:label "Shared Asset",
+        "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC345 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC444 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC456 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC555 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC567 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC666 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC678 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC789 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC888 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC901 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC999 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_CDE567 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_EFG678 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_GHI234 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_JKL345 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_PQR678 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_TUV345 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_VWX111 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_DEF456 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_MNO012 a ns1:Resource ;
+    ns1:label "Common Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_ABC012 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_XYZ789 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:resource_STU901 a ns1:Resource ;
+    ns1:label "Shared Asset" ;
+    ns1:subSystemOf ex:service_ABC123 .
+
+ex:service_ABC123 a ns1:Service ;
+    ns1:elementManagedBy "IT Department" ;
+    ns1:label "New Service Registration" ;
+    ns1:serviceType "Technical Support" .
+
+ex:resource_ABC333 a ns1:Resource ;
+    ns1:label "Shared Resource" ;
+    ns1:subSystemOf ex:service_ABC123 .
+

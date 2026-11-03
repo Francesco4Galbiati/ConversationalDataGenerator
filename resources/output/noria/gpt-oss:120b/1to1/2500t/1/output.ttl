@@ -1,0 +1,3336 @@
+@prefix ex: <http://example.org/> .
+@prefix ns1: <http://example.org/#> .
+
+ex:change_ABC001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_ABC123 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_ABC600 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-01T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_ABC700 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_BDF001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CFA001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CFA012 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Applied security patch KB2023-07 to RES001" .
+
+ex:change_CHG002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2026-04-28T09:15:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Unpatched vulnerability exploited on RES001 leading to incident" .
+
+ex:change_CHG003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Failed deployment of security patch KB2023-07 on RES001" .
+
+ex:change_CHG004 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T10:30:00Z",
+        "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001,
+        ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-07 on RES001",
+        "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG005 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES003 ;
+    ns1:description "Failed deployment of security patch KB2023-09 on RES003" .
+
+ex:change_CHG006 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Unpatched vulnerability exploited on RES001 leading to incident" .
+
+ex:change_CHG007 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-10T08:30:00Z",
+        "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES003,
+        ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-09 on RES003",
+        "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG008 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-14T14:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Misconfiguration of firewall rules on RES001" .
+
+ex:change_CHG009 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2026-04-28T10:15:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG010 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Applied security patch KB2023-11 to RES001" .
+
+ex:change_CHG011 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z",
+        "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES004,
+        ex:resource_RES009 ;
+    ns1:description "Failed deployment of security patch KB2023-12 on RES004",
+        "Security patch KB2023-14 applied to RES009" .
+
+ex:change_CHG012 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2026-04-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES009 ;
+    ns1:description "Applied security patch KB2023-14 to RES009" .
+
+ex:change_CHG013 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-12T14:45:00Z",
+        "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG014 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-12T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES006 ;
+    ns1:description "Applied security patch KB2023-15 to RES006" .
+
+ex:change_CHG015 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG016 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG017 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG018 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-20T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-13 on RES005" .
+
+ex:change_CHG019 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG020 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG021 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z",
+        "2023-09-15T08:30:00Z",
+        "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005",
+        "Failed deployment of security patch KB2023-13 on RES005",
+        "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG022 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG023 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG024 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG025 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHG026 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z",
+        "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005,
+        ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005",
+        "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHG027 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z",
+        "2023-08-15T09:30:00Z",
+        "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005",
+        "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHG028 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2026-04-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES017 ;
+    ns1:description "Misconfiguration of firewall rules on RES017" .
+
+ex:change_CHG029 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHJ001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHM001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-20T09:45:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHN001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Misconfiguration of firewall rules on RES001 (potential cause of incident)" .
+
+ex:change_CHQ001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHR001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-16 on RES005" .
+
+ex:change_CHR600 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHR700 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z, 2023-09-16T08:45:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600; Misconfiguration of firewall rules on RSC600" .
+
+ex:change_CHS001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHV001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-12T08:45:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-13 on RES005" .
+
+ex:change_CHW001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHX001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES001 ;
+    ns1:description "Misconfiguration of firewall rules on RES001 (potential cause of incident)" .
+
+ex:change_CHX002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHX003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHX004 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHX005 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHX006 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-16 on RES005" .
+
+ex:change_CHX007 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHX008 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-12T09:45:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHY001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-10-05T09:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-16 on RES005" .
+
+ex:change_CHY002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-01T10:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005; Failed deployment of security patch KB2023-13 on RES005; Failed deployment of security patch KB2023-16 on RES005; Misconfiguration of firewall rules on RES005" .
+
+ex:change_CHY003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_CHZ001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-16 on RES005" .
+
+ex:change_CHZ002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_CHZ003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_DEF001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_DVG001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-07-20T14:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_GHI001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_INT001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-05-10T08:00:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_JKL001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_JLM001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_KLM001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Misconfiguration of firewall rules on RES005" .
+
+ex:change_KLM002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_LMN001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_LMN002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_MNO001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_NGC001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-13 on RES005" .
+
+ex:change_QRS001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T08:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_RSC001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_RSC601 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_XYZ001 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-08-15T09:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_XYZ002 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RES005 ;
+    ns1:description "Failed deployment of security patch KB2023-10 on RES005" .
+
+ex:change_XYZ003 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2026-04-20T10:15:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_XYZ004 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_XYZ005 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:change_XYZ006 a ns1:Change ;
+    ns1:changeRequestActualStartTime "2023-09-15T10:30:00Z" ;
+    ns1:changeRequestImpact ex:resource_RSC600 ;
+    ns1:description "Failed deployment of security patch KB2023-18 on RSC600" .
+
+ex:event_None ns1:logOriginatingManagedObject ex:resource_RES005 .
+
+ex:log_AAZ001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for data synchronization." ;
+    ns1:loggingTime "2023-07-15T09:12:34Z" .
+
+ex:log_ABC001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for forensic log examination of RES005." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_ABC002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed log extraction of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_ABC003 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for security patch." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_ABC004 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for historical log compilation of RES005." ;
+    ns1:loggingTime "2023-07-15T10:23:45Z" .
+
+ex:log_ABC005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for RES005 audit." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_ABC006 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine performance metrics recorded for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_ABC007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Security patch installed on resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_ABC008 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource RES001 performed scheduled backup." ;
+    ns1:loggingTime "2026-05-03T14:20:00Z" .
+
+ex:log_ABC010 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine check completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_ABC011 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 performed scheduled health check." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_ABC123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for compliance check." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_ABC777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log retrieval operation of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_ABC999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for routine inspection." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_ABR001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for data processing." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_DEF001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for security analysis of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_DEF002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for data migration." ;
+    ns1:loggingTime "2026-05-03T12:34:56Z" .
+
+ex:log_DXY001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for vulnerability scan." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_GHT001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for configuration validation." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_HJK002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for data synchronization." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_HLM001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed log retrieval." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_JKL123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for anomaly resolution of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_JKL456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES016 ;
+    ns1:logText "Resource accessed for detailed log extraction." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_JKL789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES009 ;
+    ns1:logText "Resource accessed for firmware update." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_JKL999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine performance check completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-03T14:20:00Z" .
+
+ex:log_KLM001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for scheduled backup." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_LBC005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for performance monitoring." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_LGC001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for routine log extraction." ;
+    ns1:loggingTime "2026-05-03T12:34:56Z" .
+
+ex:log_LGC002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Log entry retrieved for RSC600 routine check." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_LGC777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC777 ;
+    ns1:logText "Routine maintenance completed for resource RSC777." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_LGR001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for system reboot." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_LGX001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for data backup." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_LGY002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for security audit." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_LHZ004 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for configuration update." ;
+    ns1:loggingTime "2023-11-20T14:35:00Z" .
+
+ex:log_LMN001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log retrieval of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LMN002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log analysis of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_LMN456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine maintenance completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_LMN999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log extraction request." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LMR001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for RES005 audit." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_LMR002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for RES005 security overview." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LMR003 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES017 ;
+    ns1:logText "Resource accessed for routine log extraction of RES017." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_LMR004 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine maintenance completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LMR005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Log entry retrieved for RSC600 system health check." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LMR006 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Log entry retrieved for RSC600 system audit." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_LOG001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for inventory check." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_LOG005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for network scan." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_LOG007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for audit trail generation." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_LOG123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for routine maintenance." ;
+    ns1:loggingTime "2023-10-05T14:23:00Z" .
+
+ex:log_MNO001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log export of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_MNO123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES016 ;
+    ns1:logText "Resource accessed for compliance verification." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_MNO456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for health check." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_MNO777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for security audit of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_MNO999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for quarterly compliance review." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_MNP456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for archival log retrieval of RES005." ;
+    ns1:loggingTime "2023-11-15T09:42:00Z" .
+
+ex:log_NQZ007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for system upgrade." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_PQR678 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for routine diagnostics." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_QRS001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed audit logging." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_QRT001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed log analysis of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_QRT002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for analysis of RES005." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_QRT003 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for RES005 detailed analysis." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_QRT456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for configuration backup." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_QRT777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for comprehensive log review of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_QRT888 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES017 ;
+    ns1:logText "Log entry retrieved for RES017 routine check." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_QWE123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for user authentication." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_QWE321 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine diagnostics completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_QWE456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed audit of RES005." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_QWE789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for emergency troubleshooting." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_QWE999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Routine check completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_QWX001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Log entry retrieved for RES005 operational summary." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_RES001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for performance tuning." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_RLG001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Log entry retrieved for RSC600 firmware verification." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_RSC600 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 accessed for routine diagnostics." ;
+    ns1:loggingTime "2026-04-30T10:15:00Z" .
+
+ex:log_RSC601 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 performed system optimization.",
+        "Routine performance monitoring completed for resource RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_RSL001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for system health verification." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_RST001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for anomaly investigation." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_RZQ007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for system diagnostics." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_TUV456 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for configuration audit." ;
+    ns1:loggingTime "2026-05-03T10:15:00Z" .
+
+ex:log_TUV800 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 performed scheduled log extraction." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_TUV999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for system maintenance." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_XYZ001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:logText "Resource accessed for log retrieval." ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:log_XYZ002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for routine backup verification." ;
+    ns1:loggingTime "2026-05-02T14:30:00Z" .
+
+ex:log_XYZ004 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for incident response." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_XYZ005 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log retrieval of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_XYZ006 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for detailed security review of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_XYZ007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for anomaly detection on RES005." ;
+    ns1:loggingTime "2023-11-15T10:23:45Z" .
+
+ex:log_XYZ123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES009 ;
+    ns1:logText "Resource accessed for anomaly detection." ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:log_XYZ321 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Log entry retrieved for RSC600 performance monitoring." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_XYZ600 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 accessed for routine diagnostics." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_XYZ777 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource RSC600 completed scheduled firmware update." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:log_XYZ789 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for backup verification." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_XYZ999 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for system backup verification." ;
+    ns1:loggingTime "2026-05-04T12:34:56Z" .
+
+ex:log_XZY123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for scheduled maintenance of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_ZQX002 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:logText "Resource accessed for log extraction of RSC600." ;
+    ns1:loggingTime "2026-05-04T10:15:30Z" .
+
+ex:log_ZQX123 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for data integrity check." ;
+    ns1:loggingTime "2026-04-28T14:35:22Z" .
+
+ex:log_ZXY001 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:logText "Resource accessed for log analysis of RES005." ;
+    ns1:loggingTime "2026-05-04T10:15:00Z" .
+
+ex:plan_ABC456 a ns1:OperationPlan ;
+    ns1:description "Execute a targeted service restart, apply the latest security patch, validate configuration integrity, and monitor system performance for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation with no further errors observed." .
+
+ex:plan_OPR001 a ns1:OperationPlan ;
+    ns1:description "Conduct a full system backup, apply the pending patch, restart the service, and monitor logs for 20 minutes to confirm resolution." ;
+    ns1:operationPlanPostCondition "Ticket resolved with service restored and no further errors." .
+
+ex:plan_OPR002 a ns1:OperationPlan ;
+    ns1:description "Perform a service restart, verify configuration integrity, and monitor system performance for 30 minutes." ;
+    ns1:operationPlanPostCondition "Service restored and stable" .
+
+ex:plan_OPR003 a ns1:OperationPlan ;
+    ns1:description "Execute a controlled service restart, run configuration validation scripts, and monitor system metrics for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Service restored, configuration confirmed correct, and system performance stable." .
+
+ex:plan_OPR004 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected node, revert recent configuration changes, restart the service, and monitor system health for 25 minutes to ensure normal operation." ;
+    ns1:operationPlanPostCondition "Service restored, performance metrics stable, and no further alerts." .
+
+ex:plan_OPR005 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected service, revert recent configuration changes, restart the service, and monitor system performance for 30 minutes to verify stability." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation with no further incidents." .
+
+ex:plan_OPR006 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected service, apply the pending configuration fix, restart the service, and monitor logs for 30 minutes to verify resolution." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation with no further errors observed." .
+
+ex:plan_OPR007 a ns1:OperationPlan ;
+    ns1:description "Perform a full system backup, apply the pending patch, restart the affected service, and monitor system performance for 25 minutes to confirm issue resolution." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation and no further errors observed." .
+
+ex:plan_OPR008 a ns1:OperationPlan ;
+    ns1:description "Perform a targeted service restart, apply the pending security patch, validate configuration integrity, and monitor system performance for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Service restored and stability confirmed." .
+
+ex:plan_OPR009 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected component, apply the corrective configuration update, restart the service, and monitor system performance for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation and issue resolved." .
+
+ex:plan_OPR010 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected node, apply the pending security patch, restart the service, and monitor system performance for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Issue resolved and system stability confirmed." .
+
+ex:plan_OPR011 a ns1:OperationPlan ;
+    ns1:description "Conduct a full system backup, apply the pending configuration fix, restart the affected service, and monitor logs for 25 minutes to confirm issue resolution." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation and the incident resolved." .
+
+ex:plan_PLN001 a ns1:OperationPlan ;
+    ns1:description "Perform a comprehensive diagnostics run, apply the pending configuration fix, restart the affected service, and monitor logs for 25 minutes to confirm issue resolution." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation and ticket can be closed." .
+
+ex:plan_PLN002 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected component, apply the corrective configuration patch, restart the service, and monitor system logs for 30 minutes to verify successful resolution." ;
+    ns1:operationPlanPostCondition "Ticket TT001 resolved with service restored and no further errors observed." .
+
+ex:plan_PLN003 a ns1:OperationPlan ;
+    ns1:description "Isolate the affected node, apply the corrective configuration patch, restart the service, and monitor system logs for 25 minutes to confirm issue resolution." ;
+    ns1:operationPlanPostCondition "Service restored and logs show no errors." .
+
+ex:plan_PRC001 a ns1:OperationPlan ;
+    ns1:description "Perform a targeted service restart, validate configuration integrity, and monitor system performance for 30 minutes to ensure stability." ;
+    ns1:operationPlanPostCondition "Service restored to normal operation and stability confirmed." .
+
+ex:plan_SOP001 a ns1:OperationPlan ;
+    ns1:description "Restart the affected service, verify configuration settings, and monitor system stability for 30 minutes." ;
+    ns1:operationPlanPostCondition "Ticket resolved with service restored to normal operation." .
+
+ex:resource_ABC123 a ns1:Resource ;
+    ns1:label "Tracing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_ABC124 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_ABC200 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_ABC999 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_ABX123 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_DEF456 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_DEF777 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_DVG001 a ns1:Resource ;
+    ns1:label "DataVisualization" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_GHI001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_GHI002 a ns1:Resource ;
+    ns1:label "DataGovernance" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_HJK123 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_JKL456 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_JKL789 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_LMN001 a ns1:Resource ;
+    ns1:label "DataIngestion" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_LMN456 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_LMN777 a ns1:Resource ;
+    ns1:label "Monitoring" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_LMN999 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_MNO001 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_MNO123 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_PAY001 a ns1:Resource ;
+    ns1:label "Payments" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_QRS001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_QWE001 a ns1:Resource ;
+    ns1:label "Monitoring" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_QWZ001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_QX001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_RES002 a ns1:Resource ;
+    ns1:label "Cache" ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:resource_RES007 a ns1:Resource ;
+    ns1:label "Monitoring" ;
+    ns1:subSystemOf ex:service_SRV002 .
+
+ex:resource_RES008 a ns1:Resource ;
+    ns1:label "Tracing" ;
+    ns1:subSystemOf ex:service_SRV002 .
+
+ex:resource_RES010 a ns1:Resource ;
+    ns1:label "Billing" ;
+    ns1:subSystemOf ex:service_SRV002 .
+
+ex:resource_RES012 a ns1:Resource ;
+    ns1:label "Payments" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES015 a ns1:Resource ;
+    ns1:label "DataWarehouse" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES018 a ns1:Resource ;
+    ns1:label "EventStreaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES020 a ns1:Resource ;
+    ns1:label "LoadBalancing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES021 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES022 a ns1:Resource ;
+    ns1:label "Provisioning, Auditing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES024 a ns1:Resource ;
+    ns1:label "IdentityManagement" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES025 a ns1:Resource ;
+    ns1:label "GeoLocation" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES026 a ns1:Resource ;
+    ns1:label "DataLake" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES027 a ns1:Resource ;
+    ns1:label "Streaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES030 a ns1:Resource ;
+    ns1:label "DataIngestion" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RES031 a ns1:Resource ;
+    ns1:label "Tracing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RQZ001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_RSC001 a ns1:Resource ;
+    ns1:label "Authentication" ;
+    ns1:subSystemOf ex:service_SRV002 .
+
+ex:resource_RSC002 a ns1:Resource ;
+    ns1:label "Security" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC003 a ns1:Resource ;
+    ns1:label "Backup" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC005 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:resource_RSC010 a ns1:Resource ;
+    ns1:label "Backup" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC020 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC021 a ns1:Resource ;
+    ns1:label "Notification" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC027 a ns1:Resource ;
+    ns1:label "UserManagement" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC028 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC031 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC033 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC034 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC045 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC050 a ns1:Resource ;
+    ns1:label "Logging" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC101 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC105 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC110 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC123 a ns1:Resource ;
+    ns1:label "Compliance" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC124 a ns1:Resource ;
+    ns1:label "Billing" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC125 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC200 a ns1:Resource ;
+    ns1:label "Monitoring" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC210 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC300 a ns1:Resource ;
+    ns1:label "Streaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC321 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_RSC350 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC400 a ns1:Resource ;
+    ns1:label "DataStreaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC500 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC555 a ns1:Resource ;
+    ns1:label "GeoLocation" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC800 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC801 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC822 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC850 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RSC888 a ns1:Resource ;
+    ns1:label "Streaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSC900 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_RSC999 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RSX001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RXA001 a ns1:Resource ;
+    ns1:label "DataProcessing" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ002 a ns1:Resource ;
+    ns1:label "DataSync" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ003 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ004 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ005 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ007 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_RZ123 a ns1:Resource ;
+    ns1:label "Streaming" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_TUV001 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_TUV456 .
+
+ex:resource_XYZ001 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_XYZ002 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_XYZ123 a ns1:Resource ;
+    ns1:label "Alerting" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:resource_XYZ777 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_XYZ999 a ns1:Resource ;
+    ns1:label "MachineLearning" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:service_ABC123 a ns1:Service ;
+    ns1:elementManagedBy "OmegaTeam" ;
+    ns1:label "UserEngagement" ;
+    ns1:serviceType "Microservice" .
+
+ex:service_ABC124 a ns1:Service ;
+    ns1:elementManagedBy "OmegaBetaTeam" ;
+    ns1:label "PredictiveAnalytics" ;
+    ns1:serviceType "Analytics" .
+
+ex:service_BFX123 a ns1:Service ;
+    ns1:elementManagedBy "PsiTeam" ;
+    ns1:label "ServiceHealthMonitor" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_DEF456 a ns1:Service ;
+    ns1:elementManagedBy "OmegaPrimeTeam" ;
+    ns1:label "AssetManagement" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_GHI123 a ns1:Service ;
+    ns1:elementManagedBy "BetaPrimeTeam" ;
+    ns1:label "RealTimeAnalytics" ;
+    ns1:serviceType "Analytics" .
+
+ex:service_GHT789 a ns1:Service ;
+    ns1:elementManagedBy "IotaTeam" ;
+    ns1:label "QualityAssurance" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_HJK321 a ns1:Service ;
+    ns1:elementManagedBy "UpsilonTeam" ;
+    ns1:label "RiskAssessment" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_JKL456 a ns1:Service ;
+    ns1:elementManagedBy "GammaTeam" ;
+    ns1:label "DynamicRouting" ;
+    ns1:serviceType "Microservice" .
+
+ex:service_JQK007 a ns1:Service ;
+    ns1:elementManagedBy "KappaTeam" ;
+    ns1:label "PredictiveMaintenance" ;
+    ns1:serviceType "Maintenance" .
+
+ex:service_KLM002 a ns1:Service ;
+    ns1:elementManagedBy "NuTeam" ;
+    ns1:label "DataIntegrityChecker" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_LMD001 a ns1:Service ;
+    ns1:elementManagedBy "EpsilonTeam" ;
+    ns1:label "ResourceAllocator" ;
+    ns1:serviceType "DataProcessing" .
+
+ex:service_LMN001 a ns1:Service ;
+    ns1:elementManagedBy "ZetaPrimeTeam" ;
+    ns1:label "QuantumProcessing" ;
+    ns1:serviceType "DataProcessing" .
+
+ex:service_MNO234 a ns1:Service ;
+    ns1:elementManagedBy "LambdaPrimeTeam" ;
+    ns1:label "OperationsInsights" ;
+    ns1:serviceType "Operations" .
+
+ex:service_MTL001 a ns1:Service ;
+    ns1:elementManagedBy "ThetaTeam" ;
+    ns1:label "LogisticsOptimizer" ;
+    ns1:serviceType "DataProcessing" .
+
+ex:service_NWS001 a ns1:Service ;
+    ns1:elementManagedBy "ZetaTeam" ;
+    ns1:label "PerformanceTracker" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_PQR123 a ns1:Service ;
+    ns1:elementManagedBy "ChiTeam" ;
+    ns1:label "EnergyOptimization" ;
+    ns1:serviceType "IoTPlatform" .
+
+ex:service_QRS456 a ns1:Service ;
+    ns1:elementManagedBy "LambdaTeam" ;
+    ns1:label "SupplyChainMonitor" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_QRS789 a ns1:Service ;
+    ns1:elementManagedBy "GammaPrimeTeam" ;
+    ns1:label "EdgeComputeService" ;
+    ns1:serviceType "Compute" .
+
+ex:service_QWE123 a ns1:Service ;
+    ns1:elementManagedBy "AlphaPrimeTeam" ;
+    ns1:label "SmartAnalytics" ;
+    ns1:serviceType "Analytics" .
+
+ex:service_RZQ123 a ns1:Service ;
+    ns1:elementManagedBy "OmicronTeam" ;
+    ns1:label "CapacityPlanner" ;
+    ns1:serviceType "PlanningService" .
+
+ex:service_VWX123 a ns1:Service ;
+    ns1:elementManagedBy "EtaTeam",
+        "OmegaGammaTeam" ;
+    ns1:label "CloudOrchestrator",
+        "ThreatDetection" ;
+    ns1:serviceType "InfrastructureManagement",
+        "Security" .
+
+ex:service_XYZ789 a ns1:Service ;
+    ns1:elementManagedBy "SigmaTeam" ;
+    ns1:label "DemandForecasting" ;
+    ns1:serviceType "PredictiveAnalytics" .
+
+ex:service_XZY999 a ns1:Service ;
+    ns1:elementManagedBy "TauTeam" ;
+    ns1:label "IoTDeviceManager" ;
+    ns1:serviceType "Monitoring" .
+
+ex:service_YQZ001 a ns1:Service ;
+    ns1:elementManagedBy "LambdaOmegaTeam" ;
+    ns1:label "QuantumAnalytics" ;
+    ns1:serviceType "Analytics" .
+
+ex:service_ZQX123 a ns1:Service ;
+    ns1:elementManagedBy "PhiTeam" ;
+    ns1:label "ComplianceChecker" ;
+    ns1:serviceType "Compliance" .
+
+ex:trouble_ticket_IN001 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN002 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN003 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN004 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN005 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN006 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN007 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN008 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN009 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN010 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN011 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN012 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN013 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN014 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN015 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN016 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN017 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN018 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN019 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN020 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN021 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN022 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN023 a ns1:TroubleTicket .
+
+ex:trouble_ticket_IN024 a ns1:TroubleTicket ;
+    ns1:problemCategory "network" .
+
+ex:trouble_ticket_IN025 a ns1:TroubleTicket .
+
+ex:trouble_ticket_TT001 a ns1:TroubleTicket ;
+    ns1:description "Resource RES001 requires attention: issue reported with its performance and connectivity." ;
+    ns1:eventRelatedElement ex:managed_element_HW001,
+        <http://example.org/managed_element_HW001,APP002,SIT003>,
+        ex:managed_element_HW002,
+        ex:managed_element_HW004,
+        ex:managed_element_HW005,
+        ex:managed_element_HW006,
+        ex:managed_element_HW007,
+        ex:managed_element_HW009,
+        ex:managed_element_HW010,
+        ex:managed_element_HW011,
+        ex:managed_element_HW013,
+        ex:managed_element_HW015,
+        ex:managed_element_HW016,
+        ex:managed_element_HW018,
+        ex:managed_element_HW021,
+        ex:managed_element_HW022,
+        ex:managed_element_HW032,
+        ex:managed_element_HW456,
+        ex:managed_element_HW501,
+        ex:managed_element_HW851,
+        ex:managed_element_HW999,
+        ex:managed_element_None,
+        ex:managed_element_SIT012,
+        ex:resource_RES001 ;
+    ns1:notes "Issue resolved by replacing the router and restoring connectivity.",
+        "Resolved by applying database patches and restoring affected data",
+        "Resolved by applying memory usage patches and restarting services, then monitoring for stability.",
+        "Resolved by correcting firewall settings and validating traffic flow" ;
+    ns1:problemCategory "API Rate Limiting",
+        "Capacity Planning Issue",
+        "Configuration Error",
+        "Database Corruption",
+        "Hardware Degradation",
+        "Hardware Failure",
+        "Network Failure",
+        "Performance Degradation",
+        "Scalability Issue",
+        "Service Degradation",
+        "Service Outage",
+        "Software Bug" ;
+    ns1:problemResponsibility "DevOps Team",
+        "Development Team",
+        "Engineering",
+        "IT Support",
+        "Infrastructure Team",
+        "Internal Operations",
+        "Network Team",
+        "Operations Team",
+        "Support Team" ;
+    ns1:relation ex:event_EV001,
+        ex:event_EV002,
+        ex:event_EV003,
+        ex:event_EV004,
+        ex:event_EV007,
+        ex:event_EV011,
+        ex:event_EV015,
+        ex:event_EV017,
+        ex:event_EV023,
+        ex:event_EV040,
+        ex:event_EV045 ;
+    ns1:troubleTicketCause "Database corruption leading to service interruption",
+        "Memory leak in application leading to intermittent crashes",
+        "Misconfigured firewall rule causing service disruption",
+        "Network outage due to faulty router" ;
+    ns1:troubleTicketStatusCurrent "closed" .
+
+ex:trouble_ticket_TT002 a ns1:TroubleTicket ;
+    ns1:description "Opened ticket for resource RES001 regarding performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT003 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES001 to investigate reported performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:managed_element_HW008,
+        <http://example.org/managed_element_HW012,APP007,SIT008>,
+        ex:managed_element_HW014,
+        ex:resource_RES001 ;
+    ns1:problemCategory "Network Failure" ;
+    ns1:problemResponsibility "Network Operations" ;
+    ns1:relation ex:event_EV005,
+        ex:event_EV008 .
+
+ex:trouble_ticket_TT004 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RES001 addressing observed performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES001 ;
+    ns1:hasPart ex:action_ACT123 ;
+    ns1:problemCategory "Security Incident" ;
+    ns1:problemResponsibility "Third-Party Vendor" ;
+    ns1:relation ex:event_EV006,
+        ex:event_EV012,
+        ex:event_EV013 .
+
+ex:trouble_ticket_TT005 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES001 to examine performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:managed_element_HW003,
+        ex:managed_element_HW020,
+        ex:managed_element_HW023,
+        ex:managed_element_HW300,
+        ex:managed_element_None,
+        ex:resource_RES001 ;
+    ns1:notes "Resolved by scaling the server pool and restarting affected services" ;
+    ns1:problemCategory "Performance Degradation" ;
+    ns1:problemResponsibility "Operations Team" ;
+    ns1:relation ex:event_EV009,
+        ex:event_EV010,
+        ex:event_EV019,
+        ex:event_EV022 ;
+    ns1:troubleTicketCause "Application server overload leading to intermittent downtime" ;
+    ns1:troubleTicketStatusCurrent "closed" .
+
+ex:trouble_ticket_TT006 a ns1:TroubleTicket ;
+    ns1:description "Generated a trouble ticket for RES001 concerning performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT007 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket pending resource specification." ;
+    ns1:eventRelatedElement ex:resource_None .
+
+ex:trouble_ticket_TT008 a ns1:TroubleTicket ;
+    ns1:description "Logged a trouble ticket for RES001 concerning performance degradation and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT009 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES001 to examine reported performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT010 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES001 to address performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:managed_element_HW203,
+        ex:resource_RES001 .
+
+ex:trouble_ticket_TT011 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to address performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT012 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES001 to resolve performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT013 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES001 to investigate performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT014 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES001 to address reported performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:managed_element_HW025,
+        ex:managed_element_HW026,
+        <http://example.org/managed_element_HW027,APP013,SIT016>,
+        ex:managed_element_HW202,
+        ex:managed_element_SRV001,
+        ex:resource_RES001 ;
+    ns1:notes "Resolved by updating load balancer rules and verifying traffic distribution, then monitoring performance." ;
+    ns1:problemCategory "Power Outage" ;
+    ns1:problemResponsibility "Facilities Team" ;
+    ns1:relation ex:event_EV014,
+        ex:event_EV026 ;
+    ns1:troubleTicketCause "Load balancer misconfiguration leading to service disruption" ;
+    ns1:troubleTicketStatusCurrent "closed" .
+
+ex:trouble_ticket_TT015 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES005 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT016 a ns1:TroubleTicket ;
+    ns1:description "Created a trouble ticket for RES005 to examine performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT017 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to investigate latency and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 ;
+    ns1:problemCategory "Incident Management" ;
+    ns1:problemResponsibility "IT Operations Team" ;
+    ns1:relation ex:event_EV038 .
+
+ex:trouble_ticket_TT018 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to resolve latency and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT019 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to investigate performance degradation and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT020 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES001 to diagnose performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES001 .
+
+ex:trouble_ticket_TT021 a ns1:TroubleTicket ;
+    ns1:applicationBusinessImportance "high" ;
+    ns1:description "Created a new trouble ticket for RES014 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:managed_element_APP001,
+        ex:managed_element_APP020,
+        ex:managed_element_APP045,
+        ex:managed_element_APP200,
+        ex:managed_element_APP300,
+        ex:managed_element_APP321,
+        ex:managed_element_APP600,
+        ex:managed_element_APP777,
+        ex:managed_element_APP800,
+        ex:managed_element_APP888,
+        ex:managed_element_APP999,
+        ex:managed_element_HW005,
+        ex:managed_element_HW010,
+        ex:managed_element_HW017,
+        ex:managed_element_HW019,
+        ex:managed_element_HW028,
+        ex:managed_element_HW030,
+        ex:managed_element_HW031,
+        ex:managed_element_HW033,
+        ex:managed_element_HW034,
+        ex:managed_element_HW035,
+        ex:managed_element_HW100,
+        ex:managed_element_HW101,
+        ex:managed_element_HW102,
+        ex:managed_element_HW103,
+        ex:managed_element_HW110,
+        ex:managed_element_HW111,
+        ex:managed_element_HW112,
+        ex:managed_element_HW123,
+        ex:managed_element_HW124,
+        ex:managed_element_HW125,
+        ex:managed_element_HW200,
+        ex:managed_element_HW201,
+        ex:managed_element_HW222,
+        ex:managed_element_HW321,
+        ex:managed_element_HW350,
+        ex:managed_element_HW400,
+        ex:managed_element_HW450,
+        ex:managed_element_HW555,
+        ex:managed_element_HW600,
+        ex:managed_element_HW777,
+        ex:managed_element_HW800,
+        ex:managed_element_HW801,
+        ex:managed_element_HW850,
+        ex:managed_element_HW888,
+        ex:managed_element_HW900,
+        ex:managed_element_HW901,
+        ex:managed_element_HW902,
+        ex:managed_element_HW950,
+        ex:managed_element_None,
+        ex:managed_element_SV001,
+        ex:resource_RES014 ;
+    ns1:notes "Resolved by implementing rate limiting and scaling additional instances, then monitoring performance",
+        "Resolved by renewing the SSL certificate and verifying secure connections",
+        "Resolved by replacing the failed disk and verifying data integrity",
+        "Resolved by switching to backup power and verifying system integrity",
+        "Resolved by updating the third-party API client library and adding retry logic, then confirming stability." ;
+    ns1:problemCategory "Authentication Failure",
+        "Backup Failure",
+        "Capacity Overrun",
+        "Change Implementation Delay",
+        "Change Management Issue",
+        "Change Request Issue",
+        "Compliance Issue",
+        "Configuration Drift",
+        "Configuration Error",
+        "Configuration Management Issue",
+        "Data Governance Issue",
+        "Data Loss",
+        "Data Migration Error",
+        "Data Quality Issue",
+        "Dependency Failure",
+        "Design Flaw",
+        "Documentation Issue",
+        "Environment Misconfiguration",
+        "Incident Response Delay",
+        "Infrastructure Misconfiguration",
+        "Infrastructure Upgrade",
+        "Integration Issue",
+        "Licensing Issue",
+        "Monitoring Failure",
+        "Network Congestion",
+        "Network Failure",
+        "Patch Management Failure",
+        "Process Gap",
+        "Release Management Issue",
+        "Resource Contention",
+        "Resource Exhaustion",
+        "Resource Leak",
+        "Service Dependency Issue",
+        "Third-Party Vendor Issue",
+        "User Error",
+        "User Training Issue" ;
+    ns1:problemResponsibility "Change Management Team",
+        "Customer Support",
+        "Data Engineering Team",
+        "Data Governance Team",
+        "Data Team",
+        "Engineering Team",
+        "IT Operations",
+        "IT Operations Team",
+        "Infrastructure Team",
+        "Network Operations",
+        "Network Team",
+        "Operations Team",
+        "Release Engineering Team",
+        "Security Team",
+        "Support Engineer",
+        "Support Team",
+        "Vendor Support Team" ;
+    ns1:relation ex:event_EV016,
+        ex:event_EV018,
+        ex:event_EV020,
+        ex:event_EV021,
+        ex:event_EV024,
+        ex:event_EV025,
+        ex:event_EV027,
+        ex:event_EV028,
+        ex:event_EV029,
+        ex:event_EV031,
+        ex:event_EV032,
+        ex:event_EV033,
+        ex:event_EV034,
+        ex:event_EV035,
+        ex:event_EV036,
+        ex:event_EV037,
+        ex:event_EV039,
+        ex:event_EV041,
+        ex:event_EV042,
+        ex:event_EV043,
+        ex:event_EV044,
+        ex:event_EV046,
+        ex:event_EV047,
+        ex:event_EV048,
+        ex:event_XZ101 ;
+    ns1:troubleTicketCause "Hardware disk failure leading to service interruption",
+        "Power failure in data center",
+        "SSL certificate expiration causing service interruption",
+        "Third-party API dependency timeout causing service degradation",
+        "Unexpected surge in API traffic causing latency spikes" ;
+    ns1:troubleTicketStatusCurrent "closed" .
+
+ex:trouble_ticket_TT022 a ns1:TroubleTicket ;
+    ns1:description "Logged a new trouble ticket for RES005 to handle performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT023 a ns1:TroubleTicket ;
+    ns1:description "Opened a ticket for RES005 concerning performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT024 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to examine latency and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT025 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES014 to resolve performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES014 .
+
+ex:trouble_ticket_TT026 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to resolve performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT027 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to assess performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT028 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RES005 to examine performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT029 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to address performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT030 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to resolve performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT031 a ns1:TroubleTicket ;
+    ns1:description "Generated a trouble ticket for RES005 to address performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT032 a ns1:TroubleTicket ;
+    ns1:description "Generated a trouble ticket for RES005 to assess performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT033 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RES005 to resolve latency and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT034 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to address latency and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT035 a ns1:TroubleTicket ;
+    ns1:description "Created a trouble ticket for RES005 to monitor performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT036 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to address performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT037 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to investigate performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT038 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to address performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT039 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to resolve performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT040 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES014 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES014 .
+
+ex:trouble_ticket_TT041 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES005 to resolve performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 ;
+    ns1:problemCategory "Change Approval Delay" ;
+    ns1:problemResponsibility "Change Management Team" ;
+    ns1:relation ex:event_EV030 .
+
+ex:trouble_ticket_TT042 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RES005 to resolve performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT043 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to assess performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT044 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to investigate network latency and performance concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT045 a ns1:TroubleTicket ;
+    ns1:description "Opened a fresh trouble ticket for RES005 to investigate performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RES005 ;
+    ns1:problemCategory "Insufficient Testing" ;
+    ns1:problemResponsibility "Development Team" .
+
+ex:trouble_ticket_TT046 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES005 to assess performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT047 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to assess network performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT048 a ns1:TroubleTicket ;
+    ns1:description "Generated a trouble ticket for RES005 to assess performance and connectivity status." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT049 a ns1:TroubleTicket ;
+    ns1:description "Created a trouble ticket for RES005 to examine performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT050 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to assess performance and connectivity status." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT051 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RES005 to address performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT052 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RES005 to evaluate performance and connectivity status." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT053 a ns1:TroubleTicket ;
+    ns1:description "Opened a fresh trouble ticket for RES005 to investigate performance degradation and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT054 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES005 to evaluate performance and connectivity anomalies." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT055 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RES005 to handle performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES005 .
+
+ex:trouble_ticket_TT056 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RES017 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RES017 .
+
+ex:trouble_ticket_TT057 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RSC600 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT058 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to address performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT059 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RSC600 to investigate performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT060 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to address performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT061 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT062 a ns1:TroubleTicket ;
+    ns1:description "Generated a trouble ticket for RSC600 to resolve performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT063 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RSC600 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT064 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to investigate performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT065 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RSC600 to investigate performance and connectivity concerns." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT066 a ns1:TroubleTicket ;
+    ns1:description "Created a new trouble ticket for RSC600 to investigate performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT067 a ns1:TroubleTicket ;
+    ns1:description "Initiated a trouble ticket for RSC600 to address performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT068 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to address reported performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT069 a ns1:TroubleTicket ;
+    ns1:description "Opened a new trouble ticket for RSC600 to resolve performance and connectivity problems." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT070 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to assess performance and connectivity issues." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:trouble_ticket_TT071 a ns1:TroubleTicket ;
+    ns1:description "Opened a trouble ticket for RSC600 to assess performance and connectivity status." ;
+    ns1:eventRelatedElement ex:resource_RSC600 .
+
+ex:action_ACT123 a ns1:ProcedureExecution ;
+    ns1:description "Replaced faulty power supply" ;
+    ns1:madeBy ex:agent_AG001 ;
+    ns1:operationPlanPostCondition "It will bring the system back to normal operation and remove the identified problem.",
+        "It will remediate the issue and bring the system back to normal performance.",
+        "The action aims to address the problem and reestablish normal service.",
+        "The action is anticipated to resolve the problem and restore normal functionality.",
+        "The action is anticipated to restore normal functionality and eliminate the fault.",
+        "The action is anticipated to restore normal functionality and eliminate the problem.",
+        "The action is designed to eliminate the issue and restore normal system behavior.",
+        "The action is designed to restore normal functionality and eliminate the problem.",
+        "The action is expected to bring the system back to normal operation and resolve the issue.",
+        "The action is expected to clear the error and return the system to its standard operating state.",
+        "The action is expected to clear the error condition and return the system to its standard operating state.",
+        "The action is expected to correct the fault and restore normal operational conditions.",
+        "The action is expected to correct the underlying issue and restore normal system behavior.",
+        "The action is expected to eliminate the fault and restore normal operational conditions.",
+        "The action is expected to improve system performance and eliminate the identified issue.",
+        "The action is expected to improve system reliability and eliminate the issue.",
+        "The action is expected to improve system stability and prevent recurrence of the issue.",
+        "The action is expected to normalize system performance and remove the fault.",
+        "The action is expected to reestablish normal functionality and remove the problem.",
+        "The action is expected to reestablish normal service and resolve the underlying issue.",
+        "The action is expected to reestablish proper operation and remove the underlying problem.",
+        "The action is expected to reestablish service stability and remove the underlying issue.",
+        "The action is expected to reestablish system stability and remove the underlying issue.",
+        "The action is expected to resolve the identified issue and restore normal operation.",
+        "The action is expected to resolve the issue and reestablish normal service.",
+        "The action is expected to resolve the problem and restore full operational capacity.",
+        "The action is expected to restore full service performance and eliminate the underlying problem.",
+        "The action is expected to restore normal operation and eliminate the issue.",
+        "The action is expected to restore normal operations and eliminate the fault.",
+        "The action is expected to restore normal operations and eliminate the identified fault.",
+        "The action is expected to restore normal operations and eliminate the issue.",
+        "The action is intended to fix the issue and return the system to normal operation.",
+        "The action is intended to restore normal system performance and eliminate the fault.",
+        "The action is projected to resolve the fault and restore full operational capacity.",
+        "The action should correct the fault and return the system to full functionality.",
+        "The action should reestablish normal functionality and remove the issue.",
+        "The action should reestablish proper system behavior and remove the identified issue.",
+        "The action will mitigate the issue and restore standard functionality.",
+        "The action will resolve the issue and restore full functionality.",
+        "The action will return the system to its normal performance state.",
+        "The corrective action is anticipated to clear the fault and restore full system functionality.",
+        "The corrective action is designed to eliminate the fault and bring the system back to full functionality.",
+        "The corrective action is expected to eliminate the fault and restore full operational capacity.",
+        "The corrective action is expected to resolve the fault, restore normal functionality, and ensure the system operates as intended.",
+        "The corrective action will reestablish normal service and resolve the underlying issue.",
+        "The corrective action will remediate the fault and reestablish normal service functionality.",
+        "The result will be a restored service level with no remaining faults." .
+
+ex:agent_ABC001 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_ABC002 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ABC123 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_ABC999 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_AG001 a ns1:Agent ;
+    ns1:label "John Doe" .
+
+ex:agent_DEF001 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_DEF002 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_DEF123 a ns1:Agent ;
+    ns1:role "system_operator" .
+
+ex:agent_DEF999 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_EMP001 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_EMP002 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_EMP003 a ns1:Agent ;
+    ns1:role "network_operator" .
+
+ex:agent_EMP004 a ns1:Agent ;
+    ns1:role "employee" .
+
+ex:agent_EMP005 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_EMP006 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_EMP007 a ns1:Agent ;
+    ns1:role "system_operator" .
+
+ex:agent_EMP008 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_EMP009 a ns1:Agent ;
+    ns1:role "system operator" .
+
+ex:agent_EMP010 a ns1:Agent ;
+    ns1:role "employee" .
+
+ex:agent_EMP011 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_EMP012 a ns1:Agent ;
+    ns1:role "employee" .
+
+ex:agent_EMP013 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_EMP014 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_EMP015 a ns1:Agent ;
+    ns1:role "system_operator" .
+
+ex:agent_EMP101 a ns1:Agent ;
+    ns1:role "employee" .
+
+ex:agent_GHI001 a ns1:Agent ;
+    ns1:role "automated_process" .
+
+ex:agent_GHI456 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_GHI789 a ns1:Agent ;
+    ns1:role "sensor" .
+
+ex:agent_JKL789 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_LMN001 a ns1:Agent ;
+    ns1:role "sensor" .
+
+ex:agent_LMN123 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_LMN456 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_LMN999 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_MNO456 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_NOP456 a ns1:Agent ;
+    ns1:role "system_process" .
+
+ex:agent_ORG001 a ns1:Agent ;
+    ns1:role "service" .
+
+ex:agent_ORG002 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_ORG003 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG004 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG005 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG006 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG007 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG008 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG009 a ns1:Agent ;
+    ns1:role "system administrator" .
+
+ex:agent_ORG010 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_ORG011 a ns1:Agent ;
+    ns1:role "system administrator" .
+
+ex:agent_ORG012 a ns1:Agent ;
+    ns1:role "automated monitoring system" .
+
+ex:agent_ORG013 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG014 a ns1:Agent ;
+    ns1:role "system_process" .
+
+ex:agent_ORG015 a ns1:Agent ;
+    ns1:role "automated_process" .
+
+ex:agent_ORG016 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG017 a ns1:Agent ;
+    ns1:role "system_controller" .
+
+ex:agent_ORG018 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG019 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_ORG020 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_ORG021 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_ORG999 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_PER001 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_PQR123 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_QRS123 a ns1:Agent ;
+    ns1:role "system_process" .
+
+ex:agent_SYS001 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_SYS002 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_SYS003 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_TLM123 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_USR001 a ns1:Agent ;
+    ns1:role "initiator" .
+
+ex:agent_USR002 a ns1:Agent ;
+    ns1:role "operator" .
+
+ex:agent_USR003 a ns1:Agent ;
+    ns1:role "user" .
+
+ex:agent_USR004 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_XYZ001 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_XYZ123 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:agent_XYZ321 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_XYZ456 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_XYZ789 a ns1:Agent ;
+    ns1:role "system_admin" .
+
+ex:agent_XYZ999 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:event_CE001 a ns1:EventRecord .
+
+ex:event_CE002 a ns1:EventRecord .
+
+ex:event_CE003 a ns1:EventRecord .
+
+ex:event_CE004 a ns1:EventRecord .
+
+ex:event_CE005 a ns1:EventRecord .
+
+ex:event_CE006 a ns1:EventRecord .
+
+ex:event_CE007 a ns1:EventRecord .
+
+ex:event_CE008 a ns1:EventRecord .
+
+ex:event_CE009 a ns1:EventRecord .
+
+ex:event_CE010 a ns1:EventRecord .
+
+ex:event_CE011 a ns1:EventRecord .
+
+ex:event_CE012 a ns1:EventRecord .
+
+ex:event_CE013 a ns1:EventRecord .
+
+ex:event_CE014 a ns1:EventRecord .
+
+ex:event_CE015 a ns1:EventRecord .
+
+ex:event_CE016 a ns1:EventRecord .
+
+ex:event_CE017 a ns1:EventRecord .
+
+ex:event_CE018 a ns1:EventRecord .
+
+ex:event_CE019 a ns1:EventRecord .
+
+ex:event_CE020 a ns1:EventRecord .
+
+ex:event_CE022 a ns1:EventRecord .
+
+ex:event_CE023 a ns1:EventRecord .
+
+ex:event_CE024 a ns1:EventRecord .
+
+ex:event_CE025 a ns1:EventRecord .
+
+ex:event_CE026 a ns1:EventRecord .
+
+ex:event_CE027 a ns1:EventRecord .
+
+ex:event_CE028 a ns1:EventRecord .
+
+ex:event_CE030 a ns1:EventRecord .
+
+ex:event_CE032 a ns1:EventRecord .
+
+ex:event_CE033 a ns1:EventRecord .
+
+ex:event_CE034 a ns1:EventRecord .
+
+ex:event_CE035 a ns1:EventRecord .
+
+ex:event_CE036 a ns1:EventRecord .
+
+ex:event_CE037 a ns1:EventRecord .
+
+ex:event_CE038 a ns1:EventRecord .
+
+ex:event_CE039 a ns1:EventRecord .
+
+ex:event_CE040 a ns1:EventRecord .
+
+ex:event_CE042 a ns1:EventRecord .
+
+ex:event_CE043 a ns1:EventRecord .
+
+ex:event_CE044 a ns1:EventRecord .
+
+ex:event_CE045 a ns1:EventRecord .
+
+ex:event_CE046 a ns1:EventRecord .
+
+ex:event_CE047 a ns1:EventRecord .
+
+ex:event_CE048 a ns1:EventRecord .
+
+ex:event_CE049 a ns1:EventRecord .
+
+ex:event_CE050 a ns1:EventRecord .
+
+ex:event_CE052 a ns1:EventRecord .
+
+ex:event_CE053 a ns1:EventRecord .
+
+ex:event_CE054 a ns1:EventRecord .
+
+ex:event_CE055 a ns1:EventRecord .
+
+ex:event_CE056 a ns1:EventRecord .
+
+ex:event_CE057 a ns1:EventRecord .
+
+ex:event_CE058 a ns1:EventRecord .
+
+ex:event_CE059 a ns1:EventRecord .
+
+ex:event_CE060 a ns1:EventRecord .
+
+ex:event_CE061 a ns1:EventRecord .
+
+ex:event_CE062 a ns1:EventRecord .
+
+ex:event_CE063 a ns1:EventRecord .
+
+ex:event_CE064 a ns1:EventRecord .
+
+ex:event_CE065 a ns1:EventRecord .
+
+ex:event_CE066 a ns1:EventRecord .
+
+ex:event_CE067 a ns1:EventRecord .
+
+ex:event_CE068 a ns1:EventRecord .
+
+ex:event_CE069 a ns1:EventRecord .
+
+ex:event_CE070 a ns1:EventRecord .
+
+ex:event_CE071 a ns1:EventRecord .
+
+ex:event_CE072 a ns1:EventRecord .
+
+ex:event_CE073 a ns1:EventRecord .
+
+ex:event_CE100 a ns1:EventRecord .
+
+ex:event_CE200 a ns1:EventRecord .
+
+ex:event_CE999 a ns1:EventRecord .
+
+ex:event_EV007 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV008 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV009 a ns1:EventRecord ;
+    ns1:logOriginatingManagedObject ex:resource_None,
+        ex:resource_RES006 ;
+    ns1:loggingTime "2023-07-15T09:30:00Z" .
+
+ex:event_EV010 a ns1:EventRecord ;
+    ns1:logOriginatingAgent ex:agent_NOP456 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_CE033 .
+
+ex:event_EV011 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP016,
+        ex:pattern_FP017,
+        ex:pattern_FP019,
+        ex:pattern_FP020,
+        ex:pattern_NP001,
+        ex:pattern_None,
+        ex:pattern_PA007,
+        ex:pattern_PD001,
+        ex:pattern_PX006,
+        ex:pattern_PX007,
+        ex:pattern_PX008,
+        ex:pattern_PX010,
+        ex:pattern_PX013,
+        ex:pattern_PX014,
+        ex:pattern_PX015,
+        ex:pattern_XZ123 ;
+    ns1:logOriginatingAgent ex:agent_ABC002,
+        ex:agent_ABC999,
+        ex:agent_DEF001,
+        ex:agent_DEF002,
+        ex:agent_DEF123,
+        ex:agent_EMP006,
+        ex:agent_EMP008,
+        ex:agent_EMP011,
+        ex:agent_EMP999,
+        ex:agent_GHI001,
+        ex:agent_GHI789,
+        ex:agent_LMN001,
+        ex:agent_LMN123,
+        ex:agent_None,
+        ex:agent_ORG999,
+        ex:agent_SYS003,
+        ex:agent_XYZ123,
+        ex:agent_XYZ321,
+        ex:agent_XYZ456 ;
+    ns1:logOriginatingManagedObject ex:resource_None,
+        ex:resource_RES005,
+        ex:resource_RSC600,
+        ex:resource_RSC777 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_CE031,
+        ex:event_CE036,
+        ex:event_CE039,
+        ex:event_CE040,
+        ex:event_CE041,
+        ex:event_CE043,
+        ex:event_CE045,
+        ex:event_CE049,
+        ex:event_CE052,
+        ex:event_CE054,
+        ex:event_CE057,
+        ex:event_CE058,
+        ex:event_CE060,
+        ex:event_CE061,
+        ex:event_CE062,
+        ex:event_CE063,
+        ex:event_CE065,
+        ex:event_CE066,
+        ex:event_CE067,
+        ex:event_CE068,
+        ex:event_CE069,
+        ex:event_CE070,
+        ex:event_CE071,
+        ex:event_CE072,
+        ex:event_CE073,
+        ex:event_CE100,
+        ex:event_CE200,
+        ex:event_CE999 .
+
+ex:event_EV012 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_None,
+        ex:pattern_PA003 ;
+    ns1:logOriginatingManagedObject ex:resource_RES005 ;
+    ns1:loggingTime "2026-04-15T10:30:00Z" ;
+    ns1:relation ex:event_CE026 .
+
+ex:event_EV013 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV014 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_PA001 ;
+    ns1:logOriginatingAgent ex:agent_EMP007,
+        ex:agent_EMP012,
+        ex:agent_ORG018 ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" ;
+    ns1:relation ex:event_CE029,
+        ex:event_CE035 .
+
+ex:event_EV015 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP018,
+        ex:pattern_FP021,
+        ex:pattern_None,
+        ex:pattern_PA004,
+        ex:pattern_PA005,
+        ex:pattern_PA006,
+        ex:pattern_PX011 ;
+    ns1:logOriginatingAgent ex:agent_EMP005,
+        ex:agent_GHI456,
+        ex:agent_JKL789,
+        ex:agent_MNO456,
+        ex:agent_None,
+        ex:agent_PQR123 ;
+    ns1:loggingTime "2026-04-28T10:15:00Z" ;
+    ns1:relation ex:event_CE037,
+        ex:event_CE038,
+        ex:event_CE046,
+        ex:event_CE050,
+        ex:event_CE051,
+        ex:event_CE055,
+        ex:event_CE056 .
+
+ex:event_EV016 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T10:15:00Z" .
+
+ex:event_EV017 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:45Z" .
+
+ex:event_EV018 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV019 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV020 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T09:30:00Z" .
+
+ex:event_EV021 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T09:30:00Z" .
+
+ex:event_EV022 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV023 a ns1:EventRecord ;
+    ns1:logOriginatingAgent ex:agent_ABC123,
+        ex:agent_None,
+        ex:agent_XYZ999 ;
+    ns1:logOriginatingManagedObject ex:resource_RSC600 ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" ;
+    ns1:relation ex:event_CE042,
+        ex:event_CE064 .
+
+ex:event_EV024 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV025 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T10:30:00Z" .
+
+ex:event_EV026 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-20T14:35:00Z" .
+
+ex:event_EV027 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:event_EV028 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:30:00Z" .
+
+ex:event_EV029 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:45Z" .
+
+ex:event_EV030 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV031 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV032 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-30T14:45:00Z" .
+
+ex:event_EV033 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV034 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:event_EV035 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T10:23:00Z" .
+
+ex:event_EV036 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:event_EV037 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV038 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-30T14:23:00Z" .
+
+ex:event_EV039 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T10:23:00Z" .
+
+ex:event_EV040 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV041 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV042 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV043 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV044 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:event_EV045 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV046 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" .
+
+ex:event_EV047 a ns1:EventRecord ;
+    ns1:loggingTime "2023-07-15T14:23:00Z" .
+
+ex:event_EV048 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-15T09:30:00Z" .
+
+ex:event_XZ101 a ns1:EventRecord ;
+    ns1:loggingTime "2026-04-28T14:35:00Z" .
+
+ex:managed_element_APP001 a ns1:ManagedElement .
+
+ex:managed_element_APP020 a ns1:ManagedElement .
+
+ex:managed_element_APP045 a ns1:ManagedElement .
+
+ex:managed_element_APP200 a ns1:ManagedElement .
+
+ex:managed_element_APP300 a ns1:ManagedElement .
+
+ex:managed_element_APP321 a ns1:ManagedElement .
+
+ex:managed_element_APP600 a ns1:ManagedElement .
+
+ex:managed_element_APP777 a ns1:ManagedElement .
+
+ex:managed_element_APP800 a ns1:ManagedElement .
+
+ex:managed_element_APP888 a ns1:ManagedElement .
+
+ex:managed_element_APP999 a ns1:ManagedElement .
+
+ex:managed_element_HW001 a ns1:ManagedElement .
+
+<http://example.org/managed_element_HW001,APP002,SIT003> a ns1:ManagedElement .
+
+ex:managed_element_HW002 a ns1:ManagedElement .
+
+ex:managed_element_HW003 a ns1:ManagedElement .
+
+ex:managed_element_HW004 a ns1:ManagedElement .
+
+ex:managed_element_HW006 a ns1:ManagedElement .
+
+ex:managed_element_HW007 a ns1:ManagedElement .
+
+ex:managed_element_HW008 a ns1:ManagedElement .
+
+ex:managed_element_HW009 a ns1:ManagedElement .
+
+ex:managed_element_HW011 a ns1:ManagedElement .
+
+<http://example.org/managed_element_HW012,APP007,SIT008> a ns1:ManagedElement .
+
+ex:managed_element_HW013 a ns1:ManagedElement .
+
+ex:managed_element_HW014 a ns1:ManagedElement .
+
+ex:managed_element_HW015 a ns1:ManagedElement .
+
+ex:managed_element_HW016 a ns1:ManagedElement .
+
+ex:managed_element_HW017 a ns1:ManagedElement .
+
+ex:managed_element_HW018 a ns1:ManagedElement .
+
+ex:managed_element_HW019 a ns1:ManagedElement .
+
+ex:managed_element_HW020 a ns1:ManagedElement .
+
+ex:managed_element_HW021 a ns1:ManagedElement .
+
+ex:managed_element_HW022 a ns1:ManagedElement .
+
+ex:managed_element_HW023 a ns1:ManagedElement .
+
+ex:managed_element_HW025 a ns1:ManagedElement .
+
+ex:managed_element_HW026 a ns1:ManagedElement .
+
+<http://example.org/managed_element_HW027,APP013,SIT016> a ns1:ManagedElement .
+
+ex:managed_element_HW028 a ns1:ManagedElement .
+
+ex:managed_element_HW030 a ns1:ManagedElement .
+
+ex:managed_element_HW031 a ns1:ManagedElement .
+
+ex:managed_element_HW032 a ns1:ManagedElement .
+
+ex:managed_element_HW033 a ns1:ManagedElement .
+
+ex:managed_element_HW034 a ns1:ManagedElement .
+
+ex:managed_element_HW035 a ns1:ManagedElement .
+
+ex:managed_element_HW100 a ns1:ManagedElement .
+
+ex:managed_element_HW101 a ns1:ManagedElement .
+
+ex:managed_element_HW102 a ns1:ManagedElement .
+
+ex:managed_element_HW103 a ns1:ManagedElement .
+
+ex:managed_element_HW110 a ns1:ManagedElement .
+
+ex:managed_element_HW111 a ns1:ManagedElement .
+
+ex:managed_element_HW112 a ns1:ManagedElement .
+
+ex:managed_element_HW123 a ns1:ManagedElement .
+
+ex:managed_element_HW124 a ns1:ManagedElement .
+
+ex:managed_element_HW125 a ns1:ManagedElement .
+
+ex:managed_element_HW200 a ns1:ManagedElement .
+
+ex:managed_element_HW201 a ns1:ManagedElement .
+
+ex:managed_element_HW202 a ns1:ManagedElement .
+
+ex:managed_element_HW203 a ns1:ManagedElement .
+
+ex:managed_element_HW222 a ns1:ManagedElement .
+
+ex:managed_element_HW300 a ns1:ManagedElement .
+
+ex:managed_element_HW321 a ns1:ManagedElement .
+
+ex:managed_element_HW350 a ns1:ManagedElement .
+
+ex:managed_element_HW400 a ns1:ManagedElement .
+
+ex:managed_element_HW450 a ns1:ManagedElement .
+
+ex:managed_element_HW456 a ns1:ManagedElement .
+
+ex:managed_element_HW501 a ns1:ManagedElement .
+
+ex:managed_element_HW555 a ns1:ManagedElement .
+
+ex:managed_element_HW600 a ns1:ManagedElement .
+
+ex:managed_element_HW777 a ns1:ManagedElement .
+
+ex:managed_element_HW800 a ns1:ManagedElement .
+
+ex:managed_element_HW801 a ns1:ManagedElement .
+
+ex:managed_element_HW850 a ns1:ManagedElement .
+
+ex:managed_element_HW851 a ns1:ManagedElement .
+
+ex:managed_element_HW888 a ns1:ManagedElement .
+
+ex:managed_element_HW900 a ns1:ManagedElement .
+
+ex:managed_element_HW901 a ns1:ManagedElement .
+
+ex:managed_element_HW902 a ns1:ManagedElement .
+
+ex:managed_element_HW950 a ns1:ManagedElement .
+
+ex:managed_element_HW999 a ns1:ManagedElement .
+
+ex:managed_element_SIT012 a ns1:ManagedElement .
+
+ex:managed_element_SRV001 a ns1:ManagedElement .
+
+ex:managed_element_SV001 a ns1:ManagedElement .
+
+ex:metric_MET001 a ns1:Metric ;
+    ns1:metricName "cpu_usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MET002 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MET003 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MET004 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MET005 a ns1:Metric ;
+    ns1:metricName "cpu_utilization" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MET006 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "75%" .
+
+ex:metric_MET007 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "45%" .
+
+ex:metric_MET008 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "68%" .
+
+ex:metric_MET009 a ns1:Metric ;
+    ns1:metricName "CPU_Usage" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MET010 a ns1:Metric ;
+    ns1:metricName "CPU_Utilization" ;
+    ns1:metricValue "73%" .
+
+ex:metric_MET011 a ns1:Metric ;
+    ns1:metricName "cpu_usage" ;
+    ns1:metricValue "73%" .
+
+ex:pattern_FP001 a ns1:AnomalyPattern ;
+    ns1:label "Overheating of motor leading to shutdown" .
+
+ex:pattern_FP002 a ns1:AnomalyPattern ;
+    ns1:label "Voltage spike leading to sensor malfunction" .
+
+ex:pattern_FP003 a ns1:AnomalyPattern ;
+    ns1:label "Power supply fluctuation causing unexpected reboot" .
+
+ex:pattern_FP005 a ns1:AnomalyPattern ;
+    ns1:label "Communication timeout causing system halt" .
+
+ex:pattern_FP006 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected sensor drift causing alarm" .
+
+ex:pattern_FP007 a ns1:AnomalyPattern ;
+    ns1:label "Battery voltage drop leading to low power alarm" .
+
+ex:pattern_FP008 a ns1:AnomalyPattern ;
+    ns1:label "Voltage irregularity causing sensor reset" .
+
+ex:pattern_FP009 a ns1:AnomalyPattern ;
+    ns1:label "Intermittent communication loss leading to system reset",
+        "No matching failure pattern" .
+
+ex:pattern_FP010 a ns1:AnomalyPattern ;
+    ns1:label "Battery temperature anomaly causing alarm" .
+
+ex:pattern_FP011 a ns1:AnomalyPattern ;
+    ns1:label "Temperature sensor calibration error leading to false alarm" .
+
+ex:pattern_FP012 a ns1:AnomalyPattern ;
+    ns1:label "Event does not correspond to any known failure pattern" .
+
+ex:pattern_FP013 a ns1:AnomalyPattern ;
+    ns1:label "Sensor calibration drift leading to false alarm" .
+
+ex:pattern_FP014 a ns1:AnomalyPattern ;
+    ns1:label "Memory leak leading to system slowdown" .
+
+ex:pattern_FP015 a ns1:AnomalyPattern ;
+    ns1:label "Temperature sensor failure leading to system halt" .
+
+ex:pattern_FP016 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_FP017 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_FP018 a ns1:AnomalyPattern ;
+    ns1:label "CPU overload leading to system slowdown" .
+
+ex:pattern_FP019 a ns1:AnomalyPattern ;
+    ns1:label "Event does not correspond to any known failure pattern" .
+
+ex:pattern_FP020 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected firmware glitch causing system reboot" .
+
+ex:pattern_FP021 a ns1:AnomalyPattern ;
+    ns1:label "Battery temperature anomaly causing alarm" .
+
+ex:pattern_NP001 a ns1:AnomalyPattern ;
+    ns1:label "No matching failure pattern found for event EV011" .
+
+ex:pattern_PA002 a ns1:AnomalyPattern ;
+    ns1:label "Battery overheating causing emergency shutdown" .
+
+ex:pattern_PA003 a ns1:AnomalyPattern ;
+    ns1:label "Event does not correspond to any known failure pattern" .
+
+ex:pattern_PA004 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PA005 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PA006 a ns1:AnomalyPattern ;
+    ns1:label "Battery temperature anomaly causing alarm" .
+
+ex:pattern_PA007 a ns1:AnomalyPattern ;
+    ns1:label "No matching failure pattern found for the given event" .
+
+ex:pattern_PB001 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PD001 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected firmware update causing system instability" .
+
+ex:pattern_PF001 a ns1:AnomalyPattern ;
+    ns1:label "No matching failure pattern" .
+
+ex:pattern_PX001 a ns1:AnomalyPattern ;
+    ns1:label "Temperature sensor anomaly causing false alarm" .
+
+ex:pattern_PX002 a ns1:AnomalyPattern ;
+    ns1:label "Network latency spike leading to delayed response" .
+
+ex:pattern_PX003 a ns1:AnomalyPattern ;
+    ns1:label "No matching failure pattern" .
+
+ex:pattern_PX004 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected power surge causing system reboot" .
+
+ex:pattern_PX005 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected temperature spike causing system alert" .
+
+ex:pattern_PX006 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected coolant leak causing system alert" .
+
+ex:pattern_PX007 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PX008 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected sensor disconnect causing alarm" .
+
+ex:pattern_PX009 a ns1:AnomalyPattern ;
+    ns1:label "Battery overheating causing emergency shutdown" .
+
+ex:pattern_PX010 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PX011 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event" .
+
+ex:pattern_PX012 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected sensor overload causing system alarm" .
+
+ex:pattern_PX013 a ns1:AnomalyPattern ;
+    ns1:label "Battery overheating causing emergency shutdown" .
+
+ex:pattern_PX014 a ns1:AnomalyPattern ;
+    ns1:label "Unexpected sensor calibration error leading to system alert" .
+
+ex:pattern_PX015 a ns1:AnomalyPattern ;
+    ns1:label "No applicable failure pattern identified" .
+
+ex:pattern_PY001 a ns1:AnomalyPattern ;
+    ns1:label "Battery management unit failure causing power loss" .
+
+ex:pattern_QZ123 a ns1:AnomalyPattern ;
+    ns1:label "Unidentified failure pattern for event EV001" .
+
+ex:pattern_XZ123 a ns1:AnomalyPattern ;
+    ns1:label "Cooling system failure causing temperature rise" .
+
+ex:agent_EMP999 a ns1:Agent ;
+    ns1:role "system" .
+
+ex:event_CE021 a ns1:EventRecord .
+
+ex:event_CE029 a ns1:EventRecord .
+
+ex:event_CE031 a ns1:EventRecord .
+
+ex:event_CE051 a ns1:EventRecord .
+
+ex:event_EV001 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP001,
+        ex:pattern_FP007,
+        ex:pattern_FP009,
+        ex:pattern_FP011,
+        ex:pattern_FP012,
+        ex:pattern_FP014,
+        ex:pattern_FP015,
+        ex:pattern_None,
+        ex:pattern_PA001,
+        ex:pattern_PA002,
+        ex:pattern_PB001,
+        ex:pattern_PF001,
+        ex:pattern_PX002,
+        ex:pattern_PX005,
+        ex:pattern_PX009,
+        ex:pattern_PX012,
+        ex:pattern_PY001,
+        ex:pattern_QZ123 ;
+    ns1:logOriginatingAgent ex:agent_ABC001,
+        ex:agent_DEF999,
+        ex:agent_EMP001,
+        ex:agent_EMP002,
+        ex:agent_EMP004,
+        ex:agent_EMP009,
+        ex:agent_EMP010,
+        ex:agent_EMP013,
+        ex:agent_EMP014,
+        ex:agent_EMP015,
+        ex:agent_EMP101,
+        ex:agent_EMP999,
+        ex:agent_LMN456,
+        ex:agent_LMN999,
+        ex:agent_None,
+        ex:agent_ORG001,
+        ex:agent_ORG002,
+        ex:agent_ORG003,
+        ex:agent_ORG006,
+        ex:agent_ORG014,
+        ex:agent_ORG017,
+        ex:agent_ORG019,
+        ex:agent_ORG020,
+        ex:agent_ORG021,
+        ex:agent_PER001,
+        ex:agent_QRS123,
+        ex:agent_SYS002,
+        ex:agent_TLM123,
+        ex:agent_XYZ001,
+        ex:agent_XYZ789 ;
+    ns1:logOriginatingManagedObject ex:resource_RES001,
+        ex:resource_RES004,
+        ex:resource_RES005,
+        ex:resource_RES006 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_CE002,
+        ex:event_CE008,
+        ex:event_CE011,
+        ex:event_CE015,
+        ex:event_CE016,
+        ex:event_CE018,
+        ex:event_CE019,
+        ex:event_CE021,
+        ex:event_CE025,
+        ex:event_CE027,
+        ex:event_CE030,
+        ex:event_CE031,
+        ex:event_CE041,
+        ex:event_CE044,
+        ex:event_CE047,
+        ex:event_CE048,
+        ex:event_CE051,
+        ex:event_CE053,
+        ex:event_CE059,
+        ex:event_EV002,
+        ex:event_EV003,
+        ex:event_EV004,
+        ex:event_EV005,
+        ex:event_EV006 .
+
+ex:event_EV002 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_None ;
+    ns1:logOriginatingAgent ex:agent_None,
+        ex:agent_ORG004,
+        ex:agent_ORG005 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_EV001 .
+
+ex:event_EV003 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP002,
+        ex:pattern_FP005,
+        ex:pattern_FP006,
+        ex:pattern_None,
+        ex:pattern_PX001,
+        ex:pattern_PX003 ;
+    ns1:logOriginatingAgent ex:agent_None,
+        ex:agent_ORG007,
+        ex:agent_ORG008,
+        ex:agent_ORG009,
+        ex:agent_ORG012,
+        ex:agent_ORG015 ;
+    ns1:logOriginatingManagedObject ex:resource_RES001 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_CE001,
+        ex:event_CE004,
+        ex:event_CE005,
+        ex:event_CE006,
+        ex:event_CE007 .
+
+ex:event_EV004 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP003,
+        ex:pattern_FP004,
+        ex:pattern_FP008,
+        ex:pattern_FP010,
+        ex:pattern_None ;
+    ns1:logOriginatingAgent ex:agent_EMP003,
+        ex:agent_None,
+        ex:agent_ORG010,
+        ex:agent_USR001,
+        ex:agent_USR002,
+        ex:agent_USR003 ;
+    ns1:logOriginatingManagedObject ex:resource_RES003 ;
+    ns1:loggingTime "2023-07-15T10:23:00Z" ;
+    ns1:relation ex:event_CE012,
+        ex:event_CE014,
+        ex:event_CE020,
+        ex:event_CE024 .
+
+ex:event_EV005 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_FP004,
+        ex:pattern_FP013,
+        ex:pattern_None,
+        ex:pattern_PX004 ;
+    ns1:logOriginatingAgent ex:agent_None,
+        ex:agent_ORG011,
+        ex:agent_ORG013,
+        ex:agent_ORG016,
+        ex:agent_SYS001,
+        ex:agent_USR004 ;
+    ns1:loggingTime "2026-04-20T14:30:00Z" ;
+    ns1:relation ex:event_CE009,
+        ex:event_CE010,
+        ex:event_CE013,
+        ex:event_CE017,
+        ex:event_CE021,
+        ex:event_CE022,
+        ex:event_CE023,
+        ex:event_CE028,
+        ex:event_CE029,
+        ex:event_CE032,
+        ex:event_CE034,
+        ex:event_CE041 .
+
+ex:event_EV006 a ns1:EventRecord ;
+    ns1:conformsTo ex:pattern_None ;
+    ns1:loggingTime "2023-07-15T10:30:00Z" ;
+    ns1:relation ex:event_CE003 .
+
+ex:managed_element_HW005 a ns1:ManagedElement .
+
+ex:managed_element_HW010 a ns1:ManagedElement .
+
+ex:pattern_FP004 a ns1:AnomalyPattern ;
+    ns1:label "Firmware glitch causing unexpected sensor reset",
+        "No matching failure pattern" .
+
+ex:pattern_PA001 a ns1:AnomalyPattern ;
+    ns1:label "No known alarm pattern matches this event",
+        "Unexpected shutdown due to memory corruption" .
+
+ex:resource_RES004 a ns1:Resource ;
+    ns1:label "Logging" ;
+    ns1:structuralElementObservable ex:metric_MET008 ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:resource_RES016 a ns1:Resource ;
+    ns1:resourceHostName "host-016" ;
+    ns1:resourceSerialNumber "SN-016" ;
+    ns1:resourceType "Server" ;
+    ns1:resourceUsageState "active" .
+
+ex:resource_RSC777 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:event_CE041 a ns1:EventRecord .
+
+ex:managed_element_None a ns1:ManagedElement .
+
+ex:resource_RES003 a ns1:Resource ;
+    ns1:label "MessageQueue" ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:resource_RES006 a ns1:Resource ;
+    ns1:label "Reporting" ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:resource_RES014 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES009 a ns1:Resource ;
+    ns1:label "Analytics" ;
+    ns1:subSystemOf ex:service_SRV002 .
+
+ex:resource_RES017 a ns1:Resource ;
+    ns1:label "Encryption" ;
+    ns1:subSystemOf ex:service_SVX123 .
+
+ex:service_SRV002 a ns1:Service ;
+    ns1:elementManagedBy "BetaTeam" ;
+    ns1:label "AnalyticsDashboard" ;
+    ns1:serviceType "WebApp" .
+
+ex:service_SVR001 a ns1:Service ;
+    ns1:elementManagedBy "AlphaTeam" ;
+    ns1:label "CustomerPortal" ;
+    ns1:serviceType "WebApplication",
+        "WebPortal" .
+
+ex:service_TUV456 a ns1:Service ;
+    ns1:elementManagedBy "RhoTeam" ;
+    ns1:label "IncidentResponse" ;
+    ns1:serviceType "Support" .
+
+ex:agent_None a ns1:Agent .
+
+ex:pattern_None a ns1:AnomalyPattern ;
+    ns1:label "No alarm pattern applicable to EV011",
+        "No applicable failure pattern identified",
+        "No known alarm pattern matches this event",
+        "No matching failure pattern",
+        "No matching failure pattern found for event EV011" .
+
+ex:service_SVC001 a ns1:Service ;
+    ns1:elementManagedBy "GammaTeam",
+        "OmegaPrimeTeam" ;
+    ns1:label "InventoryService",
+        "UnifiedMonitoring" ;
+    ns1:serviceType "Platform",
+        "microservice" .
+
+ex:resource_RES001 a ns1:Resource ;
+    ns1:label "Database" ;
+    ns1:structuralElementObservable ex:metric_MET001,
+        ex:metric_MET002,
+        ex:metric_MET003,
+        ex:metric_MET004,
+        ex:metric_MET005,
+        ex:metric_MET006,
+        ex:metric_MET007,
+        ex:metric_MET009,
+        ex:metric_MET010,
+        ex:metric_MET011 ;
+    ns1:subSystemOf ex:service_SVR001 .
+
+ex:service_SVX123 a ns1:Service ;
+    ns1:elementManagedBy "DeltaTeam" ;
+    ns1:label "FinancialAnalytics" ;
+    ns1:serviceType "Reporting" .
+
+ex:resource_RSC600 a ns1:Resource ;
+    ns1:label "Orchestration" ;
+    ns1:subSystemOf ex:service_SVC001 .
+
+ex:resource_RES005 a ns1:Resource ;
+    ns1:label "Search" ;
+    ns1:subSystemOf ex:service_SVR001 .
+

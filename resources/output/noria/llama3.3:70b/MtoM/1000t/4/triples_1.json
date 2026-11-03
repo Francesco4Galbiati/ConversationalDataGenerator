@@ -1,0 +1,115 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Services", "service_type": "Infrastructure", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "new-resource-123", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"metric_id": "ABC123", "metric_name": "CPU Usage", "metric_value": "85%", "resource_id": "ABC456"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Asset", "service_id": "ABC123"}
+OpenTroubleTicket: {"trouble_ticket_id": "ABC123", "trouble_ticket_description": "Issue with resource DEF789", "resource_id": "DEF789"}
+GetResourceMetrics: {"metric_id": "GHI456", "metric_name": "Memory Usage", "metric_value": "70%", "resource_id": "DEF789"}
+GetResourceLogs: {"resource_id": "DEF789, ABC456", "log_id": "LOG123", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG456", "log_time": "2022-01-02 13:00:00", "log_message": "Resource created"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG789", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "LOG101", "log_time": "2022-01-04 15:00:00", "log_message": "Resource accessed"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT456", "action_description": "Restarted server", "agent_id": "AGT789", "agent_label": "John Doe"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT789", "action_description": "Ran diagnostic tests"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT012", "action_description": "Ran network tests", "agent_id": "AGT012", "agent_label": "Jane Smith"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT101", "action_description": "Ran system updates"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "the problem was solved by restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "the problem was solved by restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "high"}
+IdentifyIncidentImpact: {"entity_id": "SRV456", "entity_type": "hardware", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "SRV789", "entity_type": "application", "trouble_ticket_id": "ABC123"}
+IdentifyIncidentImpact: {"entity_id": "SRV012", "entity_type": "network", "trouble_ticket_id": "ABC123"}
+GetIncidentSequence: {"event_id": "EVT456", "timestamp": "2023-02-15 14:30:00", "trouble_ticket_id": "ABC123"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-456", "serial_number": "SN987654", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Network Services", "service_type": "Platform", "managed_by_team": "IT Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "new-resource-789", "serial_number": "SN111222", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"metric_id": "JKL012", "metric_name": "Disk Usage", "metric_value": "90%", "resource_id": "DEF789"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Asset", "service_id": "ABC123"}
+GetResourceMetrics: {"metric_id": "MNO789", "metric_name": "Network Usage", "metric_value": "60%", "resource_id": "JKL345"}
+GetResourceMetrics: {"metric_id": "PQR111", "metric_name": "CPU Temperature", "metric_value": "50%", "resource_id": "JKL345"}
+FindCorrelatedEvents: {"corr_id": "ABC123", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT123", "originator_role": "System Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "JKL345", "log_id": "LOG012", "log_time": "2022-01-05 16:00:00", "log_message": "Resource modified"}
+FindCorrelatedEvents: {"corr_id": "DEF789", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT234", "action_description": "Ran security checks", "agent_id": "AGT345", "agent_label": "Emily Johnson"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT567", "action_description": "Ran performance optimization"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT901", "action_description": "Ran data backup", "agent_id": "AGT111", "agent_label": "Michael Brown"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran data recovery"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "the problem was solved by restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "ABC123", "agent_id": "AGT678", "agent_label": "Olivia Davis"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "low"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "ABC123", "ticket_category": "Network Issue", "similar_ticket_id": "DEF456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "EVT456", "change_id": "CHG789", "change_description": "System update and restart", "start_time": "2023-02-15 14:30:00"}
+RegisterNewResource: {"resource_id": "PQR901", "hostname": "new-resource-101", "serial_number": "SN456789", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "STU111", "hostname": "new-resource-101", "serial_number": "SN111222", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Database Services", "service_type": "Software", "managed_by_team": "Support Team"}
+GetResourceMetrics: {"metric_id": "DEF234", "metric_name": "GPU Usage", "metric_value": "40%", "resource_id": "STU111"}
+GetResourceMetrics: {"metric_id": "VWX222", "metric_name": "Battery Usage", "metric_value": "95%", "resource_id": "STU111"}
+FindSharedAssets: {"resource_id": "VWX234", "resource_label": "Shared Asset", "service_id": "GHI789"}
+GetResourceMetrics: {"metric_id": "STU345", "metric_name": "Power Consumption", "metric_value": "80%", "resource_id": "VWX234"}
+FindCorrelatedEvents: {"corr_id": "GHI012", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT789", "originator_role": "System Operator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "VWX234", "log_id": "LOG567", "log_time": "2022-01-06 17:00:00", "log_message": "Resource viewed"}
+FindCorrelatedEvents: {"corr_id": "JKL345", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT999", "action_description": "Ran data migration", "agent_id": "AGT012", "agent_label": "Emily Johnson"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT678", "action_description": "Ran virus scan"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT345", "action_description": "Ran system diagnostics", "agent_id": "AGT234", "agent_label": "David Lee"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran diagnostic tests"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "the problem was solved by restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "ABC123", "agent_id": "AGT456", "agent_label": "Sophia Taylor"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "ABC123", "ticket_category": "Network Issue", "similar_ticket_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "VWX234", "hostname": "new-resource-abc", "serial_number": "SN555666", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Security Services", "service_type": "Software", "managed_by_team": "Security Team"}
+RegisterNewResource: {"resource_id": "VWX234", "hostname": "new-resource-def", "serial_number": "SN222333", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"metric_id": "YZA678", "metric_name": "Fan Speed", "metric_value": "92%", "resource_id": "VWX234"}
+GetResourceMetrics: {"metric_id": "EFG567", "metric_name": "Sound Level", "metric_value": "98%", "resource_id": "VWX234"}
+FindSharedAssets: {"resource_id": "YZA111", "resource_label": "Shared Asset", "service_id": "GHI789"}
+GetResourceMetrics: {"metric_id": "TUV111", "metric_name": "Network Latency", "metric_value": "88%", "resource_id": "VWX234"}
+FindCorrelatedEvents: {"corr_id": "MNO678", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT456", "originator_role": "Network Administrator", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT012", "originator_role": "Network Engineer", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "PQR901", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT123", "action_description": "Ran network configuration", "agent_id": "AGT123", "agent_label": "Alexander White"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran data backup"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran data backup", "agent_id": "AGT456", "agent_label": "Alexander White"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT456", "action_description": "Ran performance optimization"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "the problem was solved by restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+ListInvolvedAgents: {"trouble_ticket_id": "ABC123", "agent_id": "AGT901", "agent_label": "Ethan Hall"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+FindSimilarIncidents: {"trouble_ticket_id": "ABC123", "ticket_category": "Network Issue", "similar_ticket_id": "JKL012"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "VWX234", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "VWX234", "event_id": "EVT456", "change_id": "CHG012", "change_description": "Software patch update", "start_time": "2023-02-16 10:00:00"}
+RegisterNewResource: {"resource_id": "VWX234", "hostname": "new-resource-ghi", "serial_number": "SN888999", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX234", "hostname": "new-resource-jkl", "serial_number": "SN111000", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Storage Services", "service_type": "Infrastructure", "managed_by_team": "IT Team"}
+GetResourceMetrics: {"metric_id": "CDE111", "metric_name": "Sound Level", "metric_value": "92%", "resource_id": "VWX234"}
+GetResourceMetrics: {"metric_id": "BCD890", "metric_name": "Network Throughput", "metric_value": "82%", "resource_id": "VWX234"}
+FindSharedAssets: {"resource_id": "EFG678", "resource_label": "Shared Asset", "service_id": ["GHI789", "MNO345"]}
+GetResourceMetrics: {"metric_id": "HJK111", "metric_name": "Sound Level", "metric_value": "92%", "resource_id": "VWX234"}
+FindCorrelatedEvents: {"corr_id": "STU234", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT101", "originator_role": "Database Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "VWX234", "log_id": "LOG901", "log_time": "2022-01-07 18:00:00", "log_message": "Resource shared"}
+FindCorrelatedEvents: {"corr_id": "VWX111", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran data backup", "agent_id": "AGT456", "agent_label": "Alexander White"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran performance optimization"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran performance optimization", "agent_id": "AGT456", "agent_label": "John Doe"}
+IdentifyResolvingActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT111", "action_description": "Ran performance optimization"}

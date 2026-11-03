@@ -1,0 +1,310 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Storage", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN123456", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Asset", "service_id": "ABC123"}
+OpenTroubleTicket: {"resource_id": "ABC456", "trouble_ticket_id": "XYZ789", "trouble_ticket_description": "Issue with resource ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT123", "action_description": "System restart and software update", "agent_id": "AGT456", "agent_label": "Technical Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT456", "action_description": "Network configuration update and malware removal", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT789", "action_description": "System update and virus scan", "agent_id": "AGT123", "agent_label": "Senior Technical Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and firewall configuration", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "ABC123", "timestamp": "2022-01-01 12:00:00"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN789012", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Database Management", "service_type": "Platform", "managed_by_team": "Engineering"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN345678", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC456", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Database", "service_id": "ABC123, DEF456"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "GHI012", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "JKL345", "metric_name": "Storage Usage", "metric_value": "67%"}
+FindCorrelatedEvents: {"corr_id": "DEF456", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "AGT456", "originator_role": "System Administrator"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "SYS789", "originator_role": "Network Engineer"}
+FindCorrelatedEvents: {"corr_id": "GHI789", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT101", "action_description": "System update and network configuration", "agent_id": "AGT012", "agent_label": "Junior Technical Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT901", "action_description": "System update and security patch installation", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and driver installation", "agent_id": "AGT901", "agent_label": "Senior Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT234", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "ABC123", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "PXW421", "change_description": "System update and restart", "start_time": "2022-01-01 12:00:00", "resource_id": "MNO678", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "PQR901", "hostname": "server04", "serial_number": "SN456789", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "server05", "serial_number": "SN901234", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Network Security", "service_type": "Software", "managed_by_team": "Security"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "PQR901", "metric_name": "Bandwidth Usage", "metric_value": "43%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "STU111", "metric_name": "GPU Usage", "metric_value": "41%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "VWX234", "metric_name": "Power Usage", "metric_value": "56%"}
+FindSharedAssets: {"resource_id": "STU234", "resource_label": "Shared Network", "service_id": "GHI789"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "NET678", "originator_role": "Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "JKL012", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "DEV012", "originator_role": "Database Administrator"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "LOG342", "originator_role": "Cloud Engineer"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT567", "action_description": "System update and performance optimization", "agent_id": "AGT678", "agent_label": "Technical Support Engineer"}
+IdentifyResolvingActions: {"action_id": "ACT345", "action_description": "System update and backup configuration", "trouble_ticket_id": "XYZ789"}
+IdentifyResolvingActions: {"action_id": "ACT678", "action_description": "System update and memory optimization", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT999", "action_description": "System update and registry repair", "agent_id": "AGT234", "agent_label": "Technical Support Specialist"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT045", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "DEF456", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+FindCausalInterventions: {"change_id": "DEF456", "change_description": "Software patch update", "start_time": "2022-01-05 14:30:00", "resource_id": "MNO678", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "server06", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "server07", "serial_number": "SN1111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Data Analytics", "service_type": "Software", "managed_by_team": "DevOps"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "YZA111", "metric_name": "Temperature Usage", "metric_value": "21%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "EFG567", "metric_name": "Fan Usage", "metric_value": "23%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "BCD789", "metric_name": "Battery Usage", "metric_value": "11%"}
+FindSharedAssets: {"resource_id": "VWX111", "resource_label": "Shared Storage", "service_id": "GHI789"}
+FindCorrelatedEvents: {"corr_id": "MNO345", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "APP987", "originator_role": "Application Developer"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "USR111", "originator_role": "Technical Support"}
+FindCorrelatedEvents: {"corr_id": "PQR678", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT345", "action_description": "System update and firewall configuration", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT012", "action_description": "Network configuration update and malware removal", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and network configuration", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT567", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "GHJ789", "change_description": "Hardware replacement and configuration update", "start_time": "2022-01-03 10:00:00", "resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "VWX112", "hostname": "server08", "serial_number": "SN234567", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX113", "hostname": "server09", "serial_number": "SN11111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX114", "hostname": "server10", "serial_number": "SN567890", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "MNO678", "metric_name": "Sound Usage", "metric_value": "13%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "PQR234", "metric_name": "Network Usage", "metric_value": "34%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "TUV678", "metric_name": "Sound Usage", "metric_value": "98%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "RST456", "metric_name": "Sound Usage", "metric_value": "12%"}
+FindCorrelatedEvents: {"corr_id": "STU901", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "ANA654", "originator_role": "Data Analyst"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "DBS111", "originator_role": "Database Engineer"}
+FindCorrelatedEvents: {"corr_id": "VWX234", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and virus scan", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT789", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "GHI012", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+FindCausalInterventions: {"change_id": "MNO234", "change_description": "Network configuration update and security patch installation", "start_time": "2022-01-02 16:00:00", "resource_id": "VWX111", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "VWX115", "hostname": "server11", "serial_number": "SN111111112", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX116", "hostname": "server12", "serial_number": "SN111111113", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Artificial Intelligence", "service_type": "Software", "managed_by_team": "Research"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "CDE678", "metric_name": "Sound Usage", "metric_value": "45%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "HJK234", "metric_name": "Sound Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "MNP234", "metric_name": "Sound Usage", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "XYZ234", "metric_name": "Sound Usage", "metric_value": "19%"}
+FindCorrelatedEvents: {"corr_id": "YZA111", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "TMS234", "originator_role": "DevOps Engineer"}
+FindCorrelatedEvents: {"corr_id": "EFG567", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "BCD111", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and network configuration", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT999", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "low"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "XYZ789", "entity_id": "SRV123", "entity_type": "hardware"}
+FindSimilarIncidents: {"similar_ticket_id": "JKL345", "trouble_ticket_id": "XYZ789", "ticket_category": "network_issue"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "DEF456", "timestamp": "2022-01-02 13:00:00"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "VWX117", "hostname": "server13", "serial_number": "SN111111114", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Machine Learning", "service_type": "Software", "managed_by_team": "Research"}
+RegisterNewResource: {"resource_id": "VWX118", "hostname": "server14", "serial_number": "SN111111115", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "PQR567", "metric_name": "Sound Usage", "metric_value": "93%"}
+FindSharedAssets: {"resource_id": "VWX119", "resource_label": "Shared Server", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "PQR789", "metric_name": "Sound Usage", "metric_value": "94%"}
+GetResourceMetrics: {"resource_id": "VWX111", "metric_id": "PQR345", "metric_name": "Temperature Usage", "metric_value": "88%"}
+FindCorrelatedEvents: {"corr_id": "CDE222", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "LOG342", "originator_role": "Network Engineer"}
+FindCorrelatedEvents: {"corr_id": "BCD111", "event_id": "ABC123"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "LOG456", "originator_role": "Network Administrator"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and virus scan", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT015", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV456", "entity_type": "application", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "MNO678", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "SRV789", "entity_type": "network", "trouble_ticket_id": "XYZ789"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "GHI789", "timestamp": "2022-01-03 14:00:00"}
+FindSimilarIncidents: {"similar_ticket_id": "PQR901", "trouble_ticket_id": "XYZ789", "ticket_category": "network_issue"}
+MapEventsToResources: {"resource_id": "VWX111", "event_id": "GHI789"}
+RegisterNewResource: {"resource_id": "VWX120", "hostname": "server15", "serial_number": "SN111111116", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX121", "hostname": "server16", "serial_number": "SN111111117", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX122", "hostname": "server17", "serial_number": "SN678901", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "IJK890", "metric_name": "Sound Usage", "metric_value": "95%"}
+FindSharedAssets: {"resource_id": "VWX123", "resource_label": "Shared Asset", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "LMN456", "metric_name": "Sound Usage", "metric_value": "96%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "NOP111", "metric_name": "Sound Usage", "metric_value": "99%"}
+FindCorrelatedEvents: {"corr_id": "ABC123", "event_id": "GHI789"}
+IdentifyEventSource: {"event_id": "GHI789", "originator_id": "TST123", "originator_role": "Security Analyst"}
+FindCorrelatedEvents: {"corr_id": "TUV456", "event_id": "GHI789"}
+FindCorrelatedEvents: {"corr_id": "YZB222", "event_id": "GHI789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and virus scan", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT321", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV101", "entity_type": "database", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "STU234", "trouble_ticket_id": "XYZ789", "ticket_category": "network_issue"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+RegisterNewResource: {"resource_id": "VWX124", "hostname": "server18", "serial_number": "SN111111118", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX125", "hostname": "server19", "serial_number": "SN111111119", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX126", "hostname": "server20", "serial_number": "SN111111120", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "XYZ890", "metric_name": "Temperature Usage", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "VWX127", "resource_label": "Shared Firewall", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "YZA222", "metric_name": "Sound Usage", "metric_value": "89%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "CDE012", "metric_name": "Storage Usage", "metric_value": "87%"}
+FindCorrelatedEvents: {"corr_id": "YZC333", "event_id": "GHI789"}
+IdentifyEventSource: {"event_id": "GHI789", "originator_id": "SYS111", "originator_role": "System Engineer"}
+FindCorrelatedEvents: {"corr_id": "YZD444", "event_id": "GHI789"}
+FindCorrelatedEvents: {"corr_id": "YZE555", "event_id": "GHI789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and virus scan", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT042", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV012", "entity_type": "software", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "VWX111", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "JKL012", "timestamp": "2022-01-04 15:00:00"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "GHI789"}
+RegisterNewResource: {"resource_id": "VWX128", "hostname": "server21", "serial_number": "SN111111121", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU901", "service_name": "Cybersecurity", "service_type": "Software", "managed_by_team": "Security"}
+RegisterNewResource: {"resource_id": "VWX129", "hostname": "server22", "serial_number": "SN111111122", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "EFG012", "metric_name": "Temperature Usage", "metric_value": "42%"}
+FindSharedAssets: {"resource_id": "VWX130", "resource_label": "Shared Router", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC012", "metric_name": "Temperature Usage", "metric_value": "14%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC234", "metric_name": "Temperature Usage", "metric_value": "76%"}
+FindCorrelatedEvents: {"corr_id": "YZF666", "event_id": "GHI789"}
+IdentifyEventSource: {"event_id": "GHI789", "originator_id": "SEC567", "originator_role": "Security Engineer"}
+FindCorrelatedEvents: {"corr_id": "YZF777", "event_id": "GHI789"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "GHI789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+VerifyActionEffects: {"action_id": "ACT123", "expected_effect": "Corrected issue with system performance"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT888", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SRV901", "entity_type": "server", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "YZA222", "trouble_ticket_id": "XYZ789", "ticket_category": "network"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "MNO345", "timestamp": "2022-01-05 16:00:00"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+RegisterNewResource: {"resource_id": "VWX131", "hostname": "server23", "serial_number": "SN111111123", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX132", "hostname": "server24", "serial_number": "SN111111124", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "VWX111", "service_name": "Internet of Things", "service_type": "Software", "managed_by_team": "Engineering"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC111", "metric_name": "Temperature Usage", "metric_value": "22%"}
+FindSharedAssets: {"resource_id": "VWX133", "resource_label": "Shared Switch", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC999", "metric_name": "Temperature Usage", "metric_value": "79%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "EFG890", "metric_name": "Temperature Usage", "metric_value": "86%"}
+FindCorrelatedEvents: {"corr_id": "YZF999", "event_id": "MNO345"}
+IdentifyEventSource: {"event_id": "MNO345", "originator_id": "SYS456", "originator_role": "System Engineer"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "MNO345"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "MNO345"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+VerifyActionEffects: {"action_id": "ACT123", "expected_effect": "Improved resource utilization for VWX111"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT100", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+IdentifyIncidentImpact: {"entity_id": "SRV111", "entity_type": "server", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "EFG333", "trouble_ticket_id": "XYZ789", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "MNO345"}
+RegisterNewResource: {"resource_id": "VWX134", "hostname": "server25", "serial_number": "SN111111125", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX135", "hostname": "server26", "serial_number": "SN111111126", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX119", "hostname": "server27", "serial_number": "SN111111127", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "54%"}
+FindSharedAssets: {"resource_id": "VWX136", "resource_label": "Shared Load Balancer", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC789", "metric_name": "Temperature Usage", "metric_value": "65%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC123", "metric_name": "Temperature Usage", "metric_value": "58%"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "MNO345"}
+IdentifyEventSource: {"event_id": "MNO345", "originator_id": "SYS012", "originator_role": "System Engineer"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "MNO345"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "MNO345"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "System update and disk cleanup", "trouble_ticket_id": "XYZ789"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XYZ789", "action_id": "ACT111", "action_description": "System update and disk cleanup", "agent_id": "AGT123", "agent_label": "Technical Support Specialist"}
+VerifyActionEffects: {"action_id": "ACT123", "expected_effect": "Improved system stability and reduced latency for XYZ222"}
+GetIncidentSummary: {"trouble_ticket_id": "XYZ789", "status": "resolved", "cause_text": "network outage", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XYZ789", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT200", "agent_label": "Technical Support Specialist", "trouble_ticket_id": "XYZ789"}
+IdentifyIncidentImpact: {"entity_id": "SRV222", "entity_type": "server", "trouble_ticket_id": "XYZ789"}
+FindSimilarIncidents: {"similar_ticket_id": "CDE444", "trouble_ticket_id": "XYZ789", "ticket_category": "network"}
+GetIncidentSequence: {"trouble_ticket_id": "XYZ789", "event_id": "PQR678", "timestamp": "2022-01-06 17:00:00"}
+FindSimilarIncidents: {"similar_ticket_id": "BCD111", "trouble_ticket_id": "XYZ789", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "PQR678"}
+MapEventsToResources: {"resource_id": "VWX119", "event_id": "PQR678"}
+RegisterNewResource: {"resource_id": "VWX137", "hostname": "server28", "serial_number": "SN111111228", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX138", "hostname": "server29", "serial_number": "SN111111229", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "VWX139", "hostname": "server30", "serial_number": "SN111111230", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC456", "metric_name": "Memory Usage", "metric_value": "87%"}
+FindSharedAssets: {"resource_id": "VWX140", "resource_label": "Shared Database", "service_id": "PQR678"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC345", "metric_name": "Temperature Usage", "metric_value": "46%"}
+GetResourceMetrics: {"resource_id": "VWX119", "metric_id": "ABC678", "metric_name": "Network Usage", "metric_value": "72%"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "PQR678"}
+IdentifyEventSource: {"event_id": "PQR678", "originator_id": "SYS901", "originator_role": "System Engineer"}
+FindCorrelatedEvents: {"corr_id": "YZF888", "event_id": "PQR678"}

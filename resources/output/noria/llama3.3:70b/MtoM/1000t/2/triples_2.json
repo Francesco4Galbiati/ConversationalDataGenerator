@@ -1,0 +1,116 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Computing", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "new-resource-1", "serial_number": "SN12345", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Resource", "service_id": "ABC123"}
+OpenTroubleTicket: {"trouble_ticket_id": "TIC123", "trouble_ticket_description": "Issue with resource ABC456", "resource_id": "ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT456", "action_description": "Troubleshoot network connection", "agent_id": "AGN789", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT789", "action_description": "Restart server", "trouble_ticket_id": "TIC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Update software", "agent_id": "AGN012", "agent_label": "Software Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT101", "action_description": "Run diagnostic tests", "trouble_ticket_id": "TIC123"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "low"}
+IdentifyIncidentImpact: {"entity_id": "SRV456", "entity_type": "hardware", "trouble_ticket_id": "TIC123"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TIC123", "entity_id": "SRV789", "entity_type": "application"}
+GetIncidentSequence: {"event_id": "ABC123", "timestamp": "2023-02-15 14:30:00", "trouble_ticket_id": "TIC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456, DEF789", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "ABC123"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-2", "serial_number": "SN67890", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Artificial Intelligence", "service_type": "Platform", "managed_by_team": "AI Engineers"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "new-resource-3", "serial_number": "SN11111", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "GHI012", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Asset", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "JKL456", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "PQR111", "metric_name": "Storage Usage", "metric_value": "67%"}
+FindCorrelatedEvents: {"corr_id": "DEF456", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "ABC456", "originator_role": "System Administrator", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "DEF789", "originator_role": "System User", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "GHI789", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT111", "action_description": "Check system logs", "agent_id": "AGN456", "agent_label": "System Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT234", "action_description": "Check database integrity", "trouble_ticket_id": "TIC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT567", "action_description": "Replace faulty hardware", "agent_id": "AGN901", "agent_label": "Hardware Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT901", "action_description": "Reinstall operating system", "trouble_ticket_id": "TIC123"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGN111", "agent_label": "Technical Support Agent", "trouble_ticket_id": "TIC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC456", "trouble_ticket_id": "TIC123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindCausalInterventions: {"resource_id": "MNO678", "event_id": "ABC123", "change_id": "XYZ456", "change_description": "System update and restart", "start_time": "2023-02-15 14:30:00"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-4", "serial_number": "SN23456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-5", "serial_number": "SN34567", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Cyber Security", "service_type": "Software", "managed_by_team": "Security Experts"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "STU234", "metric_name": "Battery Usage", "metric_value": "43%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "ABC345", "metric_name": "Power Consumption", "metric_value": "88%"}
+FindSharedAssets: {"resource_id": "PQR901", "resource_label": "Shared Database", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "VWX901", "metric_name": "Temperature", "metric_value": "95%"}
+FindCorrelatedEvents: {"corr_id": "JKL012", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "GHI012", "originator_role": "Network Administrator", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "JKL345", "originator_role": "Database Administrator", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "MNO345", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT345", "action_description": "Run virus scan", "agent_id": "AGN234", "agent_label": "Cyber Security Agent"}
+IdentifyResolvingActions: {"action_id": "ACT678", "action_description": "Check for software updates", "trouble_ticket_id": "TIC123"}
+IdentifyResolvingActions: {"action_id": "ACT123", "action_description": "Run network configuration check", "trouble_ticket_id": "TIC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Check database integrity", "agent_id": "AGN012", "agent_label": "Cyber Security Agent"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGN012", "agent_label": "Database Support Agent", "trouble_ticket_id": "TIC123"}
+GetIncidentBusinessImpact: {"importance_level": "medium", "trouble_ticket_id": "TIC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC789", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindCausalInterventions: {"resource_id": "MNO678", "event_id": "ABC123", "change_id": "PQR789", "change_description": "Software patch update", "start_time": "2023-02-16 10:00:00"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-6", "serial_number": "SN98765", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-7", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Data Analytics", "service_type": "Software", "managed_by_team": "Data Scientists"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "YZA111", "metric_name": "Fan Speed", "metric_value": "42%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "EFG222", "metric_name": "GPU Usage", "metric_value": "98%"}
+FindSharedAssets: {"resource_id": "STU234", "resource_label": "Shared Network", "service_id": "DEF456"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "CDE456", "metric_name": "Sound Usage", "metric_value": "21%"}
+FindCorrelatedEvents: {"corr_id": "PQR678", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "MNO678", "originator_role": "Security Administrator", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "PQR234", "originator_role": "Application Administrator", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "STU901", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Check database integrity", "agent_id": "AGN012", "agent_label": "Database Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Run diagnostic tests", "trouble_ticket_id": "TIC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Check database integrity", "agent_id": "AGN012", "agent_label": "Database Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Check database integrity", "trouble_ticket_id": "TIC123"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGN012", "agent_label": "Cyber Security Agent", "trouble_ticket_id": "TIC123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "TIC123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+MapEventsToResources: {"resource_id": "MNO678", "event_id": "ABC123"}
+FindSimilarIncidents: {"similar_ticket_id": "TIC012", "trouble_ticket_id": "TIC123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-8", "serial_number": "SN111112", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Internet of Things", "service_type": "Software", "managed_by_team": "IT Specialists"}
+RegisterNewResource: {"resource_id": "MNO678", "hostname": "new-resource-9", "serial_number": "SN111113", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "BAC111", "metric_name": "Network Latency", "metric_value": "32%"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "NOP333", "metric_name": "Humidity", "metric_value": "11%"}
+FindSharedAssets: {"resource_id": "VWX111", "resource_label": "Shared Infrastructure", "service_id": "ABC123"}
+GetResourceMetrics: {"resource_id": "MNO678", "metric_id": "TUV999", "metric_name": "Voltage Usage", "metric_value": "13%"}
+FindCorrelatedEvents: {"corr_id": "VWX234", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "STU901", "originator_role": "Cloud Administrator", "event_id": "ABC123"}
+FindCorrelatedEvents: {"corr_id": "YZA111", "event_id": "ABC123"}
+IdentifyEventSource: {"originator_id": "VWX111", "originator_role": "Infrastructure Administrator", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT999", "action_description": "Run security audit", "agent_id": "AGN123", "agent_label": "Security Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Run security audit", "trouble_ticket_id": "TIC123"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Run diagnostic tests", "trouble_ticket_id": "TIC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TIC123", "action_id": "ACT012", "action_description": "Run diagnostic tests", "agent_id": "AGN012", "agent_label": "Technical Support Agent"}
+GetIncidentSummary: {"trouble_ticket_id": "TIC123", "status": "resolved", "cause_text": "network outage", "notes": "issue resolved after restarting server"}

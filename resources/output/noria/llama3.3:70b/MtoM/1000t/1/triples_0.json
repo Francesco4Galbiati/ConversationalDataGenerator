@@ -1,0 +1,112 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Services", "service_type": "Infrastructure", "managed_by_team": "DevOps Team"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN12345", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Asset", "service_id": "ABC123"}
+OpenTroubleTicket: {"resource_id": "DEF789", "trouble_ticket_id": "ABC123", "trouble_ticket_description": "Issue with resource DEF789"}
+GetResourceMetrics: {"resource_id": "DEF789", "metric_id": "GHI012", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "System update successful"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "GHI456", "log_time": "2024-03-16 10:00:00", "log_message": "Resource update initiated"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "JKL012", "log_time": "2024-03-16 14:30:00", "log_message": "Resource update completed"}
+GetResourceLogs: {"resource_id": "DEF789", "log_id": "MNO345", "log_time": "2024-02-20 14:30:00", "log_message": "Resource update pending"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT456", "action_description": "Troubleshooting and repair of network connection", "agent_id": "AGT789", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT789", "action_description": "Replacing faulty network cable and restarting router", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT012", "action_description": "Running network diagnostics and replacing faulty modem", "agent_id": "AGT012", "agent_label": "Senior Network Technician"}
+IdentifyResolvingActions: {"action_id": "ACT101", "action_description": "Checking network configuration and updating router firmware", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "network issue", "notes": "resolved after restarting the server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "ABC123", "entity_id": "SYS456", "entity_type": "hardware"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "ABC123", "entity_id": "SYS789", "entity_type": "application"}
+GetIncidentSequence: {"trouble_ticket_id": "ABC123", "event_id": "EVT456", "timestamp": "2022-01-01 12:00:00"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "DEF789", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN67890", "resource_type": "computer", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN11111", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server04", "serial_number": "SN23456", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "ABC456", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Asset", "service_id": "ABC123"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "JKL111", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF678", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+FindCorrelatedEvents: {"corr_id": "ABC123", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT123", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "DEF789", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "GHI012", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT234", "action_description": "Running network diagnostics and replacing router", "agent_id": "AGT345", "agent_label": "Network Technician"}
+IdentifyResolvingActions: {"action_id": "ACT567", "action_description": "Running network diagnostics and replacing faulty Wi-Fi adapter", "trouble_ticket_id": "ABC123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "ABC123", "action_id": "ACT890", "action_description": "Running network diagnostics and replacing faulty Ethernet cable", "agent_id": "AGT678", "agent_label": "Junior Network Technician"}
+IdentifyResolvingActions: {"action_id": "ACT345", "action_description": "Running network diagnostics and replacing faulty router antenna", "trouble_ticket_id": "ABC123"}
+GetIncidentSummary: {"trouble_ticket_id": "ABC123", "status": "resolved", "cause_text": "database connection issue", "notes": "fixed after updating database drivers"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "ABC123", "importance_level": "High"}
+ListInvolvedAgents: {"trouble_ticket_id": "ABC123", "agent_id": "AGT111", "agent_label": "Network Support Specialist"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "DEF789", "event_id": "EVT456", "change_id": "CHG123", "change_description": "System update", "start_time": "2022-01-01 12:00:00"}
+RegisterNewResource: {"resource_id": "PQR321", "hostname": "server05", "serial_number": "SN34567", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "STU901", "hostname": "server06", "serial_number": "SN98765", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "VWX111", "hostname": "server07", "serial_number": "SN76543", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MNO234", "metric_name": "CPU Usage", "metric_value": "75%"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "PQR345", "metric_name": "CPU Usage", "metric_value": "75%"}
+OpenTroubleTicket: {"resource_id": "ABC456", "trouble_ticket_id": "GHI012", "trouble_ticket_description": "Issue with resource ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "STU901", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+IdentifyEventSource: {"originator_id": "AGT789", "originator_role": "Administrator", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "PQR678", "log_time": "2024-03-16 10:00:00", "log_message": "Resource update failed"}
+FindCorrelatedEvents: {"corr_id": "JKL345", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT456", "originator_role": "Administrator", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT123", "action_description": "Running network diagnostics and replacing faulty switch", "agent_id": "AGT456", "agent_label": "Network Support Engineer"}
+IdentifyResolvingActions: {"action_id": "ACT678", "action_description": "Running network diagnostics and replacing faulty network interface card", "trouble_ticket_id": "GHI012"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT901", "action_description": "Running network diagnostics and replacing faulty router power supply", "agent_id": "AGT234", "agent_label": "Network Support Technician"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT111", "action_description": "Running network diagnostics and replacing faulty router", "agent_id": "AGT123", "agent_label": "Network Support Specialist"}
+GetIncidentSummary: {"trouble_ticket_id": "GHI012", "status": "resolved", "cause_text": "software bug", "notes": "fixed after applying patch"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI012", "importance_level": "High"}
+ListInvolvedAgents: {"trouble_ticket_id": "GHI012", "agent_id": "AGT901", "agent_label": "Network Support Technician"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI012", "importance_level": "High"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "ABC456", "event_id": "EVT456", "change_id": "CHG789", "change_description": "System patch update", "start_time": "2024-03-16 10:00:00"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server08", "serial_number": "SN111111", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server09", "serial_number": "SN111112", "resource_type": "Server", "usage_state": "Active"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server10", "serial_number": "SN111113", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "VWX222", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "TUV333", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+OpenTroubleTicket: {"resource_id": "ABC456", "trouble_ticket_id": "JKL345", "trouble_ticket_description": "Issue with resource ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "YZA444", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+IdentifyEventSource: {"originator_id": "AGT101", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "MNO678", "event_id": "EVT456"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "STU901", "log_time": "2024-02-20 14:30:00", "log_message": "Resource update in progress"}
+FindCorrelatedEvents: {"corr_id": "PQR901", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT111", "action_description": "Running network diagnostics and replacing faulty Ethernet cable", "agent_id": "AGT123", "agent_label": "Network Support Technician"}
+IdentifyResolvingActions: {"action_id": "ACT999", "action_description": "Running network diagnostics and replacing faulty router firmware", "trouble_ticket_id": "GHI012"}
+IdentifyResolvingActions: {"action_id": "ACT678", "action_description": "Running network diagnostics and replacing faulty router power supply", "trouble_ticket_id": "GHI012"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT567", "action_description": "Running network diagnostics and replacing faulty Wi-Fi adapter", "agent_id": "AGT456", "agent_label": "Network Support Technician"}
+GetIncidentSummary: {"trouble_ticket_id": "GHI012", "status": "resolved", "cause_text": "hardware failure", "notes": "fixed after replacing the faulty component"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "GHI012", "importance_level": "High"}
+ListInvolvedAgents: {"trouble_ticket_id": "GHI012", "agent_id": "AGT567", "agent_label": "Network Support Technician"}
+GetIncidentSummary: {"trouble_ticket_id": "GHI012", "status": "resolved", "cause_text": "database connection issue", "notes": "fixed after applying patch"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+FindSimilarIncidents: {"similar_ticket_id": "ABC456", "trouble_ticket_id": "GHI012", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+FindCausalInterventions: {"resource_id": "ABC456", "event_id": "EVT456", "change_id": "CHG012", "change_description": "Network configuration update", "start_time": "2022-01-01 12:00:00"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server11", "serial_number": "SN111114", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server12", "serial_number": "SN111115", "resource_type": "Server", "usage_state": "Available"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server13", "serial_number": "SN111116", "resource_type": "Server", "usage_state": "Available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "EFG567", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "RST123", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "XYZ111", "metric_name": "System Temperature", "metric_value": "22.5\u00b0C"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "NOP789", "metric_name": "System Temperature", "metric_value": "22\u00b0C"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "DEF789", "log_time": "2024-03-16 14:30:00", "log_message": "System update failed"}
+FindCorrelatedEvents: {"corr_id": "STU234", "event_id": "EVT456"}
+IdentifyEventSource: {"originator_id": "AGT012", "originator_role": "System Administrator", "event_id": "EVT456"}
+FindCorrelatedEvents: {"corr_id": "VWX111", "event_id": "EVT456"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "GHI012", "action_id": "ACT567", "action_description": "Running network diagnostics and replacing faulty Wi-Fi adapter", "agent_id": "AGT456", "agent_label": "Network Support Technician"}

@@ -1,0 +1,1229 @@
+@prefix ex: <http://example.org/> .
+
+ex:grad_student_GS123 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "John Doe" ;
+    ex:undergraduateDegreeFrom ex:university_UNI789 .
+
+ex:person_MEM001 a ex:Person ;
+    ex:memberOf ex:department_DEP000,
+        ex:department_DEP002,
+        ex:department_DEP003,
+        ex:department_DEP005,
+        ex:department_DEP456 ;
+    ex:name "Abigail Walker",
+        "Ava Garcia",
+        "Ava Kim",
+        "Ava Morales",
+        "Ava Murphy",
+        "Ava Nguyen",
+        "Ava Patel",
+        "Ava Reynolds",
+        "Ava Russell",
+        "Evelyn Kim",
+        "Evelyn Martin",
+        "Evelyn Russell",
+        "Evelyn Thompson",
+        "Harper Russell",
+        "Olivia Brown" .
+
+ex:person_PER000 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ava Sanchez",
+        "Evelyn Kim",
+        "Evelyn Lee",
+        "Evelyn Martin",
+        "Evelyn Russell",
+        "Evelyn Sanchez",
+        "Evelyn Thompson",
+        "Evelyn Walker",
+        "Evelyn White" .
+
+ex:person_PER001 a ex:Person ;
+    ex:memberOf ex:department_DEP000,
+        ex:department_DEP002,
+        ex:department_DEP003 ;
+    ex:name "John Doe" .
+
+ex:person_PER012 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ava Morales",
+        "Sophia Lee" .
+
+ex:person_PER015 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Hannah Taylor" .
+
+ex:person_PER101 a ex:Person ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Emily Johnson" .
+
+ex:person_PER111 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Mia Davis" .
+
+ex:person_PER123 a ex:Person ;
+    ex:memberOf ex:department_DEP000,
+        ex:department_DEP001,
+        ex:department_DEP456 ;
+    ex:name "Ethan Hall",
+        "Evelyn Harris",
+        "Evelyn Martin",
+        "Evelyn Russell",
+        "Isabella Martin",
+        "John Doe" .
+
+ex:person_PER222 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Evelyn Thompson" .
+
+ex:person_PER234 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Charlotte Thompson" .
+
+ex:person_PER345 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Harper Patel" .
+
+ex:person_PER456 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ava Garcia" .
+
+ex:person_PER567 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ava Morales" .
+
+ex:person_PER678 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Evelyn Russell" .
+
+ex:person_PER789 a ex:Person ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Jane Smith" .
+
+ex:person_PER888 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Julia White" .
+
+ex:person_PER902 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Abigail Walker" .
+
+ex:person_PER999 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Lily Chen" .
+
+ex:professor_PRO012 a ex:Professor ;
+    ex:name "Michael Brown" ;
+    ex:telephone "444-555-6666" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO0123 a ex:Professor ;
+    ex:name "James Wilson" ;
+    ex:telephone "888-111-2222" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO0124 a ex:Professor ;
+    ex:name "Alexandra Martin" ;
+    ex:telephone "901-234-5678" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO101 a ex:Professor ;
+    ex:name "Emily Chen" ;
+    ex:telephone "555-123-4567" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO111 a ex:Professor ;
+    ex:name "William White" ;
+    ex:telephone "234-567-8901" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO1111 a ex:Professor ;
+    ex:name "Samantha Thompson" ;
+    ex:telephone "222-333-4444" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO11110 a ex:Professor ;
+    ex:name "Sophia Martin" ;
+    ex:telephone "234-567-9012" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11111 a ex:Professor ;
+    ex:name "Sophia Brown" ;
+    ex:telephone "234-901-2222" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO1112 a ex:Professor ;
+    ex:name "Charlotte Lee" ;
+    ex:telephone "555-901-2345" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO11120 a ex:Professor ;
+    ex:name "Sophia Miller" ;
+    ex:telephone "234-901-3333" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11121 a ex:Professor ;
+    ex:name "Sophia Patel" ;
+    ex:telephone "234-901-4444" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11122 a ex:Professor ;
+    ex:name "Sophia Jones" ;
+    ex:telephone "234-901-5555" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11123 a ex:Professor ;
+    ex:name "Emily Davis" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11124 a ex:Professor ;
+    ex:name "Sophia Brown5" ;
+    ex:telephone "234-901-0004" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11125 a ex:Professor ;
+    ex:name "Sophia Price3" ;
+    ex:telephone "901-345-6783" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11127 a ex:Professor ;
+    ex:name "Sophia Price5" ;
+    ex:telephone "234-901-0006" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11128 a ex:Professor ;
+    ex:name "Sophia Price26" ;
+    ex:telephone "901-345-6788" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11129 a ex:Professor ;
+    ex:name "Sophia Price27" ;
+    ex:telephone "234-901-0000" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1113 a ex:Professor ;
+    ex:name "Hannah Martin" ;
+    ex:telephone "234-111-8901" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO11130 a ex:Professor ;
+    ex:name "Sophia Price28" ;
+    ex:telephone "234-901-0000" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11132 a ex:Professor ;
+    ex:name "Sophia Price31" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11133 a ex:Professor ;
+    ex:name "Sophia Price32" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11134 a ex:Professor ;
+    ex:name "Sophia Price33" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11135 a ex:Professor ;
+    ex:name "Sophia Price38" ;
+    ex:telephone "901-345-6790" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11136 a ex:Professor ;
+    ex:name "Sophia Price39" ;
+    ex:telephone "901-345-6791" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11137 a ex:Professor ;
+    ex:name "Sophia Price40" ;
+    ex:telephone "901-345-6792" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11138 a ex:Professor ;
+    ex:name "Sophia Price58" ;
+    ex:telephone "987-654-3294" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11139 a ex:Professor ;
+    ex:name "Sophia Price59" ;
+    ex:telephone "987-654-3295" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1114 a ex:Professor ;
+    ex:name "Rebecca Harris" ;
+    ex:telephone "234-890-1234" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO11140 a ex:Professor ;
+    ex:name "Sophia Price55",
+        "Sophia Price60",
+        "Sophia Price62" ;
+    ex:telephone "987-654-3222",
+        "987-654-3290",
+        "987-654-3296",
+        "987-654-3297",
+        "987-654-3299" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11144 a ex:Professor ;
+    ex:name "Sophia Price63" ;
+    ex:telephone "987-654-3231" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11145 a ex:Professor ;
+    ex:name "Sophia Price62" ;
+    ex:telephone "987-654-3296" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11146 a ex:Professor ;
+    ex:name "Sophia Price62" ;
+    ex:telephone "987-654-3296" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11147 a ex:Professor ;
+    ex:name "Sophia Price62" ;
+    ex:telephone "987-654-3296" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11148 a ex:Professor ;
+    ex:name "Sophia Price62" ;
+    ex:telephone "987-654-3296" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11149 a ex:Professor ;
+    ex:name "Sophia Price62" ;
+    ex:telephone "987-654-3296" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1115 a ex:Professor ;
+    ex:name "Sophia Taylor" ;
+    ex:telephone "123-890-5678" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO11150 a ex:Professor ;
+    ex:name "Sophia Price60" ;
+    ex:telephone "987-654-3299" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO11155 a ex:Professor ;
+    ex:name "Sophia Price34",
+        "Sophia Price43",
+        "Sophia Price50",
+        "Sophia Price53",
+        "Sophia Price54",
+        "Sophia Price55",
+        "Sophia Price57",
+        "Sophia Price59",
+        "Sophia Price62" ;
+    ex:telephone "987-654-3223",
+        "987-654-3224",
+        "987-654-3225",
+        "987-654-3294",
+        "987-654-3295",
+        "987-654-3296",
+        "987-654-3297",
+        "987-654-3299" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1116 a ex:Professor ;
+    ex:name "Olivia Anderson" ;
+    ex:telephone "678-901-2345" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO1117 a ex:Professor ;
+    ex:name "Amelia Walker" ;
+    ex:telephone "345-678-9012" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1118 a ex:Professor ;
+    ex:name "Isabella Garcia" ;
+    ex:telephone "234-901-1111" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1119 a ex:Professor ;
+    ex:name "Sophia Rodriguez" ;
+    ex:telephone "555-444-6666" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO123 a ex:Professor ;
+    ex:name "John Doe" ;
+    ex:telephone "123-456-7890" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO1234 a ex:Professor ;
+    ex:name "Abigail Jones" ;
+    ex:telephone "111-567-8901" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO1235 a ex:Professor ;
+    ex:name "Emily Paterson" ;
+    ex:telephone "111-901-2345" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO234 a ex:Professor ;
+    ex:name "David Miller" ;
+    ex:telephone "666-777-8888" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO345 a ex:Professor ;
+    ex:name "Avril Russell" ;
+    ex:telephone "789-012-3456" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO456 a ex:Professor ;
+    ex:name "Sarah Johnson" ;
+    ex:telephone "111-222-3333" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO555 a ex:Professor ;
+    ex:name "Elizabeth Hall" ;
+    ex:telephone "555-789-0123" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO678 a ex:Professor ;
+    ex:name "Kevin Lewis" ;
+    ex:telephone "999-000-1111" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO67810 a ex:Professor ;
+    ex:name "Sophia White" ;
+    ex:telephone "111-456-7890" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67811 a ex:Professor ;
+    ex:name "Sophia Price" ;
+    ex:telephone "234-111-7890" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67812 a ex:Professor ;
+    ex:name "Sophia Robinson" ;
+    ex:telephone "234-901-6666" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67813 a ex:Professor ;
+    ex:name "Sophia Brooks" ;
+    ex:telephone "234-901-7777" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67814 a ex:Professor ;
+    ex:name "Sophia Webb" ;
+    ex:telephone "234-901-8888" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67815 a ex:Professor ;
+    ex:name "Sophia Russell" ;
+    ex:telephone "234-901-0000" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO67816 a ex:Professor ;
+    ex:name "Sophia Sanchez" ;
+    ex:telephone "234-901-1234" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO67817 a ex:Professor ;
+    ex:name "Sophia Williams" ;
+    ex:telephone "901-111-2223" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67818 a ex:Professor ;
+    ex:name "Sophia Watson" ;
+    ex:telephone "901-345-6789" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67819 a ex:Professor ;
+    ex:name "Sophia Wilson" ;
+    ex:telephone "901-111-2224" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67820 a ex:Professor ;
+    ex:name "Sophia Phillips" ;
+    ex:telephone "234-901-0001" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67821 a ex:Professor ;
+    ex:name "Sophia Brown1" ;
+    ex:telephone "234-901-8889" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67822 a ex:Professor ;
+    ex:name "Sophia Brown2" ;
+    ex:telephone "234-901-0002" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67823 a ex:Professor ;
+    ex:name "Sophia Price1" ;
+    ex:telephone "901-345-6780" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67824 a ex:Professor ;
+    ex:name "Sophia Price2" ;
+    ex:telephone "901-345-6781" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67825 a ex:Professor ;
+    ex:name "Sophia Brown3" ;
+    ex:telephone "901-345-6782" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67826 a ex:Professor ;
+    ex:name "Sophia Brown4" ;
+    ex:telephone "234-901-0003" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67827 a ex:Professor ;
+    ex:name "Sophia Brown6" ;
+    ex:telephone "234-901-0005" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67828 a ex:Professor ;
+    ex:name "Sophia Price4" ;
+    ex:telephone "901-111-2225" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67829 a ex:Professor ;
+    ex:name "Sophia Price6" ;
+    ex:telephone "901-111-2226" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67830 a ex:Professor ;
+    ex:name "Sophia Price7" ;
+    ex:telephone "234-901-9990" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67831 a ex:Professor ;
+    ex:name "Sophia Price8" ;
+    ex:telephone "901-111-2227" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67832 a ex:Professor ;
+    ex:name "Sophia Price9" ;
+    ex:telephone "234-901-9991" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67833 a ex:Professor ;
+    ex:name "Sophia Price10" ;
+    ex:telephone "234-901-0007" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO67834 a ex:Professor ;
+    ex:name "Sophia Price12" ;
+    ex:telephone "901-345-6784" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67835 a ex:Professor ;
+    ex:name "Zoe Mitchell" ;
+    ex:telephone "111-789-0123" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67836 a ex:Professor ;
+    ex:name "Sophia Price11" ;
+    ex:telephone "234-901-9992" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67837 a ex:Professor ;
+    ex:name "Sophia Price13" ;
+    ex:telephone "901-345-6785" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67838 a ex:Professor ;
+    ex:name "Sophia Price14" ;
+    ex:telephone "901-345-6786" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67839 a ex:Professor ;
+    ex:name "Sophia Price15" ;
+    ex:telephone "234-901-0008" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67840 a ex:Professor ;
+    ex:name "Sophia Price16" ;
+    ex:telephone "234-901-9993" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67841 a ex:Professor ;
+    ex:name "Sophia Price17" ;
+    ex:telephone "234-901-9994" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67842 a ex:Professor ;
+    ex:name "Sophia Price18" ;
+    ex:telephone "234-901-9995" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67843 a ex:Professor ;
+    ex:name "Sophia Price19" ;
+    ex:telephone "234-901-9996" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67844 a ex:Professor ;
+    ex:name "Sophia Price20" ;
+    ex:telephone "234-901-9997" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67845 a ex:Professor ;
+    ex:name "Sophia Price21" ;
+    ex:telephone "234-901-9998" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67846 a ex:Professor ;
+    ex:name "Sophia Price22" ;
+    ex:telephone "234-901-0009" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67847 a ex:Professor ;
+    ex:name "Sophia Price23" ;
+    ex:telephone "901-345-6787" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67848 a ex:Professor ;
+    ex:name "Sophia Price24" ;
+    ex:telephone "234-901-0000" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67849 a ex:Professor ;
+    ex:name "Sophia Price25" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67850 a ex:Professor ;
+    ex:name "Sophia Price30" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67851 a ex:Professor ;
+    ex:name "Sophia Price35" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67852 a ex:Professor ;
+    ex:name "Sophia Price36" ;
+    ex:telephone "234-901-9999" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67853 a ex:Professor ;
+    ex:name "Sophia Price37" ;
+    ex:telephone "987-654-3211" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67854 a ex:Professor ;
+    ex:name "Sophia Price41" ;
+    ex:telephone "987-654-3212" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67855 a ex:Professor ;
+    ex:name "Sophia Price29",
+        "Sophia Price42",
+        "Sophia Price44",
+        "Sophia Price45",
+        "Sophia Price46",
+        "Sophia Price47",
+        "Sophia Price48",
+        "Sophia Price50",
+        "Sophia Price51",
+        "Sophia Price52",
+        "Sophia Price54",
+        "Sophia Price56",
+        "Sophia Price57",
+        "Sophia Price61",
+        "Sophia Price62" ;
+    ex:telephone "987-654-3213",
+        "987-654-3215",
+        "987-654-3216",
+        "987-654-3217",
+        "987-654-3218",
+        "987-654-3219",
+        "987-654-3220",
+        "987-654-3221",
+        "987-654-3222",
+        "987-654-3223",
+        "987-654-3290",
+        "987-654-3291",
+        "987-654-3292",
+        "987-654-3293",
+        "987-654-3296",
+        "987-654-3298" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO67856 a ex:Professor ;
+    ex:name "Sophia Price43" ;
+    ex:telephone "987-654-3214" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO6789 a ex:Professor ;
+    ex:name "Samantha Jenkins" ;
+    ex:telephone "111-234-5678" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRO789 a ex:Professor ;
+    ex:name "Jane Smith" ;
+    ex:telephone "987-654-3210" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO901 a ex:Professor ;
+    ex:name "Oliver Davis" ;
+    ex:telephone "777-888-9999" ;
+    ex:worksFor ex:department_DEP456 .
+
+ex:professor_PRO999 a ex:Professor ;
+    ex:name "George Baker" ;
+    ex:telephone "111-012-3456" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:research_group_RGH012 a ex:ResearchGroup ;
+    ex:name "Breakthrough Research Institute" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH101 a ex:ResearchGroup ;
+    ex:name "Pioneering Research Collective" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH111 a ex:ResearchGroup ;
+    ex:name "Exploratory Research Forum" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH123 a ex:ResearchGroup ;
+    ex:name "Advanced Research Initiative" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH456 a ex:ResearchGroup ;
+    ex:name "Innovative Technology Lab" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH789 a ex:ResearchGroup ;
+    ex:name "New Frontier Research" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:research_group_RGH901 a ex:ResearchGroup ;
+    ex:name "Discovery Research Alliance" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:student_1 a ex:Student ;
+    ex:name "Ava Thompson",
+        "Emily Wilson" .
+
+ex:student_2 a ex:Student ;
+    ex:name "Ava Thompson" .
+
+ex:student_3 a ex:Student ;
+    ex:advisor ex:faculty_FAC123 ;
+    ex:name "Liam Davis" ;
+    ex:takesCourse ex:course_COUR456 .
+
+ex:student_STU001 a ex:Student ;
+    ex:emailAddress "johndoe001@uni789.edu",
+        "johndoe002@uni789.edu",
+        "johndoe003@uni789.edu",
+        "johndoe004@uni789.edu",
+        "johndoe005@uni789.edu",
+        "johndoe006@uni789.edu",
+        "johndoe007@uni789.edu",
+        "johndoe008@uni789.edu",
+        "johndoe009@uni789.edu",
+        "johndoe011@uni789.edu",
+        "johndoe012@uni789.edu",
+        "johndoe013@uni789.edu",
+        "johndoe014@uni789.edu",
+        "johndoe015@uni789.edu",
+        "johndoe016@uni789.edu",
+        "johndoe017@uni789.edu",
+        "johndoe018@uni789.edu",
+        "johndoe019@uni789.edu",
+        "johndoe@uni789.edu" ;
+    ex:memberOf ex:department_DEP000,
+        ex:department_DEP001,
+        ex:department_DEP003,
+        ex:department_DEP005,
+        ex:department_DEP123,
+        ex:department_DEP456 ;
+    ex:name "John Doe" .
+
+ex:student_STU012 a ex:Student ;
+    ex:emailAddress "noahlee@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Noah Lee" .
+
+ex:student_STU0123 a ex:Student ;
+    ex:emailAddress "ethanhall123@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Hall" .
+
+ex:student_STU0124 a ex:Student ;
+    ex:emailAddress "ethantaylor@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Taylor" .
+
+ex:student_STU0125 a ex:Student ;
+    ex:emailAddress "ethankim@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Kim" .
+
+ex:student_STU0126 a ex:Student ;
+    ex:emailAddress "ethanwalker@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Walker" .
+
+ex:student_STU0127 a ex:Student ;
+    ex:emailAddress "ethanbrooks@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Brooks" .
+
+ex:student_STU0130 a ex:Student ;
+    ex:emailAddress "lucasross@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Lucas Ross" .
+
+ex:student_STU014 a ex:Student ;
+    ex:emailAddress "loganhall@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Logan Hall" .
+
+ex:student_STU015 a ex:Student ;
+    ex:emailAddress "ethanrussell@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Russell" .
+
+ex:student_STU016 a ex:Student ;
+    ex:emailAddress "ethanbrown@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Brown" .
+
+ex:student_STU017 a ex:Student ;
+    ex:emailAddress "ethanmitchell@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Ethan Mitchell" .
+
+ex:student_STU018 a ex:Student ;
+    ex:emailAddress "ethansanders@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders" .
+
+ex:student_STU019 a ex:Student ;
+    ex:emailAddress "ethannguyen@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Nguyen" .
+
+ex:student_STU020 a ex:Student ;
+    ex:emailAddress "ethanprice@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Price" .
+
+ex:student_STU021 a ex:Student ;
+    ex:emailAddress "ethansanders001@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders" .
+
+ex:student_STU022 a ex:Student ;
+    ex:emailAddress "ethansanders002@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders" .
+
+ex:student_STU023 a ex:Student ;
+    ex:emailAddress "juliansanchez@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Julian Sanchez" .
+
+ex:student_STU024 a ex:Student ;
+    ex:emailAddress "ethansanders003@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders" .
+
+ex:student_STU025 a ex:Student ;
+    ex:emailAddress "ethansanders004@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders" .
+
+ex:student_STU026 a ex:Student ;
+    ex:emailAddress "ethansanders005@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders005" .
+
+ex:student_STU027 a ex:Student ;
+    ex:emailAddress "ethansanders006@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders006" .
+
+ex:student_STU028 a ex:Student ;
+    ex:emailAddress "ethansanders007@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders007" .
+
+ex:student_STU029 a ex:Student ;
+    ex:emailAddress "ethansanders008@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Ethan Sanders008" .
+
+ex:student_STU030 a ex:Student ;
+    ex:emailAddress "ethansanders009@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders009" .
+
+ex:student_STU031 a ex:Student ;
+    ex:emailAddress "johndoe010@uni789.edu" ;
+    ex:memberOf ex:department_DEP789 ;
+    ex:name "John Doe" .
+
+ex:student_STU032 a ex:Student ;
+    ex:emailAddress "ethansanders010@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders010" .
+
+ex:student_STU033 a ex:Student ;
+    ex:emailAddress "ethansanders011@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders011" .
+
+ex:student_STU034 a ex:Student ;
+    ex:emailAddress "ethansanders012@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders012" .
+
+ex:student_STU035 a ex:Student ;
+    ex:emailAddress "ethansanders013@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders013" .
+
+ex:student_STU036 a ex:Student ;
+    ex:emailAddress "ethansanders014@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders014" .
+
+ex:student_STU037 a ex:Student ;
+    ex:emailAddress "ethansanders015@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders015" .
+
+ex:student_STU038 a ex:Student ;
+    ex:emailAddress "liamchen@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Chen" .
+
+ex:student_STU039 a ex:Student ;
+    ex:emailAddress "ethansanders016@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders016" .
+
+ex:student_STU040 a ex:Student ;
+    ex:emailAddress "ethansanders017@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders017" .
+
+ex:student_STU041 a ex:Student ;
+    ex:emailAddress "ethansanders018@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders018" .
+
+ex:student_STU042 a ex:Student ;
+    ex:emailAddress "ethansanders019@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders019" .
+
+ex:student_STU043 a ex:Student ;
+    ex:emailAddress "ethansanders020@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders020" .
+
+ex:student_STU044 a ex:Student ;
+    ex:emailAddress "ethansanders021@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders021" .
+
+ex:student_STU045 a ex:Student ;
+    ex:emailAddress "ethansanders022@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders022" .
+
+ex:student_STU046 a ex:Student ;
+    ex:emailAddress "liamrussell@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Russell" .
+
+ex:student_STU047 a ex:Student ;
+    ex:emailAddress "ethansanders023@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders023" .
+
+ex:student_STU048 a ex:Student ;
+    ex:emailAddress "ethansanders024@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders024" .
+
+ex:student_STU049 a ex:Student ;
+    ex:emailAddress "liamwong@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Wong" .
+
+ex:student_STU050 a ex:Student ;
+    ex:emailAddress "liambrown@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Brown" .
+
+ex:student_STU051 a ex:Student ;
+    ex:emailAddress "liamdavis@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Davis" .
+
+ex:student_STU052 a ex:Student ;
+    ex:emailAddress "liamevans@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Evans" .
+
+ex:student_STU053 a ex:Student ;
+    ex:emailAddress "ethansanders025@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders025" .
+
+ex:student_STU054 a ex:Student ;
+    ex:emailAddress "ethansanders026@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders026" .
+
+ex:student_STU055 a ex:Student ;
+    ex:emailAddress "ethansanders027@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders027" .
+
+ex:student_STU056 a ex:Student ;
+    ex:emailAddress "liamnguyen056@uni789.edu" ;
+    ex:memberOf ex:department_DEP005 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU057 a ex:Student ;
+    ex:emailAddress "ethansanders028@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders028" .
+
+ex:student_STU058 a ex:Student ;
+    ex:emailAddress "liamjenkins@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Jenkins" .
+
+ex:student_STU059 a ex:Student ;
+    ex:emailAddress "ethansanders029@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders029" .
+
+ex:student_STU060 a ex:Student ;
+    ex:emailAddress "ethansanders030@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders030" .
+
+ex:student_STU061 a ex:Student ;
+    ex:emailAddress "ethansanders031@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders031" .
+
+ex:student_STU062 a ex:Student ;
+    ex:emailAddress "ethansanders032@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders032" .
+
+ex:student_STU063 a ex:Student ;
+    ex:emailAddress "ethansanders033@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders033" .
+
+ex:student_STU064 a ex:Student ;
+    ex:emailAddress "ethansanders034@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders034" .
+
+ex:student_STU065 a ex:Student ;
+    ex:emailAddress "ethanwhite012@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan White" .
+
+ex:student_STU066 a ex:Student ;
+    ex:emailAddress "ethansanders035@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders035" .
+
+ex:student_STU067 a ex:Student ;
+    ex:emailAddress "liamnguyen@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU068 a ex:Student ;
+    ex:emailAddress "liamnguyen012@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU069 a ex:Student ;
+    ex:emailAddress "liamrussell023@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Russell" .
+
+ex:student_STU071 a ex:Student ;
+    ex:emailAddress "liamnguyen021@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU072 a ex:Student ;
+    ex:emailAddress "liambrooks@uni789.edu" ;
+    ex:memberOf ex:department_DEP002 ;
+    ex:name "Liam Brooks" .
+
+ex:student_STU073 a ex:Student ;
+    ex:emailAddress "ethanolson@uni789.edu" ;
+    ex:memberOf ex:department_DEP004 ;
+    ex:name "Ethan Olson" .
+
+ex:student_STU074 a ex:Student ;
+    ex:emailAddress "liamreynolds@uni789.edu" ;
+    ex:memberOf ex:department_DEP003 ;
+    ex:name "Liam Reynolds" .
+
+ex:student_STU075 a ex:Student ;
+    ex:emailAddress "liamnguyen025@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU081 a ex:Student ;
+    ex:emailAddress "liamjenkins@uni789.edu",
+        "liamrussell012@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Jenkins",
+        "Liam Russell" .
+
+ex:student_STU082 a ex:Student ;
+    ex:emailAddress "liamjenkins@uni789.edu",
+        "liamnguyen013@uni789.edu",
+        "liamreynolds012@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Jenkins",
+        "Liam Nguyen",
+        "Liam Reynolds" .
+
+ex:student_STU083 a ex:Student ;
+    ex:emailAddress "ethansanders036@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Sanders036" .
+
+ex:student_STU085 a ex:Student ;
+    ex:emailAddress "liamnguyen024@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Nguyen" .
+
+ex:student_STU091 a ex:Student ;
+    ex:emailAddress "liamrussell091@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Liam Russell" .
+
+ex:student_STU101 a ex:Student ;
+    ex:emailAddress "masonpatel@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Mason Patel" .
+
+ex:student_STU111 a ex:Student ;
+    ex:emailAddress "jacksonkim@uni789.edu" ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Jackson Kim" .
+
+ex:student_STU123 a ex:Student ;
+    ex:emailAddress "johndoe@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "John Doe" .
+
+ex:student_STU456 a ex:Student ;
+    ex:emailAddress "oliverbrown@uni789.edu" ;
+    ex:memberOf ex:department_DEP123 ;
+    ex:name "Oliver Brown" .
+
+ex:student_STU789 a ex:Student ;
+    ex:emailAddress "ethanhall@uni789.edu" ;
+    ex:memberOf ex:department_DEP456 ;
+    ex:name "Ethan Hall" .
+
+ex:student_STU999 a ex:Student ;
+    ex:emailAddress "alexanderwhite@uni789.edu" ;
+    ex:memberOf ex:department_DEP000 ;
+    ex:name "Alexander White" .
+
+ex:undergrad_student_1 a ex:UndergraduateStudent ;
+    ex:name "Emily Chen" .
+
+ex:undergrad_student_2 a ex:UndergraduateStudent ;
+    ex:name "Sophia Lee" .
+
+ex:undergrad_student_3 a ex:UndergraduateStudent ;
+    ex:name "Olivia Brown" .
+
+ex:undergrad_student_4 a ex:UndergraduateStudent ;
+    ex:name "Ava Kim" .
+
+ex:undergrad_student_5 a ex:UndergraduateStudent ;
+    ex:name "Mia Davis" .
+
+ex:undergrad_student_6 a ex:UndergraduateStudent ;
+    ex:name "Isabella Hall" .
+
+ex:department_DEP004 a ex:Department ;
+    ex:name "Philosophy" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP789 a ex:Department ;
+    ex:name "Sociology" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:faculty_FAC123 a ex:Faculty ;
+    ex:name "Professor Julian Lee" ;
+    ex:teacherOf ex:course_COUR456 .
+
+ex:course_COUR456 a ex:Course ;
+    ex:name "Introduction to Computer Science" .
+
+ex:department_DEP123 a ex:Department ;
+    ex:name "Computer Science",
+        "Mathematics",
+        "Philosophy" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP002 a ex:Department ;
+    ex:name "History" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP005 a ex:Department ;
+    ex:name "Engineering",
+        "Environmental Science",
+        "Philosophy" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP003 a ex:Department ;
+    ex:name "Anthropology",
+        "Chemistry",
+        "Environmental Science",
+        "Geography",
+        "Geology" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP000 a ex:Department ;
+    ex:name "Biology",
+        "Chemistry",
+        "Computer Science" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:university_UNI789 a ex:University ;
+    ex:name "Harvard University" .
+
+ex:department_DEP456 a ex:Department ;
+    ex:name "Biology",
+        "Computer Science",
+        "Economics",
+        "Engineering",
+        "Geology",
+        "Physics",
+        "Psychology" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+
+ex:department_DEP001 a ex:Department ;
+    ex:name "Anthropology",
+        "Biology",
+        "Chemistry",
+        "Computer Science",
+        "Geology",
+        "Mathematics" ;
+    ex:subOrganizationOf ex:university_UNI789 .
+

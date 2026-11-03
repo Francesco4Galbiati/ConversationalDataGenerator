@@ -1,0 +1,282 @@
+GraduateStudent: {"graduate_student_id": "STU001", "department_id": "DEP002", "university_id": "UNI003", "graduate_student_name": "Alice Smith", "department_name": "Computer Science", "university_name": "Tech University"}
+EnrollStudent: {"university_id": "UNI003", "student_id": "STU001", "department_id": "DEP003", "department_name": "Physics", "student_name": "Alice Johnson", "student_email": "alice.johnson@uni003.edu"}
+IntroduceStudent: {"student_id": "STU002", "student_name": "Bob Smith"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "AB123", "undergraduate_student_name": "Alexandra Brooks"}
+GraduateStudent: {"graduate_student_id": "STU004", "department_id": "DEP004", "university_id": "UNI004", "graduate_student_name": "Bob Johnson", "department_name": "Mathematics", "university_name": "National Institute of Science"}
+EnrollStudent: {"university_id": "UNI004", "student_id": "STU003", "department_id": "DEP001", "department_name": "Chemistry", "student_name": "Charlie Davis", "student_email": "charlie.davis@uni004.edu"}
+IntroduceStudent: {"student_id": "STU004", "student_name": "Diana Evans"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "CD456", "undergraduate_student_name": "Michael Turner"}
+GraduateStudent: {"graduate_student_id": "STU005", "department_id": "DEP002", "university_id": "UNI004", "graduate_student_name": "Emma", "department_name": "Physics", "university_name": "Global University"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR001", "profssor_email": "alex.morgan@university.edu", "professor_name": "Dr. Alex Morgan", "professor_telephone": "+1-555-0123"}
+CreateResearchGroup: {"university_id": "UNI004", "research_group_id": "RG001", "research_group_name": "Data Science Research Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP005", "chair_id": "PRF001", "department_name": "Environmental Science", "chair_name": "Dr. Alex Morgan", "chair_email": "alex.morgan@uni004.edu", "chair_telephone": "+1-555-0123", "chair_office": "Room 210"}
+HireProfessor: {"department_id": "DEP003", "professor_id": "PR002", "profssor_email": "jamie.lee@university.edu", "professor_name": "Dr. Jamie Lee", "professor_telephone": "+1-555-0456"}
+CreateResearchGroup: {"university_id": "UNI003", "research_group_id": "RG002", "research_group_name": "Advanced Data Science Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP006", "chair_id": "PRF002", "department_name": "Astronomy", "chair_name": "Dr. Maya Patel", "chair_email": "maya.patel@uni004.edu", "chair_telephone": "+1-555-0198", "chair_office": "Room 315"}
+HireProfessor: {"department_id": "DEP003", "professor_id": "PR003", "profssor_email": "taylor.reed@university.edu", "professor_name": "Dr. Taylor Reed", "professor_telephone": "+1-555-0789"}
+CreateResearchGroup: {"university_id": "UNI004", "research_group_id": "RG003", "research_group_name": "Computational Intelligence Research Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP007", "chair_id": "PRF003", "department_name": "Geology", "chair_name": "Dr. Samira Khan", "chair_email": "samira.khan@uni004.edu", "chair_telephone": "+1-555-0234", "chair_office": "Room 420"}
+TakeCourseOfAdvisor: {"student_id": "STU005", "faculty_id": "PRF001", "course_id": "CRS001", "student_name": "Ethan Miller", "faculty_name": "Laura Green", "course_name": "Introduction to Quantum Computing"}
+TakeCourseOfAdvisor: {"student_id": "STU006", "faculty_id": "PRF002", "course_id": "CRS002", "student_name": "Fiona Clark", "faculty_name": "Michael Turner", "course_name": "Advanced Quantum Algorithms"}
+TakeCourseOfAdvisor: {"student_id": "STU007", "faculty_id": "PRF003", "course_id": "CRS003", "student_name": "Grace Lee", "faculty_name": "Samuel Brooks", "course_name": "Quantum Error Correction"}
+TakeCourseOfAdvisor: {"student_id": "STU008", "faculty_id": "PRF004", "course_id": "CRS004", "student_name": "Hannah Moore", "faculty_name": "Olivia Patel", "course_name": "Quantum Machine Learning"}
+TakeCourseOfAdvisor: {"student_id": "STU009", "faculty_id": "PRF005", "course_id": "CRS005", "student_name": "Ian Thompson", "faculty_name": "Natalie Reed", "course_name": "Quantum Cryptography"}
+TakeCourseOfAdvisor: {"student_id": "STU010", "student_name": "Jack Wilson", "faculty_id": "PRF006", "faculty_name": "Thomas Gray", "course_id": "CRS006", "course_name": "Quantum Information Theory"}
+ListMember: {"department_id": "DEP003", "person_id": "X123", "person_name": "Alex Johnson"}
+DefineAlumnus: {"university_id": "UNI004", "person_id": "P001", "person_name": "Jordan Lee"}
+ListMember: {"department_id": "DEP001", "person_id": "B001", "person_name": "Taylor Smith"}
+EnrollStudent: {"university_id": "UNI004", "student_id": "STU011", "department_id": "DEP008", "department_name": "Biology", "student_name": "Laura Green", "student_email": "laura.green@uni004.edu"}
+GraduateStudent: {"graduate_student_id": "STU002", "department_id": "DEP009", "university_id": "UNI001", "graduate_student_name": "Liam Patel", "department_name": "Sociology", "university_name": "Innovative Research Institute"}
+IntroduceStudent: {"student_id": "STU012", "student_name": "Michael Brown"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "EF789", "undergraduate_student_name": "Sofia Ramirez"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU013", "department_id": "DEP010", "department_name": "Philosophy", "student_name": "Olivia Turner", "student_email": "olivia.turner@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "STU006", "graduate_student_name": "Carlos Rivera", "department_id": "DEP011", "department_name": "Anthropology", "university_id": "UNI005", "university_name": "Future Horizons University"}
+IntroduceStudent: {"student_id": "STU014", "student_name": "Samuel Peterson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "XY123", "undergraduate_student_name": "Liam Chen"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU015", "department_id": "DEP012", "department_name": "Psychology", "student_name": "Natalie Reed", "student_email": "natalie.reed@uni001.edu"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG004", "research_group_name": "Machine Learning Research Group"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR004", "profssor_email": "sam.patel@university.edu", "professor_name": "Dr. Sam Patel", "professor_telephone": "+1-555-0999"}
+NominateDepartmentChair: {"university_id": "UNI003", "department_id": "DEP013", "chair_id": "PRF004", "department_name": "Linguistics", "chair_name": "Dr. Elena Ruiz", "chair_email": "elena.ruiz@uni003.edu", "chair_telephone": "+1-555-0456", "chair_office": "Room 528"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG005", "research_group_name": "Artificial Intelligence Research Group"}
+HireProfessor: {"department_id": "DEP005", "professor_id": "PR005", "profssor_email": "riley.quinn@university.edu", "professor_name": "Dr. Riley Quinn", "professor_telephone": "+1-555-0111"}
+NominateDepartmentChair: {"university_id": "UNI003", "department_id": "DEP014", "chair_id": "PRF005", "department_name": "Data Science", "chair_name": "Dr. Jordan Lee", "chair_email": "jordan.lee@uni003.edu", "chair_telephone": "+1-555-0678", "chair_office": "Room 610"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG006", "research_group_name": "Quantum Computing Research Group"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR006", "profssor_email": "new.professor@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-0124"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG007", "research_group_name": "Robotics Research Group"}
+TakeCourseOfAdvisor: {"student_id": "STU016", "student_name": "Victoria Hall", "course_id": "CRS007", "course_name": "Quantum Network Architecture", "faculty_id": "PRF007", "faculty_name": "Ethan Wright"}
+TakeCourseOfAdvisor: {"student_id": "STU017", "faculty_id": "PRF008", "course_id": "CRS008", "student_name": "Zoe Anderson", "faculty_name": "David Kim", "course_name": "Quantum Optics and Photonics"}
+TakeCourseOfAdvisor: {"student_id": "STU018", "faculty_id": "PRF009", "course_id": "CRS009", "student_name": "Andrew Collins", "faculty_name": "Grace Hamilton", "course_name": "Quantum Materials Science"}
+TakeCourseOfAdvisor: {"student_id": "STU019", "faculty_id": "PRF010", "course_id": "CRS010", "student_name": "Benjamin Carter", "faculty_name": "Isabella Rivera", "course_name": "Quantum Thermodynamics"}
+TakeCourseOfAdvisor: {"student_id": "STU020", "faculty_id": "PRF011", "course_id": "CRS011", "student_name": "Liam Harper", "faculty_name": "Evelyn Brooks", "course_name": "Quantum Computing Applications"}
+TakeCourseOfAdvisor: {"student_id": "STU021", "faculty_id": "PRF012", "course_id": "CRS012", "student_name": "Ethan Parker", "faculty_name": "Rebecca Collins", "course_name": "Quantum Computing Ethics"}
+ListMember: {"department_id": "DEP001", "person_id": "N001", "person_name": "Morgan Davis"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "Y001", "person_name": "Casey Miller"}
+ListMember: {"department_id": "DEP001", "person_id": "Z001", "person_name": "Riley Anderson"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU022", "department_id": "DEP015", "department_name": "Artificial Intelligence", "student_name": "Mark Spencer", "student_email": "mark.spencer@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "STU007", "department_id": "DEP016", "university_id": "UNI002", "graduate_student_name": "Nina Gomez", "department_name": "Neuroscience", "university_name": "Quantum Academy"}
+IntroduceStudent: {"student_id": "XYZ001", "student_name": "Emily Roberts"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "GH001", "undergraduate_student_name": "Ethan Patel"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU023", "department_id": "DEP017", "department_name": "Economics", "student_name": "Peter Wallace", "student_email": "peter.wallace@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "STU003", "department_id": "DEP018", "university_id": "UNI006", "graduate_student_name": "Olivia Chen", "department_name": "Robotics", "university_name": "Advanced Studies Institute"}
+IntroduceStudent: {"student_id": "NEW001", "student_name": "Mia Thompson"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "JKL123", "undergraduate_student_name": "Olivia Martinez"}
+EnrollStudent: {"university_id": "UNI004", "student_id": "STU022", "student_name": "Thomas Greene", "student_email": "thomas.greene@uni004.edu", "department_id": "DEP019", "department_name": "Marine Biology"}
+HireProfessor: {"department_id": "DEP012", "professor_id": "PR007", "profssor_email": "chris.taylor@university.edu", "professor_name": "Dr. Chris Taylor", "professor_telephone": "+1-555-0234"}
+CreateResearchGroup: {"university_id": "UNI003", "research_group_id": "RG008", "research_group_name": "Neural Networks Research Group"}
+NominateDepartmentChair: {"university_id": "UNI002", "department_id": "DEP020", "chair_id": "PRF006", "department_name": "Quantum Computing", "chair_name": "Dr. Priya Singh", "chair_email": "priya.singh@uni002.edu", "chair_telephone": "+1-555-0890", "chair_office": "Room 712"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR008", "profssor_email": "new.professor2@university.edu", "professor_name": "Dr. New Professor2", "professor_telephone": "+1-555-0112"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG009", "research_group_name": "Bioinformatics Research Group"}
+NominateDepartmentChair: {"university_id": "UNI003", "department_id": "DEP021", "chair_id": "PRF007", "department_name": "Astrobiology", "chair_name": "Dr. Lena Hoffmann", "chair_email": "lena.hoffmann@uni003.edu", "chair_telephone": "+1-555-0124", "chair_office": "Room 820"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR009", "profssor_email": "new.professor3@university.edu", "professor_name": "Dr. New Professor3", "professor_telephone": "+1-555-0100"}
+CreateResearchGroup: {"university_id": "UNI003", "research_group_id": "RG010", "research_group_name": "Computer Vision Research Group"}
+NominateDepartmentChair: {"university_id": "UNI003", "department_id": "DEP022", "chair_id": "PRF008", "department_name": "Cybernetics", "chair_name": "Dr. Victor Zhou", "chair_email": "victor.zhou@uni003.edu", "chair_telephone": "+1-555-0999", "chair_office": "Room 910"}
+TakeCourseOfAdvisor: {"student_id": "STU024", "student_name": "Aaron Mitchell", "faculty_id": "PRF013", "faculty_name": "Victor Sanchez", "course_id": "CRS013", "course_name": "Quantum Computing for Finance"}
+TakeCourseOfAdvisor: {"student_id": "STU025", "student_name": "Sofia Martinez", "faculty_id": "PRF014", "faculty_name": "Andrew Lee", "course_id": "CRS014", "course_name": "Quantum Computing for Healthcare"}
+TakeCourseOfAdvisor: {"student_id": "STU026", "faculty_id": "PRF015", "course_id": "CRS015", "student_name": "Kevin Brooks", "faculty_name": "William Harris", "course_name": "Quantum Simulation for Materials"}
+TakeCourseOfAdvisor: {"student_id": "STU027", "student_name": "Nathaniel Brooks", "faculty_id": "PRF016", "faculty_name": "Zachary Quinn", "course_id": "CRS016", "course_name": "Quantum Computing for Renewable Energy"}
+TakeCourseOfAdvisor: {"student_id": "STU028", "faculty_id": "PRF017", "course_id": "CRS017", "student_name": "Jordan Blake", "faculty_name": "Samuel Ortega", "course_name": "Quantum Computing for Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "STU029", "faculty_id": "PRF018", "course_id": "CRS018", "student_name": "Victor Alvarez", "faculty_name": "Diana Monroe", "course_name": "Quantum Computing for Transportation"}
+ListMember: {"department_id": "DEP001", "person_id": "Q001", "person_name": "Sam Patel"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "A001", "person_name": "Jordan Patel"}
+ListMember: {"department_id": "DEP001", "person_id": "C001", "person_name": "Jordan Kim"}
+EnrollStudent: {"university_id": "UNI005", "student_id": "STU030", "department_id": "DEP023", "department_name": "Astrophysics", "student_name": "Evelyn Harper", "student_email": "evelyn.harper@uni005.edu"}
+IntroduceStudent: {"student_id": "ABC123", "student_name": "Grace Kim"}
+GraduateStudent: {"graduate_student_id": "GRD001", "graduate_student_name": "Sophia Martinez", "department_id": "DEP024", "department_name": "Quantum Mechanics", "university_id": "UNI007", "university_name": "Celestial Institute of Technology"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "MN012", "undergraduate_student_name": "Daniel Kim"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU031", "department_id": "DEP025", "department_name": "Nanotechnology", "student_name": "Olivia Martinez", "student_email": "olivia.martinez@uni001.edu"}
+IntroduceStudent: {"student_id": "NEW002", "student_name": "Isabella Reed"}
+GraduateStudent: {"graduate_student_id": "GRD002", "department_id": "DEP026", "university_id": "UNI008", "graduate_student_name": "Ethan Brooks", "department_name": "Robotics Engineering", "university_name": "Pioneer University"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "LMN456", "undergraduate_student_name": "Natalie Hughes"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU031", "department_id": "DEP027", "department_name": "Bioinformatics", "student_name": "Samuel Green", "student_email": "samuel.green@uni001.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR010", "profssor_email": "new.professor4@university.edu", "professor_name": "Dr. New Professor4", "professor_telephone": "+1-555-0105"}
+CreateResearchGroup: {"university_id": "UNI003", "research_group_id": "RG011", "research_group_name": "Human-Computer Interaction Research Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP028", "chair_id": "PRF009", "department_name": "Quantum Cryptography", "chair_name": "Dr. Naomi Fischer", "chair_email": "naomi.fischer@uni004.edu", "chair_telephone": "+1-555-0111", "chair_office": "Room 101"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "NP001", "profssor_email": "new.professor5@university.edu", "professor_name": "Dr. New Professor5", "professor_telephone": "+1-555-0102"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG012", "research_group_name": "Emerging Technologies Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP029", "chair_id": "PRF010", "department_name": "Quantum Biology", "chair_name": "Dr. Evelyn Hart", "chair_email": "evelyn.hart@uni001.edu", "chair_telephone": "+1-555-0100", "chair_office": "Room 102"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR011", "profssor_email": "new.professor6@university.edu", "professor_name": "Dr. New Professor6", "professor_telephone": "+1-555-0135"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG013", "research_group_name": "Distributed Systems Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP030", "chair_id": "PRF011", "department_name": "Quantum Optics", "chair_name": "Dr. Isabella Moreno", "chair_email": "isabella.moreno@uni001.edu", "chair_telephone": "+1-555-0125", "chair_office": "Room 1025"}
+TakeCourseOfAdvisor: {"student_id": "STU031", "student_name": "Ethan Hawke", "faculty_id": "PRF019", "faculty_name": "Laura Mitchell", "course_id": "CRS019", "course_name": "Quantum Computing for Space Exploration"}
+TakeCourseOfAdvisor: {"student_id": "STU031", "faculty_id": "PRF020", "course_id": "CRS020", "student_name": "Zachary Miller", "faculty_name": "Laura Bennett", "course_name": "Quantum Computing for Urban Planning"}
+TakeCourseOfAdvisor: {"student_id": "STU031", "faculty_id": "PRF021", "course_id": "CRS021", "student_name": "Laura Parker", "faculty_name": "Michael Anderson", "course_name": "Quantum Computing for Climate Change"}
+TakeCourseOfAdvisor: {"student_id": "STU032", "student_name": "Caleb Morgan", "faculty_id": "PRF022", "faculty_name": "Harold Simmons", "course_id": "CRS022", "course_name": "Quantum Computing for Biotechnology"}
+TakeCourseOfAdvisor: {"student_id": "STU033", "student_name": "Lydia Harper", "faculty_id": "PRF023", "faculty_name": "Jonathan Reed", "course_id": "CRS023", "course_name": "Quantum Computing for Marine Biology"}
+TakeCourseOfAdvisor: {"student_id": "NEW003", "student_name": "Natalie Brooks", "faculty_id": "PRF024", "faculty_name": "Oliver Grant", "course_id": "CRS024", "course_name": "Quantum Computing for Sustainable Agriculture"}
+ListMember: {"department_id": "DEP001", "person_id": "D001", "person_name": "Chris Evans"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "G001", "person_name": "Elliot Harper"}
+ListMember: {"department_id": "DEP001", "person_id": "E001", "person_name": "Jordan Brooks"}
+EnrollStudent: {"university_id": "UNI003", "student_id": "NEW004", "department_id": "DEP005", "department_name": "Astrophysics", "student_name": "Alice", "student_email": "alice@uni003.edu"}
+GraduateStudent: {"graduate_student_id": "GRD003", "department_id": "DEP031", "university_id": "UNI009", "graduate_student_name": "Michael Turner", "department_name": "Quantum Engineering", "university_name": "Nova Research University"}
+IntroduceStudent: {"student_id": "NEW005", "student_name": "Olivia Harper"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "RS123", "undergraduate_student_name": "Grace Liu"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "NEW006", "department_id": "DEP032", "department_name": "Astrobiology", "student_name": "Samuel Lee", "student_email": "samuel.lee@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRD004", "department_id": "DEP033", "university_id": "UNI010", "graduate_student_name": "Daniel Harper", "department_name": "Quantum Robotics", "university_name": "Stellar University"}
+IntroduceStudent: {"student_id": "NEW007", "student_name": "Sophia Bennett"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "UV345", "undergraduate_student_name": "Victor Alvarez"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU999", "department_id": "DEP034", "department_name": "Quantum Ecology", "student_name": "Olivia Bennett", "student_email": "olivia.bennett@uni001.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR012", "profssor_email": "new.professor7@university.edu", "professor_name": "Dr. New Professor7", "professor_telephone": "+1-555-0106"}
+CreateResearchGroup: {"university_id": "UNI004", "research_group_id": "RG014", "research_group_name": "Natural Language Processing Research Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP035", "chair_id": "PRF012", "department_name": "Quantum Sociology", "chair_name": "Dr. Oliver Grant", "chair_email": "oliver.grant@uni004.edu", "chair_telephone": "+1-555-0321", "chair_office": "Room 1010"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "NP002", "profssor_email": "new.professor1@university.edu", "professor_name": "Dr. New Professor1", "professor_telephone": "+1-555-0200"}
+CreateResearchGroup: {"university_id": "UNI005", "research_group_id": "RG015", "research_group_name": "Cybersecurity Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP036", "chair_id": "PRF013", "department_name": "Astrochemistry", "chair_name": "Dr. Zoe Bennett", "chair_email": "zoe.bennett@uni001.edu", "chair_telephone": "+1-555-0126", "chair_office": "Room 1020"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "NP013", "profssor_email": "new.professor8@university.edu", "professor_name": "Dr. New Professor8", "professor_telephone": "+1-555-0140"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG016", "research_group_name": "Deep Learning Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP037", "chair_id": "PRF014", "department_name": "Quantum Anthropology", "chair_name": "Dr. Xavier Liu", "chair_email": "xavier.liu@uni001.edu", "chair_telephone": "+1-555-0112", "chair_office": "Room 1022"}
+TakeCourseOfAdvisor: {"student_id": "NEW008", "faculty_id": "PRF025", "course_id": "CRS025", "student_name": "David Thompson", "faculty_name": "Rebecca Turner", "course_name": "Quantum Computing for Renewable Energy"}
+TakeCourseOfAdvisor: {"student_id": "STU034", "student_name": "Natalie Harper", "faculty_id": "PRF026", "faculty_name": "Brian Clark", "course_id": "CRS026", "course_name": "Quantum Computing for Food Security"}
+TakeCourseOfAdvisor: {"student_id": "STU035", "student_name": "Ethan Walker", "faculty_id": "PRF027", "faculty_name": "Natalie Quinn", "course_id": "CRS027", "course_name": "Quantum Thermodynamics"}
+TakeCourseOfAdvisor: {"student_id": "STU999", "student_name": "Liam Carter", "faculty_id": "PRF999", "faculty_name": "Samantha Lee", "course_id": "CRS999", "course_name": "Quantum Computing for Renewable Energy"}
+TakeCourseOfAdvisor: {"student_id": "STU100", "student_name": "Ethan Harper", "faculty_id": "PRF100", "faculty_name": "Olivia Quinn", "course_id": "CRS100", "course_name": "Quantum Computing for Education"}
+TakeCourseOfAdvisor: {"student_id": "NEW009", "faculty_id": "PRF028", "course_id": "CRS028", "student_name": "Mason Rivera", "faculty_name": "Clara Whitman", "course_name": "Quantum Computing for Disaster Management"}
+ListMember: {"department_id": "DEP001", "person_id": "F001", "person_name": "Avery Collins"}
+DefineAlumnus: {"university_id": "UNI005", "person_id": "H001", "person_name": "Taylor Morgan"}
+ListMember: {"department_id": "DEP015", "person_id": "J001", "person_name": "Jordan Reed"}
+IntroduceStudent: {"student_id": "NEW010", "student_name": "Mason Lee"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU101", "department_id": "DEP038", "department_name": "Quantum Medicine", "student_name": "Mia Anderson", "student_email": "mia.anderson@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRD005", "graduate_student_name": "Grace Lee", "department_id": "DEP039", "department_name": "Quantum Philosophy", "university_id": "UNI011", "university_name": "Infinity University"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "OPQ678", "undergraduate_student_name": "Zoe Carter"}
+IntroduceStudent: {"student_id": "NEW011", "student_name": "Harper Quinn"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU123", "department_id": "DEP040", "department_name": "Quantum Genetics", "student_name": "Oliver Grant", "student_email": "oliver.grant@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRD006", "department_id": "DEP041", "university_id": "UNI012", "graduate_student_name": "Isabella Torres", "department_name": "Quantum Sociology", "university_name": "Nova Research University"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "STU001", "undergraduate_student_name": "Benjamin Reed"}
+IntroduceStudent: {"student_id": "NEW011", "student_name": "Isla Morgan"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "NP014", "profssor_email": "morgan.lee@university.edu", "professor_name": "Dr. Morgan Lee", "professor_telephone": "+1-555-0990"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG017", "research_group_name": "Internet of Things Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP042", "chair_id": "PRF015", "department_name": "Quantum Linguistics", "chair_name": "Dr. Hannah Lee", "chair_email": "hannah.lee@uni001.edu", "chair_telephone": "+1-555-0102", "chair_office": "Room 1028"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "NP015", "profssor_email": "ab123@university.edu", "professor_name": "Dr. Alex New", "professor_telephone": "+1-555-0125"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG018", "research_group_name": "Quantum Algorithms Research Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DEP043", "chair_id": "PRF016", "department_name": "Quantum Theology", "chair_name": "Dr. Amelia Reed", "chair_email": "amelia.reed@uni004.edu", "chair_telephone": "+1-555-0127", "chair_office": "Room 1029"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR013", "profssor_email": "new.professor13@university.edu", "professor_name": "Dr. New Professor13", "professor_telephone": "+1-555-0141"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG019", "research_group_name": "Autonomous Systems Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP044", "chair_id": "PRF017", "department_name": "Quantum Ethics", "chair_name": "Dr. Gabriel Torres", "chair_email": "gabriel.torres@uni001.edu", "chair_telephone": "+1-555-1100", "chair_office": "Room 1011"}
+TakeCourseOfAdvisor: {"student_id": "STU200", "faculty_id": "PRF200", "course_id": "CRS200", "student_name": "Ethan Stone", "faculty_name": "Natalie Brooks", "course_name": "Quantum Computing for Smart Cities"}
+TakeCourseOfAdvisor: {"student_id": "STU036", "faculty_id": "PRF029", "course_id": "CRS029", "student_name": "Ethan Rivers", "faculty_name": "Laura Whitman", "course_name": "Quantum Computing for Waste Management"}
+TakeCourseOfAdvisor: {"student_id": "NEW011", "faculty_id": "PRF030", "course_id": "CRS030", "student_name": "Eleanor Gray", "faculty_name": "Nathaniel Brooks", "course_name": "Quantum Computing for Urban Mobility"}
+TakeCourseOfAdvisor: {"student_id": "STU031", "faculty_id": "PRF031", "course_id": "CRS031", "student_name": "Daphne Liu", "faculty_name": "Gregory Shaw", "course_name": "Quantum Computing for Agricultural Robotics"}
+TakeCourseOfAdvisor: {"student_id": "NEW012", "faculty_id": "PRF032", "course_id": "CRS032", "student_name": "Patrick O'Neil", "faculty_name": "Grace Lee", "course_name": "Quantum Computing for Renewable Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "NEW013", "student_name": "Quinn Harper", "faculty_id": "PRF037", "faculty_name": "Megan Collins", "course_id": "CRS037", "course_name": "Quantum Computing for Oceanography"}
+ListMember: {"department_id": "DEP027", "person_id": "M001", "person_name": "Jordan Fox"}
+DefineAlumnus: {"university_id": "UNI009", "person_id": "K001", "person_name": "Jordan Carter"}
+ListMember: {"department_id": "DEP001", "person_id": "A002", "person_name": "Patricia Gomez"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU300", "department_id": "DEP045", "department_name": "Quantum Archaeology", "student_name": "Olivia Parker", "student_email": "olivia.parker@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRD007", "department_id": "DEP046", "university_id": "UNI013", "graduate_student_name": "Zoe Carter", "department_name": "Quantum Meteorology", "university_name": "Aurora University"}
+IntroduceStudent: {"student_id": "NEW011", "student_name": "Grace Patel"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "QRZ999", "undergraduate_student_name": "Harper Quinn"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "STU400", "department_id": "DEP047", "department_name": "Quantum Astrophysics", "student_name": "Mason Clark", "student_email": "mason.clark@uni009.edu"}
+GraduateStudent: {"graduate_student_id": "GRD008", "department_id": "DEP048", "university_id": "UNI014", "graduate_student_name": "Victor Hernandez", "department_name": "Quantum Holography", "university_name": "Cosmic University"}
+IntroduceStudent: {"student_id": "ABX001", "student_name": "Laura Mitchell"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "XZ123", "undergraduate_student_name": "Aiden Foster"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "STU500", "department_id": "DEP049", "department_name": "Quantum Astronomy", "student_name": "Nathaniel Quinn", "student_email": "nathaniel.quinn@uni009.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PX001", "profssor_email": "dr.newprofessor14@university.edu", "professor_name": "Dr. New Professor14", "professor_telephone": "+1-555-0201"}
+CreateResearchGroup: {"university_id": "UNI009", "research_group_id": "RG020", "research_group_name": "Quantum Machine Learning Research Group"}
+NominateDepartmentChair: {"university_id": "UNI005", "department_id": "DEP050", "chair_id": "PRF018", "department_name": "Quantum Astrobiology", "chair_name": "Dr. Ethan Shaw", "chair_email": "ethan.shaw@uni005.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1030"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR014", "profssor_email": "new.professor9@university.edu", "professor_name": "Dr. New Professor9", "professor_telephone": "+1-555-0991"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG021", "research_group_name": "Quantum Cryptography Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP051", "chair_id": "PRF019", "department_name": "Quantum Ethics", "chair_name": "Dr. Nathaniel Brooks", "chair_email": "nathaniel.brooks@uni001.edu", "chair_telephone": "+1-555-2000", "chair_office": "Room 950"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PX002", "profssor_email": "ab001@university.edu", "professor_name": "Dr. Jordan Kim", "professor_telephone": "+1-555-0222"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG022", "research_group_name": "Quantum Simulation Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP052", "department_name": "Quantum Metaphysics", "chair_id": "PRF020", "chair_name": "Dr. Yvonne Clarke", "chair_email": "yvonne.clarke@uni001.edu", "chair_telephone": "+1-555-2101", "chair_office": "Room 1050"}
+TakeCourseOfAdvisor: {"student_id": "STU777", "faculty_id": "PRF777", "course_id": "CRS777", "student_name": "Jordan Miller", "faculty_name": "Samuel Torres", "course_name": "Quantum Computing for Sustainable Transportation"}
+TakeCourseOfAdvisor: {"student_id": "NEW014", "student_name": "Zoe Anderson", "faculty_id": "PRF038", "faculty_name": "Eleanor Stone", "course_id": "CRS038", "course_name": "Quantum Computing for Space Tourism"}
+TakeCourseOfAdvisor: {"student_id": "STU800", "faculty_id": "PRF800", "course_id": "CRS800", "student_name": "Olivia Reed", "faculty_name": "Victor Alvarez", "course_name": "Quantum Computing for Space Mining"}
+TakeCourseOfAdvisor: {"student_id": "NEW015", "faculty_id": "PRF033", "course_id": "CRS033", "student_name": "Ethan Nova", "faculty_name": "Maya Patel", "course_name": "Quantum Computing for Renewable Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "NEW016", "student_name": "Ethan Frost", "faculty_id": "PRF039", "faculty_name": "Jordan Blake", "course_id": "CRS039", "course_name": "Quantum Computing for Autonomous Vehicles"}
+TakeCourseOfAdvisor: {"student_id": "STU010", "faculty_id": "PRF040", "course_id": "CRS040", "student_name": "Evelyn Brooks", "faculty_name": "Daniel Ortiz", "course_name": "Quantum Computing for Space Habitat Design"}
+ListMember: {"department_id": "DEP027", "person_id": "L001", "person_name": "Evelyn Harper"}
+DefineAlumnus: {"university_id": "UNI009", "person_id": "A003", "person_name": "Liam Turner"}
+ListMember: {"department_id": "DEP001", "person_id": "A004", "person_name": "Jordan Blake"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "STU102", "department_id": "DEP053", "department_name": "Quantum Gastronomy", "student_name": "Zoe Anderson", "student_email": "zoe.anderson@uni009.edu"}
+GraduateStudent: {"graduate_student_id": "GRD009", "department_id": "DEP054", "university_id": "UNI015", "graduate_student_name": "Ava Mitchell", "department_name": "Quantum Paleontology", "university_name": "Horizon Space University"}
+IntroduceStudent: {"student_id": "NEW101", "student_name": "Samuel Torres"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABX123", "undergraduate_student_name": "Caleb Morgan"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU600", "student_name": "Riley Anderson", "student_email": "riley.anderson@uni001.edu", "department_id": "DEP055", "department_name": "Quantum Nanotechnology"}
+GraduateStudent: {"graduate_student_id": "GRD010", "graduate_student_name": "Eleanor Wright", "department_id": "DEP056", "department_name": "Quantum Sociology", "university_id": "UNI016", "university_name": "Celestial Institute of Technology"}
+IntroduceStudent: {"student_id": "NEW101", "student_name": "Olivia Sanchez"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "AA001", "undergraduate_student_name": "Evelyn Shaw"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "NEW017", "department_id": "DEP057", "department_name": "Quantum Gastronomy", "student_name": "Olivia Sanchez", "student_email": "olivia.sanchez@uni001.edu"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "PR999", "profssor_email": "new.professor10@university.edu", "professor_name": "Dr. New Professor10", "professor_telephone": "+1-555-0223"}
+CreateResearchGroup: {"university_id": "UNI009", "research_group_id": "RG023", "research_group_name": "Quantum Optics Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP058", "chair_id": "PRF021", "department_name": "Quantum Chemistry", "chair_name": "Dr. Felix Monroe", "chair_email": "felix.monroe@uni001.edu", "chair_telephone": "+1-555-2222", "chair_office": "Room 1051"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "NP200", "profssor_email": "evharper@university.edu", "professor_name": "Dr. Evelyn Harper", "professor_telephone": "+1-555-0992"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG024", "research_group_name": "Quantum Information Processing Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP059", "chair_id": "PRF022", "department_name": "Quantum Physics", "chair_name": "Dr. Liam O'Connor", "chair_email": "liam.oconnor@uni001.edu", "chair_telephone": "+1-555-3000", "chair_office": "Room 960"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PX003", "profssor_email": "laura.bennett@university.edu", "professor_name": "Dr. Laura Bennett", "professor_telephone": "+1-555-0993"}
+CreateResearchGroup: {"university_id": "UNI009", "research_group_id": "RQ001", "research_group_name": "Quantum Computing Applications Group"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PX004", "profssor_email": "zoe.carter@university.edu", "professor_name": "Dr. Zoe Carter", "professor_telephone": "+1-555-0994"}
+TakeCourseOfAdvisor: {"student_id": "STU777", "faculty_id": "PRF888", "course_id": "CRS888", "student_name": "Natalie Owens", "faculty_name": "Patrick Morgan", "course_name": "Quantum Computing for Agricultural Policy"}
+TakeCourseOfAdvisor: {"student_id": "NEW016", "faculty_id": "PRF041", "course_id": "CRS041", "student_name": "Ethan Caldwell", "faculty_name": "Sophia Reynolds", "course_name": "Quantum Computing for Asteroid Mining"}
+TakeCourseOfAdvisor: {"student_id": "NEW101", "faculty_id": "PRF101", "course_id": "CRS101", "student_name": "Cameron Reed", "faculty_name": "Derek Monroe", "course_name": "Quantum Computing for Sustainable Architecture"}
+TakeCourseOfAdvisor: {"student_id": "STU124", "faculty_id": "PRF124", "course_id": "CRS124", "student_name": "Natalie Pierce", "faculty_name": "Samuel Whitaker", "course_name": "Quantum Computing for Sustainable Fisheries"}
+TakeCourseOfAdvisor: {"student_id": "NEW011", "faculty_id": "PRF042", "course_id": "CRS042", "student_name": "Jordan Ellis", "faculty_name": "Thomas Reed", "course_name": "Quantum Computing for Sustainable Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "STU900", "faculty_id": "PRF900", "course_id": "CRS900", "student_name": "Zoe Anderson", "faculty_name": "Evan Brooks", "course_name": "Quantum Computing for Agricultural Economics"}
+ListMember: {"department_id": "DEP027", "person_id": "JX001", "person_name": "Olivia Reed"}
+DefineAlumnus: {"university_id": "UNI009", "person_id": "B002", "person_name": "Ethan Brooks"}
+ListMember: {"department_id": "DEP027", "person_id": "T001", "person_name": "Mia Turner"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "S001", "department_id": "DEP027", "department_name": "Computer Science", "student_name": "Alice", "student_email": "alice@uni009.edu"}
+GraduateStudent: {"graduate_student_id": "GRD011", "graduate_student_name": "Maya Patel", "department_id": "DEP060", "department_name": "Quantum Aeronautics", "university_id": "UNI017", "university_name": "Galactic Research University"}
+IntroduceStudent: {"student_id": "NEW101", "student_name": "Zara Patel"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "DE234", "undergraduate_student_name": "Mason Clarke"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "NEW100", "department_id": "DEP061", "department_name": "Quantum Gastronomy", "student_name": "Dylan Harper", "student_email": "dylan.harper@uni009.edu"}
+GraduateStudent: {"graduate_student_id": "GRD012", "graduate_student_name": "James Wilson", "department_id": "DEP062", "department_name": "Quantum Oceanography", "university_id": "UNI018", "university_name": "Celestial University"}
+IntroduceStudent: {"student_id": "QXZ123", "student_name": "Nora Sinclair"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "QW123", "undergraduate_student_name": "Isabella Torres"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "STU037", "student_name": "Liam OConnor", "student_email": "liam.oconnor@uni009.edu", "department_id": "DEP063", "department_name": "Quantum Zoology"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "AB001", "profssor_email": "ab124@university.edu", "professor_name": "Dr. Maya Singh", "professor_telephone": "+1-555-0995"}
+CreateResearchGroup: {"university_id": "UNI009", "research_group_id": "RG025", "research_group_name": "Quantum Computing Education Group"}
+NominateDepartmentChair: {"university_id": "UNI004", "department_id": "DPT064", "chair_id": "PRF023", "department_name": "Quantum Materials", "chair_name": "Dr. Hannah Patel", "chair_email": "hannah.patel@uni004.edu", "chair_telephone": "+1-555-4000", "chair_office": "Room 1100"}
+HireProfessor: {"department_id": "DEP045", "professor_id": "XY001", "profssor_email": "nathaniel.brooks@university.edu", "professor_name": "Dr. Nathaniel Brooks", "professor_telephone": "+1-555-0996"}
+CreateResearchGroup: {"university_id": "UNI005", "research_group_id": "RG026", "research_group_name": "Computational Biology Research Group"}
+NominateDepartmentChair: {"university_id": "UNI014", "department_id": "DEP064", "chair_id": "PRF024", "department_name": "Quantum Neuroscience", "chair_name": "Dr. Adrian Patel", "chair_email": "adrian.patel@uni014.edu", "chair_telephone": "+1-555-5000", "chair_office": "Room 1055"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "XZ001", "profssor_email": "new.professorz@university.edu", "professor_name": "Dr. Kevin Liu", "professor_telephone": "+1-555-0997"}
+CreateResearchGroup: {"university_id": "UNI009", "research_group_id": "RG027", "research_group_name": "Edge Computing Research Group"}
+NominateDepartmentChair: {"university_id": "UNI009", "department_id": "DEP065", "chair_id": "PRF025", "department_name": "Quantum Cybernetics", "chair_name": "Dr. Zara Khan", "chair_email": "zara.khan@uni009.edu", "chair_telephone": "+1-555-6000", "chair_office": "Room 970"}
+TakeCourseOfAdvisor: {"student_id": "NEW018", "student_name": "Jordan Carter", "faculty_id": "PRF041", "faculty_name": "Catherine Lewis", "course_id": "CRS043", "course_name": "Quantum Computing for Atmospheric Research"}
+TakeCourseOfAdvisor: {"student_id": "STU201", "faculty_id": "PRF201", "course_id": "CRS201", "student_name": "Ethan Vale", "faculty_name": "Nathaniel Cruz", "course_name": "Quantum Computing for Climate Resilience"}
+TakeCourseOfAdvisor: {"student_id": "STU888", "student_name": "Jordan Hayes", "faculty_id": "PRF555", "faculty_name": "Eleanor Monroe", "course_id": "CRS555", "course_name": "Quantum Computing for Marine Conservation"}
+TakeCourseOfAdvisor: {"student_id": "STU202", "student_name": "Liam Patel", "faculty_id": "PRF202", "faculty_name": "Eleanor Parker", "course_id": "CRS202", "course_name": "Quantum Computing for Renewable Infrastructure"}
+TakeCourseOfAdvisor: {"student_id": "STU301", "student_name": "Liam Torres", "faculty_id": "PRF301", "faculty_name": "Ethan Wright", "course_id": "CRS301", "course_name": "Quantum Computing for Renewable Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "STU125", "student_name": "Sebastian Cole", "faculty_id": "PRF125", "faculty_name": "Marcus Hale", "course_id": "CRS125", "course_name": "Quantum Computing for Bioinformatics"}
+DefineAlumnus: {"university_id": "UNI009", "person_id": "R001", "person_name": "Natalie Reed"}
+ListMember: {"department_id": "DEP027", "person_id": "JX002", "person_name": "Samuel Reed"}
+DefineAlumnus: {"university_id": "UNI009", "person_id": "U001", "person_name": "Samuel Carter"}
+EnrollStudent: {"university_id": "UNI009", "student_id": "DEF001", "department_id": "DEP066", "department_name": "Quantum Geophysics", "student_name": "Ethan Quinn", "student_email": "ethan.quinn@uni009.edu"}
+GraduateStudent: {"graduate_student_id": "GRD013", "department_id": "DEP067", "university_id": "UNI019", "graduate_student_name": "Ethan Patel", "department_name": "Quantum Cartography", "university_name": "Nebula University"}
+IntroduceStudent: {"student_id": "ABC124", "student_name": "Mason Patel"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "XYZ123", "undergraduate_student_name": "Samuel Reed"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "S123", "department_id": "DEP001", "department_name": "Computer Science", "student_name": "Alice", "student_email": "alice@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRD014", "department_id": "DEP065", "university_id": "UNI020", "graduate_student_name": "Samuel Reed", "department_name": "Quantum Thermodynamics", "university_name": "Celestial Horizons University"}
+IntroduceStudent: {"student_id": "XYZ123", "student_name": "Megan Turner"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABC001", "undergraduate_student_name": "James Howard"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU777", "department_id": "DEP045", "department_name": "Quantum Xenobiology", "student_name": "Alice", "student_email": "alice123@uni001.edu"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "XY002", "profssor_email": "jane.smith@university.edu", "professor_name": "Dr. Jane Smith", "professor_telephone": "555-0199"}
+CreateResearchGroup: {"university_id": "UNI005", "research_group_id": "RG028", "research_group_name": "Quantum Computing Infrastructure Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP068", "chair_id": "PRF026", "department_name": "Quantum Photonics", "chair_name": "Dr. Caleb Morgan", "chair_email": "caleb.morgan@uni001.edu", "chair_telephone": "+1-555-7100", "chair_office": "Room 975"}
+HireProfessor: {"department_id": "DEP027", "professor_id": "YZ001", "profssor_email": "zz001@university.edu", "professor_name": "Dr. Zoe Zimmerman", "professor_telephone": "+1-555-0998"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG029", "research_group_name": "Swarm Robotics Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP069", "chair_id": "PRF027", "department_name": "Quantum Entanglement Studies", "chair_name": "Dr. Quentin Harper", "chair_email": "quentin.harper@uni001.edu", "chair_telephone": "+1-555-8000", "chair_office": "Room 1012"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "AB002", "profssor_email": "pr010@university.edu", "professor_name": "Dr. Amelia Rivers", "professor_telephone": "+1-555-0202"}
+CreateResearchGroup: {"university_id": "UNI014", "research_group_id": "RG030", "research_group_name": "Quantum Sensors Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP070", "chair_id": "PRF028", "department_name": "Quantum Philology", "chair_name": "Dr. Victor Alvarez", "chair_email": "victor.alvarez@uni001.edu", "chair_telephone": "+1-555-9100", "chair_office": "Room 980"}
+TakeCourseOfAdvisor: {"student_id": "STU310", "student_name": "Liam Gallagher", "faculty_id": "PRF310", "faculty_name": "David Lee", "course_id": "CRS310", "course_name": "Quantum Computing for Renewable Energy Storage"}
+TakeCourseOfAdvisor: {"student_id": "STU210", "faculty_id": "PRF210", "course_id": "CRS210", "student_name": "Jordan Parker", "faculty_name": "Evelyn Harper", "course_name": "Quantum Computing for Renewable Transportation"}
+TakeCourseOfAdvisor: {"student_id": "STU321", "student_name": "Lydia Monroe", "faculty_id": "PRF322", "faculty_name": "Thomas Caldwell", "course_id": "CRS322", "course_name": "Quantum Computing for Interstellar Navigation"}
+TakeCourseOfAdvisor: {"student_id": "STU350", "faculty_id": "PRF350", "course_id": "CRS350", "student_name": "Natalie Frost", "faculty_name": "Hannah Moore", "course_name": "Quantum Computing for Urban Agriculture"}
+TakeCourseOfAdvisor: {"student_id": "DEP027", "faculty_id": "DEP064", "course_id": "UNI005", "student_name": "Elliot Harper", "faculty_name": "Victor Ramirez", "course_name": "Quantum Computing for Climate Modeling"}
+TakeCourseOfAdvisor: {"student_id": "STU211", "faculty_id": "PRF211", "course_id": "CRS211", "student_name": "Liam Novak", "faculty_name": "Dr. Amelia Torres", "course_name": "Quantum Computing for Renewable Water Management"}
+ListMember: {"department_id": "DEP027", "person_id": "V001", "person_name": "Jordan Hayes"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "K002", "person_name": "Jordan Stone"}
+ListMember: {"department_id": "DEP027", "person_id": "Z002", "person_name": "Taylor Brown"}
+EnrollStudent: {"university_id": "UNI005", "student_id": "S001", "department_id": "DEP027", "department_name": "Quantum Chronobiology", "student_name": "John Doe", "student_email": "john.doe@uni005.edu"}
+GraduateStudent: {"graduate_student_id": "GRD015", "graduate_student_name": "Harper Quinn", "department_id": "DEP027", "department_name": "Quantum Robotics", "university_id": "UNI005", "university_name": "Nova Research University"}
+IntroduceStudent: {"student_id": "GHI001", "student_name": "Mila Santos"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABY789", "undergraduate_student_name": "Avery Sinclair"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "NEW200", "department_id": "DEP200", "department_name": "Quantum Cryogenics", "student_name": "Isla Morgan", "student_email": "isla.morgan@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "GRS001", "department_id": "DPT071", "university_id": "UNI021", "graduate_student_name": "Natalie Brooks", "department_name": "Astrogeology", "university_name": "Celestial Frontier University"}
+IntroduceStudent: {"student_id": "LMN001", "student_name": "Grace Liu"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "ABC002", "undergraduate_student_name": "Lydia Harper"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "NEW102", "department_id": "DEP071", "department_name": "Quantum Astrochemistry", "student_name": "Olivia Harper", "student_email": "olivia.harper@uni001.edu"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PR015", "profssor_email": "oliver.grant@university.edu", "professor_name": "Dr. Oliver Grant", "professor_telephone": "+1-555-0107"}
+CreateResearchGroup: {"university_id": "UNI005", "research_group_id": "RG031", "research_group_name": "Computational Neuroscience Research Group"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP201", "chair_id": "PRF029", "department_name": "Quantum Exoplanetology", "chair_name": "Dr. Ian McAllister", "chair_email": "ian.mcallister@uni001.edu", "chair_telephone": "+1-555-7200", "chair_office": "Room 985"}

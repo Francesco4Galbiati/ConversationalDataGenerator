@@ -1,0 +1,615 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Cloud Computing", "service_type": "Infrastructure", "managed_by_team": "DevOps"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "new-resource-123", "serial_number": "SN123456", "resource_type": "server", "usage_state": "active", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF789", "resource_label": "Shared Resource"}
+OpenTroubleTicket: {"resource_id": "ABC456", "trouble_ticket_id": "XTT123", "trouble_ticket_description": "Issue with resource ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "90%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "System update successful"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "System check successful"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "System restart successful"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "System maintenance completed"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT123", "action_description": "Troubleshoot and repair of faulty network device", "agent_id": "AGT456", "agent_label": "Network Support Agent"}
+IdentifyResolvingActions: {"action_id": "ACT456", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT789", "action_description": "Replace faulty network device with a new one and perform additional tests", "agent_id": "AGT123", "agent_label": "Senior Network Support Agent", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional configuration", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"importance_level": "high", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "XTT123", "entity_id": "XTT123-DB01", "entity_type": "hardware"}
+IdentifyRootCause: {"category_name": "Network Issue", "responsibility": "IT Department", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "EVT456", "timestamp": "2023-02-15 14:30:00", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-456", "serial_number": "SN789012", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Data Analytics", "service_type": "Platform", "managed_by_team": "DataScience"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "new-resource-789", "serial_number": "SN345678", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "GHI012", "metric_name": "Disk Usage", "metric_value": "78%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO678", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "JKL456", "metric_name": "Network Usage", "metric_value": "92%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "ABC111", "metric_name": "CPU Temperature", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN123"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT123", "originator_role": "Administrator"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN789"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT789", "originator_role": "Manager"}
+SummarizeCorrectiveActions: {"action_id": "ACT901", "action_description": "Replace faulty network device with a new one and perform additional diagnostics", "agent_id": "AGT789", "agent_label": "Junior Network Support Agent", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT014", "action_description": "Replace faulty network device with a new one and perform additional maintenance", "agent_id": "AGT012", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT567", "action_description": "Replace faulty network device with a new one and perform additional setup", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT101", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT456"}
+FindCausalInterventions: {"change_id": "ABC789", "change_description": "System update and restart", "start_time": "2022-01-01 12:00:00", "resource_id": "GHI012", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-111", "serial_number": "SN234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Artificial Intelligence", "service_type": "Software", "managed_by_team": "AIEngineering"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-901", "serial_number": "SN901234", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "STU678", "metric_name": "GPU Usage", "metric_value": "88%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "VWX345", "metric_name": "Power Consumption", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "MNO901", "metric_name": "Battery Level", "metric_value": "98%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "STU901", "resource_label": "Shared Resource"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT101", "originator_role": "Supervisor"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT542", "originator_role": "Director"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT234", "originator_role": "Coordinator"}
+SummarizeCorrectiveActions: {"action_id": "ACT234", "action_description": "Replace faulty network device with a new one and perform additional troubleshooting", "agent_id": "AGT567", "agent_label": "Network Support Engineer", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT678", "action_description": "Replace faulty network device with a new one and perform additional validation", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT345", "action_description": "Replace faulty network device with a new one and perform additional analysis and configuration", "agent_id": "AGT234", "agent_label": "Network Support Engineer", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT901", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+FindCausalInterventions: {"change_id": "DEF012", "change_description": "Software patch and configuration update", "start_time": "2022-01-05 14:30:00", "resource_id": "PQR234", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-555", "serial_number": "SN111111", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-555", "serial_number": "SN123456", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Machine Learning", "service_type": "Software", "managed_by_team": "AIEngineering"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "YZA111", "metric_name": "Fan Speed", "metric_value": "80%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "EFG567", "metric_name": "Sound Level", "metric_value": "72%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "BCD456", "metric_name": "Network Latency", "metric_value": "42%"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "VWX111", "resource_label": "Shared Resource"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN345"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT987", "originator_role": "Officer"}
+GetResourceLogs: {"resource_id": "PQR234", "log_id": "LOG456", "log_time": "2022-01-05 16:00:00", "log_message": "System backup successful"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN901"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Engineer", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Engineer", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT456", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-222", "serial_number": "SN666666", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Network Security", "service_type": "Software", "managed_by_team": "CyberSecurity"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1234", "serial_number": "SN1111111", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "CDE678", "metric_name": "Network Throughput", "metric_value": "60%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "TUV111", "metric_name": "System Uptime", "metric_value": "99%"}
+FindSharedAssets: {"service_id": "JKL012", "resource_id": "YZA123", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "RST345", "metric_name": "System Temperature", "metric_value": "65%"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN678"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT345", "originator_role": "Organizer"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN111"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT111", "originator_role": "Representative"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "low"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Intermediate Network Support Agent", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT789", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+FindCausalInterventions: {"change_id": "GHI345", "change_description": "Hardware replacement and firmware update", "start_time": "2022-01-10 10:00:00", "resource_id": "PQR234", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-888", "serial_number": "SN111122", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1111", "serial_number": "SN222222", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Internet of Things", "service_type": "Software", "managed_by_team": "DataScience"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "FGH789", "metric_name": "Network Packet Loss", "metric_value": "21%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "HIJ111", "metric_name": "Network Throughput", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "IJK222", "metric_name": "Network Usage", "metric_value": "93%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "EFG456", "resource_label": "Shared Resource"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN234"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT678", "originator_role": "Specialist"}
+GetResourceLogs: {"resource_id": "PQR234", "log_id": "LOG555", "log_time": "2022-01-06 17:00:00", "log_message": "System upgrade successful"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN567"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT999", "agent_label": "Advanced Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT901", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+FindCausalInterventions: {"change_id": "JKL678", "change_description": "Network configuration update and security patch installation", "start_time": "2022-01-15 16:00:00", "resource_id": "PQR234", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1112", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1113", "serial_number": "SN1111123", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "STU901", "service_name": "Blockchain Development", "service_type": "Software", "managed_by_team": "DevOps"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "KLM111", "metric_name": "Network Throughput", "metric_value": "96%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "NOP456", "metric_name": "Network Usage", "metric_value": "94%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "XYZ999", "metric_name": "System Uptime", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "LMN111", "metric_name": "Network Usage", "metric_value": "89%"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT654", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN111"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT345", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "XTT123", "entity_id": "XTT123-DB02", "entity_type": "application"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT456", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT456"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-12345", "serial_number": "SN11111111", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "VWX111", "service_name": "Robotics Engineering", "service_type": "Software", "managed_by_team": "AIEngineering"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1114", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "PQR111", "metric_name": "System Uptime", "metric_value": "87%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "TUV234", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "TUV222", "metric_name": "System Uptime", "metric_value": "86%"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "ABC222", "metric_name": "System Uptime", "metric_value": "83%"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN111"}
+IdentifyEventSource: {"event_id": "EVT456", "originator_id": "AGT321", "originator_role": "Analyst"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN111"}
+FindCorrelatedEvents: {"event_id": "EVT456", "corr_id": "EVN111"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT045", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB03", "entity_type": "network", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT456", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+GetIncidentSequence: {"trouble_ticket_id": "XTT123", "event_id": "EVT789", "timestamp": "2023-02-16 10:45:00"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "PQR234", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-1115", "serial_number": "SN1111133", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "YZA222", "service_name": "CyberSecurity Consulting", "service_type": "Software", "managed_by_team": "AIEngineering"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "new-resource-12345", "serial_number": "SN345678", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "PQR234", "metric_id": "ABC333", "metric_name": "Network Throughput", "metric_value": "84%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "RST345", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN456"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT456", "originator_role": "Consultant"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT042", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT234", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "XTT123", "entity_id": "XTT123-DB04", "entity_type": "database"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-1116", "serial_number": "SN1111144", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-1117", "serial_number": "SN1111155", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "EFG234", "service_name": "Data Science", "service_type": "Software", "managed_by_team": "DataScience"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "CDE123", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT901", "originator_role": "Associate"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT345", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB05", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "BCD111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT321", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB06", "entity_type": "server", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT111", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "FGH901", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Architect"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional validation and verification", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional validation and verification of network configuration", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT135", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT678", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB07", "entity_type": "network", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-1118", "serial_number": "SN1111166", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Network Security", "service_type": "Software", "managed_by_team": "CyberSecurity"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "HJK234", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "93%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT987", "action_description": "Replace faulty network device with a new one and perform additional validation of network configuration", "agent_id": "AGT543", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB08", "entity_type": "network", "trouble_ticket_id": "XTT123"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB09", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "93%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "XYZ111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB10", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+GetIncidentSequence: {"trouble_ticket_id": "XTT123", "event_id": "EVT101", "timestamp": "2023-02-17 12:00:00"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Network Security", "service_type": "Infrastructure", "managed_by_team": "CyberSecurity"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "GHI111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "93%"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "93%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB11", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "RST345", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "RST345", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "RST345", "metric_id": "ABC444", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "JKL111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "MNP234", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+FindCausalInterventions: {"change_id": "MNO111", "change_description": "Database update and user authentication modification", "start_time": "2022-02-01 11:00:00", "resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "System Uptime", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "MNP234", "resource_label": "Shared Resource"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB12", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "EVT012", "timestamp": "2023-02-20 15:10:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN1234567", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "System Uptime", "metric_value": "97%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "LMN456", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+FindCausalInterventions: {"change_id": "PQR234", "change_description": "Operating system update and disk space expansion", "start_time": "2022-03-01 09:00:00", "resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "NOP345", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+FindCausalInterventions: {"change_id": "STU456", "change_description": "Network interface update and driver installation", "start_time": "2022-04-01 13:00:00", "resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "System Uptime", "metric_value": "93%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB13", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "ABC222", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional validation of network configuration", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB14", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Network Security", "service_type": "Software", "managed_by_team": "CyberSecurity"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "ABC333", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"importance_level": "medium", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB15", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT789"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Network Security", "service_type": "Software", "managed_by_team": "CyberSecurity"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "ABC111", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT789", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT789", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB16", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"trouble_ticket_id": "XTT123", "event_id": "EVT901", "timestamp": "2023-02-22 11:50:00"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT901"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT901"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN987654", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN9876543", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN9876543", "resource_type": "server", "usage_state": "active"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "ABC777", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT901", "originator_id": "AGT111", "originator_role": "Technician"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network connectivity issue", "notes": "The problem was solved by restarting the router."}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Network Support Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB17", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network"}
+IdentifyIncidentImpact: {"entity_id": "XTT123-DB18", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT901"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT901"}
+MapEventsToResources: {"resource_id": "GHI012", "event_id": "EVT901"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN9876543", "resource_type": "server", "usage_state": "active"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "new-resource-12345", "serial_number": "SN9876543", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Natural Language Processing", "service_type": "Software", "managed_by_team": "AIEngineering"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+FindSharedAssets: {"service_id": "PQR678", "resource_id": "ABC999", "resource_label": "Shared Resource"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "Network Throughput", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "GHI012", "metric_id": "PQR111", "metric_name": "System Uptime", "metric_value": "93%"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+IdentifyEventSource: {"event_id": "EVT901", "originator_id": "AGT111", "originator_role": "Engineer"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+FindCorrelatedEvents: {"event_id": "EVT901", "corr_id": "EVN012"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional analysis", "agent_id": "AGT123", "agent_label": "Senior Network Support Specialist", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"action_id": "ACT111", "action_description": "Replace faulty network device with a new one and perform additional validation", "trouble_ticket_id": "XTT123"}

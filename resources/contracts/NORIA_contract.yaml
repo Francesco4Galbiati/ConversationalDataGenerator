@@ -1,0 +1,334 @@
+intents:
+  IdentifyIncidentImpact:
+    preconditions:
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      description: "Identifies a new system element which has been affected by a logged incident ticket, specifying the id of the component and its type (hardware, application, or site)" 
+    postconditions:
+      classes: {entity: ManagedElement}
+      slots: {entity_id: id, entity_type: str}
+      triples: [[entity_id, type, ManagedElement],[trouble_ticket_id, eventRelatedElement, entity_id]]
+
+  FindSharedAssets:
+    preconditions:
+      classes: {service: Service}
+      slots: {service_id: id}
+      description: "Identifies a resource shared by an already existing service. Each resource is defined by an id and a label"
+      cardinality: 1
+    postconditions:
+      classes: {resource: Resource}
+      slots: {resource_id: id, resource_label: str}
+      triples: [[resource_id, type, Resource],[resource_id, label, resource_label],[resource_id, subSystemOf, service_id]]
+
+  GetResourceLogs:
+    preconditions:
+      classes: {resource: Resource}
+      slots: {resource_id: id}
+      description: "Retrieves history from an existing asset, specifying the log entry's id, time, and message"
+    postconditions:
+      classes: {log: EventRecord}
+      slots: {log_id: id, log_time: datetime, log_message: str}
+      triples: [[log_id, type, EventRecord],[log_id, logOriginatingManagedObject, resource_id],[log_id, loggingTime, log_time],[log_id, logText, log_message]]
+
+  GetResourceMetrics:
+    preconditions:
+      classes: {resource: StructuralElement}
+      slots: {resource_id: id}
+      description: "Queries one current telemetry or operational state value, retrieving a metric identified by an id, a name, and a measured value"
+      cardinality: 1
+    postconditions:
+      classes: {metric: Property}
+      slots: {metric_id: id, metric_name: str, metric_value: str}
+      triples: [[metric_id, type, Metric],[metric_id, metricName, metric_name],[metrict_id, metricValue, metric_value],[resource_id, structuralElementObservable, metric_name]]
+
+  FindCorrelatedEvents:
+    preconditions:
+      classes: {event: EventRecord}
+      slots: {event_id: id}
+      description: "Fnds an event associated with an already logged alarm. The correlated log entry is characterized by its id, date, and message"
+      cardinality: 1
+    postconditions:
+      classes: {correlated_event: EventRecord, log_time: datetime, log_message: str}
+      slots: {corr_id: id}
+      triples: [[cor_id, type, EventRecord],[corr_id, loggingTime, log_time],[corr_id, logText, log_message],[event_id, relation, corr_id]]
+
+  IdentifyEventSource:
+    preconditions:
+      classes: {event: EventRecord}
+      slots: {event_id: id}
+      description: "Identifies the agent (who or what) that caused a logged event, specifying the 'originator_id' and the 'role' string."
+      cardinality: 1
+    postconditions:
+      classes: {originator: Agent}
+      slots: {originator_id: id, originator_role: str}
+      triples: [[originator_id, type, Agent],[originator_id, role, originator_role],[event_id, logOriginatingAgent, originator_id]]
+
+  DetectAlarmPatterns:
+    preconditions:
+      classes: {event: EventRecord}
+      slots: {event_id: id}
+      description: "Identifies if an event log matches a failure pattern, by populating the 'pattern_id' and its 'description'."
+      cardinality: 1
+    postconditions:
+      classes: {pattern: AnomalyPattern}
+      slots: {pattern_id: id, description: str}
+      triples: [[pattern_id, type, Pattern],[pattern_id, label, description],[event_id, conformsTo, pattern_id]]
+
+  FindCausalInterventions:
+    preconditions:
+      classes: {resource: Resource, event: EventRecord}
+      slots: {resource_id: id, event_id: id}
+      description: "Checks for interventions that could have caused an already logged event on an existing resource, and identifies the id of the intervention, its description, and the starting time."
+      cardinality: 1
+    postconditions:
+      classes: {change: ChangeRequest}
+      slots: {change_id: id, change_description: str, start_time: datetime}
+      triples: [[change_id, type, Change],[change_id, description, change_description],[change_id, changeRequestActualStartTime, start_time],[change_id, changeRequestImpact, resource_id],[change_id, correlatedNotifications, event_id]]
+
+  IdentifyRootCause:
+    preconditions:
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      description: "Retrieves the final root cause of an issue, specifying the issue's problem category and the responsibility associated with it"
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {category_name: str, responsibility: str}
+      triples: [[trouble_ticket_id, problemCategory, category_name], [trouble_ticket_id, problemResponsibility, responsibility]]
+
+  GetIncidentSequence:
+    preconditions:
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      description: "Lists one event that lead to a logged incident ticket, specifying the id of one of the event and the moment in which it happened"
+      cardinality: 1
+    postconditions:
+      classes: {event: EventRecord}
+      slots: {event_id: id, timestamp: datetime}
+      triples: [[event_id, type, EventRecord],[event_id, loggingTime, timestamp],[trouble_ticket_id, relation, event_id]]
+
+  MapEventsToResources:
+    preconditions:
+      description: "Maps a logged event to an existing physical assets"
+      classes: {resource: Resource, event: EventRecord}
+      slots: {resource_id: id, event_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {}
+      triples: [[event_id, logOriginatingManagedObject, resource_id]]
+
+  FindSimilarIncidents:
+    preconditions:
+      description: "Finds a past incident ticket similar to an already logged one of a known category, specifying the id of the new incident's ticket"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id, ticket_category: str}
+      cardinality: 1
+    postconditions:
+      classes: {similar_trouble_ticket: TroubleTicket}
+      slots: {similar_ticket_id: id}
+      triples: [[similar_id, type, TroubleTicket],[similar_id, problemCategory, ticket_category],[similar_id, problemCategory, category_id]]
+
+  SuggestOperationPlan:
+    preconditions:
+      description: "Suggests a procedure to solve a certain event, by defining the id of the procedure, as well as its description and expected outcome"
+      classes: {event: EventRecord}
+      slots: {event_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {plan: OperationPlan}
+      slots: {plan_id: id, plan_description: str, plan_outcome: str}
+      triples: [[plan_id, type, OperationPlan],[plan_id, description, description],[plan_id, operationPlanPostCondition, plan_outcome],[event_id, alarmProposedReapairAction, plan_id]]
+
+  SummarizeCorrectiveActions:
+    preconditions:
+      description: "Summarizes who did what during the resolution of an existing trouble ticket, by specifying the action that was performed (id and description), and the agent that performed it (id and label)"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {action: ProcedureExecution, agent: Agent}
+      slots: {action_id: id, action_description: str, agent_id: id, agent_label: str}
+      triples: [[action_id, type, ProcedureExecution],[agent_id, type, Agent],[action_id, description, action_description],[trouble_ticket_id, hasPart, action_id], [action_id, madeBy, agent_id], [agent_id, label, agent_label]]
+
+  IdentifyResolvingActions:
+    preconditions:
+      description: "Identifies the specific action that solved an already logged incident ticket, by specifying the id and the description of the action"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {action: ProcedureExecution}
+      slots: {action_id: id, action_description: str}
+      triples: [[action_id, type, ProcedureExecution], [action_id, description, action_description], [trouble_ticket_id, alarmMitigatedBy, action_id]]
+
+  VerifyActionEffects:
+    preconditions:
+      description: "Describes the expected effect of a logged corrective action."
+      classes: {action: ProcedureExecution}
+      slots: {action_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {expected_effect: str}
+      triples: [[plan_id, operationPlanPostCondition, expected_effect]]
+
+  GetIncidentSummary:
+    preconditions:
+      description: "Provides a summary of the resolution of a logged incident ticket, specifying its status, cause, and eventual notes"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {status: status, cause_text: str, notes: str}
+      triples: [[trouble_ticket_id, troubleTicketStatusCurrent, status], [trouble_ticket_id, troubleTicketCause, cause_text], [trouble_ticket_id, notes, notes]]
+
+  ListInvolvedAgents:
+    preconditions:
+      description: "Describes an agent involved in the resolution of an incident ticket, providing the agent's id and label"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {agent: Agent}
+      slots: {agent_id: id, agent_label: str}
+      triples: [[agent_id, type, Agent],[agent_id, label, agent_label],[trouble_ticket_id, troubleTicketRelatedParty, agent_id]]
+
+  GetIncidentBusinessImpact:
+    preconditions:
+      description: "Estimates the financial/business cost of a logged incident ticket, describing its importance level"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {importance_level: importance_level}
+      triples: [[trouble_ticket_id, applicationBusinessImportance, importance_level]]
+
+  GetResolutionDeadlines:
+    preconditions:
+      description: "Tracks how long until the resolution of a ticket is required, describing its target resolution time and the actual commitment time of the solution"
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {target_time: datetime, committed_time: datetime}
+      triples: [[trouble_ticket_id, troubleTicketTargetRestorationDateTime, target_time],[trouble_ticket_id, troubleTicketCommittedRestorationDateTime, committed_time]]
+
+  AssessInfrastructureRisk:
+    preconditions:
+      description: "Identifies the risk to which an existing system is subject, specifying the risk level and the vulnerability information"
+      classes: {system: System}
+      slots: {system_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {}
+      slots: {risk_level: str, vulnerability_info: str}
+      triples: [[system_id, applicationBusinessImportance, risk_level],[system_id, label, vulnerability_info]]
+
+  PredictFailureSequence:
+    preconditions:
+      description: "Predicts a failure sequence for an existing system, describing the predicted anomaly with an id and a description"
+      classes: {system: System}
+      slots: {system_id: id}
+      cardinality: 1
+    postconditions:
+      classes: {pattern: AnomalyPattern}
+      slots: {pattern_id: id, sequence_description: str}
+      triples: [[pattern_id, type, AnomalyPattern],[pattern_id, hasPart, sequence_description]]
+
+  OpenTroubleTicket:
+    preconditions: 
+      classes: {resource: Resource}
+      slots: {resource_id: id}
+      description: "Opens a trouble ticket for an existing resource, providing its id and description"
+      cardinality: 1
+    postconditions:
+      classes: {trouble_ticket: TroubleTicket}
+      slots: {trouble_ticket_id: id, trouble_ticket_description: str}
+      triples: [[trouble_ticket_id, type, TroubleTicket], [trouble_ticket_id, description, trouble_ticket_description], [trouble_ticket_id, eventRelatedElement, resource_id]]
+
+  RegisterNewService:
+    preconditions:
+      classes: {}
+      slots: {}
+      description: "Achieves the creation of a new Service record, specifying the sreivec's id, name, type, and the name of the team that manages it"
+      cardinality: 1
+    postconditions:
+      classes: {service: Service}
+      slots: {service_id: id, service_name: str, service_type: str, managed_by_team: str}
+      triples:
+        - [service_id, type, Service]
+        - [service_id, label, service_name]
+        - [service_id, serviceType, service_type]
+        - [service_id, elementManagedBy, managed_by_team]
+
+  RegisterNewResource:
+    preconditions:
+      classes: {}
+      slots: {}
+      description: "Cchieves the registration of a new resource asset, characterized by its id, serial number, hostname, type, and usage state"
+      cardinality: 1
+    postconditions:
+      classes: {resource: Resource}
+      slots: {resource_id: id, hostname: str, serial_number: str, resource_type: str, usage_state: str}
+      triples:
+        - [resource_id, type, Resource]
+        - [resource_id, resourceHostName, hostname]
+        - [resource_id, resourceSerialNumber, serial_number]
+        - [resource_id, resourceType, resource_type]
+        - [resource_id, resourceUsageState, usage_state]
+
+  InitializeSystemGroup:
+    preconditions: 
+      classes: {}
+      slots: {}
+      description: "Achieves the definition of a new asset system, specifying its id, label, and importance level"
+      cardinality: 1
+    postconditions:
+      classes: {system: System}
+      slots: {system_id: id, system_label: str, importance_level: importance_level}
+      triples:
+        - [system_id, type, System]
+        - [system_id, label, system_label]
+        - [system_id, applicationBusinessImportance, importance_level]
+
+types:
+  status:
+    type: 'str'
+    options: ["open", "closed"]
+    text: 'Observed values in evaluation queries: "open", "closed"'
+  severity_level:
+    type: 'str'
+    options: ["minor", "major", "critical"]
+    text: 'Observed values in evaluation queries: "minor", "major", "critical"'
+  importance_level:
+    type: 'str'
+    options: ["low", "medium", "high"]
+    text: 'Observed values in evaluation queries: "low", "medium", "high"'
+
+subclasses: []
+precondition_slots: ['trouble_ticket_id', 'service_id', 'resource_id', 'event_id', 'action_id']
+repeatable_terms: ['status', 'log_time', 'metric_name', 'metric_value', 'originator_role', 'start_time', 'responsibility', 'timestamp', 'plan_outcome', 'importance_level', 'service_type', 'resource_type', 'usage_state', 'risk_level']
+
+instructions:
+  ConfigurationAndAssetManagement:
+    inst: ["RegisterNewService", "RegisterNewResource", "InitializeSystemGroup"]
+    cardinality: 3
+  ResourceAndInfrastructureMonitoring:
+    inst: ["GetResourceMetrics", "FindSharedAssets", "AssessInfrastructureRisk", "PredictFailureSequence", "OpenTroubleTicket"]
+    cardinality: 4
+  EventAndLogAnalysis:
+    inst: ["GetResourceLogs", "FindCorrelatedEvents", "IdentifyEventSource", "DetectAlarmPatterns"]
+    cardinality: 4
+  ResolutionAndOperations:
+    inst: ["SuggestOperationPlan", "SummarizeCorrectiveActions", "IdentifyResolvingActions", "VerifyActionEffects"]
+    cardinality: 4
+  IncidentManagementAndReporting:
+    inst: ["GetIncidentSummary", "ListInvolvedAgents", "GetIncidentBusinessImpact", "GetResolutionDeadlines"]
+    cardinality: 4
+  IncidentAnalysisAndDiagnosis:
+    inst: ["IdentifyIncidentImpact", "FindCausalInterventions", "IdentifyRootCause", "GetIncidentSequence", "MapEventsToResources", "FindSimilarIncidents"]
+    cardinality: 6

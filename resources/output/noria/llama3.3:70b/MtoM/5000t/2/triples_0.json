@@ -1,0 +1,617 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "Customer Support", "service_type": "Technical", "managed_by_team": "Operations Team"}
+RegisterNewResource: {"resource_id": "ABC456", "hostname": "server01", "serial_number": "SN12345", "resource_type": "compute", "usage_state": "available", "SERVICE_ID": "ABC123"}
+InitializeSystemGroup: {"system_id": "ABC123", "system_label": "System Group for ABC123 and ABC456", "importance_level": "high"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "MET789", "metric_name": "CPU Usage", "metric_value": "75%"}
+FindSharedAssets: {"resource_id": "DEF789", "resource_label": "Shared Asset", "service_id": "ABC123"}
+OpenTroubleTicket: {"trouble_ticket_id": "XTT123", "trouble_ticket_description": "Issue with resource ABC456", "resource_id": "ABC456"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "DEF123", "metric_name": "Memory Usage", "metric_value": "60%"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG789", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG123", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG101", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "ABC456", "log_id": "LOG111", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT456", "action_description": "Troubleshoot and restart server", "agent_id": "AGT789", "agent_label": "Senior Technician"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT789", "action_description": "Run diagnostic tests and apply software patches"}
+SummarizeCorrectiveActions: {"action_id": "ACT123", "action_description": "Ran network configuration checks and updated firewall rules", "agent_id": "AGT123", "agent_label": "Junior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT012", "action_description": "Ran system diagnostics and applied security updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "high"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+GetIncidentSequence: {"event_id": "XTT456", "timestamp": "2023-02-15 14:30:00", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "ABC456", "event_id": "XTT456"}
+RegisterNewResource: {"resource_id": "GHI012", "hostname": "server02", "serial_number": "SN67890", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "DEF456", "service_name": "Technical Assistance", "service_type": "Consulting", "managed_by_team": "Support Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server03", "serial_number": "SN11111", "resource_type": "network", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC456", "metric_id": "GHI012", "metric_name": "Disk Usage", "metric_value": "80%"}
+FindSharedAssets: {"resource_id": "MNO678", "resource_label": "Shared Asset", "service_id": "ABC123"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC456", "metric_name": "Network Usage", "metric_value": "90%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "MNO111", "metric_name": "CPU Temperature", "metric_value": "85%"}
+FindCorrelatedEvents: {"corr_id": "XTT123", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGN123", "originator_role": "System Administrator"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB789", "originator_role": "Network Engineer"}
+FindCorrelatedEvents: {"corr_id": "XTT789", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT101", "action_description": "Ran malware removal and updated antivirus software", "agent_id": "AGT456", "agent_label": "Intermediate Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT901", "action_description": "Ran disk cleanup and defragmentation"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT012", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT234", "action_description": "Ran system file checks and updated drivers"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "low"}
+ListInvolvedAgents: {"agent_id": "AGT101", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "ABC123", "change_description": "System update and restart", "start_time": "2022-01-01 12:00:00"}
+RegisterNewResource: {"resource_id": "PQR234", "hostname": "server04", "serial_number": "SN90123", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server05", "serial_number": "SN23456", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "GHI789", "service_name": "Client Service", "service_type": "Consulting", "managed_by_team": "Management Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "PQR678", "metric_name": "GPU Usage", "metric_value": "95%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "STU234", "metric_name": "Battery Usage", "metric_value": "70%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "VWX901", "metric_name": "Power Consumption", "metric_value": "98%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "TUV567", "metric_name": "Fan Speed", "metric_value": "92%"}
+FindCorrelatedEvents: {"corr_id": "XTT101", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGO432", "originator_role": "Security Analyst"}
+GetResourceLogs: {"resource_id": "JKL345", "log_id": "LOG456", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+FindCorrelatedEvents: {"corr_id": "XTT012", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT901", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT678", "action_description": "Ran system diagnostics and applied software patches"}
+SummarizeCorrectiveActions: {"action_id": "ACT345", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT567", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT999", "action_description": "Ran system performance checks and optimized configuration settings"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT111", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "DEF789", "change_description": "Software patch installation", "start_time": "2022-01-05 14:30:00"}
+RegisterNewResource: {"resource_id": "STU111", "hostname": "server06", "serial_number": "SN22222", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server07", "serial_number": "SN98765", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "JKL012", "service_name": "Client Relations", "service_type": "Consulting", "managed_by_team": "Sales Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "YZA111", "metric_name": "Battery Health", "metric_value": "88%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "EFG234", "metric_name": "Battery Charge", "metric_value": "62%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "BCD456", "metric_name": "Battery Level", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "CDE678", "metric_name": "Network Latency", "metric_value": "40%"}
+FindCorrelatedEvents: {"corr_id": "XTT567", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB111", "originator_role": "Database Administrator"}
+FindCorrelatedEvents: {"corr_id": "XTT901", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB421", "originator_role": "Software Engineer"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT045", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "GHI012", "change_description": "Hardware replacement and configuration update", "start_time": "2022-01-10 10:00:00"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server08", "serial_number": "SN11111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server09", "serial_number": "SN11111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "MNO345", "service_name": "Client Engagement", "service_type": "Consulting", "managed_by_team": "Marketing Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "FGH456", "metric_name": "Network Throughput", "metric_value": "42%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "HIJ012", "metric_name": "Network Usage", "metric_value": "72%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "IJK234", "metric_name": "Network Usage", "metric_value": "96%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "PQR123", "metric_name": "Network Usage", "metric_value": "92%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB112", "originator_role": "Data Analyst"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB113", "originator_role": "Technical Support"}
+FindCorrelatedEvents: {"corr_id": "XTT222", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran network configuration checks and updated firewall rules"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT456", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "MNO678", "change_description": "Network configuration update and security patch installation", "start_time": "2022-01-15 16:00:00"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server10", "serial_number": "SN111111", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server11", "serial_number": "SN111112", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "PQR678", "service_name": "Client Experience", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "XYZ789", "metric_name": "Network Usage", "metric_value": "99%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "RST234", "metric_name": "Network Usage", "metric_value": "94%"}
+FindSharedAssets: {"resource_id": "VWX901", "resource_label": "Shared Asset", "service_id": "MNO345"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "PQR234", "metric_name": "Network Usage", "metric_value": "92%"}
+FindCorrelatedEvents: {"corr_id": "XTT333", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB911", "originator_role": "Data Scientist"}
+FindCorrelatedEvents: {"corr_id": "XTT444", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT888", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT456", "action_description": "Ran network configuration checks and updated firewall rules"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT234", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "PQR234", "change_description": "Database update and optimization", "start_time": "2022-02-01 11:00:00"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server12", "serial_number": "SN111113", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server13", "serial_number": "SN111114", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU901", "service_name": "Customer Engagement", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "KLM678", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "NOP111", "metric_name": "Network Usage", "metric_value": "93%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "TUW111", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC012", "metric_name": "Network Usage", "metric_value": "89%"}
+FindCorrelatedEvents: {"corr_id": "XTT999", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB114", "originator_role": "Network Architect"}
+FindCorrelatedEvents: {"corr_id": "XTT112", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT456", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Ran disk cleanup and defragmentation", "agent_id": "AGT101", "agent_label": "Junior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Ran disk cleanup and defragmentation", "agent_id": "AGT101", "agent_label": "Junior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran network configuration checks and updated firewall rules"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT999", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "STU901", "change_description": "System update and security patch installation", "start_time": "2022-03-01 09:00:00"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server14", "serial_number": "SN111115", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "VWX111", "service_name": "Customer Relations Management", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server15", "serial_number": "SN111116", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "EFG012", "metric_name": "Network Usage", "metric_value": "86%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC789", "metric_name": "Network Usage", "metric_value": "83%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "85%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "GHI789", "metric_name": "Network Usage", "metric_value": "87%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB115", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT888", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT789", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindCausalInterventions: {"resource_id": "JKL345", "event_id": "XTT456", "change_id": "VWX111", "change_description": "System update and configuration adjustment", "start_time": "2022-04-01 12:30:00"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server16", "serial_number": "SN111117", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server17", "serial_number": "SN111118", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "YZA222", "service_name": "Customer Care", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "MNP012", "metric_name": "Network Usage", "metric_value": "84%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC111", "metric_name": "Network Usage", "metric_value": "81%"}
+FindSharedAssets: {"resource_id": "YZA111", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC234", "metric_name": "Network Usage", "metric_value": "79%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB116", "originator_role": "Cloud Engineer"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT012", "action_description": "Ran disk cleanup and defragmentation", "agent_id": "AGT101", "agent_label": "Junior Technician", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT042", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "XTT123", "entity_id": "SYS456", "entity_type": "hardware"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "application", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT901", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server18", "serial_number": "SN111119", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server19", "serial_number": "SN111120", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU902", "service_name": "Customer Interaction", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC999", "metric_name": "Network Usage", "metric_value": "43%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC567", "metric_name": "Network Usage", "metric_value": "78%"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC012", "metric_name": "CPU Usage", "metric_value": "85%"}
+FindSharedAssets: {"resource_id": "EFG123", "resource_label": "Shared Asset", "service_id": "STU901"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB117", "originator_role": "DevOps Engineer"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT135", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS123", "entity_type": "network", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT234", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS012", "entity_type": "database", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+MapEventsToResources: {"resource_id": "JKL345", "event_id": "XTT456"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server20", "serial_number": "SN111121", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU903", "service_name": "Customer Interaction Management", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+RegisterNewResource: {"resource_id": "JKL345", "hostname": "server21", "serial_number": "SN111122", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "JKL345", "metric_id": "ABC321", "metric_name": "Network Usage", "metric_value": "74%"}
+FindSharedAssets: {"resource_id": "BCD456", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "GHI234", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH789", "metric_name": "Network Usage", "metric_value": "91%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB118", "originator_role": "Cloud Security Engineer"}
+FindCorrelatedEvents: {"corr_id": "XTT555", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT678", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches", "agent_id": "AGT123", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT314", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS101", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT111", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS901", "entity_type": "server", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"trouble_ticket_id": "XTT123", "event_id": "ABC456", "timestamp": "2023-02-16 10:00:00"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server22", "serial_number": "SN111123", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server23", "serial_number": "SN111124", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server24", "serial_number": "SN111125", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "EFG567", "metric_name": "Network Usage", "metric_value": "71%"}
+FindSharedAssets: {"resource_id": "CDE678", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "EFG012", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindCorrelatedEvents: {"corr_id": "XTT789", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT789", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB119", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran network configuration checks and updated firewall rules"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT219", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS111", "entity_type": "network", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+GetIncidentSequence: {"event_id": "ABC123", "timestamp": "2023-02-17 12:00:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS222", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server25", "serial_number": "SN111126", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server26", "serial_number": "SN111127", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU904", "service_name": "Customer Interaction Management", "service_type": "Technical", "managed_by_team": "Support Team"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "ABC111", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "JKL012", "metric_name": "Network Usage", "metric_value": "41%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "XTT456", "originator_id": "AGB120", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT789", "event_id": "XTT456"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT315", "agent_label": "Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS333", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+GetIncidentSequence: {"event_id": "ABC789", "timestamp": "2023-02-18 15:45:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS444", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server27", "serial_number": "SN111228", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server28", "serial_number": "SN111129", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU905", "service_name": "Customer Feedback", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "GHI012", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "EFG111", "metric_name": "Network Usage", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "ABC222", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH111", "metric_name": "Network Usage", "metric_value": "97%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "XTT456"}
+IdentifyEventSource: {"event_id": "ABC123", "originator_id": "AGB121", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT234", "event_id": "ABC123"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran network configuration checks and updated firewall rules"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS555", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+GetIncidentSequence: {"event_id": "ABC012", "timestamp": "2023-02-19 11:15:00", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server29", "serial_number": "SN111130", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server30", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server31", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "BCD123", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindCorrelatedEvents: {"corr_id": "XTT345", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB122", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT666", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT897", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS678", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network"}
+IdentifyIncidentImpact: {"entity_id": "SYS666", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC901", "timestamp": "2023-02-20 09:00:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "BCD789", "hostname": "server32", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server33", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server34", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "ABC333", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindCorrelatedEvents: {"corr_id": "XTT114", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB123", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT675", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+FindCausalInterventions: {"resource_id": "BCD456", "event_id": "ABC012", "change_id": "JKL345", "change_description": "System update and configuration adjustment", "start_time": "2022-05-01 13:00:00"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server35", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server36", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU906", "service_name": "Customer Loyalty", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "EFG321", "metric_name": "Network Usage", "metric_value": "45%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "GHI111", "metric_name": "Network Usage", "metric_value": "46%"}
+FindCorrelatedEvents: {"corr_id": "XTT681", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB124", "originator_role": "Network Security Specialist"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB125", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS888", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC111", "timestamp": "2023-02-21 16:30:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server37", "serial_number": "SN111228", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server38", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server39", "serial_number": "SN111228", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "GHI567", "metric_name": "Network Usage", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "ABC999", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "GHI012", "metric_name": "Network Usage", "metric_value": "97%"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "97%"}
+FindCorrelatedEvents: {"corr_id": "XTT825", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB126", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT942", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS999", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+MapEventsToResources: {"resource_id": "BCD456", "event_id": "ABC012"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server40", "serial_number": "SN987654", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "BCD456", "hostname": "server41", "serial_number": "SN9876543", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU907", "service_name": "Customer Satisfaction", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+GetResourceMetrics: {"resource_id": "BCD456", "metric_id": "EFG012", "metric_name": "Network Usage", "metric_value": "97%"}
+FindSharedAssets: {"resource_id": "XYZ111", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC333", "metric_id": "EFG890", "metric_name": "Network Usage", "metric_value": "49%"}
+GetResourceMetrics: {"resource_id": "ABC333", "metric_id": "GHI890", "metric_name": "Network Usage", "metric_value": "97%"}
+FindCorrelatedEvents: {"corr_id": "XTT826", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB789", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT456", "action_description": "Ran network configuration checks and updated firewall rules"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran network configuration checks and updated firewall rules"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS234", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS345", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC234", "timestamp": "2023-02-22 13:15:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server42", "serial_number": "SN98765432", "resource_type": "compute", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server43", "serial_number": "SN987654321", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server45", "serial_number": "SN9876543210", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH345", "metric_name": "Network Usage", "metric_value": "58%"}
+FindSharedAssets: {"resource_id": "ABC567", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR012", "metric_name": "Network Usage", "metric_value": "42%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR345", "metric_name": "Memory Usage", "metric_value": "42%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB789", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS567", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC567", "timestamp": "2023-02-23 14:15:00", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC012"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server46", "serial_number": "SN9876543211", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server47", "serial_number": "SN9876543212", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server48", "serial_number": "SN9876543213", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "ABC888", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "GHI345", "metric_name": "Network Usage", "metric_value": "42%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR901", "metric_name": "Network Usage", "metric_value": "50%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+IdentifyEventSource: {"event_id": "ABC012", "originator_id": "AGB127", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC012"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+GetIncidentSequence: {"event_id": "ABC678", "timestamp": "2023-02-24 10:45:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "Network Issue"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server49", "serial_number": "SN9876543214", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server50", "serial_number": "SN9876543215", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server51", "serial_number": "SN9876543216", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "ABC123", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR111", "metric_name": "Network Usage", "metric_value": "67%"}
+FindCorrelatedEvents: {"corr_id": "XTT982", "event_id": "ABC678"}
+IdentifyEventSource: {"event_id": "ABC678", "originator_id": "AGB128", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC345", "timestamp": "2023-02-25 12:00:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server52", "serial_number": "SN9876543217", "resource_type": "storage", "usage_state": "available"}
+RegisterNewService: {"service_id": "STU908", "service_name": "Customer Success", "service_type": "Consulting", "managed_by_team": "Operations Team"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server53", "serial_number": "SN9876543218", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "91%"}
+FindSharedAssets: {"resource_id": "ABC789", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "82%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+IdentifyEventSource: {"event_id": "ABC678", "originator_id": "AGB129", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+GetIncidentSequence: {"event_id": "ABC999", "timestamp": "2023-02-26 17:00:00", "trouble_ticket_id": "XTT123"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server54", "serial_number": "SN9876543219", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server55", "serial_number": "SN98765432123", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server56", "serial_number": "SN98765432123", "resource_type": "compute", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "82%"}
+FindSharedAssets: {"resource_id": "ABC012", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Memory Usage", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "82%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+IdentifyEventSource: {"event_id": "ABC678", "originator_id": "AGB130", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT567", "action_description": "Ran system diagnostics and applied security patches"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+ListInvolvedAgents: {"agent_id": "AGT678", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}
+FindSimilarIncidents: {"similar_ticket_id": "XTT012", "trouble_ticket_id": "XTT123", "ticket_category": "network"}
+IdentifyIncidentImpact: {"entity_id": "SYS789", "entity_type": "software", "trouble_ticket_id": "XTT123"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+MapEventsToResources: {"resource_id": "ABC444", "event_id": "ABC678"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server57", "serial_number": "SN98765432127", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server58", "serial_number": "SN98765432128", "resource_type": "storage", "usage_state": "available"}
+RegisterNewResource: {"resource_id": "ABC444", "hostname": "server59", "serial_number": "SN98765432129", "resource_type": "storage", "usage_state": "available"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "FGH012", "metric_name": "Network Usage", "metric_value": "82%"}
+FindSharedAssets: {"resource_id": "ABC234", "resource_label": "Shared Asset", "service_id": "STU901"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR567", "metric_name": "Network Usage", "metric_value": "82%"}
+GetResourceMetrics: {"resource_id": "ABC444", "metric_id": "PQR111", "metric_name": "Network Usage", "metric_value": "82%"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+IdentifyEventSource: {"event_id": "ABC678", "originator_id": "AGB131", "originator_role": "Network Security Specialist"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+FindCorrelatedEvents: {"corr_id": "XTT111", "event_id": "ABC678"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied security patches"}
+SummarizeCorrectiveActions: {"action_id": "ACT567", "action_description": "Ran system diagnostics and applied software updates", "agent_id": "AGT456", "agent_label": "Senior Technician", "trouble_ticket_id": "XTT123"}
+IdentifyResolvingActions: {"trouble_ticket_id": "XTT123", "action_id": "ACT111", "action_description": "Ran system diagnostics and applied software updates"}
+GetIncidentSummary: {"trouble_ticket_id": "XTT123", "status": "resolved", "cause_text": "network failure", "notes": "issue fixed after restarting server"}
+GetIncidentBusinessImpact: {"trouble_ticket_id": "XTT123", "importance_level": "medium"}

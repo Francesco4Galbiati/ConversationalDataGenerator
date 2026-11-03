@@ -1,0 +1,137 @@
+RegisterNewService: {"service_id": "SVR001", "service_name": "CustomerPortal", "service_type": "WebApp", "managed_by_team": "PlatformTeam"}
+FindSharedAssets: {"service_id": "SVR001", "resource_id": "RSC045", "resource_label": "Database A"}
+GetResourceLogs: {"resource_id": "RSC045", "log_id": "LOG123", "log_time": "2023-08-15T14:23:00Z", "log_message": "Resource accessed for maintenance."}
+OpenTroubleTicket: {"resource_id": "RSC045", "trouble_ticket_id": "TTK001", "trouble_ticket_description": "Trouble ticket opened for resource RSC045"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "HW001", "entity_type": "application"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Network Configuration Error", "responsibility": "Network Team"}
+GetIncidentSummary: {"trouble_ticket_id": "TTK001", "status": "closed", "cause_text": "Network outage due to router failure", "notes": "Replaced faulty router and restored connectivity; ticket resolved."}
+IdentifyResolvingActions: {"trouble_ticket_id": "TTK001", "action_id": "ACT001", "action_description": "Rebooted the affected server to restore service"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Reduces system latency by 15%"}
+InitializeSystemGroup: {"system_id": "SG001", "system_label": "New Asset System", "importance_level": "medium"}
+RegisterNewResource: {"resource_id": "RSX001", "hostname": "host-046", "serial_number": "SN-046", "resource_type": "server", "usage_state": "active"}
+RegisterNewService: {"service_id": "SRV002", "service_name": "AnalyticsEngine", "service_type": "DataProcessing", "managed_by_team": "AnalyticsTeam"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC067", "resource_label": "Database B"}
+GetResourceLogs: {"resource_id": "RSX001", "log_id": "LM456", "log_time": "2023-10-05T14:23:00Z", "log_message": "Routine check completed."}
+OpenTroubleTicket: {"resource_id": "RSX001", "trouble_ticket_id": "TTK002", "trouble_ticket_description": "Trouble ticket opened for resource RSX001"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "APP001", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Network Configuration Error", "responsibility": "Network Team"}
+FindSimilarIncidents: {"trouble_ticket_id": "TTK001", "ticket_category": null, "similar_ticket_id": "INC123"}
+GetIncidentSequence: {"trouble_ticket_id": "TTK001", "event_id": "EVT001", "timestamp": "2023-07-15T10:30:00Z"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "EVT999"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": null, "originator_role": null}
+FindCausalInterventions: {"resource_id": "RSX001", "event_id": "EVT001", "change_id": "INT001", "change_description": "Applied security patch KB2023-07", "start_time": "2026-04-20T14:30:00Z"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": null, "description": "Overheating failure due to coolant loss"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC123", "resource_label": "Database C"}
+GetResourceLogs: {"resource_id": "RSX001", "log_id": "LX789", "log_time": "2026-05-04T10:15:00Z", "log_message": "Security scan completed successfully."}
+OpenTroubleTicket: {"resource_id": "RSX001", "trouble_ticket_id": "TTK003", "trouble_ticket_description": "Ticket created for resource RSX001"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "SVC001", "entity_type": "site"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Server Overload", "responsibility": "Operations Team"}
+FindSimilarIncidents: {"trouble_ticket_id": "TTK001", "ticket_category": null, "similar_ticket_id": "INC124"}
+SuggestOperationPlan: {"event_id": "EVT001", "plan_id": "OP001", "plan_description": "Implement immediate containment and data backup procedures", "plan_outcome": "Event resolved with minimal downtime"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "EVT456"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "USR001", "originator_role": "system"}
+FindCausalInterventions: {"resource_id": "RSX001", "event_id": "EVT001", "change_id": "INT002", "change_description": "Deployed version 3.2.1 of the application", "start_time": "2023-07-10T14:00:00Z"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT001", "description": "Overheating failure due to coolant loss"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC001", "resource_label": "Database D"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LG001", "log_time": "2026-05-04T10:15:30Z", "log_message": "Backup operation completed."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Reduces system latency by 15%"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TTK004", "trouble_ticket_description": "Trouble ticket opened for resource RSC001"}
+RegisterNewService: {"service_id": "SRV003", "service_name": "NewService", "service_type": "API", "managed_by_team": "DevOpsTeam"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK003", "entity_id": "HW002", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Hardware Failure", "responsibility": "Infrastructure Operations"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET123", "metric_name": "Utilization", "metric_value": "68%"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "EVT123"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": null, "description": "Overheating failure due to coolant loss"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "USR002", "originator_role": null}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC200", "resource_label": "Database E"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "AB001", "log_time": "2026-05-04T10:15:00Z", "log_message": "Configuration updated successfully."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Improves system stability"}
+FindCausalInterventions: {"resource_id": "RSC067", "event_id": "EVT001", "change_id": "INT003", "change_description": "Deployed configuration update to disable vulnerable service", "start_time": "2023-07-20T14:00:00Z"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TTK005", "trouble_ticket_description": "Issue reported for resource RSC001: performance degradation observed, requiring investigation."}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK003", "entity_id": "HW003", "entity_type": "hardware"}
+MapEventsToResources: {"resource_id": "RSC067", "event_id": "EVT001"}
+GetResourceMetrics: {"resource_id": "RSC045", "metric_id": "MET456", "metric_name": "CPU_Utilization", "metric_value": "73%"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "COR001"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT001", "description": null}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": null, "originator_role": "initiator"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC151", "resource_label": "Shared Storage X"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Software Bug", "responsibility": "Development Team"}
+GetIncidentSummary: {"trouble_ticket_id": "TTK003", "status": null, "cause_text": null, "notes": null}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "RC001", "log_time": "2023-10-05T14:23:00Z", "log_message": "Resource RSC001 accessed for audit."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Enhances data throughput"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "SIT001", "entity_type": "hardware"}
+OpenTroubleTicket: {"resource_id": "RSC067", "trouble_ticket_id": "TTK006", "trouble_ticket_description": "Trouble ticket opened for resource RSC067"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT001", "change_id": "INT004", "change_description": "Installed firewall rule update to block unauthorized ports", "start_time": "2023-06-15T09:30:00Z"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "EVT002"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT002", "description": "Pressure drop due to valve failure"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET001", "metric_name": "CPU_Usage", "metric_value": "75%"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "AGT003", "originator_role": "operator"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC250", "resource_label": "Shared Storage Y"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Database Corruption", "responsibility": "Operations Team"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "RV001", "log_time": "2026-05-04T10:15:00Z", "log_message": "Performance metrics recorded."}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Increases processing efficiency and reduces error rates"}
+MapEventsToResources: {"resource_id": "RSC067", "event_id": "EVT001"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK003", "entity_id": "HW004", "entity_type": "hardware"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TTK007", "trouble_ticket_description": "Trouble ticket opened for resource RSC001 due to performance degradation."}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "COR002"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT003", "description": "Temperature spike due to sensor fault"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT001", "change_id": "INT005", "change_description": "Enabled intrusion detection system monitoring", "start_time": "2026-04-30T10:15:00Z"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "AGT001", "originator_role": "system_admin"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC300", "resource_label": "Shared Storage Z"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK003", "category_name": "Power Outage", "responsibility": "Facilities"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Optimizes resource allocation and lowers power consumption"}
+GetResourceLogs: {"resource_id": "RSC067", "log_id": "LN042", "log_time": "2026-05-04T10:15:00Z", "log_message": "Log entry for resource RSC067 retrieved."}
+GetIncidentSequence: {"trouble_ticket_id": "TTK001", "event_id": "EVT002", "timestamp": "2023-07-15T10:30:00Z"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK003", "entity_id": "HW005", "entity_type": "site"}
+MapEventsToResources: {"resource_id": "RSC001", "event_id": "EVT001"}
+GetResourceMetrics: {"resource_id": "RSC067", "metric_id": "MET789", "metric_name": "Throughput", "metric_value": "1200 req/s"}
+SummarizeCorrectiveActions: {"trouble_ticket_id": "TTK004", "action_id": "ACT002", "action_description": "Applied security patch to resolve the reported vulnerability", "agent_id": "AG001", "agent_label": "System Administrator"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "AGT004", "originator_role": null}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "COR003"}
+FindSharedAssets: {"service_id": "SVR001", "resource_id": "RSC400", "resource_label": "Backup Archive"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Improves network reliability"}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT004", "description": "Flow obstruction due to filter clogging"}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LX001", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RSC001 status verified."}
+IdentifyRootCause: {"trouble_ticket_id": "TTK001", "category_name": "Application Misconfiguration", "responsibility": "IT Operations"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "HW006", "entity_type": "hardware"}
+FindCausalInterventions: {"resource_id": "RSC067", "event_id": "EVT001", "change_id": "INT002", "change_description": "Applied security patch KB2023-09", "start_time": "2023-08-15T02:30:00Z"}
+IdentifyResolvingActions: {"trouble_ticket_id": "TTK003", "action_id": "ACT003", "action_description": "Cleared cache and restarted the application service"}
+GetResourceMetrics: {"resource_id": "RSC067", "metric_id": "MET002", "metric_name": "CPU_Utilization", "metric_value": "73%"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "AGT005", "originator_role": "initiator"}
+GetIncidentSequence: {"trouble_ticket_id": "TTK003", "event_id": "EVT003", "timestamp": "2023-07-15T09:30:00Z"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC500", "resource_label": "Shared Storage Q"}
+FindCorrelatedEvents: {"event_id": "EVT002", "corr_id": "COR004"}
+GetResourceLogs: {"resource_id": "RSC123", "log_id": "ZX001", "log_time": "2026-05-04T10:15:30Z", "log_message": "Log entry for resource RSC123 retrieved."}
+DetectAlarmPatterns: {"event_id": "EVT001", "pattern_id": "PAT005", "description": "Flow obstruction due to pump failure"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Enhances fault tolerance"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "HW007", "entity_type": null}
+IdentifyRootCause: {"trouble_ticket_id": "TTK003", "category_name": null, "responsibility": null}
+FindCausalInterventions: {"resource_id": "RSC123", "event_id": "EVT002", "change_id": "INT006", "change_description": "Implemented network segmentation policy", "start_time": "2023-08-15T09:30:00Z"}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET321", "metric_name": "CPU_Utilization", "metric_value": "45%"}
+IdentifyEventSource: {"event_id": "EVT002", "originator_id": "AGT006", "originator_role": "system"}
+GetIncidentSequence: {"trouble_ticket_id": "TTK001", "event_id": "EVT004", "timestamp": "2023-07-15T10:23:00Z"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC600", "resource_label": "Shared Storage A"}
+FindCorrelatedEvents: {"event_id": "EVT001", "corr_id": "COR005"}
+OpenTroubleTicket: {"resource_id": "RSC067", "trouble_ticket_id": "TTK008", "trouble_ticket_description": "Trouble ticket opened for resource RSC067"}
+GetResourceLogs: {"resource_id": "RSC067", "log_id": "LG002", "log_time": "2026-05-04T10:15:00Z", "log_message": "Resource RSC067 status checked."}
+MapEventsToResources: {"resource_id": "RSC500", "event_id": "EVT004"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "HW008", "entity_type": null}
+IdentifyRootCause: {"trouble_ticket_id": "TTK005", "category_name": null, "responsibility": null}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Improves system scalability"}
+DetectAlarmPatterns: {"event_id": "EVT002", "pattern_id": null, "description": null}
+IdentifyEventSource: {"event_id": "EVT002", "originator_id": "AGT007", "originator_role": "agent"}
+FindCausalInterventions: {"resource_id": "RSC067", "event_id": "EVT001", "change_id": "INT002", "change_description": "Deployed emergency hotfix to address vulnerability", "start_time": "2023-08-15T10:30:00Z"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC777", "resource_label": "Analytics Engine"}
+OpenTroubleTicket: {"resource_id": "RSC001", "trouble_ticket_id": "TTK009", "trouble_ticket_description": "Trouble ticket opened for resource RSC001"}
+SuggestOperationPlan: {"event_id": "EVT002", "plan_id": "PL002", "plan_description": "Deploy network isolation and initiate forensic analysis to contain the breach and assess impact.", "plan_outcome": "Event neutralized, systems restored, and root cause identified."}
+GetResourceLogs: {"resource_id": "RSC001", "log_id": "LG003", "log_time": "2026-04-30T14:23:00Z", "log_message": "Log entry for resource RSC001 retrieved."}
+GetResourceMetrics: {"resource_id": "RSC001", "metric_id": "MET999", "metric_name": "CPU_Usage", "metric_value": "75%"}
+IdentifyIncidentImpact: {"trouble_ticket_id": "TTK001", "entity_id": "HW009", "entity_type": "hardware"}
+IdentifyRootCause: {"trouble_ticket_id": "TTK009", "category_name": "Security Incident", "responsibility": "Security Team"}
+VerifyActionEffects: {"action_id": "ACT001", "expected_effect": "Improves system security"}
+FindCorrelatedEvents: {"event_id": "EVT002", "corr_id": "COR006"}
+IdentifyEventSource: {"event_id": "EVT001", "originator_id": "AGT008", "originator_role": "system"}
+FindSharedAssets: {"service_id": "SRV002", "resource_id": "RSC801", "resource_label": "Data Lake"}
+DetectAlarmPatterns: {"event_id": "EVT004", "pattern_id": "PAT006", "description": "Valve leakage causing pressure drop"}
+FindCausalInterventions: {"resource_id": "RSC001", "event_id": "EVT002", "change_id": "CHG007", "change_description": "Applied configuration patch to mitigate memory leak vulnerability", "start_time": "2023-08-15T10:30:00Z"}
+RegisterNewService: {"service_id": "SVC004", "service_name": "DataWarehouse", "service_type": "Backend", "managed_by_team": "SecurityTeam"}

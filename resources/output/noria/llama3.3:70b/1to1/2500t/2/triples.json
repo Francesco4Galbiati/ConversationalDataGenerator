@@ -1,0 +1,681 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "New Service Registration", "service_type": "Technical Support", "managed_by_team": "Admin Team"}
+FindSharedAssets: {"resource_id": "XYZ789", "resource_label": "Shared Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "DEF456", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "GHI012", "log_time": "2022-01-03 14:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "JKL345", "log_time": "2022-01-04 15:00:00", "log_message": "Resource created successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "MNO678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "PQR901", "log_time": "2022-01-06 17:00:00", "log_message": "Resource modified successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "STU111", "log_time": "2022-01-07 18:00:00", "log_message": "Resource shared successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "VWX234", "log_time": "2022-01-08 19:00:00", "log_message": "Resource synchronized successfully"}
+GetResourceLogs: {"resource_id": "XYZ789", "log_id": "YZA111", "log_time": "2022-01-09 20:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "DEF456", "resource_label": "Shared Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "EFG789", "log_time": "2022-01-10 21:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "MNO012", "resource_label": "Common Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "PQR678", "resource_label": "Shared Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "STU901", "resource_label": "Shared Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "PQR678", "log_id": "BCD456", "log_time": "2022-01-11 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "GHI234", "resource_label": "Shared System Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "CDE678", "log_time": "2022-01-12 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "RST222", "log_time": "2022-01-13 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "TUV567", "log_time": "2022-01-14 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "JKL345", "resource_label": "Shared Asset Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "HJK789", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "XYZ999", "log_time": "2022-01-16 11:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "FGH012", "log_time": "2022-01-17 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ABC234", "log_time": "2022-01-18 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "VWX111", "resource_label": "Shared Asset System", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "EFG678", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "JKL012", "log_time": "2022-01-19 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "ABC234", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "ABC345", "log_time": "2022-01-20 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "KLM234", "log_time": "2022-01-21 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "MNP123", "log_time": "2022-01-22 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "NOP123", "log_time": "2022-01-23 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "ABC567", "log_time": "2022-01-24 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "ABC901", "log_time": "2022-01-25 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "CDE123", "log_time": "2022-01-26 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "TUV345", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "YZA222", "resource_label": "Shared System Asset Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR123", "log_time": "2022-01-27 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "EFG012", "log_time": "2022-01-28 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ABC111", "log_time": "2022-01-29 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "TUW456", "log_time": "2022-01-30 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"resource_id": "GHI234", "log_id": "EFG345", "log_time": "2022-01-31 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ABC456", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "CDE456", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "ABC789", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "HJK567", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "FGH012", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "ABC012", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "JKL012", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+GetResourceLogs: {"log_id": "ABC567", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "GHI234"}
+FindSharedAssets: {"resource_id": "KLM678", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "NOP345", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR567", "log_time": "2022-01-16 13:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "ABC999", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "PQR012", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR234", "log_time": "2022-01-16 14:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "FGH345", "log_time": "2022-01-16 15:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR678", "log_time": "2022-01-16 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR345", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI901", "log_time": "2022-01-16 10:30:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "LMN456", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:30:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 10:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "ABC567", "log_time": "2022-01-16 11:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "PQR012", "log_time": "2022-01-16 10:45:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "FGH678", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH111", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "RST234", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "IJK789", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "CBA987", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "TUV678", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "GHI234", "log_time": "2022-01-16 11:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "HIJ012", "log_time": "2022-01-16 12:45:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "GHI012", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "PQR345", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC222", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH234", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC333", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC444", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC555", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "CDE901", "log_time": "2022-01-16 10:05:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC666", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC888", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC777", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+FindSharedAssets: {"resource_id": "BAC999", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC789", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC901", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH567", "log_time": "2022-01-16 10:10:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR111", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "ABC567", "log_time": "2022-01-16 10:20:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH901", "log_time": "2022-01-16 10:25:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "ABC567", "log_time": "2022-01-16 10:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "FGH012", "log_time": "2022-01-16 10:35:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "ABC1111", "log_time": "2022-01-16 10:40:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "FGH111", "log_time": "2022-01-16 10:50:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 10:55:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ABC567", "log_time": "2022-01-16 10:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "FGH111", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 10:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG012", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR111", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1111", "log_time": "2022-01-16 11:10:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR1112", "log_time": "2022-01-16 17:10:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1113", "log_time": "2022-01-16 18:05:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1114", "log_time": "2022-01-16 11:50:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR1115", "log_time": "2022-01-16 10:00:05", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1116", "log_time": "2022-01-16 10:55:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1117", "log_time": "2022-01-16 10:55:06", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR1118", "log_time": "2022-01-16 10:55:07", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1119", "log_time": "2022-01-16 10:55:08", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG0123", "log_time": "2022-01-16 10:55:09", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC456", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11110", "log_time": "2022-01-16 12:05:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG567", "log_time": "2022-01-16 10:55:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11111", "log_time": "2022-01-16 10:55:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH111", "log_time": "2022-01-16 10:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11112", "log_time": "2022-01-16 10:55:12", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR11113", "log_time": "2022-01-16 12:10:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG111", "log_time": "2022-01-16 10:00:01", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "FGH111", "log_time": "2022-01-16 10:00:02", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11114", "log_time": "2022-01-16 10:55:13", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "PQR11115", "log_time": "2022-01-16 10:50:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11116", "log_time": "2022-01-16 10:55:14", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11117", "log_time": "2022-01-16 11:55:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "PQR9011", "log_time": "2022-01-16 10:40:05", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11118", "log_time": "2022-01-16 11:20:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11119", "log_time": "2022-01-16 11:40:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR11120", "log_time": "2022-01-16 11:25:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11121", "log_time": "2022-01-16 12:50:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG0123", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG0123", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG9010", "log_time": "2022-01-16 10:40:06", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1111", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "EFG678", "log_time": "2022-01-16 10:40:07", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11122", "log_time": "2022-01-16 12:55:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111", "log_time": "2022-01-16 10:40:08", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11123", "log_time": "2022-01-16 12:05:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11124", "log_time": "2022-01-16 12:55:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11125", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11126", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11127", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11128", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11129", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11130", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11131", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR902", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG111112", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11132", "log_time": "2022-01-16 12:55:16", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11133", "log_time": "2022-01-16 12:55:17", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:10:05", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"log_id": "PQR11134", "log_time": "2022-01-16 12:55:18", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG0123", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:09", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9011", "log_time": "2022-01-16 10:40:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:10:05", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:10:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:10:05", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:14", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG111111", "log_time": "2022-01-16 12:55:19", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 10:40:09", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1111111", "log_time": "2022-01-16 12:55:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "PQR11135", "log_time": "2022-01-16 10:40:05", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11135", "log_time": "2022-01-16 12:55:15", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9012", "log_time": "2022-01-16 12:05:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9013", "log_time": "2022-01-16 12:05:15", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11111", "log_time": "2022-01-16 12:05:10", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9014", "log_time": "2022-01-16 12:05:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9015", "log_time": "2022-01-16 12:05:25", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR1111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9016", "log_time": "2022-01-16 12:05:30", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "PQR11111", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9017", "log_time": "2022-01-16 12:05:35", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9018", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG9019", "log_time": "2022-01-16 12:05:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG901", "log_time": "2022-01-16 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG902", "log_time": "2022-01-16 12:10:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "PQR11111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "VWX012", "log_time": "2022-01-16 10:40:11", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:05:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1234", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1234", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1234", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG1234", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Service Asset", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"log_id": "MNP456", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "KLM678"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared System Resource", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared System Resource Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC111", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"resource_id": "BAC123", "resource_label": "Shared Asset System Service", "service_id": "ABC123"}
+GetResourceLogs: {"resource_id": "KLM678", "log_id": "EFG11111111", "log_time": "2022-01-16 12:00:05", "log_message": "Resource accessed successfully"}

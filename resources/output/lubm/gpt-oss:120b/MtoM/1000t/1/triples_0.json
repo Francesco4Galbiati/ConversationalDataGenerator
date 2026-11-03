@@ -1,0 +1,56 @@
+IntroduceStudent: {"student_id": "STU001", "student_name": "Alex Johnson"}
+GraduateStudent: {"graduate_student_id": "STU001", "department_id": "DEP001", "university_id": "UNI001", "graduate_student_name": "Alexandra Rivera", "department_name": "Department of Computer Science", "university_name": "Global Tech University"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU002", "department_id": "DEP002", "department_name": "Department of Data Science", "student_name": "Jordan Lee", "student_email": "jordan.lee@uni001.edu"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "UG001", "undergraduate_student_name": "Alex Morgan"}
+IntroduceStudent: {"student_id": "STU003", "student_name": "Taylor Morgan"}
+GraduateStudent: {"graduate_student_id": "STU002", "department_id": "DEP003", "university_id": "UNI002", "graduate_student_name": "Jordan Lee", "department_name": "Department of Artificial Intelligence", "university_name": "Innovate Tech University"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU004", "department_id": "DEP004", "department_name": "Department of Cybersecurity", "student_name": "Morgan Blake", "student_email": "morgan.blake@uni001.edu"}
+IntroduceStudent: {"student_id": "STU005", "student_name": "Casey Rivera"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "UG002", "undergraduate_student_name": "Jordan Lee"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRF001", "professor_name": "Dr. Alex Johnson", "profssor_email": "alex.johnson@university.edu", "professor_telephone": "+1-555-0123"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG001", "research_group_name": "Advanced Robotics Lab"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP005", "chair_id": "PRF001", "department_name": "Department of Quantum Computing", "chair_name": "Dr. Alice Nguyen", "chair_email": "alice.nguyen@uni001.edu", "chair_telephone": "+1-555-0101", "chair_office": "Room 402"}
+HireProfessor: {"department_id": "DEP003", "professor_id": "PRF002", "profssor_email": "prf002@university.edu", "professor_name": "Dr. Emily Carter", "professor_telephone": "+1-555-0456"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG002", "research_group_name": "Robotics Innovation Center"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP006", "chair_id": "PRF002", "department_name": "Department of Bioinformatics", "chair_name": "Dr. Michael Lee", "chair_email": "michael.lee@uni001.edu", "chair_telephone": "+1-555-0123", "chair_office": "Room 403"}
+HireProfessor: {"department_id": "DEP004", "professor_id": "PRF003", "profssor_email": "prf003@university.edu", "professor_name": "Dr. Michael Lee", "professor_telephone": "+1-555-0789"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG003", "research_group_name": "Autonomous Systems Lab"}
+NominateDepartmentChair: {"university_id": "UNI001", "department_id": "DEP007", "chair_id": "PRF003", "department_name": "Department of Robotics", "chair_name": "Dr. Emily Zhang", "chair_email": "emily.zhang@uni001.edu", "chair_telephone": "+1-555-0145", "chair_office": "Room 404"}
+TakeCourseOfAdvisor: {"student_id": "DEP001", "faculty_id": "UNI001", "course_id": "DEP002", "student_name": "Riley Morgan", "faculty_name": "Dr. Evelyn Harper", "course_name": "Introduction to Data Engineering"}
+TakeCourseOfAdvisor: {"student_id": "STU006", "faculty_id": "FAC001", "course_id": "CRS001", "student_name": "Jordan Patel", "faculty_name": "Prof. Linda Chen", "course_name": "Advanced Data Engineering"}
+TakeCourseOfAdvisor: {"student_id": "STU007", "faculty_id": "FAC002", "course_id": "CRS002", "student_name": "Avery Morgan", "faculty_name": "Prof. Daniel Kim", "course_name": "Foundations of Data Engineering"}
+TakeCourseOfAdvisor: {"student_id": "STU008", "faculty_id": "FAC003", "course_id": "CRS003", "student_name": "Samira Patel", "faculty_name": "Prof. Michael Torres", "course_name": "Data Engineering Capstone"}
+TakeCourseOfAdvisor: {"student_id": "STU009", "student_name": "Jordan Kim", "faculty_id": "FAC004", "faculty_name": "Prof. Samantha Lee", "course_id": "CRS004", "course_name": "Machine Learning for Data Engineering"}
+TakeCourseOfAdvisor: {"student_id": "STU010", "faculty_id": "FAC005", "course_id": "CRS005", "student_name": "Elliot Brooks", "faculty_name": "Prof. Nathaniel Reed", "course_name": "Big Data Analytics"}
+ListMember: {"department_id": "DEP003", "person_id": "PER001", "person_name": "Alex Johnson"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "PER002", "person_name": "Jordan Smith"}
+ListMember: {"department_id": "DEP003", "person_id": "PER003", "person_name": "Taylor Morgan"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU011", "student_name": "Harper Quinn", "student_email": "harper.quinn@uni001.edu", "department_id": "DEP008", "department_name": "Department of Nanotechnology"}
+GraduateStudent: {"graduate_student_id": "STU003", "department_id": "DEP009", "university_id": "UNI003", "graduate_student_name": "Taylor Morgan", "department_name": "Department of Sustainable Engineering", "university_name": "Future Horizons University"}
+IntroduceStudent: {"student_id": "STU012", "student_name": "Sydney Carter"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "UG003", "undergraduate_student_name": "Taylor Reed"}
+EnrollStudent: {"university_id": "UNI002", "student_id": "STU013", "department_id": "DEP010", "department_name": "Department of Renewable Energy", "student_name": "Taylor Reed", "student_email": "taylor.reed@uni002.edu"}
+GraduateStudent: {"graduate_student_id": "STU004", "department_id": "DEP011", "university_id": "UNI004", "graduate_student_name": "Morgan Patel", "department_name": "Department of Astrophysics", "university_name": "Pioneer Global University"}
+IntroduceStudent: {"student_id": "STU014", "student_name": "Jordan Smith"}
+IntroduceUndergraduateStudent: {"undergraduate_student_id": "UG004", "undergraduate_student_name": "Casey Patel"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU015", "student_name": "Jordan Davis", "student_email": "jordan.davis@uni001.edu", "department_id": "DEP012", "department_name": "Department of Space Engineering"}
+HireProfessor: {"department_id": "DEP001", "professor_id": "PRF004", "profssor_email": "s.thompson@university.edu", "professor_name": "Dr. Sarah Thompson", "professor_telephone": "+1-555-0999"}
+CreateResearchGroup: {"university_id": "UNI004", "research_group_id": "RG004", "research_group_name": "Future Robotics Lab"}
+NominateDepartmentChair: {"university_id": "UNI002", "department_id": "DEP013", "chair_id": "PRF004", "department_name": "Department of Marine Engineering", "chair_name": "Dr. Sophia Rivera", "chair_email": "sophia.rivera@uni002.edu", "chair_telephone": "+1-555-0167", "chair_office": "Room 405"}
+HireProfessor: {"department_id": "DEP005", "professor_id": "PRF005", "profssor_email": "prf005@university.edu", "professor_name": "Dr. Jordan Miller", "professor_telephone": "+1-555-0110"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG005", "research_group_name": "Emerging Robotics Lab"}
+NominateDepartmentChair: {"university_id": "UNI002", "department_id": "DEP014", "chair_id": "PRF005", "department_name": "Department of Applied Mathematics", "chair_name": "Dr. Daniel Kim", "chair_email": "daniel.kim@uni002.edu", "chair_telephone": "+1-555-0189", "chair_office": "Room 406"}
+HireProfessor: {"department_id": "DEP004", "professor_id": "PRF006", "profssor_email": "prf006@university.edu", "professor_name": "Dr. Laura Bennett", "professor_telephone": "+1-555-0222"}
+CreateResearchGroup: {"university_id": "UNI001", "research_group_id": "RG006", "research_group_name": "Innovative Robotics Group"}
+NominateDepartmentChair: {"university_id": "UNI002", "department_id": "DEP015", "chair_id": "PRF006", "department_name": "Department of Environmental Engineering", "chair_name": "Dr. Laura Chen", "chair_email": "laura.chen@uni002.edu", "chair_telephone": "+1-555-0201", "chair_office": "Room 407"}
+TakeCourseOfAdvisor: {"student_id": "STU016", "faculty_id": "FAC006", "course_id": "CRS006", "student_name": "Riley Thompson", "faculty_name": "Prof. Olivia Grant", "course_name": "Data Visualization for Engineers"}
+TakeCourseOfAdvisor: {"student_id": "STU017", "faculty_id": "FAC007", "course_id": "CRS007", "student_name": "Taylor Brooks", "faculty_name": "Prof. Gregory Hall", "course_name": "Cloud Data Architecture"}
+TakeCourseOfAdvisor: {"student_id": "STU018", "faculty_id": "FAC008", "course_id": "CRS008", "student_name": "Jordan Taylor", "faculty_name": "Prof. Victor Alvarez", "course_name": "Real-Time Data Processing"}
+TakeCourseOfAdvisor: {"student_id": "STU019", "faculty_id": "FAC009", "course_id": "CRS009", "student_name": "Jordan Harris", "faculty_name": "Prof. William Carter", "course_name": "Distributed Systems for Data Engineering"}
+TakeCourseOfAdvisor: {"student_id": "STU020", "faculty_id": "FAC010", "course_id": "CRS010", "student_name": "Evelyn Brooks", "faculty_name": "Prof. Zoe Martinez", "course_name": "Data Ethics and Governance"}
+TakeCourseOfAdvisor: {"student_id": "STU021", "faculty_id": "FAC011", "course_id": "CRS011", "student_name": "Aiden Clarke", "faculty_name": "Prof. Xavier Monroe", "course_name": "Scalable Data Pipelines"}
+ListMember: {"department_id": "DEP001", "person_id": "PER004", "person_name": "Casey Lee"}
+DefineAlumnus: {"university_id": "UNI001", "person_id": "PER005", "person_name": "Riley Patel"}
+ListMember: {"department_id": "DEP010", "person_id": "PER006", "person_name": "Morgan Blake"}
+EnrollStudent: {"university_id": "UNI001", "student_id": "STU022", "department_id": "DEP016", "department_name": "Department of Computational Linguistics", "student_name": "Liam Harper", "student_email": "liam.harper@uni001.edu"}
+GraduateStudent: {"graduate_student_id": "STU005", "department_id": "DEP017", "university_id": "UNI005", "graduate_student_name": "Casey Nguyen", "department_name": "Department of Quantum Robotics", "university_name": "Summit Innovation University"}

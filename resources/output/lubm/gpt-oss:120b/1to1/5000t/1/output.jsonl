@@ -1,0 +1,944 @@
+{"student_id": "AB123", "student_name": "Alex Johnson", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS001", "graduate_student_name": "Alexandra Lee", "department_id": "DP101", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "Nova Horizon University", "intent": "GraduateStudent"}
+{"department_id": "DP101", "professor_id": "PR001", "profssor_email": "alex.morgan@university.edu", "professor_name": "Dr. Alex Morgan", "professor_telephone": "+1-555-0123", "intent": "HireProfessor"}
+{"department_id": "DP101", "person_id": "JRN001", "person_name": "Jordan Lee", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "XY456", "department_id": "CD789", "department_name": "Department of Astrophysics", "student_name": "Maria Lopez", "student_email": "maria.lopez@un001.edu", "intent": "EnrollStudent"}
+{"student_id": "CD789", "faculty_id": "EF012", "course_id": "GH345", "student_name": "Liam Patel", "faculty_name": "Dr. Sophia Nguyen", "course_name": "Advanced Data Structures", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG001", "research_group_name": "Advanced Computing Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DX001", "chair_id": "PR001", "department_name": "Department of Computational Linguistics", "chair_name": "Dr. Amelia Rivera", "chair_email": "amelia.rivera@un001.edu", "chair_telephone": "+1-555-0123", "chair_office": "Room 210B", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "PER002", "person_name": "Alex Morgan", "intent": "DefineAlumnus"}
+{"student_id": "EF001", "student_name": "Sofia Ramirez", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS002", "department_id": "DP102", "university_id": "UN002", "graduate_student_name": "Michael Chen", "department_name": "Department of Bioinformatics", "university_name": "Celestial Institute of Technology", "intent": "GraduateStudent"}
+{"department_id": "DX001", "professor_id": "PR002", "profssor_email": "jamie.lee@university.edu", "professor_name": "Dr. Jamie Lee", "professor_telephone": "+1-555-0456", "intent": "HireProfessor"}
+{"undergraduate_student_id": "AB123", "undergraduate_student_name": "Alex Johnson", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DX001", "person_id": "PER003", "person_name": "Taylor Reed", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "GH234", "student_name": "Ethan Brooks", "student_email": "ethan.brooks@un001.edu", "department_id": "QZ303", "department_name": "Department of Renewable Energy", "intent": "EnrollStudent"}
+{"student_id": "JK567", "faculty_id": "LM890", "course_id": "QR123", "student_name": "Noah Bennett", "faculty_name": "Prof. Daniel Kim", "course_name": "Machine Learning Foundations", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG002", "research_group_name": "Emerging Technologies Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "AB123", "chair_id": "XY456", "department_name": "Department of Nanotechnology", "chair_name": "Dr. Ethan Zhao", "chair_email": "ethan.zhao@un001.edu", "chair_telephone": "+1-555-0456", "chair_office": "Room 312A", "intent": "NominateDepartmentChair"}
+{"university_id": "UN002", "person_id": "ALU001", "person_name": "Morgan Blake", "intent": "DefineAlumnus"}
+{"student_id": "LM345", "student_name": "Olivia Chen", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS003", "department_id": "DP103", "university_id": "UN003", "graduate_student_name": "Sofia Ramirez", "department_name": "Department of Molecular Robotics", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"department_id": "DP101", "professor_id": "PR003", "profssor_email": "taylor.reed@university.edu", "professor_name": "Dr. Taylor Reed", "professor_telephone": "+1-555-0789", "intent": "HireProfessor"}
+{"undergraduate_student_id": "CD456", "undergraduate_student_name": "Maria Lopez", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "QZ303", "person_id": "NEW001", "person_name": "Casey Morgan", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "MN678", "student_name": "Grace Kim", "student_email": "grace.kim@un001.edu", "department_id": "DP104", "department_name": "Department of Sustainable Architecture", "intent": "EnrollStudent"}
+{"student_id": "ST001", "student_name": "Aiden Clarke", "faculty_id": "PR001", "faculty_name": "Prof. Maya Patel", "course_id": "CS001", "course_name": "Quantum Computing Principles", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG003", "research_group_name": "Advanced Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP105", "chair_id": "LM789", "department_name": "Department of Synthetic Biology", "chair_name": "Dr. Maya Patel", "chair_email": "maya.patel@un001.edu", "chair_telephone": "+1-555-0789", "chair_office": "Room 415C", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU002", "person_name": "Sam Taylor", "intent": "DefineAlumnus"}
+{"student_id": "QR999", "student_name": "Daniel Foster", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS004", "graduate_student_name": "Ethan Patel", "department_id": "QZ303", "department_name": "Department of Synthetic Biology", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"department_id": "QZ303", "professor_id": "PR004", "profssor_email": "sam.patel@university.edu", "professor_name": "Dr. Sam Patel", "professor_telephone": "+1-555-0999", "intent": "HireProfessor"}
+{"undergraduate_student_id": "EF789", "undergraduate_student_name": "Jordan Patel", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "QZ303", "person_id": "XYZ001", "person_name": "Riley Harper", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "UV123", "student_name": "Zoe Mitchell", "student_email": "zoe.mitchell@un001.edu", "department_id": "DP106", "department_name": "Department of Space Engineering", "intent": "EnrollStudent"}
+{"student_id": "OP789", "faculty_id": "ZX234", "course_id": "BK456", "student_name": "Ethan Reed", "faculty_name": "Prof. Hannah Lee", "course_name": "Artificial Intelligence Ethics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG004", "research_group_name": "Innovative Systems Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "NV001", "chair_id": "JK002", "department_name": "Department of Applied Cryptography", "chair_name": "Dr. Sophia Nguyen", "chair_email": "sophia.nguyen@un001.edu", "chair_telephone": "+1-555-0999", "chair_office": "Room 527D", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU003", "person_name": "Elliot Grant", "intent": "DefineAlumnus"}
+{"student_id": "ZA001", "student_name": "Victor Hayes", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS005", "department_id": "EF456", "university_id": "UN004", "graduate_student_name": "Liam O'Connor", "department_name": "Department of Quantum Optics", "university_name": "Stellar Frontier University", "intent": "GraduateStudent"}
+{"department_id": "DP106", "professor_id": "PR005", "profssor_email": "jordan.kim@university.edu", "professor_name": "Dr. Jordan Kim", "professor_telephone": "+1-555-0111", "intent": "HireProfessor"}
+{"undergraduate_student_id": "GH012", "undergraduate_student_name": "Taylor Reed", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP106", "person_id": "PER004", "person_name": "Jordan Smith", "intent": "ListMember"}
+{"university_id": "UN003", "student_id": "WX001", "department_id": "DP107", "department_name": "Department of Virtual Reality", "student_name": "Harper Lee", "student_email": "harper.lee@un003.edu", "intent": "EnrollStudent"}
+{"student_id": "BC234", "student_name": "Natalie Brooks", "faculty_id": "NY345", "faculty_name": "Prof. Samuel Ortiz", "course_id": "ML567", "course_name": "Deep Learning Applications", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG005", "research_group_name": "Artificial Intelligence Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DE001", "chair_id": "AB001", "department_name": "Department of Artificial Intelligence", "chair_name": "Dr. Lucas Bennett", "chair_email": "lucas.bennett@un001.edu", "chair_telephone": "+1-555-0111", "chair_office": "Room 618E", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU004", "person_name": "Jordan Patel", "intent": "DefineAlumnus"}
+{"student_id": "QK321", "student_name": "Brian Torres", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS006", "department_id": "DP108", "university_id": "UN005", "graduate_student_name": "Aisha Khan", "department_name": "Department of Quantum Materials", "university_name": "Luminous Institute of Technology", "intent": "GraduateStudent"}
+{"department_id": "QZ303", "professor_id": "AB123", "profssor_email": "newprofessor@university.edu", "professor_name": "Dr. Casey Morgan", "professor_telephone": "+1-555-0124", "intent": "HireProfessor"}
+{"undergraduate_student_id": "IJ345", "undergraduate_student_name": "Samir Khan", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "QZ303", "person_id": "NEW002", "person_name": "Avery Quinn", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ZY123", "student_name": "Maya Singh", "student_email": "maya.singh@un001.edu", "department_id": "DP200", "department_name": "Department of Climate Engineering", "intent": "EnrollStudent"}
+{"student_id": "AA001", "student_name": "Evelyn Harper", "faculty_id": "AA002", "faculty_name": "Prof. Lucas Bennett", "course_id": "AA003", "course_name": "Computational Neuroscience", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN005", "research_group_id": "RG006", "research_group_name": "Next Generation Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN005", "department_id": "DP210", "chair_id": "AB200", "department_name": "Department of Quantum Biology", "chair_name": "Dr. Isabella Torres", "chair_email": "isabella.torres@un005.edu", "chair_telephone": "+1-555-0124", "chair_office": "Room 720F", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU005", "person_name": "Taylor Morgan", "intent": "DefineAlumnus"}
+{"student_id": "DF456", "student_name": "Caleb Morgan", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS007", "department_id": "DP300", "university_id": "UN006", "graduate_student_name": "Nadia Hassan", "department_name": "Department of Quantum Thermodynamics", "university_name": "Celestial Academy of Sciences", "intent": "GraduateStudent"}
+{"department_id": "DP106", "professor_id": "PR006", "profssor_email": "riley.quinn@university.edu", "professor_name": "Dr. Riley Quinn", "professor_telephone": "+1-555-0125", "intent": "HireProfessor"}
+{"undergraduate_student_id": "KL678", "undergraduate_student_name": "Riley Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP106", "person_id": "PER001", "person_name": "Morgan Ellis", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "CD001", "student_name": "Jordan Patel", "student_email": "jordan.patel@un001.edu", "department_id": "DP150", "department_name": "Department of Bioengineering", "intent": "EnrollStudent"}
+{"student_id": "XZ001", "faculty_id": "YZ001", "course_id": "ZX001", "student_name": "Liam Carter", "faculty_name": "Prof. Isabella Reed", "course_name": "Reinforcement Learning Systems", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG007", "research_group_name": "Computational Biology Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP400", "chair_id": "EF789", "department_name": "Department of Holographic Computing", "chair_name": "Dr. Nathaniel Brooks", "chair_email": "nathaniel.brooks@un001.edu", "chair_telephone": "+1-555-0234", "chair_office": "Room 830G", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU006", "person_name": "Sydney Carter", "intent": "DefineAlumnus"}
+{"student_id": "JKL123", "student_name": "Samuel Ortiz", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS008", "graduate_student_name": "Aria Patel", "department_id": "DP201", "department_name": "Department of Quantum Neuroscience", "university_id": "UN007", "university_name": "Celestial Institute of Advanced Studies", "intent": "GraduateStudent"}
+{"department_id": "DP201", "professor_id": "PR007", "profssor_email": "evelyn.shaw@university.edu", "professor_name": "Dr. Evelyn Shaw", "professor_telephone": "+1-555-0112", "intent": "HireProfessor"}
+{"undergraduate_student_id": "MN901", "undergraduate_student_name": "Casey Nguyen", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ABC001", "person_name": "Riley Quinn", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG456", "student_name": "Isla Rivera", "student_email": "isla.rivera@un001.edu", "department_id": "DP999", "department_name": "Department of Cybersecurity", "intent": "EnrollStudent"}
+{"student_id": "BD001", "faculty_id": "CD002", "course_id": "EF002", "student_name": "Lara Thompson", "faculty_name": "Prof. Daniel Rivera", "course_name": "Neural Network Optimization", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG008", "research_group_name": "Robotics Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "HR001", "chair_id": "MN001", "department_name": "Department of Quantum Photonics", "chair_name": "Dr. Olivia Chen", "chair_email": "olivia.chen@un001.edu", "chair_telephone": "+1-555-0222", "chair_office": "Room 945H", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU007", "person_name": "Jordan Brooks", "intent": "DefineAlumnus"}
+{"student_id": "JKL456", "student_name": "Ava Collins", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS009", "graduate_student_name": "Ravi Kumar", "department_id": "DP999", "department_name": "Department of Quantum Ecology", "university_id": "UN008", "university_name": "Celestial University of Innovation", "intent": "GraduateStudent"}
+{"department_id": "DP201", "professor_id": "PR008", "profssor_email": "newprofessor2@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-0100", "intent": "HireProfessor"}
+{"undergraduate_student_id": "OP234", "undergraduate_student_name": "Evelyn Brooks", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP101", "person_id": "NEW003", "person_name": "Jordan Reed", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "RT001", "student_name": "Nina Patel", "student_email": "nina.patel@un001.edu", "department_id": "DP250", "department_name": "Department of Quantum Agriculture", "intent": "EnrollStudent"}
+{"student_id": "NV001", "student_name": "Dylan Harper", "faculty_id": "QT002", "faculty_name": "Prof. Naomi Clark", "course_id": "XR005", "course_name": "Statistical Learning Theory", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN003", "research_group_id": "RG009", "research_group_name": "Data Science Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP110", "chair_id": "GH123", "department_name": "Department of Quantum Thermodynamics", "chair_name": "Dr. Victor Alvarez", "chair_email": "victor.alvarez@un001.edu", "chair_telephone": "+1-555-0678", "chair_office": "Room 1050I", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU008", "person_name": "Elliot Harper", "intent": "DefineAlumnus"}
+{"student_id": "AC001", "student_name": "Olivia Martinez", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS010", "department_id": "DP111", "university_id": "UN009", "graduate_student_name": "Diego Morales", "department_name": "Department of Quantum Geology", "university_name": "Galactic Institute of Exploration", "intent": "GraduateStudent"}
+{"department_id": "DP102", "professor_id": "NP001", "profssor_email": "morgan.lee@university.edu", "professor_name": "Dr. Morgan Lee", "professor_telephone": "+1-555-0130", "intent": "HireProfessor"}
+{"undergraduate_student_id": "QR567", "undergraduate_student_name": "Dylan Harper", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ZK001", "person_name": "Jordan Parker", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "LMN001", "student_name": "Ethan Patel", "student_email": "ethan.patel@un001.edu", "department_id": "DP501", "department_name": "Department of Quantum Metamaterials", "intent": "EnrollStudent"}
+{"student_id": "AB001", "faculty_id": "BC001", "course_id": "DE001", "student_name": "Jordan Lee", "faculty_name": "Prof. Emily Carter", "course_name": "Introduction to Bioinformatics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG010", "research_group_name": "Quantum Robotics Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN003", "department_id": "DP600", "chair_id": "QR123", "department_name": "Department of Quantum Sensors", "chair_name": "Dr. Hannah Kim", "chair_email": "hannah.kim@un003.edu", "chair_telephone": "+1-555-1333", "chair_office": "Room 1051J", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU009", "person_name": "Avery Blake", "intent": "DefineAlumnus"}
+{"student_id": "EFG001", "student_name": "Lily Anderson", "intent": "IntroduceStudent"}
+{"graduate_student_id": "GS011", "graduate_student_name": "Javier Torres", "department_id": "DP210", "department_name": "Department of Quantum Computing", "university_id": "UN004", "university_name": "Nova Horizon University", "intent": "GraduateStudent"}
+{"department_id": "DP201", "professor_id": "QZ001", "profssor_email": "victoria.hayes@university.edu", "professor_name": "Dr. Victoria Hayes", "professor_telephone": "+1-555-0140", "intent": "HireProfessor"}
+{"undergraduate_student_id": "ST890", "undergraduate_student_name": "Jordan Lee", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEO001", "person_name": "Harper Quinn", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AB999", "department_id": "DP701", "department_name": "Department of Quantum Holography", "student_name": "Mason Reed", "student_email": "mason.reed@un001.edu", "intent": "EnrollStudent"}
+{"student_id": "DP201", "faculty_id": "HR001", "course_id": "CD789", "student_name": "Daphne Patel", "faculty_name": "Prof. Hannah Rivera", "course_name": "Advanced Quantum Algorithms", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG011", "research_group_name": "Sustainable Energy Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP999", "chair_id": "AB999", "department_name": "Department of Quantum Sociology", "chair_name": "Dr. Zoe Harper", "chair_email": "zoe.harper@un001.edu", "chair_telephone": "+1-555-1444", "chair_office": "Room 1052K", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU010", "person_name": "Morgan Quinn", "intent": "DefineAlumnus"}
+{"student_id": "HIJ123", "student_name": "Mia Torres", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "LM002", "profssor_email": "jordan.blake@university.edu", "professor_name": "Dr. Jordan Blake", "professor_telephone": "+1-555-0200", "intent": "HireProfessor"}
+{"graduate_student_id": "GS012", "graduate_student_name": "Olivia Chen", "department_id": "DP201", "department_name": "Department of Quantum Ecology", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "UV123", "undergraduate_student_name": "Olivia Sinclair", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ZK002", "person_name": "Charlie Davis", "intent": "ListMember"}
+{"university_id": "UN003", "student_id": "S001", "department_id": "DP101", "department_name": "ComputerScience", "student_name": "John Doe", "student_email": "john.doe@un003.edu", "intent": "EnrollStudent"}
+{"student_id": "GH001", "student_name": "Ethan Shaw", "course_id": "AB002", "course_name": "Computational Genomics", "faculty_id": "LM001", "faculty_name": "Prof. Amelia Reed", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG012", "research_group_name": "Interdisciplinary Innovation Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP900", "chair_id": "UV001", "department_name": "Department of Quantum Finance", "chair_name": "Dr. Elena Morales", "chair_email": "elena.morales@un001.edu", "chair_telephone": "+1-555-2000", "chair_office": "Room 1010A", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU011", "person_name": "Jordan Blake", "intent": "DefineAlumnus"}
+{"student_id": "YZ001", "student_name": "Liam Ross", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "XY999", "profssor_email": "jordan.ellis@university.edu", "professor_name": "Dr. Jordan Ellis", "professor_telephone": "+1-555-0113", "intent": "HireProfessor"}
+{"graduate_student_id": "GS013", "graduate_student_name": "Zara Ibrahim", "department_id": "DP998", "department_name": "Department of Quantum Ethics", "university_id": "UN010", "university_name": "Celestial Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "ZX001", "undergraduate_student_name": "Nina Patel", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "QRS001", "person_name": "Elliot Morgan", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AB002", "student_name": "Ethan Clarke", "student_email": "ethan.clarke@un001.edu", "department_id": "DP002", "department_name": "Department of Quantum Robotics", "intent": "EnrollStudent"}
+{"student_id": "AB004", "student_name": "Ethan Walker", "course_id": "AB005", "course_name": "Graph Neural Networks", "faculty_id": "AB006", "faculty_name": "Prof. Oliver Grant", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG013", "research_group_name": "Advanced Materials Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "department_id": "DP550", "chair_id": "AB550", "department_name": "Department of Quantum Linguistics", "chair_name": "Dr. Julian Ortega", "chair_email": "julian.ortega@un001.edu", "chair_telephone": "+1-555-2567", "chair_office": "Room 1100L", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU012", "person_name": "Jordan Hayes", "intent": "DefineAlumnus"}
+{"student_id": "EFG002", "student_name": "Liam Nguyen", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "JK007", "profssor_email": "alex.turner@university.edu", "professor_name": "Dr. Alex Turner", "professor_telephone": "+1-555-0222", "intent": "HireProfessor"}
+{"graduate_student_id": "GS014", "graduate_student_name": "Maya Singh", "department_id": "DP201", "department_name": "Department of Quantum Gastronomy", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "LM234", "undergraduate_student_name": "Victor Huang", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW004", "person_name": "Alex Quinn", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG123", "student_name": "Oliver Grant", "student_email": "oliver.grant@un001.edu", "department_id": "DP551", "department_name": "Department of Astrobiology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG014", "research_group_name": "Future Technologies Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP102", "faculty_id": "DP110", "course_id": "UN002", "student_name": "Evelyn Torres", "faculty_name": "Prof. Victor Huang", "course_name": "Computational Immunology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP999", "chair_id": "AB777", "department_name": "Department of Quantum Anthropology", "chair_name": "Dr. Gabriel Sinclair", "chair_email": "gabriel.sinclair@un001.edu", "chair_telephone": "+1-555-3000", "chair_office": "Room 1101Z", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU013", "person_name": "Casey Quinn", "intent": "DefineAlumnus"}
+{"student_id": "HIJ001", "student_name": "Samuel Carter", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "XY001", "profssor_email": "newprofessor1@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-0300", "intent": "HireProfessor"}
+{"graduate_student_id": "GS015", "department_id": "DP950", "university_id": "UN011", "graduate_student_name": "Noah Whitaker", "department_name": "Department of Quantum Archaeology", "university_name": "Nebula Institute of Research", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP201", "undergraduate_student_name": "Liam Torres", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ZK003", "person_name": "Elliot Stone", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ZZ001", "student_name": "Eleanor Finch", "student_email": "eleanor.finch@un001.edu", "department_id": "DP560", "department_name": "Department of Space Architecture", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG015", "research_group_name": "Cybersecurity Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "HIJ999", "student_name": "Caleb Monroe", "faculty_id": "PR002", "faculty_name": "Prof. Xavier Liu", "course_id": "ML001", "course_name": "Computational Pharmacology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP999", "chair_id": "AB300", "department_name": "Department of Quantum Philology", "chair_name": "Dr. Caroline Mitchell", "chair_email": "caroline.mitchell@un001.edu", "chair_telephone": "+1-555-3111", "chair_office": "Room 1011B", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU014", "person_name": "Alex Davis", "intent": "DefineAlumnus"}
+{"student_id": "AB003", "student_name": "Nathaniel Brooks", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "ZQ001", "profssor_email": "morgan.patel@university.edu", "professor_name": "Dr. Morgan Patel", "professor_telephone": "+1-555-0400", "intent": "HireProfessor"}
+{"graduate_student_id": "GS016", "department_id": "DP850", "university_id": "UN012", "graduate_student_name": "Evelyn Zhou", "department_name": "Department of Quantum Cartography", "university_name": "Celestial Institute of Metaphysics", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "WX345", "undergraduate_student_name": "Grace Kim", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW005", "person_name": "Blake Harper", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AB005", "student_name": "Grace Lee", "student_email": "grace.lee@un001.edu", "department_id": "DP005", "department_name": "Department of Quantum Botany", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG016", "research_group_name": "Advanced Nanotechnology Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "TR001", "student_name": "Ethan Monroe", "faculty_id": "YZ002", "faculty_name": "Prof. Daniel Wu", "course_id": "NV002", "course_name": "Computational Biology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP750", "chair_id": "AB800", "department_name": "Department of Quantum Paleontology", "chair_name": "Dr. Samuel Whitaker", "chair_email": "samuel.whitaker@un001.edu", "chair_telephone": "+1-555-4222", "chair_office": "Room 1234K", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ZK004", "person_name": "Taylor Quinn", "intent": "DefineAlumnus"}
+{"student_id": "AA002", "student_name": "Mila Santos", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "NV001", "profssor_email": "dr.nv001@university.edu", "professor_name": "Dr. Nova Vance", "professor_telephone": "+1-555-0555", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "graduate_student_name": "Kian Mahmoud", "department_id": "DP201", "department_name": "Department of Quantum Metamaterials", "university_id": "UN001", "university_name": "Celestial Institute of Technology", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "YZ123", "undergraduate_student_name": "Avery Collins", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ABC002", "person_name": "Casey Blake", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "HIJ124", "department_id": "DP951", "department_name": "Department of Quantum Entomology", "student_name": "Ethan Wright", "student_email": "ethan.wright@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG017", "research_group_name": "Advanced Bioinformatics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "AB007", "student_name": "Lydia Morgan", "faculty_id": "FG003", "faculty_name": "Prof. Olivia Chen", "course_id": "LM002", "course_name": "Explainable AI Systems", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP997", "chair_id": "LM001", "department_name": "Department of Quantum Meteorology", "chair_name": "Dr. Adrian Patel", "chair_email": "adrian.patel@un001.edu", "chair_telephone": "+1-555-4000", "chair_office": "Room 1102M", "intent": "NominateDepartmentChair"}
+{"university_id": "UN005", "person_id": "ALU015", "person_name": "Jordan Carter", "intent": "DefineAlumnus"}
+{"student_id": "EFG003", "student_name": "Mason Lee", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "GH123", "profssor_email": "harper.quinn@university.edu", "professor_name": "Dr. Harper Quinn", "professor_telephone": "+1-555-0600", "intent": "HireProfessor"}
+{"graduate_student_id": "DP201", "department_id": "DP101", "university_id": "UN001", "graduate_student_name": "Lena Novak", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AA001", "undergraduate_student_name": "Zoe Martinez", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW006", "person_name": "Alex Harper", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ABX001", "department_id": "QR001", "department_name": "Department of Quantum Mythology", "student_name": "Caleb Sinclair", "student_email": "caleb.sinclair@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG018", "research_group_name": "Advanced Renewable Energy Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "EFG007", "faculty_id": "GH002", "course_id": "XY002", "student_name": "Ethan Caldwell", "faculty_name": "Prof. Ethan Shaw", "course_name": "Data Mining Techniques", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP100", "chair_id": "EF001", "department_name": "Department of Quantum Oceanography", "chair_name": "Dr. Xavier Monroe", "chair_email": "xavier.monroe@un001.edu", "chair_telephone": "+1-555-4223", "chair_office": "Room 1020Q", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ZK005", "person_name": "Jordan Miles", "intent": "DefineAlumnus"}
+{"student_id": "LMN002", "student_name": "Olivia Bennett", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "RT001", "profssor_email": "rt001@university.edu", "professor_name": "Dr. Riley Taylor", "professor_telephone": "+1-555-0700", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "graduate_student_name": "Isabella Reed", "department_id": "DP201", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "BQ112", "undergraduate_student_name": "Ethan Brooks", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "MGR001", "person_name": "Casey Davis", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG001", "department_id": "QR002", "department_name": "Department of Quantum Aeronautics", "student_name": "Olivia Harper", "student_email": "olivia.harper@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG019", "research_group_name": "Advanced Space Exploration Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "EFG999", "faculty_id": "AB008", "course_id": "AB009", "student_name": "Liam Parker", "faculty_name": "Prof. Zoe Mitchell", "course_name": "Computational Epigenetics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP200", "chair_id": "XY999", "department_name": "Department of Quantum Astrobiology", "chair_name": "Dr. Benjamin Clarke", "chair_email": "benjamin.clarke@un001.edu", "chair_telephone": "+1-555-4225", "chair_office": "Room 850Y", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "NEW007", "person_name": "Avery Morgan", "intent": "DefineAlumnus"}
+{"student_id": "JK001", "student_name": "Olivia Reed", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "AA001", "profssor_email": "alex.rivera@university.edu", "professor_name": "Dr. Alex Rivera", "professor_telephone": "+1-555-0800", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "graduate_student_name": "Lila Nguyen", "department_id": "DP123", "department_name": "Department of Quantum Chronology", "university_id": "UN013", "university_name": "Celestial Institute of Quantum Arts", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "FR456", "undergraduate_student_name": "Mason Clarke", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ZK006", "person_name": "Jordan Quinn", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG001", "department_id": "DP945", "department_name": "Department of Quantum Xenobiology", "student_name": "Ethan Harper", "student_email": "ethan.harper@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG020", "research_group_name": "Innovative Quantum Systems Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "OPQ001", "student_name": "Samuel Brooks", "faculty_id": "JKL001", "faculty_name": "Prof. Gabriel Torres", "course_id": "OPQ002", "course_name": "Computational Toxicology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP999", "chair_id": "ZX123", "department_name": "Department of Quantum Mycology", "chair_name": "Dr. Evelyn Hart", "chair_email": "evelyn.hart@un001.edu", "chair_telephone": "+1-555-4333", "chair_office": "Room 1012C", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "NEW008", "person_name": "Jordan Ellis", "intent": "DefineAlumnus"}
+{"student_id": "HIJ002", "student_name": "Grace Patel", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "WX123", "profssor_email": "wx123@university.edu", "professor_name": "Dr. Xavier Woods", "professor_telephone": "+1-555-0900", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "department_id": "AB124", "university_id": "UN014", "graduate_student_name": "Sofia Alvarez", "department_name": "Department of Quantum Neurology", "university_name": "Stellar Institute of Advanced Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "HT567", "undergraduate_student_name": "Lara Chen", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW009", "person_name": "Alex Fox", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG100", "department_id": "DP120", "department_name": "Department of Quantum Gastronomy", "student_name": "Ethan Maxwell", "student_email": "ethan.maxwell@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG021", "research_group_name": "Advanced Photonics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "EFG200", "student_name": "Zara Patel", "faculty_id": "JKL200", "faculty_name": "Prof. Nathaniel Brooks", "course_id": "YZ200", "course_name": "Computational Astrophysics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "ZX200", "chair_id": "YZ001", "department_name": "Department of Quantum Astrophysics", "chair_name": "Dr. Liam O'Connor", "chair_email": "liam.oconnor@un001.edu", "chair_telephone": "+1-555-4444", "chair_office": "Room 950Z", "intent": "NominateDepartmentChair"}
+{"university_id": "UN005", "person_id": "ALU016", "person_name": "Riley Morgan", "intent": "DefineAlumnus"}
+{"student_id": "JKL001", "student_name": "Samuel Reed", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "ZR001", "profssor_email": "orion.blake@university.edu", "professor_name": "Dr. Orion Blake", "professor_telephone": "+1-555-0110", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "graduate_student_name": "Elias Novak", "department_id": "DP996", "department_name": "Department of Quantum Telemetry", "university_id": "UN015", "university_name": "Celestial Institute of Quantum Philosophy", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP101", "undergraduate_student_name": "Brian Clark", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW010", "person_name": "Dakota Reed", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "KLM001", "student_name": "Nathan Drake", "student_email": "nathan.drake@un001.edu", "department_id": "RST001", "department_name": "Department of Quantum Epistemology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG022", "research_group_name": "Cutting Edge Materials Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "EFG010", "faculty_id": "LM003", "course_id": "LM004", "student_name": "Ethan Parker", "faculty_name": "Prof. Daniel Torres", "course_name": "Computational Virology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP001", "chair_id": "AB002", "department_name": "Department of Quantum Paleobiology", "chair_name": "Dr. Fiona Gallagher", "chair_email": "fiona.gallagher@un001.edu", "chair_telephone": "+1-555-4555", "chair_office": "Room 1234L", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU017", "person_name": "Jordan Fox", "intent": "DefineAlumnus"}
+{"student_id": "AB006", "student_name": "Grace Miller", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "YZ123", "profssor_email": "zoe.carter@university.edu", "professor_name": "Dr. Zoe Carter", "professor_telephone": "+1-555-0990", "intent": "HireProfessor"}
+{"graduate_student_id": "GS018", "department_id": "DP001", "university_id": "UN001", "graduate_student_name": "Priya Desai", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "JKL123", "undergraduate_student_name": "Caleb Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "XYZ002", "person_name": "Avery Reed", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AB008", "department_id": "DP952", "department_name": "Department of Quantum Gastronomy", "student_name": "Mia Patel", "student_email": "mia.patel@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG023", "research_group_name": "Advanced Astrophysics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "AB010", "student_name": "Ethan Stone", "faculty_id": "EF013", "faculty_name": "Prof. Hannah Kim", "course_id": "AB011", "course_name": "Computational Ethics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP130", "chair_id": "AB350", "department_name": "Department of Quantum Holographic Computing", "chair_name": "Dr. Penelope Whitfield", "chair_email": "penelope.whitfield@un001.edu", "chair_telephone": "+1-555-4666", "chair_office": "Room 960Z", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU018", "person_name": "Jordan Vega", "intent": "DefineAlumnus"}
+{"student_id": "AA003", "student_name": "Eleanor Grant", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "CD456", "profssor_email": "lena.ortiz@university.edu", "professor_name": "Dr. Lena Ortiz", "professor_telephone": "+1-555-0991", "intent": "HireProfessor"}
+{"graduate_student_id": "GS019", "department_id": "DP995", "university_id": "UN016", "graduate_student_name": "Rhea Patel", "department_name": "Department of Quantum Chronobiology", "university_name": "Stellar Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "BC001", "undergraduate_student_name": "Michael Turner", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW011", "person_name": "Logan Pierce", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AD001", "student_name": "Noah Alvarez", "student_email": "noah.alvarez@un001.edu", "department_id": "EF002", "department_name": "Department of Quantum Holographic Arts", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG024", "research_group_name": "Advanced Neural Networks Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "faculty_id": "DP100", "course_id": "UN001", "student_name": "Diana Perez", "faculty_name": "Prof. Maya Singh", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP777", "chair_id": "AB888", "department_name": "Department of Quantum Geophysics", "chair_name": "Dr. Quentin Blake", "chair_email": "quentin.blake@un001.edu", "chair_telephone": "+1-555-5111", "chair_office": "Room 2001A", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU019", "person_name": "Avery Quinn", "intent": "DefineAlumnus"}
+{"student_id": "XYZ001", "student_name": "Harper Quinn", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "professor_id": "LM001", "profssor_email": "dr.lm001@university.edu", "professor_name": "Dr. Liam Morgan", "professor_telephone": "+1-555-0992", "intent": "HireProfessor"}
+{"graduate_student_id": "DP201", "graduate_student_name": "Aisha Khan", "department_id": "DP001", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "XZ123", "undergraduate_student_name": "Natalie Reed", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW011", "person_name": "Taylor Brooks", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "AB009", "department_id": "DP011", "department_name": "Department of Quantum Chronometrics", "student_name": "Ethan Vega", "student_email": "ethan.vega@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG025", "research_group_name": "Advanced Quantum Optics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABZ001", "student_name": "Ethan Frost", "faculty_id": "LM900", "faculty_name": "Prof. Isabella Gomez", "course_id": "YZ300", "course_name": "Bioinformatics Algorithms", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP010", "chair_id": "AB010", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Marcus Lee", "chair_email": "marcus.lee@un001.edu", "chair_telephone": "+1-555-7777", "chair_office": "Room 1234M", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU020", "person_name": "Jordan Torres", "intent": "DefineAlumnus"}
+{"student_id": "EFG002", "student_name": "Liam Brooks", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "professor_id": "AB001", "profssor_email": "ab001@university.edu", "professor_name": "Dr. Alex New", "professor_telephone": "+1-555-0114", "intent": "HireProfessor"}
+{"graduate_student_id": "GS020", "graduate_student_name": "Leila Hassan", "department_id": "DP994", "department_name": "Department of Quantum Astrophysics Engineering", "university_id": "UN017", "university_name": "Interstellar University of Knowledge", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AA002", "undergraduate_student_name": "Samuel Ortiz", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW012", "person_name": "Jordan Harper", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG511", "department_id": "DP511", "department_name": "Department of Quantum Gastronomy", "student_name": "Olivia Quinn", "student_email": "olivia.quinn@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN003", "research_group_id": "RG026", "research_group_name": "Advanced Machine Learning Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABC123", "faculty_id": "RST456", "course_id": "UVX789", "student_name": "Liam Walker", "faculty_name": "Prof. Nora Patel", "course_name": "Quantum Cryptography", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP800", "chair_id": "AB900", "department_name": "Department of Quantum Astrobiology Engineering", "chair_name": "Dr. Helena Voss", "chair_email": "helena.voss@un001.edu", "chair_telephone": "+1-555-8888", "chair_office": "Room 1053L", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "NEW013", "person_name": "Jordan Reed", "intent": "DefineAlumnus"}
+{"student_id": "XZ002", "student_name": "Eleanor Hayes", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "XZ123", "profssor_email": "quentin.hale@university.edu", "professor_name": "Dr. Quentin Hale", "professor_telephone": "+1-555-0115", "intent": "HireProfessor"}
+{"graduate_student_id": "GS021", "department_id": "DP993", "university_id": "UN018", "graduate_student_name": "Amir Khan", "department_name": "Department of Quantum Neurolinguistics", "university_name": "Nebula Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "FN001", "undergraduate_student_name": "Isabella Reed", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "PPL001", "person_name": "Avery Stone", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG004", "student_name": "Mia Torres", "student_email": "mia.torres@un001.edu", "department_id": "DP012", "department_name": "Department of Quantum Gastronomy", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG027", "research_group_name": "Advanced Robotics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "KLM002", "faculty_id": "OPQ003", "course_id": "YZ400", "student_name": "Liam Turner", "faculty_name": "Prof. Daniel Ortiz", "course_name": "Computational Pharmacogenomics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP112", "chair_id": "AB998", "department_name": "Department of Quantum Aeronautics", "chair_name": "Dr. Priya Desai", "chair_email": "priya.desai@un001.edu", "chair_telephone": "+1-555-9999", "chair_office": "Room 1055M", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Jordan Frost", "intent": "DefineAlumnus"}
+{"student_id": "EFH001", "student_name": "Olivia Parker", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "professor_id": "XZ001", "profssor_email": "yara.patel@university.edu", "professor_name": "Dr. Yara Patel", "professor_telephone": "+1-555-0993", "intent": "HireProfessor"}
+{"graduate_student_id": "GS022", "department_id": "DP013", "university_id": "UN019", "graduate_student_name": "Zane Patel", "department_name": "Department of Quantum Neuromorphic Engineering", "university_name": "Celestial Institute of Quantum Exploration", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "JK001", "undergraduate_student_name": "Ethan Patel", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ABC003", "person_name": "Jordan Hill", "intent": "ListMember"}
+{"university_id": "UN010", "student_id": "EFG300", "student_name": "Jordan Lee", "student_email": "jordan.lee@un010.edu", "department_id": "DP124", "department_name": "Department of Quantum Cryogenics", "intent": "EnrollStudent"}
+{"university_id": "UN010", "research_group_id": "RG028", "research_group_name": "Advanced Synthetic Biology Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "student_name": "Michael Brown", "course_id": "DP002", "course_name": "Quantum Machine Learning", "faculty_id": "DP100", "faculty_name": "Prof. Gabriel Torres", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN010", "department_id": "DP200", "chair_id": "AB500", "department_name": "Department of Quantum Data Science", "chair_name": "Dr. Aurora Sinclair", "chair_email": "aurora.sinclair@un010.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 2002B", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU019", "person_name": "Jordan Stone", "intent": "DefineAlumnus"}
+{"student_id": "EFG005", "student_name": "Nora Sinclair", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "EF456", "profssor_email": "iris.quinn@university.edu", "professor_name": "Dr. Iris Quinn", "professor_telephone": "+1-555-0994", "intent": "HireProfessor"}
+{"graduate_student_id": "GS023", "graduate_student_name": "Nina Kapoor", "department_id": "DP992", "department_name": "Department of Quantum Epigenetics", "university_id": "UN020", "university_name": "Celestial Institute of Quantum Ecology", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AA003", "undergraduate_student_name": "Samuel Lee", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW014", "person_name": "Jordan Price", "intent": "ListMember"}
+{"university_id": "UN020", "student_id": "LMN003", "department_id": "DP650", "department_name": "Department of Quantum Nanomedicine", "student_name": "Mason Lee", "student_email": "mason.lee@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG029", "research_group_name": "Innovative AI Systems Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "JKL002", "faculty_id": "LM002", "course_id": "YZ500", "student_name": "Liam Harper", "faculty_name": "Prof. Isabella Cruz", "course_name": "Quantum Error Correction", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DX002", "chair_id": "AB003", "department_name": "Department of Quantum Photovoltaics", "chair_name": "Dr. Isabella Rossi", "chair_email": "isabella.rossi@un001.edu", "chair_telephone": "+1-555-1111", "chair_office": "Room 970A", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU022", "person_name": "Avery Blake", "intent": "DefineAlumnus"}
+{"student_id": "AB011", "student_name": "Ethan Brooks", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "AB999", "profssor_email": "ab999@university.edu", "professor_name": "Dr. Maya Patel", "professor_telephone": "+1-555-0995", "intent": "HireProfessor"}
+{"graduate_student_id": "DP001", "department_id": "DP123", "university_id": "UN001", "graduate_student_name": "Arjun Mehta", "department_name": "Department of Quantum Gastronomy", "university_name": "Celestial Institute of Quantum Arts", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "QT123", "undergraduate_student_name": "Hannah Brooks", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW015", "person_name": "Jordan Walsh", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "EFG001", "department_id": "XYZ002", "department_name": "Department of Quantum Astrobiology Ethics", "student_name": "Liam Anderson", "student_email": "liam.anderson@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG030", "research_group_name": "Innovative Bioengineering Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX002", "faculty_id": "ABX003", "course_id": "ABX004", "student_name": "Zara Quinn", "faculty_name": "Prof. Ethan Brooks", "course_name": "Computational Pharmacokinetics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP003", "chair_id": "AB004", "department_name": "Department of Quantum Astrobiology Philosophy", "chair_name": "Dr. Gabriel Ortiz", "chair_email": "gabriel.ortiz@un001.edu", "chair_telephone": "+1-555-6000", "chair_office": "Room 2003C", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Taylor Reed", "intent": "DefineAlumnus"}
+{"student_id": "ABX003", "student_name": "Grace Wilson", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "MN001", "profssor_email": "mn001@university.edu", "professor_name": "Dr. Adrian Blake", "professor_telephone": "+1-555-0996", "intent": "HireProfessor"}
+{"graduate_student_id": "GS017", "graduate_student_name": "Kira Singh", "department_id": "DP300", "department_name": "Department of Quantum Exoplanetology", "university_id": "UN015", "university_name": "Nebula Institute of Quantum Engineering", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AA004", "undergraduate_student_name": "Olivia Bennett", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "NEW016", "person_name": "Avery Reed", "intent": "ListMember"}
+{"university_id": "UN020", "student_id": "ABX004", "student_name": "Carter Blake", "student_email": "carter.blake@un020.edu", "department_id": "DP991", "department_name": "Department of Quantum Astrobiology Sociology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG031", "research_group_name": "Advanced Cognitive Systems Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "JKL999", "faculty_id": "YZ003", "course_id": "ABX005", "student_name": "Caleb Rivera", "faculty_name": "Prof. Daniel Harper", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "AB201", "chair_id": "AB202", "department_name": "Department of Quantum Astrophysics Philosophy", "chair_name": "Dr. Nathaniel Reed", "chair_email": "nathaniel.reed@un001.edu", "chair_telephone": "+1-555-1112", "chair_office": "Room 980B", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Jordan Rivers", "intent": "DefineAlumnus"}
+{"student_id": "ABX005", "student_name": "Ethan Sawyer", "intent": "IntroduceStudent"}
+{"department_id": "DP201", "professor_id": "UV001", "profssor_email": "ethan.brooks@university.edu", "professor_name": "Dr. Ethan Brooks", "professor_telephone": "+1-555-0997", "intent": "HireProfessor"}
+{"graduate_student_id": "GS024", "department_id": "DP990", "university_id": "UN021", "graduate_student_name": "Caleb Morgan", "department_name": "Department of Quantum Astrochemistry", "university_name": "Celestial Institute of Quantum Innovation", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "YZ002", "undergraduate_student_name": "Liam Patel", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP201", "person_id": "ZK007", "person_name": "Casey Harper", "intent": "ListMember"}
+{"university_id": "UN020", "student_id": "OPQ002", "student_name": "Liam Carter", "student_email": "liam.carter@un020.edu", "department_id": "DP500", "department_name": "Department of Quantum Astrobiology Anthropology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG032", "research_group_name": "Advanced Quantum Materials Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX006", "faculty_id": "JKL300", "course_id": "YZ600", "student_name": "Ethan Montgomery", "faculty_name": "Prof. Isabella Torres", "course_name": "Computational Astrobiology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "XY123", "chair_id": "CD001", "department_name": "Department of Quantum Astrobiology", "chair_name": "Dr. Nathaniel Pierce", "chair_email": "nathaniel.pierce@un001.edu", "chair_telephone": "+1-555-2222", "chair_office": "Room 1056N", "intent": "NominateDepartmentChair"}
+{"university_id": "UN005", "person_id": "NEW017", "person_name": "Avery Grant", "intent": "DefineAlumnus"}
+{"student_id": "AA004", "student_name": "Ethan Rivera", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "professor_id": "CD001", "profssor_email": "felix.harper@university.edu", "professor_name": "Dr. Felix Harper", "professor_telephone": "+1-555-0998", "intent": "HireProfessor"}
+{"graduate_student_id": "GS030", "graduate_student_name": "Tara Singh", "department_id": "DP321", "department_name": "Department of Quantum Temporal Mechanics", "university_id": "UN030", "university_name": "Stellar Institute of Quantum Innovation", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "NV001", "undergraduate_student_name": "Patrick O'Neil", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP100", "person_id": "NEW018", "person_name": "Jordan Pierce", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ABX007", "student_name": "Kai Nakamura", "student_email": "kai.nakamura@un001.edu", "department_id": "DP888", "department_name": "Department of Quantum Aeronautics", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG033", "research_group_name": "Advanced Climate Modeling Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX008", "faculty_id": "JKL400", "course_id": "YZ700", "student_name": "Caleb Dawson", "faculty_name": "Prof. Daniel Zhao", "course_name": "Computational Genetics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "department_id": "DP801", "chair_id": "AB801", "department_name": "Department of Quantum Renewable Energy", "chair_name": "Dr. Maya Singh", "chair_email": "maya.singh@un020.edu", "chair_telephone": "+1-555-3333", "chair_office": "Room 1057P", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU019", "person_name": "Cameron Reed", "intent": "DefineAlumnus"}
+{"student_id": "JKL003", "student_name": "Ethan Rhodes", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "professor_id": "QR123", "profssor_email": "amelia.stone@university.edu", "professor_name": "Dr. Amelia Stone", "professor_telephone": "+1-555-1000", "intent": "HireProfessor"}
+{"graduate_student_id": "GS999", "department_id": "XY999", "university_id": "UN999", "graduate_student_name": "Maya Patel", "department_name": "Department of Quantum Astrobiology Theology", "university_name": "Cosmic Institute of Quantum Engineering", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AF001", "undergraduate_student_name": "Mia Thompson", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP100", "person_id": "NEW019", "person_name": "Jordan Knight", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ABX009", "department_id": "DP989", "department_name": "Department of Quantum Astrobiology Linguistics", "student_name": "Zara Quinn", "student_email": "zara.quinn@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG034", "research_group_name": "Innovative Quantum Systems Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "XZ123", "faculty_id": "YZ124", "course_id": "ABX010", "student_name": "Mason Reed", "faculty_name": "Prof. Hannah Patel", "course_name": "Advanced Natural Language Processing", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "AA001", "chair_id": "AA001", "department_name": "Department of Quantum Astrobiology Mathematics", "chair_name": "Dr. Alexander Quinn", "chair_email": "alexander.quinn@un001.edu", "chair_telephone": "+1-555-2223", "chair_office": "Room 9999Z", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "person_id": "ALU023", "person_name": "Jordan Archer", "intent": "DefineAlumnus"}
+{"student_id": "ABX010", "student_name": "Mason Carter", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "professor_id": "JK999", "profssor_email": "selene.ortiz@university.edu", "professor_name": "Dr. Selene Ortiz", "professor_telephone": "+1-555-1010", "intent": "HireProfessor"}
+{"department_id": "DP001", "person_id": "TAR001", "person_name": "Taylor Quinn", "intent": "ListMember"}
+{"graduate_student_id": "GS017", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Sanjay Patel", "department_name": "Department of Quantum Photobiology", "university_name": "Quantum Frontier University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Ethan Morales", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "ABX011", "student_name": "Julian Reed", "student_email": "julian.reed@un001.edu", "department_id": "EFG001", "department_name": "Department of Quantum Geomorphology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG035", "research_group_name": "Advanced Quantum Sensors Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX012", "faculty_id": "ABX013", "course_id": "ZX002", "student_name": "Ethan Palmer", "faculty_name": "Prof. Julian Hart", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "GH001", "chair_id": "GH002", "department_name": "Department of Quantum Aeronautics", "chair_name": "Dr. Nathaniel Frost", "chair_email": "nathaniel.frost@un001.edu", "chair_telephone": "+1-555-5555", "chair_office": "Room 1058Q", "intent": "NominateDepartmentChair"}
+{"university_id": "UN020", "person_id": "ALU019", "person_name": "Jordan Mason", "intent": "DefineAlumnus"}
+{"student_id": "EFG006", "student_name": "Liam Garcia", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "professor_id": "AB200", "profssor_email": "ab200@university.edu", "professor_name": "Dr. Alex Nova", "professor_telephone": "+1-555-2000", "intent": "HireProfessor"}
+{"department_id": "DP001", "person_id": "ZK008", "person_name": "Avery Lane", "intent": "ListMember"}
+{"graduate_student_id": "GS031", "department_id": "DP988", "university_id": "UN022", "graduate_student_name": "Sofia Patel", "department_name": "Department of Quantum Astroecology", "university_name": "Intergalactic University of Quantum Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "XZ002", "undergraduate_student_name": "Grace Lee", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "ABX013", "student_name": "Ethan Hawke", "student_email": "ethan.hawke@un001.edu", "department_id": "DP987", "department_name": "Department of Quantum Aeronautics", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG036", "research_group_name": "Innovative Photonics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "faculty_id": "DP002", "course_id": "UN001", "student_name": "Avery Brooks", "faculty_name": "Prof. Adrian Cole", "course_name": "Computational Metabolomics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "GH001", "department_name": "Department of Quantum Astrobiology Cryptography", "chair_id": "JK001", "chair_name": "Dr. Nathaniel Vega", "chair_email": "nathaniel.vega@un001.edu", "chair_telephone": "+1-555-1010", "chair_office": "Room 1234N", "intent": "NominateDepartmentChair"}
+{"department_id": "DP001", "professor_id": "DE001", "profssor_email": "de001@university.edu", "professor_name": "Dr. Daniel Evans", "professor_telephone": "+1-555-1100", "intent": "HireProfessor"}
+{"student_id": "DP001", "student_name": "Caleb Montgomery", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU023", "person_name": "Charlie Morgan", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "ABC004", "person_name": "Avery Collins", "intent": "ListMember"}
+{"graduate_student_id": "DP001", "graduate_student_name": "Liam OConnor", "department_id": "DP100", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AA005", "undergraduate_student_name": "Noah Davis", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "EFH002", "department_id": "DP555", "department_name": "Department of Quantum Astrobiology Engineering", "student_name": "Nora Sinclair", "student_email": "nora.sinclair@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG037", "research_group_name": "Innovative Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX014", "student_name": "Jordan Smith", "course_id": "ZX003", "course_name": "Computational Oceanography", "faculty_id": "YZ005", "faculty_name": "Prof. Daniel Alvarez", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP222", "chair_id": "AB600", "department_name": "Department of Quantum Astrobiology Cryptography", "chair_name": "Dr. Yara Patel", "chair_email": "yara.patel@un001.edu", "chair_telephone": "+1-555-7770", "chair_office": "Room 1235K", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "XY002", "profssor_email": "xy002@university.edu", "professor_name": "Dr. Victor Hale", "professor_telephone": "+1-555-1111", "intent": "HireProfessor"}
+{"student_id": "ABX015", "student_name": "Zane Carter", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "NEW020", "person_name": "Taylor Stone", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "NEW021", "person_name": "Jordan Wolfe", "intent": "ListMember"}
+{"graduate_student_id": "GS100", "department_id": "DP113", "university_id": "UN023", "graduate_student_name": "Aaliyah Rahman", "department_name": "Department of Quantum Astrobiology", "university_name": "Celestial Institute of Quantum Metamaterials", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "GH123", "undergraduate_student_name": "Sophia Rivera", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "MNO001", "department_id": "DP123", "department_name": "Department of Quantum Astrobiology Paleontology", "student_name": "Mason Carter", "student_email": "mason.carter@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG038", "research_group_name": "Innovative Nanotechnology Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "NOP001", "student_name": "Luna Harper", "faculty_id": "QRS001", "faculty_name": "Prof. Ethan Rivera", "course_id": "YZ800", "course_name": "Computational Bioinformatics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "QD001", "chair_id": "QD002", "department_name": "Department of Quantum Astrobiology Astrophysics", "chair_name": "Dr. Oliver Grant", "chair_email": "oliver.grant@un001.edu", "chair_telephone": "+1-555-7771", "chair_office": "Room 1236K", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "GH124", "profssor_email": "samuel.reed@university.edu", "professor_name": "Dr. Samuel Reed", "professor_telephone": "+1-555-1020", "intent": "HireProfessor"}
+{"student_id": "ABX016", "student_name": "Caleb Owens", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "NEW022", "person_name": "Jordan Abbott", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "NEW023", "person_name": "Charlie Quinn", "intent": "ListMember"}
+{"graduate_student_id": "GS200", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Liam Patel", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "JKL001", "undergraduate_student_name": "Liam Walker", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "JKL789", "department_id": "DP123", "department_name": "Department of Quantum Time Travel", "student_name": "Samuel Torres", "student_email": "samuel.torres@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG039", "research_group_name": "Innovative Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "XYZ002", "student_name": "Evelyn Shaw", "course_id": "ABY001", "course_name": "Computational Systems Biology", "faculty_id": "EFG999", "faculty_name": "Prof. Daniel Whitaker", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN005", "department_id": "DP200", "chair_id": "AB950", "department_name": "Department of Quantum Astrobiology Philosophy", "chair_name": "Dr. Zachary Quinn", "chair_email": "zachary.quinn@un005.edu", "chair_telephone": "+1-555-7772", "chair_office": "Room 1237L", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "AB100", "profssor_email": "maya.rivera@university.edu", "professor_name": "Dr. Maya Rivera", "professor_telephone": "+1-555-1030", "intent": "HireProfessor"}
+{"student_id": "ABX017", "student_name": "Grace Harper", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU024", "person_name": "Jordan Vega", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "NEW024", "person_name": "Casey Reed", "intent": "ListMember"}
+{"graduate_student_id": "GS100", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Avery Chen", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Olivia Grant", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "ABC001", "department_id": "DP123", "department_name": "Department of Quantum Astrobiology Cartography", "student_name": "Caleb Whitaker", "student_email": "caleb.whitaker@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG040", "research_group_name": "Emerging Quantum Technologies Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "EFG001", "faculty_id": "JKL005", "course_id": "ABX011", "student_name": "Noah Sinclair", "faculty_name": "Prof. Amelia Rivera", "course_name": "Computational Systems Biology", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "department_id": "DP200", "chair_id": "YZ200", "department_name": "Department of Quantum Oceanography", "chair_name": "Dr. Evelyn Monroe", "chair_email": "evelyn.monroe@un020.edu", "chair_telephone": "+1-555-7773", "chair_office": "Room 1234O", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "LM200", "profssor_email": "celia.harper@university.edu", "professor_name": "Dr. Celia Harper", "professor_telephone": "+1-555-1050", "intent": "HireProfessor"}
+{"student_id": "AA005", "student_name": "Grace Thompson", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Jordan Novak", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "ZK009", "person_name": "Blake Quinn", "intent": "ListMember"}
+{"graduate_student_id": "DP123", "graduate_student_name": "Mira Patel", "department_id": "DP100", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AB001", "undergraduate_student_name": "Eleanor Shaw", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "EFG001", "student_name": "Milo Reyes", "student_email": "milo.reyes@un020.edu", "department_id": "XYZ001", "department_name": "Department of Quantum Nanorobotics", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG041", "research_group_name": "Advanced Quantum AI Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DEF001", "faculty_id": "GHI001", "course_id": "OPQ999", "student_name": "Nora Sinclair", "faculty_name": "Prof. Adrian Lee", "course_name": "Computational Pharmacodynamics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP802", "chair_id": "AB802", "department_name": "Department of Quantum Astrobiology Geochemistry", "chair_name": "Dr. Naomi Whitaker", "chair_email": "naomi.whitaker@un001.edu", "chair_telephone": "+1-555-7778", "chair_office": "Room 1238B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "EF101", "profssor_email": "quinn.harper@university.edu", "professor_name": "Dr. Quinn Harper", "professor_telephone": "+1-555-1060", "intent": "HireProfessor"}
+{"student_id": "XZ017", "student_name": "Olivia Blake", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Jordan York", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "KLM001", "person_name": "Logan Pierce", "intent": "ListMember"}
+{"graduate_student_id": "GS999", "department_id": "AB999", "university_id": "UN888", "graduate_student_name": "Evelyn Harper", "department_name": "Department of Interdimensional Ethics", "university_name": "Celestial Institute of Temporal Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "David Patel", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "ABX018", "student_name": "Lila Morgan", "student_email": "lila.morgan@un020.edu", "department_id": "DP101", "department_name": "Department of Quantum Space Law", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG042", "research_group_name": "Advanced Quantum Information Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "student_name": "Ethan Morales", "course_id": "DP100", "course_name": "Quantum Machine Learning", "faculty_id": "DP200", "faculty_name": "Prof. Daniel Liu", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "XYZ123", "chair_id": "CD123", "department_name": "Department of Quantum Astrogeology", "chair_name": "Dr. Nova Harper", "chair_email": "nova.harper@un001.edu", "chair_telephone": "+1-555-7779", "chair_office": "Room 1234Z", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "AB101", "profssor_email": "adrian.vance@university.edu", "professor_name": "Dr. Adrian Vance", "professor_telephone": "+1-555-1112", "intent": "HireProfessor"}
+{"student_id": "XZ018", "student_name": "Caleb Novak", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Jordan Zimmerman", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "ZK010", "person_name": "Avery Hayes", "intent": "ListMember"}
+{"graduate_student_id": "DP001", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Maya Albright", "department_name": "Department of Quantum Computing", "university_name": "Celestial Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "CD001", "undergraduate_student_name": "Natalie Brooks", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "LMN004", "student_name": "Jordan Smith", "student_email": "jordan.smith@un020.edu", "department_id": "DP986", "department_name": "Department of Quantum Astrobiology Philosophy", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG043", "research_group_name": "Innovative Quantum Sensors Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "faculty_id": "DP003", "course_id": "DP002", "student_name": "Evelyn Brooks", "faculty_name": "Prof. Gabriel Liu", "course_name": "Synthetic Biology Modeling", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP350", "chair_id": "AB350", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Evelyn Harper", "chair_email": "evelyn.harper@un001.edu", "chair_telephone": "+1-555-7775", "chair_office": "Room 1239Z", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "BK005", "profssor_email": "blake.novak@university.edu", "professor_name": "Dr. Blake Novak", "professor_telephone": "+1-555-1113", "intent": "HireProfessor"}
+{"student_id": "ABX019", "student_name": "Lydia Harper", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Riley Stone", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "NEW025", "person_name": "Jordan Whitaker", "intent": "ListMember"}
+{"graduate_student_id": "GS500", "department_id": "DP610", "university_id": "UN500", "graduate_student_name": "Zara Khan", "department_name": "Department of Quantum Holography Ethics", "university_name": "Celestial Institute of Quantum Governance", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "EF001", "undergraduate_student_name": "Ethan Wallace", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "ABX021", "department_id": "XYZ001", "department_name": "Department of Quantum Gastronomy", "student_name": "Mason Quinn", "student_email": "mason.quinn@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG044", "research_group_name": "Advanced Quantum Cryptography Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "AE001", "faculty_id": "AF001", "course_id": "AC001", "student_name": "Liam Novak", "faculty_name": "Prof. Clara Bennett", "course_name": "Computational Systems Engineering", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP200", "department_name": "Department of Quantum Astrobiology Astrophysics Engineering", "chair_id": "AB005", "chair_name": "Dr. Evelyn Stone", "chair_email": "evelyn.stone@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1230X", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "ZY001", "profssor_email": "oliver.grant@university.edu", "professor_name": "Dr. Oliver Grant", "professor_telephone": "+1-555-1114", "intent": "HireProfessor"}
+{"student_id": "ABX020", "student_name": "Grace Anderson", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU019", "person_name": "Jordan Alvarez", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "NEW026", "person_name": "Jordan Hart", "intent": "ListMember"}
+{"graduate_student_id": "DP001", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Jordan Patel", "department_name": "Department of Quantum Cryptography", "university_name": "Nebula Institute of Quantum Engineering", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AB002", "undergraduate_student_name": "Mia Anderson", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "EFG001", "department_id": "XZ999", "department_name": "Department of Quantum Astrobiology Ethics", "student_name": "Ethan Nova", "student_email": "ethan.nova@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG045", "research_group_name": "Innovative Quantum Materials Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "XY123", "faculty_id": "LMN123", "course_id": "ZX999", "student_name": "Jordan Quinn", "faculty_name": "Prof. Amelia Torres", "course_name": "Advanced Machine Vision", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "department_id": "DP220", "chair_id": "DP221", "department_name": "Department of Quantum Astrochemistry Applications", "chair_name": "Dr. Isabella Patel", "chair_email": "isabella.patel@un020.edu", "chair_telephone": "+1-555-2224", "chair_office": "Room 1230Y", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "AB102", "profssor_email": "nova.quinn@university.edu", "professor_name": "Dr. Nova Quinn", "professor_telephone": "+1-555-1040", "intent": "HireProfessor"}
+{"student_id": "DP001", "student_name": "Evelyn Hart", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU019", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "NEW027", "person_name": "Jordan Whitman", "intent": "ListMember"}
+{"graduate_student_id": "GS101", "department_id": "AB200", "university_id": "UN101", "graduate_student_name": "Ethan Liu", "department_name": "Department of Quantum Astrophysics Law", "university_name": "Stellar Institute of Quantum Law", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "YZ004", "undergraduate_student_name": "Liam Carter", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "ABX021", "student_name": "Jordan Quinn", "student_email": "jordan.quinn@un020.edu", "department_id": "DP985", "department_name": "Department of Quantum Holographic Ethics", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG046", "research_group_name": "Innovative Quantum Communication Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "faculty_id": "DP003", "course_id": "DP002", "student_name": "Alice", "faculty_name": "Dr. Smith", "course_name": "Advanced Topics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "XY001", "chair_id": "AB123", "department_name": "Department of Quantum Astrophysics Law", "chair_name": "Dr. Lila Kapoor", "chair_email": "lila.kapoor@un001.edu", "chair_telephone": "+1-555-7776", "chair_office": "Room 1234A", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "XZ200", "profssor_email": "amelia.reed@university.edu", "professor_name": "Dr. Amelia Reed", "professor_telephone": "+1-555-2001", "intent": "HireProfessor"}
+{"student_id": "ABY001", "student_name": "Jordan Blake", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Jordan Yates", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "DP101", "person_name": "Morgan Ellis", "intent": "ListMember"}
+{"graduate_student_id": "GS050", "graduate_student_name": "Evelyn Torres", "department_id": "ZZ001", "department_name": "Department of Quantum Astrobiology Ethics", "university_id": "UN777", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Olivia Harper", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "EFG001", "student_name": "Sebastian Quinn", "student_email": "sebastian.quinn@un020.edu", "department_id": "MNX001", "department_name": "Department of Quantum Gastronomy", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG047", "research_group_name": "Innovative Quantum Analytics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "student_name": "Nolan Pierce", "course_id": "UN001", "course_name": "Computational Astrophysics II", "faculty_id": "DP002", "faculty_name": "Prof. Ethan Zhao", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP123", "chair_id": "EF123", "department_name": "Department of Quantum Astrobiology Gastronomy", "chair_name": "Dr. Isabella Nguyen", "chair_email": "isabella.nguyen@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1234D", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB300", "profssor_email": "clara.bennett@university.edu", "professor_name": "Dr. Clara Bennett", "professor_telephone": "+1-555-1101", "intent": "HireProfessor"}
+{"student_id": "XZ019", "student_name": "Olivia Reed", "intent": "IntroduceStudent"}
+{"university_id": "UN999", "person_id": "GHI001", "person_name": "Jordan Harper", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ZK011", "person_name": "Jordan Blake", "intent": "ListMember"}
+{"graduate_student_id": "GS021", "graduate_student_name": "Lydia Chen", "department_id": "DP100", "department_name": "Department of Quantum Computing", "university_id": "UN020", "university_name": "Quantum Frontier University", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AB003", "undergraduate_student_name": "Ethan Zhao", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "DP001", "department_id": "ABX021", "department_name": "Department of Quantum Bioinformatics", "student_name": "Alex Johnson", "student_email": "alex.johnson@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG048", "research_group_name": "Innovative Quantum AI Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "XZ021", "student_name": "Olivia Reed", "course_id": "ZX004", "course_name": "Computational Astrophysics III", "faculty_id": "JKL010", "faculty_name": "Prof. Hannah Zhao", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "department_id": "DP660", "chair_id": "AB660", "department_name": "Department of Quantum Chronobiology", "chair_name": "Dr. Isabella Cheng", "chair_email": "isabella.cheng@un020.edu", "chair_telephone": "+1-555-8889", "chair_office": "Room 1234Q", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "EF001", "profssor_email": "ethan.frost@university.edu", "professor_name": "Dr. Ethan Frost", "professor_telephone": "+1-555-1115", "intent": "HireProfessor"}
+{"student_id": "ABZ002", "student_name": "Catherine Lewis", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ZK012", "person_name": "Elliot Quinn", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "QRS002", "person_name": "Alex Stone", "intent": "ListMember"}
+{"graduate_student_id": "GS150", "graduate_student_name": "Kylie Monroe", "department_id": "DP960", "department_name": "Department of Quantum Xenobiology Ethics", "university_id": "UN950", "university_name": "Celestial Institute of Quantum Ethics", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "LM001", "undergraduate_student_name": "Ethan Liu", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "ABX022", "department_id": "ABX021", "department_name": "Department of Quantum Astrophysics", "student_name": "Evelyn Harper", "student_email": "evelyn.harper@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG049", "research_group_name": "Advanced Quantum Computing Systems Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "AG001", "faculty_id": "AF002", "course_id": "ABX012", "student_name": "Mila Reyes", "faculty_name": "Prof. Isabella Martinez", "course_name": "Machine Learning for Healthcare", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "DP123", "chair_id": "EF456", "department_name": "Department of Quantum Astrobiology Oceanography", "chair_name": "Dr. Aurora Patel", "chair_email": "aurora.patel@un001.edu", "chair_telephone": "+1-555-1113", "chair_office": "Room 1234B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP100", "professor_id": "LM300", "profssor_email": "ethan.vance@university.edu", "professor_name": "Dr. Ethan Vance", "professor_telephone": "+1-555-1116", "intent": "HireProfessor"}
+{"student_id": "AF001", "student_name": "Felix Monroe", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU019", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ003", "person_name": "Jordan Zane", "intent": "ListMember"}
+{"graduate_student_id": "GS200", "department_id": "DP202", "university_id": "UN200", "graduate_student_name": "Xavier Morales", "department_name": "Department of Quantum Xenobiology Engineering", "university_name": "Celestial Institute of Quantum Architecture", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AB999", "undergraduate_student_name": "Lydia Harper", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "student_id": "DP001", "department_id": "DP123", "department_name": "Department of Quantum Aeronautics", "student_name": "Alex Johnson", "student_email": "alex.johnson@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "research_group_id": "RG050", "research_group_name": "Emerging Quantum Sensors Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "BG001", "faculty_id": "LMN999", "course_id": "CY001", "student_name": "Elliot Brooks", "faculty_name": "Prof. Amelia Zhou", "course_name": "Computational Astrophysics IV", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "EFG123", "chair_id": "AB960", "department_name": "Department of Quantum Astrochemistry Theory", "chair_name": "Dr. Evelyn Frost", "chair_email": "evelyn.frost@un001.edu", "chair_telephone": "+1-555-1011", "chair_office": "Room 1234R", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "XZ999", "profssor_email": "maya.collins@university.edu", "professor_name": "Dr. Maya Collins", "professor_telephone": "+1-555-1117", "intent": "HireProfessor"}
+{"student_id": "ABX021", "student_name": "Jordan Miller", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ABC999", "person_name": "Morgan Quinn", "intent": "ListMember"}
+{"graduate_student_id": "GS025", "graduate_student_name": "Luca Romano", "department_id": "DP970", "department_name": "Department of Quantum Xenobiology Law", "university_id": "UN997", "university_name": "Celestial Institute of Quantum Music", "intent": "GraduateStudent"}
+{"undergraduate_student_id": "AB004", "undergraduate_student_name": "Samuel Torres", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "student_id": "ABX021", "student_name": "Silas Reed", "student_email": "silas.reed@un020.edu", "department_id": "DP021", "department_name": "Department of Quantum Astrobiology Philosophy", "intent": "EnrollStudent"}
+{"university_id": "UN001", "research_group_id": "RG051", "research_group_name": "Advanced Quantum Machine Learning Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABY001", "student_name": "Daphne Monroe", "course_id": "ZX005", "course_name": "Quantum Machine Learning", "faculty_id": "JKL007", "faculty_name": "Prof. Samuel Quinn", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "department_id": "EFG123", "chair_id": "JK123", "department_name": "Department of Quantum Astrobiology Law", "chair_name": "Dr. Selene Ortiz", "chair_email": "selene.ortiz@un001.edu", "chair_telephone": "+1-555-1012", "chair_office": "Room 1230W", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "XZ300", "profssor_email": "hannah.lee@university.edu", "professor_name": "Dr. Hannah Lee", "professor_telephone": "+1-555-1118", "intent": "HireProfessor"}
+{"university_id": "UN020", "department_id": "AB300", "chair_id": "AB011", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Felix Monroe", "chair_email": "felix.monroe@un020.edu", "chair_telephone": "+1-555-8000", "chair_office": "Room 1234S", "intent": "NominateDepartmentChair"}
+{"student_id": "XZ030", "student_name": "Liam O'Connor", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU023", "person_name": "Alex Reed", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "ABC100", "person_name": "Jordan Monroe", "intent": "ListMember"}
+{"undergraduate_student_id": "AB005", "undergraduate_student_name": "Evelyn Chen", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS999", "graduate_student_name": "Harper Quinn", "department_id": "CD999", "department_name": "Department of Interstellar Cartography", "university_id": "UN998", "university_name": "Celestial Institute of Quantum Cartography", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG052", "research_group_name": "Advanced Quantum Teleportation Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABY001", "student_name": "Avery Quinn", "faculty_id": "ZQ001", "faculty_name": "Prof. Benjamin Torres", "course_id": "XY999", "course_name": "Advanced Bioinformatics", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "student_id": "AC001", "department_id": "EX001", "department_name": "Department of Quantum Holography Arts", "student_name": "Avery Quinn", "student_email": "avery.quinn@un020.edu", "intent": "EnrollStudent"}
+{"department_id": "DP993", "professor_id": "XZ101", "profssor_email": "felix.monroe@university.edu", "professor_name": "Dr. Felix Monroe", "professor_telephone": "+1-555-1122", "intent": "HireProfessor"}
+{"university_id": "UN001", "department_id": "GHX001", "chair_id": "GHY001", "department_name": "Department of Interstellar Agriculture", "chair_name": "Dr. Serena Liu", "chair_email": "serena.liu@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1234V", "intent": "NominateDepartmentChair"}
+{"student_id": "AZ001", "student_name": "Grace Parker", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Morgan Blake", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ABC005", "person_name": "Jordan Black", "intent": "ListMember"}
+{"undergraduate_student_id": "AB006", "undergraduate_student_name": "Lydia Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "AB999", "graduate_student_name": "Nova Quinn", "department_id": "DP001", "department_name": "Department of Quantum Cryptography", "university_id": "UN001", "university_name": "Celestial Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG053", "research_group_name": "Pioneering Quantum Networks Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "DP001", "student_name": "Sebastian Cole", "course_id": "DP002", "course_name": "Computational Astrophysics", "faculty_id": "DP003", "faculty_name": "Prof. Daniel Rivera", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "XZ124", "department_id": "YZ124", "department_name": "Department of Quantum Culinary Arts", "student_name": "Evelyn Torres", "student_email": "evelyn.torres@un001.edu", "intent": "EnrollStudent"}
+{"department_id": "DP993", "professor_id": "EF200", "profssor_email": "newprofessor3@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-2002", "intent": "HireProfessor"}
+{"university_id": "UN020", "department_id": "AB321", "chair_id": "AB322", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Orion Vega", "chair_email": "orion.vega@un020.edu", "chair_telephone": "+1-555-8880", "chair_office": "Room 1234Z", "intent": "NominateDepartmentChair"}
+{"student_id": "XZ022", "student_name": "Grace Alvarez", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU023", "person_name": "Elliot Black", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ZK013", "person_name": "Taylor Hayes", "intent": "ListMember"}
+{"undergraduate_student_id": "GH001", "undergraduate_student_name": "Isabel Torres", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "DP001", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Aaliyah Rahman", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG054", "research_group_name": "Emerging Quantum AI Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ACD001", "student_name": "Jordan Harper", "course_id": "BKL001", "course_name": "Computational Neuropharmacology", "faculty_id": "JLM001", "faculty_name": "Prof. Clara Liu", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "AEF001", "student_name": "Ethan Cross", "student_email": "ethan.cross@un001.edu", "department_id": "GHX002", "department_name": "Department of Quantum Astrobiology Law", "intent": "EnrollStudent"}
+{"department_id": "DP993", "professor_id": "XY123", "profssor_email": "xavier.woods@university.edu", "professor_name": "Dr. Xavier Woods", "professor_telephone": "+1-555-1200", "intent": "HireProfessor"}
+{"university_id": "UN020", "department_id": "EF001", "chair_id": "EF002", "department_name": "Department of Quantum Xenobiology Philosophy", "chair_name": "Dr. Celeste Nova", "chair_email": "celeste.nova@un020.edu", "chair_telephone": "+1-555-1013", "chair_office": "Room 1240A", "intent": "NominateDepartmentChair"}
+{"student_id": "ABY001", "student_name": "Evelyn Stone", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "XYZ004", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ZK014", "person_name": "Taylor Harper", "intent": "ListMember"}
+{"undergraduate_student_id": "AB007", "undergraduate_student_name": "Grace Patel", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS110", "graduate_student_name": "Evelyn Brooks", "department_id": "DP980", "department_name": "Department of Quantum Temporal Engineering", "university_id": "UN960", "university_name": "Nebula Institute of Quantum Ethics", "intent": "GraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG055", "research_group_name": "Innovative Quantum Energy Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "MNX001", "student_name": "Isla Rivera", "faculty_id": "YZ006", "faculty_name": "Prof. Benjamin Torres", "course_id": "ZX006", "course_name": "Computational Systems Engineering", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "student_id": "ABX023", "department_id": "DP100", "department_name": "Department of Quantum Holographic Arts", "student_name": "Catherine Lewis", "student_email": "catherine.lewis@un020.edu", "intent": "EnrollStudent"}
+{"department_id": "DP100", "professor_id": "JKL001", "profssor_email": "jkl001@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-1119", "intent": "HireProfessor"}
+{"university_id": "UN001", "department_id": "DP121", "chair_id": "XY777", "department_name": "Department of Quantum Stellar Cartography", "chair_name": "Dr. Amelia Torres", "chair_email": "amelia.torres@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1234Y", "intent": "NominateDepartmentChair"}
+{"student_id": "ABX024", "student_name": "Mason Reed", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "XYZ005", "person_name": "Jordan Harper", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ006", "person_name": "Charlie Harper", "intent": "ListMember"}
+{"undergraduate_student_id": "JKL002", "undergraduate_student_name": "Ethan Garcia", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "DP001", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Aaliyah Rahman", "department_name": "Department of Quantum Computing", "university_name": "Aurora Global University", "intent": "GraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG056", "research_group_name": "Innovative Quantum Robotics Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ABX021", "student_name": "Theo Marshall", "faculty_id": "ABY021", "faculty_name": "Prof. Benjamin Ortiz", "course_id": "ABZ021", "course_name": "Computational Systems Engineering", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "ABX023", "department_id": "DP023", "department_name": "Department of Quantum Space Architecture", "student_name": "Noah Sinclair", "student_email": "noah.sinclair@un001.edu", "intent": "EnrollStudent"}
+{"department_id": "DP993", "professor_id": "EF400", "profssor_email": "nova.vance@university.edu", "professor_name": "Dr. Nova Vance", "professor_telephone": "+1-555-1300", "intent": "HireProfessor"}
+{"university_id": "UN020", "department_id": "GHX003", "chair_id": "ZX124", "department_name": "Department of Quantum Chronobiology", "chair_name": "Dr. Evelyn Mercer", "chair_email": "evelyn.mercer@un020.edu", "chair_telephone": "+1-555-1014", "chair_office": "Room 1241B", "intent": "NominateDepartmentChair"}
+{"student_id": "BA001", "student_name": "Jasper Reed", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "XYZ007", "person_name": "Jordan Sterling", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "LMN001", "person_name": "Alex Vega", "intent": "ListMember"}
+{"undergraduate_student_id": "GH002", "undergraduate_student_name": "Olivia Parker", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP100", "professor_id": "XZ400", "profssor_email": "victor.hale@university.edu", "professor_name": "Dr. Victor Hale", "professor_telephone": "+1-555-2100", "intent": "HireProfessor"}
+{"graduate_student_id": "GS850", "graduate_student_name": "Nadia Patel", "department_id": "DP860", "department_name": "Department of Quantum Astrobiology Ethics", "university_id": "UN860", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"student_id": "DP001", "student_name": "Ethan Drake", "faculty_id": "DP200", "faculty_name": "Prof. Noah Sinclair", "course_id": "DP100", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "research_group_id": "RG057", "research_group_name": "Innovative Quantum Metrology Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN010", "student_id": "AB999", "department_id": "DP550", "department_name": "Physics", "student_name": "John Doe", "student_email": "john.doe@un010.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "department_id": "DP230", "chair_id": "EF700", "department_name": "Department of Quantum Holographic Design", "chair_name": "Dr. Aria Singh", "chair_email": "aria.singh@un001.edu", "chair_telephone": "+1-555-1015", "chair_office": "Room 1242C", "intent": "NominateDepartmentChair"}
+{"student_id": "DP001", "student_name": "Victor Hale", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "ALU021", "person_name": "Cameron Quinn", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ008", "person_name": "Alex Monroe", "intent": "ListMember"}
+{"undergraduate_student_id": "EF002", "undergraduate_student_name": "Natalie Kim", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP993", "professor_id": "XZ555", "profssor_email": "xz555@university.edu", "professor_name": "Dr. Xz Five", "professor_telephone": "+1-555-5555", "intent": "HireProfessor"}
+{"graduate_student_id": "GS777", "graduate_student_name": "Luna Vega", "department_id": "DP777", "department_name": "Department of Quantum Gastronomy", "university_id": "UN777", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"student_id": "AH001", "student_name": "Elliot Stone", "faculty_id": "AC002", "faculty_name": "Prof. Victor Hayes", "course_id": "BB001", "course_name": "Computational Pharmacovigilance", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "research_group_id": "RG058", "research_group_name": "Innovative Quantum Simulation Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "student_id": "ABX025", "department_id": "ABX022", "department_name": "Department of Quantum Teleportation", "student_name": "Grace Harper", "student_email": "grace.harper@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "department_id": "QT001", "chair_id": "QT002", "department_name": "Department of Quantum Chronoengineering", "chair_name": "Dr. Xavier Quinn", "chair_email": "xavier.quinn@un001.edu", "chair_telephone": "+1-555-3210", "chair_office": "Room 2004D", "intent": "NominateDepartmentChair"}
+{"student_id": "AA007", "student_name": "Evelyn Brooks", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "XYZ123", "person_name": "Morgan Blake", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ABC200", "person_name": "Morgan Blake", "intent": "ListMember"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Alice", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP993", "professor_id": "EF700", "profssor_email": "gabriel.torres@university.edu", "professor_name": "Dr. Gabriel Torres", "professor_telephone": "+1-555-1301", "intent": "HireProfessor"}
+{"graduate_student_id": "GS800", "department_id": "DP099", "university_id": "UN600", "graduate_student_name": "Eliana Torres", "department_name": "Department of Quantum Exoplanetary Agriculture", "university_name": "Celestial Institute of Quantum Agriculture", "intent": "GraduateStudent"}
+{"student_id": "ABX021", "student_name": "Jordan Parker", "faculty_id": "LMN500", "faculty_name": "Prof. Xavier Hart", "course_id": "ZX007", "course_name": "Computational Astrobiology II", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN020", "research_group_id": "RG059", "research_group_name": "Advanced Quantum Simulation Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "ABX999", "department_id": "DP984", "department_name": "Department of Interstellar Botany", "student_name": "Liam Novak", "student_email": "liam.novak@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN999", "department_id": "DP124", "chair_id": "ZZ999", "department_name": "Department of Quantum Exoplanetary Engineering", "chair_name": "Dr. Amelia Quinn", "chair_email": "amelia.quinn@un999.edu", "chair_telephone": "+1-555-9990", "chair_office": "Room 2005E", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB777", "profssor_email": "xander.zane@university.edu", "professor_name": "Dr. Xander Zane", "professor_telephone": "+1-555-7777", "intent": "HireProfessor"}
+{"student_id": "JKL010", "student_name": "Cora Bennett", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "NEW028", "person_name": "Jordan Adler", "intent": "DefineAlumnus"}
+{"department_id": "DP100", "person_id": "JKL001", "person_name": "Jordan Sinclair", "intent": "ListMember"}
+{"graduate_student_id": "GS011", "department_id": "DP983", "university_id": "UN996", "graduate_student_name": "Isla Montgomery", "department_name": "Department of Quantum Oceanography", "university_name": "Celestial Institute of Quantum Oceanography", "intent": "GraduateStudent"}
+{"student_id": "ABX021", "faculty_id": "ABY022", "course_id": "ABZ022", "student_name": "Zara Khan", "faculty_name": "Prof. Maya Patel", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "EF003", "undergraduate_student_name": "Ethan Reed", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG060", "research_group_name": "Innovative Quantum Networking Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "JKL004", "student_name": "Zara Khan", "student_email": "zara.khan@un020.edu", "department_id": "XZ031", "department_name": "Department of Quantum Astrobiology Astrobiochemistry", "intent": "EnrollStudent"}
+{"university_id": "UN020", "department_id": "JKL001", "chair_id": "LMN001", "department_name": "Department of Quantum Holographic Architecture", "chair_name": "Dr. Adrian Vega", "chair_email": "adrian.vega@un020.edu", "chair_telephone": "+1-555-8881", "chair_office": "Room 1243A", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB400", "profssor_email": "newprofessor4@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-1234", "intent": "HireProfessor"}
+{"student_id": "ABX026", "student_name": "Olive Sinclair", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "LMN002", "person_name": "Morgan Stone", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ009", "person_name": "Jordan Brooks", "intent": "ListMember"}
+{"graduate_student_id": "GS123", "department_id": "DP123", "university_id": "UN123", "graduate_student_name": "Evelyn Stone", "department_name": "Department of Interstellar Sociology", "university_name": "Celestial Institute of Quantum Sociology", "intent": "GraduateStudent"}
+{"student_id": "DP001", "student_name": "Darren Quinn", "faculty_id": "DP102", "faculty_name": "Prof. Daniel Quinn", "course_id": "DP101", "course_name": "Deep Reinforcement Learning", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "CD002", "undergraduate_student_name": "Liam Johnson", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG061", "research_group_name": "Emerging Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "ABX030", "department_id": "XZ999", "department_name": "Department of Quantum Gastronomy", "student_name": "Jasper Reed", "student_email": "jasper.reed@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "department_id": "QZ001", "chair_id": "QZ001", "department_name": "Department of Quantum Chronoarchaeology", "chair_name": "Dr. Selene Patel", "chair_email": "selene.patel@un001.edu", "chair_telephone": "+1-555-3212", "chair_office": "Room 1245A", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "XYZ001", "profssor_email": "felix.vega@university.edu", "professor_name": "Dr. Felix Vega", "professor_telephone": "+1-555-1302", "intent": "HireProfessor"}
+{"student_id": "DP100", "student_name": "Ethan Quinn", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "XYZ010", "person_name": "Blake Davis", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "ABC101", "person_name": "Casey Quinn", "intent": "ListMember"}
+{"graduate_student_id": "DP001", "department_id": "DP993", "university_id": "UN020", "graduate_student_name": "Soren Malik", "department_name": "Department of Quantum Chronobiology", "university_name": "Nebula Institute of Quantum Chronology", "intent": "GraduateStudent"}
+{"student_id": "DP001", "student_name": "Dylan Patel", "course_id": "UN001", "course_name": "Unified Nanotechnology", "faculty_id": "DP002", "faculty_name": "Prof. Daniel Huang", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "AA006", "undergraduate_student_name": "Liam Nguyen", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG062", "research_group_name": "Pioneering Quantum Sensors Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "ABX031", "department_id": "DP982", "department_name": "Department of Interstellar Philosophy", "student_name": "Ethan Rivers", "student_email": "ethan.rivers@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "department_id": "DP888", "chair_id": "AB777", "department_name": "Department of Quantum Chronobiology", "chair_name": "Dr. Evelyn Vega", "chair_email": "evelyn.vega@un020.edu", "chair_telephone": "+1-555-8882", "chair_office": "Room 1246B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB123", "profssor_email": "newprofessor5@university.edu", "professor_name": "Dr. New Professor", "professor_telephone": "+1-555-2003", "intent": "HireProfessor"}
+{"student_id": "ABX027", "student_name": "Oscar Bennett", "intent": "IntroduceStudent"}
+{"university_id": "UN020", "person_id": "LMN200", "person_name": "Cameron Reed", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ011", "person_name": "Alex Vega", "intent": "ListMember"}
+{"graduate_student_id": "GS111", "graduate_student_name": "Cassandra Liu", "department_id": "DP444", "department_name": "Department of Cosmic Archaeology", "university_id": "UN555", "university_name": "Celestial Institute of Quantum Archaeology", "intent": "GraduateStudent"}
+{"student_id": "ACD002", "faculty_id": "ABY023", "course_id": "ABY003", "student_name": "Mason Harper", "faculty_name": "Prof. Gabriel Martinez", "course_name": "Computational Astrobiology III", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Daniel Kim", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN999", "research_group_id": "RG063", "research_group_name": "Pioneering Quantum Materials Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "LMN005", "student_name": "Lydia Morgan", "student_email": "lydia.morgan@un020.edu", "department_id": "XZ032", "department_name": "Department of Astrogeology", "intent": "EnrollStudent"}
+{"university_id": "UN001", "department_id": "GHY001", "department_name": "Department of Quantum Chronobiology", "chair_id": "JK003", "chair_name": "Dr. Orion Patel", "chair_email": "orion.patel@un001.edu", "chair_telephone": "+1-555-3213", "chair_office": "Room 1235A", "intent": "NominateDepartmentChair"}
+{"department_id": "DP001", "professor_id": "CD200", "profssor_email": "maya.torres@university.edu", "professor_name": "Dr. Maya Torres", "professor_telephone": "+1-555-1303", "intent": "HireProfessor"}
+{"student_id": "ABY002", "student_name": "Quinn Harper", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ZK015", "person_name": "Harper Stone", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "LMN999", "person_name": "Cameron Reed", "intent": "ListMember"}
+{"graduate_student_id": "GS600", "department_id": "DP601", "university_id": "UN601", "graduate_student_name": "Mila Santos", "department_name": "Department of Cosmic Renewable Energy", "university_name": "Celestial Institute of Quantum Medicine", "intent": "GraduateStudent"}
+{"student_id": "ABZ003", "student_name": "Daphne Rivera", "faculty_id": "ABZ003", "faculty_name": "Prof. Naomi Patel", "course_id": "XZ031", "course_name": "Computational Astrobiology V", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Caleb Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG064", "research_group_name": "Cutting Edge Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN001", "student_id": "ABX032", "department_id": "DP778", "department_name": "Department of Quantum Gastronomy", "student_name": "Victor Hayes", "student_email": "victor.hayes@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "department_id": "DP999", "chair_id": "DP998", "department_name": "Department of Stellar Terraforming", "chair_name": "Dr. Maya Liu", "chair_email": "maya.liu@un001.edu", "chair_telephone": "+1-555-8883", "chair_office": "Room 1247C", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "ZZ001", "profssor_email": "zachary.quinn@university.edu", "professor_name": "Dr. Zachary Quinn", "professor_telephone": "+1-555-2004", "intent": "HireProfessor"}
+{"student_id": "ABX028", "student_name": "Jasper Quinn", "intent": "IntroduceStudent"}
+{"university_id": "UN001", "person_id": "ALU021", "person_name": "Jordan Vale", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "person_id": "XYZ999", "person_name": "Jordan Vance", "intent": "ListMember"}
+{"graduate_student_id": "GS900", "graduate_student_name": "Zara Patel", "department_id": "DP981", "department_name": "Department of Quantum Chronobiology", "university_id": "UN040", "university_name": "Luminous Institute of Quantum Ethics", "intent": "GraduateStudent"}
+{"student_id": "AA006", "faculty_id": "ABX029", "course_id": "ABX033", "student_name": "Grace Carter", "faculty_name": "Prof. Naomi Rivera", "course_name": "Computational Astrobiology VI", "intent": "TakeCourseOfAdvisor"}
+{"undergraduate_student_id": "AA007", "undergraduate_student_name": "Sophia Bennett", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG065", "research_group_name": "Emerging Quantum Materials Research Group", "intent": "CreateResearchGroup"}
+{"university_id": "UN020", "student_id": "ABX033", "department_id": "DP979", "department_name": "Department of Quantum Chronobiology", "student_name": "Samuel Carter", "student_email": "samuel.carter@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "department_id": "JKL001", "chair_id": "XYZ003", "department_name": "Department of Quantum Exoplanetary Sociology", "chair_name": "Dr. Serena Patel", "chair_email": "serena.patel@un020.edu", "chair_telephone": "+1-555-3214", "chair_office": "Room 1248D", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "XZ777", "profssor_email": "selene.vega@university.edu", "professor_name": "Dr. Selene Vega", "professor_telephone": "+1-555-7778", "intent": "HireProfessor"}
+{"university_id": "UN001", "student_id": "ABX500", "department_id": "ABX999", "department_name": "Department of Quantum Gastronomy", "student_name": "Liam Orion", "student_email": "liam.orion@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "ZK016", "person_name": "Morgan Harper", "intent": "DefineAlumnus"}
+{"student_id": "AZX001", "student_name": "Olive Parker", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "DPX001", "person_name": "Logan Harper", "intent": "ListMember"}
+{"student_id": "ABZ999", "faculty_id": "XZ999", "course_id": "YZ999", "student_name": "Jordan Vega", "faculty_name": "Prof. Naomi Sinclair", "course_name": "Computational Astrobiology VII", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS123", "department_id": "DP567", "university_id": "UN800", "graduate_student_name": "Aiden Brooks", "department_name": "Department of Cosmic Music", "university_name": "Celestial Institute of Quantum Sports", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG066", "research_group_name": "Emerging Quantum Thermodynamics Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "AB008", "undergraduate_student_name": "Ethan Wright", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DP004", "chair_id": "DP006", "department_name": "Department of Quantum Exoplanetary Law", "chair_name": "Dr. Amelia Chen", "chair_email": "amelia.chen@un001.edu", "chair_telephone": "+1-555-1016", "chair_office": "Room 1235B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB500", "profssor_email": "ab500@university.edu", "professor_name": "Dr. Oliver Hart", "professor_telephone": "+1-555-1304", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "ZZZ001", "department_id": "XYZ999", "department_name": "Department of Cosmic Culinary Arts", "student_name": "Quentin Blake", "student_email": "quentin.blake@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "XYZ200", "person_name": "Jordan Klein", "intent": "DefineAlumnus"}
+{"student_id": "ABY999", "student_name": "Felix Rivera", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "NEW100", "person_name": "Blake Stone", "intent": "ListMember"}
+{"student_id": "ABZ004", "student_name": "Ethan Blake", "faculty_id": "ABZ005", "faculty_name": "Prof. Amelia Novak", "course_id": "ABZ006", "course_name": "Quantum Bioinformatics", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "DP001", "department_id": "DP100", "university_id": "UN001", "graduate_student_name": "Orion Blake", "department_name": "Department of Quantum Gastronomy", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG067", "research_group_name": "Pioneering Quantum Computing Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "GH003", "undergraduate_student_name": "Olivia Reed", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "AB002", "chair_id": "EF003", "department_name": "Department of Cosmic Architecture", "chair_name": "Dr. Celeste Vega", "chair_email": "celeste.vega@un020.edu", "chair_telephone": "+1-555-2225", "chair_office": "Room 1249E", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB123", "profssor_email": "julian.pierce@university.edu", "professor_name": "Dr. Julian Pierce", "professor_telephone": "+1-555-1305", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "ABY001", "department_id": "DP100", "department_name": "Physics", "student_name": "John Doe", "student_email": "john.doe@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "LMN300", "person_name": "Jordan Brooks", "intent": "DefineAlumnus"}
+{"student_id": "BX001", "student_name": "Evelyn Hart", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "LMN400", "person_name": "Jordan Allen", "intent": "ListMember"}
+{"student_id": "ZZZ002", "faculty_id": "ZZZ003", "course_id": "ZZZ004", "student_name": "Jordan Maxwell", "faculty_name": "Prof. Zachary Quinn", "course_name": "Computational Astrobiology VIII", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS123", "department_id": "DP333", "university_id": "UN021", "graduate_student_name": "Grace Liu", "department_name": "Department of Galactic Linguistics", "university_name": "Astral Academy of Quantum Studies", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG068", "research_group_name": "Pioneering Quantum Thermodynamics Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Diana Patel", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "AB005", "chair_id": "AB012", "department_name": "Department of Quantum Chronobiology", "chair_name": "Dr. Adrian Sinclair", "chair_email": "adrian.sinclair@un020.edu", "chair_telephone": "+1-555-2226", "chair_office": "Room 1240B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "GH200", "profssor_email": "samuel.quinn@university.edu", "professor_name": "Dr. Samuel Quinn", "professor_telephone": "+1-555-1306", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "ABY003", "department_id": "DP123", "department_name": "Department of Quantum Nebular Engineering", "student_name": "Catherine Monroe", "student_email": "catherine.monroe@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "QRS003", "person_name": "Jordan Brooks", "intent": "DefineAlumnus"}
+{"student_id": "DP001", "student_name": "Evelyn Brooks", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "QRS004", "person_name": "Jordan Dean", "intent": "ListMember"}
+{"student_id": "CE001", "faculty_id": "DF001", "course_id": "EG001", "student_name": "Caleb Harper", "faculty_name": "Prof. Benjamin Carter", "course_name": "Computational Astrobiology IX", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS300", "department_id": "DP978", "university_id": "UN777", "graduate_student_name": "Lydia Patel", "department_name": "Department of Quantum Neuromorphic Engineering", "university_name": "Celestial Institute of Quantum Holography", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG069", "research_group_name": "Emerging Quantum Bioinformatics Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "AB010", "undergraduate_student_name": "Jordan Smith", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP702", "chair_id": "DP703", "department_name": "Department of Quantum Biofabrication", "chair_name": "Dr. Sophia Patel", "chair_email": "sophia.patel@un020.edu", "chair_telephone": "+1-555-1017", "chair_office": "Room 1240C", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "CD123", "profssor_email": "newprofessor6@university.edu", "professor_name": "Dr. Xavier Quinn", "professor_telephone": "+1-555-1313", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "LMN999", "student_name": "Nova Harper", "student_email": "nova.harper@un020.edu", "department_id": "QZ999", "department_name": "Department of Interstellar Gastronomy", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "QRS005", "person_name": "Alex Black", "intent": "DefineAlumnus"}
+{"student_id": "AI001", "student_name": "Ian Carter", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "DPX002", "person_name": "Harper Quinn", "intent": "ListMember"}
+{"student_id": "CX001", "student_name": "Mason Rivera", "course_id": "CX002", "course_name": "Computational Astrophysics V", "faculty_id": "CX003", "faculty_name": "Prof. Daniel Ortega", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS950", "department_id": "DP999", "university_id": "UN995", "graduate_student_name": "Kai Nakamura", "department_name": "Department of Interstellar Ethics", "university_name": "Luminous Institute of Quantum Philosophy", "intent": "GraduateStudent"}
+{"university_id": "UN001", "research_group_id": "RG070", "research_group_name": "Pioneering Quantum Communication Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "GH004", "undergraduate_student_name": "Olivia Hart", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP123", "chair_id": "DP124", "department_name": "Department of Quantum Galactic Linguistics", "chair_name": "Dr. Selene Alvarez", "chair_email": "selene.alvarez@un020.edu", "chair_telephone": "+1-555-7774", "chair_office": "Room 2006F", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "GH001", "profssor_email": "gh001@university.edu", "professor_name": "Dr. Gregory Hall", "professor_telephone": "+1-555-1400", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "ABY004", "department_id": "QT999", "department_name": "Department of Astroecology", "student_name": "Mason Vega", "student_email": "mason.vega@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "ZK017", "person_name": "Jordan Blake", "intent": "DefineAlumnus"}
+{"student_id": "BK001", "student_name": "Eleanor Brooks", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "LMN500", "person_name": "Jordan Winters", "intent": "ListMember"}
+{"student_id": "ABZ123", "student_name": "Caleb Whitman", "faculty_id": "ABX040", "faculty_name": "Prof. Emily Carter", "course_id": "ABY050", "course_name": "Computational Astrobiology X", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS801", "department_id": "DP140", "university_id": "UN850", "graduate_student_name": "Cassian Vega", "department_name": "Department of Quantum Astrobiology Ethics", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG071", "research_group_name": "Innovative Quantum Biology Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "AB011", "undergraduate_student_name": "Jordan Miller", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP700", "chair_id": "AB610", "department_name": "Department of Quantum Interstellar Ethics", "chair_name": "Dr. Maya Desai", "chair_email": "maya.desai@un020.edu", "chair_telephone": "+1-555-8885", "chair_office": "Room 1240D", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "LM400", "profssor_email": "evelyn.hart@university.edu", "professor_name": "Dr. Evelyn Hart", "professor_telephone": "+1-555-1333", "intent": "HireProfessor"}
+{"university_id": "UN001", "student_id": "DP100", "department_id": "DP200", "department_name": "Engineering", "student_name": "John Doe", "student_email": "john.doe@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "UN001", "person_name": "Blake Morgan", "intent": "DefineAlumnus"}
+{"student_id": "DP001", "student_name": "Olivia Grant", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "XYZ012", "person_name": "Jordan Brooks", "intent": "ListMember"}
+{"student_id": "ACD003", "student_name": "Zara Patel", "faculty_id": "ABX050", "faculty_name": "Prof. Aurora Blake", "course_id": "XZ032", "course_name": "Computational Astrobiology XI", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS124", "department_id": "DP977", "university_id": "UN990", "graduate_student_name": "Evelyn Hart", "department_name": "Department of Exoplanetary Sociology", "university_name": "Luminous Institute of Quantum Engineering", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG072", "research_group_name": "Innovative Quantum Cybersecurity Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "XZ001", "undergraduate_student_name": "Ethan Harper", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DP014", "chair_id": "EF005", "department_name": "Department of Quantum Astroarchaeology", "chair_name": "Dr. Adrian Quinn", "chair_email": "adrian.quinn@un001.edu", "chair_telephone": "+1-555-1018", "chair_office": "Room 1240E", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB600", "profssor_email": "celeste.harper@university.edu", "professor_name": "Dr. Celeste Harper", "professor_telephone": "+1-555-1401", "intent": "HireProfessor"}
+{"university_id": "UN001", "student_id": "PQR001", "department_id": "XYZ003", "department_name": "Department of Cosmic Ethics", "student_name": "Harper Quinn", "student_email": "harper.quinn@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "QRS006", "person_name": "Taylor Reed", "intent": "DefineAlumnus"}
+{"student_id": "AZX002", "student_name": "Caleb Vega", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "QRS999", "person_name": "Jordan Anderson", "intent": "ListMember"}
+{"student_id": "GHX001", "student_name": "Silas Monroe", "faculty_id": "LMN777", "faculty_name": "Prof. Eleanor Hayes", "course_id": "XYZ999", "course_name": "Computational Astrobiology XII", "intent": "TakeCourseOfAdvisor"}
+{"graduate_student_id": "GS600", "department_id": "DP944", "university_id": "UN944", "graduate_student_name": "Ethan Zhao", "department_name": "Department of Stellar Nanomaterials", "university_name": "Celestial University of Quantum Horizons", "intent": "GraduateStudent"}
+{"university_id": "UN020", "research_group_id": "RG073", "research_group_name": "Cutting Edge Quantum Thermodynamics Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "EF004", "undergraduate_student_name": "Ethan Clark", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "ZY001", "chair_id": "ZY002", "department_name": "Department of Quantum Chronobiology", "chair_name": "Dr. Felix Quinn", "chair_email": "felix.quinn@un020.edu", "chair_telephone": "+1-555-1019", "chair_office": "Room 1245B", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "AB700", "profssor_email": "evelyn.monroe@university.edu", "professor_name": "Dr. Evelyn Monroe", "professor_telephone": "+1-555-1444", "intent": "HireProfessor"}
+{"university_id": "UN020", "student_id": "AAZ001", "department_id": "DP100", "department_name": "Department of Quantum Computing", "student_name": "Mira Patel", "student_email": "mirapatel@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "LMN021", "person_name": "Jordan Xander", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "professor_id": "ZQ002", "profssor_email": "zoe.quinn@university.edu", "professor_name": "Dr. Zoe Quinn", "professor_telephone": "+1-555-2222", "intent": "HireProfessor"}
+{"student_id": "ACD004", "student_name": "Evelyn Hart", "intent": "IntroduceStudent"}
+{"student_id": "ABZ777", "faculty_id": "ABX777", "course_id": "ABY777", "student_name": "Ethan Vale", "faculty_name": "Prof. Evelyn Shaw", "course_name": "Computational Astrophysics VI", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "NEW999", "person_name": "Jordan Brooks", "intent": "ListMember"}
+{"university_id": "UN020", "research_group_id": "RG074", "research_group_name": "Cutting Edge Quantum AI Research Group", "intent": "CreateResearchGroup"}
+{"undergraduate_student_id": "GH005", "undergraduate_student_name": "Natalie Torres", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS102", "graduate_student_name": "Evelyn Frost", "department_id": "DP976", "department_name": "Department of Quantum Chronobiology", "university_id": "UN100", "university_name": "Luminous Institute of Quantum Chronology", "intent": "GraduateStudent"}
+{"university_id": "UN020", "student_id": "QRS001", "department_id": "ABX030", "department_name": "Department of Quantum Holographic Ethics", "student_name": "Mira Patel", "student_email": "mira.patel@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "ALU025", "person_name": "Jordan Mercer", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "ZX001", "chair_id": "AB007", "department_name": "Department of Quantum Chronobiology Engineering", "chair_name": "Dr. Selene Quinn", "chair_email": "selene.quinn@un001.edu", "chair_telephone": "+1-555-3215", "chair_office": "Room 1240F", "intent": "NominateDepartmentChair"}
+{"department_id": "DP993", "professor_id": "EF123", "profssor_email": "ef123@university.edu", "professor_name": "Dr. Adrian Nova", "professor_telephone": "+1-555-1334", "intent": "HireProfessor"}
+{"student_id": "AJ001", "student_name": "Grace Morgan", "intent": "IntroduceStudent"}
+{"student_id": "AG001", "faculty_id": "EFG001", "course_id": "XZ030", "student_name": "Liam Ortega", "faculty_name": "Prof. Marcus Aurelius", "course_name": "Computational Astrobiology XIII", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "JRN002", "person_name": "Sam Taylor", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "XZ002", "profssor_email": "newprofessor7@university.edu", "professor_name": "Dr. Nora Sinclair", "professor_telephone": "+1-555-2005", "intent": "HireProfessor"}
+{"university_id": "UN001", "research_group_id": "RG075", "research_group_name": "Emerging Quantum Robotics Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS103", "graduate_student_name": "Elara Singh", "department_id": "DP100", "department_name": "Department of Quantum Interstellar Gastronomy", "university_id": "UN001", "university_name": "Celestial Institute of Quantum Horizons", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "S001", "department_id": "YZ123", "department_name": "Department of Quantum Gastronomy", "student_name": "John Doe", "student_email": "john.doe.s001@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "ABC021", "person_name": "Cameron Black", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "GH006", "undergraduate_student_name": "Lydia Parker", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP020", "chair_id": "AB020", "department_name": "Department of Quantum Astrobiology", "chair_name": "Dr. Aurora Quinn", "chair_email": "aurora.quinn@un020.edu", "chair_telephone": "+1-555-9991", "chair_office": "Room 1240G", "intent": "NominateDepartmentChair"}
+{"student_id": "AK001", "student_name": "Silas Quinn", "intent": "IntroduceStudent"}
+{"student_id": "DF001", "student_name": "Caleb Archer", "course_id": "ABX060", "course_name": "Synthetic Nanomaterials", "faculty_id": "ABX070", "faculty_name": "Prof. Adrian Lee", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "QRS007", "person_name": "Taylor Vega", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "EF777", "profssor_email": "ef777@university.edu", "professor_name": "Dr. Evelyn Nova", "professor_telephone": "+1-555-7779", "intent": "HireProfessor"}
+{"university_id": "UN020", "research_group_id": "RG076", "research_group_name": "Innovative Quantum Optics Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS222", "department_id": "DP959", "university_id": "UN959", "graduate_student_name": "Mason Patel", "department_name": "Department of Quantum Astroecology", "university_name": "Celestial Institute of Quantum Chronology", "intent": "GraduateStudent"}
+{"university_id": "UN020", "student_id": "ABY500", "department_id": "XZ500", "department_name": "Department of Quantum Computing", "student_name": "Mason Harper", "student_email": "mason.harper@un020.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "XYZ021", "person_name": "Jordan Carter", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "JKL003", "undergraduate_student_name": "Olivia Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP123", "chair_id": "LM123", "department_name": "Department of Quantum Space Engineering", "chair_name": "Dr. Iris Patel", "chair_email": "iris.patel@un020.edu", "chair_telephone": "+1-555-2345", "chair_office": "Room 1234W", "intent": "NominateDepartmentChair"}
+{"student_id": "ADZ001", "student_name": "Nora Blake", "intent": "IntroduceStudent"}
+{"student_id": "BM001", "student_name": "Dylan Carter", "faculty_id": "BX001", "faculty_name": "Prof. Amelia Clarke", "course_id": "YZ900", "course_name": "Computational Astrobiology XIV", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "LMN123", "person_name": "Taylor Rivers", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "EF001", "profssor_email": "maya.sinclair@university.edu", "professor_name": "Dr. Maya Sinclair", "professor_telephone": "+1-555-2006", "intent": "HireProfessor"}
+{"university_id": "UN001", "research_group_id": "RG077", "research_group_name": "Pioneering Quantum AI Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS902", "department_id": "ABX023", "university_id": "UN923", "graduate_student_name": "Mira Patel", "department_name": "Department of Quantum Interstellar Gastronomy", "university_name": "Luminous Institute of Quantum Exploration", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "XYZ123", "department_id": "QWZ001", "department_name": "Department of Cosmic Cartography", "student_name": "Orion Vega", "student_email": "orion.vega@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "NEW021", "person_name": "Sam Morgan", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "JKL004", "undergraduate_student_name": "Victor Alvarez", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP351", "chair_id": "DP352", "department_name": "Department of Quantum Interstellar Agriculture", "chair_name": "Dr. Cassian Reed", "chair_email": "cassian.reed@un020.edu", "chair_telephone": "+1-555-3216", "chair_office": "Room 1245C", "intent": "NominateDepartmentChair"}
+{"student_id": "AL001", "student_name": "Caleb Pierce", "intent": "IntroduceStudent"}
+{"student_id": "ABZ500", "student_name": "Silas Vega", "course_id": "CDX001", "course_name": "Quantum Neural Networks", "faculty_id": "EFG500", "faculty_name": "Prof. Adrian Kim", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP500", "person_id": "NEW501", "person_name": "Alex Stone", "intent": "ListMember"}
+{"department_id": "DP020", "professor_id": "JKL123", "profssor_email": "nathaniel.pierce@university.edu", "professor_name": "Dr. Nathaniel Pierce", "professor_telephone": "+1-555-1314", "intent": "HireProfessor"}
+{"university_id": "UN001", "research_group_id": "RG078", "research_group_name": "Advanced Quantum Photonics Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS600", "department_id": "DP602", "university_id": "UN710", "graduate_student_name": "Caleb Rivera", "department_name": "Department of Quantum Astrobiology Ethics", "university_name": "Astral Academy of Quantum Ethics", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "XZ200", "student_name": "Jasper Quinn", "department_id": "XZ210", "department_name": "Department of Quantum Astrobiology Ethics", "student_email": "jasper.quinn@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN020", "person_id": "ZK018", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "AB012", "undergraduate_student_name": "Olivia Stone", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN020", "department_id": "DP114", "chair_id": "EF004", "department_name": "Department of Quantum Astrobiology Ethics", "chair_name": "Dr. Orion Quinn", "chair_email": "orion.quinn@un020.edu", "chair_telephone": "+1-555-9992", "chair_office": "Room 1246C", "intent": "NominateDepartmentChair"}
+{"student_id": "AX001", "student_name": "Zara Khan", "intent": "IntroduceStudent"}
+{"student_id": "BDX001", "student_name": "Ian Carter", "faculty_id": "LMN800", "faculty_name": "Prof. Amelia Zhang", "course_id": "ABY999", "course_name": "Computational Astrobiology XV", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "DPY001", "person_name": "Jordan Vega", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "JK001", "profssor_email": "lena.quinn@university.edu", "professor_name": "Dr. Lena Quinn", "professor_telephone": "+1-555-1500", "intent": "HireProfessor"}
+{"university_id": "UN020", "research_group_id": "RG079", "research_group_name": "Future Quantum Technologies Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GSX001", "graduate_student_name": "Felix Navarro", "department_id": "DPX001", "department_name": "Department of Temporal Holography", "university_id": "UNX001", "university_name": "Astral Academy of Quantum Metamaterials", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "XYZ003", "student_name": "Avery Brooks", "student_email": "avery.brooks@un001.edu", "department_id": "DPX002", "department_name": "Department of Quantum Astroecology", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "AB123", "person_name": "Alice", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "AB013", "undergraduate_student_name": "Jordan Hayes", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX123", "chair_id": "ABX123", "department_name": "Department of Interstellar Architecture", "chair_name": "Dr. Cassandra Liu", "chair_email": "cassandra.liu@un001.edu", "chair_telephone": "+1-555-3217", "chair_office": "Room 1240H", "intent": "NominateDepartmentChair"}
+{"student_id": "BDY001", "student_name": "Ethan Wolfe", "intent": "IntroduceStudent"}
+{"student_id": "DP001", "student_name": "Alice", "course_id": "DP100", "course_name": "Advanced Topics", "faculty_id": "DP020", "faculty_name": "Dr. Smith", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP020", "person_id": "DP001", "person_name": "Alex", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "LM999", "profssor_email": "maya.quinn@university.edu", "professor_name": "Dr. Maya Quinn", "professor_telephone": "+1-555-2223", "intent": "HireProfessor"}
+{"university_id": "UN001", "research_group_id": "RG080", "research_group_name": "Advanced Quantum Biology Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS210", "department_id": "DP215", "university_id": "UN210", "graduate_student_name": "Mason Patel", "department_name": "Department of Quantum Holographic Ethics", "university_name": "Nebula Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "ABZ005", "department_id": "YZ125", "department_name": "Department of Astro Botany", "student_name": "Olivia Khan", "student_email": "olivia.khan@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "LMN777", "person_name": "Taylor Reed", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Diana Ross", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX999", "department_name": "Department of Interdimensional Botany", "chair_id": "EFX001", "chair_name": "Dr. Aurora Blake", "chair_email": "aurora.blake@un001.edu", "chair_telephone": "+1-555-1110", "chair_office": "Room 1246D", "intent": "NominateDepartmentChair"}
+{"student_id": "AZX029", "student_name": "Carter Quinn", "intent": "IntroduceStudent"}
+{"student_id": "DFG001", "faculty_id": "XYZ001", "course_id": "XYZ004", "student_name": "Avery Morgan", "faculty_name": "Prof. Adrian Smith", "course_name": "Computational Astrobiology XVI", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "QRS010", "person_name": "Jordan Dalton", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "AB900", "profssor_email": "julian.hart@university.edu", "professor_name": "Dr. Julian Hart", "professor_telephone": "+1-555-2101", "intent": "HireProfessor"}
+{"university_id": "UN001", "research_group_id": "RG081", "research_group_name": "Advanced Quantum Nanophotonics Research Group", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS200", "department_id": "DP200", "university_id": "UN200", "graduate_student_name": "Ethan Morales", "department_name": "Department of Exoplanetary Ethics", "university_name": "Galactic Institute of Quantum Innovation", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "BG001", "student_name": "Zara Patel", "student_email": "zara.patel@un001.edu", "department_id": "XYZ004", "department_name": "Department of Quantum Holography Ethics", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "QRS123", "person_name": "Logan Pierce", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "GH007", "undergraduate_student_name": "Nora Whitaker", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX124", "chair_id": "ABX124", "department_name": "Department of Quantum Astroecology", "chair_name": "Dr. Orion Blake", "chair_email": "orion.blake@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1246E", "intent": "NominateDepartmentChair"}
+{"student_id": "AGX001", "student_name": "Milo Grant", "intent": "IntroduceStudent"}
+{"student_id": "ABZ888", "student_name": "Evelyn Torres", "faculty_id": "ABZ890", "faculty_name": "Prof. Zara Khan", "course_id": "ABZ889", "course_name": "Computational Astrophysics VII", "intent": "TakeCourseOfAdvisor"}
+{"department_id": "DP993", "person_id": "JKL002", "person_name": "Dakota Quinn", "intent": "ListMember"}
+{"department_id": "DP993", "professor_id": "EF001", "profssor_email": "aurora.blake@university.edu", "professor_name": "Dr. Aurora Blake", "professor_telephone": "+1-555-2102", "intent": "HireProfessor"}
+{"university_id": "UNX001", "research_group_id": "RG001", "research_group_name": "Quantum Computing Lab", "intent": "CreateResearchGroup"}
+{"graduate_student_id": "GS104", "department_id": "DP993", "university_id": "UN001", "graduate_student_name": "Alice", "department_name": "Department of Exoplanetary Philosophy", "university_name": "Stellar Institute of Quantum Innovation", "intent": "GraduateStudent"}
+{"university_id": "UNX001", "student_id": "STU001", "department_id": "DPX125", "department_name": "Department of Quantum Astrobiology Ethics", "student_name": "Evelyn Shaw", "student_email": "evelyn.shaw@unx001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "ABC999", "person_name": "Jordan Kline", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "professor_id": "ZK001", "profssor_email": "zk001@university.edu", "professor_name": "Dr. Zachary Klein", "professor_telephone": "+1-555-3000", "intent": "HireProfessor"}
+{"university_id": "UN001", "department_id": "DPX200", "chair_id": "ABZ001", "department_name": "Department of Interdimensional Music", "chair_name": "Dr. Alexander Quinn", "chair_email": "alexander.quinn@un001.edu", "chair_telephone": "+1-555-3218", "chair_office": "Room 1246F", "intent": "NominateDepartmentChair"}
+{"university_id": "UN999", "research_group_id": "RG082", "research_group_name": "Emerging Quantum Energy Research Group", "intent": "CreateResearchGroup"}
+{"student_id": "ACD005", "student_name": "Grace Alvarez", "intent": "IntroduceStudent"}
+{"undergraduate_student_id": "EF005", "undergraduate_student_name": "Caleb Morgan", "intent": "IntroduceUndergraduateStudent"}
+{"department_id": "DP993", "person_id": "QRS777", "person_name": "Morgan Quinn", "intent": "ListMember"}
+{"graduate_student_id": "GS997", "graduate_student_name": "Mila Novak", "department_id": "DP993", "department_name": "Department of Galactic Linguistics", "university_id": "UN001", "university_name": "Luminous Institute of Quantum Law", "intent": "GraduateStudent"}
+{"university_id": "UN001", "student_id": "EA001", "department_id": "EB001", "department_name": "Department of Interstellar Music", "student_name": "Ethan Clarke", "student_email": "ethan.clarke@un001.edu", "intent": "EnrollStudent"}
+{"student_id": "ABZ800", "student_name": "Evelyn Harper", "faculty_id": "ABZ900", "faculty_name": "Prof. Amelia Wright", "course_id": "ABZ850", "course_name": "Computational Astrobiology XVII", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UNX001", "person_id": "ZK019", "person_name": "Jordan Prescott", "intent": "DefineAlumnus"}
+{"department_id": "DP993", "professor_id": "ZQ003", "profssor_email": "zq003@university.edu", "professor_name": "Dr. Felix Harper", "professor_telephone": "+1-555-2224", "intent": "HireProfessor"}
+{"university_id": "UN001", "department_id": "DPX777", "chair_id": "ABX777", "department_name": "Department of Quantum Stellar Cartography", "chair_name": "Dr. Serena Patel", "chair_email": "serena.patel@un001.edu", "chair_telephone": "+1-555-8887", "chair_office": "Room 1245D", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG083", "research_group_name": "Advanced Quantum Bioinformatics Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP993", "professor_id": "ZK002", "profssor_email": "nova.sinclair@university.edu", "professor_name": "Dr. Nova Sinclair", "professor_telephone": "+1-555-2225", "intent": "HireProfessor"}
+{"student_id": "AFY001", "student_name": "Silas Orion", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "LMN600", "person_name": "Sam Taylor", "intent": "ListMember"}
+{"undergraduate_student_id": "AB014", "undergraduate_student_name": "Mia Rodriguez", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": null, "department_id": null, "university_id": null, "graduate_student_name": null, "department_name": null, "university_name": null, "intent": "GraduateStudent"}
+{"student_id": "ABZ801", "faculty_id": "ABZ802", "course_id": "ABZ803", "student_name": "Ian Carter", "faculty_name": "Prof. Adrian Zhou", "course_name": "Computational Astrobiology XIX", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UNX001", "student_id": "NEW001", "department_id": "DEP001", "department_name": "Department of Exoplanetary Music", "student_name": "Evelyn Frost", "student_email": "evelyn.frost@unx001.edu", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "ABC123", "person_name": "Morgan Harper", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPX800", "chair_id": "ABX800", "department_name": "Department of Quantum Holographic Ethics", "chair_name": "Dr. Julian Quinn", "chair_email": "julian.quinn@un001.edu", "chair_telephone": "+1-555-1020", "chair_office": "Room 1245F", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG084", "research_group_name": "Advanced Quantum Ecology Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP993", "professor_id": "QW123", "profssor_email": "qw123@university.edu", "professor_name": "Dr. Quentin Wolfe", "professor_telephone": "+1-555-2103", "intent": "HireProfessor"}
+{"student_id": "DP993", "student_name": "Caleb Vega", "intent": "IntroduceStudent"}
+{"department_id": "DP993", "person_id": "QRS888", "person_name": "Taylor Vega", "intent": "ListMember"}
+{"undergraduate_student_id": "AB015", "undergraduate_student_name": "Michael Anderson", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS300", "department_id": "DP620", "university_id": "UN220", "graduate_student_name": "Mira Singh", "department_name": "Department of Quantum Astrobiology Ethics", "university_name": "Celestial Institute of Quantum Robotics", "intent": "GraduateStudent"}
+{"student_id": "DP003", "student_name": "Derek Monroe", "course_id": "DP004", "course_name": "Computational Astrophysics IX", "faculty_id": "DP005", "faculty_name": "Prof. Isaac Reynolds", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "QW001", "department_id": "QT002", "department_name": "Department of Quantum Gastronomy", "student_name": "Nora Blake", "student_email": "nora.blake@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "MNO001", "person_name": "Alex Rivera", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPZ001", "chair_id": "EZ001", "department_name": "Department of Quantum Chronobiology Law", "chair_name": "Dr. Adrian Quinn", "chair_email": "adrian.quinn2@un001.edu", "chair_telephone": "+1-555-1021", "chair_office": "Room 1245G", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG085", "research_group_name": "Emerging Quantum Data Science Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP001", "professor_id": "AA002", "profssor_email": "aa002@university.edu", "professor_name": "Dr. Casey Morgan", "professor_telephone": "+1-555-1315", "intent": "HireProfessor"}
+{"student_id": "ADZ002", "student_name": "Grace Sullivan", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "XYZ030", "person_name": "Taylor Reed", "intent": "ListMember"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Olivia Green", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS998", "graduate_student_name": "Mira Khan", "department_id": "DP098", "department_name": "Department of Quantum Ethics", "university_id": "UN994", "university_name": "Luminous Institute of Quantum Holography", "intent": "GraduateStudent"}
+{"student_id": "BB001", "student_name": "Ethan Archer", "faculty_id": "CC001", "faculty_name": "Prof. Daniel Frost", "course_id": "CC002", "course_name": "Quantum Data Structures", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "EFG001", "student_name": "Evelyn Brooks", "student_email": "evelyn.brooks@un001.edu", "department_id": "AAZ001", "department_name": "Department of Astrochemistry", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "LMN007", "person_name": "Jordan Pax", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPY001", "chair_id": "JKL123", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Evelyn Quinn", "chair_email": "evelyn.quinn@un001.edu", "chair_telephone": "+1-555-2020", "chair_office": "Room 2022A", "intent": "NominateDepartmentChair"}
+{"university_id": "UNX001", "research_group_id": "RG086", "research_group_name": "Advanced Quantum Data Analytics Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP001", "professor_id": "AB800", "profssor_email": "caseymorgan@university.edu", "professor_name": "Dr. Casey Morgan", "professor_telephone": "+1-555-2226", "intent": "HireProfessor"}
+{"student_id": "ACB001", "student_name": "Olivia Reed", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "ABC026", "person_name": "Sydney Harper", "intent": "ListMember"}
+{"undergraduate_student_id": "AB999", "undergraduate_student_name": "Samuel Reed", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS901", "department_id": "DPQ001", "university_id": "UNZ001", "graduate_student_name": "Evelyn Nova", "department_name": "Department of Quantum Astrobiology Ethics", "university_name": "Celestial Institute of Quantum Gastronomy", "intent": "GraduateStudent"}
+{"student_id": "ZZZ123", "student_name": "Evelyn Monroe", "faculty_id": "XYZ999", "faculty_name": "Prof. Aurora Vega", "course_id": "ABC999", "course_name": "Quantum Machine Learning Applications", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "ACX001", "department_id": "QWZ001", "department_name": "Department of Quantum Gastronomy", "student_name": "Ethan Reed", "student_email": "ethan.reed@un001.edu", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "ZK020", "person_name": "Charlie Quinn", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPX555", "chair_id": "ABX555", "department_name": "Department of Quantum Stellar Cartography", "chair_name": "Dr. Lila Patel", "chair_email": "lila.patel@un001.edu", "chair_telephone": "+1-555-9993", "chair_office": "Room 1246G", "intent": "NominateDepartmentChair"}
+{"university_id": "UN850", "research_group_id": "RG087", "research_group_name": "Advanced Quantum Energy Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP100", "professor_id": "CD300", "profssor_email": "cd300@university.edu", "professor_name": "Dr. Julian Nova", "professor_telephone": "+1-555-2227", "intent": "HireProfessor"}
+{"student_id": "ACD007", "student_name": "Evelyn Hart", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "P001", "person_name": "Mason Quinn", "intent": "ListMember"}
+{"undergraduate_student_id": "XZ003", "undergraduate_student_name": "Grace Martinez", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "GS200", "department_id": "DP975", "university_id": "UN993", "graduate_student_name": "Milo Reyes", "department_name": "Department of Interdimensional Cartography", "university_name": "Nebula Institute of Quantum Robotics", "intent": "GraduateStudent"}
+{"student_id": "AE001", "faculty_id": "XZ001", "course_id": "QX001", "student_name": "Julian Vega", "faculty_name": "Prof. Adrian Wolfe", "course_name": "Computational Astrophysics X", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UNX001", "student_id": "STU999", "department_id": "DPY999", "department_name": "Department of Astroarchaeology", "student_name": "Ian Carter", "student_email": "ian.carter@unx001.edu", "intent": "EnrollStudent"}
+{"university_id": "UNX001", "person_id": "NVA001", "person_name": "Jordan Quinn", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPZ001", "chair_id": "GHY002", "department_name": "Department of Quantum Xenobiology Ethics", "chair_name": "Dr. Diana Patel", "chair_email": "diana.patel@un001.edu", "chair_telephone": "+1-555-1114", "chair_office": "Room 1245H", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG088", "research_group_name": "Innovative Quantum Energy Systems Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP001", "professor_id": "AB110", "profssor_email": "orion.hart@university.edu", "professor_name": "Dr. Orion Hart", "professor_telephone": "+1-555-2228", "intent": "HireProfessor"}
+{"student_id": "LMX001", "student_name": "Caleb Rhodes", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "person_id": "DP102", "person_name": "Jordan Blake", "intent": "ListMember"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": "Victor Chen", "intent": "IntroduceUndergraduateStudent"}
+{"graduate_student_id": "DP001", "department_id": "DP002", "university_id": "UN001", "graduate_student_name": "Student DP001", "department_name": "Department DP002", "university_name": "University UN001", "intent": "GraduateStudent"}
+{"student_id": "ACD008", "faculty_id": "ABX045", "course_id": "ABX034", "student_name": "Evelyn Torres", "faculty_name": "Prof. Helena Ortiz", "course_name": "Computational Astrophysics XI", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "student_id": "XYZ001", "student_name": "Evelyn Torres", "student_email": "evelyn.torres2@un001.edu", "department_id": "DPZ001", "department_name": "Department of Galactic Cartography", "intent": "EnrollStudent"}
+{"university_id": "UN001", "person_id": "XYZ777", "person_name": "Charlie Quinn", "intent": "DefineAlumnus"}
+{"university_id": "UN001", "department_id": "DPX003", "chair_id": "ABX001", "department_name": "Department of Quantum Astroecology", "chair_name": "Dr. Benjamin Quinn", "chair_email": "benjamin.quinn@un001.edu", "chair_telephone": "+1-555-1115", "chair_office": "Room 1245I", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG089", "research_group_name": "Innovative Quantum Astrophysics Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP100", "professor_id": "LMN001", "profssor_email": "daniel.evans@university.edu", "professor_name": "Dr. Daniel Evans", "professor_telephone": "+1-555-2104", "intent": "HireProfessor"}
+{"student_id": "AFZ001", "student_name": "Evelyn Harper", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "ZK021", "person_name": "Jordan Gale", "intent": "ListMember"}
+{"university_id": "UNX001", "student_id": "QW001", "department_id": "GHI001", "department_name": "Department of Stellar Cartography", "student_name": "Ethan Frost", "student_email": "ethan.frost@unx001.edu", "intent": "EnrollStudent"}
+{"graduate_student_id": "GS400", "graduate_student_name": "Ethan Wu", "department_id": "DP001", "department_name": "Department of Interdimensional Philosophy", "university_id": "UN001", "university_name": "Celestial Institute of Quantum Linguistics", "intent": "GraduateStudent"}
+{"student_id": "ABZ600", "faculty_id": "ABY600", "course_id": "ABX600", "student_name": "Luna Harper", "faculty_name": "Prof. Amelia Zhou", "course_name": "Quantum Machine Learning", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "person_id": "DEF001", "person_name": "Sam Taylor", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "EF006", "undergraduate_student_name": "Grace Wilson", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX210", "chair_id": "ABX210", "department_name": "Department of Interdimensional Architecture", "chair_name": "Dr. Evelyn Nova", "chair_email": "evelyn.nova@un001.edu", "chair_telephone": "+1-555-1022", "chair_office": "Room 1245J", "intent": "NominateDepartmentChair"}
+{"university_id": "UNX001", "research_group_id": "RG090", "research_group_name": "Emerging Quantum Nanotechnology Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP100", "professor_id": "LM101", "profssor_email": "cassandra.reed@university.edu", "professor_name": "Dr. Cassandra Reed", "professor_telephone": "+1-555-1316", "intent": "HireProfessor"}
+{"student_id": "DP001", "student_name": "Evelyn Cruz", "intent": "IntroduceStudent"}
+{"department_id": "DP100", "person_id": "DP001", "person_name": "Alice", "intent": "ListMember"}
+{"university_id": "UNX001", "student_id": "STU777", "department_id": "DPX888", "department_name": "Department of Cosmic Sociology", "student_name": "Dylan Frost", "student_email": "dylan.frost@unx001.edu", "intent": "EnrollStudent"}
+{"graduate_student_id": "DP001", "department_id": "DP002", "university_id": "UN001", "graduate_student_name": "Silas Reed", "department_name": "Department of Quantum Astroecology", "university_name": "Celestial Institute of Quantum Anthropology", "intent": "GraduateStudent"}
+{"student_id": "ACD999", "faculty_id": "XYZ998", "course_id": "XYZ997", "student_name": "Eliot Brooks", "faculty_name": "Prof. Orion Blake", "course_name": "Interstellar Data Analysis", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UNX001", "person_id": "DEF002", "person_name": "Jordan Quinn", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "DP001", "undergraduate_student_name": null, "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UNX001", "department_id": "DPQ777", "chair_id": "ABY001", "department_name": "Department of Quantum Holographic Ethics", "chair_name": "Dr. Cassandra Quinn", "chair_email": "cassandra.quinn@unx001.edu", "chair_telephone": "+1-555-9994", "chair_office": "Room 1245K", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG091", "research_group_name": "Advanced Quantum Optoelectronics Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP100", "professor_id": "ZY123", "profssor_email": "lila.morgan@university.edu", "professor_name": "Dr. Lila Morgan", "professor_telephone": "+1-555-1317", "intent": "HireProfessor"}
+{"student_id": "AGZ001", "student_name": "Catherine Blake", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "DP003", "person_name": "Avery Grant", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "ABZ001", "department_id": "DPZ001", "department_name": "Department of Quantum Gastronomy", "student_name": "Olivia Martinez", "student_email": "olivia.martinez@un001.edu", "intent": "EnrollStudent"}
+{"graduate_student_id": "GSA001", "graduate_student_name": "Eliot Gray", "department_id": "DP001", "department_name": "Department of Quantum Computing", "university_id": "UN001", "university_name": "University UN001", "intent": "GraduateStudent"}
+{"student_id": "ACD009", "faculty_id": "ABX041", "course_id": "ABX040", "student_name": "Ethan Pierce", "faculty_name": "Prof. Adrian Vega", "course_name": "Neural Architecture Search", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "person_id": "QRS200", "person_name": "Jordan Zephyr", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "GH008", "undergraduate_student_name": "Isla Montgomery", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DP007", "chair_id": "ABX007", "department_name": "Department of Quantum Holography Ethics", "chair_name": "Dr. Gabriel Quinn", "chair_email": "gabriel.quinn@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1246H", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG092", "research_group_name": "Pioneering Quantum Metrology Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP001", "professor_id": "LMN002", "profssor_email": "felix.nova@university.edu", "professor_name": "Dr. Felix Nova", "professor_telephone": "+1-555-2229", "intent": "HireProfessor"}
+{"student_id": "AZZ001", "student_name": "Mila Torres", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "GHI002", "person_name": "Avery Black", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "QW123", "student_name": "Elias Grant", "student_email": "elias.grant@un001.edu", "department_id": "ZX300", "department_name": "Department of Quantum Holographic Ethics", "intent": "EnrollStudent"}
+{"graduate_student_id": "DP100", "graduate_student_name": "Sofia Vega", "department_id": "DP200", "department_name": "Department of Quantum Holography Ethics", "university_id": "UN001", "university_name": "Celestial Institute of Quantum Studies", "intent": "GraduateStudent"}
+{"student_id": "UN001", "student_name": "Ulysses Novak", "course_id": "DP001", "course_name": "Data Processing Fundamentals", "faculty_id": "AB002", "faculty_name": "Prof. Abigail Brown", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "person_id": "XYZ013", "person_name": "Alex Abbott", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "EF007", "undergraduate_student_name": "Lydia Turner", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX321", "chair_id": "ABX321", "department_name": "Department of Quantum Gastronomy", "chair_name": "Dr. Amelia Sinclair", "chair_email": "amelia.sinclair@un001.edu", "chair_telephone": "+1-555-1234", "chair_office": "Room 1245M", "intent": "NominateDepartmentChair"}
+{"university_id": "UN001", "research_group_id": "RG100", "research_group_name": "Advanced Quantum Nanomaterials Research Group", "intent": "CreateResearchGroup"}
+{"department_id": "DP001", "professor_id": "AB002", "profssor_email": "olivia.grant@university.edu", "professor_name": "Dr. Olivia Grant", "professor_telephone": "+1-555-2220", "intent": "HireProfessor"}
+{"student_id": "DP001", "student_name": "Alice", "intent": "IntroduceStudent"}
+{"department_id": "DP001", "person_id": "ABC124", "person_name": "Sam Harper", "intent": "ListMember"}
+{"university_id": "UN001", "student_id": "UVW001", "student_name": "Luna Vega", "student_email": "luna.vega@un001.edu", "department_id": "JKL005", "department_name": "Department of Quantum Chronobiology", "intent": "EnrollStudent"}
+{"graduate_student_id": "DP003", "department_id": "DP001", "university_id": "UN001", "graduate_student_name": "Alex Johnson", "department_name": "Engineering", "university_name": "Global University", "intent": "GraduateStudent"}
+{"student_id": "CF001", "student_name": "Luna Vega", "faculty_id": "CFX001", "faculty_name": "Prof. Adrian Torres", "course_id": "CFY001", "course_name": "Quantum Cryptanalysis", "intent": "TakeCourseOfAdvisor"}
+{"university_id": "UN001", "person_id": "LMN800", "person_name": "Jordan Zeke", "intent": "DefineAlumnus"}
+{"undergraduate_student_id": "GH009", "undergraduate_student_name": "Laura Mitchell", "intent": "IntroduceUndergraduateStudent"}
+{"university_id": "UN001", "department_id": "DPX004", "chair_id": "ABX005", "department_name": "Department of Exoplanetary Law", "chair_name": "Dr. Aurora Vega", "chair_email": "aurora.vega@un001.edu", "chair_telephone": "+1-555-2227", "chair_office": "Room 1245L", "intent": "NominateDepartmentChair"}

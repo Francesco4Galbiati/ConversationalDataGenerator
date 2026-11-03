@@ -1,0 +1,676 @@
+RegisterNewService: {"service_id": "ABC123", "service_name": "New Service Registration", "service_type": "IT Support", "managed_by_team": "Admin Team"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "DEF456", "resource_label": "Shared Resource"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "ABC123", "log_time": "2022-01-01 12:00:00", "log_message": "System started successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "GHI789", "log_time": "2022-01-02 13:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "JKL012", "log_time": "2022-01-03 14:00:00", "log_message": "Resource updated successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "MNO345", "log_time": "2022-01-04 15:00:00", "log_message": "Resource deleted successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "PQR678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource created successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "STU901", "log_time": "2022-01-06 17:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "VWX234", "log_time": "2022-01-07 18:00:00", "log_message": "Resource modified successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "YZA111", "log_time": "2022-01-08 19:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "DEF456", "log_id": "EFG567", "log_time": "2022-01-09 20:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "GHI789", "resource_label": "Shared Asset"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "JKL012", "resource_label": "Shared Asset 2"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "BCD456", "log_time": "2022-01-10 21:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNO345", "resource_label": "Shared Asset 3"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CDE678", "log_time": "2022-01-11 22:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "DEF456", "log_time": "2022-01-12 23:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "NOP111", "log_time": "2022-01-13 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "TUV222", "log_time": "2022-01-14 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "RST345", "log_time": "2022-01-15 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "FGH234", "log_time": "2022-01-16 11:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR678", "resource_label": "Shared Asset 4"}
+GetResourceLogs: {"log_id": "HIJ111", "log_time": "2022-01-17 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "STU901", "resource_label": "Shared Asset 5"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "VWX111", "resource_label": "Shared Asset 6"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "YZA222", "resource_label": "Shared Asset 7"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "EFG234", "resource_label": "Shared Asset 8"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "BCD567", "resource_label": "Shared Asset 9"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "XYZ999", "log_time": "2022-01-18 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ABC123", "log_time": "2022-01-19 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "AB123", "log_time": "2022-01-20 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "CDE678", "resource_label": "Shared Asset 10"}
+GetResourceLogs: {"log_id": "CDE678", "log_time": "2022-01-05 16:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "ACB111", "log_time": "2022-01-21 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "CBA222", "log_time": "2022-01-22 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "BCD111", "log_time": "2022-01-23 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "HIJ456", "resource_label": "Shared Asset 11"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "KLM890", "resource_label": "Shared Asset 12"}
+GetResourceLogs: {"log_id": "JKL012", "log_time": "2022-01-24 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "FGH012", "log_time": "2022-01-25 12:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "EFG123", "log_time": "2022-01-26 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "GHI012", "log_time": "2022-01-27 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"log_id": "FGH345", "log_time": "2022-01-28 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "FGH567", "log_time": "2022-01-29 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "JKL789", "log_time": "2022-01-30 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "FGH678", "log_time": "2022-01-31 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "MNP111", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "NOP234", "resource_label": "Shared Asset 13"}
+GetResourceLogs: {"log_id": "PQR123", "log_time": "2022-01-16 10:30:00", "log_message": "Resource accessed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "FGH901", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "GHI345", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR111", "resource_label": "Shared Asset 14"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "GHI678", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "RST234", "resource_label": "Shared Asset 15"}
+GetResourceLogs: {"log_id": "JKL789", "log_time": "2022-01-16 11:30:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "TUW654", "resource_label": "Shared Asset 16"}
+GetResourceLogs: {"log_id": "JKL789", "log_time": "2022-01-16 10:00:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+GetResourceLogs: {"resource_id": "JKL012", "log_id": "ZYX111", "log_time": "2022-01-32 12:00:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA222", "log_time": "2022-01-16 10:45:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "XYZ111", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA333", "log_time": "2022-01-16 11:15:00", "log_message": "Resource viewed successfully", "resource_id": "JKL012"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ABC456", "resource_label": "Shared Resource 20"}
+GetResourceLogs: {"log_id": "ZYA444", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR345", "resource_label": "Shared Asset 17"}
+GetResourceLogs: {"log_id": "ZYA555", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA666", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA777", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:45:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"resource_id": "PQR678", "log_id": "ZYA999", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR999", "resource_label": "Shared Resource 21"}
+GetResourceLogs: {"resource_id": "PQR678", "log_id": "ZYA000", "log_time": "2022-01-32 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR111", "resource_label": "Shared Asset"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "PQR111", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "FGH012", "resource_label": "Shared Resource 22"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "IJK111", "resource_label": "Shared Resource 23"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "MNP234", "resource_label": "Shared Resource 24"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "LMN111", "resource_label": "Shared Resource 25"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "TUV111", "resource_label": "Shared Resource 26"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "CDE678", "resource_label": "Shared Asset 10"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "PQR678"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYX333", "resource_label": "Shared Resource 27"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYA111", "resource_label": "Shared Resource 28"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYB444", "resource_label": "Shared Resource 29"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 10:15:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC555", "resource_label": "Shared Resource 30"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD111", "resource_label": "Shared Resource 31"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC888", "resource_label": "Shared Resource 32"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD222", "resource_label": "Shared Resource 33"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD333", "resource_label": "Shared Resource 34"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD444", "resource_label": "Shared Resource 35"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD555", "resource_label": "Shared Resource 36"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYX111", "resource_label": "Shared Resource 37"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC777", "resource_label": "Shared Resource 38"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC999", "resource_label": "Shared Resource 39"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC666", "resource_label": "Shared Resource 40"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC123", "resource_label": "Shared Resource 41"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD666", "resource_label": "Shared Resource 42"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC000", "resource_label": "Shared Resource 43"}
+GetResourceLogs: {"log_id": "ZYA123", "log_time": "2022-01-16 10:00:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC789", "resource_label": "Shared Resource 44"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:15:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 45"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 10:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC901", "resource_label": "Shared Resource 46"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC342", "resource_label": "Shared Resource 47"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 11:45:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYB111", "log_time": "2022-01-16 12:50:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYC111", "log_time": "2022-01-16 12:55:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC111", "resource_label": "Shared Resource 48"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC987", "resource_label": "Shared Resource 49"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD777", "resource_label": "Shared Resource 50"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC456", "resource_label": "Shared Resource 51"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYC222", "log_time": "2022-01-16 12:10:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYD111", "log_time": "2022-01-16 12:05:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYD222", "log_time": "2022-01-16 12:20:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYC333", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:25:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:35:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYD333", "log_time": "2022-01-16 12:50:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA000", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA000", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA000", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYC555"}
+GetResourceLogs: {"resource_id": "ZYC555", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYC555", "log_id": "ZYA001", "log_time": "2022-01-16 12:00:01", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC111", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA888", "log_time": "2022-01-16 12:40:00", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYD444", "log_time": "2022-01-16 12:55:01", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA1234", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA789", "log_time": "2022-01-16 12:30:00", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA012", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA5678", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA901", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC111", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA890", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0123", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0124", "log_time": "2022-01-16 12:55:02", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA1111", "log_time": "2022-01-16 12:55:03", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA7890", "log_time": "2022-01-16 12:55:04", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA024", "log_time": "2022-01-16 12:55:05", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA023", "log_time": "2022-01-16 12:55:06", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA025", "log_time": "2022-01-16 12:55:07", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA026", "log_time": "2022-01-16 12:55:08", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0256", "log_time": "2022-01-16 12:55:09", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA034", "log_time": "2022-01-16 12:55:10", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0267", "log_time": "2022-01-16 12:55:11", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0268", "log_time": "2022-01-16 12:55:12", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA7891", "log_time": "2022-01-16 12:55:13", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA1110", "log_time": "2022-01-16 12:55:14", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA1112", "log_time": "2022-01-16 12:55:15", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0345", "log_time": "2022-01-16 12:55:16", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0346", "log_time": "2022-01-16 12:55:17", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0347", "log_time": "2022-01-16 12:55:18", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA1113", "log_time": "2022-01-16 12:55:19", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0348", "log_time": "2022-01-16 12:55:20", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA0349", "log_time": "2022-01-16 12:55:21", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA7892", "log_time": "2022-01-16 12:55:22", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:55:23", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03411", "log_time": "2022-01-16 12:55:24", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03412", "log_time": "2022-01-16 12:55:25", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03413", "log_time": "2022-01-16 12:55:26", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03414", "log_time": "2022-01-16 12:55:27", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03415", "log_time": "2022-01-16 12:55:28", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"log_id": "ZYA03416", "log_time": "2022-01-16 12:55:29", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"log_id": "ZYA03420", "log_time": "2022-01-16 12:55:30", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03416", "log_time": "2022-01-16 12:30:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03417", "log_time": "2022-01-16 12:55:31", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03418", "log_time": "2022-01-16 12:55:32", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03419", "log_time": "2022-01-16 12:55:33", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03421", "log_time": "2022-01-16 12:55:34", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03422", "log_time": "2022-01-16 12:55:35", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:01", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03422", "log_time": "2022-01-16 12:55:35", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:01", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03422", "log_time": "2022-01-16 12:55:31", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03422", "log_time": "2022-01-16 12:55:35", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:01", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03423", "log_time": "2022-01-16 12:55:35", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:01", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03410", "log_time": "2022-01-16 12:00:00", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03424", "log_time": "2022-01-16 12:55:36", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03425", "log_time": "2022-01-16 12:55:37", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03428", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03429", "log_time": "2022-01-16 12:55:41", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03430", "log_time": "2022-01-16 12:55:42", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03432", "log_time": "2022-01-16 12:55:43", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03431", "log_time": "2022-01-16 12:55:44", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYC555", "log_id": "ZYA03433", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03434", "log_time": "2022-01-16 12:55:46", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03435", "log_time": "2022-01-16 12:55:47", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03436", "log_time": "2022-01-16 12:55:48", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"log_id": "ZYA03438", "log_time": "2022-01-16 12:55:49", "log_message": "Resource accessed successfully", "resource_id": "ZYX333"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03440", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03441", "log_time": "2022-01-16 12:55:51", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03442", "log_time": "2022-01-16 12:55:52", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03443", "log_time": "2022-01-16 12:55:53", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:54", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:50", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03444", "log_time": "2022-01-16 12:55:40", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03445", "log_time": "2022-01-16 12:55:55", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03446", "log_time": "2022-01-16 12:55:56", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03447", "log_time": "2022-01-16 12:55:57", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03448", "log_time": "2022-01-16 12:55:58", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:59", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03449", "log_time": "2022-01-16 12:55:60", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC342", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC111", "resource_label": "Shared Resource 1"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC342", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYD888", "resource_label": "Shared Resource 52"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully", "resource_id": "ZYX333"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC342", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource viewed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}
+FindSharedAssets: {"service_id": "ABC123", "resource_id": "ZYC012", "resource_label": "Shared Resource 18"}
+GetResourceLogs: {"resource_id": "ZYX333", "log_id": "ZYA03450", "log_time": "2022-01-16 12:55:45", "log_message": "Resource accessed successfully"}

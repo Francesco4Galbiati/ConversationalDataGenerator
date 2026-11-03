@@ -1,0 +1,1007 @@
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Sofia Alvarez" .
+<http://example.org/D2000> <http://example.org/name> "Department of Environmental Sciences" .
+<http://example.org/U3000> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/P2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/P2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/P2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Ava Patel" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2000> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3000> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Aisha Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/G1000> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Marcus Liu" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Mining" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Maya Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Cedarbrook University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/P2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/P2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/P2001> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1000> <http://example.org/advisor> <http://example.org/F2000> .
+<http://example.org/S1000> <http://example.org/takesCourse> <http://example.org/C3000> .
+<http://example.org/F2000> <http://example.org/teacherOf> <http://example.org/C3000> .
+<http://example.org/S1000> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F2000> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C3000> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://example.org/type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/G1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/P2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/P2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/P2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Algorithms" .
+GraduateStudent: <http://example.org/G1023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1023> <http://example.org/memberOf> <http://example.org/D2045> .
+<http://example.org/G1023> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3078> .
+<http://example.org/D2045> <http://example.org/subOrganizationOf> <http://example.org/U3078> .
+<http://example.org/G1023> <http://example.org/name> "Olivia Patel" .
+<http://example.org/D2045> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3078> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/G1000> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Visualization" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2000> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3000> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/P2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/P2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/P2001> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Structures" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U8421> <http://example.org/name> "Ava Patel" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Mia Rodriguez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Mining" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U5678> <http://example.org/name> "Ava Patel" .
+IntroduceStudent: <http://example.org/S8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S8421> <http://example.org/name> "Olivia Ramirez" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Structures" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S8421> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Sofia Alvarez" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2001> <http://example.org/name> "Department of Environmental Sciences" .
+<http://example.org/U3001> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U8421> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Maya Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/D2001> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U8421> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Visualization" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2000> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3000> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Patel" .
+IntroduceStudent: <http://example.org/S1023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1023> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Algorithms" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Crestview University" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Olivia Patel" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Ava Patel" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U5678> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1000> <http://example.org/advisor> <http://example.org/F2000> .
+<http://example.org/S1000> <http://example.org/takesCourse> <http://example.org/C3000> .
+<http://example.org/F2000> <http://example.org/teacherOf> <http://example.org/C3000> .
+<http://example.org/S1000> <http://example.org/name> "Alice" .
+<http://example.org/F2000> <http://example.org/name> "John Smith" .
+<http://example.org/C3000> <http://example.org/name> "Advanced Topics" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Maya Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Introduction to Data Science" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1045> <http://example.org/memberOf> <http://example.org/D2089> .
+<http://example.org/G1045> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3120> .
+<http://example.org/D2089> <http://example.org/subOrganizationOf> <http://example.org/U3120> .
+<http://example.org/G1045> <http://example.org/name> "Liam Patel" .
+<http://example.org/D2089> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3120> <http://example.org/name> "Cedarbrook University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Marcus Liu" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Visualization" .
+IntroduceStudent: <http://example.org/S1023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1023> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/D5678> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Algorithms" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Maya Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Mining" .
+IntroduceStudent: <http://example.org/S8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S8421> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U2023> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Maya Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U8421> <http://example.org/name> "Ava Patel" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2001> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3001> <http://example.org/name> "Riverbend University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Maya Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Martinez" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/G1023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/G1023> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Olivia Martinez" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Analytics" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/D5678> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U9012> <http://example.org/name> "Northbridge University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/P9012> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C5678> .
+<http://example.org/P9012> <http://example.org/teacherOf> <http://example.org/C5678> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/P9012> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C5678> <http://example.org/name> "Advanced Data Visualization" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Martinez" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2000> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3000> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F5678> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Mining" .
+IntroduceUndergraduateStudent: <http://example.org/U2025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U2025> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Olivia Chen" .
+<http://example.org/D2000> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1001> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Mechanical Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1234> <http://example.org/advisor> <http://example.org/F5678> .
+<http://example.org/S1234> <http://example.org/takesCourse> <http://example.org/C9012> .
+<http://example.org/F5678> <http://example.org/teacherOf> <http://example.org/C9012> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+<http://example.org/F5678> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C9012> <http://example.org/name> "Advanced Data Structures" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Emma Carter" .
+GraduateStudent: <http://example.org/G1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1001> <http://example.org/memberOf> <http://example.org/D2001> .
+<http://example.org/G1001> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3001> .
+<http://example.org/D2001> <http://example.org/subOrganizationOf> <http://example.org/U3001> .
+<http://example.org/G1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2001> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3001> <http://example.org/name> "Northbridge University" .
+IntroduceUndergraduateStudent: <http://example.org/U1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1000> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Structures" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/P2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/P2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/P2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/P2001> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U9012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1234> <http://example.org/memberOf> <http://example.org/D5678> .
+<http://example.org/G1234> <http://example.org/undergraduateDegreeFrom> <http://example.org/U9012> .
+<http://example.org/D5678> <http://example.org/subOrganizationOf> <http://example.org/U9012> .
+<http://example.org/G1234> <http://example.org/name> "Ava Patel" .
+<http://example.org/D5678> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U9012> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Lucas Meyer" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Olivia Martinez" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Martinez" .
+<http://example.org/F2001> <http://example.org/name> "Ethan Patel" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Ava Patel" .
+<http://example.org/D2000> <http://example.org/name> "Department of Environmental Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F2001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C3001> .
+<http://example.org/F2001> <http://example.org/teacherOf> <http://example.org/C3001> .
+<http://example.org/S1001> <http://example.org/name> "Olivia Ramirez" .
+<http://example.org/F2001> <http://example.org/name> "Dr. Ethan Patel" .
+<http://example.org/C3001> <http://example.org/name> "Advanced Data Analytics" .
+GraduateStudent: <http://example.org/G1023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3098> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1023> <http://example.org/memberOf> <http://example.org/D2045> .
+<http://example.org/G1023> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3098> .
+<http://example.org/D2045> <http://example.org/subOrganizationOf> <http://example.org/U3098> .
+<http://example.org/G1023> <http://example.org/name> "Emma Carter" .
+<http://example.org/D2045> <http://example.org/name> "Department of Computer Science" .
+<http://example.org/U3098> <http://example.org/name> "Northbridge University" .
+IntroduceStudent: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+IntroduceUndergraduateStudent: <http://example.org/U1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U1234> <http://example.org/name> "Olivia Patel" .
+TakeCourseOfAdvisor: <http://example.org/S1001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F3001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C2001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S1001> <http://example.org/advisor> <http://example.org/F3001> .
+<http://example.org/S1001> <http://example.org/takesCourse> <http://example.org/C2001> .
+<http://example.org/F3001> <http://example.org/teacherOf> <http://example.org/C2001> .
+<http://example.org/S1001> <http://example.org/name> "Emma Carter" .
+<http://example.org/F3001> <http://example.org/name> "Lucas Meyer" .
+<http://example.org/C2001> <http://example.org/name> "Introduction to Data Science" .
+GraduateStudent: <http://example.org/G1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/GraduateStudent> .
+<http://example.org/D2000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Department> .
+<http://example.org/U3000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/University> .
+<http://example.org/G1000> <http://example.org/memberOf> <http://example.org/D2000> .
+<http://example.org/G1000> <http://example.org/undergraduateDegreeFrom> <http://example.org/U3000> .
+<http://example.org/D2000> <http://example.org/subOrganizationOf> <http://example.org/U3000> .
+<http://example.org/G1000> <http://example.org/name> "Olivia Chen" .
+<http://example.org/D2000> <http://example.org/name> "Department of Electrical Engineering" .
+<http://example.org/U3000> <http://example.org/name> "Riverbend University" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Olivia Patel" .
+IntroduceUndergraduateStudent: <http://example.org/U5678> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/UndergraduateStudent> .
+<http://example.org/U5678> <http://example.org/name> "Emma Carter" .
+IntroduceStudent: <http://example.org/S1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/S1234> <http://example.org/name> "Emma Carter" .
+TakeCourseOfAdvisor: <http://example.org/S8421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Student> .
+<http://example.org/F3749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Faculty> .
+<http://example.org/C6582> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/Course> .
+<http://example.org/S8421> <http://example.org/advisor> <http://example.org/F3749> .
+<http://example.org/S8421> <http://example.org/takesCourse> <http://example.org/C6582> .
+<http://example.org/F3749> <http://example.org/teacherOf> <http://example.org/C6582> .
+<http://example.org/S8421> <http://example.org/name> "Ava Patel" .
+<http://example.org/F3749> <http://example.org/name> "Dr. Michael Thompson" .
+<http://example.org/C6582> <http://example.org/name> "Advanced Data Analytics" .

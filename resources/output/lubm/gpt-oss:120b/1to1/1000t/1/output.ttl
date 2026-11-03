@@ -1,0 +1,1226 @@
+@prefix ex: <http://example.org/> .
+
+ex:chair_PRF001 a ex:Chair ;
+    ex:email "alex.morgan@uni001.edu" ;
+    ex:name "Dr. Alex Morgan" ;
+    ex:officeNumber "Room 210, Science Building" ;
+    ex:telephone "+1-555-0100" ;
+    ex:worksFor ex:department_DEP004 .
+
+ex:chair_PRF002 a ex:Chair ;
+    ex:email "maya.patel@uni001.edu" ;
+    ex:name "Dr. Maya Patel" ;
+    ex:officeNumber "Room 315, Science Building" ;
+    ex:telephone "+1-555-0123" ;
+    ex:worksFor ex:department_DEP007 .
+
+ex:chair_PRF003 a ex:Chair ;
+    ex:email "elena.garcia@uni001.edu" ;
+    ex:name "Dr. Elena Garcia" ;
+    ex:officeNumber "Room 420, Science Building" ;
+    ex:telephone "+1-555-0145" ;
+    ex:worksFor ex:department_DEP009 .
+
+ex:chair_PRF004 a ex:Chair ;
+    ex:email "samuel.lee@uni001.edu" ;
+    ex:name "Dr. Samuel Lee" ;
+    ex:officeNumber "Room 530, Science Building" ;
+    ex:telephone "+1-555-0167" ;
+    ex:worksFor ex:department_DEP012 .
+
+ex:chair_PRF005 a ex:Chair ;
+    ex:email "natalie.kim@uni005.edu" ;
+    ex:name "Dr. Natalie Kim" ;
+    ex:officeNumber "Room 640, Science Building" ;
+    ex:telephone "+1-555-0189" ;
+    ex:worksFor ex:department_DEP014 .
+
+ex:chair_PRF006 a ex:Chair ;
+    ex:email "olivia.chen@uni001.edu" ;
+    ex:name "Dr. Olivia Chen" ;
+    ex:officeNumber "Room 750, Science Building" ;
+    ex:telephone "+1-555-0200" ;
+    ex:worksFor ex:department_DEP016 .
+
+ex:chair_PRF007 a ex:Chair ;
+    ex:email "ethan.brooks@uni001.edu" ;
+    ex:name "Dr. Ethan Brooks" ;
+    ex:officeNumber "Room 860, Science Building" ;
+    ex:telephone "+1-555-0222" ;
+    ex:worksFor ex:department_DEP019 .
+
+ex:chair_PRF008 a ex:Chair ;
+    ex:email "liam.oconnor@uni003.edu" ;
+    ex:name "Dr. Liam O'Connor" ;
+    ex:officeNumber "Room 970, Science Building" ;
+    ex:telephone "+1-555-0244" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:chair_PRF009 a ex:Chair ;
+    ex:email "victor.huang@uni001.edu" ;
+    ex:name "Dr. Victor Huang" ;
+    ex:officeNumber "Room 1080, Science Building" ;
+    ex:telephone "+1-555-0266" ;
+    ex:worksFor ex:department_DEP025 .
+
+ex:chair_PRF010 a ex:Chair ;
+    ex:email "sophia.rivera@uni004.edu" ;
+    ex:name "Dr. Sophia Rivera" ;
+    ex:officeNumber "Room 1080, Engineering Building" ;
+    ex:telephone "+1-555-0280" ;
+    ex:worksFor ex:department_DEP028 .
+
+ex:chair_PRF011 a ex:Chair ;
+    ex:email "amelia.torres@uni004.edu" ;
+    ex:name "Dr. Amelia Torres" ;
+    ex:officeNumber "Room 1080, Engineering Building" ;
+    ex:telephone "+1-555-0300" ;
+    ex:worksFor ex:department_DEP030 .
+
+ex:chair_PRF012 a ex:Chair ;
+    ex:email "isabella.nguyen@uni004.edu" ;
+    ex:name "Dr. Isabella Nguyen" ;
+    ex:officeNumber "Room 1080, Engineering Building" ;
+    ex:telephone "+1-555-0322" ;
+    ex:worksFor ex:department_DEP032 .
+
+ex:chair_PRF013 a ex:Chair ;
+    ex:email "noah.sinclair@uni001.edu" ;
+    ex:name "Dr. Noah Sinclair" ;
+    ex:officeNumber "Room 1081, Engineering Building" ;
+    ex:telephone "+1-555-0344" ;
+    ex:worksFor ex:department_DEP035 .
+
+ex:chair_PRF014 a ex:Chair ;
+    ex:email "xavier.liu@uni001.edu" ;
+    ex:name "Dr. Xavier Liu" ;
+    ex:officeNumber "Room 1082, Engineering Building" ;
+    ex:telephone "+1-555-0366" ;
+    ex:worksFor ex:department_DEP038 .
+
+ex:chair_PRF015 a ex:Chair ;
+    ex:email "zoe.patel@uni001.edu" ;
+    ex:name "Dr. Zoe Patel" ;
+    ex:officeNumber "Room 1083, Engineering Building" ;
+    ex:telephone "+1-555-0388" ;
+    ex:worksFor ex:department_DEP040 .
+
+ex:chair_PRF016 a ex:Chair ;
+    ex:email "hannah.clarke@uni001.edu" ;
+    ex:name "Dr. Hannah Clarke" ;
+    ex:officeNumber "Room 1084, Engineering Building" ;
+    ex:telephone "+1-555-0410" ;
+    ex:worksFor ex:department_DEP042 .
+
+ex:chair_PRF017 a ex:Chair ;
+    ex:email "gabriel.ortiz@uni004.edu" ;
+    ex:name "Dr. Gabriel Ortiz" ;
+    ex:officeNumber "Room 1085, Science Building" ;
+    ex:telephone "+1-555-0422" ;
+    ex:worksFor ex:department_DEP044 .
+
+ex:chair_PRF018 a ex:Chair ;
+    ex:email "ethan.zhao@uni004.edu" ;
+    ex:name "Dr. Ethan Zhao" ;
+    ex:officeNumber "Room 1086, Engineering Building" ;
+    ex:telephone "+1-555-0444" ;
+    ex:worksFor ex:department_DEP046 .
+
+ex:grad_student_DEP001 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001,
+        ex:department_DEP002 ;
+    ex:name "Emily Clark",
+        "Grace Lee" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_GRA001 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP011 ;
+    ex:name "David Miller" ;
+    ex:undergraduateDegreeFrom ex:university_UNI005 .
+
+ex:grad_student_GRA002 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP003 ;
+    ex:name "Frank Wilson" ;
+    ex:undergraduateDegreeFrom ex:university_UNI004 .
+
+ex:grad_student_GRA003 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP018 ;
+    ex:name "Hannah Brown" ;
+    ex:undergraduateDegreeFrom ex:university_UNI002 .
+
+ex:grad_student_GRA004 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP021 ;
+    ex:name "Ian Thompson" ;
+    ex:undergraduateDegreeFrom ex:university_UNI006 .
+
+ex:grad_student_GRA005 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP024 ;
+    ex:name "Jackie Rivera" ;
+    ex:undergraduateDegreeFrom ex:university_UNI007 .
+
+ex:grad_student_GRA006 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP027 ;
+    ex:name "Laura Martinez" ;
+    ex:undergraduateDegreeFrom ex:university_UNI008 .
+
+ex:grad_student_GRA007 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP022 ;
+    ex:name "Olivia Turner" ;
+    ex:undergraduateDegreeFrom ex:university_UNI004 .
+
+ex:grad_student_GRA008 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Peter Gomez" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_GRA009 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP034 ;
+    ex:name "Sofia Patel" ;
+    ex:undergraduateDegreeFrom ex:university_UNI009 .
+
+ex:grad_student_GRA010 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP037 ;
+    ex:name "Quinn Harper" ;
+    ex:undergraduateDegreeFrom ex:university_UNI010 .
+
+ex:grad_student_GRA011 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Victor Stone" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_GRA012 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Zoe Harper" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_GRA013 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Ethan Brooks" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_GRA014 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Natalie Reed" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_STU001 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP002 ;
+    ex:name "Alice Smith" ;
+    ex:undergraduateDegreeFrom ex:university_UNI003 .
+
+ex:grad_student_STU002 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Bob Johnson" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:grad_student_STU003 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP006 ;
+    ex:name "Carol Davis" ;
+    ex:undergraduateDegreeFrom ex:university_UNI004 .
+
+ex:grad_student_STU004 a ex:GraduateStudent ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Michael Anderson" ;
+    ex:undergraduateDegreeFrom ex:university_UNI001 .
+
+ex:person_C001 a ex:Person ;
+    ex:memberOf ex:department_DEP022 ;
+    ex:name "Chris Morgan" .
+
+ex:person_D001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Jordan Smith" .
+
+ex:person_E001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Evan Brooks" .
+
+ex:person_F001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Avery Lane" .
+
+ex:person_G001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Elliot Stone" .
+
+ex:person_H001 a ex:Person ;
+    ex:memberOf ex:department_DEP022 ;
+    ex:name "Logan Pierce" .
+
+ex:person_J001 a ex:Person ;
+    ex:memberOf ex:department_DEP022 ;
+    ex:name "Morgan Quinn" .
+
+ex:person_L001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Dana White" .
+
+ex:person_P001 a ex:Person ;
+    ex:memberOf ex:department_DEP002 ;
+    ex:name "Alex Johnson" .
+
+ex:person_P002 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Taylor Morgan" .
+
+ex:person_P004 a ex:Person ;
+    ex:memberOf ex:department_DEP006 ;
+    ex:name "Morgan Blake" .
+
+ex:person_P006 a ex:Person ;
+    ex:memberOf ex:department_DEP004 ;
+    ex:name "Riley Quinn" .
+
+ex:person_P008 a ex:Person ;
+    ex:memberOf ex:department_DEP004 ;
+    ex:name "Jordan Kim" .
+
+ex:person_P010 a ex:Person ;
+    ex:memberOf ex:department_DEP007 ;
+    ex:name "Jordan Patel" .
+
+ex:person_P012 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Taylor Reed" .
+
+ex:person_P013 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Charlie Morgan" .
+
+ex:person_Q001 a ex:Person ;
+    ex:memberOf ex:department_DEP008 ;
+    ex:name "Jordan Blake" .
+
+ex:person_R001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Jordan Fox" .
+
+ex:person_S001 a ex:Person ;
+    ex:memberOf ex:department_DEP001 ;
+    ex:name "Taylor Brooks" .
+
+ex:professor_PRF001 a ex:Professor ;
+    ex:name "Dr. Alex Smith" ;
+    ex:telephone "555-0102" ;
+    ex:worksFor ex:department_DEP002 .
+
+ex:professor_PRF002 a ex:Professor ;
+    ex:name "Dr. Emily Johnson" ;
+    ex:telephone "555-0199" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF003 a ex:Professor ;
+    ex:name "Dr. Jordan Lee" ;
+    ex:telephone "555-0123" ;
+    ex:worksFor ex:department_DEP005 .
+
+ex:professor_PRF004 a ex:Professor ;
+    ex:name "Dr. Michael Brown" ;
+    ex:telephone "555-0134" ;
+    ex:worksFor ex:department_DEP005 .
+
+ex:professor_PRF005 a ex:Professor ;
+    ex:name "Dr. Sarah Wilson" ;
+    ex:telephone "555-0145" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF006 a ex:Professor ;
+    ex:name "Dr. New Professor" ;
+    ex:telephone "555-0200" ;
+    ex:worksFor ex:department_DEP003 .
+
+ex:professor_PRF007 a ex:Professor ;
+    ex:name "Dr. Alice Green" ;
+    ex:telephone "555-0211" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF008 a ex:Professor ;
+    ex:name "Dr. Olivia Turner" ;
+    ex:telephone "555-0222" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF009 a ex:Professor ;
+    ex:name "Dr. Hannah Clark" ;
+    ex:telephone "555-0233" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF010 a ex:Professor ;
+    ex:name "Dr. Samuel Reed" ;
+    ex:telephone "555-0244" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:professor_PRF011 a ex:Professor ;
+    ex:name "Dr. Kevin Miller" ;
+    ex:telephone "555-0255" ;
+    ex:worksFor ex:department_DEP004 .
+
+ex:professor_PRF012 a ex:Professor ;
+    ex:name "Dr. New Professor12" ;
+    ex:telephone "555-0266" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF013 a ex:Professor ;
+    ex:name "Dr. New Professor13" ;
+    ex:telephone "555-0277" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF014 a ex:Professor ;
+    ex:name "Dr. New Professor14" ;
+    ex:telephone "555-0288" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:professor_PRF015 a ex:Professor ;
+    ex:name "Dr. New Professor15" ;
+    ex:telephone "555-0299" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:professor_PRF016 a ex:Professor ;
+    ex:name "Dr. New Professor16" ;
+    ex:telephone "555-0300" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF017 a ex:Professor ;
+    ex:name "Dr. New Professor17" ;
+    ex:telephone "555-0311" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF018 a ex:Professor ;
+    ex:name "Dr. New Professor18" ;
+    ex:telephone "555-0322" ;
+    ex:worksFor ex:department_DEP001 .
+
+ex:professor_PRF019 a ex:Professor ;
+    ex:name "Dr. Benjamin Carter" ;
+    ex:telephone "555-0333" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:professor_PRO123 a ex:Professor ;
+    ex:name "Dr. New Professor22" ;
+    ex:telephone "555-0344" ;
+    ex:worksFor ex:department_DEP022 .
+
+ex:research_group_RG001 a ex:ResearchGroup ;
+    ex:name "Advanced Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI003 .
+
+ex:research_group_RG002 a ex:ResearchGroup ;
+    ex:name "Materials Innovation Lab" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG003 a ex:ResearchGroup ;
+    ex:name "Quantum Materials Initiative" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG004 a ex:ResearchGroup ;
+    ex:name "Emerging Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG005 a ex:ResearchGroup ;
+    ex:name "Innovative Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG006 a ex:ResearchGroup ;
+    ex:name "Sustainable Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG007 a ex:ResearchGroup ;
+    ex:name "NextGen Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG008 a ex:ResearchGroup ;
+    ex:name "Future Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI005 .
+
+ex:research_group_RG009 a ex:ResearchGroup ;
+    ex:name "Cutting-Edge Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG010 a ex:ResearchGroup ;
+    ex:name "Pioneering Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI003 .
+
+ex:research_group_RG011 a ex:ResearchGroup ;
+    ex:name "Transformative Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:research_group_RG012 a ex:ResearchGroup ;
+    ex:name "Frontier Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG013 a ex:ResearchGroup ;
+    ex:name "Visionary Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG014 a ex:ResearchGroup ;
+    ex:name "Adaptive Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG015 a ex:ResearchGroup ;
+    ex:name "Dynamic Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG016 a ex:ResearchGroup ;
+    ex:name "Holistic Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG017 a ex:ResearchGroup ;
+    ex:name "Catalytic Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:research_group_RG018 a ex:ResearchGroup ;
+    ex:name "Synergy Materials Research Group" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:student_ABC001 a ex:Student ;
+    ex:name "Jordan Harper" .
+
+ex:student_ABC002 a ex:Student ;
+    ex:name "Casey Blake" .
+
+ex:student_ABC003 a ex:Student ;
+    ex:name "Morgan Riley" .
+
+ex:student_ABC004 a ex:Student ;
+    ex:name "Jordan Price" .
+
+ex:student_NEW001 a ex:Student ;
+    ex:name "Taylor Brooks" .
+
+ex:student_NEW002 a ex:Student ;
+    ex:name "Jordan Fox" .
+
+ex:student_NEW003 a ex:Student ;
+    ex:emailAddress "taylor.morgan@uni001.edu" ;
+    ex:memberOf ex:department_DEP023 ;
+    ex:name "Taylor Morgan" .
+
+ex:student_NEW004 a ex:Student ;
+    ex:name "Morgan Quinn" .
+
+ex:student_NEW005 a ex:Student ;
+    ex:emailAddress "riley.quinn@uni001.edu" ;
+    ex:memberOf ex:department_DEP029 ;
+    ex:name "Riley Quinn" .
+
+ex:student_NEW006 a ex:Student ;
+    ex:name "Avery Reed" .
+
+ex:student_NEW007 a ex:Student ;
+    ex:emailAddress "taylor.quinn@uni001.edu" ;
+    ex:memberOf ex:department_DEP031 ;
+    ex:name "Taylor Quinn" .
+
+ex:student_NEW008 a ex:Student ;
+    ex:advisor ex:faculty_PRO012 ;
+    ex:name "Riley Morgan" ;
+    ex:takesCourse ex:course_CRS012 .
+
+ex:student_NEW009 a ex:Student ;
+    ex:emailAddress "jordan.lee@uni001.edu" ;
+    ex:memberOf ex:department_DEP033 ;
+    ex:name "Jordan Lee" .
+
+ex:student_NEW010 a ex:Student ;
+    ex:name "Avery Grant" .
+
+ex:student_NEW011 a ex:Student ;
+    ex:advisor ex:faculty_PRO013 ;
+    ex:name "Casey Morgan" ;
+    ex:takesCourse ex:course_CRS013 .
+
+ex:student_NEW012 a ex:Student ;
+    ex:name "Alex Quinn" .
+
+ex:student_NEW013 a ex:Student ;
+    ex:emailAddress "jordan.brooks@uni001.edu" ;
+    ex:memberOf ex:department_DEP036 ;
+    ex:name "Jordan Brooks" .
+
+ex:student_NEW014 a ex:Student ;
+    ex:advisor ex:faculty_PRO014 ;
+    ex:name "Jordan Vega" ;
+    ex:takesCourse ex:course_CRS014 .
+
+ex:student_NEW015 a ex:Student ;
+    ex:name "Logan Reed" .
+
+ex:student_NEW016 a ex:Student ;
+    ex:emailAddress "taylor.vega@uni001.edu" ;
+    ex:memberOf ex:department_DEP039 ;
+    ex:name "Taylor Vega" .
+
+ex:student_NEW017 a ex:Student ;
+    ex:advisor ex:faculty_PRO015 ;
+    ex:name "Taylor Hayes" ;
+    ex:takesCourse ex:course_CRS015 .
+
+ex:student_NEW018 a ex:Student ;
+    ex:emailAddress "avery.stone@uni001.edu" ;
+    ex:memberOf ex:department_DEP041 ;
+    ex:name "Avery Stone" .
+
+ex:student_NEW019 a ex:Student ;
+    ex:name "Avery Carter" .
+
+ex:student_NEW020 a ex:Student ;
+    ex:advisor ex:faculty_PRO016 ;
+    ex:name "Sydney Parker" ;
+    ex:takesCourse ex:course_CRS016 .
+
+ex:student_NEW021 a ex:Student ;
+    ex:emailAddress "casey.jordan@uni001.edu",
+        "jordan.stone@uni001.edu" ;
+    ex:memberOf ex:department_DEP045,
+        ex:department_DEP047 ;
+    ex:name "Casey Jordan",
+        "Charlie Davis",
+        "Jordan Stone" .
+
+ex:student_NEW022 a ex:Student ;
+    ex:name "Jordan Alvarez" .
+
+ex:student_NEW023 a ex:Student ;
+    ex:advisor ex:faculty_PRO019 ;
+    ex:name "Avery Harper" ;
+    ex:takesCourse ex:course_CRS019 .
+
+ex:student_PQR001 a ex:Student ;
+    ex:advisor ex:faculty_PRO018 ;
+    ex:name "Jordan Knight" ;
+    ex:takesCourse ex:course_CRS018 .
+
+ex:student_STU001 a ex:Student ;
+    ex:emailAddress "alex.morgan@uni003.edu" ;
+    ex:memberOf ex:department_DEP003 ;
+    ex:name "Alex Morgan" .
+
+ex:student_STU002 a ex:Student ;
+    ex:name "Jordan Lee" .
+
+ex:student_STU003 a ex:Student ;
+    ex:advisor ex:faculty_PRO001 ;
+    ex:name "Taylor Reed" ;
+    ex:takesCourse ex:course_CRS001 .
+
+ex:student_STU004 a ex:Student ;
+    ex:emailAddress "morgan.blake@uni001.edu" ;
+    ex:memberOf ex:department_DEP005 ;
+    ex:name "Morgan Blake" .
+
+ex:student_STU005 a ex:Student ;
+    ex:name "Casey Jordan" .
+
+ex:student_STU006 a ex:Student ;
+    ex:advisor ex:faculty_PRO002 ;
+    ex:name "Riley Harper" ;
+    ex:takesCourse ex:course_CRS002 .
+
+ex:student_STU007 a ex:Student ;
+    ex:emailAddress "sam.carter@uni001.edu" ;
+    ex:memberOf ex:department_DEP008 ;
+    ex:name "Sam Carter" .
+
+ex:student_STU008 a ex:Student ;
+    ex:name "Avery Quinn" .
+
+ex:student_STU009 a ex:Student ;
+    ex:advisor ex:faculty_PRO003 ;
+    ex:name "Elliot Stone" ;
+    ex:takesCourse ex:course_CRS003 .
+
+ex:student_STU010 a ex:Student ;
+    ex:emailAddress "jordan.blake@uni001.edu" ;
+    ex:memberOf ex:department_DEP010 ;
+    ex:name "Jordan Blake" .
+
+ex:student_STU011 a ex:Student ;
+    ex:name "Jordan Parker" .
+
+ex:student_STU012 a ex:Student ;
+    ex:advisor ex:faculty_PRO004 ;
+    ex:name "Jordan Morgan" ;
+    ex:takesCourse ex:course_CRS004 .
+
+ex:student_STU013 a ex:Student ;
+    ex:emailAddress "avery.morgan@uni001.edu" ;
+    ex:memberOf ex:department_DEP013 ;
+    ex:name "Avery Morgan" .
+
+ex:student_STU014 a ex:Student ;
+    ex:advisor ex:faculty_PRO005 ;
+    ex:name "Jordan Rivers" ;
+    ex:takesCourse ex:course_CRS005 .
+
+ex:student_STU015 a ex:Student ;
+    ex:emailAddress "jordan.hayes@uni004.edu" ;
+    ex:memberOf ex:department_DEP015 ;
+    ex:name "Jordan Hayes" .
+
+ex:student_STU016 a ex:Student ;
+    ex:advisor ex:faculty_PRO006 ;
+    ex:name "Jordan Ellis" ;
+    ex:takesCourse ex:course_CRS006 .
+
+ex:student_STU017 a ex:Student ;
+    ex:emailAddress "jordan.quinn@uni001.edu" ;
+    ex:memberOf ex:department_DEP017 ;
+    ex:name "Jordan Quinn" .
+
+ex:student_STU018 a ex:Student ;
+    ex:advisor ex:faculty_PRO007 ;
+    ex:name "Jordan Mitchell" ;
+    ex:takesCourse ex:course_CRS007 .
+
+ex:student_STU019 a ex:Student ;
+    ex:emailAddress "jordan.morgan@uni003.edu" ;
+    ex:memberOf ex:department_DEP020 ;
+    ex:name "Jordan Morgan" .
+
+ex:student_STU020 a ex:Student ;
+    ex:advisor ex:faculty_PRO008 ;
+    ex:name "Avery Stone" ;
+    ex:takesCourse ex:course_CRS008 .
+
+ex:student_STU021 a ex:Student ;
+    ex:advisor ex:faculty_PRO009 ;
+    ex:name "Jordan Vega" ;
+    ex:takesCourse ex:course_CRS009 .
+
+ex:student_STU022 a ex:Student ;
+    ex:emailAddress "avery.brooks@uni005.edu" ;
+    ex:memberOf ex:department_DEP026 ;
+    ex:name "Avery Brooks" .
+
+ex:student_STU023 a ex:Student ;
+    ex:advisor ex:faculty_PRO010,
+        ex:faculty_PRO011 ;
+    ex:name "Avery Lane",
+        "Harper Quinn" ;
+    ex:takesCourse ex:course_CRS010,
+        ex:course_CRS011 .
+
+ex:student_STU024 a ex:Student ;
+    ex:emailAddress "elliot.quinn@uni001.edu" ;
+    ex:memberOf ex:department_DEP043 ;
+    ex:name "Elliot Quinn" .
+
+ex:student_STU025 a ex:Student ;
+    ex:advisor ex:faculty_PRO017 ;
+    ex:name "Morgan Riley" ;
+    ex:takesCourse ex:course_CRS017 .
+
+ex:student_XYZ001 a ex:Student ;
+    ex:name "Jordan Taylor" .
+
+ex:undergrad_student_AA001 a ex:UndergraduateStudent ;
+    ex:name "Natalie Reed" .
+
+ex:undergrad_student_AB123 a ex:UndergraduateStudent ;
+    ex:name "Jordan Lee" .
+
+ex:undergrad_student_BC234 a ex:UndergraduateStudent ;
+    ex:name "Ethan Clarke" .
+
+ex:undergrad_student_CD456 a ex:UndergraduateStudent ;
+    ex:name "Alex Morgan" .
+
+ex:undergrad_student_DE123 a ex:UndergraduateStudent ;
+    ex:name "Victor Hale" .
+
+ex:undergrad_student_EF789 a ex:UndergraduateStudent ;
+    ex:name "Taylor Brooks" .
+
+ex:undergrad_student_GH012 a ex:UndergraduateStudent ;
+    ex:name "Casey Rivera" .
+
+ex:undergrad_student_IJ345 a ex:UndergraduateStudent ;
+    ex:name "Samira Patel" .
+
+ex:undergrad_student_JK001 a ex:UndergraduateStudent ;
+    ex:name "Mia Torres" .
+
+ex:undergrad_student_KL678 a ex:UndergraduateStudent ;
+    ex:name "Riley Chen" .
+
+ex:undergrad_student_LMN123 a ex:UndergraduateStudent ;
+    ex:name "Olivia Grant" .
+
+ex:undergrad_student_MN901 a ex:UndergraduateStudent ;
+    ex:name "Elliot Shaw" .
+
+ex:undergrad_student_OP234 a ex:UndergraduateStudent ;
+    ex:name "Avery Quinn" .
+
+ex:undergrad_student_QR567 a ex:UndergraduateStudent ;
+    ex:name "Blake Harris" .
+
+ex:undergrad_student_ST123 a ex:UndergraduateStudent ;
+    ex:name "Jordan Patel" .
+
+ex:undergrad_student_UV001 a ex:UndergraduateStudent ;
+    ex:name "Dylan Kim" .
+
+ex:undergrad_student_WX234 a ex:UndergraduateStudent ;
+    ex:name "Harper Quinn" .
+
+ex:undergrad_student_YZ001 a ex:UndergraduateStudent ;
+    ex:name "Liam Torres" .
+
+ex:undergrad_student_ZX999 a ex:UndergraduateStudent ;
+    ex:name "Jordan Smith" .
+
+ex:department_DEP009 a ex:Department ;
+    ex:name "Machine Learning" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP010 a ex:Department ;
+    ex:name "Human-Computer Interaction" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP011 a ex:Department ;
+    ex:name "Software Engineering" ;
+    ex:subOrganizationOf ex:university_UNI005 .
+
+ex:department_DEP012 a ex:Department ;
+    ex:name "Computational Neuroscience" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP013 a ex:Department ;
+    ex:name "Virtual Reality" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP014 a ex:Department ;
+    ex:name "Augmented Reality" ;
+    ex:subOrganizationOf ex:university_UNI005 .
+
+ex:department_DEP015 a ex:Department ;
+    ex:name "Internet of Things" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP016 a ex:Department ;
+    ex:name "Ethical AI" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP017 a ex:Department ;
+    ex:name "Quantum Computing" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP018 a ex:Department ;
+    ex:name "Smart Materials" ;
+    ex:subOrganizationOf ex:university_UNI002 .
+
+ex:department_DEP019 a ex:Department ;
+    ex:name "Computational Linguistics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP020 a ex:Department ;
+    ex:name "Quantum Computing" ;
+    ex:subOrganizationOf ex:university_UNI003 .
+
+ex:department_DEP021 a ex:Department ;
+    ex:name "Distributed Systems" ;
+    ex:subOrganizationOf ex:university_UNI006 .
+
+ex:department_DEP023 a ex:Department ;
+    ex:name "Computational Biology" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP024 a ex:Department ;
+    ex:name "Quantum Cryptography" ;
+    ex:subOrganizationOf ex:university_UNI007 .
+
+ex:department_DEP025 a ex:Department ;
+    ex:name "Computational Astrophysics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP026 a ex:Department ;
+    ex:name "Edge Computing" ;
+    ex:subOrganizationOf ex:university_UNI005 .
+
+ex:department_DEP027 a ex:Department ;
+    ex:name "Quantum Robotics" ;
+    ex:subOrganizationOf ex:university_UNI008 .
+
+ex:department_DEP028 a ex:Department ;
+    ex:name "Quantum Bioinformatics" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP029 a ex:Department ;
+    ex:name "Quantum Optics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP030 a ex:Department ;
+    ex:name "Computational Genomics" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP031 a ex:Department ;
+    ex:name "Quantum Machine Learning" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP032 a ex:Department ;
+    ex:name "Quantum Bioinformatics" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP033 a ex:Department ;
+    ex:name "Quantum Bioengineering" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP034 a ex:Department ;
+    ex:name "Astrochemical Engineering" ;
+    ex:subOrganizationOf ex:university_UNI009 .
+
+ex:department_DEP035 a ex:Department ;
+    ex:name "Autonomous Systems" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP036 a ex:Department ;
+    ex:name "Quantum Nanotechnology" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP037 a ex:Department ;
+    ex:name "Quantum Photonics" ;
+    ex:subOrganizationOf ex:university_UNI010 .
+
+ex:department_DEP038 a ex:Department ;
+    ex:name "Quantum Thermodynamics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP039 a ex:Department ;
+    ex:name "Quantum Ecology" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP040 a ex:Department ;
+    ex:name "Quantum Metamaterials" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP041 a ex:Department ;
+    ex:name "Quantum Sensors" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP042 a ex:Department ;
+    ex:name "Quantum Materials Engineering" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP043 a ex:Department ;
+    ex:name "Quantum Biology" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP044 a ex:Department ;
+    ex:name "Quantum Neuroscience" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP045 a ex:Department ;
+    ex:name "Quantum Astrophysics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP046 a ex:Department ;
+    ex:name "Quantum Agriculture" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP047 a ex:Department ;
+    ex:name "Quantum Neuromorphic Engineering" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:faculty_PRO001 a ex:Faculty ;
+    ex:name "Dr. Morgan" ;
+    ex:teacherOf ex:course_CRS001 .
+
+ex:faculty_PRO002 a ex:Faculty ;
+    ex:name "Dr. Evelyn Shaw" ;
+    ex:teacherOf ex:course_CRS002 .
+
+ex:faculty_PRO003 a ex:Faculty ;
+    ex:name "Dr. Sylvia Patel" ;
+    ex:teacherOf ex:course_CRS003 .
+
+ex:faculty_PRO004 a ex:Faculty ;
+    ex:name "Dr. Nathaniel Brooks" ;
+    ex:teacherOf ex:course_CRS004 .
+
+ex:faculty_PRO005 a ex:Faculty ;
+    ex:name "Dr. Amelia Hart" ;
+    ex:teacherOf ex:course_CRS005 .
+
+ex:faculty_PRO006 a ex:Faculty ;
+    ex:name "Dr. Lucas Reed" ;
+    ex:teacherOf ex:course_CRS006 .
+
+ex:faculty_PRO007 a ex:Faculty ;
+    ex:name "Dr. Helena Ortiz" ;
+    ex:teacherOf ex:course_CRS007 .
+
+ex:faculty_PRO008 a ex:Faculty ;
+    ex:name "Dr. Benjamin Clarke" ;
+    ex:teacherOf ex:course_CRS008 .
+
+ex:faculty_PRO009 a ex:Faculty ;
+    ex:name "Dr. Xavier Monroe" ;
+    ex:teacherOf ex:course_CRS009 .
+
+ex:faculty_PRO010 a ex:Faculty ;
+    ex:name "Dr. Fiona Gallagher" ;
+    ex:teacherOf ex:course_CRS010 .
+
+ex:faculty_PRO011 a ex:Faculty ;
+    ex:name "Dr. Oliver Grant" ;
+    ex:teacherOf ex:course_CRS011 .
+
+ex:faculty_PRO012 a ex:Faculty ;
+    ex:name "Dr. Priya Desai" ;
+    ex:teacherOf ex:course_CRS012 .
+
+ex:faculty_PRO013 a ex:Faculty ;
+    ex:name "Dr. Maya Singh" ;
+    ex:teacherOf ex:course_CRS013 .
+
+ex:faculty_PRO014 a ex:Faculty ;
+    ex:name "Dr. Maya Singh" ;
+    ex:teacherOf ex:course_CRS014 .
+
+ex:faculty_PRO015 a ex:Faculty ;
+    ex:name "Dr. Samuel Ortega" ;
+    ex:teacherOf ex:course_CRS015 .
+
+ex:faculty_PRO016 a ex:Faculty ;
+    ex:name "Dr. Zoe Caldwell" ;
+    ex:teacherOf ex:course_CRS016 .
+
+ex:faculty_PRO017 a ex:Faculty ;
+    ex:name "Dr. Zoe Caldwell" ;
+    ex:teacherOf ex:course_CRS017 .
+
+ex:faculty_PRO018 a ex:Faculty ;
+    ex:name "Dr. Victor Alvarez" ;
+    ex:teacherOf ex:course_CRS018 .
+
+ex:faculty_PRO019 a ex:Faculty ;
+    ex:name "Dr. Isabella Nguyen" ;
+    ex:teacherOf ex:course_CRS019 .
+
+ex:person_A001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Casey Morgan" .
+
+ex:person_A002 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Jordan Lee" .
+
+ex:person_A003 a ex:Person ;
+    ex:degreeFrom ex:university_UNI004 ;
+    ex:name "Cameron Hayes" .
+
+ex:person_B001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Jordan Harper" .
+
+ex:person_B002 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Liam Gallagher" .
+
+ex:person_K001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI004 ;
+    ex:name "Avery Morgan" .
+
+ex:person_M001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Sydney Harper" .
+
+ex:person_N001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI004 ;
+    ex:name "Jordan Carter" .
+
+ex:person_P003 a ex:Person ;
+    ex:degreeFrom ex:university_UNI004 ;
+    ex:name "Casey Rivera" .
+
+ex:person_P005 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Sam Taylor" .
+
+ex:person_P007 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Avery Smith" .
+
+ex:person_P009 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Morgan Davis" .
+
+ex:person_P011 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Jordan Brooks" .
+
+ex:person_T001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Alexis Rivera" .
+
+ex:person_U001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI004 ;
+    ex:name "Blake Anderson" .
+
+ex:person_X001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Jordan Ellis" .
+
+ex:person_Y001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Avery Quinn" .
+
+ex:person_Z001 a ex:Person ;
+    ex:degreeFrom ex:university_UNI001 ;
+    ex:name "Jordan Vega" .
+
+ex:course_CRS001 a ex:Course ;
+    ex:name "Advanced Quantum Mechanics" .
+
+ex:course_CRS002 a ex:Course ;
+    ex:name "Computational Astrophysics" .
+
+ex:course_CRS003 a ex:Course ;
+    ex:name "Statistical Thermodynamics" .
+
+ex:course_CRS004 a ex:Course ;
+    ex:name "Machine Learning for Physics" .
+
+ex:course_CRS005 a ex:Course ;
+    ex:name "Quantum Field Theory" .
+
+ex:course_CRS006 a ex:Course ;
+    ex:name "Condensed Matter Physics" .
+
+ex:course_CRS007 a ex:Course ;
+    ex:name "Nanophotonics and Plasmonics" .
+
+ex:course_CRS008 a ex:Course ;
+    ex:name "Topological Insulators and Applications" .
+
+ex:course_CRS009 a ex:Course ;
+    ex:name "Quantum Information Theory" .
+
+ex:course_CRS010 a ex:Course ;
+    ex:name "Quantum Optics and Applications" .
+
+ex:course_CRS011 a ex:Course ;
+    ex:name "Quantum Computing Foundations" .
+
+ex:course_CRS012 a ex:Course ;
+    ex:name "Quantum Materials Engineering" .
+
+ex:course_CRS013 a ex:Course ;
+    ex:name "Quantum Cryptography and Security" .
+
+ex:course_CRS014 a ex:Course ;
+    ex:name "Quantum Cryptography and Security" .
+
+ex:course_CRS015 a ex:Course ;
+    ex:name "Quantum Error Correction" .
+
+ex:course_CRS016 a ex:Course ;
+    ex:name "Quantum Machine Learning" .
+
+ex:course_CRS017 a ex:Course ;
+    ex:name "Quantum Materials Engineering" .
+
+ex:course_CRS018 a ex:Course ;
+    ex:name "Quantum Neural Networks" .
+
+ex:course_CRS019 a ex:Course ;
+    ex:name "Quantum Metamaterials Design" .
+
+ex:department_DEP006 a ex:Department ;
+    ex:name "Bioinformatics" ;
+    ex:subOrganizationOf ex:university_UNI004 .
+
+ex:department_DEP007 a ex:Department ;
+    ex:name "Nanotechnology" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP008 a ex:Department ;
+    ex:name "Cybersecurity" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:university_UNI002 a ex:University ;
+    ex:name "Oceanic Research University" .
+
+ex:university_UNI006 a ex:University ;
+    ex:name "Quantum Horizons University" .
+
+ex:university_UNI007 a ex:University ;
+    ex:name "Stellar Academy University" .
+
+ex:university_UNI008 a ex:University ;
+    ex:name "Nova Frontier University" .
+
+ex:university_UNI009 a ex:University ;
+    ex:name "Aurora Tech University" .
+
+ex:university_UNI010 a ex:University ;
+    ex:name "Luminous Sky University" .
+
+ex:department_DEP003 a ex:Department ;
+    ex:name "Data Science",
+        "Neural Engineering" ;
+    ex:subOrganizationOf ex:university_UNI003,
+        ex:university_UNI004 .
+
+ex:department_DEP005 a ex:Department ;
+    ex:name "Robotics Engineering" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:department_DEP002 a ex:Department ;
+    ex:name "Advanced Robotics",
+        "Computer Science" ;
+    ex:subOrganizationOf ex:university_UNI001,
+        ex:university_UNI003 .
+
+ex:department_DEP004 a ex:Department ;
+    ex:name "Quantum Computing" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:university_UNI005 a ex:University ;
+    ex:name "Tech Frontier University" .
+
+ex:university_UNI003 a ex:University ;
+    ex:name "Global University" .
+
+ex:department_DEP022 a ex:Department ;
+    ex:name "Computational Chemistry",
+        "Synthetic Biology" ;
+    ex:subOrganizationOf ex:university_UNI003,
+        ex:university_UNI004 .
+
+ex:university_UNI004 a ex:University ;
+    ex:hasAlumnus ex:person_A003,
+        ex:person_K001,
+        ex:person_N001,
+        ex:person_P003,
+        ex:person_U001 ;
+    ex:name "Celestial Institute of Technology",
+        "National Institute of Science",
+        "Pacific Innovation University" .
+
+ex:department_DEP001 a ex:Department ;
+    ex:name "Advanced Robotics",
+        "Artificial Intelligence",
+        "Neural Interfaces",
+        "Quantum Robotics" ;
+    ex:subOrganizationOf ex:university_UNI001 .
+
+ex:university_UNI001 a ex:University ;
+    ex:hasAlumnus ex:person_A001,
+        ex:person_A002,
+        ex:person_B001,
+        ex:person_B002,
+        ex:person_M001,
+        ex:person_P005,
+        ex:person_P007,
+        ex:person_P009,
+        ex:person_P011,
+        ex:person_T001,
+        ex:person_X001,
+        ex:person_Y001,
+        ex:person_Z001 ;
+    ex:name "Astra Nova University",
+        "Celestial Institute of Technology",
+        "Future Tech University",
+        "International Institute of Technology" .
+
