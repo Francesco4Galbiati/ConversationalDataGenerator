@@ -3,7 +3,7 @@
 Here you can find the Python project to execute the Conversational Data Generator (CDG).
 This repository is structured as follows:
 - ```/one_to_one```: contains the code to execute the one-to-one conversations
-  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:12b0``` as querent
+  - ```/dialogue_gpt.py```: contains the function that generates the dialogue turns with ```gpt-oss:120b``` as querent
   - ```/dialogue_llama.py```: contains the function that generates the dialogue turns with ```llama3.3:70b``` as querent
   - ```/dialogue_no_intents.py```: the dialogue function used to test the generation without intents
   - ```/dialogue_to_triples.py```: the dialogue function used to test the generation with direct transformation of the output into RDF triples
