@@ -1,0 +1,24 @@
+# CQ12. National ADI ranks for primary care versus specialty S practice locations.
+# Use one primary_care row per specialty literal in your primary-care definition.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?group ?zipCode ?score WHERE {
+  VALUES (?group ?specialty) {
+    ("primary_care" "REPLACE_WITH_PRIMARY_CARE_SPECIALTY")
+    ("specialty_s" "REPLACE_WITH_SPECIALTY_S")
+  }
+  ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility) ?facility .
+  ?physician schema:medicalSpecialty ?specialty .
+  ?facility schema:address/schema:postalCode ?postalCode .
+  ?zipArea heq:zipCodeValue ?zipCode ;
+           (heq:hasADISummary|heq:hasADIScore) ?adi .
+  FILTER(STR(?postalCode) = STR(?zipCode))
+  ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+  FILTER(STR(?adiYear) = "2020")
+  ?adi heq:nationalScore ?rawScore .
+  BIND(xsd:integer(STR(?rawScore)) AS ?score)
+  FILTER(?score >= 1 && ?score <= 100)
+}

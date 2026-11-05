@@ -1,0 +1,65 @@
+D6 pragmatic quality evaluation
+
+Literal comparison matches IRI spellings. Unverified identifiers may refer to different
+individuals or use different names for the same individual. Blank nodes are graph-local.
+Aligned comparison applies only the supplied synthetic-to-reference mapping to returned IRIs.
+
+Settings
+  reference = {"path": "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/healtheqkg_full.ttl", "format": "turtle"}
+  synthetic = {"path": "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/output.ttl", "format": "turtle"}
+  questions = "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/manifest_generation.json"
+  comparison = "literal"
+  identity_map = null
+  ontology_alignment = null
+  lambda_ancestor = null
+  lambda_descendant = null
+  entailment = "none (query the supplied triples)"
+  query_engine = "RDFLib 7.6.0"
+  query_base = "query file URI"
+  literal_lexical_normalization = false
+
+Aggregate scores
+  literal
+    scored_questions = 0
+    reference_failures = 0
+    synthetic_failures = 0
+    potentially_unaligned_questions = 0
+    PQ1 = null
+    PQ2 = null
+    PQ3 = null
+    PQ4 = null
+    PQ5 = null
+    stratified_macro_f1 = {}
+  PQ6 = {"status": "not_applicable", "scored_questions": 0, "macro_f1": null}
+
+Questions
+
+Structural comparisons (independent samples)
+  CQ1 [compared]
+    reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
+    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 101, "coverage": 0.505, "mean_answer_count": 1.11, "median_answer_count": 1.0, "histogram": {"0": 99, "1": 90, "2": 6, "5": 2, "6": 1, "27": 1, "77": 1}}
+    Jensen–Shannon distance = 0.593432
+  CQ2 [compared]
+    reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
+    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 11, "coverage": 0.055, "mean_answer_count": 0.6, "median_answer_count": 0.0, "histogram": {"0": 189, "1": 1, "2": 4, "4": 1, "5": 1, "6": 1, "8": 1, "9": 1, "79": 1}}
+    Jensen–Shannon distance = 0.988572
+  CQ3 [compared]
+    reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
+    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 9, "coverage": 0.045, "mean_answer_count": 9.22, "median_answer_count": 0.0, "histogram": {"0": 191, "1": 1, "2": 2, "3": 1, "8": 1, "16": 1, "28": 1, "150": 1, "1634": 1}}
+    Jensen–Shannon distance = 0.988572
+  CQ5 [compared]
+    reference = {"population": 72658, "sample_size": 200, "seed": 42, "histogram": {"false": 200, "true": 0}, "true_rate": 0.0}
+    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "histogram": {"false": 183, "true": 17}, "true_rate": 0.085}
+    Jensen–Shannon distance = 0.209431
+  CQ6 [compared]
+    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 101, "coverage": 1.0, "mean_answer_count": 2.6633663366336635, "median_answer_count": 1, "histogram": {"1": 59, "2": 15, "3": 9, "4": 7, "5": 4, "7": 3, "10": 1, "22": 1, "25": 1, "27": 1}}
+    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 101, "coverage": 1.0, "mean_answer_count": 63.62376237623762, "median_answer_count": 79, "histogram": {"2": 3, "4": 1, "6": 1, "8": 3, "9": 12, "15": 1, "17": 2, "23": 1, "79": 64, "85": 2, "88": 8, "91": 1, "92": 1, "93": 1}}
+    Jensen–Shannon distance = 0.959453
+  CQ9-categorical-adi [compared]
+    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 8, "coverage": 0.07920792079207921, "mean_answer_count": 0.07920792079207921, "median_answer_count": 0, "histogram": {"0": 93, "1": 8}}
+    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 0, "coverage": 0.0, "mean_answer_count": 0, "median_answer_count": 0, "histogram": {"0": 101}}
+    Jensen–Shannon distance = 0.201946
+  CQ11-categorical-adi [compared]
+    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 7, "coverage": 0.06930693069306931, "mean_answer_count": 0.07920792079207921, "median_answer_count": 0, "histogram": {"0": 94, "1": 6, "2": 1}}
+    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 0, "coverage": 0.0, "mean_answer_count": 0, "median_answer_count": 0, "histogram": {"0": 101}}
+    Jensen–Shannon distance = 0.188550

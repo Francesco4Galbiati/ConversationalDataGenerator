@@ -1,0 +1,16 @@
+# CQ8. State ADI rank or decile for Facility F's ZIP area in 2020.
+# Set the state ADI predicate used by both graphs before running this CQ.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?zipCode ?stateRank WHERE {
+  VALUES ?facility { <urn:healtheqkg:replace:facility-f> }
+  ?facility schema:address/schema:postalCode ?postalCode .
+  ?zipArea heq:zipCodeValue ?zipCode ;
+           (heq:hasADISummary|heq:hasADIScore) ?adi .
+  FILTER(STR(?postalCode) = STR(?zipCode))
+  ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+  FILTER(STR(?adiYear) = "2020")
+  VALUES ?statePredicate { <urn:healtheqkg:replace:state-adi-predicate> }
+  ?adi ?statePredicate ?stateRank .
+}

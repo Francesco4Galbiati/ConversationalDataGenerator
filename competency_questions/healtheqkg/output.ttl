@@ -1,0 +1,5441 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:job_placement_ABC001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GD001 .
+
+ex:job_placement_ABC002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QRB001 .
+
+ex:job_placement_ABC999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QRT999 .
+
+ex:job_placement_EFG123 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_FCJ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_FD001 .
+
+ex:job_placement_FK001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_FG001 .
+
+ex:job_placement_JKL001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HJK001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102,
+        ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG005,
+        ex:physician_XZQ020 .
+
+ex:job_placement_JKL005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_LMX001 .
+
+ex:job_placement_JKL006 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DF001 .
+
+ex:job_placement_JKL010 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_JKL011 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_XY001 .
+
+ex:job_placement_JKL020 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABR002 .
+
+ex:job_placement_JKL789 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GH123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL800 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_MNK002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL850 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_JKL888 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABR004 .
+
+ex:job_placement_JKL900 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG003 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL901 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL998 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG005 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JKL999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK009,
+        ex:facility_CDX002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABK001 .
+
+ex:job_placement_JP002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK003,
+        ex:facility_FC001 ;
+    ex:hasTimeReference 2026,
+        "2026" ;
+    ex:placementFor ex:physician_ABK001,
+        ex:physician_ZZZ001 .
+
+ex:job_placement_JP003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DR002 .
+
+ex:job_placement_JP010 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XYZ001 .
+
+ex:job_placement_JP017 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XZQ017 .
+
+ex:job_placement_JP100 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_YZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP1000 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HS002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP1001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB500 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP1002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB700 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ125 .
+
+ex:job_placement_JP1004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABX001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KLM003 .
+
+ex:job_placement_JP1006 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABX002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1007 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102,
+        ex:facility_ABK006 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004,
+        ex:physician_HIJ007 .
+
+ex:job_placement_JP1008 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ZZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP101 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DF001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP1010 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABX001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1011 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK005 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP102 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK004 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABK001 .
+
+ex:job_placement_JP103 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABY001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP104 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ005 .
+
+ex:job_placement_JP1100 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AD123 .
+
+ex:job_placement_JP1101 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_MNK001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1102 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EF001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP123 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_BC001,
+        ex:facility_FC001,
+        ex:facility_PV001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001,
+        ex:physician_HIJ004 .
+
+ex:job_placement_JP1230 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_YZ123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1234 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB900 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1235 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_XYZ123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1236 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_EFH002 .
+
+ex:job_placement_JP1237 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG001 .
+
+ex:job_placement_JP1238 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CR001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1239 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AB103 .
+
+ex:job_placement_JP124 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CF001,
+        ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1240 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1241 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABX001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1245 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AD456 .
+
+ex:job_placement_JP1246 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AA001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP1247 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ130 .
+
+ex:job_placement_JP125 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AF001 .
+
+ex:job_placement_JP126 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP127 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP197 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABK001 .
+
+ex:job_placement_JP200 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB400,
+        ex:facility_AZ001,
+        ex:facility_EFG001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001,
+        ex:physician_HIJ004 .
+
+ex:job_placement_JP2000 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DR001 .
+
+ex:job_placement_JP2001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_JP2002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_JP2003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB111 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP2004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP2005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EF001 .
+
+ex:job_placement_JP2006 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GHK001 .
+
+ex:job_placement_JP2007 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFJ001 .
+
+ex:job_placement_JP2008 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DEF001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP2009 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_JP202 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HS101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DR123 .
+
+ex:job_placement_JP203 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HS101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_MD001 .
+
+ex:job_placement_JP204 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DR123 .
+
+ex:job_placement_JP205 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EF456 .
+
+ex:job_placement_JP206 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HS101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP207 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_LMN789 .
+
+ex:job_placement_JP208 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP209 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_JKL123 .
+
+ex:job_placement_JP210 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LX204 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP2100 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_ZY001 .
+
+ex:job_placement_JP2101 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_JKL001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP2102 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_IJ001 .
+
+ex:job_placement_JP211 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_OP001 .
+
+ex:job_placement_JP212 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_QT307 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP213 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP214 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LX204 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP215 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_CD001 .
+
+ex:job_placement_JP216 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_NV001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP217 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HS101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABX123 .
+
+ex:job_placement_JP218 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XY123 .
+
+ex:job_placement_JP219 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG123 .
+
+ex:job_placement_JP220 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_WX101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP221 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG001 .
+
+ex:job_placement_JP222 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_KY502 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ123 .
+
+ex:job_placement_JP223 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_JKL999 .
+
+ex:job_placement_JP224 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_KY502 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP225 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_QT307 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP226 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_OPQ001 .
+
+ex:job_placement_JP227 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_KY502 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP228 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_MN001 .
+
+ex:job_placement_JP229 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_KY502 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP230 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_RT001 .
+
+ex:job_placement_JP231 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_TR345 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP232 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_NV001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ001 .
+
+ex:job_placement_JP233 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GR108 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP234 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_CD234 .
+
+ex:job_placement_JP235 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_BF310 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP236 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LX204,
+        ex:facility_MN001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001,
+        ex:physician_ABZ123 .
+
+ex:job_placement_JP237 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GR108 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ124 .
+
+ex:job_placement_JP250 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AD001 .
+
+ex:job_placement_JP300 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GR108 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XZ101 .
+
+ex:job_placement_JP3000 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LMN001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP3001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_JK001 .
+
+ex:job_placement_JP3002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QR001 .
+
+ex:job_placement_JP301 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_XZ101 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP302 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DRX001 .
+
+ex:job_placement_JP303 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB103 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ123 .
+
+ex:job_placement_JP331 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GR108 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABU001 .
+
+ex:job_placement_JP350 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GR108 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AB123 .
+
+ex:job_placement_JP3500 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB300 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP351 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_BC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP352 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG004 .
+
+ex:job_placement_JP353 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_AE001 .
+
+ex:job_placement_JP400 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200,
+        ex:facility_FC001 ;
+    ex:hasTimeReference 2025,
+        2026 ;
+    ex:placementFor ex:physician_AA001,
+        ex:physician_EFG007 .
+
+ex:job_placement_JP401 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QRX001 .
+
+ex:job_placement_JP450 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_QD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP500 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CF001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP501 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP567 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_XZ123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP600 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_JKL123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ123 .
+
+ex:job_placement_JP777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GH001 ;
+    ex:hasTimeReference 2027 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP7770 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AC123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP7777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LMN456 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP7778 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP800 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABC123 .
+
+ex:job_placement_JP888 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LM456 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABZ125 .
+
+ex:job_placement_JP889 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB500 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JP950 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EF123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP951 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AC123 .
+
+ex:job_placement_JP952 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KJ001 .
+
+ex:job_placement_JP987 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_AA999 .
+
+ex:job_placement_JP988 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DRY001 .
+
+ex:job_placement_JP989 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_RST001 .
+
+ex:job_placement_JP990 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG123 .
+
+ex:job_placement_JP991 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ006 .
+
+ex:job_placement_JP992 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AC007 .
+
+ex:job_placement_JP993 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AC102 .
+
+ex:job_placement_JP994 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KLM002 .
+
+ex:job_placement_JP995 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_AC001 .
+
+ex:job_placement_JP996 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_CD123 .
+
+ex:job_placement_JP997 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_JK001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA001 .
+
+ex:job_placement_JP998 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EF200 .
+
+ex:job_placement_JP999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AA002 .
+
+ex:job_placement_JP9990 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABR003 .
+
+ex:job_placement_JP9998 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KLM009 .
+
+ex:job_placement_JP9999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LMN999 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPB001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_RVF001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFI001 .
+
+ex:job_placement_JPX002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CDX001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK007 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB300 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX010 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_LMN004 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX100 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX123 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_DR401 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX124 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_MR002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX200 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABC002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX222 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG004 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX555 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EV001 .
+
+ex:job_placement_JPX600 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GH200 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX601 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK008 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX701 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB800 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX778 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DRY002 .
+
+ex:job_placement_JPX888 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2028 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX998 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AA002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPX999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPY001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB200,
+        ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_DRY003,
+        ex:physician_HIJ004 .
+
+ex:job_placement_JPY002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_JKL010 .
+
+ex:job_placement_JPY456 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_YZ456 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABX001,
+        ex:physician_DRM001,
+        ex:physician_DRZ001 .
+
+ex:job_placement_JPZ002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ZD001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_PC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG007 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ006 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_WXZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ010 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FA001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JPZ011 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABK010 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JQ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFH001 .
+
+ex:job_placement_JQ002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_AG001 .
+
+ex:job_placement_JQ003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_YYZ001 .
+
+ex:job_placement_JQ004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_GHJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JQ005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AE001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JQ006 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_PQR001 .
+
+ex:job_placement_JQ007 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_XZB001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JQ008 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_KLN006 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JQ777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_AGF001 .
+
+ex:job_placement_JQ999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB300 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JRX001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JX001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_MR001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_JX002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_JK002 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_KLM001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QZ001 .
+
+ex:job_placement_KLM900 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GHL001 .
+
+ex:job_placement_KLN001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GHJ123 .
+
+ex:job_placement_KLN002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GF001 .
+
+ex:job_placement_KLN003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_MNZ001 .
+
+ex:job_placement_KLN004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_WX001 .
+
+ex:job_placement_KLN005 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_YZ001 .
+
+ex:job_placement_KM001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_KP001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_GH001 .
+
+ex:job_placement_LMN001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_EFG001 .
+
+ex:job_placement_LMN002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_LMN003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XYZ002 .
+
+ex:job_placement_LMN004 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KLM008 .
+
+ex:job_placement_LMN555 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_EFG123 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_LMN999 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference "2026" ;
+    ex:placementFor ex:physician_EFG001 .
+
+ex:job_placement_LMQ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_MNQ001 .
+
+ex:job_placement_LMX001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_ABZ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_LMX002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ABW001 .
+
+ex:job_placement_LMX003 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ZD001 .
+
+ex:job_placement_LMY001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_AB102 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_CDX123 .
+
+ex:job_placement_NO001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_KL001 .
+
+ex:job_placement_OPQ002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_VV001 .
+
+ex:job_placement_OPQ123 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_OPQ777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_HIJ001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_QWZ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_XYA001 .
+
+ex:job_placement_RS001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_QW001 .
+
+ex:job_placement_RST123 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_CM303 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:job_placement_TY002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_TY001 .
+
+ex:job_placement_WXZ002 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_WXZ001 .
+
+ex:job_placement_XYQ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ZZQ001 .
+
+ex:job_placement_XYZ777 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_LMN777 .
+
+ex:job_placement_ZEJ001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_FC001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_ZE001 .
+
+ex:job_placement_ZXA001 a ex:JobPlacement ;
+    ex:hasFacility ex:facility_MNX001 ;
+    ex:hasTimeReference 2026 ;
+    ex:placementFor ex:physician_HIJ004 .
+
+ex:physician_AAA001 a ex:Physician ;
+    ex:familyName "Caldwell",
+        "Kerr" ;
+    ex:gender "female",
+        "male" ;
+    ex:givenName "Silas",
+        "Zara" ;
+    ex:usNPI "1123457010",
+        "1123457123" .
+
+ex:physician_AB001 a ex:Physician ;
+    ex:familyName "Anderson" ;
+    ex:gender "male" ;
+    ex:givenName "James" ;
+    ex:medicalSpecialty "Psychiatry" ;
+    ex:usNPI "9876543210" .
+
+ex:physician_AB002 a ex:Physician ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457114" .
+
+ex:physician_ABC001 a ex:Physician ;
+    ex:familyName "Hawking" ;
+    ex:gender "female" ;
+    ex:givenName "Clara" ;
+    ex:usNPI "3333333334" .
+
+ex:physician_ABC999 a ex:Physician ;
+    ex:familyName "Hart" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457117" .
+
+ex:physician_ABR001 a ex:Physician ;
+    ex:familyName "Gray" ;
+    ex:gender "female" ;
+    ex:givenName "Maya" ;
+    ex:usNPI "1020304050" .
+
+ex:physician_ABR005 a ex:Physician ;
+    ex:familyName "Kensington" ;
+    ex:gender "male" ;
+    ex:givenName "Quincy" ;
+    ex:usNPI "5555555553" .
+
+ex:physician_ABY001 a ex:Physician ;
+    ex:familyName "Parker" ;
+    ex:gender "female" ;
+    ex:givenName "Diana" ;
+    ex:usNPI "1122334500" .
+
+ex:physician_ABZ126 a ex:Physician ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1111111122" .
+
+ex:physician_AD999 a ex:Physician ;
+    ex:familyName "Fairchild" ;
+    ex:gender "female" ;
+    ex:givenName "Juniper" ;
+    ex:usNPI "1123458017" .
+
+ex:physician_AEF001 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458001" .
+
+ex:physician_AEZ123 a ex:Physician ;
+    ex:familyName "Rivers" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456892" .
+
+ex:physician_AH001 a ex:Physician ;
+    ex:familyName "Parker" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458012" .
+
+ex:physician_AI001 a ex:Physician ;
+    ex:familyName "Bramwell" ;
+    ex:gender "female" ;
+    ex:givenName "Gwen" ;
+    ex:usNPI "1123458100" .
+
+ex:physician_AZ001 a ex:Physician ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "female" ;
+    ex:givenName "Quinn" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_AZZ001 a ex:Physician ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_BC001 a ex:Physician ;
+    ex:familyName "Kensington" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_BF123 a ex:Physician ;
+    ex:familyName "Parker" ;
+    ex:gender "female" ;
+    ex:givenName "Lydia" ;
+    ex:usNPI "1123456810" .
+
+ex:physician_CF001 a ex:Physician ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123457132" .
+
+ex:physician_DF123 a ex:Physician ;
+    ex:familyName "O'Neil" ;
+    ex:gender "female" ;
+    ex:givenName "Natalia" ;
+    ex:usNPI "1111111119" .
+
+ex:physician_DG001 a ex:Physician ;
+    ex:familyName "Avery" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123457116" .
+
+ex:physician_EFG002 a ex:Physician ;
+    ex:familyName "Brockwell",
+        "Turner" ;
+    ex:gender "female",
+        "male" ;
+    ex:givenName "Liam",
+        "Zara" ;
+    ex:usNPI "1122334488",
+        "1123457106" .
+
+ex:physician_EFG003 a ex:Physician ;
+    ex:familyName "Crosby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "5555555559" .
+
+ex:physician_EFH456 a ex:Physician ;
+    ex:familyName "Whitmore" ;
+    ex:gender "female" ;
+    ex:givenName "Harper" ;
+    ex:usNPI "1123456796" .
+
+ex:physician_EFK001 a ex:Physician ;
+    ex:familyName "Whitney" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457101" .
+
+ex:physician_GHI001 a ex:Physician ;
+    ex:familyName "Winters" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458005" .
+
+ex:physician_HIJ001 a ex:Physician ;
+    ex:familyName "McKinney" ;
+    ex:gender "male" ;
+    ex:givenName "Caleb" ;
+    ex:usNPI "1123456894" .
+
+ex:physician_HIJ002 a ex:Physician ;
+    ex:familyName "Brock" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "3210987654" .
+
+ex:physician_HIJ003 a ex:Physician ;
+    ex:familyName "Winter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "5555555558" .
+
+ex:physician_HIJ123 a ex:Physician ;
+    ex:familyName "Winters" ;
+    ex:gender "male" ;
+    ex:givenName "Quentin" ;
+    ex:usNPI "1123456825" .
+
+ex:physician_HIJ124 a ex:Physician ;
+    ex:familyName "Vernon" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123456900" .
+
+ex:physician_HIJ456 a ex:Physician ;
+    ex:familyName "Kline" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:graduateFrom ex:medical_school_AB123,
+        ex:medical_school_XY123 ;
+    ex:graduationYear 2026,
+        2028 ;
+    ex:medicalSpecialty "Rheumatology" ;
+    ex:usNPI "1123456789" .
+
+ex:physician_HIJ789 a ex:Physician ;
+    ex:familyName "McAllister" ;
+    ex:gender "male" ;
+    ex:givenName "Trent" ;
+    ex:usNPI "1123456899" .
+
+ex:physician_HIJ999 a ex:Physician ;
+    ex:familyName "Langford" ;
+    ex:gender "male" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123457007" .
+
+ex:physician_JKL001 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "female" ;
+    ex:givenName "Quinn" ;
+    ex:usNPI "8001234567" .
+
+ex:physician_JKL002 a ex:Physician ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123457001" .
+
+ex:physician_JKL004 a ex:Physician ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457003" .
+
+ex:physician_JKL005 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457131" .
+
+ex:physician_JKL777 a ex:Physician ;
+    ex:familyName "Everett" ;
+    ex:gender "female" ;
+    ex:givenName "Mila" ;
+    ex:usNPI "1123457111" .
+
+ex:physician_KLM001 a ex:Physician ;
+    ex:familyName "Whitaker" ;
+    ex:gender "female" ;
+    ex:givenName "Natalie" ;
+    ex:usNPI "1123456790" .
+
+ex:physician_KLM004 a ex:Physician ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123457026" .
+
+ex:physician_KLM005 a ex:Physician ;
+    ex:familyName "Brockman" ;
+    ex:gender "female" ;
+    ex:givenName "Orion" ;
+    ex:usNPI "1111111110" .
+
+ex:physician_KLM006 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457105" .
+
+ex:physician_KLM007 a ex:Physician ;
+    ex:familyName "Smythe" ;
+    ex:gender "female" ;
+    ex:givenName "Ruth" ;
+    ex:usNPI "1123458009" .
+
+ex:physician_LM001 a ex:Physician ;
+    ex:familyName "Bennett" ;
+    ex:gender "male" ;
+    ex:givenName "Felix" ;
+    ex:usNPI "1122334599" .
+
+ex:physician_LMN001 a ex:Physician ;
+    ex:familyName "Whitfield" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456890" .
+
+ex:physician_LMN002 a ex:Physician ;
+    ex:familyName "Whitmore" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123456965" .
+
+ex:physician_LMN013 a ex:Physician ;
+    ex:familyName "Ashford" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457004" .
+
+ex:physician_LMN999 a ex:Physician ;
+    ex:familyName "Hale" ;
+    ex:gender "female" ;
+    ex:givenName "Quincy" ;
+    ex:usNPI "1123457025" .
+
+ex:physician_LMR001 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457133" .
+
+ex:physician_MNO001 a ex:Physician ;
+    ex:familyName "Quincy" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123457111" .
+
+ex:physician_MNX001 a ex:Physician ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Felicia" ;
+    ex:usNPI "1123456909" .
+
+ex:physician_NV001 a ex:Physician ;
+    ex:familyName "Langley" ;
+    ex:gender "male" ;
+    ex:givenName "Sebastian" ;
+    ex:usNPI "1122334511" .
+
+ex:physician_NVL123 a ex:Physician ;
+    ex:familyName "Merrick" ;
+    ex:gender "male" ;
+    ex:givenName "Tobias" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_NVX001 a ex:Physician ;
+    ex:familyName "Thompson" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123458004" .
+
+ex:physician_NVY001 a ex:Physician ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123458009" .
+
+ex:physician_PQR123 a ex:Physician ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123457180" .
+
+ex:physician_PRM001 a ex:Physician ;
+    ex:familyName "Quincy" ;
+    ex:gender "male" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123456793" .
+
+ex:physician_QD001 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "male" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123457005" .
+
+ex:physician_QKJ001 a ex:Physician ;
+    ex:familyName "Lovelace" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458015" .
+
+ex:physician_QRT001 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457135" .
+
+ex:physician_QRT123 a ex:Physician ;
+    ex:familyName "Gould" ;
+    ex:gender "female" ;
+    ex:givenName "Mira" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_QRZ001 a ex:Physician ;
+    ex:familyName "Vance" ;
+    ex:gender "male" ;
+    ex:givenName "Ulysses" ;
+    ex:usNPI "1123456792" .
+
+ex:physician_QW123 a ex:Physician ;
+    ex:familyName "Walker" ;
+    ex:gender "female" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "6667778889" .
+
+ex:physician_QWZ001 a ex:Physician ;
+    ex:familyName "Ashford" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "9999999999" .
+
+ex:physician_QX001 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457100" .
+
+ex:physician_QXK123 a ex:Physician ;
+    ex:familyName "Kensington" ;
+    ex:gender "female" ;
+    ex:givenName "Evelyn" ;
+    ex:usNPI "1123457136" .
+
+ex:physician_RZ001 a ex:Physician ;
+    ex:familyName "Quillen" ;
+    ex:gender "male" ;
+    ex:givenName "Caspian" ;
+    ex:usNPI "1123458003" .
+
+ex:physician_STU456 a ex:Physician ;
+    ex:familyName "Nelson" ;
+    ex:gender "female" ;
+    ex:givenName "Isabella" ;
+    ex:usNPI "1122334455" .
+
+ex:physician_TR001 a ex:Physician ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123458019" .
+
+ex:physician_XYA002 a ex:Physician ;
+    ex:familyName "Brockman" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "5555555552" .
+
+ex:physician_XYA123 a ex:Physician ;
+    ex:familyName "Monroe" ;
+    ex:gender "female" ;
+    ex:givenName "Daphne" ;
+    ex:usNPI "1123456899" .
+
+ex:physician_XYA999 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458006" .
+
+ex:physician_XYB123 a ex:Physician ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457141" .
+
+ex:physician_XYW123 a ex:Physician ;
+    ex:familyName "Lovell" ;
+    ex:gender "male" ;
+    ex:givenName "Wesley" ;
+    ex:usNPI "3333333333" .
+
+ex:physician_XYZ123 a ex:Physician ;
+    ex:familyName "Ashcroft" ;
+    ex:gender "female" ;
+    ex:givenName "Nadia" ;
+    ex:usNPI "1123457122" .
+
+ex:physician_XYZ999 a ex:Physician ;
+    ex:familyName "Kensington" ;
+    ex:gender "male" ;
+    ex:givenName "Julian" ;
+    ex:usNPI "1123456794" .
+
+ex:physician_XZ123 a ex:Physician ;
+    ex:familyName "Peterson" ;
+    ex:gender "male" ;
+    ex:givenName "Nathan" ;
+    ex:usNPI "1231231234" .
+
+ex:physician_XZQ001 a ex:Physician ;
+    ex:familyName "Hartman" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123456829" .
+
+ex:physician_XZQ002 a ex:Physician ;
+    ex:familyName "Hart" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456898" .
+
+ex:physician_XZQ003 a ex:Physician ;
+    ex:familyName "Harper" ;
+    ex:gender "female" ;
+    ex:givenName "Mila" ;
+    ex:usNPI "1123456902" .
+
+ex:physician_XZQ004 a ex:Physician ;
+    ex:familyName "Blythe" ;
+    ex:gender "male" ;
+    ex:givenName "Elliot" ;
+    ex:usNPI "1123456907" .
+
+ex:physician_XZQ005 a ex:Physician ;
+    ex:familyName "Winslow" ;
+    ex:gender "male" ;
+    ex:givenName "Dorian" ;
+    ex:usNPI "1123456920" .
+
+ex:physician_XZQ006 a ex:Physician ;
+    ex:familyName "Harris" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456940" .
+
+ex:physician_XZQ007 a ex:Physician ;
+    ex:familyName "Whitmore" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_XZQ008 a ex:Physician ;
+    ex:familyName "Abernathy" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "5555555550" .
+
+ex:physician_XZQ009 a ex:Physician ;
+    ex:familyName "Kensington" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457000" .
+
+ex:physician_XZQ010 a ex:Physician ;
+    ex:familyName "Fitzgerald" ;
+    ex:gender "male" ;
+    ex:givenName "Xavier" ;
+    ex:usNPI "1123457002" .
+
+ex:physician_XZQ011 a ex:Physician ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457012" .
+
+ex:physician_XZQ012 a ex:Physician ;
+    ex:familyName "Graham" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:graduateFrom ex:medical_school_ABX001,
+        ex:medical_school_QRT123 ;
+    ex:graduationYear 2022,
+        2025 ;
+    ex:usNPI "1123457022" .
+
+ex:physician_XZQ013 a ex:Physician ;
+    ex:familyName "Langford" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457015" .
+
+ex:physician_XZQ014 a ex:Physician ;
+    ex:familyName "Klein" ;
+    ex:gender "male" ;
+    ex:givenName "Ezekiel" ;
+    ex:usNPI "9876543214" .
+
+ex:physician_XZQ015 a ex:Physician ;
+    ex:familyName "Dawson" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "5555555551" .
+
+ex:physician_XZQ016 a ex:Physician ;
+    ex:familyName "Duncan" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457029" .
+
+ex:physician_XZQ123 a ex:Physician ;
+    ex:familyName "Fletcher" ;
+    ex:gender "female" ;
+    ex:givenName "Hannah" ;
+    ex:usNPI "2222222222" .
+
+ex:physician_XZQ999 a ex:Physician ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Brielle" ;
+    ex:usNPI "9999999990" .
+
+ex:physician_XZV001 a ex:Physician ;
+    ex:familyName "Baldwin" ;
+    ex:gender "male" ;
+    ex:givenName "Jasper" ;
+    ex:usNPI "1123456904" .
+
+ex:physician_YZ123 a ex:Physician ;
+    ex:familyName "Coleman" ;
+    ex:gender "male" ;
+    ex:givenName "Patrick" ;
+    ex:usNPI "1111111111" .
+
+ex:physician_ZQ001 a ex:Physician ;
+    ex:familyName "Pereira" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458018" .
+
+ex:physician_ZQ123 a ex:Physician ;
+    ex:familyName "Zhang" ;
+    ex:gender "male" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_ZX001 a ex:Physician ;
+    ex:familyName "Langford" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "8765432109" .
+
+ex:physician_ZXA001 a ex:Physician ;
+    ex:familyName "Pemberton" ;
+    ex:gender "female" ;
+    ex:givenName "Quincy" ;
+    ex:usNPI "1010101011" .
+
+ex:physician_ZXB123 a ex:Physician ;
+    ex:familyName "Baxter" ;
+    ex:gender "male" ;
+    ex:givenName "Nolan" ;
+    ex:usNPI "1234567897" .
+
+ex:physician_ZXZ001 a ex:Physician ;
+    ex:familyName "Baxter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458007" .
+
+ex:physician_ZY123 a ex:Physician ;
+    ex:familyName "Hawkins" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1234567800" .
+
+ex:physician_ZYX001 a ex:Physician ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458013" .
+
+ex:physician_ZZ001 a ex:Physician ;
+    ex:familyName "Taylor" ;
+    ex:gender "male" ;
+    ex:givenName "Michael" ;
+    ex:usNPI "3334445556" .
+
+ex:physician_ZZB001 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458000" .
+
+ex:physician_ZZX001 a ex:Physician ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457030" .
+
+ex:physician_ZZY001 a ex:Physician ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_ZZY123 a ex:Physician ;
+    ex:familyName "Aldridge" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457140" .
+
+ex:physician_ZZZ002 a ex:Physician ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457111" .
+
+ex:physician_ZZZ003 a ex:Physician ;
+    ex:familyName "Lindholm" ;
+    ex:gender "male" ;
+    ex:givenName "Quentin" ;
+    ex:usNPI "1123458011" .
+
+ex:physician_ZZZ999 a ex:Physician ;
+    ex:familyName "Caldwell" ;
+    ex:gender "female" ;
+    ex:givenName "Eleanor" ;
+    ex:usNPI "3334445557" .
+
+ex:zip_code_area_AA001 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AA001,
+        ex:adi_score_AA002,
+        ex:adi_score_AA003,
+        ex:adi_score_AB001,
+        ex:adi_score_AC001,
+        ex:adi_score_AD003,
+        ex:adi_score_AD036,
+        ex:adi_score_AD040,
+        ex:adi_score_AD041,
+        ex:adi_score_AD043,
+        ex:adi_score_AD045,
+        ex:adi_score_AD046,
+        ex:adi_score_AD053,
+        ex:adi_score_AD055,
+        ex:adi_score_AD056,
+        ex:adi_score_AD057,
+        ex:adi_score_AD059,
+        ex:adi_score_AD060,
+        ex:adi_score_AD061,
+        ex:adi_score_AD062,
+        ex:adi_score_AD063,
+        ex:adi_score_AD099,
+        ex:adi_score_AD100,
+        ex:adi_score_AD101,
+        ex:adi_score_AD200,
+        ex:adi_score_AD999,
+        ex:adi_score_AE001,
+        ex:adi_score_AE002,
+        ex:adi_score_AE003,
+        ex:adi_score_AF001,
+        ex:adi_score_AF002,
+        ex:adi_score_AF003,
+        ex:adi_score_AG001,
+        ex:adi_score_AG002,
+        ex:adi_score_AH001,
+        ex:adi_score_AI001,
+        ex:adi_score_AJ001,
+        ex:adi_score_AK001,
+        ex:adi_score_AL001,
+        ex:adi_score_AM001,
+        ex:adi_score_AR001,
+        ex:adi_score_AZ001,
+        ex:adi_score_AZ002,
+        ex:adi_score_AZ003,
+        ex:adi_score_AZ004,
+        ex:adi_score_AZ005,
+        ex:adi_score_AZ006,
+        ex:adi_score_BA001,
+        ex:adi_score_BD001,
+        ex:adi_score_BJ001,
+        ex:adi_score_BK001,
+        ex:adi_score_CH001,
+        ex:adi_score_CK001,
+        ex:adi_score_EA001 ;
+    ex:zipCodeValue "10107",
+        "10109",
+        "11012",
+        "11235",
+        "11250",
+        "12345",
+        "12347",
+        "20202",
+        "ZD001" .
+
+ex:zip_code_area_AA002 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54326" .
+
+ex:zip_code_area_AA003 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12345" .
+
+ex:zip_code_area_AA004 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11113" .
+
+ex:zip_code_area_AA005 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54331" .
+
+ex:zip_code_area_AA006 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54321" .
+
+ex:zip_code_area_AA007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54321" .
+
+ex:zip_code_area_AA008 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12349" .
+
+ex:zip_code_area_AA999 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11115" .
+
+ex:zip_code_area_AB001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11245" .
+
+ex:zip_code_area_AB002 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10110" .
+
+ex:zip_code_area_AB123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "99999" .
+
+ex:zip_code_area_AB124 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11236" .
+
+ex:zip_code_area_AB125 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11241" .
+
+ex:zip_code_area_AB126 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10102" .
+
+ex:zip_code_area_AB127 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54329" .
+
+ex:zip_code_area_AB128 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11114" .
+
+ex:zip_code_area_AB129 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10108" .
+
+ex:zip_code_area_AB130 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11117" .
+
+ex:zip_code_area_AB131 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11119" .
+
+ex:zip_code_area_AB200 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11251" .
+
+ex:zip_code_area_AB999 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12345",
+        "54333" .
+
+ex:zip_code_area_AC001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54327" .
+
+ex:zip_code_area_AC123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12340" .
+
+ex:zip_code_area_AC200 a ex:ZipCodeArea ;
+    ex:zipCodeValue "66666" .
+
+ex:zip_code_area_AD001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10103" .
+
+ex:zip_code_area_AE001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11240" .
+
+ex:zip_code_area_AF001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10104" .
+
+ex:zip_code_area_AG001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54334" .
+
+ex:zip_code_area_AZ001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54335" .
+
+ex:zip_code_area_BA001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "55560" .
+
+ex:zip_code_area_BD123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11242" .
+
+ex:zip_code_area_BF007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10106" .
+
+ex:zip_code_area_BG123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11249" .
+
+ex:zip_code_area_BK123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54336" .
+
+ex:zip_code_area_BM123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11211" .
+
+ex:zip_code_area_BZ123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11011" .
+
+ex:zip_code_area_CX001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54337" .
+
+ex:zip_code_area_EF001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54330" .
+
+ex:zip_code_area_EFG001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54332" .
+
+ex:zip_code_area_EFG123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "56789" .
+
+ex:zip_code_area_GH001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "67891" .
+
+ex:zip_code_area_GH123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "42425" .
+
+ex:zip_code_area_KY123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54340" .
+
+ex:zip_code_area_LM001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11253" .
+
+ex:zip_code_area_LM123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11238" .
+
+ex:zip_code_area_None a ex:ZipCodeArea ;
+    ex:zipCodeValue "12346" .
+
+ex:zip_code_area_QX123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "42424" .
+
+ex:zip_code_area_WP123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11237" .
+
+ex:zip_code_area_XY999 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54325" .
+
+ex:zip_code_area_XZ007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11239" .
+
+ex:zip_code_area_XZ101 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11243" .
+
+ex:zip_code_area_XZ123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "55667" .
+
+ex:zip_code_area_XZ200 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54338" .
+
+ex:zip_code_area_XZ999 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11252" .
+
+ex:zip_code_area_YY123 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54328" .
+
+ex:zip_code_area_ZA007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "21098" .
+
+ex:zip_code_area_ZB008 a ex:ZipCodeArea ;
+    ex:zipCodeValue "33445" .
+
+ex:zip_code_area_ZC001 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AD001,
+        ex:adi_score_AD013,
+        ex:adi_score_AD017,
+        ex:adi_score_AD020,
+        ex:adi_score_AD021,
+        ex:adi_score_AD022,
+        ex:adi_score_AD023,
+        ex:adi_score_AD024,
+        ex:adi_score_AD025,
+        ex:adi_score_AD026,
+        ex:adi_score_AS001,
+        ex:adi_score_AS007,
+        ex:adi_score_AS010 ;
+    ex:zipCodeValue "10101",
+        "11234",
+        "12345",
+        "30210",
+        "44444",
+        "54321",
+        "54322",
+        "77777" .
+
+ex:zip_code_area_ZC002 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AS002,
+        ex:adi_score_AS003,
+        ex:adi_score_AS004,
+        ex:adi_score_AS005,
+        ex:adi_score_AS009 ;
+    ex:zipCodeValue "12345",
+        "67890" .
+
+ex:zip_code_area_ZC003 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AD012,
+        ex:adi_score_AD014,
+        ex:adi_score_AD015,
+        ex:adi_score_AD016,
+        ex:adi_score_AD018,
+        ex:adi_score_AS011 ;
+    ex:zipCodeValue "11223" .
+
+ex:zip_code_area_ZC004 a ex:ZipCodeArea ;
+    ex:zipCodeValue "24680" .
+
+ex:zip_code_area_ZC005 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AD019,
+        ex:adi_score_AD033 ;
+    ex:zipCodeValue "98765" .
+
+ex:zip_code_area_ZC006 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10203" .
+
+ex:zip_code_area_ZD001 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AB999,
+        ex:adi_score_AD002,
+        ex:adi_score_AD011,
+        ex:adi_score_AD028,
+        ex:adi_score_AD032,
+        ex:adi_score_AD034,
+        ex:adi_score_AD035,
+        ex:adi_score_AD037,
+        ex:adi_score_AD038,
+        ex:adi_score_AD039,
+        ex:adi_score_AD042,
+        ex:adi_score_AD047,
+        ex:adi_score_AD048,
+        ex:adi_score_AD049,
+        ex:adi_score_AD050,
+        ex:adi_score_AD051,
+        ex:adi_score_AD054,
+        ex:adi_score_AD058,
+        ex:adi_score_AD102,
+        ex:adi_score_AE004,
+        ex:adi_score_AE005,
+        ex:adi_score_AE007,
+        ex:adi_score_AE010,
+        ex:adi_score_AE123,
+        ex:adi_score_AE200,
+        ex:adi_score_AE999,
+        ex:adi_score_AF004,
+        ex:adi_score_AF999,
+        ex:adi_score_AZ007,
+        ex:adi_score_BG001,
+        ex:adi_score_BX001,
+        ex:adi_score_CE001,
+        ex:adi_score_CF001,
+        ex:adi_score_DZ001,
+        ex:adi_score_EA002,
+        ex:adi_score_EF001,
+        ex:adi_score_XY001,
+        ex:adi_score_ZZ001 ;
+    ex:zipCodeValue "11118",
+        "12345",
+        "22222",
+        "54321",
+        "77778",
+        "80012",
+        "90210",
+        "98765" .
+
+ex:zip_code_area_ZD002 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12345" .
+
+ex:zip_code_area_ZD003 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54321" .
+
+ex:zip_code_area_ZD004 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AS006,
+        ex:adi_score_AS008 ;
+    ex:zipCodeValue "12345",
+        "13579" .
+
+ex:zip_code_area_ZD005 a ex:ZipCodeArea ;
+    ex:hasADIScore ex:adi_score_AD027,
+        ex:adi_score_AD029,
+        ex:adi_score_AD030,
+        ex:adi_score_AD031 ;
+    ex:zipCodeValue "55555",
+        "55557" .
+
+ex:zip_code_area_ZD007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12348" .
+
+ex:zip_code_area_ZE001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11111" .
+
+ex:zip_code_area_ZF007 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11112" .
+
+ex:zip_code_area_ZG001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "20001" .
+
+ex:zip_code_area_ZH002 a ex:ZipCodeArea ;
+    ex:zipCodeValue "55556" .
+
+ex:zip_code_area_ZI003 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54323" .
+
+ex:zip_code_area_ZJ004 a ex:ZipCodeArea ;
+    ex:zipCodeValue "33333" .
+
+ex:zip_code_area_ZK001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "55558" .
+
+ex:zip_code_area_ZL010 a ex:ZipCodeArea ;
+    ex:zipCodeValue "55559" .
+
+ex:zip_code_area_ZM009 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54324" .
+
+ex:zip_code_area_ZN011 a ex:ZipCodeArea ;
+    ex:zipCodeValue "65432" .
+
+ex:zip_code_area_ZO012 a ex:ZipCodeArea ;
+    ex:zipCodeValue "88999" .
+
+ex:zip_code_area_ZX001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11120" .
+
+ex:zip_code_area_ZY001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12345" .
+
+ex:zip_code_area_ZZ001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "11116" .
+
+ex:zip_code_area_ZZX001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54341" .
+
+ex:zip_code_area_ZZZ001 a ex:ZipCodeArea ;
+    ex:zipCodeValue "10105" .
+
+ex:zip_code_area_ZZZ002 a ex:ZipCodeArea ;
+    ex:zipCodeValue "54339" .
+
+ex:zip_code_area_ZZZ003 a ex:ZipCodeArea ;
+    ex:zipCodeValue "12350" .
+
+ex:adi_score_AA001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AA002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AA003 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AB001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AB999 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AC001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AD002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD003 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD011 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD012 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD013 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2022" .
+
+ex:adi_score_AD014 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD015 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD016 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD017 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AD018 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD019 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD020 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AD021 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD022 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD023 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AD024 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AD025 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD026 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD027 a ex:ADIScore .
+
+ex:adi_score_AD028 a ex:ADIScore ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD029 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD030 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD031 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD032 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2022" .
+
+ex:adi_score_AD033 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2025 .
+
+ex:adi_score_AD034 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD035 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD036 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD037 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD038 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD039 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD040 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD041 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AD042 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD043 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD045 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AD046 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AD047 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD048 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD049 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2022" .
+
+ex:adi_score_AD050 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD051 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD053 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD054 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD055 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AD056 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD057 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD058 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD059 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD060 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD061 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD062 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AD063 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD099 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD100 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_AD101 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AD102 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2021 .
+
+ex:adi_score_AD200 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AD999 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AE001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AE003 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE004 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE005 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AE007 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE010 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AE123 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE200 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AE999 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AF001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AF002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AF003 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AF004 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AF999 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AG001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AG002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AH001 a ex:ADIScore .
+
+ex:adi_score_AI001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AJ001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AK001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AL001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AM001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AR001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AS001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AS002 a ex:ADIScore ;
+    ex:nationalScore "high" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AS003 a ex:ADIScore ;
+    ex:nationalScore "low" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AS004 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AS005 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AS006 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2025 .
+
+ex:adi_score_AS007 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AS008 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AS009 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AS010 a ex:ADIScore .
+
+ex:adi_score_AS011 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AZ001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AZ002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_AZ003 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AZ004 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_AZ005 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_AZ006 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_AZ007 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_BA001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_BD001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_BG001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_BJ001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_BK001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_BX001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2024 .
+
+ex:adi_score_CE001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_CF001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_CH001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2024" .
+
+ex:adi_score_CK001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2022" .
+
+ex:adi_score_DZ001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2022 .
+
+ex:adi_score_EA001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_EA002 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:adi_score_EF001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_XY001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn "2023" .
+
+ex:adi_score_ZZ001 a ex:ADIScore ;
+    ex:nationalScore "mid" ;
+    ex:scoredIn 2023 .
+
+ex:medical_school_AB123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Nova Medical College focuses on innovative health informatics and precision therapeutics, featuring cutting‑edge simulation labs and interdisciplinary research collaborations." ;
+    ex:facultySize 430 ;
+    ex:name "Harborview Nova Medical College" .
+
+ex:medical_school_ABC001 a ex:MedicalSchool ;
+    ex:abstract "Crestview Horizon Medical Institute offers an innovative curriculum integrating precision genomics, AI-driven diagnostics, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 495 ;
+    ex:name "Crestview Horizon Medical Institute" .
+
+ex:medical_school_ABC002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC124 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC200 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 560 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC321 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 560 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC567 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABC777 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Advanced Medical College provides a progressive curriculum integrating AI-driven diagnostics, telehealth, and precision genomics, supported by state-of-the-art simulation labs and interdisciplinary research centers.",
+        "Zenith Horizon Medical College offers an innovative curriculum blending AI-driven diagnostics, precision genomics, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 425,
+        730 ;
+    ex:name "Summitridge Advanced Medical College",
+        "Zenith Horizon Medical College" .
+
+ex:medical_school_ABC999 a ex:MedicalSchool ;
+    ex:abstract "Harborview Galactic Medical College pioneers interstellar health research, integrating space medicine, advanced simulation labs, and interdisciplinary collaborations to address emerging health challenges.",
+        "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425,
+        460,
+        660 ;
+    ex:name "Harborview Galactic Medical College",
+        "Harborview Quantum Medical College" .
+
+ex:medical_school_ABR001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ABX001 a ex:MedicalSchool ;
+    ex:abstract "Summitridge International Medical College offers a cutting‑edge curriculum integrating digital health, precision genomics, and community‑focused clinical training, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 460 ;
+    ex:name "Summitridge International Medical College" .
+
+ex:medical_school_DEF000 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_DEF001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_DEF002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_DEF123 a ex:MedicalSchool ;
+    ex:abstract "Summitridge International Medical College offers a cutting‑edge curriculum integrating digital health, precision genomics, and community‑focused clinical training, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 350 ;
+    ex:name "Summitridge International Medical College" .
+
+ex:medical_school_DEF456 a ex:MedicalSchool ;
+    ex:abstract "Crestmont Medical University offers an innovative curriculum integrating AI-driven diagnostics, telehealth, and community health, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 505 ;
+    ex:name "Crestmont Medical University" .
+
+ex:medical_school_DEF777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_DEF888 a ex:MedicalSchool ;
+    ex:abstract "Summitview Medical College offers a forward-thinking curriculum blending digital health, AI diagnostics, and community-based clinical experiences, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 425 ;
+    ex:name "Summitview Medical College" .
+
+ex:medical_school_DEF999 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_GHI001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_GHI123 a ex:MedicalSchool ;
+    ex:abstract "Celestial Eclipse Medical College offers a cutting‑edge curriculum integrating quantum diagnostics, AI‑driven patient care, and community health initiatives, supported by state‑of‑the‑art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 820 ;
+    ex:name "Celestial Eclipse Medical College" .
+
+ex:medical_school_GHI456 a ex:MedicalSchool ;
+    ex:abstract "Celestial Horizon Medical College offers a cutting-edge curriculum integrating space medicine, AI-driven diagnostics, and community health initiatives, supported by advanced simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 445 ;
+    ex:name "Celestial Horizon Medical College" .
+
+ex:medical_school_GHI777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 560 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_GHI999 a ex:MedicalSchool ;
+    ex:abstract "Stellar Horizon Medical Institute offers a pioneering curriculum that blends quantum diagnostics, AI-driven patient care, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 845 ;
+    ex:name "Stellar Horizon Medical Institute" .
+
+ex:medical_school_HQC001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_HQC123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_HQM001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_HQM002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_HS001 a ex:MedicalSchool ;
+    ex:abstract "Harborview College of Medicine and Health Sciences emphasizes integrated clinical education with cutting‑edge research facilities, featuring modern simulation labs and interdisciplinary collaboration." ;
+    ex:facultySize 330 ;
+    ex:name "Harborview College of Medicine and Health Sciences" .
+
+ex:medical_school_HS002 a ex:MedicalSchool ;
+    ex:abstract "Harborview State Medical College is renowned for its innovative curriculum and cutting‑edge research facilities, focusing on interdisciplinary health sciences." ;
+    ex:facultySize 320 ;
+    ex:name "Harborview State Medical College" .
+
+ex:medical_school_HS004 a ex:MedicalSchool ;
+    ex:abstract "Harborview Regional Medical College emphasizes community health integration and advanced simulation-based training, featuring modern research labs and collaborative clinics." ;
+    ex:facultySize 360 ;
+    ex:name "Harborview Regional Medical College" .
+
+ex:medical_school_HS005 a ex:MedicalSchool ;
+    ex:abstract "Harborview Global Health Institute emphasizes worldwide health initiatives, integrating cutting‑edge research with community outreach and advanced simulation training facilities." ;
+    ex:facultySize 380 ;
+    ex:name "Harborview Global Health Institute" .
+
+ex:medical_school_HS006 a ex:MedicalSchool ;
+    ex:abstract "Harborview Frontier Medical College pioneers integrative health education with advanced simulation labs, interdisciplinary research hubs, and a focus on community-engaged learning." ;
+    ex:facultySize 390 ;
+    ex:name "Harborview Frontier Medical College" .
+
+ex:medical_school_HS007 a ex:MedicalSchool ;
+    ex:abstract "Harborview Oceanic Medical College emphasizes marine health research and innovative clinical training, featuring advanced simulation labs and interdisciplinary collaboration." ;
+    ex:facultySize 395 ;
+    ex:name "Harborview Oceanic Medical College" .
+
+ex:medical_school_HS008 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 405 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_HS009 a ex:MedicalSchool ;
+    ex:abstract "Harborview Zenith Medical College focuses on cutting‑edge biomedical engineering and personalized medicine, featuring advanced simulation labs, interdisciplinary research hubs, and strong industry partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Zenith Medical College" .
+
+ex:medical_school_HS010 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 380 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_HS011 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_JKL001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 540 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_JKL123 a ex:MedicalSchool ;
+    ex:abstract "Summitview Medical College offers a forward-thinking curriculum blending digital health, AI diagnostics, and community-based clinical experiences, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 425 ;
+    ex:name "Summitview Medical College" .
+
+ex:medical_school_JKL321 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_JKL456 a ex:MedicalSchool ;
+    ex:abstract "Harborview Polaris Medical College focuses on advanced genomics and telehealth integration, featuring state-of-the-art simulation labs and interdisciplinary research collaborations." ;
+    ex:facultySize 355 ;
+    ex:name "Harborview Polaris Medical College" .
+
+ex:medical_school_JKL555 a ex:MedicalSchool ;
+    ex:abstract "Starlight Medical College offers an innovative curriculum blending precision genomics, AI-driven diagnostics, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 300 ;
+    ex:name "Starlight Medical College" .
+
+ex:medical_school_JKL777 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Advanced Medical College provides a progressive curriculum integrating AI-driven diagnostics, telehealth, and precision genomics, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 315 ;
+    ex:name "Summitridge Advanced Medical College" .
+
+ex:medical_school_JKL789 a ex:MedicalSchool ;
+    ex:abstract "Lakeside Medical College offers a cutting‑edge curriculum integrating telehealth, precision genomics, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 435 ;
+    ex:name "Lakeside Medical College" .
+
+ex:medical_school_JKL999 a ex:MedicalSchool ;
+    ex:abstract "Sunrise Medical College offers an innovative curriculum that blends advanced telehealth, precision genomics, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 650 ;
+    ex:name "Sunrise Medical College" .
+
+ex:medical_school_KLM123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMN000 a ex:MedicalSchool ;
+    ex:abstract "Northgate Medical University offers an innovative curriculum integrating digital health, precision genomics, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 645 ;
+    ex:name "Northgate Medical University" .
+
+ex:medical_school_LMN001 a ex:MedicalSchool ;
+    ex:abstract "Pacific Ridge Medical College offers an innovative curriculum blending telemedicine, genomics, and community health, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 585 ;
+    ex:name "Pacific Ridge Medical College" .
+
+ex:medical_school_LMN002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMN123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMN321 a ex:MedicalSchool ;
+    ex:abstract "Harborview Nebula Medical College delivers an innovative curriculum integrating space medicine, quantum diagnostics, and community health, supported by cutting‑edge simulation labs and interdisciplinary research collaborations." ;
+    ex:facultySize 620 ;
+    ex:name "Harborview Nebula Medical College" .
+
+ex:medical_school_LMN456 a ex:MedicalSchool ;
+    ex:abstract "Crestview Medical Academy offers a cutting‑edge curriculum integrating biomedical engineering, genomics, and patient‑centered care, featuring modern simulation labs, interdisciplinary research hubs, and strong industry partnerships." ;
+    ex:facultySize 450 ;
+    ex:name "Crestview Medical Academy" .
+
+ex:medical_school_LMN555 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 470 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMN777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Celestial Medical College pioneers integrative health education with a focus on space medicine, advanced simulation labs, and interdisciplinary research collaborations, emphasizing community health and emerging technologies." ;
+    ex:facultySize 595 ;
+    ex:name "Harborview Celestial Medical College" .
+
+ex:medical_school_LMN789 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMN888 a ex:MedicalSchool ;
+    ex:abstract "Aurora Sky Medical College offers an innovative curriculum blending virtual reality surgical training, genomics, and community health outreach, supported by cutting‑edge simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 720 ;
+    ex:name "Aurora Sky Medical College" .
+
+ex:medical_school_LMN999 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_LMX001 a ex:MedicalSchool ;
+    ex:abstract "Crestview Aurora Medical Institute offers a pioneering curriculum that blends advanced genomics, AI-driven telemedicine, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 670 ;
+    ex:name "Crestview Aurora Medical Institute" .
+
+ex:medical_school_MNO123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_MNO456 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_MNO777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 540 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_MNO888 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 500 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_MNQ456 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_MS001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Medical University is a leading institution known for its research in cardiovascular and neurological sciences, offering a comprehensive curriculum and state-of-the-art facilities." ;
+    ex:facultySize 350 ;
+    ex:name "Harborview Medical University" .
+
+ex:medical_school_MS002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Advanced Medical Institute focuses on precision medicine and AI-driven clinical training, featuring state-of-the-art simulation centers and interdisciplinary research labs." ;
+    ex:facultySize 370 ;
+    ex:name "Harborview Advanced Medical Institute" .
+
+ex:medical_school_MS003 a ex:MedicalSchool ;
+    ex:abstract "Harborview Pacific Medical College emphasizes integrative health sciences and cutting‑edge clinical training, featuring advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Pacific Medical College" .
+
+ex:medical_school_MS004 a ex:MedicalSchool ;
+    ex:abstract "Harborview Apex Medical College delivers an innovative curriculum integrating AI-driven diagnostics, personalized medicine, and immersive simulation experiences, supported by cutting‑edge research labs and global health partnerships." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Apex Medical College" .
+
+ex:medical_school_MS005 a ex:MedicalSchool ;
+    ex:abstract "Summitview Medical College offers a forward-thinking curriculum blending digital health, AI diagnostics, and community-based clinical experiences, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 470 ;
+    ex:name "Summitview Medical College" .
+
+ex:medical_school_MSX001 a ex:MedicalSchool ;
+    ex:abstract "Pioneer Medical College offers an innovative curriculum that blends cutting‑edge biomedical research, digital health technologies, and community‑focused clinical training, supported by modern simulation labs and interdisciplinary collaboration spaces." ;
+    ex:facultySize 422 ;
+    ex:name "Pioneer Medical College" .
+
+ex:medical_school_MSX002 a ex:MedicalSchool ;
+    ex:abstract "Evergreen Medical Institute offers a forward‑looking curriculum that blends precision medicine, digital health technologies, and community‑centered clinical training, supported by state‑of‑the‑art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 480 ;
+    ex:name "Evergreen Medical Institute" .
+
+ex:medical_school_MSX003 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_MSX004 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_MSX005 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 430 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_NEW001 a ex:MedicalSchool ;
+    ex:abstract "Celestial Galaxy Medical College offers an avant-garde curriculum integrating interstellar health, AI-driven diagnostics, and community health initiatives, supported by cutting-edge simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 860 ;
+    ex:name "Celestial Galaxy Medical College" .
+
+ex:medical_school_NYC001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 515 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_NYC002 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_OPQ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_PQR456 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Medical College offers an innovative curriculum that blends advanced telehealth, precision genomics, and community health initiatives, supported by state-of-the-art simulation labs and collaborative research centers." ;
+    ex:facultySize 540 ;
+    ex:name "Summitridge Medical College" .
+
+ex:medical_school_QRS001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QRS777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QRS789 a ex:MedicalSchool ;
+    ex:abstract "Crestview Global Medical Institute offers a cutting-edge curriculum integrating nanomedicine, AI-driven diagnostics, and community health, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 560 ;
+    ex:name "Crestview Global Medical Institute" .
+
+ex:medical_school_QRS888 a ex:MedicalSchool ;
+    ex:abstract "Celestial Aurora Medical College offers an innovative curriculum that blends space medicine, AI-driven diagnostics, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 770 ;
+    ex:name "Celestial Aurora Medical College" .
+
+ex:medical_school_QRS999 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Medical College offers an innovative curriculum that blends advanced telehealth, precision genomics, and community health initiatives, supported by state-of-the-art simulation labs and collaborative research centers." ;
+    ex:facultySize 530 ;
+    ex:name "Summitridge Medical College" .
+
+ex:medical_school_QRT001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 440 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QRT123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QWE001 a ex:MedicalSchool ;
+    ex:abstract "Celestial Orion Medical College offers a pioneering curriculum integrating astrophysical medicine, AI-driven diagnostics, and community health outreach, supported by state-of-the-art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 280 ;
+    ex:name "Celestial Orion Medical College" .
+
+ex:medical_school_QWE123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QWE456 a ex:MedicalSchool ;
+    ex:abstract "Celestial Health University offers an interdisciplinary curriculum that merges advanced biomedical research, digital health technologies, and community health initiatives, supported by state-of-the-art simulation labs and collaborative research centers." ;
+    ex:facultySize 345 ;
+    ex:name "Celestial Health University" .
+
+ex:medical_school_QWE777 a ex:MedicalSchool ;
+    ex:abstract "Celestial Nebula Medical College offers an innovative curriculum integrating quantum diagnostics, space medicine, and community health initiatives, supported by state-of-the-art simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 800 ;
+    ex:name "Celestial Nebula Medical College" .
+
+ex:medical_school_QWE789 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 540 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QWE999 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 540 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QWZ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_QZ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_RST001 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Medical Institute offers an innovative curriculum integrating advanced telehealth, precision genomics, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 527 ;
+    ex:name "Summitridge Medical Institute" .
+
+ex:medical_school_RST123 a ex:MedicalSchool ;
+    ex:abstract "NovaStar Medical College offers a cutting-edge curriculum integrating AI-driven diagnostics, telehealth, and community health initiatives, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 700 ;
+    ex:name "NovaStar Medical College" .
+
+ex:medical_school_RST555 a ex:MedicalSchool ;
+    ex:abstract "Summitridge International Medical College offers a cutting‑edge curriculum integrating digital health, precision genomics, and community‑focused clinical training, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 495 ;
+    ex:name "Summitridge International Medical College" .
+
+ex:medical_school_RTY456 a ex:MedicalSchool ;
+    ex:abstract "Riverbend Medical College offers an innovative curriculum integrating telemedicine, genomics, and community health, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 525 ;
+    ex:name "Riverbend Medical College" .
+
+ex:medical_school_STL123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Stellar Medical College focuses on cutting-edge regenerative medicine and AI-driven patient care, featuring advanced simulation labs and interdisciplinary research collaborations." ;
+    ex:facultySize 540 ;
+    ex:name "Harborview Stellar Medical College" .
+
+ex:medical_school_TUV001 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Advanced Medical College provides a progressive curriculum integrating AI-driven diagnostics, telehealth, and precision genomics, supported by state-of-the-art simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 540 ;
+    ex:name "Summitridge Advanced Medical College" .
+
+ex:medical_school_TUV456 a ex:MedicalSchool ;
+    ex:abstract "Summitview Medical College offers a forward-thinking curriculum blending digital health, AI diagnostics, and community-based clinical experiences, supported by modern simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 425 ;
+    ex:name "Summitview Medical College" .
+
+ex:medical_school_TX001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_XY123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Aurora Medical College specializes in innovative genomics and telemedicine training, featuring cutting‑edge simulation suites and interdisciplinary research collaborations." ;
+    ex:facultySize 415 ;
+    ex:name "Harborview Aurora Medical College" .
+
+ex:medical_school_XY789 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 350 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:medical_school_XYZ001 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_XYZ004 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_XYZ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_XYZ555 a ex:MedicalSchool ;
+    ex:abstract "Celestial Nova Medical College offers an innovative curriculum merging quantum diagnostics, AI-driven patient care, and community health initiatives, supported by cutting‑edge simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 750 ;
+    ex:name "Celestial Nova Medical College" .
+
+ex:medical_school_XYZ777 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 560 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_XYZ789 a ex:MedicalSchool ;
+    ex:abstract "Summitridge Medical College offers an interdisciplinary curriculum that blends advanced telehealth, precision genomics, and community health initiatives, supported by state-of-the-art simulation labs and collaborative research centers." ;
+    ex:facultySize 610 ;
+    ex:name "Summitridge Medical College" .
+
+ex:medical_school_XYZ999 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_XZ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_YLM001 a ex:MedicalSchool ;
+    ex:abstract "Celestial Comet Medical College offers a pioneering curriculum that blends interplanetary health studies, AI-enhanced diagnostics, and community health outreach, supported by immersive simulation labs and interdisciplinary research hubs." ;
+    ex:facultySize 525 ;
+    ex:name "Celestial Comet Medical College" .
+
+ex:medical_school_ZQZ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 460 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ZX001 a ex:MedicalSchool ;
+    ex:abstract "Arcadia Medical Institute delivers a forward-thinking curriculum integrating regenerative medicine, health data analytics, and community health initiatives, supported by cutting-edge simulation labs and interdisciplinary research centers." ;
+    ex:facultySize 500 ;
+    ex:name "Arcadia Medical Institute" .
+
+ex:medical_school_ZXA123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Quantum Medical College pioneers quantum-informed diagnostics and immersive VR simulation labs, fostering interdisciplinary research and global health collaborations." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Quantum Medical College" .
+
+ex:medical_school_ZXQ123 a ex:MedicalSchool ;
+    ex:abstract "Harborview Summit Medical College pioneers integrative health education with a focus on emerging technologies, offering advanced simulation labs, interdisciplinary research hubs, and strong community health partnerships." ;
+    ex:facultySize 425 ;
+    ex:name "Harborview Summit Medical College" .
+
+ex:physician_AA002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1234567893" .
+
+ex:physician_AA999 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Winter" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457011" .
+
+ex:physician_AB103 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Winslow" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456990" .
+
+ex:physician_AB123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_GR108 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1234567894" .
+
+ex:physician_ABC123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Adams" ;
+    ex:gender "female" ;
+    ex:givenName "Emily" ;
+    ex:usNPI "5555555556" .
+
+ex:physician_ABR002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123457031" .
+
+ex:physician_ABR003 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Whitfield" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457029" .
+
+ex:physician_ABR004 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_ABU001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_GR108 ;
+    ex:familyName "Stone" ;
+    ex:gender "male" ;
+    ex:givenName "Aaron" ;
+    ex:usNPI "1123456795" .
+
+ex:physician_ABW001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Baker" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123457009" .
+
+ex:physician_ABX001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Quimby" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123457029" .
+
+ex:physician_ABX123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_HS101 ;
+    ex:familyName "Reed" ;
+    ex:gender "male" ;
+    ex:givenName "Arthur" ;
+    ex:usNPI "5556667778" .
+
+ex:physician_ABZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_NV001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1111111112" .
+
+ex:physician_ABZ124 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_GR108 ;
+    ex:familyName "Kline" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456791" .
+
+ex:physician_ABZ125 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_LM456 ;
+    ex:credential "DO",
+        "MD" ;
+    ex:familyName "Ellis" ;
+    ex:gender "male" ;
+    ex:givenName "Silas" ;
+    ex:graduateFrom ex:medical_school_MSX004,
+        ex:medical_school_NYC001,
+        ex:medical_school_NYC002,
+        ex:medical_school_TX001 ;
+    ex:graduationYear 2022,
+        2024,
+        2035 ;
+    ex:medicalSpecialty "Cardiology",
+        "Nephrology",
+        "Neurology" ;
+    ex:usNPI "1123456799" .
+
+ex:physician_ABZ130 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123458002" .
+
+ex:physician_AC001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1234567896" .
+
+ex:physician_AC007 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Adams" ;
+    ex:gender "male" ;
+    ex:givenName "James" ;
+    ex:usNPI "1123456895" .
+
+ex:physician_AC102 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Smith" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "9876543211" .
+
+ex:physician_AC123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Lennox" ;
+    ex:gender "female" ;
+    ex:givenName "Zane" ;
+    ex:usNPI "1123456800" .
+
+ex:physician_AD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456821" .
+
+ex:physician_AD123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Whitmore" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1123456801" .
+
+ex:physician_AD456 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Hartley" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457008" .
+
+ex:physician_AE001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Young" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1123456891" .
+
+ex:physician_AF001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456903" .
+
+ex:physician_AG001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Bramble" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456910" .
+
+ex:physician_AGF001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457115" .
+
+ex:physician_CD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Evans" ;
+    ex:gender "male" ;
+    ex:givenName "Thomas" ;
+    ex:usNPI "1123581321" .
+
+ex:physician_CD123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Sullivan" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456820" .
+
+ex:physician_CD234 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1122334522" .
+
+ex:physician_CDX123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_DF001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123458008" .
+
+ex:physician_DR001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123456950" .
+
+ex:physician_DR002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457014" .
+
+ex:physician_DRM001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457200" .
+
+ex:physician_DRX001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_DR401 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1234567892" .
+
+ex:physician_DRY001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456994" .
+
+ex:physician_DRY002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Quimby" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457104" .
+
+ex:physician_DRY003 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457112" .
+
+ex:physician_DRZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_EF001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Xander" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_EF200 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB200 ;
+    ex:familyName "Brock" ;
+    ex:gender "female" ;
+    ex:givenName "Oscar" ;
+    ex:usNPI "1234567895" .
+
+ex:physician_EF456 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:credential "MD" ;
+    ex:familyName "Johnson" ;
+    ex:gender "female" ;
+    ex:givenName "Olivia" ;
+    ex:medicalSpecialty "Oncology" ;
+    ex:usNPI "2223334445" .
+
+ex:physician_EFG004 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB200 ;
+    ex:credential "MD" ;
+    ex:familyName "Whitaker" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:graduateFrom ex:medical_school_ABC123,
+        ex:medical_school_JKL789,
+        ex:medical_school_QZ123,
+        ex:medical_school_STL123,
+        ex:medical_school_ZXQ123 ;
+    ex:graduationYear 2022,
+        2034,
+        2037 ;
+    ex:medicalSpecialty "Cardiology",
+        "Genetics" ;
+    ex:usNPI "5555555557" .
+
+ex:physician_EFG005 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Baxter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456991" .
+
+ex:physician_EFG007 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456993" .
+
+ex:physician_EFH001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Whitfield" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "9990001112" .
+
+ex:physician_EFH002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_EFI001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "9876543212" .
+
+ex:physician_EFJ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winters" ;
+    ex:gender "male" ;
+    ex:givenName "Xavier" ;
+    ex:usNPI "1123456992" .
+
+ex:physician_EV001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123458014" .
+
+ex:physician_FD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Quimby" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1123457201" .
+
+ex:physician_FG001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Lennox" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_GD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Quimby" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123457130" .
+
+ex:physician_GF001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1029384756" .
+
+ex:physician_GHJ123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456930" .
+
+ex:physician_GHK001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "9876543213" .
+
+ex:physician_GHL001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_HIJ005 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Baxter" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1123456897" .
+
+ex:physician_HIJ006 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Young" ;
+    ex:gender "female" ;
+    ex:givenName "Mila" ;
+    ex:usNPI "2222222223" .
+
+ex:physician_HIJ007 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Baxter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456908" .
+
+ex:physician_HIJ125 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_CM303 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456901" .
+
+ex:physician_IJ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Ashford" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1123457021" .
+
+ex:physician_JK001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457107" .
+
+ex:physician_JKL010 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_JKL123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_CM303 ;
+    ex:familyName "Davis" ;
+    ex:gender "male" ;
+    ex:givenName "Benjamin" ;
+    ex:usNPI "7778889990" .
+
+ex:physician_JKL999 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_DR401 ;
+    ex:familyName "Morrison" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1122334477" .
+
+ex:physician_KJ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_CM303 ;
+    ex:familyName "Anderson" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456823" .
+
+ex:physician_KL001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Quimby" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_KLM002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Baxter" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456830" .
+
+ex:physician_KLM003 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Baker" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123456905" .
+
+ex:physician_KLM008 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457202" .
+
+ex:physician_KLM009 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457120" .
+
+ex:physician_LMN777 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Anderson" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457017" .
+
+ex:physician_LMN789 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:credential "MD" ;
+    ex:familyName "Clark" ;
+    ex:gender "female" ;
+    ex:givenName "Sophia" ;
+    ex:medicalSpecialty "Immunology" ;
+    ex:usNPI "4445556667" .
+
+ex:physician_LMX001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457006" .
+
+ex:physician_MD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_HS101 ;
+    ex:familyName "Smith" ;
+    ex:gender "female" ;
+    ex:givenName "Emily" ;
+    ex:usNPI "5555555555" .
+
+ex:physician_MN001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Carter" ;
+    ex:gender "female" ;
+    ex:givenName "Evelyn" ;
+    ex:usNPI "1122334499" .
+
+ex:physician_MNQ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1111111123" .
+
+ex:physician_MNZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winters" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457020" .
+
+ex:physician_OP001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Taylor" ;
+    ex:gender "female" ;
+    ex:givenName "Grace" ;
+    ex:usNPI "1010101010" .
+
+ex:physician_OPQ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_DR401 ;
+    ex:familyName "Adams" ;
+    ex:gender "male" ;
+    ex:givenName "Caleb" ;
+    ex:usNPI "1234567899" .
+
+ex:physician_PQR001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457070" .
+
+ex:physician_QR001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Stone" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123457110" .
+
+ex:physician_QRB001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "male" ;
+    ex:givenName "Milo" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_QRT999 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457032" .
+
+ex:physician_QRX001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_CM303 ;
+    ex:familyName "Valentine" ;
+    ex:gender "female" ;
+    ex:givenName "Cassandra" ;
+    ex:usNPI "1123456822" .
+
+ex:physician_QW001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "9876543215" .
+
+ex:physician_QZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Yates" ;
+    ex:gender "female" ;
+    ex:givenName "Olivia" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_RST001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_RT001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_DR401 ;
+    ex:familyName "Morrison" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "7777777777" .
+
+ex:physician_TY001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zoe" ;
+    ex:usNPI "1123456999" .
+
+ex:physician_VV001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457203" .
+
+ex:physician_WX001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457109" .
+
+ex:physician_WXZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Hartley" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457199" .
+
+ex:physician_XY001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:usNPI "1123457108" .
+
+ex:physician_XYA001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Winter" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457102" .
+
+ex:physician_XYZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1234567898" .
+
+ex:physician_XYZ002 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123456995" .
+
+ex:physician_XZ101 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_GR108 ;
+    ex:familyName "Hawthorne" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "8001234568" .
+
+ex:physician_XZQ017 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski",
+        "Zimmerman" ;
+    ex:gender "female" ;
+    ex:givenName "Evelyn",
+        "Zara" ;
+    ex:usNPI "1123457103",
+        "1123458020" .
+
+ex:physician_XZQ020 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_YYZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Baxter" ;
+    ex:gender "male" ;
+    ex:givenName "James" ;
+    ex:usNPI "1123457016" .
+
+ex:physician_YZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123458016" .
+
+ex:physician_ZD001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zabinski" ;
+    ex:gender "male" ;
+    ex:givenName "Gideon" ;
+    ex:usNPI "1123457018" .
+
+ex:physician_ZE001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Zane" ;
+    ex:usNPI "1123457113" .
+
+ex:physician_ZY001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Whitcomb" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1123457027" .
+
+ex:physician_ZZQ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Young" ;
+    ex:gender "female" ;
+    ex:givenName "Zara" ;
+    ex:usNPI "1123457123" .
+
+ex:physician_ZZZ001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:usNPI "1234567888" .
+
+ex:facility_AA001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "New Horizon Health Center" ;
+    ex:numberOfBeds 68 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AA002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 New Hope St, Zip AA001" ;
+    ex:name "Willow Brook Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AB103 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "1010 Pine Street, Zip ZC001" ;
+    ex:name "Cedar Grove Medical Center" ;
+    ex:numberOfBeds 150 ;
+    ex:numberOfEmployees 110 .
+
+ex:facility_AB111 a ex:Facility ;
+    ex:abstract "A modern community health center offering comprehensive primary and preventive care to residents of AA001." ;
+    ex:address "1234 Cedar Meadow Blvd, Zip AA001" ;
+    ex:name "Cedar Meadow Health Center" ;
+    ex:numberOfBeds 68 ;
+    ex:numberOfEmployees 117 .
+
+ex:facility_AB123 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AB400 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Cedar Meadow Blvd, Zip AA001" ;
+    ex:name "Cedar Meadow Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AB700 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AB800 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "Aspen Valley Health Center" ;
+    ex:numberOfBeds 100 ;
+    ex:numberOfEmployees 105 .
+
+ex:facility_AB900 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABC001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "2000 Oakwood Blvd, Zip AA001" ;
+    ex:name "Pine Grove Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABC002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Maple Grove Blvd, Zip AA001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 130 .
+
+ex:facility_ABK002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK003 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 45 ;
+    ex:numberOfEmployees 80 .
+
+ex:facility_ABK004 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "2500 Pine Valley Blvd, Zip ZD001" ;
+    ex:name "Pine Valley Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK005 a ex:Facility ;
+    ex:abstract "A community-focused health center offering primary and specialty care." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 130 .
+
+ex:facility_ABK006 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip AA001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK007 a ex:Facility ;
+    ex:abstract "A modern community health center delivering comprehensive primary and preventive care to residents of AA001." ;
+    ex:address "1234 Pine Crest Blvd, Zip AA001" ;
+    ex:name "Pine Crest Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK008 a ex:Facility ;
+    ex:abstract "A community-focused health center offering primary care and preventive services." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK009 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Willow Creek Blvd, Zip ZD001" ;
+    ex:name "Willow Creek Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABK010 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "2500 Oak Street, Zip ZD001" ;
+    ex:name "Riverbend Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABX002 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ABY001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "Cedar Plains Health Center" ;
+    ex:numberOfBeds 30 ;
+    ex:numberOfEmployees 45 .
+
+ex:facility_AC001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip AA001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 115 ;
+    ex:numberOfEmployees 130 .
+
+ex:facility_AC123 a ex:Facility ;
+    ex:abstract "A modern community health center delivering comprehensive primary and preventive care to residents of AA001." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AD001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "2500 Oak Street, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AE001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Maple Grove Blvd, Zip AA001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_AZ001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs to residents of ZC001." ;
+    ex:address "1234 Cedar Lane, Zip ZC001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_BF310 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "345 Maple Creek Drive, Zip ZC001" ;
+    ex:name "Maple Creek Health Center" ;
+    ex:numberOfBeds 30 ;
+    ex:numberOfEmployees 45 .
+
+ex:facility_CD001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "Cedar Plains Health Center" ;
+    ex:numberOfBeds 35 ;
+    ex:numberOfEmployees 118 .
+
+ex:facility_CDX001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Cedar Meadow Blvd, Zip AA001" ;
+    ex:name "Pine Valley Community Clinic" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_CDX002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "789 Harmony Lane, Zip AA001" ;
+    ex:name "Cedar Meadow Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_CR001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_DEF001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "Cedar Plains Health Center" ;
+    ex:numberOfBeds 35 ;
+    ex:numberOfEmployees 118 .
+
+ex:facility_DF001 a ex:Facility ;
+    ex:abstract "A modern community health center offering comprehensive primary and preventive care in the ZC001 area." ;
+    ex:address "1234 Cedar Plains Blvd, Zip ZC001" ;
+    ex:name "Cedar Plains Health Center" ;
+    ex:numberOfBeds 115 ;
+    ex:numberOfEmployees 118 .
+
+ex:facility_EF001 a ex:Facility ;
+    ex:abstract "A community-focused health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EF123 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "1234 Cedar Lane, Zip ZC001" ;
+    ex:name "Maple Hill Health Center" ;
+    ex:numberOfBeds 55 ;
+    ex:numberOfEmployees 115 .
+
+ex:facility_EFG002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Oak Ridge Blvd, Zip AA001" ;
+    ex:name "River Valley Health Clinic" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EFG003 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 80 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EFG004 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EFG005 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 New Horizon Blvd, Zip ZD001" ;
+    ex:name "Maple Hill Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EFG007 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Willow Springs Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_EFG123 a ex:Facility ;
+    ex:abstract "A modern community clinic providing comprehensive primary and preventive care for residents of AA001." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 80 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_FA001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "2000 Oakwood Blvd, Zip ZD001" ;
+    ex:name "Riverbend Health Center" ;
+    ex:numberOfBeds 110 ;
+    ex:numberOfEmployees 130 .
+
+ex:facility_GH001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs to residents of ZC001." ;
+    ex:address "123 Aspen Way, Zip ZC001" ;
+    ex:name "Aspen Valley Health Center" ;
+    ex:numberOfBeds 110 ;
+    ex:numberOfEmployees 135 .
+
+ex:facility_GH123 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Cedar Ridge Way, Zip AA001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_GH200 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "555 New Hope St, Zip AA001" ;
+    ex:name "Willow Meadow Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_GHJ001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Maple Grove Blvd, Zip AA001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 100 ;
+    ex:numberOfEmployees 105 .
+
+ex:facility_HJK001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_HS002 a ex:Facility ;
+    ex:abstract "A community-focused clinic providing primary and preventive care." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Hillside Health Center" ;
+    ex:numberOfBeds 52 ;
+    ex:numberOfEmployees 140 .
+
+ex:facility_JK001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs to residents of ZA007." ;
+    ex:address "1234 Cedar Brook Lane, Zip ZA007" ;
+    ex:name "Cedar Brook Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_JK002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "New Horizon Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_JKL001 a ex:Facility ;
+    ex:abstract "A state-of-the-art health center providing integrated primary care and preventive services to the AA001 community." ;
+    ex:address "123 Oak Ridge Blvd, Zip AA001" ;
+    ex:name "Oak Ridge Health Center" ;
+    ex:numberOfBeds 92 ;
+    ex:numberOfEmployees 127 .
+
+ex:facility_JKL123 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "900 Oakwood Lane, Zip ZC001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 85 ;
+    ex:numberOfEmployees 105 .
+
+ex:facility_KLN006 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "1234 Pine Meadow Blvd, Zip ZD001" ;
+    ex:name "Pine Meadow Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_LM456 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD005 region." ;
+    ex:address "1234 Pine Crest Blvd, Zip ZD005" ;
+    ex:name "Pine Crest Health Center" ;
+    ex:numberOfBeds 85 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_LMN001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Pine Crest Blvd, Zip AA001" ;
+    ex:name "Pine Crest Health Center" ;
+    ex:numberOfBeds 60 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_LMN004 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Willow Creek Blvd, Zip AA001" ;
+    ex:name "Willow Creek Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_LMN456 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Maple Valley Blvd, Zip AA001" ;
+    ex:name "Maple Valley Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_LMN999 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Riverbend Way, Zip AA001" ;
+    ex:name "Riverbend Community Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_MN001 a ex:Facility ;
+    ex:abstract "A modern community health center delivering comprehensive primary and preventive care to residents of ZC001." ;
+    ex:address "1234 Cedar Ridge Way, Zip ZC001" ;
+    ex:name "Cedar Ridge Health Center" ;
+    ex:numberOfBeds 95 ;
+    ex:numberOfEmployees 125 .
+
+ex:facility_MNK001 a ex:Facility ;
+    ex:abstract "A community-focused health center delivering primary and preventive care with wellness programs in the ZC001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Hill Health Center" ;
+    ex:numberOfBeds 60 ;
+    ex:numberOfEmployees 160 .
+
+ex:facility_MNK002 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 Maple Grove Blvd, Zip AA001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_MNX001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "456 Cedar Brook Lane, Zip AA001" ;
+    ex:name "Cedar Brook Community Clinic" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_MR001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_MR002 a ex:Facility ;
+    ex:abstract "A community-focused health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 80 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_PC001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "1234 Pine Crest Blvd, Zip ZD001" ;
+    ex:name "Pine Crest Health Center" ;
+    ex:numberOfBeds 115 ;
+    ex:numberOfEmployees 135 .
+
+ex:facility_PV001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "2500 Pine Valley Blvd, Zip ZD001" ;
+    ex:name "Pine Valley Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_QD001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "2500 Pine Valley Blvd, Zip ZD001" ;
+    ex:name "Pine Valley Health Center" ;
+    ex:numberOfBeds 85 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_RVF001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the BF007 region." ;
+    ex:address "456 River Valley Rd, Zip BF007" ;
+    ex:name "River Valley Health Clinic" ;
+    ex:numberOfBeds 60 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_TR345 a ex:Facility ;
+    ex:abstract "A community-focused health center providing primary care and preventive services." ;
+    ex:address "222 Summit Road, Zip ZC001" ;
+    ex:name "Summit Health Center" ;
+    ex:numberOfBeds 90 ;
+    ex:numberOfEmployees 85 .
+
+ex:facility_WX101 a ex:Facility ;
+    ex:abstract "A community health facility offering primary care, preventive services, and wellness programs." ;
+    ex:address "987 Harmony Lane, Zip ZC001" ;
+    ex:name "Willow Springs Health Center" ;
+    ex:numberOfBeds 45 ;
+    ex:numberOfEmployees 115 .
+
+ex:facility_WXZ001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region." ;
+    ex:address "1234 Willow Creek Blvd, Zip ZD001" ;
+    ex:name "Willow Springs Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_XYZ123 a ex:Facility ;
+    ex:abstract "A modern community clinic offering comprehensive primary and preventive care for residents of AA001." ;
+    ex:address "1234 Maple Grove Blvd, Zip AA001" ;
+    ex:name "Maple Grove Health Center" ;
+    ex:numberOfBeds 55 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_XZ101 a ex:Facility ;
+    ex:abstract "A modern community clinic providing comprehensive primary and preventive care for residents of ZC001." ;
+    ex:address "600 Lakeside Drive, Zip ZC001" ;
+    ex:name "Lakeside Health Center" ;
+    ex:numberOfBeds 35 ;
+    ex:numberOfEmployees 95 .
+
+ex:facility_XZ123 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "New Horizon Health Center" ;
+    ex:numberOfBeds 100 ;
+    ex:numberOfEmployees 105 .
+
+ex:facility_XZB001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the BF007 region." ;
+    ex:address "456 River Valley Rd, Zip BF007" ;
+    ex:name "River Valley Health Clinic" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_YZ001 a ex:Facility ;
+    ex:abstract "A community-focused health center delivering primary care and wellness programs in the ZC001 region." ;
+    ex:address "1012 Oak Avenue, Zip ZC001" ;
+    ex:name "Pine Valley Health Center" ;
+    ex:numberOfBeds 75 ;
+    ex:numberOfEmployees 115 .
+
+ex:facility_YZ123 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001" ;
+    ex:name "New Horizon Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_YZ456 a ex:Facility ;
+    ex:abstract "A modern community clinic providing comprehensive primary and preventive care for residents of AA001." ;
+    ex:address "1234 Cedar Meadow Blvd, Zip AA001" ;
+    ex:name "Cedar Meadow Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ZD001 a ex:Facility ;
+    ex:abstract "A modern community health center delivering comprehensive primary and preventive care to residents of the ZD001 area." ;
+    ex:address "987 Riverbend Road, Zip ZD001" ;
+    ex:name "Riverbend Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_ZZ001 a ex:Facility ;
+    ex:abstract "A modern community health center delivering comprehensive primary and preventive care to residents of the ZD001 area." ;
+    ex:address "3210 Oakridge Drive, Zip ZD001" ;
+    ex:name "Cedar Valley Health Center" ;
+    ex:numberOfBeds 58 ;
+    ex:numberOfEmployees 123 .
+
+ex:medical_school_HS003 a ex:MedicalSchool ;
+    ex:abstract "Harborview Institute of Medical Sciences focuses on translational research and innovative clinical training, equipped with modern labs and simulation centers." ;
+    ex:facultySize 340 ;
+    ex:name "Harborview Institute of Medical Sciences" .
+
+ex:physician_DR123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102,
+        ex:facility_HS101 ;
+    ex:credential "MD" ;
+    ex:familyName "Miller" ;
+    ex:gender "female" ;
+    ex:givenName "Laura" ;
+    ex:graduateFrom ex:medical_school_HS002,
+        ex:medical_school_MS001 ;
+    ex:graduationYear 2015,
+        2018 ;
+    ex:medicalSpecialty "Cardiology" ;
+    ex:usNPI "1234567890" .
+
+ex:physician_EFG123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102 ;
+    ex:familyName "Baker",
+        "Cunningham",
+        "Hartley" ;
+    ex:gender "female" ;
+    ex:givenName "Grace",
+        "Megan",
+        "Olive" ;
+    ex:usNPI "1123456797",
+        "1123456798",
+        "1123456893",
+        "1234567891" .
+
+ex:facility_EFG001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "1234 Cedar Ridge Way, Zip ZD001" ;
+    ex:name "Aspen Valley Health Center",
+        "River Valley Health Clinic" ;
+    ex:numberOfBeds 70,
+        100 ;
+    ex:numberOfEmployees 105,
+        120 .
+
+ex:facility_AB300 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "1234 Cedar Meadow Blvd, Zip AA001" ;
+    ex:name "Cedar Plains Health Center",
+        "Pine Ridge Health Center" ;
+    ex:numberOfBeds 35,
+        68 ;
+    ex:numberOfEmployees 85,
+        118 .
+
+ex:facility_AB500 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the ZD001 region.",
+        "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "2500 Pine Valley Blvd, Zip ZD001" ;
+    ex:name "Cedar Plains Health Center",
+        "River Valley Health Clinic" ;
+    ex:numberOfBeds 35,
+        70 ;
+    ex:numberOfEmployees 118,
+        120 .
+
+ex:facility_ABX001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region.",
+        "A community-focused health center delivering primary care and wellness programs in the AA001 region." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center",
+        "New Horizon Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+
+ex:facility_BC001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC001 area.",
+        "A community-focused health center delivering primary and preventive care with wellness programs in the ZC001 region." ;
+    ex:address "1010 Pine Street, Zip ZC001",
+        "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Cedar Grove Medical Center",
+        "Maple Creek Health Center" ;
+    ex:numberOfBeds 55,
+        60 ;
+    ex:numberOfEmployees 140,
+        160 .
+
+ex:facility_CF001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region.",
+        "A community-focused health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001",
+        "800 Hillside Blvd, Zip ZC001" ;
+    ex:name "Hillside Health Center",
+        "Maple Creek Health Center" ;
+    ex:numberOfBeds 52,
+        60 ;
+    ex:numberOfEmployees 112,
+        160 .
+
+ex:facility_FD001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs to residents of ZC001.",
+        "A modern community health center delivering comprehensive primary and preventive care to the ZD001 area." ;
+    ex:address "1234 Cedar Springs Blvd, Zip ZC001",
+        "3210 Oakridge Drive, Zip ZD001" ;
+    ex:name "Cedar Springs Health Center",
+        "Pine Valley Health Center" ;
+    ex:numberOfBeds 55,
+        95 ;
+    ex:numberOfEmployees 120,
+        130 .
+
+ex:facility_NV001 a ex:Facility ;
+    ex:abstract "A community-focused health center offering primary care and preventive services." ;
+    ex:address "1010 Pine Street, Zip ZC001" ;
+    ex:name "Pine Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 110 .
+
+ex:facility_QT307 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services.",
+        "A modern facility offering comprehensive outpatient and inpatient services." ;
+    ex:address "2500 Oak Street, Zip ZC002",
+        "789 Healthway Dr, Zip ZC001" ;
+    ex:name "Maple Ridge Health Center",
+        "Sunrise Medical Center" ;
+    ex:numberOfBeds 40,
+        70 ;
+    ex:numberOfEmployees 80,
+        300 .
+
+ex:physician_ABK001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102,
+        ex:facility_ABK002,
+        ex:facility_ABK003,
+        ex:facility_ABK004 ;
+    ex:credential "MD" ;
+    ex:familyName "Anderson" ;
+    ex:gender "male" ;
+    ex:givenName "Ethan" ;
+    ex:graduateFrom ex:medical_school_MNQ456,
+        ex:medical_school_ZXA123 ;
+    ex:graduationYear 2022,
+        2024 ;
+    ex:medicalSpecialty "Cardiology",
+        "Neurology" ;
+    ex:usNPI "1111111113" .
+
+ex:physician_ABZ123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB103,
+        ex:facility_JKL123,
+        ex:facility_KY502,
+        ex:facility_LX204 ;
+    ex:credential "MD" ;
+    ex:familyName "Zimmerman" ;
+    ex:gender "male" ;
+    ex:givenName "Victor" ;
+    ex:graduateFrom ex:medical_school_HS008,
+        ex:medical_school_HS010,
+        ex:medical_school_HS011,
+        ex:medical_school_MS004,
+        ex:medical_school_MS005,
+        ex:medical_school_MSX002,
+        ex:medical_school_XY789,
+        ex:medical_school_ZX001 ;
+    ex:graduationYear 2016,
+        2022,
+        2023,
+        2025,
+        2031,
+        2033 ;
+    ex:medicalSpecialty "Cardiology",
+        "Gastroenterology",
+        "Hematology",
+        "Ophthalmology" ;
+    ex:usNPI "1011121314" .
+
+ex:physician_EFG001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102,
+        ex:facility_FC001 ;
+    ex:familyName "Abernathy",
+        "Hawthorne",
+        "Hollis",
+        "Walker",
+        "Whitcomb",
+        "Winter",
+        "York",
+        "Zimmerman" ;
+    ex:gender "female",
+        "male" ;
+    ex:givenName "Luna",
+        "Victor",
+        "Zara",
+        "Zoe" ;
+    ex:usNPI "1122334456",
+        "1123456906",
+        "1123456999",
+        "1123457013",
+        "1123457023",
+        "1123457028",
+        "1123458010" .
+
+ex:facility_ABZ001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A community health center delivering primary care and wellness programs in the ZD001 region." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "2500 Oak Street, Zip ZD001",
+        "789 Pinecrest Blvd, Zip ZD001" ;
+    ex:name "Maple Grove Health Center",
+        "New Horizon Health Center",
+        "Pinecrest Community Health Center" ;
+    ex:numberOfBeds 68,
+        70 ;
+    ex:numberOfEmployees 80,
+        120,
+        130 .
+
+ex:facility_LX204 a ex:Facility ;
+    ex:abstract "A community-focused health center offering primary and specialty care.",
+        "A community-focused health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "321 Wellness Way, Zip ZC001",
+        "345 Maple Creek Drive, Zip ZC001",
+        "456 Wellness Blvd, Zip ZC001" ;
+    ex:name "Green Valley Health Center",
+        "River Valley Health Clinic" ;
+    ex:numberOfBeds 60,
+        65 ;
+    ex:numberOfEmployees 150,
+        300 .
+
+ex:facility_KY502 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the ZC005 area.",
+        "A community-focused clinic providing primary and preventive care." ;
+    ex:address "321 Wellness Way, Zip ZC001",
+        "500 Riverbend Road, Zip ZC005" ;
+    ex:name "Pine Ridge Health Center",
+        "Riverbend Health Center" ;
+    ex:numberOfBeds 55,
+        65 ;
+    ex:numberOfEmployees 140 .
+
+ex:physician_GH001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_FC001 ;
+    ex:familyName "Baxter",
+        "Harris",
+        "Hawthorne",
+        "Young",
+        "Zabinski",
+        "Zimmerman" ;
+    ex:gender "female",
+        "male" ;
+    ex:givenName "Grace",
+        "Victor",
+        "Zara" ;
+    ex:graduateFrom ex:medical_school_HS003 ;
+    ex:graduationYear 2020 ;
+    ex:usNPI "1123456970",
+        "1123456999",
+        "1123457024",
+        "1123457134",
+        "8889990001" .
+
+ex:physician_XY123 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_CM303,
+        ex:facility_DR401,
+        ex:facility_HS101,
+        ex:facility_LX204,
+        ex:facility_NV001,
+        ex:facility_QT307 ;
+    ex:credential "DO",
+        "MBBS",
+        "MD" ;
+    ex:familyName "Brown" ;
+    ex:gender "female" ;
+    ex:givenName "David" ;
+    ex:graduateFrom ex:medical_school_HS001,
+        ex:medical_school_HS003,
+        ex:medical_school_HS004,
+        ex:medical_school_HS005,
+        ex:medical_school_HS006,
+        ex:medical_school_MS002 ;
+    ex:graduationYear 2019,
+        2020,
+        2021,
+        2022,
+        2023 ;
+    ex:medicalSpecialty "Dermatology",
+        "Neurology",
+        "Oncology",
+        "Pediatrics" ;
+    ex:usNPI "1112223334" .
+
+ex:facility_HIJ001 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A community health center delivering primary care and wellness programs in the ZD001 region.",
+        "A community health center offering primary care and preventive services in the AA001 region.",
+        "A modern community health center delivering comprehensive primary and preventive care to residents of AA001." ;
+    ex:address "123 New Health Way, Zip AA001",
+        "1234 Cedar Meadow Blvd, Zip AA001",
+        "1234 Cedar Ridge Way, Zip ZD001",
+        "1234 Maple Grove Blvd, Zip ZD001",
+        "1234 Willow Creek Blvd, Zip ZD001",
+        "4567 Oakwood Drive, Zip AA001" ;
+    ex:name "Aspen Valley Health Center",
+        "Cedar Meadow Health Center",
+        "Maple Grove Health Center",
+        "Maple Ridge Health Center",
+        "River Valley Health Clinic",
+        "Riverbend Health Center",
+        "Willow Creek Health Center" ;
+    ex:numberOfBeds 70,
+        100,
+        105 ;
+    ex:numberOfEmployees 105,
+        120 .
+
+ex:facility_HS101 a ex:Facility ;
+    ex:abstract "A community hospital offering comprehensive care.",
+        "A community-focused clinic providing primary and preventive care." ;
+    ex:address "123 Health Ave, Zip ZC001",
+        "456 Wellness Blvd, Zip ZC001" ;
+    ex:name "Sunrise Medical Center" ;
+    ex:numberOfBeds 50,
+        150 ;
+    ex:numberOfEmployees 300 .
+
+ex:facility_AB200 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A community health center offering primary care and preventive services in the AA001 region.",
+        "A community-focused health center delivering primary and preventive care with wellness programs in the ZC001 region." ;
+    ex:address "123 Evergreen Lane, Zip ZC001",
+        "123 New Health Way, Zip AA001" ;
+    ex:name "Cedar Plains Health Center",
+        "Evergreen Health Center" ;
+    ex:numberOfBeds 30,
+        35,
+        55,
+        100 ;
+    ex:numberOfEmployees 118,
+        130,
+        160 .
+
+ex:facility_GR108 a ex:Facility ;
+    ex:abstract "A community-focused health center offering primary care and preventive services in the ZC001 area." ;
+    ex:address "1600 Oakwood Blvd, Zip ZC001" ;
+    ex:name "Cedar Hill Health Center" ;
+    ex:numberOfBeds 55 ;
+    ex:numberOfEmployees 130 .
+
+ex:facility_CM303 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and preventive services in the ZD001 region.",
+        "A modern facility offering comprehensive outpatient and inpatient services." ;
+    ex:address "3210 Oakridge Drive, Zip ZD001",
+        "789 Healthway Dr, Zip ZC001" ;
+    ex:name "CM303 Community Health Center",
+        "Cedar Grove Medical Center" ;
+    ex:numberOfBeds 70,
+        80 ;
+    ex:numberOfEmployees 120,
+        200 .
+
+ex:facility_DR401 a ex:Facility ;
+    ex:abstract "A community health center delivering primary care and wellness programs in the AA001 region.",
+        "A state-of-the-art community health center delivering comprehensive primary and preventive care." ;
+    ex:address "1500 Maple Lane, Zip ZC001",
+        "789 Harmony Lane, Zip AA001" ;
+    ex:name "Harmony Health Center",
+        "Oakwood Community Health Center" ;
+    ex:numberOfBeds 55,
+        70 ;
+    ex:numberOfEmployees 120,
+        130 .
+
+ex:physician_AA001 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AB102,
+        ex:facility_AB200,
+        ex:facility_AB500,
+        ex:facility_AZ001,
+        ex:facility_BC001,
+        ex:facility_BF310,
+        ex:facility_CF001,
+        ex:facility_DF001,
+        ex:facility_EF123,
+        ex:facility_FD001,
+        ex:facility_GH001,
+        ex:facility_GR108,
+        ex:facility_HS002,
+        ex:facility_JK001,
+        ex:facility_KY502,
+        ex:facility_MN001,
+        ex:facility_PV001,
+        ex:facility_QD001,
+        ex:facility_QT307,
+        ex:facility_TR345,
+        ex:facility_WX101,
+        ex:facility_XZ101,
+        ex:facility_YZ001 ;
+    ex:credential "MD" ;
+    ex:familyName "Young" ;
+    ex:gender "female" ;
+    ex:givenName "Rachel" ;
+    ex:graduateFrom ex:medical_school_HS007,
+        ex:medical_school_HS009,
+        ex:medical_school_LMN456,
+        ex:medical_school_MS003,
+        ex:medical_school_MSX001,
+        ex:medical_school_MSX003,
+        ex:medical_school_MSX005,
+        ex:medical_school_RTY456,
+        ex:medical_school_XZ123 ;
+    ex:graduationYear 2022,
+        2024,
+        2027,
+        2029,
+        2030,
+        2032,
+        2036 ;
+    ex:medicalSpecialty "Cardiology",
+        "Endocrinology",
+        "Neurology",
+        "Radiology",
+        "Sleep Medicine",
+        "Urology" ;
+    ex:usNPI "9998887776" .
+
+ex:facility_AB102 a ex:Facility ;
+    ex:abstract "A community-focused clinic providing primary and preventive care." ;
+    ex:address "456 Wellness Blvd, Zip ZC001" ;
+    ex:name "River Valley Health Clinic" ;
+    ex:numberOfBeds 50 ;
+    ex:numberOfEmployees 120 .
+
+ex:physician_HIJ004 a ex:Physician ;
+    ex:affiliatedHospital ex:facility_AA001,
+        ex:facility_AA002,
+        ex:facility_AB111,
+        ex:facility_AB123,
+        ex:facility_AB200,
+        ex:facility_AB300,
+        ex:facility_AB400,
+        ex:facility_AB500,
+        ex:facility_AB700,
+        ex:facility_AB800,
+        ex:facility_AB900,
+        ex:facility_ABC001,
+        ex:facility_ABC002,
+        ex:facility_ABK005,
+        ex:facility_ABK006,
+        ex:facility_ABK007,
+        ex:facility_ABK008,
+        ex:facility_ABK009,
+        ex:facility_ABK010,
+        ex:facility_ABX001,
+        ex:facility_ABX002,
+        ex:facility_ABY001,
+        ex:facility_ABZ001,
+        ex:facility_AC001,
+        ex:facility_AC123,
+        ex:facility_AD001,
+        ex:facility_AE001,
+        ex:facility_BC001,
+        ex:facility_CD001,
+        ex:facility_CDX001,
+        ex:facility_CDX002,
+        ex:facility_CF001,
+        ex:facility_CM303,
+        ex:facility_CR001,
+        ex:facility_DEF001,
+        ex:facility_DR401,
+        ex:facility_EF001,
+        ex:facility_EFG001,
+        ex:facility_EFG002,
+        ex:facility_EFG003,
+        ex:facility_EFG004,
+        ex:facility_EFG005,
+        ex:facility_EFG007,
+        ex:facility_EFG123,
+        ex:facility_FA001,
+        ex:facility_FC001,
+        ex:facility_FD001,
+        ex:facility_GH123,
+        ex:facility_GH200,
+        ex:facility_GHJ001,
+        ex:facility_HIJ001,
+        ex:facility_HJK001,
+        ex:facility_JK002,
+        ex:facility_JKL001,
+        ex:facility_KLN006,
+        ex:facility_LMN001,
+        ex:facility_LMN004,
+        ex:facility_LMN456,
+        ex:facility_LMN999,
+        ex:facility_MNK001,
+        ex:facility_MNK002,
+        ex:facility_MNX001,
+        ex:facility_MR001,
+        ex:facility_MR002,
+        ex:facility_PC001,
+        ex:facility_RVF001,
+        ex:facility_WXZ001,
+        ex:facility_XYZ123,
+        ex:facility_XZ123,
+        ex:facility_XZB001,
+        ex:facility_YZ123,
+        ex:facility_YZ456,
+        ex:facility_ZD001,
+        ex:facility_ZZ001 ;
+    ex:credential "DO",
+        "MD" ;
+    ex:familyName "O'Neil" ;
+    ex:gender "female" ;
+    ex:givenName "Miriam" ;
+    ex:graduateFrom ex:medical_school_ABC001,
+        ex:medical_school_ABC002,
+        ex:medical_school_ABC124,
+        ex:medical_school_ABC200,
+        ex:medical_school_ABC321,
+        ex:medical_school_ABC567,
+        ex:medical_school_ABC777,
+        ex:medical_school_ABC999,
+        ex:medical_school_ABR001,
+        ex:medical_school_DEF000,
+        ex:medical_school_DEF001,
+        ex:medical_school_DEF002,
+        ex:medical_school_DEF123,
+        ex:medical_school_DEF456,
+        ex:medical_school_DEF777,
+        ex:medical_school_DEF888,
+        ex:medical_school_DEF999,
+        ex:medical_school_GHI001,
+        ex:medical_school_GHI123,
+        ex:medical_school_GHI456,
+        ex:medical_school_GHI777,
+        ex:medical_school_GHI999,
+        ex:medical_school_HQC001,
+        ex:medical_school_HQC123,
+        ex:medical_school_HQM001,
+        ex:medical_school_HQM002,
+        ex:medical_school_JKL001,
+        ex:medical_school_JKL123,
+        ex:medical_school_JKL321,
+        ex:medical_school_JKL456,
+        ex:medical_school_JKL555,
+        ex:medical_school_JKL777,
+        ex:medical_school_JKL999,
+        ex:medical_school_KLM123,
+        ex:medical_school_LMN000,
+        ex:medical_school_LMN001,
+        ex:medical_school_LMN002,
+        ex:medical_school_LMN123,
+        ex:medical_school_LMN321,
+        ex:medical_school_LMN555,
+        ex:medical_school_LMN777,
+        ex:medical_school_LMN789,
+        ex:medical_school_LMN888,
+        ex:medical_school_LMN999,
+        ex:medical_school_LMX001,
+        ex:medical_school_MNO123,
+        ex:medical_school_MNO456,
+        ex:medical_school_MNO777,
+        ex:medical_school_MNO888,
+        ex:medical_school_NEW001,
+        ex:medical_school_OPQ123,
+        ex:medical_school_PQR456,
+        ex:medical_school_QRS001,
+        ex:medical_school_QRS777,
+        ex:medical_school_QRS789,
+        ex:medical_school_QRS888,
+        ex:medical_school_QRS999,
+        ex:medical_school_QRT001,
+        ex:medical_school_QWE001,
+        ex:medical_school_QWE123,
+        ex:medical_school_QWE456,
+        ex:medical_school_QWE777,
+        ex:medical_school_QWE789,
+        ex:medical_school_QWE999,
+        ex:medical_school_QWZ123,
+        ex:medical_school_RST001,
+        ex:medical_school_RST123,
+        ex:medical_school_RST555,
+        ex:medical_school_TUV001,
+        ex:medical_school_TUV456,
+        ex:medical_school_XYZ001,
+        ex:medical_school_XYZ004,
+        ex:medical_school_XYZ123,
+        ex:medical_school_XYZ555,
+        ex:medical_school_XYZ777,
+        ex:medical_school_XYZ789,
+        ex:medical_school_XYZ999,
+        ex:medical_school_YLM001,
+        ex:medical_school_ZQZ123 ;
+    ex:graduationYear 2017,
+        2022,
+        2023,
+        2024,
+        2025,
+        2028,
+        2038,
+        2039,
+        2040,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2046,
+        2047,
+        2048,
+        2049,
+        2050,
+        2051,
+        2052,
+        2053,
+        2054,
+        2055,
+        2056,
+        2057,
+        2058,
+        2059,
+        2060,
+        2061,
+        2062,
+        2063,
+        2064,
+        2065,
+        2066 ;
+    ex:medicalSpecialty "Allergy",
+        "Anesthesiology",
+        "Audiology",
+        "Cardiology",
+        "Dermatology",
+        "Dermatopathology",
+        "Family Medicine",
+        "Geriatrics",
+        "Immunogenetics",
+        "Infectious Disease",
+        "Neonatology",
+        "Neurology",
+        "Oncology",
+        "Pathology",
+        "Plastic Surgery",
+        "Podiatry",
+        "Rheumatology",
+        "Sports Medicine",
+        "Urology" ;
+    ex:usNPI "1123456896" .
+
+ex:facility_FC001 a ex:Facility ;
+    ex:abstract "A community health center offering primary care and preventive services in the AA001 region." ;
+    ex:address "1234 Maple Ridge Blvd, Zip AA001" ;
+    ex:name "Maple Ridge Health Center" ;
+    ex:numberOfBeds 70 ;
+    ex:numberOfEmployees 120 .
+

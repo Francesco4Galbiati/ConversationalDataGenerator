@@ -1,0 +1,10 @@
+# CQ6. Medical schools attended by doctors associated with Facility F.
+PREFIX gen: <http://example.org/>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+
+SELECT DISTINCT ?school WHERE {
+  VALUES ?facility { <urn:healtheqkg:replace:facility-f> }
+  ?placement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+  ?physician (heq:attendedMedSchool|heq:graduateFrom|gen:graduateFrom) ?school .
+}

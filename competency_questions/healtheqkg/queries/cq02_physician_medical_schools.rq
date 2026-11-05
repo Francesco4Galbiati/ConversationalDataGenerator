@@ -1,0 +1,8 @@
+# CQ2. Medical schools Doctor D attended.
+PREFIX gen: <http://example.org/>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+
+SELECT DISTINCT ?school WHERE {
+  VALUES ?physician { <urn:healtheqkg:replace:doctor-d> }
+  ?physician (heq:attendedMedSchool|heq:graduateFrom|gen:graduateFrom) ?school .
+}

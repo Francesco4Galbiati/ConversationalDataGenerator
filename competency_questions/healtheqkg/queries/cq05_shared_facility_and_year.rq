@@ -1,0 +1,23 @@
+# CQ5. Whether Doctors X and Y worked at the same facility in the same year.
+PREFIX gen: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+
+ASK WHERE {
+  VALUES (?doctorX ?doctorY) { (<urn:healtheqkg:replace:doctor-x> <urn:healtheqkg:replace:doctor-y>) }
+  FILTER(?doctorX != ?doctorY)
+  ?placement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?doctorX ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+  ?otherPlacement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?doctorY ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+  ?placement (heq:hasTimeReference|gen:hasTimeReference) ?time .
+  OPTIONAL { ?time (schema:value|rdfs:label) ?yearValue }
+  BIND(STR(COALESCE(?yearValue, ?time)) AS ?placementYear)
+  FILTER(REGEX(?placementYear, "^[0-9]{4}$"))
+  ?otherPlacement (heq:hasTimeReference|gen:hasTimeReference) ?otherTime .
+  OPTIONAL { ?otherTime (schema:value|rdfs:label) ?otherYearValue }
+  BIND(STR(COALESCE(?otherYearValue, ?otherTime)) AS ?otherPlacementYear)
+  FILTER(REGEX(?otherPlacementYear, "^[0-9]{4}$"))
+  FILTER(?placementYear = ?otherPlacementYear)
+}

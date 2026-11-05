@@ -1,0 +1,33 @@
+# CQ11 categorical adaptation.
+# Interpret the generated "high" label as the reference National ADI > 80 category.
+PREFIX gen: <http://example.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?specialty WHERE {
+  ?placement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+  ?physician (schema:medicalSpecialty|gen:medicalSpecialty) ?specialty .
+  ?placement (heq:hasTimeReference|gen:hasTimeReference) ?time .
+  OPTIONAL { ?time (schema:value|rdfs:label) ?yearValue }
+  BIND(STR(COALESCE(?yearValue, ?time)) AS ?placementYear)
+  FILTER(REGEX(?placementYear, "^[0-9]{4}$"))
+  ?facility schema:address/schema:postalCode ?postalCode .
+  # Bind the ZIP string before looking up the area in the RDF store.
+  # RDFLib distinguishes untyped strings from explicit xsd:string terms.
+  VALUES ?typedZip { false true }
+  BIND(IF(?typedZip, STRDT(STR(?postalCode), xsd:string), STR(?postalCode)) AS ?zipCode)
+  FILTER(BOUND(?zipCode))
+  FILTER EXISTS {
+    ?zipArea (heq:zipCodeValue|gen:zipCodeValue) ?zipCode ;
+             (heq:hasADISummary|heq:hasADIScore|gen:hasADIScore) ?adi .
+    ?adi (heq:referenceYear|heq:scoredIn|gen:scoredIn) ?adiYear .
+    FILTER(STR(?adiYear) = ?placementYear)
+    ?adi (heq:nationalScore|gen:nationalScore) ?rawScore .
+    BIND(xsd:integer(STR(?rawScore)) AS ?score)
+    FILTER(isLiteral(?rawScore))
+    FILTER(LCASE(STR(?rawScore)) = "high" || COALESCE(?score > 80 && ?score <= 100, false))
+  }
+}

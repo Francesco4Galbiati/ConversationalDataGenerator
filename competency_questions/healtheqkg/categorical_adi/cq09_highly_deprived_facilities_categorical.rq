@@ -1,0 +1,25 @@
+# CQ9 categorical adaptation.
+# Interpret the generated "high" label as the reference National ADI > 80 category.
+PREFIX gen: <http://example.org/>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?facility WHERE {
+  ?facility schema:address/schema:postalCode ?postalCode .
+  # Bind the ZIP string before looking up the area in the RDF store.
+  # RDFLib distinguishes untyped strings from explicit xsd:string terms.
+  VALUES ?typedZip { false true }
+  BIND(IF(?typedZip, STRDT(STR(?postalCode), xsd:string), STR(?postalCode)) AS ?zipCode)
+  FILTER(BOUND(?zipCode))
+  FILTER EXISTS {
+    ?zipArea (heq:zipCodeValue|gen:zipCodeValue) ?zipCode ;
+             (heq:hasADISummary|heq:hasADIScore|gen:hasADIScore) ?adi .
+    ?adi (heq:referenceYear|heq:scoredIn|gen:scoredIn) ?adiYear .
+    FILTER(STR(?adiYear) = "2020")
+    ?adi (heq:nationalScore|gen:nationalScore) ?rawScore .
+    BIND(xsd:integer(STR(?rawScore)) AS ?score)
+    FILTER(isLiteral(?rawScore))
+    FILTER(LCASE(STR(?rawScore)) = "high" || COALESCE(?score > 80 && ?score <= 100, false))
+  }
+}

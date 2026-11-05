@@ -1,0 +1,9 @@
+# CQ1. Facilities where Doctor D worked.
+PREFIX gen: <http://example.org/>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+
+SELECT DISTINCT ?facility WHERE {
+  VALUES ?physician { <urn:healtheqkg:replace:doctor-d> }
+  ?placement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+}

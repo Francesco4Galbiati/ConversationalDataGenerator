@@ -1,0 +1,19 @@
+# CQ4. National ADI at Doctor D's practice locations in their placement years.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?facility ?zipCode ?placementYear ?nationalScore WHERE {
+  VALUES ?physician { <urn:healtheqkg:replace:doctor-d> }
+  ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility) ?facility .
+  ?placement heq:hasTimeReference ?time .
+  OPTIONAL { ?time schema:value ?yearValue }
+  BIND(STR(COALESCE(?yearValue, ?time)) AS ?placementYear)
+  FILTER(REGEX(?placementYear, "^[0-9]{4}$"))
+  ?facility schema:address/schema:postalCode ?postalCode .
+  ?zipArea heq:zipCodeValue ?zipCode ;
+           (heq:hasADISummary|heq:hasADIScore) ?adi .
+  FILTER(STR(?postalCode) = STR(?zipCode))
+  ?adi (heq:referenceYear|heq:scoredIn) ?adiYear ; heq:nationalScore ?nationalScore .
+  FILTER(STR(?adiYear) = ?placementYear)
+}

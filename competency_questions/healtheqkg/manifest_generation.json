@@ -1,0 +1,140 @@
+[
+  {
+    "id": "CQ1",
+    "query": "queries/cq01_physician_facilities.rq",
+    "structural_sample": {
+      "variables": [
+        "physician"
+      ],
+      "types": [
+        "http://schema.org/Physician",
+        "http://healtheqkg.example.org/ontology#Physician",
+        "http://example.org/Physician"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "physician",
+      "adi": "non_adi"
+    }
+  },
+  {
+    "id": "CQ2",
+    "query": "queries/cq02_physician_medical_schools.rq",
+    "categories": {
+      "focus": "physician",
+      "adi": "non_adi"
+    },
+    "structural_sample": {
+      "variables": [
+        "physician"
+      ],
+      "types": [
+        "http://schema.org/Physician",
+        "http://healtheqkg.example.org/ontology#Physician",
+        "http://example.org/Physician"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  },
+  {
+    "id": "CQ3",
+    "query": "queries/cq03_placement_specialty.rq",
+    "categories": {
+      "focus": "physician",
+      "adi": "non_adi"
+    },
+    "structural_sample": {
+      "variables": [
+        "physician"
+      ],
+      "types": [
+        "http://schema.org/Physician",
+        "http://healtheqkg.example.org/ontology#Physician",
+        "http://example.org/Physician"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  },
+  {
+    "id": "CQ5",
+    "query": "queries/cq05_shared_facility_and_year.rq",
+    "categories": {
+      "focus": "healthcare_facility",
+      "adi": "non_adi"
+    },
+    "structural_sample": {
+      "variables": [
+        "doctorX",
+        "doctorY"
+      ],
+      "types": [
+        "http://schema.org/Physician",
+        "http://healtheqkg.example.org/ontology#Physician",
+        "http://example.org/Physician"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  },
+  {
+    "id": "CQ6",
+    "query": "queries/cq06_facility_medical_schools.rq",
+    "categories": {
+      "focus": "healthcare_facility",
+      "adi": "non_adi"
+    },
+    "structural_sample": {
+      "variables": [
+        "facility"
+      ],
+      "types": [
+        "http://healtheqkg.example.org/ontology#Facility",
+        "http://example.org/Facility"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  },
+  {
+    "id": "CQ9-categorical-adi",
+    "query": "categorical_adi/cq09_highly_deprived_facilities_categorical.rq",
+    "categories": {
+      "focus": "healthcare_facility",
+      "adi": "categorical_high_deprivation"
+    },
+    "structural_sample": {
+      "variables": [
+        "facility"
+      ],
+      "types": [
+        "http://healtheqkg.example.org/ontology#Facility",
+        "http://example.org/Facility"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  },
+  {
+    "id": "CQ11-categorical-adi",
+    "query": "categorical_adi/cq11_specialties_in_high_deprivation_categorical.rq",
+    "categories": {
+      "focus": "health_equity",
+      "adi": "categorical_high_deprivation"
+    },
+    "structural_sample": {
+      "variables": [
+        "facility"
+      ],
+      "types": [
+        "http://healtheqkg.example.org/ontology#Facility",
+        "http://example.org/Facility"
+      ],
+      "size": 200,
+      "seed": 42
+    }
+  }
+]

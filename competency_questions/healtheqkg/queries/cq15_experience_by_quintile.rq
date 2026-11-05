@@ -1,0 +1,39 @@
+# CQ15. Physician experience across facility deprivation quintiles.
+# Compares 2020 placements using years since graduation as an experience proxy.
+# Each facility contributes one mean to its quintile.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?quintile (AVG(?facilityMean) AS ?meanYearsSinceGraduation) (COUNT(*) AS ?facilities) WHERE {
+  { SELECT ?quintile ?facility (AVG(?experience) AS ?facilityMean) WHERE {
+    { SELECT DISTINCT ?quintile ?facility ?physician ?experience WHERE {
+      ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+                 (heq:worksAt|heq:hasFacility) ?facility .
+      ?placement heq:hasTimeReference ?time .
+      OPTIONAL { ?time schema:value ?yearValue }
+      BIND(STR(COALESCE(?yearValue, ?time)) AS ?placementYear)
+      FILTER(REGEX(?placementYear, "^[0-9]{4}$"))
+      FILTER(?placementYear = "2020")
+      ?physician heq:graduationYear ?graduated .
+      BIND(STR(?graduated) AS ?graduationYear)
+      FILTER(REGEX(?graduationYear, "^[0-9]{4}$"))
+      BIND(xsd:integer(?placementYear) - xsd:integer(?graduationYear) AS ?experience)
+      FILTER(?experience >= 0)
+      ?facility schema:address/schema:postalCode ?postalCode .
+      ?zipArea heq:zipCodeValue ?zipCode ;
+               (heq:hasADISummary|heq:hasADIScore) ?adi .
+      FILTER(STR(?postalCode) = STR(?zipCode))
+      ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+      FILTER(STR(?adiYear) = "2020")
+      ?adi heq:nationalScore ?rawScore .
+      BIND(xsd:integer(STR(?rawScore)) AS ?score)
+      FILTER(?score >= 1 && ?score <= 100)
+      BIND(xsd:integer(FLOOR((?score - 1) / 20) + 1) AS ?quintile)
+    } }
+  } GROUP BY ?quintile ?facility }
+  FILTER(?quintile >= 1)
+}
+GROUP BY ?quintile
+HAVING (COUNT(?facility) > 0)
+ORDER BY ?quintile

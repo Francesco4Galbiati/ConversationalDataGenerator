@@ -1,0 +1,24 @@
+# CQ11. Primary specialties at placements with National ADI above 80.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?specialty WHERE {
+  ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility) ?facility .
+  ?physician schema:medicalSpecialty ?specialty .
+  ?placement heq:hasTimeReference ?time .
+  OPTIONAL { ?time schema:value ?yearValue }
+  BIND(STR(COALESCE(?yearValue, ?time)) AS ?placementYear)
+  FILTER(REGEX(?placementYear, "^[0-9]{4}$"))
+  ?facility schema:address/schema:postalCode ?postalCode .
+  ?zipArea heq:zipCodeValue ?zipCode ;
+           (heq:hasADISummary|heq:hasADIScore) ?adi .
+  FILTER(STR(?postalCode) = STR(?zipCode))
+  ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+  FILTER(STR(?adiYear) = ?placementYear)
+  ?adi heq:nationalScore ?rawScore .
+  BIND(xsd:integer(STR(?rawScore)) AS ?score)
+  FILTER(?score >= 1 && ?score <= 100)
+  FILTER(?score > 80)
+}

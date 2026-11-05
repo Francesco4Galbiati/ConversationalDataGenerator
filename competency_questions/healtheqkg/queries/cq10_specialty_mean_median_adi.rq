@@ -1,0 +1,55 @@
+# CQ10. Mean and median National ADI for practice locations of specialty S.
+# Uses 2020 scores and one observation per distinct ZIP area and score.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (?mean AS ?meanNationalADI) (AVG(?score) AS ?medianNationalADI) WHERE {
+  { SELECT ?score ?frequency
+           (SUM(?otherFrequency) AS ?total)
+           (SUM(IF(?otherScore < ?score, ?otherFrequency, 0)) AS ?below)
+           (SUM(?otherScore * ?otherFrequency) AS ?sumScores)
+    WHERE {
+      { SELECT ?score (COUNT(*) AS ?frequency) WHERE {
+        { SELECT DISTINCT ?zipArea ?score WHERE {
+          ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+                     (heq:worksAt|heq:hasFacility) ?facility .
+          ?physician schema:medicalSpecialty "REPLACE_WITH_SPECIALTY_S" .
+          ?facility schema:address/schema:postalCode ?postalCode .
+          ?zipArea heq:zipCodeValue ?zipCode ;
+                   (heq:hasADISummary|heq:hasADIScore) ?adi .
+          FILTER(STR(?postalCode) = STR(?zipCode))
+          ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+          FILTER(STR(?adiYear) = "2020")
+          ?adi heq:nationalScore ?rawScore .
+          BIND(xsd:integer(STR(?rawScore)) AS ?score)
+          FILTER(?score >= 1 && ?score <= 100)
+        } }
+      } GROUP BY ?score }
+      { SELECT ?otherScore (COUNT(*) AS ?otherFrequency) WHERE {
+        { SELECT DISTINCT ?zipArea ?score WHERE {
+          ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+                     (heq:worksAt|heq:hasFacility) ?facility .
+          ?physician schema:medicalSpecialty "REPLACE_WITH_SPECIALTY_S" .
+          ?facility schema:address/schema:postalCode ?postalCode .
+          ?zipArea heq:zipCodeValue ?zipCode ;
+                   (heq:hasADISummary|heq:hasADIScore) ?adi .
+          FILTER(STR(?postalCode) = STR(?zipCode))
+          ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+          FILTER(STR(?adiYear) = "2020")
+          ?adi heq:nationalScore ?rawScore .
+          BIND(xsd:integer(STR(?rawScore)) AS ?score)
+          FILTER(?score >= 1 && ?score <= 100)
+        } }
+        BIND(?score AS ?otherScore)
+      } GROUP BY ?otherScore }
+      FILTER(?score >= 1 && ?otherScore >= 1)
+    } GROUP BY ?score ?frequency
+  }
+  # Keep score bins containing either central observation.
+  FILTER(?below < FLOOR((?total + 2) / 2) &&
+         ?below + ?frequency >= FLOOR((?total + 1) / 2))
+  BIND(?sumScores / ?total AS ?mean)
+}
+GROUP BY ?mean
+HAVING (COUNT(?score) > 0)

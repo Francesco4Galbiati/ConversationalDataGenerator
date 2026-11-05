@@ -1,0 +1,23 @@
+# CQ14. Percentage of physicians practicing in the most deprived quintile.
+# Denominator: distinct physicians with at least one practice location with valid 2020 ADI.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (100.0 * SUM(?inMostDeprived) / COUNT(*) AS ?percentage) WHERE {
+  { SELECT ?physician (MAX(IF(?score > 80, 1, 0)) AS ?inMostDeprived) WHERE {
+    ?placement (heq:hasParticipant|heq:placementFor) ?physician ;
+               (heq:worksAt|heq:hasFacility) ?facility .
+    ?facility schema:address/schema:postalCode ?postalCode .
+    ?zipArea heq:zipCodeValue ?zipCode ;
+             (heq:hasADISummary|heq:hasADIScore) ?adi .
+    FILTER(STR(?postalCode) = STR(?zipCode))
+    ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+    FILTER(STR(?adiYear) = "2020")
+    ?adi heq:nationalScore ?rawScore .
+    BIND(xsd:integer(STR(?rawScore)) AS ?score)
+    FILTER(?score >= 1 && ?score <= 100)
+  } GROUP BY ?physician }
+  FILTER(BOUND(?physician))
+}
+HAVING (COUNT(?physician) > 0)

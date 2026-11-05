@@ -1,0 +1,14 @@
+# CQ3. Primary specialty of Doctor D during a placement.
+# The ontology records specialty on the physician. This projects it onto each selected placement.
+PREFIX gen: <http://example.org/>
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?placement ?specialty WHERE {
+  VALUES ?physician { <urn:healtheqkg:replace:doctor-d> }
+  # Uncomment and fill in to select one placement.
+  # VALUES ?placement { <urn:healtheqkg:replace:placement> }
+  ?placement (heq:hasParticipant|heq:placementFor|gen:placementFor) ?physician ;
+             (heq:worksAt|heq:hasFacility|gen:hasFacility) ?facility .
+  ?physician (schema:medicalSpecialty|gen:medicalSpecialty) ?specialty .
+}

@@ -1,0 +1,14 @@
+# CQ7. National ADI percentile for Facility F's ZIP area in 2020.
+PREFIX heq: <http://healtheqkg.example.org/ontology#>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?zipCode ?nationalScore WHERE {
+  VALUES ?facility { <urn:healtheqkg:replace:facility-f> }
+  ?facility schema:address/schema:postalCode ?postalCode .
+  ?zipArea heq:zipCodeValue ?zipCode ;
+           (heq:hasADISummary|heq:hasADIScore) ?adi .
+  FILTER(STR(?postalCode) = STR(?zipCode))
+  ?adi (heq:referenceYear|heq:scoredIn) ?adiYear .
+  FILTER(STR(?adiYear) = "2020")
+  ?adi heq:nationalScore ?nationalScore .
+}
