@@ -60,10 +60,13 @@ def gen_dialogue_turn(clear=False, n=3, triples_file=None):
             ---
 
             ### INTENTS ###
+            Cardinality is the relative target frequency for choosing an eligible intent over multiple turns.
+            Higher values mean more turns. A missing or zero value gives no frequency target.
             {[
             {
                 "name": i,
-                "required_entities": ops[i]["preconditions"]["classes"]
+                "required_entities": ops[i]["preconditions"]["classes"],
+                "cardinality": ops[i]["preconditions"].get("cardinality"),
             }
             for i in ops
             ]}

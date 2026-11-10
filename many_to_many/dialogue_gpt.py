@@ -2,8 +2,9 @@ import ast
 import json
 import conf
 from time import time
-from conf import dialogue_client, ops, querent_llm, witness_llm, precondition_slots, redis
+from conf import dialogue_client, ops, querent_llm, witness_llm, redis
 from json_repair import repair_json
+from functions import least_used_precondition_ids
 
 def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
 
@@ -13,20 +14,8 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
         conf.chat_histories = [[] for _ in range(n)]
         conf.turn_counter = 0
 
-    entities_text = []
-    for slot in precondition_slots:
-        ids = redis.smembers(f"entities:{slot}:idx0")
-        if ids:
-            entities_text.append(
-                f"{slot.upper()}: {', '.join(ids)}"
-            )
-    conf.chat_history.append({
-        'role': 'system',
-        'content': (
-            "AVAILABLE ENTITY IDS (use only these):\n"
-            + "\n".join(entities_text)
-        )
-    })
+    scheduled_intents = [intent for intent in ops if intent in instructions]
+    offered_ids = least_used_precondition_ids(scheduled_intents, mode="many_to_many")
 
     conf.chat_history.append({
         "role": "system",
@@ -43,14 +32,14 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
             ---
 
             ### AVAILABLE ENTITIES ###
-            Only these entity IDs may be used:
+            Eligible IDs are grouped by intent and slot:
 
-            {entities_text}
+            {json.dumps(offered_ids)}
 
             Rules:
-            - Only use IDs in this list
+            - Use only IDs listed for the selected intent and slot
             - Never invent entities
-            - If a required entity type has no available IDs → the intent is invalid
+            - An intent is invalid if any required slot has an empty ID list
 
             ---
 
@@ -62,13 +51,16 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
             ---
 
             ### INTENTS ###
+            Cardinality is the relative target frequency for choosing an eligible intent over multiple turns.
+            Higher values mean more turns. A missing or zero value gives no frequency target.
             Available intents:
 
             {[
             {
                 i: {
                     "description": ops[i]["preconditions"]["description"],
-                    "required_entities": ops[i]["preconditions"]["classes"]
+                    "required_entities": ops[i]["preconditions"]["classes"],
+                    "cardinality": ops[i]["preconditions"].get("cardinality"),
                 }
             }
             for i in ops if i in instructions
@@ -79,7 +71,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
             ### INTENT SELECTION RULES ###
 
             Step 1 — Eligibility:
-            - Keep only intents whose required entity types exist in AVAILABLE ENTITIES
+            - Keep only intents with an offered ID for every required slot of that intent
 
             Step 2 — Exclusions:
             - Do NOT select the most recent intent
@@ -149,12 +141,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
     end = time()
     conf.querent_time += (end - start)
 
-    if len(conf.chat_history) != 0:
-        conf.chat_history.pop()
-    if len(conf.chat_history) != 0:
-        conf.chat_history.pop()
-    if len(conf.chat_history) != 0:
-        conf.chat_history.pop()
+    del conf.chat_history[-2:]
 
     output_json = ast.literal_eval(repair_json(dialogue["message"]["content"]).replace('null', 'None'))
     intent = output_json["Intent"]

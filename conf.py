@@ -4,7 +4,7 @@ import os
 import redis
 import argparse
 from rdflib import *
-from ollama import Client
+from ollama_retry import RetryingOllamaClient
 from datetime import datetime
 from itertools import cycle
 from collections import defaultdict
@@ -15,13 +15,13 @@ from pydantic_ai.providers.ollama import OllamaProvider
 # PARAMETERS
 parser = argparse.ArgumentParser()
 parser.add_argument("--conversation", type=int, default=1)
-parser.add_argument("--target", type=int, default=5000)
+parser.add_argument("--target", type=int, default=10000)
 parser.add_argument("--witnesses_n", type=int, default=3)
 parser.add_argument("--model_host", type=str, default='https://ollama-ccdd.pagoda.liris.cnrs.fr/ollama')
-parser.add_argument("--api_key", type=str, default='')
+parser.add_argument("--api_key", type=str, default='sk-154b7d9623ae424ca9e362e2da0fbfdd')
 parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
-parser.add_argument("--contract", type=str, default='LUBM_contract.yaml')
+parser.add_argument("--contract", type=str, default='HealthEQKG_contract.yaml')
 parser.add_argument("--redis_port", type=int, default=6379)
 
 args = parser.parse_args()
@@ -123,9 +123,10 @@ witness_model = OpenAIChatModel(
     model_name=witness_llm,
     provider=OllamaProvider(base_url=dialogue_generator_host + '/v1')
 )
-dialogue_client = Client(
+dialogue_client = RetryingOllamaClient(
     host=dialogue_generator_host,
-    headers={'Authorization': f'Bearer {api_key}'}
+    headers={'Authorization': f'Bearer {api_key}'},
+    capture_dir=os.getenv('CDG_OLLAMA_CAPTURE_DIR'),
 )
 
 # Redis

@@ -1,0 +1,2475 @@
+{
+  "evaluated_graph": "/Users/student/Desktop/ConversationalDataGenerator/resources/output/HealthEQKG/gpt-oss:120b/1to1/10000t/1/output.ttl",
+  "generated_records": "/Users/student/Desktop/ConversationalDataGenerator/resources/output/HealthEQKG/gpt-oss:120b/1to1/10000t/1/triples.json",
+  "source_records": 1707,
+  "seed": 49,
+  "sample_per_question": 20,
+  "sampling": "Uniform without replacement over distinct (input, returned tuple) cases from the saved synthetic sample; excludes inputs returning no tuples.",
+  "rubric": {
+    "traceable": "Required links are supported by generated records. A physician–facility placement pair must occur together in a single record.",
+    "internally_consistent": "At least one traced path has no conflicting physician, facility, or year for the placement. CQ2 flags multiple unscoped graduation years; CQ3 flags multiple unqualified specialties. Conflicting names for a returned school or facility also fail.",
+    "task_specific": "Exactly one human-readable facility or school name for CQ1/CQ2/CQ6. CQ3 requires explicit placement- or year-scoped specialty evidence."
+  },
+  "questions": [
+    {
+      "id": "CQ1",
+      "pool_size": 348,
+      "audited": 20,
+      "passes": {
+        "traceable": 14,
+        "internally_consistent": 11,
+        "task_specific": 17
+      },
+      "cases": [
+        {
+          "input": "http://example.org/physician_ABX003",
+          "answer": [
+            "http://example.org/facility_FA002"
+          ],
+          "names": [
+            "Pinebrook Community Clinic"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+            "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP123",
+              "physician": "http://example.org/physician_ABX003",
+              "facility": "http://example.org/facility_FA002",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+                "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_HJK001",
+          "answer": [
+            "http://example.org/facility_FG010"
+          ],
+          "names": [
+            "Pinebrook Wellness Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKX010",
+              "physician": "http://example.org/physician_HJK001",
+              "facility": "http://example.org/facility_FG010",
+              "placement_record_lines": [
+                728
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_LMN123",
+          "answer": [
+            "http://example.org/facility_FC123"
+          ],
+          "names": [
+            "Harmony Hills Medical Center",
+            "Maple Ridge Community Clinic"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Answer entity has multiple names: Harmony Hills Medical Center, Maple Ridge Community Clinic"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY124",
+              "physician": "http://example.org/physician_LMN123",
+              "facility": "http://example.org/facility_FC123",
+              "placement_record_lines": [
+                875
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABZ004",
+          "answer": [
+            "http://example.org/facility_FA300"
+          ],
+          "names": [
+            "Harmony Hills Medical Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP1010",
+              "physician": "http://example.org/physician_ABZ004",
+              "facility": "http://example.org/facility_FA300",
+              "placement_record_lines": [
+                307
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_GHI789",
+          "answer": [
+            "http://example.org/facility_LMX777"
+          ],
+          "names": [
+            "Maple Ridge Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY600",
+              "physician": "http://example.org/physician_GHI789",
+              "facility": "http://example.org/facility_LMX777",
+              "placement_record_lines": [
+                1360
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_QWX002",
+          "answer": [
+            "http://example.org/facility_YYX001"
+          ],
+          "names": [
+            "Maple Ridge Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_QRT999",
+              "physician": "http://example.org/physician_QWX002",
+              "facility": "http://example.org/facility_YYX001",
+              "placement_record_lines": [
+                1332
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_OPQ555",
+          "answer": [
+            "http://example.org/facility_GHZ123"
+          ],
+          "names": [
+            "Cedar Ridge Regional Hospital"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FB123, http://example.org/facility_GHZ123",
+            "Placement has multiple physicians: http://example.org/physician_OPQ555, http://example.org/physician_QRS123",
+            "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMN123",
+              "physician": "http://example.org/physician_OPQ555",
+              "facility": "http://example.org/facility_GHZ123",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_OPQ555, http://example.org/physician_QRS123",
+                "Placement has multiple facilities: http://example.org/facility_FB123, http://example.org/facility_GHZ123",
+                "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABU001",
+          "answer": [
+            "http://example.org/facility_FG010"
+          ],
+          "names": [
+            "Pinebrook Wellness Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_ABU002",
+              "physician": "http://example.org/physician_ABU001",
+              "facility": "http://example.org/facility_FG010",
+              "placement_record_lines": [
+                734
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABQ001",
+          "answer": [
+            "http://example.org/facility_FA004"
+          ],
+          "names": [
+            "Maple Ridge Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JQZ777",
+              "physician": "http://example.org/physician_ABQ001",
+              "facility": "http://example.org/facility_FA004",
+              "placement_record_lines": [
+                1439
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_EFH001",
+          "answer": [
+            "http://example.org/facility_FK001"
+          ],
+          "names": [
+            "Maple Ridge Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+            "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP20000",
+              "physician": "http://example.org/physician_EFH001",
+              "facility": "http://example.org/facility_FK001",
+              "placement_record_lines": [
+                376
+              ],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+                "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_BM001",
+          "answer": [
+            "http://example.org/facility_BKZ001"
+          ],
+          "names": [
+            "Aspen Ridge Health Center"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+            "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_BM001",
+              "facility": "http://example.org/facility_BKZ001",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_LMX888",
+          "answer": [
+            "http://example.org/facility_GHY001"
+          ],
+          "names": [
+            "Maple Ridge Health Center",
+            "Pinebrook Wellness Center"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FDX001, http://example.org/facility_GHY001",
+            "Placement has multiple physicians: http://example.org/physician_LMX888, http://example.org/physician_QWX002",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027",
+            "Answer entity has multiple names: Maple Ridge Health Center, Pinebrook Wellness Center"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMQ888",
+              "physician": "http://example.org/physician_LMX888",
+              "facility": "http://example.org/facility_GHY001",
+              "placement_record_lines": [
+                1467
+              ],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_LMX888, http://example.org/physician_QWX002",
+                "Placement has multiple facilities: http://example.org/facility_FDX001, http://example.org/facility_GHY001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABQ001",
+          "answer": [
+            "http://example.org/facility_FCX123"
+          ],
+          "names": [
+            "Cedar Ridge Health Center West"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKM123",
+              "physician": "http://example.org/physician_ABQ001",
+              "facility": "http://example.org/facility_FCX123",
+              "placement_record_lines": [
+                1451
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_XYZ002",
+          "answer": [
+            "http://example.org/facility_GB001"
+          ],
+          "names": [
+            "Maple Grove Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_RST001",
+              "physician": "http://example.org/physician_XYZ002",
+              "facility": "http://example.org/facility_GB001",
+              "placement_record_lines": [
+                954
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_QWX001",
+          "answer": [
+            "http://example.org/facility_JYZ001"
+          ],
+          "names": [
+            "Cedar Ridge Regional Hospital"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FXY001, http://example.org/facility_FXZ001, http://example.org/facility_JYZ001, http://example.org/facility_LM001",
+            "Placement has multiple physicians: http://example.org/physician_BVC001, http://example.org/physician_LMX999, http://example.org/physician_MNO999, http://example.org/physician_QWX001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JQZ001",
+              "physician": "http://example.org/physician_QWX001",
+              "facility": "http://example.org/facility_JYZ001",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BVC001, http://example.org/physician_LMX999, http://example.org/physician_MNO999, http://example.org/physician_QWX001",
+                "Placement has multiple facilities: http://example.org/facility_FXY001, http://example.org/facility_FXZ001, http://example.org/facility_JYZ001, http://example.org/facility_LM001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_NV001",
+          "answer": [
+            "http://example.org/facility_HZ002"
+          ],
+          "names": [
+            "Maple Grove Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY996",
+              "physician": "http://example.org/physician_NV001",
+              "facility": "http://example.org/facility_HZ002",
+              "placement_record_lines": [
+                1010
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_DR001",
+          "answer": [
+            "http://example.org/facility_FC001"
+          ],
+          "names": [
+            "Sunrise Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP200",
+              "physician": "http://example.org/physician_DR001",
+              "facility": "http://example.org/facility_FC001",
+              "placement_record_lines": [
+                97
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_VBN001",
+          "answer": [
+            "http://example.org/facility_GHY001"
+          ],
+          "names": [
+            "Maple Ridge Health Center",
+            "Pinebrook Wellness Center"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_GHY001, http://example.org/facility_GJX123, http://example.org/facility_MNO123, http://example.org/facility_XZQ001, http://example.org/facility_ZXQ123",
+            "Placement has multiple physicians: http://example.org/physician_ABC555, http://example.org/physician_GHI999, http://example.org/physician_KLM777, http://example.org/physician_OPQ123, http://example.org/physician_VBN001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027",
+            "Answer entity has multiple names: Maple Ridge Health Center, Pinebrook Wellness Center"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKL555",
+              "physician": "http://example.org/physician_VBN001",
+              "facility": "http://example.org/facility_GHY001",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABC555, http://example.org/physician_GHI999, http://example.org/physician_KLM777, http://example.org/physician_OPQ123, http://example.org/physician_VBN001",
+                "Placement has multiple facilities: http://example.org/facility_GHY001, http://example.org/facility_GJX123, http://example.org/facility_MNO123, http://example.org/facility_XZQ001, http://example.org/facility_ZXQ123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_EFI001",
+          "answer": [
+            "http://example.org/facility_FK002"
+          ],
+          "names": [
+            "Oakridge Community Health Center"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMX001",
+              "physician": "http://example.org/physician_EFI001",
+              "facility": "http://example.org/facility_FK002",
+              "placement_record_lines": [
+                543
+              ],
+              "additional_record_lines": [],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_QWZ777",
+          "answer": [
+            "http://example.org/facility_HR001"
+          ],
+          "names": [
+            "Cedar Springs Health Center"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FDX002, http://example.org/facility_FG123, http://example.org/facility_HR001",
+            "Placement has multiple physicians: http://example.org/physician_LMN777, http://example.org/physician_LMX777, http://example.org/physician_QWZ777",
+            "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKZ777",
+              "physician": "http://example.org/physician_QWZ777",
+              "facility": "http://example.org/facility_HR001",
+              "placement_record_lines": [],
+              "additional_record_lines": [],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_LMN777, http://example.org/physician_LMX777, http://example.org/physician_QWZ777",
+                "Placement has multiple facilities: http://example.org/facility_FDX002, http://example.org/facility_FG123, http://example.org/facility_HR001",
+                "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CQ2",
+      "pool_size": 114,
+      "audited": 20,
+      "passes": {
+        "traceable": 20,
+        "internally_consistent": 18,
+        "task_specific": 20
+      },
+      "cases": [
+        {
+          "input": "http://example.org/physician_ABU001",
+          "answer": [
+            "http://example.org/medical_school_XZC123"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            737
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_EF001",
+          "answer": [
+            "http://example.org/medical_school_NV001"
+          ],
+          "names": [
+            "Willowbrook Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            137
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_EFH003",
+          "answer": [
+            "http://example.org/medical_school_CDX002"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            512
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_ABZ002",
+          "answer": [
+            "http://example.org/medical_school_MNQ001"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            333
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_DRZ001",
+          "answer": [
+            "http://example.org/medical_school_QWE002"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            938
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_MNO123",
+          "answer": [
+            "http://example.org/medical_school_LMN321"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Physician has multiple unscoped graduation years: 2015, 2022"
+          ],
+          "direct_record_lines": [
+            1062
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_HJK123",
+          "answer": [
+            "http://example.org/medical_school_QRS123"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1083
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_HIJ010",
+          "answer": [
+            "http://example.org/medical_school_EFX001"
+          ],
+          "names": [
+            "Silverlake Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            421
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_QRT124",
+          "answer": [
+            "http://example.org/medical_school_VWX001"
+          ],
+          "names": [
+            "Cedar Grove Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1286
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_ABC777",
+          "answer": [
+            "http://example.org/medical_school_DEF777"
+          ],
+          "names": [
+            "Silvercrest Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1132
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_LMR003",
+          "answer": [
+            "http://example.org/medical_school_NVA001"
+          ],
+          "names": [
+            "Summit Crest Medical University"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1431
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_ABC555",
+          "answer": [
+            "http://example.org/medical_school_DEF888"
+          ],
+          "names": [
+            "Cedarbrook Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1488
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_MNO123",
+          "answer": [
+            "http://example.org/medical_school_NYC001"
+          ],
+          "names": [
+            "Harborview School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Physician has multiple unscoped graduation years: 2015, 2022"
+          ],
+          "direct_record_lines": [
+            298
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_MD001",
+          "answer": [
+            "http://example.org/medical_school_MS001"
+          ],
+          "names": [
+            "Northbridge University School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            17
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_DEF999",
+          "answer": [
+            "http://example.org/medical_school_MZ001"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            945
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_ABZ999",
+          "answer": [
+            "http://example.org/medical_school_XZQ999"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            814
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_GH900",
+          "answer": [
+            "http://example.org/medical_school_ABX001"
+          ],
+          "names": [
+            "Harborview School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            326
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_LMX999",
+          "answer": [
+            "http://example.org/medical_school_LQZ001"
+          ],
+          "names": [
+            "Summit Crest Medical University"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            1572
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_KLM999",
+          "answer": [
+            "http://example.org/medical_school_QWZ123"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            856
+          ],
+          "supporting_paths": []
+        },
+        {
+          "input": "http://example.org/physician_HJK001",
+          "answer": [
+            "http://example.org/medical_school_LMY001"
+          ],
+          "names": [
+            "Cedar Ridge Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [
+            590
+          ],
+          "supporting_paths": []
+        }
+      ]
+    },
+    {
+      "id": "CQ3",
+      "pool_size": 135,
+      "audited": 20,
+      "passes": {
+        "traceable": 20,
+        "internally_consistent": 10,
+        "task_specific": 0
+      },
+      "cases": [
+        {
+          "input": "http://example.org/physician_ABW001",
+          "answer": [
+            "http://example.org/job_placement_JP2011",
+            "Sleep Medicine"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP2011",
+              "physician": "http://example.org/physician_ABW001",
+              "facility": "http://example.org/facility_HZ001",
+              "placement_record_lines": [
+                474
+              ],
+              "additional_record_lines": [
+                485
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_KLM001",
+          "answer": [
+            "http://example.org/job_placement_JKX998",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKX998",
+              "physician": "http://example.org/physician_KLM001",
+              "facility": "http://example.org/facility_FA900",
+              "placement_record_lines": [
+                693
+              ],
+              "additional_record_lines": [
+                591
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_LMX888",
+          "answer": [
+            "http://example.org/job_placement_XYZ789",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_GHY123, http://example.org/facility_LMN123",
+            "Placement has multiple physicians: http://example.org/physician_LMX888, http://example.org/physician_QWX010",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_XYZ789",
+              "physician": "http://example.org/physician_LMX888",
+              "facility": "http://example.org/facility_GHY123",
+              "placement_record_lines": [
+                1501
+              ],
+              "additional_record_lines": [
+                1470
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_LMX888, http://example.org/physician_QWX010",
+                "Placement has multiple facilities: http://example.org/facility_GHY123, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_XYZ789",
+              "physician": "http://example.org/physician_LMX888",
+              "facility": "http://example.org/facility_LMN123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1470
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_LMX888, http://example.org/physician_QWX010",
+                "Placement has multiple facilities: http://example.org/facility_GHY123, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABZ999",
+          "answer": [
+            "http://example.org/job_placement_JPX998",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JPX998",
+              "physician": "http://example.org/physician_ABZ999",
+              "facility": "http://example.org/facility_GV001",
+              "placement_record_lines": [
+                812
+              ],
+              "additional_record_lines": [
+                823
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_JKL123",
+          "answer": [
+            "http://example.org/job_placement_JP1235",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP1235",
+              "physician": "http://example.org/physician_JKL123",
+              "facility": "http://example.org/facility_FG001",
+              "placement_record_lines": [
+                349
+              ],
+              "additional_record_lines": [
+                464
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_XYZ124",
+          "answer": [
+            "http://example.org/job_placement_LM123",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LM123",
+              "physician": "http://example.org/physician_XYZ124",
+              "facility": "http://example.org/facility_FE123",
+              "placement_record_lines": [
+                933
+              ],
+              "additional_record_lines": [
+                943
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABQ001",
+          "answer": [
+            "http://example.org/job_placement_JKM123",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKM123",
+              "physician": "http://example.org/physician_ABQ001",
+              "facility": "http://example.org/facility_FCX123",
+              "placement_record_lines": [
+                1451
+              ],
+              "additional_record_lines": [
+                1456
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABC777",
+          "answer": [
+            "http://example.org/job_placement_LMN999",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA600, http://example.org/facility_FA777, http://example.org/facility_FCZ001, http://example.org/facility_LMN123",
+            "Placement has multiple physicians: http://example.org/physician_ABC001, http://example.org/physician_ABC777, http://example.org/physician_UWX001, http://example.org/physician_VWX999",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027, http://example.org/year_2028"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMN999",
+              "physician": "http://example.org/physician_ABC777",
+              "facility": "http://example.org/facility_FA600",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1155
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABC001, http://example.org/physician_ABC777, http://example.org/physician_UWX001, http://example.org/physician_VWX999",
+                "Placement has multiple facilities: http://example.org/facility_FA600, http://example.org/facility_FA777, http://example.org/facility_FCZ001, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027, http://example.org/year_2028"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_LMN999",
+              "physician": "http://example.org/physician_ABC777",
+              "facility": "http://example.org/facility_FA777",
+              "placement_record_lines": [
+                1129
+              ],
+              "additional_record_lines": [
+                1155
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABC001, http://example.org/physician_ABC777, http://example.org/physician_UWX001, http://example.org/physician_VWX999",
+                "Placement has multiple facilities: http://example.org/facility_FA600, http://example.org/facility_FA777, http://example.org/facility_FCZ001, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027, http://example.org/year_2028"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_LMN999",
+              "physician": "http://example.org/physician_ABC777",
+              "facility": "http://example.org/facility_FCZ001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1155
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABC001, http://example.org/physician_ABC777, http://example.org/physician_UWX001, http://example.org/physician_VWX999",
+                "Placement has multiple facilities: http://example.org/facility_FA600, http://example.org/facility_FA777, http://example.org/facility_FCZ001, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027, http://example.org/year_2028"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_LMN999",
+              "physician": "http://example.org/physician_ABC777",
+              "facility": "http://example.org/facility_LMN123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1155
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABC001, http://example.org/physician_ABC777, http://example.org/physician_UWX001, http://example.org/physician_VWX999",
+                "Placement has multiple facilities: http://example.org/facility_FA600, http://example.org/facility_FA777, http://example.org/facility_FCZ001, http://example.org/facility_LMN123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027, http://example.org/year_2028"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_GH123",
+          "answer": [
+            "http://example.org/job_placement_JP124",
+            "Endocrinology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+            "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP124",
+              "physician": "http://example.org/physician_GH123",
+              "facility": "http://example.org/facility_FC124",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                107
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+                "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JP124",
+              "physician": "http://example.org/physician_GH123",
+              "facility": "http://example.org/facility_FC909",
+              "placement_record_lines": [
+                82
+              ],
+              "additional_record_lines": [
+                107
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+                "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_CCC001",
+          "answer": [
+            "http://example.org/job_placement_GJ002",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple physicians: http://example.org/physician_CCC001, http://example.org/physician_HRM001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_GJ002",
+              "physician": "http://example.org/physician_CCC001",
+              "facility": "http://example.org/facility_GJ001",
+              "placement_record_lines": [
+                968
+              ],
+              "additional_record_lines": [
+                1064
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_CCC001, http://example.org/physician_HRM001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_QRT124",
+          "answer": [
+            "http://example.org/job_placement_JKY126",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY126",
+              "physician": "http://example.org/physician_QRT124",
+              "facility": "http://example.org/facility_LMX124",
+              "placement_record_lines": [
+                1220
+              ],
+              "additional_record_lines": [
+                1659
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_XYZ004",
+          "answer": [
+            "http://example.org/job_placement_JP1004",
+            "Palliative Care"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Physician has multiple unqualified specialties: Nephrology, Palliative Care"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP1004",
+              "physician": "http://example.org/physician_XYZ004",
+              "facility": "http://example.org/facility_FC010",
+              "placement_record_lines": [
+                251
+              ],
+              "additional_record_lines": [
+                675
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_DRZ003",
+          "answer": [
+            "http://example.org/job_placement_JKY123",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+            "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_BKZ001",
+              "placement_record_lines": [
+                1654
+              ],
+              "additional_record_lines": [
+                1677
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_FA123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1677
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_FA126",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1677
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_FX123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1677
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_GHI001",
+          "answer": [
+            "http://example.org/job_placement_GHI777",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_DEF001, http://example.org/facility_FXY001",
+            "Placement has multiple physicians: http://example.org/physician_GHI001, http://example.org/physician_QWX007",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_GHI777",
+              "physician": "http://example.org/physician_GHI001",
+              "facility": "http://example.org/facility_DEF001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                584
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_GHI001, http://example.org/physician_QWX007",
+                "Placement has multiple facilities: http://example.org/facility_DEF001, http://example.org/facility_FXY001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_GHI777",
+              "physician": "http://example.org/physician_GHI001",
+              "facility": "http://example.org/facility_FXY001",
+              "placement_record_lines": [
+                1319
+              ],
+              "additional_record_lines": [
+                584
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_GHI001, http://example.org/physician_QWX007",
+                "Placement has multiple facilities: http://example.org/facility_DEF001, http://example.org/facility_FXY001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_LMN123",
+          "answer": [
+            "http://example.org/job_placement_JKY124",
+            "Emergency Medicine"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Physician has multiple unqualified specialties: Cardiology, Emergency Medicine"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY124",
+              "physician": "http://example.org/physician_LMN123",
+              "facility": "http://example.org/facility_FC123",
+              "placement_record_lines": [
+                875
+              ],
+              "additional_record_lines": [
+                837
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_LMX777",
+          "answer": [
+            "http://example.org/job_placement_GHZ001",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_GHZ001",
+              "physician": "http://example.org/physician_LMX777",
+              "facility": "http://example.org/facility_GHZ002",
+              "placement_record_lines": [
+                1284
+              ],
+              "additional_record_lines": [
+                1302
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABC123",
+          "answer": [
+            "http://example.org/job_placement_JP1000",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP1000",
+              "physician": "http://example.org/physician_ABC123",
+              "facility": "http://example.org/facility_FD123",
+              "placement_record_lines": [
+                146
+              ],
+              "additional_record_lines": [
+                149
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_EFG123",
+          "answer": [
+            "http://example.org/job_placement_JP124",
+            "Radiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+            "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP124",
+              "physician": "http://example.org/physician_EFG123",
+              "facility": "http://example.org/facility_FC124",
+              "placement_record_lines": [
+                131
+              ],
+              "additional_record_lines": [
+                114
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+                "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JP124",
+              "physician": "http://example.org/physician_EFG123",
+              "facility": "http://example.org/facility_FC909",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                114
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_EFG123, http://example.org/physician_GH123",
+                "Placement has multiple facilities: http://example.org/facility_FC124, http://example.org/facility_FC909",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2031"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_BBB999",
+          "answer": [
+            "http://example.org/job_placement_CCC999",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_CCC999",
+              "physician": "http://example.org/physician_BBB999",
+              "facility": "http://example.org/facility_FA001",
+              "placement_record_lines": [
+                1474
+              ],
+              "additional_record_lines": [
+                1477
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/physician_ABZ005",
+          "answer": [
+            "http://example.org/job_placement_JP20000",
+            "Cardiology"
+          ],
+          "names": [],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Specialty is recorded at physician level, with no placement or year binding.",
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+            "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP20000",
+              "physician": "http://example.org/physician_ABZ005",
+              "facility": "http://example.org/facility_FF001",
+              "placement_record_lines": [
+                411
+              ],
+              "additional_record_lines": [
+                506
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+                "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JP20000",
+              "physician": "http://example.org/physician_ABZ005",
+              "facility": "http://example.org/facility_FK001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                506
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+                "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            },
+            {
+              "placement": "http://example.org/job_placement_JP20000",
+              "physician": "http://example.org/physician_ABZ005",
+              "facility": "http://example.org/facility_GH001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                506
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+                "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CQ6",
+      "pool_size": 550,
+      "audited": 20,
+      "passes": {
+        "traceable": 14,
+        "internally_consistent": 7,
+        "task_specific": 17
+      },
+      "cases": [
+        {
+          "input": "http://example.org/facility_FA123",
+          "answer": [
+            "http://example.org/medical_school_LMN002"
+          ],
+          "names": [
+            "Highland Ridge Medical College"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA123, http://example.org/facility_FB003",
+            "Placement has multiple physicians: http://example.org/physician_DRY001, http://example.org/physician_FFF001"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY001",
+              "physician": "http://example.org/physician_DRY001",
+              "facility": "http://example.org/facility_FA123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                660
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_DRY001, http://example.org/physician_FFF001",
+                "Placement has multiple facilities: http://example.org/facility_FA123, http://example.org/facility_FB003"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FX123",
+          "answer": [
+            "http://example.org/medical_school_QWZ124"
+          ],
+          "names": [
+            "Canyon Crest Medical College"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+            "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY123",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_FX123",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1656
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_BM001, http://example.org/physician_DRZ003, http://example.org/physician_LMN003, http://example.org/physician_LMN005",
+                "Placement has multiple facilities: http://example.org/facility_BKZ001, http://example.org/facility_FA123, http://example.org/facility_FA126, http://example.org/facility_FX123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_GHZ123",
+          "answer": [
+            "http://example.org/medical_school_AA001"
+          ],
+          "names": [
+            "Sunrise Valley Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FB123, http://example.org/facility_GHZ123",
+            "Placement has multiple physicians: http://example.org/physician_OPQ555, http://example.org/physician_QRS123",
+            "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMN123",
+              "physician": "http://example.org/physician_QRS123",
+              "facility": "http://example.org/facility_GHZ123",
+              "placement_record_lines": [
+                1707
+              ],
+              "additional_record_lines": [
+                1202
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_OPQ555, http://example.org/physician_QRS123",
+                "Placement has multiple facilities: http://example.org/facility_FB123, http://example.org/facility_GHZ123",
+                "Placement has multiple years: http://example.org/year_2027, http://example.org/year_2029"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA321",
+          "answer": [
+            "http://example.org/medical_school_PR002"
+          ],
+          "names": [
+            "Riverside Medical University"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+            "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP123",
+              "physician": "http://example.org/physician_HIJ002",
+              "facility": "http://example.org/facility_FA321",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                179
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+                "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FHZ001",
+          "answer": [
+            "http://example.org/medical_school_XYZ007"
+          ],
+          "names": [
+            "Canyon Ridge Medical Academy"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_TUV001",
+              "physician": "http://example.org/physician_GHY002",
+              "facility": "http://example.org/facility_FHZ001",
+              "placement_record_lines": [
+                1641
+              ],
+              "additional_record_lines": [
+                1649
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_XYZ001",
+          "answer": [
+            "http://example.org/medical_school_QWZ124"
+          ],
+          "names": [
+            "Canyon Crest Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY008",
+              "physician": "http://example.org/physician_DRZ003",
+              "facility": "http://example.org/facility_XYZ001",
+              "placement_record_lines": [
+                1650
+              ],
+              "additional_record_lines": [
+                1656
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA010",
+          "answer": [
+            "http://example.org/medical_school_ABZ002"
+          ],
+          "names": [
+            "Harborview School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_OPQ005",
+              "physician": "http://example.org/physician_ABZ001",
+              "facility": "http://example.org/facility_FA010",
+              "placement_record_lines": [
+                636
+              ],
+              "additional_record_lines": [
+                193
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA004",
+          "answer": [
+            "http://example.org/medical_school_JKL003"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA004, http://example.org/facility_FXZ001",
+            "Placement has multiple physicians: http://example.org/physician_AA003, http://example.org/physician_KLM002",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY012",
+              "physician": "http://example.org/physician_KLM002",
+              "facility": "http://example.org/facility_FA004",
+              "placement_record_lines": [
+                861
+              ],
+              "additional_record_lines": [
+                863
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_AA003, http://example.org/physician_KLM002",
+                "Placement has multiple facilities: http://example.org/facility_FA004, http://example.org/facility_FXZ001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FD124",
+          "answer": [
+            "http://example.org/medical_school_JKL777"
+          ],
+          "names": [
+            "Canyon Ridge Medical Institute",
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Answer entity has multiple names: Canyon Ridge Medical Institute, Summit Ridge School of Medicine"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP2009",
+              "physician": "http://example.org/physician_IJ124",
+              "facility": "http://example.org/facility_FD124",
+              "placement_record_lines": [
+                328
+              ],
+              "additional_record_lines": [
+                688
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FAZ001",
+          "answer": [
+            "http://example.org/medical_school_QRS555"
+          ],
+          "names": [
+            "Pinecrest Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FAZ001, http://example.org/facility_XZQ123",
+            "Placement has multiple physicians: http://example.org/physician_GHY001, http://example.org/physician_LNV001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY400",
+              "physician": "http://example.org/physician_GHY001",
+              "facility": "http://example.org/facility_FAZ001",
+              "placement_record_lines": [
+                1262
+              ],
+              "additional_record_lines": [
+                1347
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_GHY001, http://example.org/physician_LNV001",
+                "Placement has multiple facilities: http://example.org/facility_FAZ001, http://example.org/facility_XZQ123",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_JB001",
+          "answer": [
+            "http://example.org/medical_school_TX321"
+          ],
+          "names": [
+            "Highland Medical Academy"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+            "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP123",
+              "physician": "http://example.org/physician_CD123",
+              "facility": "http://example.org/facility_JB001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                81
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+                "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA004",
+          "answer": [
+            "http://example.org/medical_school_LMN789"
+          ],
+          "names": [
+            "Aurora Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_LMR999",
+              "physician": "http://example.org/physician_ABC999",
+              "facility": "http://example.org/facility_FA004",
+              "placement_record_lines": [
+                867
+              ],
+              "additional_record_lines": [
+                871
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_QWX001",
+          "answer": [
+            "http://example.org/medical_school_LMN321"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_GHX001, http://example.org/facility_HZ001, http://example.org/facility_JK001, http://example.org/facility_QWX001",
+            "Placement has multiple physicians: http://example.org/physician_DEF123, http://example.org/physician_MNO123, http://example.org/physician_QWE001, http://example.org/physician_QWX999, http://example.org/physician_UVW001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JLB001",
+              "physician": "http://example.org/physician_MNO123",
+              "facility": "http://example.org/facility_QWX001",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                1062
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_DEF123, http://example.org/physician_MNO123, http://example.org/physician_QWE001, http://example.org/physician_QWX999, http://example.org/physician_UVW001",
+                "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_GHX001, http://example.org/facility_HZ001, http://example.org/facility_JK001, http://example.org/facility_QWX001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FC202",
+          "answer": [
+            "http://example.org/medical_school_MS002"
+          ],
+          "names": [
+            "Northbridge University School of Medicine",
+            "Riverdale College of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Answer entity has multiple names: Northbridge University School of Medicine, Riverdale College of Medicine"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP404",
+              "physician": "http://example.org/physician_AB789",
+              "facility": "http://example.org/facility_FC202",
+              "placement_record_lines": [
+                12
+              ],
+              "additional_record_lines": [
+                10
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FD200",
+          "answer": [
+            "http://example.org/medical_school_QRS001"
+          ],
+          "names": [
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": false,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+            "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP123",
+              "physician": "http://example.org/physician_GH124",
+              "facility": "http://example.org/facility_FD200",
+              "placement_record_lines": [],
+              "additional_record_lines": [
+                291
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABX003, http://example.org/physician_ABZ002, http://example.org/physician_CD123, http://example.org/physician_EFJ001, http://example.org/physician_GH124, http://example.org/physician_HIJ002, http://example.org/physician_HIJ200, http://example.org/physician_KLM001, http://example.org/physician_KLM002, http://example.org/physician_XYZ001",
+                "Placement has multiple facilities: http://example.org/facility_FA002, http://example.org/facility_FA200, http://example.org/facility_FA300, http://example.org/facility_FA321, http://example.org/facility_FC123, http://example.org/facility_FC200, http://example.org/facility_FC707, http://example.org/facility_FC911, http://example.org/facility_FD200, http://example.org/facility_JB001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_GH001",
+          "answer": [
+            "http://example.org/medical_school_CDX001"
+          ],
+          "names": [
+            "Pacific Coast Medical University"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [
+            "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+            "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+            "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP20000",
+              "physician": "http://example.org/physician_EFG007",
+              "facility": "http://example.org/facility_GH001",
+              "placement_record_lines": [
+                355
+              ],
+              "additional_record_lines": [
+                347
+              ],
+              "conflicts": [
+                "Placement has multiple physicians: http://example.org/physician_ABZ005, http://example.org/physician_EFG007, http://example.org/physician_EFH001",
+                "Placement has multiple facilities: http://example.org/facility_FF001, http://example.org/facility_FK001, http://example.org/facility_GH001",
+                "Placement has multiple years: http://example.org/year_2026, http://example.org/year_2027"
+              ]
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_GHY001",
+          "answer": [
+            "http://example.org/medical_school_OPQ123"
+          ],
+          "names": [
+            "Cedarbrook Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JKY994",
+              "physician": "http://example.org/physician_QRT001",
+              "facility": "http://example.org/facility_GHY001",
+              "placement_record_lines": [
+                1465
+              ],
+              "additional_record_lines": [
+                1354
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA002",
+          "answer": [
+            "http://example.org/medical_school_MNO001"
+          ],
+          "names": [
+            "Redwood Medical College",
+            "Summit Ridge School of Medicine"
+          ],
+          "traceable": true,
+          "internally_consistent": false,
+          "task_specific": false,
+          "specificity_issue": "Answer entity lacks one unambiguous human-readable name.",
+          "conflicts": [
+            "Answer entity has multiple names: Redwood Medical College, Summit Ridge School of Medicine"
+          ],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP1102",
+              "physician": "http://example.org/physician_KLM010",
+              "facility": "http://example.org/facility_FA002",
+              "placement_record_lines": [
+                384
+              ],
+              "additional_record_lines": [
+                931
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FC850",
+          "answer": [
+            "http://example.org/medical_school_NV001"
+          ],
+          "names": [
+            "Willowbrook Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP850",
+              "physician": "http://example.org/physician_EF001",
+              "facility": "http://example.org/facility_FC850",
+              "placement_record_lines": [
+                124
+              ],
+              "additional_record_lines": [
+                137
+              ],
+              "conflicts": []
+            }
+          ]
+        },
+        {
+          "input": "http://example.org/facility_FA850",
+          "answer": [
+            "http://example.org/medical_school_ABC999"
+          ],
+          "names": [
+            "Cedar Ridge Medical College"
+          ],
+          "traceable": true,
+          "internally_consistent": true,
+          "task_specific": true,
+          "specificity_issue": null,
+          "conflicts": [],
+          "direct_record_lines": [],
+          "supporting_paths": [
+            {
+              "placement": "http://example.org/job_placement_JP953",
+              "physician": "http://example.org/physician_EFL001",
+              "facility": "http://example.org/facility_FA850",
+              "placement_record_lines": [
+                546
+              ],
+              "additional_record_lines": [
+                730
+              ],
+              "conflicts": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

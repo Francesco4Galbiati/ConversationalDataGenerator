@@ -2,6 +2,26 @@ import re
 import conf
 from conf import ops, hallucinations, redis
 
+def least_used_precondition_ids(intents, *, mode="one_to_one"):
+    """Return the least-used eligible IDs separately for each intent and slot."""
+    suffix = ":idx0" if mode == "many_to_many" else ""
+    eligible = {}
+    offered = {}
+    for intent in intents:
+        offered[intent] = {}
+        for slot in ops[intent]["preconditions"]["slots"]:
+            if slot not in eligible:
+                eligible[slot] = sorted(redis.smembers(f"entities:{slot}{suffix}"))
+            ids = eligible[slot]
+            if not ids:
+                offered[intent][slot] = []
+                continue
+            key = f"precondition_usage:{mode}:{intent}:{slot}"
+            counts = [int(count or 0) for count in redis.hmget(key, ids)]
+            minimum = min(counts)
+            offered[intent][slot] = [entity for entity, count in zip(ids, counts) if count == minimum]
+    return offered
+
 def replace_ids(slots, intent, abox):
 
     tmp = slots

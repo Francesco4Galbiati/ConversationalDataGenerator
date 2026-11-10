@@ -1,6 +1,6 @@
 import json
 
-input_file = "./resources/output/noria/llama3.3:70b/1to1/5000t/triples.json"
+input_file = "./resources/output/HealthEQKG/gpt-oss:120b/1to1/10000t/1/triples.json"
 output_file = "./output_parsing/input.jsonl"
 
 with open(input_file, "r") as f, open(output_file, "w") as out:

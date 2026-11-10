@@ -63,6 +63,8 @@ async def __launch__(triples):
             if val not in [None, 'None']:
                 if not redis.sismember(f"entities:{slot}", val):
                     hallucinations['false_precondition'] += 1
+                else:
+                    redis.hincrby(f"precondition_usage:one_to_one:{intent}:{slot}", val, 1)
 
         for a in answer:
             if answer[a] != 'None' and answer[a] is not None:

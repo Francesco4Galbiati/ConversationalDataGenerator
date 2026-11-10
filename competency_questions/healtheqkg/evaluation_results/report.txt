@@ -6,7 +6,7 @@ Aligned comparison applies only the supplied synthetic-to-reference mapping to r
 
 Settings
   reference = {"path": "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/healtheqkg_full.ttl", "format": "turtle"}
-  synthetic = {"path": "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/output.ttl", "format": "turtle"}
+  synthetic = {"path": "/Users/student/Desktop/ConversationalDataGenerator/resources/output/HealthEQKG/gpt-oss:120b/1to1/10000t/1/output.ttl", "format": "turtle"}
   questions = "/Users/student/Desktop/ConversationalDataGenerator/competency_questions/healtheqkg/manifest_generation.json"
   comparison = "literal"
   identity_map = null
@@ -37,29 +37,29 @@ Questions
 Structural comparisons (independent samples)
   CQ1 [compared]
     reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
-    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 101, "coverage": 0.505, "mean_answer_count": 1.11, "median_answer_count": 1.0, "histogram": {"0": 99, "1": 90, "2": 6, "5": 2, "6": 1, "27": 1, "77": 1}}
-    Jensen–Shannon distance = 0.593432
+    synthetic = {"population": 429, "sample_size": 200, "seed": 43, "entities_with_answers": 160, "coverage": 0.8, "mean_answer_count": 1.74, "median_answer_count": 1.0, "histogram": {"0": 40, "1": 73, "2": 48, "3": 13, "4": 11, "5": 8, "6": 4, "10": 1, "11": 2}}
+    Jensen–Shannon distance = 0.654419
   CQ2 [compared]
     reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
-    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 11, "coverage": 0.055, "mean_answer_count": 0.6, "median_answer_count": 0.0, "histogram": {"0": 189, "1": 1, "2": 4, "4": 1, "5": 1, "6": 1, "8": 1, "9": 1, "79": 1}}
-    Jensen–Shannon distance = 0.988572
+    synthetic = {"population": 429, "sample_size": 200, "seed": 43, "entities_with_answers": 113, "coverage": 0.565, "mean_answer_count": 0.57, "median_answer_count": 1.0, "histogram": {"0": 87, "1": 112, "2": 1}}
+    Jensen–Shannon distance = 0.515144
   CQ3 [compared]
     reference = {"population": 72658, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 1, "median_answer_count": 1.0, "histogram": {"1": 200}}
-    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "entities_with_answers": 9, "coverage": 0.045, "mean_answer_count": 9.22, "median_answer_count": 0.0, "histogram": {"0": 191, "1": 1, "2": 2, "3": 1, "8": 1, "16": 1, "28": 1, "150": 1, "1634": 1}}
-    Jensen–Shannon distance = 0.988572
+    synthetic = {"population": 429, "sample_size": 200, "seed": 43, "entities_with_answers": 86, "coverage": 0.43, "mean_answer_count": 0.675, "median_answer_count": 0.0, "histogram": {"0": 114, "1": 39, "2": 45, "3": 2}}
+    Jensen–Shannon distance = 0.785167
   CQ5 [compared]
     reference = {"population": 72658, "sample_size": 200, "seed": 42, "histogram": {"false": 200, "true": 0}, "true_rate": 0.0}
-    synthetic = {"population": 232, "sample_size": 200, "seed": 43, "histogram": {"false": 183, "true": 17}, "true_rate": 0.085}
-    Jensen–Shannon distance = 0.209431
+    synthetic = {"population": 429, "sample_size": 200, "seed": 43, "histogram": {"false": 199, "true": 1}, "true_rate": 0.005}
+    Jensen–Shannon distance = 0.050045
   CQ6 [compared]
-    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 101, "coverage": 1.0, "mean_answer_count": 2.6633663366336635, "median_answer_count": 1, "histogram": {"1": 59, "2": 15, "3": 9, "4": 7, "5": 4, "7": 3, "10": 1, "22": 1, "25": 1, "27": 1}}
-    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 101, "coverage": 1.0, "mean_answer_count": 63.62376237623762, "median_answer_count": 79, "histogram": {"2": 3, "4": 1, "6": 1, "8": 3, "9": 12, "15": 1, "17": 2, "23": 1, "79": 64, "85": 2, "88": 8, "91": 1, "92": 1, "93": 1}}
-    Jensen–Shannon distance = 0.959453
+    reference = {"population": 13348, "sample_size": 200, "seed": 42, "entities_with_answers": 200, "coverage": 1.0, "mean_answer_count": 4.11, "median_answer_count": 1.0, "histogram": {"1": 107, "2": 36, "3": 13, "4": 13, "5": 6, "6": 2, "7": 5, "8": 3, "9": 1, "10": 2, "12": 1, "15": 1, "17": 1, "22": 1, "25": 1, "27": 2, "32": 1, "34": 1, "54": 1, "57": 1, "100": 1}}
+    synthetic = {"population": 213, "sample_size": 200, "seed": 43, "entities_with_answers": 197, "coverage": 0.985, "mean_answer_count": 2.75, "median_answer_count": 2.0, "histogram": {"0": 3, "1": 51, "2": 81, "3": 29, "4": 12, "5": 6, "6": 5, "7": 1, "8": 1, "10": 1, "11": 6, "12": 2, "13": 1, "14": 1}}
+    Jensen–Shannon distance = 0.384992
   CQ9-categorical-adi [compared]
-    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 8, "coverage": 0.07920792079207921, "mean_answer_count": 0.07920792079207921, "median_answer_count": 0, "histogram": {"0": 93, "1": 8}}
-    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 0, "coverage": 0.0, "mean_answer_count": 0, "median_answer_count": 0, "histogram": {"0": 101}}
-    Jensen–Shannon distance = 0.201946
+    reference = {"population": 13348, "sample_size": 200, "seed": 42, "entities_with_answers": 14, "coverage": 0.07, "mean_answer_count": 0.07, "median_answer_count": 0.0, "histogram": {"0": 186, "1": 14}}
+    synthetic = {"population": 213, "sample_size": 200, "seed": 43, "entities_with_answers": 0, "coverage": 0.0, "mean_answer_count": 0, "median_answer_count": 0.0, "histogram": {"0": 200}}
+    Jensen–Shannon distance = 0.189515
   CQ11-categorical-adi [compared]
-    reference = {"population": 13348, "sample_size": 101, "seed": 42, "entities_with_answers": 7, "coverage": 0.06930693069306931, "mean_answer_count": 0.07920792079207921, "median_answer_count": 0, "histogram": {"0": 94, "1": 6, "2": 1}}
-    synthetic = {"population": 101, "sample_size": 101, "seed": 43, "entities_with_answers": 0, "coverage": 0.0, "mean_answer_count": 0, "median_answer_count": 0, "histogram": {"0": 101}}
-    Jensen–Shannon distance = 0.188550
+    reference = {"population": 13348, "sample_size": 200, "seed": 42, "entities_with_answers": 12, "coverage": 0.06, "mean_answer_count": 0.07, "median_answer_count": 0.0, "histogram": {"0": 188, "1": 10, "2": 2}}
+    synthetic = {"population": 213, "sample_size": 200, "seed": 43, "entities_with_answers": 1, "coverage": 0.005, "mean_answer_count": 0.01, "median_answer_count": 0.0, "histogram": {"0": 199, "2": 1}}
+    Jensen–Shannon distance = 0.161792

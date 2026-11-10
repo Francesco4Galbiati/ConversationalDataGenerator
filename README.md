@@ -106,3 +106,11 @@ Run the self-contained tests with the optional PQ6 dependency installed.
 python3 -m pip install 'rdflib>=7.2,<8' 'networkx>=3,<4'
 python3 -B -m unittest discover -s tests -v
 ```
+
+### Precondition usage counts
+
+The one-to-one and many-to-many executors count valid precondition IDs in Redis hashes named `precondition_usage:<mode>:<intent>:<slot>`. Many-to-many counts the first witness's normalized IDs once per shared question. For each available intent and slot, the Querent sees the eligible IDs tied for the lowest usage count. IDs without a count start at zero. Counts reset with the existing Redis run lifecycle.
+
+### Ollama request retries
+
+Ollama chat requests retry up to three times after HTTP 500, 502, 503, or 504 responses. Each retry resends the same request, with waits of 2, 4, and 8 seconds. If the final attempt fails, its error is reported.

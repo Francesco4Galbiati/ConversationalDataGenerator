@@ -84,6 +84,9 @@ async def __launch__(triples):
                 if val not in [None, 'None']:
                     if not redis.sismember(f"entities:{slot}:idx{answerer_id}", str(val)):
                         hallucinations['false_precondition'] += 1
+                    elif answerer_id == 0:
+                        # Witnesses share the question and normalize IDs to the first answer.
+                        redis.hincrby(f"precondition_usage:many_to_many:{intent}:{slot}", str(val), 1)
 
             for a in answer:
                 if answer[a] != 'None' and answer[a] is not None:

@@ -591,6 +591,53 @@ def load_questions(source):
     return questions
 
 
+def render_summary(results):
+    """Build the terminal tables from the same results saved in the reports."""
+    lines = []
+    if results["structural_comparisons"]:
+        lines.extend([
+            "Structural comparisons",
+            "",
+            "| Question | Outcome | Reference | Synthetic | JS distance |",
+            "| --- | --- | ---: | ---: | ---: |",
+        ])
+        for row in results["structural_comparisons"]:
+            if row["status"] != "compared":
+                lines.append(f"| {row['id']} | {row['status']} | — | — | — |")
+                continue
+            is_ask = row["query_type"] == "ASK"
+            rates = []
+            for side in ("reference", "synthetic"):
+                sample = row[side]
+                positives = sample["histogram"]["true"] if is_ask else sample["entities_with_answers"]
+                size = sample["sample_size"]
+                rates.append(f"{positives}/{size} ({positives / size:.1%})")
+            outcome = "True" if is_ask else "Nonempty"
+            lines.append(
+                f"| {row['id']} | {outcome} | {rates[0]} | {rates[1]} | {row['jensen_shannon_distance']:.3f} |"
+            )
+
+    if results["questions"]:
+        if lines:
+            lines.append("")
+        lines.extend([
+            "D6 aggregate scores",
+            "",
+            "| Comparison | Scored | PQ1 Correctness | PQ2 Completeness | PQ3 Macro F1 | PQ4 Micro F1 | PQ5 Exact |",
+            "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+        ])
+        for mode, metrics in results["aggregates"].items():
+            micro = (metrics["PQ4"] or {}).get("f1")
+            values = [metrics["PQ1"], metrics["PQ2"], metrics["PQ3"], micro, metrics["PQ5"]]
+            formatted = " | ".join(f"{value:.3f}" if value is not None else "—" for value in values)
+            lines.append(f"| {mode} | {metrics['scored_questions']} | {formatted} |")
+        pq6 = results["PQ6"]
+        if pq6["status"] == "scored":
+            lines.extend(["", f"PQ6 hierarchy-aware macro F1: {pq6['macro_f1']:.3f} "
+                          f"({pq6['scored_questions']} questions)"])
+    return "\n".join(lines)
+
+
 def render_report(results):
     lines = [
         "D6 pragmatic quality evaluation",
@@ -782,6 +829,7 @@ def run(args):
             (staging / filename).write_text(content, encoding="utf-8")
         for filename in outputs:
             (staging / filename).replace(output_dir / filename)
+    print(render_summary(results), flush=True)
     if args.progress:
         print(f"Reports written to {args.output_dir}", file=sys.stderr, flush=True)
 

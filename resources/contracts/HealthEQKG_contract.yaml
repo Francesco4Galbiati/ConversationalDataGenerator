@@ -1,3 +1,6 @@
+# Intent weights are reference counts from healtheqkg_full.ttl scaled to 1–5.
+# The largest count maps to 5. Other counts scale proportionally and round
+# to the nearest integer, with a minimum of 1. Counts can overlap across intents.
 intents:
   FindPhysicianPlacement:
     preconditions:
@@ -7,7 +10,7 @@ intents:
       slots:
         physician_id: id
         zip_code_area_id: ZipCodeArea
-      cardinality: 3
+      cardinality: 2  # 13,348 distinct placed facilities with a matching ZIP area
       description: "Finds a new Facility in an existing zip code area in which to hire an existing physician. Provides the facility's id, name, address, abstract (short description), number of beds, number of employees, and the year of placement of the physician"
     postconditions:
       classes:
@@ -41,7 +44,7 @@ intents:
         physician: Physician
       slots:
         physician_id: id
-      cardinality: 3
+      cardinality: 5  # 72,658 distinct physician–medical school links
       description: "Provides data about an existing physiscian's studies, introducing the medical school from which they graduated (id, name, abstract (description), faculty size, and number of students), and the physician's graduation year"
     postconditions:
       classes:
@@ -68,7 +71,7 @@ intents:
         physician: Physician
       slots:
         physician_id: id
-      cardinality: 4
+      cardinality: 5  # 72,657 distinct physician–specialty links with text values
       description: 'Provides the medical specialty and credentials of an existing physician'
     postconditions:
       classes: {}
@@ -83,7 +86,7 @@ intents:
     preconditions:
       classes: {}
       slots: {}
-      cardinality: 4
+      cardinality: 5  # 72,658 distinct typed physicians
       description: 'Introduces a new physician in the domain, with its unique id, gamily name, given name, gender, and npi code'
     postconditions:
       classes:
@@ -107,7 +110,7 @@ intents:
         facility: Facility
       slots:
         facility_id: id
-      cardinality: 2
+      cardinality: 5  # 72,658 distinct placement–physician–facility combinations
       description: "Hires a new physicial for an existing medical facility. Provides the physician's id, given name, family name, gender, and npi, as well as the id and year fo the job placement for which the physician was hired"
     postconditions:
       classes:
@@ -138,7 +141,7 @@ intents:
         zip_code_area: ZipCodeArea
       slots:
         zip_code_area_id: id
-      cardinality: 2
+      cardinality: 3  # 46,372 typed ZIP area–ADI links with an integer score and reference year
       description: 'Provides data about a missing ADI score for an existing zip code area for a certain year. In particular, the scoring id, score, and year are provided in the answer'
     postconditions:
       classes:
@@ -157,7 +160,7 @@ intents:
     preconditions:
       classes: {}
       slots: {}
-      cardinality: 1
+      cardinality: 1  # 7,988 distinct typed ZIP areas with a ZIP code
       description: "Defines a zip code area characterized by a zip code and an unique id (a sequence of 5 digits)"
     postconditions:
       classes: 
@@ -197,7 +200,7 @@ types:
 
 instructions:
   AreaManager: 
-    inst: ["DefineZipCodeArea", "IntroducePhysician", "ListADIScore"]
+    inst: ["DefineZipCodeArea", "IntroducePhysician", "ScoreZipCodeArea"]
     cardinality: 9
   PhysicianManager: 
     inst: ["FindPhysicianPlacement", "ReportPhysicianStudies", "PhysicianSpecialty", "HirePhysician"]
