@@ -1,14 +1,14 @@
 {
   "settings": {
     "reference": {
-      "path": "/Users/Luca1/ConversationalDataGenerator/resources/reference/ontopfas_reference.ttl",
+      "path": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/resources/reference/ontopfas_reference.ttl",
       "format": "turtle"
     },
     "synthetic": {
-      "path": "/Users/Luca1/ConversationalDataGenerator/resources/output/run_20261111_193235/output.ttl",
+      "path": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/resources/output/OntoPFAS/gpt-oss:120b/1to1/10000t/model_choice/output.ttl",
       "format": "turtle"
     },
-    "questions": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/manifest_generation.json",
+    "questions": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/manifest_generation.json",
     "comparison": "literal",
     "identity_map": null,
     "ontology_alignment": null,
@@ -42,7 +42,7 @@
   "structural_comparisons": [
     {
       "id": "CQ12",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq12_environments_of_pfas.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq12_environments_of_pfas.rq",
       "settings": {
         "variables": [
           "pfas"
@@ -53,7 +53,6 @@
           "https://w3id.org/OntoPFAS#Pfsa",
           "https://w3id.org/OntoPFAS#Pfoa",
           "https://w3id.org/OntoPFAS#Pfos",
-          "https://w3id.org/OntoPFAS#PfasPrecursor",
           "https://w3id.org/OntoPFAS#PolymerPfas",
           "http://purl.obolibrary.org/obo/CHEBI_172406"
         ],
@@ -79,7 +78,7 @@
         }
       },
       "synthetic": {
-        "population": 302,
+        "population": 159,
         "sample_size": 3,
         "seed": 43,
         "entities_with_answers": 3,
@@ -90,9 +89,9 @@
           "1": 3
         },
         "counts_by_entity": {
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS015": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS996": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS003": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS101": 1
         }
       },
       "jensen_shannon_distance": 0.0,
@@ -100,7 +99,7 @@
     },
     {
       "id": "CQ15",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq15_concentration_over_time.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq15_concentration_over_time.rq",
       "settings": {
         "variables": [
           "pfas"
@@ -111,7 +110,6 @@
           "https://w3id.org/OntoPFAS#Pfsa",
           "https://w3id.org/OntoPFAS#Pfoa",
           "https://w3id.org/OntoPFAS#Pfos",
-          "https://w3id.org/OntoPFAS#PfasPrecursor",
           "https://w3id.org/OntoPFAS#PolymerPfas",
           "http://purl.obolibrary.org/obo/CHEBI_172406"
         ],
@@ -139,7 +137,7 @@
         }
       },
       "synthetic": {
-        "population": 302,
+        "population": 159,
         "sample_size": 3,
         "seed": 43,
         "entities_with_answers": 3,
@@ -150,9 +148,9 @@
           "1": 3
         },
         "counts_by_entity": {
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS015": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS996": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS003": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS101": 1
         }
       },
       "jensen_shannon_distance": 0.9999999999999999,
@@ -160,7 +158,7 @@
     },
     {
       "id": "CQ21",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq21_source_of_measurement.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq21_source_of_measurement.rq",
       "settings": {
         "variables": [
           "obs"
@@ -237,7 +235,7 @@
     },
     {
       "id": "CQ24",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq24_measurements_of_pfas.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq24_measurements_of_pfas.rq",
       "settings": {
         "variables": [
           "pfas"
@@ -248,7 +246,6 @@
           "https://w3id.org/OntoPFAS#Pfsa",
           "https://w3id.org/OntoPFAS#Pfoa",
           "https://w3id.org/OntoPFAS#Pfos",
-          "https://w3id.org/OntoPFAS#PfasPrecursor",
           "https://w3id.org/OntoPFAS#PolymerPfas",
           "http://purl.obolibrary.org/obo/CHEBI_172406"
         ],
@@ -276,7 +273,7 @@
         }
       },
       "synthetic": {
-        "population": 302,
+        "population": 159,
         "sample_size": 3,
         "seed": 43,
         "entities_with_answers": 3,
@@ -287,9 +284,9 @@
           "1": 3
         },
         "counts_by_entity": {
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS015": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS996": 1,
-          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS003": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS150": 1,
+          "https://w3id.org/OntoPFAS/synthetic/pfas/PFS101": 1
         }
       },
       "jensen_shannon_distance": 0.9999999999999999,
@@ -297,7 +294,7 @@
     },
     {
       "id": "CQ28",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq28_measurements_in_dataset.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cq28_measurements_in_dataset.rq",
       "settings": {
         "variables": [
           "dataset"
@@ -355,7 +352,7 @@
     },
     {
       "id": "CQA1",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa1_activities_in_city.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa1_activities_in_city.rq",
       "settings": {
         "variables": [
           "city"
@@ -696,7 +693,7 @@
     },
     {
       "id": "CQA2",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa2_cities_in_country.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa2_cities_in_country.rq",
       "settings": {
         "variables": [
           "country"
@@ -820,7 +817,7 @@
     },
     {
       "id": "CQA3",
-      "query": "/Users/Luca1/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa3_activities_in_dataset.rq",
+      "query": "/sessions/rcw-01f5fg9jbmh63dhcezyxsjww/mnt/ConversationalDataGenerator/competency_questions/ontopfas/queries/cqa3_activities_in_dataset.rq",
       "settings": {
         "variables": [
           "dataset"

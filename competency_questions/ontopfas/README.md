@@ -29,6 +29,8 @@ several use terms absent from the ontology (`ontopfas:value`, `ontopfas:validIn`
 
 ## Read with care
 
+- Substance questions (CQ12, CQ15, CQ24) sample substances only, not precursors: in the generator only
+  substances are measured, so a sampled precursor would always count as an entity with no answers.
 - The evaluator samples `min(size, reference population, synthetic population)` entities. With 3
   reference substances, the substance questions (CQ12, CQ15, CQ24) compare 3 against 3: their
   distance is not informative. CQ21 and CQ28 are limited by 16 measurements and 6 datasets.

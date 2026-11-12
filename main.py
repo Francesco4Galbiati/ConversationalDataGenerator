@@ -47,5 +47,5 @@ finally:
     conf.output_file.write(f"Contract: {conf.args.contract}  Intent selection: {conf.intent_selection}"
                            + (f" (querent overridden {conf.schedule_overrides} times)" if conf.intent_selection == "schedule" else "") + "\n")
     conf.output_file.write(f"Unique slots: {sorted(conf.unique_slots) or 'none'}  Precondition sampling: {conf.precondition_sampling}"
-                           + (f" (alpha={conf.preferential_alpha}, seed={conf.args.seed})" if conf.precondition_sampling == "preferential" else "") + "\n")
+                           + (f" (alpha={conf.preferential_alpha}, seed={conf.args.seed}, slots={sorted(conf.preferential_slots) if conf.preferential_slots is not None else 'all'})" if conf.precondition_sampling == "preferential" else "") + "\n")
     conf.output_file.flush()

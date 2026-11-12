@@ -24,7 +24,8 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
     and slot, which spreads usage evenly. With --precondition_sampling preferential (one-to-one only):
     one ID drawn with probability (uses + 1) ** alpha, uses summed over all intents for that slot, so
     entities that already have many links tend to get more (preferential attachment) and the
-    distributions become skewed like real data instead of flat."""
+    distributions become skewed like real data instead of flat. --preferential_slots limits this to
+    some slots (e.g. country_id dataset_id); the other slots keep least_used."""
     preferential = getattr(conf, "precondition_sampling", "least_used") == "preferential" and mode == "one_to_one"
     suffix = ":idx0" if mode == "many_to_many" else ""
     eligible = {}
@@ -38,7 +39,7 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
             if not ids:
                 offered[intent][slot] = []
                 continue
-            if preferential:
+            if preferential and (conf.preferential_slots is None or slot in conf.preferential_slots):
                 weights = [(u + 1) ** conf.preferential_alpha for u in _total_usage(slot, ids, mode)]
                 offered[intent][slot] = _rng.choices(ids, weights=weights, k=1)
                 continue
