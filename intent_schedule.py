@@ -12,10 +12,14 @@ Over many turns each intent's share converges to its weight / sum of weights, pi
 spread out instead of coming in bursts, an intent that is not yet eligible does not pile up
 credit (so it cannot flood the dialogue once it becomes eligible), and the choice is
 deterministic, so a run can be reproduced.
+
+With --unique_slots (e.g. country_name), an intent that creates a value of such a slot stops being
+eligible once every option of its closed list is used, so it never has to repeat or invent one.
 """
 from collections import Counter
 
-from conf import ops, redis
+import conf
+from conf import ops, redis, types
 
 _credit = {intent: 0 for intent in ops}
 picked = Counter()
@@ -26,10 +30,27 @@ def weight(intent):
     return value if value > 0 else 0
 
 
+def remaining_options(slot, suffix=""):
+    """For a --unique_slots slot with a closed list of options: the options not used yet, else None."""
+    if slot not in conf.unique_slots:
+        return None
+    for i in ops:
+        kind = ops[i]["postconditions"]["slots"].get(slot)
+        if kind and types.get(kind, {}).get("options"):
+            used = {str(v).strip().lower() for v in redis.smembers(f"entities:{slot}{suffix}")}
+            return [o for o in types[kind]["options"] if str(o).strip().lower() not in used]
+    return None
+
+
+def exhausted(intent, suffix=""):
+    """True when the intent would have to repeat a value of a unique slot: every option is already used."""
+    return any(remaining_options(slot, suffix) == [] for slot in ops[intent]["postconditions"]["slots"])
+
+
 def eligible(suffix=""):
     return [i for i in ops
-            if weight(i) > 0 and all(redis.scard(f"entities:{slot}{suffix}") > 0
-                                     for slot in ops[i]["preconditions"]["slots"])]
+            if weight(i) > 0 and not exhausted(i, suffix)
+            and all(redis.scard(f"entities:{slot}{suffix}") > 0 for slot in ops[i]["preconditions"]["slots"])]
 
 
 def next_intent(suffix=""):

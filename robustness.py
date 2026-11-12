@@ -6,6 +6,7 @@ Configuration through environment variables (conf.py is left untouched):
   CDG_RETRY_WAITS  seconds to wait before each retry, comma separated   (default "20,40,80,160,300")
   CDG_NUM_CTX      context window to request, e.g. 16384 (default: unset = server default, as in the paper)
   CDG_THINK        gpt-oss reasoning level: low | medium | high      (default: unset = model default, medium)
+  CDG_TIMEOUT      seconds before a request with no answer fails and is retried (default 600, set in conf.py)
 
 Only server-side failures are retried (HTTP 5xx, connection errors, timeouts). Client errors (4xx, e.g. a wrong
 key) are raised immediately. The time spent waiting is recorded in stats and reported by main.py; note it is
@@ -55,4 +56,5 @@ conf.dialogue_client.chat = _chat_with_retry
 settings = []
 if NUM_CTX: settings.append(f'num_ctx={NUM_CTX}')
 if THINK: settings.append(f'think={THINK}')
+settings.append(f"timeout={os.getenv('CDG_TIMEOUT', '600')}s")
 print(f"robustness: retries with waits {WAITS}" + (f"; {', '.join(settings)}" if settings else ''), flush=True)

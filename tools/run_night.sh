@@ -53,7 +53,7 @@ run() {
         echo "$(date '+%F %T') SKIP  $label: server down for 6 hours" | tee -a "$LOG"; return
     fi
     echo "$(date '+%F %T') START $label: python main.py $*" | tee -a "$LOG"
-    python main.py "$@" > "resources/output/night_${label}.out" 2>&1
+    python -u main.py "$@" > "resources/output/night_${label}.out" 2>&1
     rc=$?
     folder=$(ls -d resources/output/run_* | sort | tail -1)   # folder names are timestamps
     echo "$(date '+%F %T') END   $label exit=$rc folder=$folder" | tee -a "$LOG"
@@ -74,6 +74,13 @@ run() {
 args_for() {
     case "$1" in
         sched_full_10k)     echo "--contract OntoPFAS_contract.yaml --conversation 1 --target 10000 --intent_selection schedule" ;;
+        sched_AB_300)       echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 300 --unique_slots country_name --precondition_sampling preferential --preferential_alpha 0.75" ;;   # quick check that A + B run
+        sched_A_5k)        echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 5000 --unique_slots country_name" ;;
+        sched_B_5k)        echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 5000 --precondition_sampling preferential --preferential_alpha 0.75" ;;
+        sched_AB_5k)       echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 5000 --unique_slots country_name --precondition_sampling preferential --preferential_alpha 0.75" ;;
+        sched_A_10k)        echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 10000 --unique_slots country_name" ;;
+        sched_B_10k)        echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 10000 --precondition_sampling preferential --preferential_alpha 0.75" ;;
+        sched_AB_10k)       echo "--contract OntoPFAS_contract.yaml --conversation 1 --intent_selection schedule --target 10000 --unique_slots country_name --precondition_sampling preferential --preferential_alpha 0.75" ;;
         model_full_10k)     echo "--contract OntoPFAS_contract.yaml --conversation 1 --target 10000" ;;
         sched_weighted_10k) echo "--contract OntoPFAS_contract_weighted.yaml --conversation 1 --target 10000 --intent_selection schedule" ;;
         minimal_MtoM) echo "--contract OntoPFAS_minimal_contract.yaml --conversation 4 --target 1000" ;;
@@ -87,7 +94,7 @@ RUNS="$*"
 
 for r in $RUNS; do
     a=$(args_for "$r")
-    [ -n "$a" ] || { echo "unknown run '$r' (use: sched_full_10k model_full_10k sched_weighted_10k minimal_MtoM full_1to1 full_MtoM minimal_1to1)" | tee -a "$LOG"; continue; }
+    [ -n "$a" ] || { echo "unknown run '$r' (use: sched_AB_300 sched_A_5k sched_B_5k sched_AB_5k sched_A_10k sched_B_10k sched_AB_10k sched_full_10k model_full_10k sched_weighted_10k minimal_MtoM full_1to1 full_MtoM minimal_1to1)" | tee -a "$LOG"; continue; }
     run "$r" $a
 done
 

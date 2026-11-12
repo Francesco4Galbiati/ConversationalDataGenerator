@@ -171,11 +171,15 @@ def gen_dialogue_turn(clear = False):
             entities_text.append(
                 f"{slot.upper()}: {', '.join(slots)}"
             )
+    remaining = {slot: intent_schedule.remaining_options(slot) for slot in ops[intent]['postconditions']['slots']}
+    remaining_text = [f"{slot.upper()}: {', '.join(map(str, opts))}" for slot, opts in remaining.items() if opts]
     conf.chat_history.append({
         'role': 'system',
         'content': (
             "ALREADY USED SLOTS (DO NOT repeat these):\n"
             + "\n".join(entities_text)
+            + ("\n\nREMAINING ALLOWED VALUES (use exactly one of these, never a used or unlisted value):\n"
+               + "\n".join(remaining_text) if remaining_text else "")
         )
     })
     

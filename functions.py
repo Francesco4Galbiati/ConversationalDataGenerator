@@ -1,10 +1,31 @@
 import json
+import random
 import re
 import conf
 from conf import ops, hallucinations, redis
 
+_rng = random.Random(getattr(conf, "args", None) and conf.args.seed)
+
+
+def _total_usage(slot, ids, mode):
+    """How many times each ID was used as a precondition for this slot, summed over all intents."""
+    totals = [0] * len(ids)
+    for intent in ops:
+        if slot in ops[intent]["preconditions"]["slots"]:
+            counts = redis.hmget(f"precondition_usage:{mode}:{intent}:{slot}", ids)
+            totals = [t + int(c or 0) for t, c in zip(totals, counts)]
+    return totals
+
+
 def least_used_precondition_ids(intents, *, mode="one_to_one"):
-    """Return the least-used eligible IDs separately for each intent and slot."""
+    """Return the eligible IDs to offer, separately for each intent and slot.
+
+    Default (--precondition_sampling least_used): the IDs tied for the lowest usage count of that intent
+    and slot, which spreads usage evenly. With --precondition_sampling preferential (one-to-one only):
+    one ID drawn with probability (uses + 1) ** alpha, uses summed over all intents for that slot, so
+    entities that already have many links tend to get more (preferential attachment) and the
+    distributions become skewed like real data instead of flat."""
+    preferential = getattr(conf, "precondition_sampling", "least_used") == "preferential" and mode == "one_to_one"
     suffix = ":idx0" if mode == "many_to_many" else ""
     eligible = {}
     offered = {}
@@ -16,6 +37,10 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
             ids = eligible[slot]
             if not ids:
                 offered[intent][slot] = []
+                continue
+            if preferential:
+                weights = [(u + 1) ** conf.preferential_alpha for u in _total_usage(slot, ids, mode)]
+                offered[intent][slot] = _rng.choices(ids, weights=weights, k=1)
                 continue
             key = f"precondition_usage:{mode}:{intent}:{slot}"
             counts = [int(count or 0) for count in redis.hmget(key, ids)]

@@ -23,6 +23,15 @@ parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='HealthEQKG_contract.yaml')
 parser.add_argument("--redis_port", type=int, default=6379)
+parser.add_argument("--unique_slots", nargs="*", default=[],
+                    help="slots whose values must never repeat (e.g. country_name); with a closed list of options, "
+                         "the intent creating them stops being scheduled once every option is used")
+parser.add_argument("--precondition_sampling", choices=["least_used", "preferential"], default="least_used",
+                    help="least_used: offer the least-used existing IDs (default); preferential: offer one ID drawn "
+                         "with probability (uses + 1) ** alpha, so well-connected entities attract more links")
+parser.add_argument("--preferential_alpha", type=float, default=1.0,
+                    help="strength of preferential sampling: 0 = uniform, 1 = linear (Barabasi-Albert), >1 = stronger")
+parser.add_argument("--seed", type=int, default=0, help="random seed for preferential sampling")
 parser.add_argument("--intent_selection", choices=["model", "schedule"], default="model",
                     help="model: the querent chooses the intent (default); schedule: the code chooses it from the cardinalities")
 
@@ -37,6 +46,11 @@ model_host = args.model_host
 redis_port = args.redis_port
 api_key = args.api_key
 intent_selection = args.intent_selection
+unique_slots = set(args.unique_slots)
+precondition_sampling = args.precondition_sampling
+preferential_alpha = args.preferential_alpha
+if precondition_sampling == "preferential" and args.conversation != 1:
+    exit("--precondition_sampling preferential is implemented for --conversation 1 only")
 if intent_selection == "schedule" and (args.conversation != 1 or querent_llm == "llama3.3:70b"):
     exit("--intent_selection schedule is implemented for --conversation 1 with the gpt prompts only")
 if args.conversation == 1:
@@ -132,6 +146,9 @@ dialogue_client = RetryingOllamaClient(
     host=dialogue_generator_host,
     headers={'Authorization': f'Bearer {api_key}'},
     capture_dir=os.getenv('CDG_OLLAMA_CAPTURE_DIR'),
+    # without a timeout a dropped connection blocks the run forever (11 Nov: 3.5 h); after this many
+    # seconds the request fails with httpx.ReadTimeout, which robustness.py retries like a server error
+    timeout=float(os.getenv('CDG_TIMEOUT', '600')),
 )
 
 # Redis
