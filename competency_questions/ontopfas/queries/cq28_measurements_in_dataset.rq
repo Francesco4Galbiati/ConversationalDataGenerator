@@ -1,0 +1,12 @@
+# CQ28 (per dataset). How many measurements does a given dataset contain?
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?m WHERE {
+  VALUES ?dataset { <urn:healtheqkg:replace:dataset> }
+  ?m a sosa:Observation ; dcterms:source ?dataset .
+}

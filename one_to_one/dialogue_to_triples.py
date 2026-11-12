@@ -156,7 +156,7 @@ def gen_dialogue_turn(clear = False):
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()
 
-    output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
+    output_json = repair_json(dialogue['message']['content'], return_objects=True)
     intent = output_json["Intent"]
     question = output_json["Q"]
     conf.intent_history.append(intent)

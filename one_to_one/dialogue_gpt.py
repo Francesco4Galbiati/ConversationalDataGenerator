@@ -5,6 +5,7 @@ from time import time
 from conf import ops, dialogue_client, querent_llm, witness_llm, redis
 from json_repair import repair_json
 from functions import least_used_precondition_ids
+import intent_schedule
 
 def gen_dialogue_turn(clear = False):
 
@@ -13,7 +14,23 @@ def gen_dialogue_turn(clear = False):
         conf.turn_counter = 0
         conf.history_dict = []
 
-    offered_ids = least_used_precondition_ids(ops)
+    scheduled = intent_schedule.next_intent() if conf.intent_selection == "schedule" else None
+    shown_ops = {scheduled: ops[scheduled]} if scheduled else ops
+    offered_ids = least_used_precondition_ids(shown_ops)
+    if scheduled:
+        selection_rules = f"""The generator has already chosen the intent for this turn: {scheduled}.
+            Select exactly this intent and ignore INTENT HISTORY for the choice."""
+    else:
+        selection_rules = """Step 1 — Eligibility:
+            - Keep only intents with an offered ID for every required slot of that intent
+
+            Step 2 — Exclusions:
+            - Do NOT select the most recent intent
+            - Deprioritize intents frequent in INTENT HISTORY
+
+            Step 3 — Selection:
+            - Prefer least recently used intents
+            - If only one valid intent exists → select it"""
 
     conf.chat_history.append({
         "role": "system",
@@ -61,23 +78,14 @@ def gen_dialogue_turn(clear = False):
                     "cardinality": ops[i]["preconditions"]["cardinality"],
                 }
             }
-            for i in ops
+            for i in shown_ops
             ]}
 
             ---
 
             ### INTENT SELECTION RULES ###
 
-            Step 1 — Eligibility:
-            - Keep only intents with an offered ID for every required slot of that intent
-
-            Step 2 — Exclusions:
-            - Do NOT select the most recent intent
-            - Deprioritize intents frequent in INTENT HISTORY
-
-            Step 3 — Selection:
-            - Prefer least recently used intents
-            - If only one valid intent exists → select it
+            {selection_rules}
 
             ---
 
@@ -141,8 +149,11 @@ def gen_dialogue_turn(clear = False):
 
     del conf.chat_history[-2:]
 
-    output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
+    output_json = repair_json(dialogue['message']['content'], return_objects=True)
     intent = output_json["Intent"]
+    if scheduled and intent != scheduled:   # the model ignored the scheduled intent: keep the schedule
+        conf.schedule_overrides += 1
+        intent = scheduled
     question = output_json["Q"]
     conf.intent_history.append(intent)
     conf.intent_history = conf.intent_history[-10:]
@@ -233,7 +244,7 @@ def gen_dialogue_turn(clear = False):
                         "description": conf.types[t]['text']
                     }
                 }
-                for t in conf.types
+                for t in conf.types if t in {**ops[intent]['preconditions']['slots'], **ops[intent]['postconditions']['slots']}.values()
             ]}
 
             ---
@@ -339,10 +350,8 @@ def gen_dialogue_turn(clear = False):
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()
 
-    output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
+    output_json = repair_json(dialogue['message']['content'], return_objects=True)
     answer = output_json
-    with open(conf.triples_file, 'a') as f:
-        f.write(f'{intent}: ' + json.dumps(answer) + '\n')
 
     turn = {
         "Intent": intent,

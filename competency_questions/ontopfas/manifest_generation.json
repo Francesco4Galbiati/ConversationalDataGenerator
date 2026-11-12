@@ -1,0 +1,159 @@
+[
+  {
+    "id": "CQ12",
+    "query": "queries/cq12_environments_of_pfas.rq",
+    "structural_sample": {
+      "variables": [
+        "pfas"
+      ],
+      "types": [
+        "https://w3id.org/OntoPFAS#Pfas",
+        "https://w3id.org/OntoPFAS#Pfca",
+        "https://w3id.org/OntoPFAS#Pfsa",
+        "https://w3id.org/OntoPFAS#Pfoa",
+        "https://w3id.org/OntoPFAS#Pfos",
+        "https://w3id.org/OntoPFAS#PfasPrecursor",
+        "https://w3id.org/OntoPFAS#PolymerPfas",
+        "http://purl.obolibrary.org/obo/CHEBI_172406"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "measurement"
+    }
+  },
+  {
+    "id": "CQ15",
+    "query": "queries/cq15_concentration_over_time.rq",
+    "structural_sample": {
+      "variables": [
+        "pfas"
+      ],
+      "types": [
+        "https://w3id.org/OntoPFAS#Pfas",
+        "https://w3id.org/OntoPFAS#Pfca",
+        "https://w3id.org/OntoPFAS#Pfsa",
+        "https://w3id.org/OntoPFAS#Pfoa",
+        "https://w3id.org/OntoPFAS#Pfos",
+        "https://w3id.org/OntoPFAS#PfasPrecursor",
+        "https://w3id.org/OntoPFAS#PolymerPfas",
+        "http://purl.obolibrary.org/obo/CHEBI_172406"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "measurement"
+    }
+  },
+  {
+    "id": "CQ21",
+    "query": "queries/cq21_source_of_measurement.rq",
+    "structural_sample": {
+      "variables": [
+        "obs"
+      ],
+      "types": [
+        "http://www.w3.org/ns/sosa/Observation"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "measurement"
+    }
+  },
+  {
+    "id": "CQ24",
+    "query": "queries/cq24_measurements_of_pfas.rq",
+    "structural_sample": {
+      "variables": [
+        "pfas"
+      ],
+      "types": [
+        "https://w3id.org/OntoPFAS#Pfas",
+        "https://w3id.org/OntoPFAS#Pfca",
+        "https://w3id.org/OntoPFAS#Pfsa",
+        "https://w3id.org/OntoPFAS#Pfoa",
+        "https://w3id.org/OntoPFAS#Pfos",
+        "https://w3id.org/OntoPFAS#PfasPrecursor",
+        "https://w3id.org/OntoPFAS#PolymerPfas",
+        "http://purl.obolibrary.org/obo/CHEBI_172406"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "measurement"
+    }
+  },
+  {
+    "id": "CQ28",
+    "query": "queries/cq28_measurements_in_dataset.rq",
+    "structural_sample": {
+      "variables": [
+        "dataset"
+      ],
+      "types": [
+        "http://www.w3.org/ns/dcat#Dataset"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "measurement"
+    }
+  },
+  {
+    "id": "CQA1",
+    "query": "queries/cqa1_activities_in_city.rq",
+    "structural_sample": {
+      "variables": [
+        "city"
+      ],
+      "types": [
+        "https://schema.org/City"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "activity"
+    }
+  },
+  {
+    "id": "CQA2",
+    "query": "queries/cqa2_cities_in_country.rq",
+    "structural_sample": {
+      "variables": [
+        "country"
+      ],
+      "types": [
+        "https://schema.org/Place"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "activity"
+    }
+  },
+  {
+    "id": "CQA3",
+    "query": "queries/cqa3_activities_in_dataset.rq",
+    "structural_sample": {
+      "variables": [
+        "dataset"
+      ],
+      "types": [
+        "http://www.w3.org/ns/dcat#Dataset"
+      ],
+      "size": 200,
+      "seed": 42
+    },
+    "categories": {
+      "focus": "activity"
+    }
+  }
+]

@@ -1,3 +1,4 @@
+import json
 import re
 import conf
 from conf import ops, hallucinations, redis
@@ -22,30 +23,41 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
             offered[intent][slot] = [entity for entity, count in zip(ids, counts) if count == minimum]
     return offered
 
+def _next_id(v):
+    """ACT009 -> ACT010, PFS099 -> PFS100: increment the trailing number, keep its width."""
+    m = re.match(r'^(.*?)(\d+)$', v)
+    return m.group(1) + str(int(m.group(2)) + 1).zfill(len(m.group(2)))
+
 def replace_ids(slots, intent, abox):
+    """Make every NEW id (postcondition id slot) unique within this world (abox).
+    Ids of precondition slots refer to existing entities and are left unchanged.
+    All ids seen are recorded in the Redis set abox:<abox>:ids."""
+    key = f"abox:{abox}:ids"
+    pre = ops[intent]['preconditions']['slots']
+    for k in list(slots):
+        if '_id' not in k:
+            continue
+        v = slots[k]
+        if v is None:
+            v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
+            hallucinations['missing_slot'] += 1
+        v = str(v)
+        if re.search(r'\d+$', v) is None:
+            continue
+        if k not in pre and redis.sismember(key, v):
+            while redis.sismember(key, v):
+                v = _next_id(v)
+            slots[k] = v
+        redis.sadd(key, v)
 
-    tmp = slots
-    for k, v in slots.items():
-        if '_id' in k:
-            if v is None:
-                v = ''.join([x.capitalize() for x in k.split("_")[:-1]]) + '001'
-                hallucinations['missing_slot'] += 1
-            if re.search(r'\d+$', str(v)) is None:
-                continue
-            if redis.sismember(f"abox{abox}:ids", v) and k not in ops[intent]['preconditions']['slots']:
-                while redis.sismember(f"abox{abox}:ids", v):
-                    if int(v[-1]) != 9:
-                        new = v[:-1] + str(int(v[-1]) + 1)
-                    else:
-                        if int(v[-2]) != 9:
-                            new = v[:-2] + str(int(v[-2]) + 1) + '0'
-                        else:
-                            new = v[:-3] + str(int(v[-3]) + 1) + '00'
-                    v = new
-                tmp[k] = v
-            redis.sadd(f"abox:{abox}:ids", v)
+    return slots
 
-    return tmp
+def write_answer(intent, answer, answerer_id=None):
+    """Append one turn to the output file, after ids have been corrected.
+    answerer_id is None for single-witness modes (triples.json), else the witness index (triples_<i>.json)."""
+    path = conf.triples_file if answerer_id is None else conf.triples_files[int(answerer_id)]
+    with open(path, 'a') as f:
+        f.write(f'{intent}: ' + json.dumps(answer) + '\n')
 
 def camel_to_snake(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)

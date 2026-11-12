@@ -143,7 +143,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
 
     del conf.chat_history[-2:]
 
-    output_json = ast.literal_eval(repair_json(dialogue["message"]["content"]).replace('null', 'None'))
+    output_json = repair_json(dialogue["message"]["content"], return_objects=True)
     intent = output_json["Intent"]
     question = output_json["Q"]
     conf.intent_history.append(intent)
@@ -238,7 +238,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
                             "description": conf.types[t]['text']
                         }
                     }
-                    for t in conf.types
+                    for t in conf.types if t in {**ops[intent]['preconditions']['slots'], **ops[intent]['postconditions']['slots']}.values()
                 ]}
 
                 ---
@@ -345,7 +345,7 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
         if len(conf.chat_history) != 0:
             conf.chat_history.pop()
 
-        answer = ast.literal_eval(repair_json(dialogue["message"]["content"]).replace('null', 'None'))
+        answer = repair_json(dialogue["message"]["content"], return_objects=True)
 
         if answerer_idx > 0:
             ids = [key for key in answer.keys() if '_id' in key]
@@ -353,12 +353,6 @@ def gen_dialogue_turn(instructions, clear=False, n=3, triples_file=None):
                 if id in branch_answers[0]:
                     answer[id] = branch_answers[0][id]
 
-        # Write only the answerer's JSON so downstream RDF extraction can read
-        # the file line by line without topology metadata.
-        target = conf.triples_files[answerer_idx]
-        if target is not None:
-            with open(target, "a") as f:
-                f.write(f'{intent}: ' + json.dumps(answer) + "\n")
 
         branch_answers.append(answer)
         branch_turns.append({

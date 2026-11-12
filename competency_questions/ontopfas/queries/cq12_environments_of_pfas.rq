@@ -1,0 +1,12 @@
+# CQ12. In which environments has a given PFAS been detected? (one row per distinct matrix)
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?environment WHERE {
+  VALUES ?pfas { <urn:healtheqkg:replace:pfas> }
+  ?obs a sosa:Observation ; ontopfas:measuredPfas ?pfas ; ontopfas:matrix ?environment .
+}

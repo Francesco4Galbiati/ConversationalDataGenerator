@@ -1,7 +1,7 @@
 from conf import bcolors, ops, hallucinations, redis, querent_llm
-from functions import  replace_ids, dict_keys_to_snake, update_world_state
+from functions import write_answer,  replace_ids, dict_keys_to_snake, update_world_state
 
-if querent_llm == 'gpt-oss:120b':
+if querent_llm == 'gpt-oss:120b' or querent_llm.startswith('claude'):
     from one_to_one.dialogue_gpt import gen_dialogue_turn
 elif querent_llm == 'llama3.3:70b':
     from one_to_one.dialogue_llama import gen_dialogue_turn
@@ -46,6 +46,7 @@ async def __launch__(triples):
 
         answer = dict_keys_to_snake(answer)
         answer = replace_ids(answer, intent, 0)
+        write_answer(intent, answer)
 
         valid_slots = set(ops[intent]['postconditions']['slots']) | set(ops[intent]['preconditions']['slots'])
         for slot in answer:

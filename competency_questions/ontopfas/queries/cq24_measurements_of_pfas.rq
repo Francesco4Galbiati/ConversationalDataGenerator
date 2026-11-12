@@ -1,0 +1,13 @@
+# CQ24 (per substance). How many measurements concern a given PFAS? Sampled per substance, the
+# answer-count histogram is the distribution behind "which PFAS are the most measured".
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?obs WHERE {
+  VALUES ?pfas { <urn:healtheqkg:replace:pfas> }
+  ?obs ontopfas:measuredPfas ?pfas .
+}

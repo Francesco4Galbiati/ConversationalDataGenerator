@@ -1,0 +1,524 @@
+# Conversational contract for OntoPFAS (Di Pierro et al., ESWC 2026 resource track)
+# Ontology: https://github.com/davide1797/OntoPFAS  (ontology/pfas.ttl)
+# 12 intents derived by hand from the 30 competency questions (CQ numbers in each description comment).
+# Aggregation-only CQs (11, 17, 22, 23, 24, 25, 28) contribute no new pattern; CQ1/CQ3 are TBox-only
+# (covered by the pfas_family slot). Every precondition slot is produced by at least one intent.
+#
+# Predicates and classes are written as CURIEs (see `prefixes`), except `type` (rdf:type), which the
+# generator code checks literally. `prefixes` is not read by conf.py; it is there for the RDF parser.
+#
+# Vocabulary notes (CQ text vs ontology): CQ19/22 `validIn` -> validInPlace / validInEnvironment;
+# CQ17/23 `value` -> sosa:hasSimpleResult; CQ23 `location` -> measuredIn; CQ14 `concerLevel` -> concernLevel;
+# CQ27 `geo:lon` -> wgs:long. Countries are typed schema:Place because schema:Country is not declared in
+# the ontology (the PDH instances use schema:Country / schema:containedInPlace instead).
+
+prefixes:
+  ontopfas: 'https://w3id.org/OntoPFAS#'
+  schema: 'https://schema.org/'
+  sosa: 'http://www.w3.org/ns/sosa/'
+  obo: 'http://purl.obolibrary.org/obo/'
+  sio: 'http://semanticscience.org/resource/'
+  prov: 'http://www.w3.org/ns/prov#'
+  dcterms: 'http://purl.org/dc/terms/'
+  dcat: 'http://www.w3.org/ns/dcat#'
+  dcat3: 'https://www.w3.org/TR/vocab-dcat-3/#Property:'
+  geo: 'http://www.w3.org/2003/01/geo/wgs84_pos#'
+  wgs: 'https://www.w3.org/2003/01/geo/wgs84_pos#'
+  reg: 'https://w3id.org/ocqa/regulation#'
+
+intents:
+
+  # CQ2, CQ3, CQ5, CQ6, CQ7, CQ20
+  RegisterPfasSubstance:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 3
+      description: "Introduces a NEW real PFAS substance, not yet registered, with its id, common name (acronym), CAS number, PFAS family, number of carbon atoms, whether it is an ether, whether it is hydrophilic, and its level of concern"
+    postconditions:
+      classes:
+        pfas: ontopfas:Pfas
+      slots:
+        pfas_id: id_pfas
+        pfas_name: pfas_name
+        pfas_cas_number: cas_number
+        pfas_family: pfas_family
+        pfas_number_of_carbons: int
+        pfas_is_ether: yes_no
+        pfas_is_hydrophilic: yes_no
+        pfas_concern_level: concern_level
+      triples:
+      - [pfas_id, type, ontopfas:Pfas]
+      - [pfas_id, type, pfas_family]
+      - [pfas_id, schema:name, pfas_name]
+      - [pfas_id, ontopfas:casId, pfas_cas_number]
+      - [pfas_id, ontopfas:numberOfCarbons, pfas_number_of_carbons]
+      - [pfas_id, ontopfas:isEther, pfas_is_ether]
+      - [pfas_id, ontopfas:isHydrophilic, pfas_is_hydrophilic]
+      - [pfas_id, ontopfas:concernLevel, pfas_concern_level]
+
+  # CQ4, CQ29
+  AssignFunctionalGroup:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+      slots:
+        pfas_id: id_pfas
+      cardinality: 2
+      description: "Describes the functional group of an existing PFAS substance, creating a NEW functional group record with its id and name"
+    postconditions:
+      classes:
+        functional_group: ontopfas:FunctionalGroup
+      slots:
+        functional_group_id: id_functional_group
+        functional_group_name: functional_group_name
+      triples:
+      - [functional_group_id, type, ontopfas:FunctionalGroup]
+      - [functional_group_id, ontopfas:functionalGroupName, functional_group_name]
+      - [pfas_id, ontopfas:functionalGroup, functional_group_id]
+
+  # CQ8
+  AddPrecursor:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+      slots:
+        pfas_id: id_pfas
+      cardinality: 2
+      description: "Introduces a NEW real precursor substance that transforms into an existing PFAS, with the precursor's id, name, CAS number, and number of carbon atoms"
+    postconditions:
+      classes:
+        precursor: ontopfas:PfasPrecursor
+      slots:
+        precursor_id: id_precursor
+        precursor_name: precursor_name
+        precursor_cas_number: cas_number
+        precursor_number_of_carbons: int
+      triples:
+      - [precursor_id, type, ontopfas:PfasPrecursor]
+      - [precursor_id, schema:name, precursor_name]
+      - [precursor_id, ontopfas:casId, precursor_cas_number]
+      - [precursor_id, ontopfas:numberOfCarbons, precursor_number_of_carbons]
+      - [precursor_id, sio:SIO_000655, pfas_id]
+
+  # CQ12, CQ13, CQ26
+  DefineEnvironment:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 2
+      description: "Defines a NEW environmental compartment (the matrix in which PFAS can be measured) with its id and name, and the NEW broader compartment that surrounds it, with its id and name"
+    postconditions:
+      classes:
+        environment: obo:ENVO_01000408
+        surrounding_environment: obo:ENVO_01000408
+      slots:
+        environment_id: id_environment
+        environment_name: environment_matrix
+        surrounding_environment_id: id_environment
+        surrounding_environment_name: environment_matrix
+      triples:
+      - [environment_id, type, obo:ENVO_01000408]
+      - [surrounding_environment_id, type, obo:ENVO_01000408]
+      - [environment_id, schema:name, environment_name]
+      - [surrounding_environment_id, schema:name, surrounding_environment_name]
+      - [environment_id, obo:RO_0002219, surrounding_environment_id]
+
+  # CQ9, CQ14
+  DescribeMobility:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+        environment: obo:ENVO_01000408
+      slots:
+        pfas_id: id_pfas
+        environment_id: id_environment
+      cardinality: 2
+      description: "Describes the mobility of an existing PFAS substance in an existing environmental compartment, creating a NEW mobility record with its id and degree of mobility (1 to 5)"
+    postconditions:
+      classes:
+        mobility: ontopfas:PfasMobility
+      slots:
+        mobility_id: id_mobility
+        mobility_degree: mobility_degree
+      triples:
+      - [mobility_id, type, ontopfas:PfasMobility]
+      - [pfas_id, ontopfas:mobility, mobility_id]
+      - [mobility_id, ontopfas:mobilityInEnvironment, environment_id]
+      - [mobility_id, ontopfas:mobilityDegree, mobility_degree]
+
+  # CQ27, CQ30 (place hierarchy)
+  RegisterCountry:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 1
+      description: "Registers a NEW real European country, with its id and name, in which activities, measurements, and regulations can be located"
+    postconditions:
+      classes:
+        country: schema:Place
+      slots:
+        country_id: id_country
+        country_name: country_name
+      triples:
+      - [country_id, type, schema:Place]
+      - [country_id, schema:name, country_name]
+
+  # CQ21, CQ28
+  PublishDataset:
+    preconditions:
+      classes: {}
+      slots: {}
+      cardinality: 1
+      description: "Publishes a NEW source dataset, with its id and title, from which activities and measurements are collected"
+    postconditions:
+      classes:
+        dataset: dcat:Dataset
+      slots:
+        dataset_id: id_dataset
+        dataset_title: dataset_title
+      triples:
+      - [dataset_id, type, dcat:Dataset]
+      - [dataset_id, dcat3:resource_title, dataset_title]
+
+  # CQ10, CQ27, CQ30
+  RegisterActivity:
+    preconditions:
+      classes:
+        country: schema:Place
+        dataset: dcat:Dataset
+      slots:
+        country_id: id_country
+        dataset_id: id_dataset
+      cardinality: 4
+      description: "Registers a NEW activity site (industrial site, PFAS production facility, or firefighting training area) reported in an existing dataset and located in a NEW real city of that existing country. Provides the activity's id, name, type, industrial sector, source type, source text, source URL, latitude and longitude, and the city's id and name"
+    postconditions:
+      classes:
+        activity: schema:Organization
+        city: schema:City
+      slots:
+        activity_id: id_activity
+        activity_name: activity_name
+        activity_type: activity_type
+        activity_sector: str
+        activity_source_type: source_type
+        activity_source_text: str
+        activity_source_url: str
+        activity_latitude: latitude
+        activity_longitude: longitude
+        city_id: id_city
+        city_name: city_name
+      triples:
+      - [activity_id, type, schema:Organization]
+      - [city_id, type, schema:City]
+      - [activity_id, schema:name, activity_name]
+      - [activity_id, ontopfas:type, activity_type]
+      - [activity_id, ontopfas:sector, activity_sector]
+      - [activity_id, ontopfas:sourceType, activity_source_type]
+      - [activity_id, ontopfas:sourceText, activity_source_text]
+      - [activity_id, ontopfas:sourceUrl, activity_source_url]
+      - [activity_id, wgs:lat, activity_latitude]
+      - [activity_id, wgs:long, activity_longitude]
+      - [activity_id, obo:RO_0001025, city_id]
+      - [activity_id, dcterms:source, dataset_id]
+      - [city_id, schema:name, city_name]
+      - [city_id, ontopfas:isContainedInPlace, country_id]
+
+  # CQ10, CQ30
+  LinkActivityToPfas:
+    preconditions:
+      classes:
+        activity: schema:Organization
+        pfas: ontopfas:Pfas
+      slots:
+        activity_id: id_activity
+        pfas_id: id_pfas
+      cardinality: 2
+      description: "States that an existing activity site uses an existing PFAS substance in its processes"
+    postconditions:
+      classes: {}
+      slots: {}
+      triples:
+      - [activity_id, prov:used, pfas_id]
+
+  # CQ12, CQ15, CQ17, CQ23, CQ24, CQ25
+  RecordMeasurement:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+        city: schema:City
+        environment: obo:ENVO_01000408
+        dataset: dcat:Dataset
+      slots:
+        pfas_id: id_pfas
+        city_id: id_city
+        environment_id: id_environment
+        dataset_id: id_dataset
+      cardinality: 4
+      description: "Records a NEW measurement of an existing PFAS substance in an existing environmental compartment, taken at a NEW sampling location inside an existing city and reported in an existing dataset. Provides the measurement's id, measured value, unit, year, and site name, and the sampling location's id, latitude, and longitude"
+    postconditions:
+      classes:
+        measurement: sosa:Observation
+        location: geo:SpatialThing
+      slots:
+        measurement_id: id_measurement
+        measurement_value: concentration
+        measurement_unit: unit
+        measurement_year: year
+        measurement_site: site_name
+        location_id: id_location
+        location_latitude: latitude
+        location_longitude: longitude
+      triples:
+      - [measurement_id, type, sosa:Observation]
+      - [location_id, type, geo:SpatialThing]
+      - [measurement_id, ontopfas:measuredPfas, pfas_id]
+      - [measurement_id, ontopfas:matrix, environment_id]
+      - [measurement_id, ontopfas:measuredIn, location_id]
+      - [measurement_id, dcterms:source, dataset_id]
+      - [measurement_id, sosa:hasSimpleResult, measurement_value]
+      - [measurement_id, ontopfas:unit, measurement_unit]
+      - [measurement_id, sosa:resultTime, measurement_year]
+      - [measurement_id, ontopfas:site, measurement_site]
+      - [location_id, wgs:lat, location_latitude]
+      - [location_id, wgs:long, location_longitude]
+      - [location_id, ontopfas:locationInPlace, city_id]
+
+  # CQ19, CQ22
+  DefineRegulation:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+        country: schema:Place
+        environment: obo:ENVO_01000408
+      slots:
+        pfas_id: id_pfas
+        country_id: id_country
+        environment_id: id_environment
+      cardinality: 2
+      description: "Defines a NEW regulation that restricts an existing PFAS substance in an existing environmental compartment of an existing country. Provides the regulation's id, name, and maximum allowed concentration"
+    postconditions:
+      classes:
+        regulation: reg:Regulation
+      slots:
+        regulation_id: id_regulation
+        regulation_name: regulation_name
+        regulation_limit: concentration
+      triples:
+      - [regulation_id, type, reg:Regulation]
+      - [regulation_id, schema:name, regulation_name]
+      - [regulation_id, ontopfas:restricts, pfas_id]
+      - [regulation_id, ontopfas:validInPlace, country_id]
+      - [regulation_id, ontopfas:validInEnvironment, environment_id]
+      - [regulation_id, ontopfas:limit, regulation_limit]
+
+  # CQ16, CQ18
+  ReportExposure:
+    preconditions:
+      classes:
+        pfas: ontopfas:Pfas
+      slots:
+        pfas_id: id_pfas
+      cardinality: 2
+      description: "Reports a NEW exposure of a NEW person to an existing PFAS substance and the NEW health outcome it causes. Provides the exposure's id, the person's id, gender and birth date, and the outcome's id and name"
+    postconditions:
+      classes:
+        exposure: obo:ExO_0000022
+        person: schema:Person
+        outcome: obo:ExO_0000079
+      slots:
+        exposure_id: id_exposure
+        person_id: id_person
+        person_gender: gender
+        person_birth_date: date
+        outcome_id: id_outcome
+        outcome_name: health_outcome
+      triples:
+      - [exposure_id, type, obo:ExO_0000022]
+      - [person_id, type, schema:Person]
+      - [outcome_id, type, obo:ExO_0000079]
+      - [exposure_id, ontopfas:stimulatedBy, pfas_id]
+      - [exposure_id, ontopfas:exposureStimulusOf, person_id]
+      - [exposure_id, obo:RO_0003302, outcome_id]
+      - [person_id, schema:gender, person_gender]
+      - [person_id, schema:birthDate, person_birth_date]
+      - [outcome_id, schema:name, outcome_name]
+
+types:
+  # one id format per class, so that an id can never be valid for two classes
+  id_pfas:
+    type: 'str'
+    pattern: '^PFS\d{3}$'
+    text: "Identifier of a PFAS substance: 'PFS' followed by 3 digits (PFS001)"
+  id_precursor:
+    type: 'str'
+    pattern: '^PRC\d{3}$'
+    text: "Identifier of a PFAS precursor: 'PRC' followed by 3 digits (PRC001)"
+  id_functional_group:
+    type: 'str'
+    pattern: '^FGR\d{3}$'
+    text: "Identifier of a functional group: 'FGR' followed by 3 digits (FGR001)"
+  id_environment:
+    type: 'str'
+    pattern: '^ENV\d{3}$'
+    text: "Identifier of an environmental compartment: 'ENV' followed by 3 digits (ENV001)"
+  id_mobility:
+    type: 'str'
+    pattern: '^MOB\d{3}$'
+    text: "Identifier of a mobility record: 'MOB' followed by 3 digits (MOB001)"
+  id_country:
+    type: 'str'
+    pattern: '^CTR[A-Z]{2}\d{3}$'
+    text: "Identifier of a country: 'CTR' + the ISO 3166 two-letter code of the country + 3 digits (CTRFR001 for France, CTRIT001 for Italy)"
+  id_city:
+    type: 'str'
+    pattern: '^CIT[A-Z]{2}\d{3}$'
+    text: "Identifier of a city: 'CIT' + the ISO two-letter code of its country (the letters after CTR in country_id) + 3 digits (CITFR001 for a French city)"
+  id_dataset:
+    type: 'str'
+    pattern: '^DST\d{3}$'
+    text: "Identifier of a dataset: 'DST' followed by 3 digits (DST001)"
+  id_activity:
+    type: 'str'
+    pattern: '^ACT\d{3}$'
+    text: "Identifier of an activity site: 'ACT' followed by 3 digits (ACT001)"
+  id_measurement:
+    type: 'str'
+    pattern: '^OBS\d{3}$'
+    text: "Identifier of a measurement: 'OBS' followed by 3 digits (OBS001)"
+  id_location:
+    type: 'str'
+    pattern: '^LOC\d{3}$'
+    text: "Identifier of a sampling location: 'LOC' followed by 3 digits (LOC001)"
+  id_regulation:
+    type: 'str'
+    pattern: '^REG\d{3}$'
+    text: "Identifier of a regulation: 'REG' followed by 3 digits (REG001)"
+  id_exposure:
+    type: 'str'
+    pattern: '^EXP\d{3}$'
+    text: "Identifier of an exposure event: 'EXP' followed by 3 digits (EXP001)"
+  id_person:
+    type: 'str'
+    pattern: '^PER\d{3}$'
+    text: "Identifier of a person: 'PER' followed by 3 digits (PER001)"
+  id_outcome:
+    type: 'str'
+    pattern: '^OUT\d{3}$'
+    text: "Identifier of a health outcome: 'OUT' followed by 3 digits (OUT001)"
+  pfas_name:
+    type: 'str'
+    text: "Acronym of a real, documented PFAS (PFOA, PFOS, PFHxS, PFNA, PFBS, PFHxA, PFDA, GenX/HFPO-DA, ADONA, 6:2 FTS...), different from those already registered. Its CAS number, family and number of carbons MUST be the real ones of that substance"
+  precursor_name:
+    type: 'str'
+    text: "Name of a real, documented PFAS precursor (8:2 FTOH, 6:2 FTOH, N-EtFOSE, N-MeFOSAA, PFOSA, 6:2 diPAP...) that actually degrades into the target PFAS; use its real CAS number and number of carbons"
+  country_name:
+    type: 'enum'
+    options: ['France', 'Belgium', 'Netherlands', 'Germany', 'Italy', 'Spain', 'Portugal', 'Sweden', 'Denmark', 'Norway', 'Finland', 'Poland', 'Austria', 'Switzerland', 'Czech Republic', 'Ireland', 'United Kingdom']
+    text: "The name of a real European country from this list: France, Belgium, Netherlands, Germany, Italy, Spain, Portugal, Sweden, Denmark, Norway, Finland, Poland, Austria, Switzerland, Czech Republic, Ireland, United Kingdom (never a city, never an invented name)"
+  city_name:
+    type: 'str'
+    text: "The name of a real city or town in the country whose ISO code appears in country_id (CTRFR001 -> a French city); never an invented name"
+  activity_name:
+    type: 'str'
+    text: "A realistic name for a company plant or site (company name, optionally followed by the town)"
+  site_name:
+    type: 'str'
+    text: "A realistic name of the sampling site (river, lake, well, or plant name followed by the town)"
+  regulation_name:
+    type: 'str'
+    text: "A realistic name of a law, directive, or decree setting PFAS limits (EU Drinking Water Directive 2020/2184, a national decree with its number and year); it must NOT contain any identifier"
+  dataset_title:
+    type: 'str'
+    text: "A realistic title of a PFAS monitoring dataset or report, different from those already published"
+  cas_number:
+    type: 'str'
+    pattern: '^\d{2,7}-\d{2}-\d$'
+    text: "The real CAS registry number of the substance (2 to 7 digits, a hyphen, 2 digits, a hyphen, 1 check digit: 335-67-1 is PFOA, 1763-23-1 is PFOS); never invent one"
+  pfas_family:
+    type: 'enum'
+    options: ['ontopfas:Pfca', 'ontopfas:Pfsa', 'ontopfas:Pfoa', 'ontopfas:Pfos', 'ontopfas:PfasPrecursor', 'ontopfas:PolymerPfas', 'obo:CHEBI_172406']
+    text: "The most specific PFAS family class: one of ontopfas:Pfca (perfluoroalkyl carboxylic acid), ontopfas:Pfsa (perfluoroalkyl sulfonic acid), ontopfas:Pfoa, ontopfas:Pfos, ontopfas:PfasPrecursor, ontopfas:PolymerPfas, obo:CHEBI_172406 (polyfluoroalkyl)"
+  concern_level:
+    type: 'enum'
+    options: ['low', 'medium', 'high']
+    text: "One option between 'low', 'medium', and 'high'"
+  functional_group_name:
+    type: 'enum'
+    options: ['carboxylic acid', 'sulfonic acid', 'sulfonamide', 'phosphonic acid', 'alcohol', 'ether carboxylic acid', 'sulfonamidoethanol']
+    text: "One of 'carboxylic acid', 'sulfonic acid', 'sulfonamide', 'phosphonic acid', 'alcohol', 'ether carboxylic acid', 'sulfonamidoethanol'"
+  environment_matrix:
+    type: 'enum'
+    options: ['surface water', 'groundwater', 'drinking water', 'wastewater', 'soil', 'sediment', 'biota', 'air', 'river basin', 'aquifer']
+    text: "One of 'surface water', 'groundwater', 'drinking water', 'wastewater', 'soil', 'sediment', 'biota', 'air', 'river basin', 'aquifer'"
+  mobility_degree:
+    type: 'int'
+    options: [1, 2, 3, 4, 5]
+    text: 'An integer from 1 (immobile) to 5 (very mobile)'
+  activity_type:
+    type: 'enum'
+    options: ['Industrial site', 'PFAS production facility', 'Firefighting incident / training', 'Landfill', 'Wastewater treatment plant', 'Airport']
+    text: "One of 'Industrial site', 'PFAS production facility', 'Firefighting incident / training', 'Landfill', 'Wastewater treatment plant', 'Airport'"
+  source_type:
+    type: 'enum'
+    options: ['Company', 'Authorities', 'OSINT', 'Scientific article']
+    text: "One of 'Company', 'Authorities', 'OSINT', 'Scientific article'"
+  latitude:
+    type: 'float'
+    text: "Latitude in decimal degrees with 6 decimals, inside the city of the site; the city's country is the ISO code in its id (Europe: between 36 and 71)"
+  longitude:
+    type: 'float'
+    text: "Longitude in decimal degrees with 6 decimals, inside the city of the site; the city's country is the ISO code in its id (Europe: between -10 and 32)"
+  concentration:
+    type: 'float'
+    text: 'A non-negative concentration value with one decimal, expressed in the measurement unit'
+  unit:
+    type: 'enum'
+    options: ['ng/l', 'ng/g', 'µg/kg']
+    text: "One of 'ng/l', 'ng/g', 'µg/kg'"
+  year:
+    type: 'int'
+    text: 'A year between 2000 and 2025'
+  # not a JSON boolean on purpose: the generator parses answers with ast.literal_eval, which crashes on true/false
+  yes_no:
+    type: 'enum'
+    options: ['yes', 'no']
+    text: "The string 'yes' or 'no', always in quotes (never the JSON values true or false)"
+  gender:
+    type: 'enum'
+    options: ['male', 'female']
+    text: "One option between 'male' and 'female'"
+  date:
+    type: 'str'
+    pattern: '^\d{4}-\d{2}-\d{2}$'
+    text: 'A date in YYYY-MM-DD format'
+  health_outcome:
+    type: 'enum'
+    options: ['thyroid disease', 'kidney cancer', 'testicular cancer', 'high cholesterol', 'reduced vaccine response', 'pregnancy-induced hypertension', 'liver damage']
+    text: "One of 'thyroid disease', 'kidney cancer', 'testicular cancer', 'high cholesterol', 'reduced vaccine response', 'pregnancy-induced hypertension', 'liver damage'"
+
+subclasses:
+  ontopfas:Pfas: ['ontopfas:Pfaa', 'ontopfas:Pfca', 'ontopfas:Pfsa', 'ontopfas:Pfoa', 'ontopfas:Pfos', 'ontopfas:PfasPrecursor', 'ontopfas:PolymerPfas', 'ontopfas:NonPolymerPfas', 'ontopfas:LongChainPfas', 'ontopfas:ShortChainPfas', 'obo:CHEBI_172406', 'obo:CHEBI_24531']
+
+# order matters in one-to-one mode: its 'AVAILABLE ENTITY IDS' message keeps only the LAST 3 slots that have ids,
+# so the most-required slots (pfas_id: 7 intents, environment_id: 3) go last
+precondition_slots: ['activity_id', 'city_id', 'dataset_id', 'country_id', 'environment_id', 'pfas_id']
+
+# literal slots whose values may legitimately repeat across entities
+repeatable_terms: ['family', 'number_of_carbons', 'is_ether', 'is_hydrophilic', 'concern_level', 'environment_name', 'mobility_degree', 'activity_type', 'sector', 'source_type', 'source_text', 'unit', 'year', 'gender', 'outcome_name', 'functional_group_name']
+
+# querent groups for the many-querent modes: a partition of the 12 intents (Definition 5).
+# Order matters: groups run in this order, and later groups depend on entities created by earlier ones.
+instructions:
+  ChemistryExpert:
+    inst: ['RegisterPfasSubstance', 'AssignFunctionalGroup', 'AddPrecursor', 'DescribeMobility']
+    cardinality: 8
+  ActivityTracker:
+    inst: ['RegisterCountry', 'PublishDataset', 'RegisterActivity', 'LinkActivityToPfas']
+    cardinality: 8
+  EnvironmentMonitor:
+    inst: ['DefineEnvironment', 'RecordMeasurement']
+    cardinality: 6
+  RiskAssessor:
+    inst: ['DefineRegulation', 'ReportExposure']
+    cardinality: 4

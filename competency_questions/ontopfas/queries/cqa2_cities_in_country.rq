@@ -1,0 +1,12 @@
+# Supporting question. Which cities with PFAS-related sites lie in a given country?
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?city WHERE {
+  VALUES ?country { <urn:healtheqkg:replace:country> }
+  ?city a schema:City ; ontopfas:isContainedInPlace ?country .
+}

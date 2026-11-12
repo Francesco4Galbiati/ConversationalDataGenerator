@@ -1,0 +1,13 @@
+# CQ15. How has the concentration of a given PFAS evolved through time? (one row per measurement)
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?obs ?time ?value WHERE {
+  VALUES ?pfas { <urn:healtheqkg:replace:pfas> }
+  ?obs a sosa:Observation ; ontopfas:measuredPfas ?pfas ;
+       sosa:resultTime ?time ; sosa:hasSimpleResult ?value .
+}

@@ -158,7 +158,7 @@ def gen_dialogue_turn(instructions, clear = False):
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()
 
-    output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
+    output_json = repair_json(dialogue['message']['content'], return_objects=True)
     intent = output_json["Intent"]
     question = output_json["Q"]
     conf.intent_history.append(intent)
@@ -250,7 +250,7 @@ def gen_dialogue_turn(instructions, clear = False):
                         "description": conf.types[t]['text']
                     }
                 }
-                for t in conf.types
+                for t in conf.types if t in {**ops[intent]['preconditions']['slots'], **ops[intent]['postconditions']['slots']}.values()
             ]}
 
             ---
@@ -356,10 +356,8 @@ def gen_dialogue_turn(instructions, clear = False):
     if len(conf.chat_history) != 0:
         conf.chat_history.pop()
 
-    output_json = ast.literal_eval(repair_json(dialogue['message']['content']).replace('null', 'None'))
+    output_json = repair_json(dialogue['message']['content'], return_objects=True)
     answer = output_json
-    with open(conf.triples_file, 'a') as f:
-        f.write(f'{intent}: ' + json.dumps(answer) + '\n')
 
     turn = {
         "Intent": intent,

@@ -1,0 +1,12 @@
+# Adapted from CQ27/CQ30 (activities near a location). Which activity sites are located in a given city?
+PREFIX ontopfas: <https://w3id.org/OntoPFAS#>
+PREFIX schema: <https://schema.org/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat3: <https://www.w3.org/TR/vocab-dcat-3/#Property:>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT DISTINCT ?activity WHERE {
+  VALUES ?city { <urn:healtheqkg:replace:city> }
+  ?activity a schema:Organization ; obo:RO_0001025 ?city .
+}

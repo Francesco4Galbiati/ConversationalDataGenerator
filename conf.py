@@ -23,6 +23,8 @@ parser.add_argument("--querent_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--witness_model", type=str, default='gpt-oss:120b')
 parser.add_argument("--contract", type=str, default='HealthEQKG_contract.yaml')
 parser.add_argument("--redis_port", type=int, default=6379)
+parser.add_argument("--intent_selection", choices=["model", "schedule"], default="model",
+                    help="model: the querent chooses the intent (default); schedule: the code chooses it from the cardinalities")
 
 args = parser.parse_args()
 
@@ -34,6 +36,9 @@ num_of_witnesses = args.witnesses_n
 model_host = args.model_host
 redis_port = args.redis_port
 api_key = args.api_key
+intent_selection = args.intent_selection
+if intent_selection == "schedule" and (args.conversation != 1 or querent_llm == "llama3.3:70b"):
+    exit("--intent_selection schedule is implemented for --conversation 1 with the gpt prompts only")
 if args.conversation == 1:
     conversation_type = ConversationType.ONE_TO_ONE
 elif args.conversation == 2:
@@ -136,6 +141,7 @@ redis.flushdb()
 # PYDANTIC AI CONFIGURATION
 types_def = defaultdict()
 querent_time = 0
+schedule_overrides = 0
 witness_times = [0 for _ in range(num_of_witnesses)]
 global_lock = threading.Lock()
 
