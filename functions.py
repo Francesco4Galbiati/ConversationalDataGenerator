@@ -17,6 +17,18 @@ def _total_usage(slot, ids, mode):
     return totals
 
 
+def _preferential_rule(intent, slot):
+    """(alpha, counted within the intent only) if preferential sampling applies to this intent and slot, else None."""
+    rules = conf.preferential_slots
+    if rules is None:
+        return conf.preferential_alpha, False
+    if f"{intent}.{slot}" in rules:
+        return rules[f"{intent}.{slot}"], True
+    if slot in rules:
+        return rules[slot], False
+    return None
+
+
 def least_used_precondition_ids(intents, *, mode="one_to_one"):
     """Return the eligible IDs to offer, separately for each intent and slot.
 
@@ -25,7 +37,9 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
     one ID drawn with probability (uses + 1) ** alpha, uses summed over all intents for that slot, so
     entities that already have many links tend to get more (preferential attachment) and the
     distributions become skewed like real data instead of flat. --preferential_slots limits this to
-    some slots (e.g. country_id dataset_id); the other slots keep least_used."""
+    some slots (e.g. country_id dataset_id); the other slots keep least_used. An entry Intent.slot
+    (e.g. RecordMeasurement.pfas_id) applies only inside that intent and counts uses within it only,
+    and an entry may carry its own alpha (country_id=0.75)."""
     preferential = getattr(conf, "precondition_sampling", "least_used") == "preferential" and mode == "one_to_one"
     suffix = ":idx0" if mode == "many_to_many" else ""
     eligible = {}
@@ -39,10 +53,16 @@ def least_used_precondition_ids(intents, *, mode="one_to_one"):
             if not ids:
                 offered[intent][slot] = []
                 continue
-            if preferential and (conf.preferential_slots is None or slot in conf.preferential_slots):
-                weights = [(u + 1) ** conf.preferential_alpha for u in _total_usage(slot, ids, mode)]
-                offered[intent][slot] = _rng.choices(ids, weights=weights, k=1)
-                continue
+            if preferential:
+                rule = _preferential_rule(intent, slot)
+                if rule is not None:
+                    alpha, within_intent = rule
+                    if within_intent:
+                        uses = [int(c or 0) for c in redis.hmget(f"precondition_usage:{mode}:{intent}:{slot}", ids)]
+                    else:
+                        uses = _total_usage(slot, ids, mode)
+                    offered[intent][slot] = _rng.choices(ids, weights=[(u + 1) ** alpha for u in uses], k=1)
+                    continue
             key = f"precondition_usage:{mode}:{intent}:{slot}"
             counts = [int(count or 0) for count in redis.hmget(key, ids)]
             minimum = min(counts)

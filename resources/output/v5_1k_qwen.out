@@ -1,0 +1,2 @@
+robustness: retries with waits [20.0, 40.0, 80.0, 160.0, 300.0]; timeout=600s
+[91m[server error, retry 1/5 in 20s] {"detail":"an error was encountered while running the model: CUDA error: an illegal memory access was encountered\nCUDA error"} (status code: 500)[0m

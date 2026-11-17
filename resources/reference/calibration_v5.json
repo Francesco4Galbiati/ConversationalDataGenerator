@@ -1,0 +1,41 @@
+{
+ "weights": {
+  "RegisterPfasSubstance": 1,
+  "RegisterCountry": 2,
+  "PublishDataset": 0.1,
+  "RegisterCity": 5,
+  "DefineSamplingLocation": 3,
+  "RecordMeasurement": 5
+ },
+ "alphas": {
+  "country_id": 1.0,
+  "dataset_id": 0.75,
+  "RecordMeasurement.pfas_id": null
+ },
+ "score": 0.18948056357813237,
+ "shape": 0.1135009393573627,
+ "size": 0.07597962422076965,
+ "per": {
+  "cities_per_country": 0.06000047694970225,
+  "sites_per_city": 0.11872826626924991,
+  "sites_per_dataset": 0.08391889487861448,
+  "measurements_per_dataset": 0.04818820881944324,
+  "measurements_per_substance": 0.25409836065573776,
+  "measurements_per_location": 0.1160714285714286
+ },
+ "size_terms": {
+  "cities/sites": 0.04819058385767535,
+  "datasets/sites": 0.0034904049397685676,
+  "locations/measurements": 0.12337902116050457,
+  "substances/measurements": 0.1288584869251301
+ },
+ "pops": {
+  "sites": 286,
+  "cities": 305,
+  "countries": 17,
+  "datasets": 7,
+  "measurements": 286,
+  "substances": 61,
+  "locations": 182
+ }
+}

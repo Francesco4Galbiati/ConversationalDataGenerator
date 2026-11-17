@@ -32,7 +32,9 @@ parser.add_argument("--precondition_sampling", choices=["least_used", "preferent
 parser.add_argument("--preferential_alpha", type=float, default=1.0,
                     help="strength of preferential sampling: 0 = uniform, 1 = linear (Barabasi-Albert), >1 = stronger")
 parser.add_argument("--preferential_slots", nargs="*", default=None,
-                    help="precondition slots that use preferential sampling (default: all); the others keep least_used")
+                    help="where preferential sampling applies (default: every slot). Each entry is a slot (country_id: usage "
+                         "summed over all intents) or Intent.slot (RecordMeasurement.pfas_id: usage within that intent only), "
+                         "optionally with its own alpha (country_id=0.75). The other slots keep least_used")
 parser.add_argument("--seed", type=int, default=0, help="random seed for preferential sampling")
 parser.add_argument("--intent_selection", choices=["model", "schedule"], default="model",
                     help="model: the querent chooses the intent (default); schedule: the code chooses it from the cardinalities")
@@ -51,7 +53,12 @@ intent_selection = args.intent_selection
 unique_slots = set(args.unique_slots)
 precondition_sampling = args.precondition_sampling
 preferential_alpha = args.preferential_alpha
-preferential_slots = None if args.preferential_slots is None else set(args.preferential_slots)
+preferential_slots = None
+if args.preferential_slots is not None:   # {"country_id": 1.0, "RecordMeasurement.pfas_id": 1.5, ...}
+    preferential_slots = {}
+    for entry in args.preferential_slots:
+        name, _, a = entry.partition("=")
+        preferential_slots[name] = float(a) if a else preferential_alpha
 if precondition_sampling == "preferential" and args.conversation != 1:
     exit("--precondition_sampling preferential is implemented for --conversation 1 only")
 if intent_selection == "schedule" and (args.conversation != 1 or querent_llm == "llama3.3:70b"):
